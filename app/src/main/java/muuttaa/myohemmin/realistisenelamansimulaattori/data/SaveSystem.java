@@ -23,6 +23,7 @@ public class SaveSystem implements JsonInterface {
     private boolean debuggi = true;
     private List<String> list;
     private String scenarie;
+    private String scenarioName;
 
     /**
      * This constructor get Context information
@@ -33,6 +34,7 @@ public class SaveSystem implements JsonInterface {
     public SaveSystem(Context con){
         this.context = con;
         this.list = new LinkedList<>();
+        setFirstSceneFromScenario();
     }
     @Override
     public List getScenarioList() {
@@ -89,7 +91,7 @@ public class SaveSystem implements JsonInterface {
 
     @Override
     public void setFirstSceneFromScenario() {
-
+        this.scenarioName = "first";
     }
 
     @Override
@@ -101,6 +103,11 @@ public class SaveSystem implements JsonInterface {
     public void setCurrentScenario(String scenario) {
         this.scenarie = scenario;
     }
+
+    /**
+     * This method get information from file
+     * @return String what contains data in file
+     */
     private String getStringFromScenariesFile(){
         String out = "";
         try {
