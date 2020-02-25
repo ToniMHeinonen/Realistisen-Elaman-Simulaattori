@@ -19,10 +19,10 @@ import muuttaa.myohemmin.realistisenelamansimulaattori.JsonInterface;
 import muuttaa.myohemmin.realistisenelamansimulaattori.R;
 
 public class SaveSystem implements JsonInterface {
-    private String FILENAME = "savedata.json";
     private Context context;
     private boolean debuggi = true;
     private List<String> list;
+    private String scenarie;
 
     /**
      * This constructor get Context information
@@ -37,7 +37,7 @@ public class SaveSystem implements JsonInterface {
     @Override
     public List getScenarioList() {
         list.clear();
-        String data = getStringFromFile();
+        String data = getStringFromScenariesFile();
         try {
             JSONObject base = new JSONObject(data);
             JSONArray help = base.getJSONArray("scenarios");
@@ -66,7 +66,25 @@ public class SaveSystem implements JsonInterface {
 
     @Override
     public String getJsonName() {
-        return null;
+        String out = "";
+        String data = getStringFromScenariesFile();
+        try {
+            JSONObject json = new JSONObject(data);
+            JSONArray array = json.getJSONArray("scenarioslist");
+            for(int lap=0; lap < array.length(); lap++){
+                JSONObject obj = array.getJSONObject(lap);
+                if(scenarie.equals(obj.getString("name"))){
+                    out = obj.getString("file");
+                    break;
+                }
+            }
+        } catch (JSONException e){
+            if(debuggi){
+                Log.e("JSON/SaveSystem", "Virhe muodostaessa json objektia");
+                e.printStackTrace();
+            }
+        }
+        return out;
     }
 
     @Override
@@ -81,9 +99,9 @@ public class SaveSystem implements JsonInterface {
 
     @Override
     public void setCurrentScenario(String scenario) {
-
+        this.scenarie = scenario;
     }
-    private String getStringFromFile(){
+    private String getStringFromScenariesFile(){
         String out = "";
         try {
             InputStream test = context.getResources().openRawResource(R.raw.savedata);

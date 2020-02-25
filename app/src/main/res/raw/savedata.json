@@ -1,3 +1,4 @@
 {
-  "scenarios": [ "Ford", "BMW", "Fiat" ]
+  "scenarios": [ "Ford", "BMW", "Fiat" ],
+  "scenarioslist": [{"name": "Ford","file": "ford.json"}, {"name": "BMW","file": "bmw.json"}, {"name": "Fiat","file": "fiat.json"}]
 }
