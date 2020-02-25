@@ -8,6 +8,6 @@ public interface JsonInterface {
     public String getPictureName();
     public String getJsonName();
     public void setFirstSceneFromScenario();
-    public void nextScene();
-    public void setCurrentScenario();
+    public void nextScene(String selectionAnswer);
+    public void setCurrentScenario(String scenario);
 }
