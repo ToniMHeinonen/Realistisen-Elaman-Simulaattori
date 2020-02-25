@@ -7,6 +7,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.util.LinkedList;
 import java.util.List;
 
 import muuttaa.myohemmin.realistisenelamansimulaattori.JsonInterface;
@@ -16,11 +17,20 @@ public class SaveSystem implements JsonInterface {
     private Context context;
     private boolean debuggi = true;
 
+    /**
+     * This constructor get Context information
+     * example:
+     * SaveSystem save = new SaveSystem(this);
+     * @param con activity
+     */
     public SaveSystem(Context con){
         this.context = con;
     }
     @Override
     public List getScenarioList() {
+        List<String> list = new LinkedList<>();
+        String data = getStringFromFile();
+
         return null;
     }
 
@@ -45,15 +55,14 @@ public class SaveSystem implements JsonInterface {
     }
 
     @Override
-    public void nextScene() {
+    public void nextScene(String selectionAnswer) {
 
     }
 
     @Override
-    public void setCurrentScenario() {
+    public void setCurrentScenario(String scenario) {
 
     }
-
     private void writeStringToFile(String in){
         try {
             FileOutputStream fos = context.openFileOutput(FILENAME, Context.MODE_PRIVATE);
