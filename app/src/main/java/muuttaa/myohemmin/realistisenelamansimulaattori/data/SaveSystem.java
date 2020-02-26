@@ -106,7 +106,18 @@ public class SaveSystem implements JsonInterface {
 
     @Override
     public String getQuestionFromScenario() {
-        return null;
+        String data = getStringFromSceneFile();
+        String out = "";
+        try {
+            JSONObject base = new JSONObject(data);
+            out = base.getJSONObject(this.scenarioName).getString("question");
+        } catch (JSONException e){
+            if(debuggi){
+                Log.e("ScenarioFile", "tiedostosta ei saati dataa");
+                e.printStackTrace();
+            }
+        }
+        return out;
     }
 
     /**
