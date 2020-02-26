@@ -130,4 +130,37 @@ public class SaveSystem implements JsonInterface {
         }
         return out;
     }
+
+    /**
+     * This method get information from scenario file
+     * @return string contains data from file
+     */
+    private String getStringFromSceneFile(){
+        String out = "";
+        String h1 = getJsonName();
+        String helpp = "";
+        for(int ind = 0; ind < (h1.length() - 5); ind++){
+            helpp += h1.charAt(ind);
+        }
+        try {
+            InputStream test = context.getResources().openRawResource(
+                    context.getResources().getIdentifier(helpp, "raw", context.getPackageName()));
+            BufferedReader br = new BufferedReader(new InputStreamReader(test));
+            String nextLine;
+            while ((nextLine = br.readLine()) != null) {
+                out += nextLine;
+            }
+        } catch (FileNotFoundException e){
+            if(debuggi){
+                Log.e("FILE/SaveSystem/get", "Tiedostoa ei löytynyt");
+                e.printStackTrace();
+            }
+        } catch (IOException e){
+            if(debuggi){
+                Log.e("FILE/SaveSystem/get", "kirjoituksessa ongelmaa");
+                e.printStackTrace();
+            }
+        }
+        return out;
+    }
 }
