@@ -104,6 +104,11 @@ public class SaveSystem implements JsonInterface {
         this.scenarie = scenario;
     }
 
+    @Override
+    public String getQuestionFromScenario() {
+        return null;
+    }
+
     /**
      * This method get information from file
      * @return String what contains data in file
