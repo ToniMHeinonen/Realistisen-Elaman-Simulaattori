@@ -63,7 +63,18 @@ public class SaveSystem implements JsonInterface {
 
     @Override
     public String getPictureName() {
-        return null;
+        String data = getStringFromSceneFile();
+        String out = null;
+        try {
+            JSONObject base = new JSONObject(data);
+            out = base.getJSONObject(this.scenarioName).getString("picture");
+        } catch (JSONException e){
+            if(debuggi){
+                Log.e("ScenarioFile", "tiedostosta ei saati dataa");
+                e.printStackTrace();
+            }
+        }
+        return out;
     }
 
     @Override
