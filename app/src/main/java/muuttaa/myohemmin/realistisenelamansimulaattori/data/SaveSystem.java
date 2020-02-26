@@ -58,7 +58,21 @@ public class SaveSystem implements JsonInterface {
 
     @Override
     public List getAnswersList() {
-        return null;
+        String data = getStringFromSceneFile();
+        List<String> list = new LinkedList<>();
+        try{
+            JSONObject base = new JSONObject(data);
+            JSONArray array = base.getJSONObject(this.scenarioName).getJSONArray("answers");
+            for(int lap=0; lap < array.length(); lap++){
+                list.add(array.getString(lap));
+            }
+        } catch (JSONException e){
+            if(debuggi){
+                Log.e("ScenarioFile", "tiedostosta ei saati dataa");
+                e.printStackTrace();
+            }
+        }
+        return list;
     }
 
     @Override
