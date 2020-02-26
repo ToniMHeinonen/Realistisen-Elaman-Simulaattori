@@ -24,6 +24,7 @@ public class SaveSystem implements JsonInterface {
     private List<String> list;
     private String scenarie;
     private String scenarioName;
+    private JSONObject rootInScenario;
 
     /**
      * This constructor get Context information
@@ -36,9 +37,27 @@ public class SaveSystem implements JsonInterface {
         this.list = new LinkedList<>();
         setFirstSceneFromScenario();
     }
+
+    /**
+     * This method create jsonObject if it is null (not contains already)
+     */
+    private void createJSONObjectOfScenario(){
+        if(rootInScenario == null){
+            String data = getStringFromSceneFile();
+            try {
+                this.rootInScenario = new JSONObject(data);
+            } catch (JSONException e){
+                if(debuggi){
+                    Log.e("ScenarioFile", "tiedostosta ei saati dataa");
+                    e.printStackTrace();
+                }
+            }
+        }
+    }
     @Override
     public List getScenarioList() {
         list.clear();
+        this.rootInScenario = null;
         String data = getStringFromScenariesFile();
         try {
             JSONObject base = new JSONObject(data);
@@ -58,10 +77,10 @@ public class SaveSystem implements JsonInterface {
 
     @Override
     public List getAnswersList() {
-        String data = getStringFromSceneFile();
+        createJSONObjectOfScenario();
         List<String> list = new LinkedList<>();
         try{
-            JSONObject base = new JSONObject(data);
+            JSONObject base = this.rootInScenario;
             JSONArray array = base.getJSONObject(this.scenarioName).getJSONArray("answers");
             for(int lap=0; lap < array.length(); lap++){
                 list.add(array.getString(lap));
@@ -77,10 +96,10 @@ public class SaveSystem implements JsonInterface {
 
     @Override
     public String getPictureName() {
-        String data = getStringFromSceneFile();
+        createJSONObjectOfScenario();
         String out = null;
         try {
-            JSONObject base = new JSONObject(data);
+            JSONObject base = this.rootInScenario;
             out = base.getJSONObject(this.scenarioName).getString("picture");
         } catch (JSONException e){
             if(debuggi){
@@ -121,9 +140,9 @@ public class SaveSystem implements JsonInterface {
 
     @Override
     public void nextScene(String selectionAnswer) {
-        String data = getStringFromSceneFile();
+        createJSONObjectOfScenario();
         try{
-            JSONObject base = new JSONObject(data);
+            JSONObject base = this.rootInScenario;
             this.scenarioName = base.getJSONObject(this.scenarioName).getString(selectionAnswer);
         } catch (JSONException e){
             if(debuggi){
@@ -140,10 +159,10 @@ public class SaveSystem implements JsonInterface {
 
     @Override
     public String getQuestionFromScenario() {
-        String data = getStringFromSceneFile();
+        createJSONObjectOfScenario();
         String out = "";
         try {
-            JSONObject base = new JSONObject(data);
+            JSONObject base = this.rootInScenario;
             out = base.getJSONObject(this.scenarioName).getString("question");
         } catch (JSONException e){
             if(debuggi){
