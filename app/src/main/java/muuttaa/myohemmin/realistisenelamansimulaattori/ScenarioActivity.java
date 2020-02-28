@@ -2,6 +2,7 @@ package muuttaa.myohemmin.realistisenelamansimulaattori;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import muuttaa.myohemmin.realistisenelamansimulaattori.data.SaveSystem;
@@ -9,6 +10,7 @@ import muuttaa.myohemmin.realistisenelamansimulaattori.data.SaveSystem;
 public class ScenarioActivity extends AppCompatActivity {
     private String scenario;
     private SaveSystem saveSystem;
+    private TextView questionTextView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,7 +22,10 @@ public class ScenarioActivity extends AppCompatActivity {
             saveSystem = new SaveSystem(this);
             saveSystem.setCurrentScenario(scenario);
             Log.d("ScenarioActivity", scenario);
+            questionTextView = (TextView) findViewById(R.id.question);
+            questionTextView.setText(saveSystem.getQuestionFromScenario());
         }
+    }
         /*
         Testing
 
@@ -32,5 +37,4 @@ public class ScenarioActivity extends AppCompatActivity {
         Log.d("ScenarioActivity", String.valueOf(save.getAnswersList()));   // [eka vastaus, ...]
         Log.d("ScenarioActivity", save.getPictureName());                   // kuva1
          */
-    }
 }
