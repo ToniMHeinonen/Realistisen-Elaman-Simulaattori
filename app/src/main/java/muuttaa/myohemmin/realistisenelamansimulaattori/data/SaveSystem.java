@@ -38,6 +38,10 @@ public class SaveSystem implements JsonInterface {
         setFirstSceneFromScenario();
     }
 
+    public String getCurrentScenario() {
+        return scenarie;
+    }
+
     /**
      * This method create jsonObject if it is null (not contains already)
      */

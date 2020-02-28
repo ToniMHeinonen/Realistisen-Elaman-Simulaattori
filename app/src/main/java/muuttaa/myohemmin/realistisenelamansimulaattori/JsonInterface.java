@@ -11,4 +11,5 @@ public interface JsonInterface {
     public void nextScene(String selectionAnswer);
     public void setCurrentScenario(String scenario);
     public String getQuestionFromScenario();
+    public String getCurrentScenario();
 }
