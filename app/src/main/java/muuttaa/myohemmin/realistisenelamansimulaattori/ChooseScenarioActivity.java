@@ -1,6 +1,7 @@
 package muuttaa.myohemmin.realistisenelamansimulaattori;
 
 import androidx.appcompat.app.AppCompatActivity;
+import muuttaa.myohemmin.realistisenelamansimulaattori.data.SaveSystem;
 
 import android.os.Bundle;
 import android.view.View;
@@ -10,8 +11,11 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class ChooseScenarioActivity extends AppCompatActivity {
+
+    JsonInterface json = new SaveSystem(this);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,21 +23,15 @@ public class ChooseScenarioActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         final ListView list = findViewById(R.id.list);
-        ArrayList<String> arrayList = new ArrayList<>();
-        arrayList.add("JAVA");
-        arrayList.add("ANDROID");
-        arrayList.add("C Language");
-        arrayList.add("CPP Language");
-        arrayList.add("Go Language");
-        arrayList.add("AVN SYSTEMS");
+        List<String> scenarios = json.getScenarioList();
         ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this,
-                android.R.layout.simple_list_item_1, arrayList);
+                android.R.layout.simple_list_item_1, scenarios);
         list.setAdapter(arrayAdapter);
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 String clickedItem=(String) list.getItemAtPosition(position);
-                Toast.makeText(ChooseScenarioActivity.this,clickedItem,Toast.LENGTH_LONG).show();
+                json.setCurrentScenario(clickedItem);
             }
         });
     }
