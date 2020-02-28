@@ -22,10 +22,18 @@ public class ChooseScenarioActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        setupScenarioList();
+    }
+
+    /**
+     * Loads scenario list from json and displays values as list.
+     * Sets current scenario to the clicked value.
+     */
+    private void setupScenarioList() {
         final ListView list = findViewById(R.id.list);
         List<String> scenarios = json.getScenarioList();
         ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this,
-                android.R.layout.simple_list_item_1, scenarios);
+                R.layout.scenario_item, scenarios);
         list.setAdapter(arrayAdapter);
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
