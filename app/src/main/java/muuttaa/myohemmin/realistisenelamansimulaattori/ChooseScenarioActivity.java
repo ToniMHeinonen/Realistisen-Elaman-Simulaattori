@@ -8,9 +8,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.Toast;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class ChooseScenarioActivity extends AppCompatActivity {
@@ -32,7 +30,7 @@ public class ChooseScenarioActivity extends AppCompatActivity {
     private void setupScenarioList() {
         final ListView list = findViewById(R.id.list);
         List<String> scenarios = json.getScenarioList();
-        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this,
+        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<>(this,
                 R.layout.scenario_item, scenarios);
         list.setAdapter(arrayAdapter);
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
