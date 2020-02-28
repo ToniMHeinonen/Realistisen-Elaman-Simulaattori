@@ -48,6 +48,7 @@ public class ChooseScenarioActivity extends AppCompatActivity {
      */
     public void clicked(View v) {
         Intent intent = new Intent(this, ScenarioActivity.class);
+        intent.putExtra("scenario", json.getCurrentScenario());
         startActivity(intent);
     }
 }

@@ -7,12 +7,20 @@ import androidx.appcompat.app.AppCompatActivity;
 import muuttaa.myohemmin.realistisenelamansimulaattori.data.SaveSystem;
 
 public class ScenarioActivity extends AppCompatActivity {
+    private String scenario;
+    private SaveSystem saveSystem;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_scenario);
-
+        Bundle extras = getIntent().getExtras();
+        if (extras != null) {
+            scenario = extras.getString("scenario");
+            saveSystem = new SaveSystem(this);
+            saveSystem.setCurrentScenario(scenario);
+            Log.d("ScenarioActivity", scenario);
+        }
         /*
         Testing
 
