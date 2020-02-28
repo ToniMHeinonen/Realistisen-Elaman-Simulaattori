@@ -11,8 +11,6 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import java.util.List;
-import android.view.View;
-import android.widget.Button;
 
 public class ChooseScenarioActivity extends AppCompatActivity {
 
