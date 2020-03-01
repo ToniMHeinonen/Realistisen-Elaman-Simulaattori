@@ -38,7 +38,9 @@ public class ChooseScenarioActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 String clickedItem=(String) list.getItemAtPosition(position);
-                json.setCurrentScenario(clickedItem);
+                Intent intent = new Intent(ChooseScenarioActivity.this, ScenarioActivity.class);
+                intent.putExtra("scenario", clickedItem);
+                startActivity(intent);
             }
         });
     }
@@ -47,8 +49,6 @@ public class ChooseScenarioActivity extends AppCompatActivity {
     For testing ScenarioActivity-class. Works only with BMW for now.
      */
     public void clicked(View v) {
-        Intent intent = new Intent(this, ScenarioActivity.class);
-        intent.putExtra("scenario", json.getCurrentScenario());
-        startActivity(intent);
+
     }
 }
