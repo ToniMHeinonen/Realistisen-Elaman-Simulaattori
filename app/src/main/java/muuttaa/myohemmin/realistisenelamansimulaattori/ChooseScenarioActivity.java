@@ -44,11 +44,4 @@ public class ChooseScenarioActivity extends AppCompatActivity {
             }
         });
     }
-
-    /*
-    For testing ScenarioActivity-class. Works only with BMW for now.
-     */
-    public void clicked(View v) {
-
-    }
 }
