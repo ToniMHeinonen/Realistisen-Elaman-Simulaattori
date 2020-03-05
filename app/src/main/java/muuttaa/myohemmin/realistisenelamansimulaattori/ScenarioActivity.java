@@ -38,7 +38,7 @@ public class ScenarioActivity extends AppCompatActivity {
         final ListView list = findViewById(R.id.answers);
         List<String> answersList = saveSystem.getAnswersList();
         final ArrayAdapter<String> arrayAdapter = new ArrayAdapter<>(this,
-                R.layout.scenario_item, answersList);
+                R.layout.scenario_answers, answersList);
         list.setAdapter(arrayAdapter);
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
