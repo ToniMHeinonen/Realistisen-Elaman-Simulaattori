@@ -5,5 +5,6 @@
     android:padding="10dp"
     android:id="@+id/myTextView"
     android:textSize="35sp"
-    android:textAlignment="center">
+    android:textAlignment="center"
+    android:background="@drawable/answer_button">
 </TextView>

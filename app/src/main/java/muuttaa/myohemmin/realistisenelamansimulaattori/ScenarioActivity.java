@@ -1,6 +1,8 @@
 package muuttaa.myohemmin.realistisenelamansimulaattori;
 
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.os.Handler;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
@@ -42,16 +44,22 @@ public class ScenarioActivity extends AppCompatActivity {
         list.setAdapter(arrayAdapter);
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                String clickedItem = (String) list.getItemAtPosition(position);
-                Log.d("ScenarioActivity", clickedItem);
-                saveSystem.nextScene(clickedItem);
-                Log.d("ScenarioActivity", String.valueOf(saveSystem.getAnswersList()));
-                Log.d("ScenarioActivity", saveSystem.getCurrentScenario());
-                questionTextView.setText(saveSystem.getQuestionFromScenario());
-                arrayAdapter.clear();
-                arrayAdapter.addAll(saveSystem.getAnswersList());
-                arrayAdapter.notifyDataSetChanged();
+            public void onItemClick(AdapterView<?> parent, final View view, final int position, long id) {
+                view.setBackgroundResource(R.drawable.answer_correct);
+                // Pause 1 second, then do the run-method.
+                Handler handler = new Handler();
+                handler.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        view.setBackgroundResource(R.drawable.answer_button);
+                        String clickedItem = (String) list.getItemAtPosition(position);
+                        saveSystem.nextScene(clickedItem);
+                        questionTextView.setText(saveSystem.getQuestionFromScenario());
+                        arrayAdapter.clear();
+                        arrayAdapter.addAll(saveSystem.getAnswersList());
+                        arrayAdapter.notifyDataSetChanged();
+                    }
+                }, 1000);
             }
         });
     }

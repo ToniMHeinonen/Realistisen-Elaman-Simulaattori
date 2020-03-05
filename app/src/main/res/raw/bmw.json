@@ -42,7 +42,7 @@
     "Ehkä": "first"
   },
   "second3": {
-    "question": "Onko mukavaa?",
+    "question": "Eikö ole kivaa?",
     "picture": "kuva1",
     "answers": [
       "On",
@@ -56,7 +56,7 @@
     "Ehkä": "first"
   },
   "second4": {
-    "question": "Onko mukavaa?",
+    "question": "Eikö ole mukavaa?",
     "picture": "kuva1",
     "answers": [
       "On",
