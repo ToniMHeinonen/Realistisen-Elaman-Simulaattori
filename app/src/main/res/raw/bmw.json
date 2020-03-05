@@ -1,3 +1,72 @@
-{"first": {"question": "Mika on kaupunki?", "picture": "kuva1", "answers": ["eka vastaus", "toka vastaus", "kolmas vastaus", "neljäs vastaus"],
-  "eka vastaus": "toka", "toka vastaus": "kolmas", "kolmas vastaus": "neljas", "neljäs vastaus": "viides"
-}}
+{
+  "first": {
+    "question": "Mika on kaupunki?",
+    "picture": "kuva1",
+    "answers": [
+      "eka vastaus",
+      "toka vastaus",
+      "kolmas vastaus",
+      "neljäs vastaus"
+    ],
+    "eka vastaus": "second1",
+    "toka vastaus": "second2",
+    "kolmas vastaus": "second3",
+    "neljäs vastaus": "second4"
+  },
+  "second1": {
+    "question": "Onko kivaa?",
+    "picture": "kuva1",
+    "answers": [
+      "On",
+      "Ei",
+      "En tiedä",
+      "Ehkä"
+    ],
+    "On": "first",
+    "Ei": "first",
+    "En tiedä": "first",
+    "Ehkä": "first"
+  },
+  "second2": {
+    "question": "Onko mukavaa?",
+    "picture": "kuva1",
+    "answers": [
+      "On",
+      "Ei",
+      "En tiedä",
+      "Ehkä"
+    ],
+    "On": "first",
+    "Ei": "first",
+    "En tiedä": "first",
+    "Ehkä": "first"
+  },
+  "second3": {
+    "question": "Onko mukavaa?",
+    "picture": "kuva1",
+    "answers": [
+      "On",
+      "Ei",
+      "En tiedä",
+      "Ehkä"
+    ],
+    "On": "first",
+    "Ei": "first",
+    "En tiedä": "first",
+    "Ehkä": "first"
+  },
+  "second4": {
+    "question": "Onko mukavaa?",
+    "picture": "kuva1",
+    "answers": [
+      "On",
+      "Ei",
+      "En tiedä",
+      "Ehkä"
+    ],
+    "On": "first",
+    "Ei": "first",
+    "En tiedä": "first",
+    "Ehkä": "first"
+  }
+}

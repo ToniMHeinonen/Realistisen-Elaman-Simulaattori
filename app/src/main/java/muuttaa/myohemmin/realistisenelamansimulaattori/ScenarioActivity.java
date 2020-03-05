@@ -37,7 +37,7 @@ public class ScenarioActivity extends AppCompatActivity {
     private void setupAnswers() {
         final ListView list = findViewById(R.id.answers);
         List<String> answersList = saveSystem.getAnswersList();
-        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<>(this,
+        final ArrayAdapter<String> arrayAdapter = new ArrayAdapter<>(this,
                 R.layout.scenario_item, answersList);
         list.setAdapter(arrayAdapter);
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -45,6 +45,13 @@ public class ScenarioActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 String clickedItem = (String) list.getItemAtPosition(position);
                 Log.d("ScenarioActivity", clickedItem);
+                saveSystem.nextScene(clickedItem);
+                Log.d("ScenarioActivity", String.valueOf(saveSystem.getAnswersList()));
+                Log.d("ScenarioActivity", saveSystem.getCurrentScenario());
+                questionTextView.setText(saveSystem.getQuestionFromScenario());
+                arrayAdapter.clear();
+                arrayAdapter.addAll(saveSystem.getAnswersList());
+                arrayAdapter.notifyDataSetChanged();
             }
         });
     }
