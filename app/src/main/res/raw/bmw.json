@@ -13,7 +13,11 @@
     "eka vastaus": "second1",
     "toka vastaus": "second2",
     "kolmas vastaus": "second3",
-    "neljäs vastaus": "second4"
+    "neljäs vastaus": "second4",
+    "eka vastausColor": "red",
+    "toka vastausColor": "yellow",
+    "kolmas vastausColor": "green",
+    "neljäs vastausColor": "green"
   },
   "second1": {
     "question": "Onko kivaa?",
@@ -29,7 +33,11 @@
     "On": "first",
     "Ei": "first",
     "En tiedä": "first",
-    "Ehkä": "first"
+    "Ehkä": "first",
+    "OnColor": "green",
+    "EiColor": "red",
+    "En tiedäColor": "yellow",
+    "EhkäColor": "red"
   },
   "second2": {
     "question": "Onko mukavaa?",
@@ -45,7 +53,11 @@
     "On": "first",
     "Ei": "first",
     "En tiedä": "first",
-    "Ehkä": "first"
+    "Ehkä": "first",
+    "OnColor": "red",
+    "EiColor": "red",
+    "En tiedäColor": "red",
+    "EhkäColor": "red"
   },
   "second3": {
     "question": "Eikö ole kivaa?",
@@ -61,7 +73,11 @@
     "On": "first",
     "Ei": "first",
     "En tiedä": "first",
-    "Ehkä": "first"
+    "Ehkä": "first",
+    "OnColor": "red",
+    "EiColor": "red",
+    "En tiedäColor": "red",
+    "EhkäColor": "red"
   },
   "second4": {
     "question": "Eikö ole mukavaa?",
@@ -77,6 +93,10 @@
     "On": "first",
     "Ei": "first",
     "En tiedä": "first",
-    "Ehkä": "first"
+    "Ehkä": "first",
+    "OnColor": "red",
+    "EiColor": "red",
+    "En tiedäColor": "red",
+    "EhkäColor": "red"
   }
 }

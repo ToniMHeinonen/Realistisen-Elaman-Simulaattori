@@ -12,8 +12,10 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Objects;
 
 import muuttaa.myohemmin.realistisenelamansimulaattori.JsonInterface;
 import muuttaa.myohemmin.realistisenelamansimulaattori.R;
@@ -94,6 +96,31 @@ public class SaveSystem implements JsonInterface {
     @Override
     public boolean endOfScenario() {
         return run;
+    }
+
+    @Override
+    public List getColorsInString() {
+        List listaus = getAnswersList();
+        //convert object list to String list
+        List<String> strings = new ArrayList<>(listaus.size());
+        for (Object object : listaus) {
+            strings.add(object != null ? object.toString() : null);
+        }
+        createJSONObjectOfScenario();
+        List<String> list = new LinkedList<>();
+        try{
+            JSONObject base = this.rootInScenario.getJSONObject(this.scenarioName);
+            for(int lap=0; lap < listaus.size(); lap++){
+                String sana = strings.get(lap);
+                list.add(base.getString(sana + "Color"));
+            }
+        } catch (JSONException e){
+            if(debuggi){
+                Log.e("ScenarioFile", "tiedostosta ei saati dataa");
+                e.printStackTrace();
+            }
+        }
+        return list;
     }
 
     /**

@@ -1,3 +1,4 @@
 {"first": {"question": "Mika on Ford?", "background": "kuva1", "person": "kuva2", "face": "kuva3", "answers": ["eka vastaus", "toka vastaus", "kolmas vastaus", "neljäs vastaus"],
-  "eka vastaus": "null", "toka vastaus": "null", "kolmas vastaus": "null", "neljäs vastaus": "null"
+  "eka vastaus": "null", "toka vastaus": "null", "kolmas vastaus": "null", "neljäs vastaus": "null",
+  "eka vastausColor": "red", "toka vastausColor": "red", "kolmas vastausColor": "green", "neljäs vastausColor": "red"
 }}

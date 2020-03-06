@@ -15,4 +15,5 @@ public interface JsonInterface {
     public String getPersonPicture();
     public String getFacePicture();
     public boolean endOfScenario();
+    public List getColorsInString();
 }
