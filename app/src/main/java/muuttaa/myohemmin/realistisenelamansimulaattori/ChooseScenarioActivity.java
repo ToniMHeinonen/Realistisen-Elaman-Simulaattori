@@ -36,6 +36,9 @@ public class ChooseScenarioActivity extends AppCompatActivity {
         showScenarioList();
     }
 
+    /**
+     * Loads scenarios from json and creates ScenarioItem objects from them.
+     */
     private void loadScenarios() {
         List<String> scenarioNames = json.getScenarioList();
 
@@ -45,7 +48,7 @@ public class ChooseScenarioActivity extends AppCompatActivity {
     }
 
     /**
-     * Loads scenario list from json and displays values as list.
+     * Displays scenario items in a list.
      */
     private void showScenarioList() {
         final ListView list = findViewById(R.id.list);
@@ -53,14 +56,18 @@ public class ChooseScenarioActivity extends AppCompatActivity {
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                String clickedItem=(String) list.getItemAtPosition(position);
+                ScenarioItem clickedItem = (ScenarioItem) list.getItemAtPosition(position);
+                String name = clickedItem.getName();
                 Intent intent = new Intent(ChooseScenarioActivity.this, ScenarioActivity.class);
-                intent.putExtra("scenario", clickedItem);
+                intent.putExtra("scenario", name);
                 startActivity(intent);
             }
         });
     }
 
+    /**
+     * Adds sort item selected listener to sort Spinner and sorts list items desirably.
+     */
     private void setupSorting() {
         Spinner sort = findViewById(R.id.sort);
         // Create an ArrayAdapter using the string array and a default spinner layout
@@ -109,6 +116,10 @@ public class ChooseScenarioActivity extends AppCompatActivity {
         });
     }
 
+    /**
+     * Moves to Settings Activity.
+     * @param v settings button
+     */
     public void settingsClick(View v) {
 
     }

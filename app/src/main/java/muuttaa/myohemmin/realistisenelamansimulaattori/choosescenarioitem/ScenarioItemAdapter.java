@@ -21,21 +21,42 @@ public class ScenarioItemAdapter extends BaseAdapter {
         layoutInflater = LayoutInflater.from(aContext);
     }
 
+    /**
+     * Returns the size of the list.
+     * @return size of the list
+     */
     @Override
     public int getCount() {
         return listData.size();
     }
 
+    /**
+     * Returns item at index.
+     * @param position index
+     * @return item at index
+     */
     @Override
     public Object getItem(int position) {
         return listData.get(position);
     }
 
+    /**
+     * Returns given position as a long for some reason.
+     * @param position index
+     * @return given position as long
+     */
     @Override
     public long getItemId(int position) {
         return position;
     }
 
+    /**
+     * Inflates view with correct data.
+     * @param position index of item
+     * @param convertView converted view
+     * @param parent parent object
+     * @return converted view
+     */
     public View getView(int position, View convertView, ViewGroup parent) {
         ViewHolder holder;
         if (convertView == null) {
@@ -53,6 +74,9 @@ public class ScenarioItemAdapter extends BaseAdapter {
         return convertView;
     }
 
+    /**
+     * Holds values for views of ScenarioItem.
+     */
     static class ViewHolder {
         TextView txtScenarioName;
         TextView txtScenarioPercentage;
