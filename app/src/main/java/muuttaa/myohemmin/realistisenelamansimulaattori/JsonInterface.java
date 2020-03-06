@@ -14,4 +14,5 @@ public interface JsonInterface {
     public String getBackgroundPicture();
     public String getPersonPicture();
     public String getFacePicture();
+    public boolean endOfScenario();
 }

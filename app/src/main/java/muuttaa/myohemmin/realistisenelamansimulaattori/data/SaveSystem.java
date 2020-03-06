@@ -25,6 +25,7 @@ public class SaveSystem implements JsonInterface {
     private String scenarie;
     private String scenarioName;
     private JSONObject rootInScenario;
+    private boolean run = false;
 
     /**
      * This constructor get Context information
@@ -88,6 +89,11 @@ public class SaveSystem implements JsonInterface {
             }
         }
         return out;
+    }
+
+    @Override
+    public boolean endOfScenario() {
+        return run;
     }
 
     /**
@@ -172,6 +178,7 @@ public class SaveSystem implements JsonInterface {
     @Override
     public void setFirstSceneFromScenario() {
         this.scenarioName = "first";
+        this.run = false;
     }
 
     @Override
@@ -180,6 +187,9 @@ public class SaveSystem implements JsonInterface {
         try{
             JSONObject base = this.rootInScenario;
             this.scenarioName = base.getJSONObject(this.scenarioName).getString(selectionAnswer);
+            if(this.scenarioName.equals("null")){
+                this.run = true;
+            }
         } catch (JSONException e){
             if(debuggi){
                 Log.e("ScenarioFile", "tiedostosta ei saati dataa");
