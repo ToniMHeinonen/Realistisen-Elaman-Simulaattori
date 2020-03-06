@@ -1,6 +1,8 @@
-package muuttaa.myohemmin.realistisenelamansimulaattori;
+package muuttaa.myohemmin.realistisenelamansimulaattori.choosescenarioitem;
 
 import java.util.Date;
+
+import muuttaa.myohemmin.realistisenelamansimulaattori.Debug;
 
 public class ScenarioItem {
 

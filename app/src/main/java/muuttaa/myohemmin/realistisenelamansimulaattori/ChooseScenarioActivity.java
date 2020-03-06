@@ -2,6 +2,9 @@ package muuttaa.myohemmin.realistisenelamansimulaattori;
 
 import androidx.appcompat.app.AppCompatActivity;
 import muuttaa.myohemmin.realistisenelamansimulaattori.data.SaveSystem;
+import muuttaa.myohemmin.realistisenelamansimulaattori.choosescenarioitem.ScenarioItem;
+import muuttaa.myohemmin.realistisenelamansimulaattori.choosescenarioitem.ScenarioItemAdapter;
+import muuttaa.myohemmin.realistisenelamansimulaattori.choosescenarioitem.ScenarioItemPrefs;
 
 import android.content.Intent;
 import android.os.Bundle;
