@@ -5,7 +5,7 @@ import android.content.SharedPreferences;
 
 import java.util.Date;
 
-public abstract class StoredPreferences {
+public abstract class ScenarioItemPrefs {
     private static SharedPreferences prefs;
 
     private static final String keyPrefs = "RLS_prefs";
