@@ -44,4 +44,12 @@ public class ChooseScenarioActivity extends AppCompatActivity {
             }
         });
     }
+
+    public void sortClick(View v) {
+
+    }
+
+    public void settingsClick(View v) {
+
+    }
 }

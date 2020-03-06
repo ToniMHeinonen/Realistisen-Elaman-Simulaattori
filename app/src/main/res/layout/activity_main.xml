@@ -6,6 +6,27 @@
     android:orientation = "vertical"
     tools:context=".ChooseScenarioActivity">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:onClick="sortClick"
+            android:text="Sort" />
+
+        <Button
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:onClick="settingsClick"
+            android:text="Settings" />
+    </LinearLayout>
+
     <ListView
         android:id = "@+id/list"
         android:layout_width = "match_parent"
