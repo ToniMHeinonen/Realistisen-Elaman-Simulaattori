@@ -10,6 +10,8 @@ public class ScenarioItem {
 
     public ScenarioItem(String name) {
         this.name = name;
+        this.lastTimePlayed = StoredPreferences.loadLastTimePlayed(name);
+        this.percentageCompleted = StoredPreferences.loadPercentage(name);
     }
 
     public String getName() {
