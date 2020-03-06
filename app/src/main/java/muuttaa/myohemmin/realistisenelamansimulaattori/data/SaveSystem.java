@@ -42,6 +42,54 @@ public class SaveSystem implements JsonInterface {
         return scenarie;
     }
 
+    @Override
+    public String getBackgroundPicture() {
+        createJSONObjectOfScenario();
+        String out = null;
+        try {
+            JSONObject base = this.rootInScenario;
+            out = base.getJSONObject(this.scenarioName).getString("background");
+        } catch (JSONException e){
+            if(debuggi){
+                Log.e("ScenarioFile", "tiedostosta ei saati dataa");
+                e.printStackTrace();
+            }
+        }
+        return out;
+    }
+
+    @Override
+    public String getPersonPicture() {
+        createJSONObjectOfScenario();
+        String out = null;
+        try {
+            JSONObject base = this.rootInScenario;
+            out = base.getJSONObject(this.scenarioName).getString("person");
+        } catch (JSONException e){
+            if(debuggi){
+                Log.e("ScenarioFile", "tiedostosta ei saati dataa");
+                e.printStackTrace();
+            }
+        }
+        return out;
+    }
+
+    @Override
+    public String getFacePicture() {
+        createJSONObjectOfScenario();
+        String out = null;
+        try {
+            JSONObject base = this.rootInScenario;
+            out = base.getJSONObject(this.scenarioName).getString("face");
+        } catch (JSONException e){
+            if(debuggi){
+                Log.e("ScenarioFile", "tiedostosta ei saati dataa");
+                e.printStackTrace();
+            }
+        }
+        return out;
+    }
+
     /**
      * This method create jsonObject if it is null (not contains already)
      */
@@ -96,22 +144,6 @@ public class SaveSystem implements JsonInterface {
             }
         }
         return list;
-    }
-
-    @Override
-    public String getPictureName() {
-        createJSONObjectOfScenario();
-        String out = null;
-        try {
-            JSONObject base = this.rootInScenario;
-            out = base.getJSONObject(this.scenarioName).getString("picture");
-        } catch (JSONException e){
-            if(debuggi){
-                Log.e("ScenarioFile", "tiedostosta ei saati dataa");
-                e.printStackTrace();
-            }
-        }
-        return out;
     }
 
     @Override

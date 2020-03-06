@@ -1,7 +1,9 @@
 {
   "first": {
     "question": "Mika on kaupunki?",
-    "picture": "kuva1",
+    "background": "kuva1",
+    "person": "kuva2",
+    "face": "kuva3",
     "answers": [
       "eka vastaus",
       "toka vastaus",
@@ -15,7 +17,9 @@
   },
   "second1": {
     "question": "Onko kivaa?",
-    "picture": "kuva1",
+    "background": "kuva1",
+    "person": "kuva2",
+    "face": "kuva3",
     "answers": [
       "On",
       "Ei",
@@ -29,7 +33,9 @@
   },
   "second2": {
     "question": "Onko mukavaa?",
-    "picture": "kuva1",
+    "background": "kuva1",
+    "person": "kuva2",
+    "face": "kuva3",
     "answers": [
       "On",
       "Ei",
@@ -43,7 +49,9 @@
   },
   "second3": {
     "question": "Eikö ole kivaa?",
-    "picture": "kuva1",
+    "background": "kuva1",
+    "person": "kuva2",
+    "face": "kuva3",
     "answers": [
       "On",
       "Ei",
@@ -57,7 +65,9 @@
   },
   "second4": {
     "question": "Eikö ole mukavaa?",
-    "picture": "kuva1",
+    "background": "kuva1",
+    "person": "kuva2",
+    "face": "kuva3",
     "answers": [
       "On",
       "Ei",
