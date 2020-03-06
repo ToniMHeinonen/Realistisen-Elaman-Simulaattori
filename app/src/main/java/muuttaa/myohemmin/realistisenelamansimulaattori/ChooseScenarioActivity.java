@@ -19,7 +19,7 @@ import java.util.List;
 public class ChooseScenarioActivity extends AppCompatActivity {
 
     JsonInterface json = new SaveSystem(this);
-    ArrayList<ScenarioItem> scenarios;
+    ArrayList<ScenarioItem> scenarios = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +27,7 @@ public class ChooseScenarioActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         ScenarioItemPrefs.initialize(this);
+        loadScenarios();
 
         setupSorting();
         showScenarioList();
@@ -45,9 +46,7 @@ public class ChooseScenarioActivity extends AppCompatActivity {
      */
     private void showScenarioList() {
         final ListView list = findViewById(R.id.list);
-        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<>(this,
-                R.layout.scenario_item, scenarios);
-        list.setAdapter(arrayAdapter);
+        list.setAdapter(new ScenarioItemAdapter(this, scenarios));
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {

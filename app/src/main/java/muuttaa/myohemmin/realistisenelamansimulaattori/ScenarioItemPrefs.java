@@ -17,8 +17,12 @@ public abstract class ScenarioItemPrefs {
     }
 
     public static void savePercentage(String scenario, int percentage) {
-        prefs.edit().putInt(keyPercentage + scenario, percentage);
-        prefs.edit().commit();
+        SharedPreferences.Editor editor = prefs.edit();
+        Debug.print("ScenarioItemPrefs", "savePercentage",
+                "scenario: " + scenario + " percentage: " + percentage, 1);
+
+        editor.putInt(keyPercentage + scenario, percentage);
+        editor.commit();
     }
 
     public static int loadPercentage(String scenario) {
@@ -26,12 +30,13 @@ public abstract class ScenarioItemPrefs {
     }
 
     public static void saveLastTimePlayed(String scenario) {
+        SharedPreferences.Editor editor = prefs.edit();
         // Get current time and convert to long
         Date date = new Date();
         long millis = date.getTime();
 
-        prefs.edit().putLong(keyRecent + scenario, millis);
-        prefs.edit().commit();
+        editor.putLong(keyRecent + scenario, millis);
+        editor.commit();
     }
 
     public static Date loadLastTimePlayed(String scenario) {

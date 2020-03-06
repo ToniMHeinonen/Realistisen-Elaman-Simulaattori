@@ -12,6 +12,7 @@ public class ScenarioItem {
         this.name = name;
         this.lastTimePlayed = ScenarioItemPrefs.loadLastTimePlayed(name);
         this.percentageCompleted = ScenarioItemPrefs.loadPercentage(name);
+        Debug.print("ScenarioItem", "()", this.toString(), 1);
     }
 
     public String getName() {
