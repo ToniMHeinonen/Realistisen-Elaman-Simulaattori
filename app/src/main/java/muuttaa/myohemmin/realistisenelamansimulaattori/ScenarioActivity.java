@@ -44,8 +44,9 @@ public class ScenarioActivity extends AppCompatActivity {
         list.setAdapter(arrayAdapter);
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> parent, final View view, final int position, long id) {
+            public void onItemClick(final AdapterView<?> parent, final View view, final int position, long id) {
                 view.setBackgroundResource(R.drawable.answer_correct);
+                list.setEnabled(false);
                 // Pause 1 second, then do the run-method.
                 Handler handler = new Handler();
                 handler.postDelayed(new Runnable() {
@@ -58,6 +59,7 @@ public class ScenarioActivity extends AppCompatActivity {
                         arrayAdapter.clear();
                         arrayAdapter.addAll(saveSystem.getAnswersList());
                         arrayAdapter.notifyDataSetChanged();
+                        list.setEnabled(true);
                     }
                 }, 1000);
             }
