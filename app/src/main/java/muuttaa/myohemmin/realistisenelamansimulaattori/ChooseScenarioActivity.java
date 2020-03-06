@@ -61,6 +61,9 @@ public class ChooseScenarioActivity extends AppCompatActivity {
                 Intent intent = new Intent(ChooseScenarioActivity.this, ScenarioActivity.class);
                 intent.putExtra("scenario", name);
                 startActivity(intent);
+
+                // Change date of last time played for this scenario
+                ScenarioItemPrefs.saveLastTimePlayed(name);
             }
         });
     }
@@ -94,7 +97,7 @@ public class ChooseScenarioActivity extends AppCompatActivity {
                 } else if (sortBy.equals(getResources().getString(R.string.sort_recent))) {
                     Collections.sort(scenarios, new Comparator<ScenarioItem>() {
                         public int compare(ScenarioItem o1, ScenarioItem o2) {
-                            return o1.getLastTimePlayed().compareTo(o2.getLastTimePlayed());
+                            return o2.getLastTimePlayed().compareTo(o1.getLastTimePlayed());
                         }
                     });
                 } else if (sortBy.equals(getResources().getString(R.string.sort_percentage))) {
