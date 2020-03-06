@@ -16,6 +16,11 @@ public class ScenarioItemAdapter extends BaseAdapter {
     private ArrayList<ScenarioItem> listData;
     private LayoutInflater layoutInflater;
 
+    /**
+     * Initializes scenario item adapter.
+     * @param aContext activity context
+     * @param listData list of Scenario Items
+     */
     public ScenarioItemAdapter(Context aContext, ArrayList<ScenarioItem> listData) {
         this.listData = listData;
         layoutInflater = LayoutInflater.from(aContext);
