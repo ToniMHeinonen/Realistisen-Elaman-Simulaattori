@@ -16,6 +16,7 @@ import java.util.List;
 public class ChooseScenarioActivity extends AppCompatActivity {
 
     JsonInterface json = new SaveSystem(this);
+    List<String> scenarios;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,16 +24,15 @@ public class ChooseScenarioActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         setupSorting();
-        setupScenarioList();
+        scenarios = json.getScenarioList();
+        showScenarioList();
     }
 
     /**
      * Loads scenario list from json and displays values as list.
-     * Sets current scenario to the clicked value.
      */
-    private void setupScenarioList() {
+    private void showScenarioList() {
         final ListView list = findViewById(R.id.list);
-        List<String> scenarios = json.getScenarioList();
         ArrayAdapter<String> arrayAdapter = new ArrayAdapter<>(this,
                 R.layout.scenario_item, scenarios);
         list.setAdapter(arrayAdapter);
@@ -60,12 +60,24 @@ public class ChooseScenarioActivity extends AppCompatActivity {
         sort.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                System.out.println("Sort item selected");
+                String sortBy = (String) parent.getItemAtPosition(position);
+
+                if (sortBy.equals(getResources().getString(R.string.sort_name))) {
+                    Debug.print("OnItemSelectedListener", "onItemSelected",
+                            "sort_name", 2);
+                    java.util.Collections.sort(scenarios);
+                    showScenarioList();
+                } else if (sortBy.equals(getResources().getString(R.string.sort_recent))) {
+
+                } else if (sortBy.equals(getResources().getString(R.string.sort_percentage))) {
+
+                }
             }
 
             @Override
             public void onNothingSelected(AdapterView<?> parent) {
-                System.out.println("Nothing selected");
+                Debug.print("OnItemSelectedListener", "onNothingSelected",
+                        "", 2);
             }
         });
     }

@@ -1,9 +1,13 @@
 <resources>
     <string name="app_name">Realistisen Elaman Simulaattori</string>
 
+    <!-- SORTING -->
+    <string name="sort_name">Name</string>
+    <string name="sort_recent">Recent</string>
+    <string name="sort_percentage">Percentage</string>
     <string-array name="scenario_sort">
-        <item>Name</item>
-        <item>Recent</item>
-        <item>Percentage</item>
+        <item>@string/sort_name</item>
+        <item>@string/sort_recent</item>
+        <item>@string/sort_percentage</item>
     </string-array>
 </resources>
