@@ -6,5 +6,5 @@
     android:id="@+id/myTextView"
     android:textSize="35sp"
     android:textAlignment="center"
-    android:background="@drawable/answer_button">
+    android:background="@drawable/button_default">
 </TextView>
