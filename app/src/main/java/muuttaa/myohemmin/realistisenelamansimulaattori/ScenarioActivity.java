@@ -1,9 +1,7 @@
 package muuttaa.myohemmin.realistisenelamansimulaattori;
 
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.os.Handler;
-import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -19,6 +17,7 @@ public class ScenarioActivity extends AppCompatActivity {
     private String scenario;
     private SaveSystem saveSystem;
     private TextView questionTextView;
+    private List<String> colors;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,9 +28,9 @@ public class ScenarioActivity extends AppCompatActivity {
             scenario = extras.getString("scenario");
             saveSystem = new SaveSystem(this);
             saveSystem.setCurrentScenario(scenario);
-            Log.d("ScenarioActivity", scenario);
             questionTextView = findViewById(R.id.question);
             questionTextView.setText(saveSystem.getQuestionFromScenario());
+            colors = saveSystem.getColorsInString();
             setupAnswers();
         }
     }
@@ -45,17 +44,21 @@ public class ScenarioActivity extends AppCompatActivity {
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(final AdapterView<?> parent, final View view, final int position, long id) {
-                view.setBackgroundResource(R.drawable.answer_correct);
+                // Set background-color for button
+                view.setBackgroundResource(getResources()
+                        .getIdentifier(String.valueOf(colors.get(position)),
+                                "drawable", getApplicationContext().
+                                        getPackageName()));
                 list.setEnabled(false);
                 // Pause 1 second, then do the run-method.
                 Handler handler = new Handler();
                 handler.postDelayed(new Runnable() {
                     @Override
                     public void run() {
-                        view.setBackgroundResource(R.drawable.answer_button);
+                        // Set default background-color for button
+                        view.setBackgroundResource(R.drawable.button_default);
                         String clickedItem = (String) list.getItemAtPosition(position);
-                        saveSystem.nextScene(clickedItem);
-                        questionTextView.setText(saveSystem.getQuestionFromScenario());
+                        refresh(clickedItem);
                         arrayAdapter.clear();
                         arrayAdapter.addAll(saveSystem.getAnswersList());
                         arrayAdapter.notifyDataSetChanged();
@@ -64,6 +67,12 @@ public class ScenarioActivity extends AppCompatActivity {
                 }, 1000);
             }
         });
+    }
+
+    private void refresh(String clickedItem) {
+        saveSystem.nextScene(clickedItem);
+        colors = saveSystem.getColorsInString();
+        questionTextView.setText(saveSystem.getQuestionFromScenario());
     }
 
         /*
