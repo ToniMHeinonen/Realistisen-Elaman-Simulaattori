@@ -7,6 +7,7 @@ import muuttaa.myohemmin.realistisenelamansimulaattori.choosescenarioitem.Scenar
 import muuttaa.myohemmin.realistisenelamansimulaattori.choosescenarioitem.ScenarioItemAdapter;
 import muuttaa.myohemmin.realistisenelamansimulaattori.choosescenarioitem.ScenarioItemPrefs;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -26,6 +27,8 @@ import java.util.List;
 
 public class ChooseScenarioActivity extends AppCompatActivity {
 
+    private static Context mContext;
+
     private JsonInterface json = new SaveSystem(this);
     private ArrayList<ScenarioItem> scenarios = new ArrayList<>();
     private final int SORT_NAME = 0, SORT_RECENT = 1, SORT_PERCENTAGE = 2;
@@ -42,6 +45,7 @@ public class ChooseScenarioActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        mContext = this;
 
         // Initialize abstract preferences classes
         ScenarioItemPrefs.initialize(this);
@@ -53,6 +57,10 @@ public class ChooseScenarioActivity extends AppCompatActivity {
         // Categories
         categoriesListView = findViewById(R.id.categoriesPlaceholder);
         showScenarioList();
+    }
+
+    public static Context getContext(){
+        return mContext;
     }
 
     /**
@@ -93,6 +101,8 @@ public class ChooseScenarioActivity extends AppCompatActivity {
                 return false;
             }
         });
+
+        categoriesListView.expandGroup(0);
     }
 
     /**

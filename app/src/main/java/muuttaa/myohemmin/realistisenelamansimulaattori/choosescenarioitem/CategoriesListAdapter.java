@@ -10,8 +10,12 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
 
+import muuttaa.myohemmin.realistisenelamansimulaattori.ChooseScenarioActivity;
+import muuttaa.myohemmin.realistisenelamansimulaattori.GlobalPrefs;
 import muuttaa.myohemmin.realistisenelamansimulaattori.R;
 
 public class CategoriesListAdapter extends BaseExpandableListAdapter {
@@ -19,7 +23,6 @@ public class CategoriesListAdapter extends BaseExpandableListAdapter {
     private Context context;
     private List<String> ParentItem;
     private HashMap<String, List<ScenarioItem>> ChildItem;
-
 
     public CategoriesListAdapter(Context context, List<String> ParentItem,
                                  HashMap<String, List<ScenarioItem>> ChildItem) {
@@ -106,18 +109,35 @@ public class CategoriesListAdapter extends BaseExpandableListAdapter {
     public static HashMap<String, List<ScenarioItem>> getData(List<ScenarioItem> scenarios) {
         HashMap<String, List<ScenarioItem>> ParentItem = new HashMap<>();
 
-        List<ScenarioItem> german = new ArrayList<>();
-        german.add(new ScenarioItem("BMW"));
+        ArrayList<String> categories = GlobalPrefs.loadCategories();
+        HashMap<String, List<ScenarioItem>> categoryData = new HashMap<>();
 
-        List<ScenarioItem> usa = new ArrayList<>();
-        usa.add(new ScenarioItem("Ford"));
+        for (int i = 0; i < categories.size(); i++) {
+            categoryData.put(categories.get(i), new ArrayList<ScenarioItem>());
+        }
 
-        List<ScenarioItem> italy = new ArrayList<>();
-        italy.add(new ScenarioItem("Fiat"));
+        List<ScenarioItem> noCategory = new ArrayList<>();
 
-        ParentItem.put("German", german);
-        ParentItem.put("USA", usa);
-        ParentItem.put("Italy", italy);
+        for (int i = 0; i < scenarios.size(); i++) {
+            ScenarioItem item = scenarios.get(i);
+            String category = item.getCategory();
+
+            if (category == null) {
+                noCategory.add(item);
+            } else {
+                categoryData.get(category).add(item);
+            }
+        }
+
+        String noCategoryName = ChooseScenarioActivity.getContext().getResources().getString(R.string.scenarios);
+        ParentItem.put(noCategoryName, noCategory);
+
+        Iterator it = categoryData.entrySet().iterator();
+        while (it.hasNext()) {
+            Map.Entry pair = (Map.Entry)it.next();
+            ParentItem.put((String) pair.getKey(), (List<ScenarioItem>)pair.getValue());
+            it.remove(); // avoids a ConcurrentModificationException
+        }
 
         return ParentItem;
     }
