@@ -1,6 +1,7 @@
 package muuttaa.myohemmin.realistisenelamansimulaattori;
 
 import androidx.appcompat.app.AppCompatActivity;
+import muuttaa.myohemmin.realistisenelamansimulaattori.choosescenarioitem.CategoriesListAdapter;
 import muuttaa.myohemmin.realistisenelamansimulaattori.data.SaveSystem;
 import muuttaa.myohemmin.realistisenelamansimulaattori.choosescenarioitem.ScenarioItem;
 import muuttaa.myohemmin.realistisenelamansimulaattori.choosescenarioitem.ScenarioItemAdapter;
@@ -11,12 +12,16 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.ExpandableListAdapter;
+import android.widget.ExpandableListView;
 import android.widget.ListView;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.HashMap;
 import java.util.List;
 
 public class ChooseScenarioActivity extends AppCompatActivity {
@@ -26,6 +31,12 @@ public class ChooseScenarioActivity extends AppCompatActivity {
     private final int SORT_NAME = 0, SORT_RECENT = 1, SORT_PERCENTAGE = 2;
     private int sortBy = SORT_NAME;
     private boolean sortAscending = true;
+
+    // Categories
+    ExpandableListView expandableListView;
+    ExpandableListAdapter expandableListAdapter;
+    List<String> expandableListTitle;
+    HashMap<String, List<String>> expandableListDetail;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +48,47 @@ public class ChooseScenarioActivity extends AppCompatActivity {
 
         setupSorting();
         showScenarioList();
+
+        // Categories
+        expandableListView = findViewById(R.id.categoriesPlaceholder);
+        expandableListDetail = CategoriesListAdapter.getData();
+        expandableListTitle = new ArrayList<String>(expandableListDetail.keySet());
+        expandableListAdapter = new CategoriesListAdapter(this, expandableListTitle, expandableListDetail);
+        expandableListView.setAdapter(expandableListAdapter);
+        expandableListView.setOnGroupExpandListener(new ExpandableListView.OnGroupExpandListener() {
+
+            @Override
+            public void onGroupExpand(int groupPosition) {
+                Toast.makeText(getApplicationContext(),
+                        expandableListTitle.get(groupPosition) + " ListView Open.",
+                        Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        expandableListView.setOnGroupCollapseListener(new ExpandableListView.OnGroupCollapseListener() {
+
+            @Override
+            public void onGroupCollapse(int groupPosition) {
+                Toast.makeText(getApplicationContext(),
+                        expandableListTitle.get(groupPosition) + " ListView Closed.",
+                        Toast.LENGTH_SHORT).show();
+
+            }
+        });
+
+        expandableListView.setOnChildClickListener(new ExpandableListView.OnChildClickListener() {
+            @Override
+            public boolean onChildClick(ExpandableListView parent, View v,
+                                        int groupPosition, int childPosition, long id) {
+                Toast.makeText(getApplicationContext(),
+                        expandableListDetail.get(
+                                expandableListTitle.get(groupPosition)).get(
+                                childPosition), Toast.LENGTH_SHORT
+                )
+                        .show();
+                return false;
+            }
+        });
     }
 
     /**

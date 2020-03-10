@@ -39,4 +39,12 @@
         android:divider="#000"
         android:dividerHeight="1dp"/>
 
+    <ExpandableListView
+        android:id="@+id/categoriesPlaceholder"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:indicatorLeft="?android:attr/expandableListPreferredItemIndicatorLeft"
+        android:divider="#A4C739"
+        android:dividerHeight="1dp" />
+
 </LinearLayout>
