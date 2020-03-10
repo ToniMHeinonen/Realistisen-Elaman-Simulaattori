@@ -103,7 +103,7 @@ public class CategoriesListAdapter extends BaseExpandableListAdapter {
     }
 
 
-    public static HashMap<String, List<ScenarioItem>> getData() {
+    public static HashMap<String, List<ScenarioItem>> getData(List<ScenarioItem> scenarios) {
         HashMap<String, List<ScenarioItem>> ParentItem = new HashMap<>();
 
         List<ScenarioItem> german = new ArrayList<>();

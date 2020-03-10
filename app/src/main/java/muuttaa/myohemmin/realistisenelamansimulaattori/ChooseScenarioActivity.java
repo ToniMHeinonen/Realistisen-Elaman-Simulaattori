@@ -33,10 +33,10 @@ public class ChooseScenarioActivity extends AppCompatActivity {
     private boolean sortAscending = true;
 
     // Categories
-    ExpandableListView expandableListView;
-    ExpandableListAdapter expandableListAdapter;
-    List<String> expandableListTitle;
-    HashMap<String, List<ScenarioItem>> expandableListDetail;
+    ExpandableListView categoriesListView;
+    ExpandableListAdapter categoriesListAdapter;
+    List<String> categoriesListTitle;
+    HashMap<String, List<ScenarioItem>> categoriesListDetail;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,32 +47,10 @@ public class ChooseScenarioActivity extends AppCompatActivity {
         loadScenarios();
 
         setupSorting();
-        showScenarioList();
 
         // Categories
-        expandableListView = findViewById(R.id.categoriesPlaceholder);
-        expandableListDetail = CategoriesListAdapter.getData();
-        expandableListTitle = new ArrayList<String>(expandableListDetail.keySet());
-        expandableListAdapter = new CategoriesListAdapter(this, expandableListTitle, expandableListDetail);
-        expandableListView.setAdapter(expandableListAdapter);
-        expandableListView.setOnChildClickListener(new ExpandableListView.OnChildClickListener() {
-            @Override
-            public boolean onChildClick(ExpandableListView parent, View v,
-                                        int groupPosition, int childPosition, long id) {
-                ScenarioItem clickedItem = expandableListDetail.get(
-                        expandableListTitle.get(groupPosition)).get(
-                        childPosition);
-
-                String name = clickedItem.getName();
-                Intent intent = new Intent(ChooseScenarioActivity.this, ScenarioActivity.class);
-                intent.putExtra("scenario", name);
-                startActivity(intent);
-
-                // Change date of last time played for this scenario
-                ScenarioItemPrefs.saveLastTimePlayed(name);
-                return false;
-            }
-        });
+        categoriesListView = findViewById(R.id.categoriesPlaceholder);
+        showScenarioList();
     }
 
     /**
@@ -90,12 +68,19 @@ public class ChooseScenarioActivity extends AppCompatActivity {
      * Displays scenario items in a list.
      */
     private void showScenarioList() {
-        final ListView list = findViewById(R.id.list);
-        list.setAdapter(new ScenarioItemAdapter(this, scenarios));
-        list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        categoriesListDetail = CategoriesListAdapter.getData(scenarios);
+        categoriesListTitle = new ArrayList<String>(categoriesListDetail.keySet());
+        categoriesListAdapter = new CategoriesListAdapter(this, categoriesListTitle, categoriesListDetail);
+        categoriesListView.setAdapter(categoriesListAdapter);
+
+        categoriesListView.setOnChildClickListener(new ExpandableListView.OnChildClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                ScenarioItem clickedItem = (ScenarioItem) list.getItemAtPosition(position);
+            public boolean onChildClick(ExpandableListView parent, View v,
+                                        int groupPosition, int childPosition, long id) {
+                ScenarioItem clickedItem = categoriesListDetail.get(
+                        categoriesListTitle.get(groupPosition)).get(
+                        childPosition);
+
                 String name = clickedItem.getName();
                 Intent intent = new Intent(ChooseScenarioActivity.this, ScenarioActivity.class);
                 intent.putExtra("scenario", name);
@@ -103,6 +88,7 @@ public class ChooseScenarioActivity extends AppCompatActivity {
 
                 // Change date of last time played for this scenario
                 ScenarioItemPrefs.saveLastTimePlayed(name);
+                return false;
             }
         });
     }
