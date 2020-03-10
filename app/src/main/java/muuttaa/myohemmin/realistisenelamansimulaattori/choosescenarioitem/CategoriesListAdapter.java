@@ -18,11 +18,11 @@ public class CategoriesListAdapter extends BaseExpandableListAdapter {
 
     private Context context;
     private List<String> ParentItem;
-    private HashMap<String, List<String>> ChildItem;
+    private HashMap<String, List<ScenarioItem>> ChildItem;
 
 
     public CategoriesListAdapter(Context context, List<String> ParentItem,
-                                 HashMap<String, List<String>> ChildItem) {
+                                 HashMap<String, List<ScenarioItem>> ChildItem) {
         this.context = context;
         this.ParentItem = ParentItem;
         this.ChildItem = ChildItem;
@@ -42,16 +42,16 @@ public class CategoriesListAdapter extends BaseExpandableListAdapter {
     @Override
     public View getChildView(int listPosition, final int expandedListPosition,
                              boolean isLastChild, View convertView, ViewGroup parent) {
-        final String expandedListText = (String) getChild(listPosition, expandedListPosition);
+        final ScenarioItem item = (ScenarioItem) getChild(listPosition, expandedListPosition);
         if (convertView == null) {
             LayoutInflater layoutInflater = (LayoutInflater) this.context
                     .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            convertView = layoutInflater.inflate(R.layout.category_child, null);
+            convertView = layoutInflater.inflate(R.layout.scenario_item, null);
         }
-        TextView text1 = (TextView) convertView.findViewById(R.id.item1);
-        TextView text2 = (TextView) convertView.findViewById(R.id.item2);
-        text1.setText(""+expandedListPosition);
-        text2.setText(""+expandedListText);
+        TextView text1 = (TextView) convertView.findViewById(R.id.scenarioPercentage);
+        TextView text2 = (TextView) convertView.findViewById(R.id.scenarioName);
+        text1.setText(""+item.getPercentageCompleted());
+        text2.setText(""+item.getName());
         return convertView;
     }
 
@@ -83,7 +83,7 @@ public class CategoriesListAdapter extends BaseExpandableListAdapter {
         if (convertView == null) {
             LayoutInflater layoutInflater = (LayoutInflater) this.context.
                     getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            convertView = layoutInflater.inflate(R.layout.category_parent, null);
+            convertView = layoutInflater.inflate(R.layout.category_topic, null);
         }
         TextView listTitleTextView = (TextView) convertView
                 .findViewById(R.id.listTitle);
@@ -103,50 +103,22 @@ public class CategoriesListAdapter extends BaseExpandableListAdapter {
     }
 
 
-    public static HashMap<String, List<String>> getData() {
-        HashMap<String, List<String>> ParentItem = new HashMap<String, List<String>>();
+    public static HashMap<String, List<ScenarioItem>> getData() {
+        HashMap<String, List<ScenarioItem>> ParentItem = new HashMap<>();
 
-        List<String> Colors = new ArrayList<String>();
-        Colors.add("Red");
-        Colors.add("Green");
-        Colors.add("Blue");
-        Colors.add("Maroon");
-        Colors.add("Yellow");
-        Colors.add("Violet");
-        Colors.add("Pink");
-        Colors.add("Pink");
-        Colors.add("Pink");
-        Colors.add("Pink");
-        Colors.add("Pink");
-        Colors.add("Pink");
-        Colors.add("Pink");
-        Colors.add("Pink");
-        Colors.add("Pink");
-        Colors.add("Pink");
-        Colors.add("Pink");
+        List<ScenarioItem> german = new ArrayList<>();
+        german.add(new ScenarioItem("BMW"));
 
-        List<String> Animals = new ArrayList<String>();
-        Animals.add("Lion");
-        Animals.add("Tiger");
-        Animals.add("Leopard");
-        Animals.add("Cheetah");
-        Animals.add("Bear");
+        List<ScenarioItem> usa = new ArrayList<>();
+        usa.add(new ScenarioItem("Ford"));
 
-        List<String> Sports = new ArrayList<String>();
-        Sports.add("Cricket");
-        Sports.add("Football");
-        Sports.add("Tennis");
-        Sports.add("Basket Ball");
-        Sports.add("Base Ball");
+        List<ScenarioItem> italy = new ArrayList<>();
+        italy.add(new ScenarioItem("Fiat"));
 
-
-        ParentItem.put("Colors", Colors);
-        ParentItem.put("Animals", Animals);
-        ParentItem.put("Sports", Sports);
+        ParentItem.put("German", german);
+        ParentItem.put("USA", usa);
+        ParentItem.put("Italy", italy);
 
         return ParentItem;
-
-
-
     }
 }

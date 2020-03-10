@@ -36,7 +36,7 @@ public class ChooseScenarioActivity extends AppCompatActivity {
     ExpandableListView expandableListView;
     ExpandableListAdapter expandableListAdapter;
     List<String> expandableListTitle;
-    HashMap<String, List<String>> expandableListDetail;
+    HashMap<String, List<ScenarioItem>> expandableListDetail;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,37 +55,21 @@ public class ChooseScenarioActivity extends AppCompatActivity {
         expandableListTitle = new ArrayList<String>(expandableListDetail.keySet());
         expandableListAdapter = new CategoriesListAdapter(this, expandableListTitle, expandableListDetail);
         expandableListView.setAdapter(expandableListAdapter);
-        expandableListView.setOnGroupExpandListener(new ExpandableListView.OnGroupExpandListener() {
-
-            @Override
-            public void onGroupExpand(int groupPosition) {
-                Toast.makeText(getApplicationContext(),
-                        expandableListTitle.get(groupPosition) + " ListView Open.",
-                        Toast.LENGTH_SHORT).show();
-            }
-        });
-
-        expandableListView.setOnGroupCollapseListener(new ExpandableListView.OnGroupCollapseListener() {
-
-            @Override
-            public void onGroupCollapse(int groupPosition) {
-                Toast.makeText(getApplicationContext(),
-                        expandableListTitle.get(groupPosition) + " ListView Closed.",
-                        Toast.LENGTH_SHORT).show();
-
-            }
-        });
-
         expandableListView.setOnChildClickListener(new ExpandableListView.OnChildClickListener() {
             @Override
             public boolean onChildClick(ExpandableListView parent, View v,
                                         int groupPosition, int childPosition, long id) {
-                Toast.makeText(getApplicationContext(),
-                        expandableListDetail.get(
-                                expandableListTitle.get(groupPosition)).get(
-                                childPosition), Toast.LENGTH_SHORT
-                )
-                        .show();
+                ScenarioItem clickedItem = expandableListDetail.get(
+                        expandableListTitle.get(groupPosition)).get(
+                        childPosition);
+
+                String name = clickedItem.getName();
+                Intent intent = new Intent(ChooseScenarioActivity.this, ScenarioActivity.class);
+                intent.putExtra("scenario", name);
+                startActivity(intent);
+
+                // Change date of last time played for this scenario
+                ScenarioItemPrefs.saveLastTimePlayed(name);
                 return false;
             }
         });
