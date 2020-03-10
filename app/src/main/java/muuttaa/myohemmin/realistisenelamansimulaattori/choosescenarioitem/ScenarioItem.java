@@ -9,6 +9,7 @@ public class ScenarioItem {
     private String name;
     private Date lastTimePlayed;
     private int percentageCompleted;
+    private String category;
 
     /**
      * Creates new instance of Scenario Item.
@@ -18,6 +19,7 @@ public class ScenarioItem {
         this.name = name;
         this.lastTimePlayed = ScenarioItemPrefs.loadLastTimePlayed(name);
         this.percentageCompleted = ScenarioItemPrefs.loadPercentage(name);
+        this.category = ScenarioItemPrefs.loadCategory(name);
         Debug.print("ScenarioItem", "()", this.toString(), 1);
     }
 
@@ -69,6 +71,14 @@ public class ScenarioItem {
         this.percentageCompleted = percentageCompleted;
     }
 
+    public String getCategory() {
+        return category;
+    }
+
+    public void setCategory(String category) {
+        this.category = category;
+    }
+
     /**
      * Returns scenario values.
      * @return scenario values
@@ -79,6 +89,7 @@ public class ScenarioItem {
                 "name='" + name + '\'' +
                 ", lastTimePlayed=" + lastTimePlayed +
                 ", percentageCompleted=" + percentageCompleted +
+                ", category='" + category + '\'' +
                 '}';
     }
 }

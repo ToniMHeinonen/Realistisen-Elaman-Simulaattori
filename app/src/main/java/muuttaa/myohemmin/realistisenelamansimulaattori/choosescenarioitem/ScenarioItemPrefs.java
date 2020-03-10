@@ -13,6 +13,7 @@ public abstract class ScenarioItemPrefs {
     private static final String keyPrefs = "RLS_prefs";
     private static final String keyRecent = "recent_";
     private static final String keyPercentage = "percentage_";
+    private static final String keyCategory = "category_";
 
     /**
      * Loads the correct preferences for ScenarioItems.
@@ -29,8 +30,6 @@ public abstract class ScenarioItemPrefs {
      */
     public static void savePercentage(String scenario, int percentage) {
         SharedPreferences.Editor editor = prefs.edit();
-        Debug.print("ScenarioItemPrefs", "savePercentage",
-                "scenario: " + scenario + " percentage: " + percentage, 1);
 
         editor.putInt(keyPercentage + scenario, percentage);
         editor.commit();
@@ -66,5 +65,16 @@ public abstract class ScenarioItemPrefs {
      */
     public static Date loadLastTimePlayed(String scenario) {
         return new Date(prefs.getLong(keyRecent + scenario, 0));
+    }
+
+    public static String loadCategory(String scenario) {
+        return prefs.getString(keyCategory + scenario, null);
+    }
+
+    public static void saveCategory(String scenario, String category) {
+        SharedPreferences.Editor editor = prefs.edit();
+
+        editor.putString(keyCategory + scenario, category);
+        editor.commit();
     }
 }
