@@ -10,11 +10,18 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            android:text="n"
+            android:onClick="sortOrderClick"/>
+
         <Spinner
             android:id="@+id/sort"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="0.7" />
+            android:layout_weight="0.6" />
 
         <Button
             style="?android:attr/buttonBarButtonStyle"
@@ -22,7 +29,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="0.3"
             android:onClick="settingsClick"
-            android:text="Settings" />
+            android:text="@string/settings" />
     </LinearLayout>
 
     <ListView

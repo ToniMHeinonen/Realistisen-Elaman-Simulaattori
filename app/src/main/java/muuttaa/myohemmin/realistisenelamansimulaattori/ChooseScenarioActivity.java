@@ -21,8 +21,11 @@ import java.util.List;
 
 public class ChooseScenarioActivity extends AppCompatActivity {
 
-    JsonInterface json = new SaveSystem(this);
-    ArrayList<ScenarioItem> scenarios = new ArrayList<>();
+    private JsonInterface json = new SaveSystem(this);
+    private ArrayList<ScenarioItem> scenarios = new ArrayList<>();
+    private final int SORT_NAME = 0, SORT_RECENT = 1, SORT_PERCENTAGE = 2;
+    private int sortBy = SORT_NAME;
+    private boolean sortAscending = true;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -84,39 +87,68 @@ public class ChooseScenarioActivity extends AppCompatActivity {
         sort.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                String sortBy = (String) parent.getItemAtPosition(position);
+                String sort = (String) parent.getItemAtPosition(position);
 
-                if (sortBy.equals(getResources().getString(R.string.sort_name))) {
-                    Debug.print("OnItemSelectedListener", "onItemSelected",
-                            "sort_name", 2);
-                    Collections.sort(scenarios, new Comparator<ScenarioItem>() {
-                        public int compare(ScenarioItem o1, ScenarioItem o2) {
-                            return o1.getName().compareTo(o2.getName());
-                        }
-                    });
-                } else if (sortBy.equals(getResources().getString(R.string.sort_recent))) {
-                    Collections.sort(scenarios, new Comparator<ScenarioItem>() {
-                        public int compare(ScenarioItem o1, ScenarioItem o2) {
-                            return o2.getLastTimePlayed().compareTo(o1.getLastTimePlayed());
-                        }
-                    });
-                } else if (sortBy.equals(getResources().getString(R.string.sort_percentage))) {
-                    Collections.sort(scenarios, new Comparator<ScenarioItem>() {
-                        public int compare(ScenarioItem o1, ScenarioItem o2) {
-                            return ((Integer)o1.getPercentageCompleted()).compareTo(o2.getPercentageCompleted());
-                        }
-                    });
+                if (sort.equals(getResources().getString(R.string.sort_name))) {
+                    sortBy = SORT_NAME;
+                } else if (sort.equals(getResources().getString(R.string.sort_recent))) {
+                    sortBy = SORT_RECENT;
+                } else if (sort.equals(getResources().getString(R.string.sort_percentage))) {
+                    sortBy = SORT_PERCENTAGE;
                 }
 
-                showScenarioList();
+                sortList();
             }
 
             @Override
-            public void onNothingSelected(AdapterView<?> parent) {
-                Debug.print("OnItemSelectedListener", "onNothingSelected",
-                        "", 2);
-            }
+            public void onNothingSelected(AdapterView<?> parent) {}
         });
+    }
+
+    /**
+     * Sorts list by current sorting type and order.
+     */
+    private void sortList() {
+        switch (sortBy) {
+            case SORT_NAME:
+                Collections.sort(scenarios, new Comparator<ScenarioItem>() {
+                    public int compare(ScenarioItem o1, ScenarioItem o2) {
+                        return sortAscending ?
+                                o1.getName().compareTo(o2.getName()) :
+                                o2.getName().compareTo(o1.getName());
+                    }
+                });
+                break;
+            case SORT_RECENT:
+                Collections.sort(scenarios, new Comparator<ScenarioItem>() {
+                    public int compare(ScenarioItem o1, ScenarioItem o2) {
+                        return sortAscending ?
+                                o1.getLastTimePlayed().compareTo(o2.getLastTimePlayed()) :
+                                o2.getLastTimePlayed().compareTo(o1.getLastTimePlayed());
+                    }
+                });
+                break;
+            case SORT_PERCENTAGE:
+                Collections.sort(scenarios, new Comparator<ScenarioItem>() {
+                    public int compare(ScenarioItem o1, ScenarioItem o2) {
+                        return sortAscending ?
+                                ((Integer)o1.getPercentageCompleted()).compareTo(o2.getPercentageCompleted()) :
+                                ((Integer)o2.getPercentageCompleted()).compareTo(o1.getPercentageCompleted());
+                    }
+                });
+                break;
+        }
+
+        showScenarioList();
+    }
+
+    /**
+     * Swaps sorting order.
+     * @param v arrow button
+     */
+    public void sortOrderClick(View v) {
+        sortAscending = !sortAscending;
+        sortList();
     }
 
     /**
