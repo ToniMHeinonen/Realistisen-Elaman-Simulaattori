@@ -156,6 +156,6 @@ public class ChooseScenarioActivity extends AppCompatActivity {
      * @param v settings button
      */
     public void settingsClick(View v) {
-
+        startActivity(new Intent(this, SettingActivity.class));
     }
 }
