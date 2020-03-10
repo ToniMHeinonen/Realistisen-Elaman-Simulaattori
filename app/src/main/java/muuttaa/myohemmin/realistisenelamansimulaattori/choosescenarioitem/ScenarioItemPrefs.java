@@ -5,12 +5,10 @@ import android.content.SharedPreferences;
 
 import java.util.Date;
 
-import muuttaa.myohemmin.realistisenelamansimulaattori.Debug;
-
 public abstract class ScenarioItemPrefs {
     private static SharedPreferences prefs;
 
-    private static final String keyPrefs = "RLS_prefs";
+    private static final String keyPrefs = "RLS_scenario_item_prefs";
     private static final String keyRecent = "recent_";
     private static final String keyPercentage = "percentage_";
     private static final String keyCategory = "category_";

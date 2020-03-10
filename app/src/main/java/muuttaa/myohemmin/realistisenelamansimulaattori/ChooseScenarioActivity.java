@@ -43,7 +43,9 @@ public class ChooseScenarioActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        // Initialize abstract preferences classes
         ScenarioItemPrefs.initialize(this);
+        GlobalPrefs.initialize(this);
         loadScenarios();
 
         setupSorting();
