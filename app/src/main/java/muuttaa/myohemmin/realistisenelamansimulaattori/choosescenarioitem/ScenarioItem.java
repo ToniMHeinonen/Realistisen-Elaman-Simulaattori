@@ -32,14 +32,6 @@ public class ScenarioItem {
     }
 
     /**
-     * Sets name of the scenario item.
-     * @param name of the scenario item
-     */
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    /**
      * Returns date of last time played.
      * @return date of last time played
      */
@@ -53,6 +45,7 @@ public class ScenarioItem {
      */
     public void setLastTimePlayed(Date lastTimePlayed) {
         this.lastTimePlayed = lastTimePlayed;
+        ScenarioItemPrefs.saveLastTimePlayed(name);
     }
 
     /**
@@ -69,6 +62,7 @@ public class ScenarioItem {
      */
     public void setPercentageCompleted(int percentageCompleted) {
         this.percentageCompleted = percentageCompleted;
+        ScenarioItemPrefs.savePercentage(name, percentageCompleted);
     }
 
     public String getCategory() {
@@ -77,6 +71,7 @@ public class ScenarioItem {
 
     public void setCategory(String category) {
         this.category = category;
+        ScenarioItemPrefs.saveCategory(name, category);
     }
 
     /**

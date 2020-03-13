@@ -145,6 +145,15 @@ public class ChooseScenarioActivity extends AppCompatActivity {
                                     Debug.print("ChooseScenarioActivity", "onDrag",
                                             "Category: " + category + " Scenario: "
                                                     + selectedItem.getName(), 1);
+
+                                    // If dropped to default category, make value null
+                                    if (category.equals(getContext().getResources().getString(R.string.scenarios))) {
+                                        selectedItem.setCategory(null);
+                                    } else {
+                                        selectedItem.setCategory(category);
+                                    }
+
+                                    showScenarioList();
                                 }
                             }
 
