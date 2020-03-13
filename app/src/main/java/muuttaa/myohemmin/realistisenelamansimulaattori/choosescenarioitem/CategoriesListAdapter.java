@@ -11,6 +11,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -177,11 +178,11 @@ public class CategoriesListAdapter extends BaseExpandableListAdapter {
      * @param scenarios list of scenarios to check for category
      * @return map of categorized values
      */
-    public static HashMap<String, List<ScenarioItem>> getData(List<ScenarioItem> scenarios) {
-        HashMap<String, List<ScenarioItem>> ParentItem = new HashMap<>();
+    public static LinkedHashMap<String, List<ScenarioItem>> getData(List<ScenarioItem> scenarios) {
+        LinkedHashMap<String, List<ScenarioItem>> ParentItem = new LinkedHashMap<>();
 
         ArrayList<String> categories = GlobalPrefs.loadCategories();
-        HashMap<String, List<ScenarioItem>> categoryData = new HashMap<>();
+        LinkedHashMap<String, List<ScenarioItem>> categoryData = new LinkedHashMap<>();
 
         for (int i = 0; i < categories.size(); i++) {
             categoryData.put(categories.get(i), new ArrayList<ScenarioItem>());
