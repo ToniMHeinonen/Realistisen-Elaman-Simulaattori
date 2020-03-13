@@ -2,6 +2,7 @@ package muuttaa.myohemmin.realistisenelamansimulaattori;
 
 import androidx.appcompat.app.AppCompatActivity;
 import muuttaa.myohemmin.realistisenelamansimulaattori.choosescenarioitem.CategoriesListAdapter;
+import muuttaa.myohemmin.realistisenelamansimulaattori.choosescenarioitem.HamburgerDialog;
 import muuttaa.myohemmin.realistisenelamansimulaattori.data.SaveSystem;
 import muuttaa.myohemmin.realistisenelamansimulaattori.choosescenarioitem.ScenarioItem;
 import muuttaa.myohemmin.realistisenelamansimulaattori.choosescenarioitem.ScenarioItemAdapter;
@@ -197,10 +198,27 @@ public class ChooseScenarioActivity extends AppCompatActivity {
     }
 
     /**
-     * Moves to Settings Activity.
-     * @param v settings button
+     * Opens HamburgerDialog.
+     * @param v hamburger button
      */
-    public void settingsClick(View v) {
+    public void hamburgerClicked(View v) {
+        HamburgerDialog dialog = new HamburgerDialog(this);
+        dialog.show();
+    }
+
+    /**
+     * Opens Settings Activity.
+     */
+    public void settingsSelected() {
         startActivity(new Intent(this, SettingActivity.class));
+    }
+
+    /**
+     * Adds category.
+     * @param name category name
+     */
+    public void addCategory(String name) {
+        GlobalPrefs.saveCategory(name);
+        showScenarioList();
     }
 }

@@ -4,12 +4,7 @@ import android.app.Dialog;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
-import android.widget.Button;
 import android.widget.EditText;
-import android.widget.LinearLayout;
-import android.widget.TextView;
-
-import java.util.ArrayList;
 
 import muuttaa.myohemmin.realistisenelamansimulaattori.ChooseScenarioActivity;
 import muuttaa.myohemmin.realistisenelamansimulaattori.R;
@@ -40,8 +35,13 @@ public class HamburgerDialog extends Dialog implements
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.addCategory:
+                EditText category = findViewById(R.id.newCategory);
+                activity.addCategory(category.getText().toString());
+                dismiss();
                 break;
             case R.id.settings:
+                activity.settingsSelected();
+                dismiss();
                 break;
             case R.id.back:
                 cancel();
