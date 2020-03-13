@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#DDD">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/categoryName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:textSize="25sp"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/renameCategory"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:layout_margin="10dp"
+                android:text="@string/renameCategory"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:background="#4AFD4A"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/deleteCategory"
+            style="@style/HamburgerButton"
+            android:text="@string/deleteCategory" />
+
+        <Button
+            android:id="@+id/back"
+            style="@style/HamburgerButton"
+            android:text="@string/backButton"
+            android:background="#FD4A4A"/>
+    </LinearLayout>
+</RelativeLayout>

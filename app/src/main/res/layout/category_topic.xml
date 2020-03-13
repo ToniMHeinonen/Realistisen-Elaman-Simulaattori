@@ -17,14 +17,14 @@
         android:paddingBottom="15dp" />
 
     <Button
-        android:id="@+id/listDelete"
+        android:id="@+id/listOptions"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="0.2"
         android:textColor="#ffffff"
         android:textSize="20sp"
         android:focusable="false"
-        android:text="D"
+        android:text="..."
         android:background="#4AA"
         android:paddingTop="15dp"
         android:paddingBottom="15dp" />

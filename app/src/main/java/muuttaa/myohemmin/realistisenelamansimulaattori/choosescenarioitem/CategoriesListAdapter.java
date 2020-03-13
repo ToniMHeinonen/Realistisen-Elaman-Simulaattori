@@ -155,12 +155,12 @@ public class CategoriesListAdapter extends BaseExpandableListAdapter {
         listTitleTextView.setTypeface(null, Typeface.BOLD);
         listTitleTextView.setText(listTitle);
 
-        Button deleteButton = convertView.findViewById(R.id.listDelete);
-        deleteButton.setOnClickListener(new View.OnClickListener() {
+        Button optionsButton = convertView.findViewById(R.id.listOptions);
+        optionsButton.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
-                activity.deleteCategory(listTitle);
+                activity.openCategoryOptions(listTitle);
             }
         });
 

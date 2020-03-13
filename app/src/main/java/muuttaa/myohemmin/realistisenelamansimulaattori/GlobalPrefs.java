@@ -63,4 +63,17 @@ public abstract class GlobalPrefs {
 
         editor.commit();
     }
+
+    public static void renameCategory(String category, String newName) {
+        int index = categoriesList.indexOf(category);
+        categoriesList.remove(index);
+        categoriesList.add(newName);
+        SharedPreferences.Editor editor = prefs.edit();
+
+        for (int i = 0; i < categoriesList.size(); i++) {
+            editor.putString(keyAllCategories + i, categoriesList.get(i));
+        }
+
+        editor.commit();
+    }
 }

@@ -2,6 +2,7 @@ package muuttaa.myohemmin.realistisenelamansimulaattori;
 
 import androidx.appcompat.app.AppCompatActivity;
 import muuttaa.myohemmin.realistisenelamansimulaattori.choosescenarioitem.CategoriesListAdapter;
+import muuttaa.myohemmin.realistisenelamansimulaattori.choosescenarioitem.CategoryDialog;
 import muuttaa.myohemmin.realistisenelamansimulaattori.choosescenarioitem.HamburgerDialog;
 import muuttaa.myohemmin.realistisenelamansimulaattori.data.SaveSystem;
 import muuttaa.myohemmin.realistisenelamansimulaattori.choosescenarioitem.ScenarioItem;
@@ -181,7 +182,6 @@ public class ChooseScenarioActivity extends AppCompatActivity {
                 return false;
             }
         });
-
         categoriesListView.expandGroup(0);
     }
 
@@ -281,6 +281,11 @@ public class ChooseScenarioActivity extends AppCompatActivity {
         startActivity(new Intent(this, SettingActivity.class));
     }
 
+    public void openCategoryOptions(String category) {
+        CategoryDialog dialog = new CategoryDialog(this, category);
+        dialog.show();
+    }
+
     /**
      * Adds category.
      * @param category name
@@ -309,6 +314,29 @@ public class ChooseScenarioActivity extends AppCompatActivity {
         }
 
         GlobalPrefs.deleteCategory(category);
+
+        showScenarioList();
+    }
+
+    public void renameCategory(String oldName, String newName) {
+        if (oldName.equals(getResources().getString(R.string.scenarios)))
+            return;
+
+        if (GlobalPrefs.loadCategories().contains(newName) ||
+                newName.equals(getResources().getString(R.string.scenarios))) {
+            Toast.makeText(this, getResources().getString(R.string.categoryExists),
+                    Toast.LENGTH_LONG).show();
+            return;
+        }
+
+        for (ScenarioItem item : scenarios) {
+            String curCategory = item.getCategory();
+            if (curCategory != null && curCategory.equals(oldName)) {
+                item.setCategory(newName);
+            }
+        }
+
+        GlobalPrefs.renameCategory(oldName, newName);
 
         showScenarioList();
     }
