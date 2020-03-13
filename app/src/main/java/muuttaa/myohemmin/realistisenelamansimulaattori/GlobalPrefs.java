@@ -49,4 +49,18 @@ public abstract class GlobalPrefs {
 
         editor.commit();
     }
+
+
+    public static void deleteCategory(String category) {
+        categoriesList.remove(category);
+        SharedPreferences.Editor editor = prefs.edit();
+
+        for (int i = 0; i < categoriesList.size(); i++) {
+            editor.putString(keyAllCategories + i, categoriesList.get(i));
+        }
+
+        editor.putInt(keyCategoriesAmount, categoriesList.size());
+
+        editor.commit();
+    }
 }

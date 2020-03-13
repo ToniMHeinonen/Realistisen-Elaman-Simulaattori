@@ -283,10 +283,26 @@ public class ChooseScenarioActivity extends AppCompatActivity {
 
     /**
      * Adds category.
-     * @param name category name
+     * @param category name
      */
-    public void addCategory(String name) {
-        GlobalPrefs.saveCategory(name);
+    public void addCategory(String category) {
+        GlobalPrefs.saveCategory(category);
+        showScenarioList();
+    }
+
+    public void deleteCategory(String category) {
+        if (category.equals(getResources().getString(R.string.scenarios)))
+            return;
+
+        for (ScenarioItem item : scenarios) {
+            String curCategory = item.getCategory();
+            if (curCategory != null && curCategory.equals(category)) {
+                item.setCategory(null);
+            }
+        }
+
+        GlobalPrefs.deleteCategory(category);
+
         showScenarioList();
     }
 }

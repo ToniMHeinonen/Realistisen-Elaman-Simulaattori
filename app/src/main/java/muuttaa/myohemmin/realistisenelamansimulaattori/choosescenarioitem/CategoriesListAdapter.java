@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseExpandableListAdapter;
+import android.widget.Button;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -16,24 +17,27 @@ import java.util.List;
 import java.util.Map;
 
 import muuttaa.myohemmin.realistisenelamansimulaattori.ChooseScenarioActivity;
+import muuttaa.myohemmin.realistisenelamansimulaattori.Debug;
 import muuttaa.myohemmin.realistisenelamansimulaattori.GlobalPrefs;
 import muuttaa.myohemmin.realistisenelamansimulaattori.R;
 
 public class CategoriesListAdapter extends BaseExpandableListAdapter {
 
+    private ChooseScenarioActivity activity;
     private Context context;
     private List<String> ParentItem;
     private HashMap<String, List<ScenarioItem>> ChildItem;
 
     /**
      * Initializes instance of this class.
-     * @param context application context
+     * @param activity current activity
      * @param ParentItem topic names of categories
      * @param ChildItem items inside categories
      */
-    public CategoriesListAdapter(Context context, List<String> ParentItem,
+    public CategoriesListAdapter(ChooseScenarioActivity activity, List<String> ParentItem,
                                  HashMap<String, List<ScenarioItem>> ChildItem) {
-        this.context = context;
+        this.activity = activity;
+        this.context = activity.getApplicationContext();
         this.ParentItem = ParentItem;
         this.ChildItem = ChildItem;
     }
@@ -139,9 +143,9 @@ public class CategoriesListAdapter extends BaseExpandableListAdapter {
      * @return category view
      */
     @Override
-    public View getGroupView(int listPosition, boolean isExpanded,
+    public View getGroupView(final int listPosition, boolean isExpanded,
                              View convertView, ViewGroup parent) {
-        String listTitle = (String) getGroup(listPosition);
+        final String listTitle = (String) getGroup(listPosition);
         if (convertView == null) {
             LayoutInflater layoutInflater = (LayoutInflater) this.context.
                     getSystemService(Context.LAYOUT_INFLATER_SERVICE);
@@ -150,6 +154,16 @@ public class CategoriesListAdapter extends BaseExpandableListAdapter {
         TextView listTitleTextView = convertView.findViewById(R.id.listTitle);
         listTitleTextView.setTypeface(null, Typeface.BOLD);
         listTitleTextView.setText(listTitle);
+
+        Button deleteButton = convertView.findViewById(R.id.listDelete);
+        deleteButton.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                activity.deleteCategory(listTitle);
+            }
+        });
+
         return convertView;
     }
 
