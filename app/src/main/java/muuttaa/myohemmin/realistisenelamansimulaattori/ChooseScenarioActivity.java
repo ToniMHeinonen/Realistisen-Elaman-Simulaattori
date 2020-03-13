@@ -11,6 +11,8 @@ import muuttaa.myohemmin.realistisenelamansimulaattori.choosescenarioitem.Scenar
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.DragEvent;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -110,6 +112,50 @@ public class ChooseScenarioActivity extends AppCompatActivity {
 
                 // Change date of last time played for this scenario
                 ScenarioItemPrefs.saveLastTimePlayed(name);
+                return false;
+            }
+        });
+
+        categoriesListView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+            @Override
+            public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
+                if (ExpandableListView.getPackedPositionType(id) == ExpandableListView.PACKED_POSITION_TYPE_CHILD) {
+                    int groupPosition = ExpandableListView.getPackedPositionGroup(id);
+                    int childPosition = ExpandableListView.getPackedPositionChild(id);
+
+                    final ScenarioItem selectedItem = categoriesListDetail.get(
+                            categoriesListTitle.get(groupPosition)).get(
+                            childPosition);
+
+                    // Create shadow where the finger is
+                    View.DragShadowBuilder shadowBuilder = new View.DragShadowBuilder(view);
+                    view.startDrag(null, shadowBuilder, categoriesListView.getItemAtPosition(position), 0);
+
+                    categoriesListView.setOnDragListener(new AdapterView.OnDragListener() {
+                        @Override
+                        public boolean onDrag(View v, DragEvent event) {
+                            int action = event.getAction();
+
+                            if (action == DragEvent.ACTION_DROP) {
+                                int x_cord = (int) event.getX();
+                                int y_cord = (int) event.getY();
+                                int nPointToPosition = categoriesListView.pointToPosition(x_cord,y_cord);
+                                if(categoriesListView.getItemAtPosition(nPointToPosition)!= null) {
+                                    String category = (String) categoriesListView.getItemAtPosition(nPointToPosition);
+                                    Debug.print("ChooseScenarioActivity", "onDrag",
+                                            "Category: " + category + " Scenario: "
+                                                    + selectedItem.getName(), 1);
+                                }
+                            }
+
+                            return true;
+                        }
+                    });
+
+                    // Return true as we are handling the event.
+                    return true;
+                }
+
                 return false;
             }
         });

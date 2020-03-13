@@ -5,22 +5,14 @@
 
     <TextView
         android:id="@+id/scenarioName"
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="0.7"
-        android:padding="10dp"
-        android:textSize="35sp"
-        android:textAlignment="center">
+        style="@style/ChooseScenarioItem"
+        android:layout_weight="0.7">
     </TextView>
 
     <TextView
         android:id="@+id/scenarioPercentage"
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="0.3"
-        android:padding="10dp"
-        android:textSize="35sp"
-        android:textAlignment="center">
+        style="@style/ChooseScenarioItem"
+        android:layout_weight="0.3">
     </TextView>
 
 </LinearLayout>
