@@ -14,11 +14,19 @@ public class HamburgerDialog extends Dialog implements
 
     private ChooseScenarioActivity activity;
 
+    /**
+     * Initializes instance of this class.
+     * @param a current activity
+     */
     public HamburgerDialog(ChooseScenarioActivity a) {
         super(a);
         this.activity = a;
     }
 
+    /**
+     * Initializes necessary values at start.
+     * @param savedInstanceState previous instance
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,6 +39,10 @@ public class HamburgerDialog extends Dialog implements
         findViewById(R.id.back).setOnClickListener(this);
     }
 
+    /**
+     * Listens button clicks on view.
+     * @param v clicked view
+     */
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
