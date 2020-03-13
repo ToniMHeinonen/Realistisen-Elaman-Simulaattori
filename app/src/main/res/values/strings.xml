@@ -11,6 +11,10 @@
         <item>@string/sort_percentage</item>
     </string-array>
 
+    <!-- CHOOSE SCENARIO ACTIVITY -->
     <string name="settings">Asetukset</string>
     <string name="scenarios">Skenaariot</string>
+    <string name="addCategory">Lisää</string>
+    <string name="newCategory">Uusi kategoria</string>
+    <string name="backButton">Sulje</string>
 </resources>

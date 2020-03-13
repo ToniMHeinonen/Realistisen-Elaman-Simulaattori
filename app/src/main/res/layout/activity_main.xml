@@ -29,8 +29,10 @@
             android:layout_height="wrap_content"
             android:layout_weight="0.3"
             android:onClick="settingsClick"
-            android:text="@string/settings" />
+            android:text="Ratas" />
     </LinearLayout>
+
+
 
     <ExpandableListView
         android:id="@+id/categoriesPlaceholder"
