@@ -116,7 +116,7 @@ public class ChooseScenarioActivity extends AppCompatActivity {
             }
         });
 
-        /*categoriesListView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+        categoriesListView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override
             public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
                 if (ExpandableListView.getPackedPositionType(id) == ExpandableListView.PACKED_POSITION_TYPE_CHILD) {
@@ -141,13 +141,26 @@ public class ChooseScenarioActivity extends AppCompatActivity {
                                 int y_cord = (int) event.getY();
                                 int nPointToPosition = categoriesListView.pointToPosition(x_cord,y_cord);
                                 if(categoriesListView.getItemAtPosition(nPointToPosition)!= null) {
-                                    String category = (String) categoriesListView.getItemAtPosition(nPointToPosition);
+                                    Object dropped = categoriesListView.getItemAtPosition(nPointToPosition);
+
+                                    String category = null;
+
+                                    if (dropped.getClass().equals(String.class)) {
+                                        // If drop location is on top of category string object
+                                        category = (String) dropped;
+                                    } else if (dropped.getClass().equals(ScenarioItem.class)) {
+                                        // Else if drop location is on top of ScenarioItem object
+                                        ScenarioItem item = (ScenarioItem) dropped;
+                                        category = item.getCategory();
+                                    }
+
                                     Debug.print("ChooseScenarioActivity", "onDrag",
                                             "Category: " + category + " Scenario: "
                                                     + selectedItem.getName(), 1);
 
                                     // If dropped to default category, make value null
-                                    if (category.equals(getContext().getResources().getString(R.string.scenarios))) {
+                                    if (category == null ||
+                                            category.equals(getContext().getResources().getString(R.string.scenarios))) {
                                         selectedItem.setCategory(null);
                                     } else {
                                         selectedItem.setCategory(category);
@@ -167,7 +180,7 @@ public class ChooseScenarioActivity extends AppCompatActivity {
 
                 return false;
             }
-        });*/
+        });
 
         categoriesListView.expandGroup(0);
     }
