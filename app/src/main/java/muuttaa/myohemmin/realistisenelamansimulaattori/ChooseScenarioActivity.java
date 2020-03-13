@@ -116,7 +116,7 @@ public class ChooseScenarioActivity extends AppCompatActivity {
             }
         });
 
-        categoriesListView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+        /*categoriesListView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override
             public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
                 if (ExpandableListView.getPackedPositionType(id) == ExpandableListView.PACKED_POSITION_TYPE_CHILD) {
@@ -167,7 +167,7 @@ public class ChooseScenarioActivity extends AppCompatActivity {
 
                 return false;
             }
-        });
+        });*/
 
         categoriesListView.expandGroup(0);
     }
