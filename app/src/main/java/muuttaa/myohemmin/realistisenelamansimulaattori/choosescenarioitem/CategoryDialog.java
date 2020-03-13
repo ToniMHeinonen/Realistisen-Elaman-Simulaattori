@@ -1,9 +1,11 @@
 package muuttaa.myohemmin.realistisenelamansimulaattori.choosescenarioitem;
 
 import android.app.Dialog;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
+import android.widget.Button;
 import android.widget.EditText;
 
 import muuttaa.myohemmin.realistisenelamansimulaattori.ChooseScenarioActivity;
@@ -38,10 +40,20 @@ public class CategoryDialog extends Dialog implements
         EditText categoryView = findViewById(R.id.categoryName);
         categoryView.setText(category);
 
-        // Set listeners for confirm and cancel
-        findViewById(R.id.renameCategory).setOnClickListener(this);
-        findViewById(R.id.deleteCategory).setOnClickListener(this);
+        // Set listeners
+        Button renameBtn = findViewById(R.id.renameCategory);
+        Button deleteBtn = findViewById(R.id.deleteCategory);
+        renameBtn.setOnClickListener(this);
+        deleteBtn.setOnClickListener(this);
         findViewById(R.id.back).setOnClickListener(this);
+
+        if (category.equals(activity.getResources().getString(R.string.scenarios))) {
+            renameBtn.setClickable(false);
+            deleteBtn.setClickable(false);
+            renameBtn.setBackgroundColor(Color.GRAY);
+            deleteBtn.setBackgroundColor(Color.GRAY);
+            categoryView.setFocusable(false);
+        }
     }
 
     /**
