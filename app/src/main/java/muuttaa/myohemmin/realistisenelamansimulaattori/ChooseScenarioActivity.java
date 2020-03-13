@@ -286,6 +286,13 @@ public class ChooseScenarioActivity extends AppCompatActivity {
      * @param category name
      */
     public void addCategory(String category) {
+        if (GlobalPrefs.loadCategories().contains(category) ||
+            category.equals(getResources().getString(R.string.scenarios))) {
+            Toast.makeText(this, getResources().getString(R.string.categoryExists),
+                    Toast.LENGTH_LONG).show();
+            return;
+        }
+
         GlobalPrefs.saveCategory(category);
         showScenarioList();
     }

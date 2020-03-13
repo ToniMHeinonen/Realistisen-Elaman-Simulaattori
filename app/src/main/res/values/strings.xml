@@ -17,4 +17,5 @@
     <string name="addCategory">Lisää</string>
     <string name="newCategory">Uusi kategoria</string>
     <string name="backButton">Sulje</string>
+    <string name="categoryExists">Kategoria on jo olemassa!</string>
 </resources>
