@@ -41,6 +41,10 @@ public class ChooseScenarioActivity extends AppCompatActivity {
     List<String> categoriesListTitle;
     HashMap<String, List<ScenarioItem>> categoriesListDetail;
 
+    /**
+     * Initializes instance of this activity and all necessary values.
+     * @param savedInstanceState previous instance state
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -50,15 +54,22 @@ public class ChooseScenarioActivity extends AppCompatActivity {
         // Initialize abstract preferences classes
         ScenarioItemPrefs.initialize(this);
         GlobalPrefs.initialize(this);
-        loadScenarios();
 
-        setupSorting();
+        loadScenarios(); // Load scenarios from json
+        setupSorting(); // Setup sorting spinner
 
         // Categories
         categoriesListView = findViewById(R.id.categoriesPlaceholder);
         showScenarioList();
     }
 
+    /**
+     * Gets context.
+     *
+     * Used in CategoriesListAdapter to get application context in order to
+     * access saved xml Strings.
+     * @return application context
+     */
     public static Context getContext(){
         return mContext;
     }
@@ -75,7 +86,7 @@ public class ChooseScenarioActivity extends AppCompatActivity {
     }
 
     /**
-     * Displays scenario items in a list.
+     * Displays scenario items in a categorized list.
      */
     private void showScenarioList() {
         categoriesListDetail = CategoriesListAdapter.getData(scenarios);

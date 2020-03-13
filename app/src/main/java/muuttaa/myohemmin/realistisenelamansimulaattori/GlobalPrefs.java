@@ -27,10 +27,18 @@ public abstract class GlobalPrefs {
         }
     }
 
+    /**
+     * Loads saved categories.
+     * @return saved categories
+     */
     public static ArrayList<String> loadCategories() {
         return categoriesList;
     }
 
+    /**
+     * Saves new category.
+     * @param category name of the category
+     */
     public static void saveCategory(String category) {
         categoriesList.add(category);
         SharedPreferences.Editor editor = prefs.edit();

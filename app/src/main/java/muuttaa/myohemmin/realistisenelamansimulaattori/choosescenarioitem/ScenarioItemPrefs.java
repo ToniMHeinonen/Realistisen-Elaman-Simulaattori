@@ -65,10 +65,20 @@ public abstract class ScenarioItemPrefs {
         return new Date(prefs.getLong(keyRecent + scenario, 0));
     }
 
+    /**
+     * Loads the category of the scenario.
+     * @param scenario name of the scenario
+     * @return category of the item
+     */
     public static String loadCategory(String scenario) {
         return prefs.getString(keyCategory + scenario, null);
     }
 
+    /**
+     * Saves given category to the item.
+     * @param scenario name of the scenario
+     * @param category new category of the item
+     */
     public static void saveCategory(String scenario, String category) {
         SharedPreferences.Editor editor = prefs.edit();
 
