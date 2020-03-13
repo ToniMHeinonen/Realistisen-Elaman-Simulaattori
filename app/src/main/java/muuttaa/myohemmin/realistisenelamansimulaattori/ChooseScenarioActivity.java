@@ -6,20 +6,17 @@ import muuttaa.myohemmin.realistisenelamansimulaattori.choosescenarioitem.Catego
 import muuttaa.myohemmin.realistisenelamansimulaattori.choosescenarioitem.HamburgerDialog;
 import muuttaa.myohemmin.realistisenelamansimulaattori.data.SaveSystem;
 import muuttaa.myohemmin.realistisenelamansimulaattori.choosescenarioitem.ScenarioItem;
-import muuttaa.myohemmin.realistisenelamansimulaattori.choosescenarioitem.ScenarioItemAdapter;
 import muuttaa.myohemmin.realistisenelamansimulaattori.choosescenarioitem.ScenarioItemPrefs;
 
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.DragEvent;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ExpandableListAdapter;
 import android.widget.ExpandableListView;
-import android.widget.ListView;
 import android.widget.Spinner;
 import android.widget.Toast;
 
@@ -278,7 +275,7 @@ public class ChooseScenarioActivity extends AppCompatActivity {
      * Opens Settings Activity.
      */
     public void settingsSelected() {
-        startActivity(new Intent(this, SettingActivity.class));
+        startActivity(new Intent(this, SettingsActivity.class));
     }
 
     public void openCategoryOptions(String category) {

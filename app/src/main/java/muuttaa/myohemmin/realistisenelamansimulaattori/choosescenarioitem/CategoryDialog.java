@@ -47,6 +47,7 @@ public class CategoryDialog extends Dialog implements
         deleteBtn.setOnClickListener(this);
         findViewById(R.id.back).setOnClickListener(this);
 
+        // If it's default category, disable modifying
         if (category.equals(activity.getResources().getString(R.string.scenarios))) {
             renameBtn.setClickable(false);
             deleteBtn.setClickable(false);

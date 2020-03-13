@@ -20,4 +20,9 @@
     <string name="newCategory">Uusi kategoria</string>
     <string name="backButton">Sulje</string>
     <string name="categoryExists">Kategoria on jo olemassa!</string>
+
+    <!-- SETTINGS ACTIVITY -->
+    <string name="font_title">Fontti</string>
+    <string name="font_color">Väri</string>
+    <string name="font_size">Koko</string>
 </resources>
