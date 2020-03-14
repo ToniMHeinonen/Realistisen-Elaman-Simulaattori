@@ -76,6 +76,7 @@ public class ScenarioActivity extends AppCompatActivity {
                         // and send user's answers. Else update the questions in arrayadapter.
                         if (saveSystem.endOfScenario()) {
                             Intent intent = new Intent(getApplicationContext(), GameOverActivity.class);
+                            intent.putExtra("scenario", saveSystem.getCurrentScenario());
                             intent.putExtra("userAnswers", userAnswers);
                             startActivity(intent);
                         } else {
