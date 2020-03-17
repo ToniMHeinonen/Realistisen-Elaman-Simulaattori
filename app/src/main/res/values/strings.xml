@@ -25,4 +25,27 @@
     <string name="font_title">Fontti</string>
     <string name="font_color">Väri</string>
     <string name="font_size">Koko</string>
+    <string name="audio_title">Audio</string>
+    <string name="audio_music">Musiikki</string>
+    <string name="audio_sound">Ääni</string>
+
+    <string name="font_small">Pieni</string>
+    <string name="font_normal">Normaali</string>
+    <string name="font_large">Suuri</string>
+    <string-array name="font_sizes">
+        <item>@string/font_small</item>
+        <item>@string/font_normal</item>
+        <item>@string/font_large</item>
+    </string-array>
+
+    <string name="font_black">Musta</string>
+    <string name="font_red">Punainen</string>
+    <string name="font_green">Vihreä</string>
+    <string name="font_blue">Sininen</string>
+    <string-array name="font_colors">
+        <item>@string/font_black</item>
+        <item>@string/font_red</item>
+        <item>@string/font_green</item>
+        <item>@string/font_blue</item>
+    </string-array>
 </resources>
