@@ -2,6 +2,7 @@ package muuttaa.myohemmin.realistisenelamansimulaattori.data;
 
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.content.res.Resources;
 import android.util.Log;
 
 import org.json.JSONArray;
@@ -22,7 +23,7 @@ import muuttaa.myohemmin.realistisenelamansimulaattori.R;
 
 public class SaveSystemPreferences implements JsonInterface {
     private Context context;
-    private boolean debuggi = true;
+    private boolean debuggi = false;
     private List<String> list;
     private String scenarie;
     private String scenarioName;
@@ -31,10 +32,10 @@ public class SaveSystemPreferences implements JsonInterface {
     private SharedPreferences tiedot;
     private boolean preferencessa = false;
 
-    public SaveSystemPreferences(Context con){
+    public SaveSystemPreferences(Context con, SharedPreferences pref){
         this.context = con;
         this.list = new LinkedList<>();
-        tiedot = this.context.getSharedPreferences("tiedot",0);
+        tiedot = pref;
         setFirstSceneFromScenario();
     }
     @Override
@@ -85,7 +86,8 @@ public class SaveSystemPreferences implements JsonInterface {
             JSONObject json = new JSONObject(data);
             JSONArray array = json.getJSONArray("scenarioslist");
             for(int lap=0; lap < array.length(); lap++){
-                JSONObject obj = array.getJSONObject(lap);
+                String test = array.getString(lap);
+                JSONObject obj = new JSONObject(test);
                 if(scenarie.equals(obj.getString("name"))){
                     out = obj.getString("file");
                     break;
@@ -134,6 +136,7 @@ public class SaveSystemPreferences implements JsonInterface {
         String out = "";
         try {
             JSONObject base = this.rootInScenario;
+            System.out.println("base: " + base);
             out = base.getJSONObject(this.scenarioName).getString("question");
         } catch (JSONException e){
             if(debuggi){
@@ -231,7 +234,7 @@ public class SaveSystemPreferences implements JsonInterface {
      */
     private void createJSONObjectOfScenario(){
         if(rootInScenario == null){
-            String data = getStringFromSceneFile();
+                String data = getStringFromSceneFile();
             if(!preferencessa) {
                 try {
                     this.rootInScenario = new JSONObject(data);
@@ -388,8 +391,12 @@ public class SaveSystemPreferences implements JsonInterface {
             helpp += h1.charAt(ind);
         }
         try {
-            InputStream test = context.getResources().openRawResource(
-                    context.getResources().getIdentifier(helpp, "raw", context.getPackageName()));
+            int apu = context.getResources().getIdentifier(helpp, "raw", context.getPackageName());
+            if(apu == 0){
+                preferencessa = true;
+                return "null";
+            }
+            InputStream test = context.getResources().openRawResource(apu);
             BufferedReader br = new BufferedReader(new InputStreamReader(test));
             String nextLine;
             while ((nextLine = br.readLine()) != null) {
@@ -401,11 +408,14 @@ public class SaveSystemPreferences implements JsonInterface {
                 Log.e("FILE/SaveSystem/get", "Tiedostoa ei löytynyt");
                 e.printStackTrace();
             }
+            return "null";
         } catch (IOException e){
+            preferencessa = true;
             if(debuggi){
                 Log.e("FILE/SaveSystem/get", "kirjoituksessa ongelmaa");
                 e.printStackTrace();
             }
+            return "null";
         }
         return out;
     }
