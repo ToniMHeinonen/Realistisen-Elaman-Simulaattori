@@ -48,4 +48,41 @@
 
     </LinearLayout>
 
+    <TextView
+        style="@style/SettingsTitles"
+        android:text="@string/audio_title"
+        android:textSize="35sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            style="@style/SettingsTopics"
+            android:text="@string/audio_music" />
+
+        <SeekBar
+            style="@style/SettingsSeekbars"
+            android:id="@+id/musicBar" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            style="@style/SettingsTopics"
+            android:text="@string/audio_sound" />
+
+        <SeekBar
+            style="@style/SettingsSeekbars"
+            android:id="@+id/soundBar" />
+
+    </LinearLayout>
+
 </LinearLayout>
