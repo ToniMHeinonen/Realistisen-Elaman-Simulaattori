@@ -87,7 +87,7 @@ public class CategoriesListAdapter extends BaseExpandableListAdapter {
         }
         TextView text1 = convertView.findViewById(R.id.scenarioPercentage);
         TextView text2 = convertView.findViewById(R.id.scenarioName);
-        text1.setText(""+item.getPercentageCompleted());
+        text1.setText(item.getPercentageCompleted() + " %");
         text2.setText(""+item.getName());
         return convertView;
     }
