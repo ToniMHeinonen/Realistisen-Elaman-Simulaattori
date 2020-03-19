@@ -186,6 +186,11 @@ public class CategoriesListAdapter extends BaseExpandableListAdapter {
         return true;
     }
 
+    /**
+     * Updates categories and scenarios.
+     * @param listDataHeader categories
+     * @param listChildData scenarios
+     */
     public void setNewItems(List<String> listDataHeader,HashMap<String, List<ScenarioItem>> listChildData) {
         this.parentItem = listDataHeader;
         this.childItem = listChildData;

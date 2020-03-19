@@ -185,6 +185,9 @@ public class ChooseScenarioActivity extends AppCompatActivity {
         categoriesListView.expandGroup(0);
     }
 
+    /**
+     * Refreshes categories and scenarios.
+     */
     private void refreshScenarioList() {
         categoriesListDetail = CategoriesListAdapter.getData(scenarios);
         categoriesListTitle = new ArrayList<String>(categoriesListDetail.keySet());
@@ -299,6 +302,10 @@ public class ChooseScenarioActivity extends AppCompatActivity {
         startActivity(new Intent(this, SettingsActivity.class));
     }
 
+    /**
+     * Opens options for given category.
+     * @param category desired category
+     */
     public void openCategoryOptions(String category) {
         CategoryDialog dialog = new CategoryDialog(this, category);
         dialog.show();
@@ -321,6 +328,10 @@ public class ChooseScenarioActivity extends AppCompatActivity {
         refreshScenarioList();
     }
 
+    /**
+     * Deletes given category.
+     * @param category to delete
+     */
     public void deleteCategory(String category) {
         if (category.equals(getResources().getString(R.string.scenarios)))
             return;
@@ -337,6 +348,11 @@ public class ChooseScenarioActivity extends AppCompatActivity {
         refreshScenarioList();
     }
 
+    /**
+     * Renames given category.
+     * @param oldName category's old name
+     * @param newName category's new name
+     */
     public void renameCategory(String oldName, String newName) {
         if (oldName.equals(getResources().getString(R.string.scenarios)))
             return;
