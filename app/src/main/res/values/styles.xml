@@ -8,10 +8,7 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <style name="LargeFont">
-
-    </style>
-
+    <!-- Choose Scenario Activity -->
     <style name="HamburgerButton">
         <item name="android:layout_width">150dp</item>
         <item name="android:layout_height">60dp</item>
@@ -29,6 +26,21 @@
         <item name="android:textSize">25sp</item>
         <item name="android:background">#FFF</item>
         <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="Category">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#FFF</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:background">#4AA</item>
+        <item name="android:paddingTop">15dp</item>
+        <item name="android:paddingBottom">15dp</item>
+    </style>
+
+    <style name="CategoryName" parent="Category">
+        <item name="android:layout_weight">0.8</item>
+        <item name="android:paddingLeft">?android:attr/expandableListPreferredItemPaddingLeft</item>
     </style>
 
     <!-- Settings Activity -->

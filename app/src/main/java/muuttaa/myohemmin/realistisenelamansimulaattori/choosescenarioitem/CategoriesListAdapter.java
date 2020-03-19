@@ -17,6 +17,7 @@ import java.util.List;
 import java.util.Map;
 
 import muuttaa.myohemmin.realistisenelamansimulaattori.ChooseScenarioActivity;
+import muuttaa.myohemmin.realistisenelamansimulaattori.Debug;
 import muuttaa.myohemmin.realistisenelamansimulaattori.GlobalPrefs;
 import muuttaa.myohemmin.realistisenelamansimulaattori.R;
 
@@ -26,6 +27,9 @@ public class CategoriesListAdapter extends BaseExpandableListAdapter {
     private Context context;
     private List<String> parentItem;
     private HashMap<String, List<ScenarioItem>> childItem;
+
+    private static final int GROUP_TYPE_1 = 0;
+    private static final int GROUP_TYPE_2 = 1;
 
     /**
      * Initializes instance of this class.
@@ -144,26 +148,58 @@ public class CategoriesListAdapter extends BaseExpandableListAdapter {
     @Override
     public View getGroupView(final int listPosition, boolean isExpanded,
                              View convertView, ViewGroup parent) {
+        LayoutInflater layoutInflater = (LayoutInflater) this.context.
+                getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         final String listTitle = (String) getGroup(listPosition);
+
+        int groupType = getGroupType(listPosition);
+
         if (convertView == null) {
-            LayoutInflater layoutInflater = (LayoutInflater) this.context.
-                    getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            convertView = layoutInflater.inflate(R.layout.category_topic, null);
+            switch (groupType) {
+                case GROUP_TYPE_1 :
+                    convertView = layoutInflater.inflate(R.layout.category_topic_default, null);
+                    break;
+                default:
+                    convertView = layoutInflater.inflate(R.layout.category_topic, null);
+                    break;
+            }
         }
         TextView listTitleTextView = convertView.findViewById(R.id.listTitle);
         listTitleTextView.setTypeface(null, Typeface.BOLD);
         listTitleTextView.setText(listTitle);
 
-        Button optionsButton = convertView.findViewById(R.id.listOptions);
-        optionsButton.setOnClickListener(new View.OnClickListener() {
+        switch (groupType) {
+            case GROUP_TYPE_1 :
+                break;
+            default:
+                Button optionsButton = convertView.findViewById(R.id.listOptions);
+                optionsButton.setOnClickListener(new View.OnClickListener() {
 
-            @Override
-            public void onClick(View v) {
-                activity.openCategoryOptions(listTitle);
-            }
-        });
+                    @Override
+                    public void onClick(View v) {
+                        activity.openCategoryOptions(listTitle);
+                    }
+                });
+                break;
+
+        }
 
         return convertView;
+    }
+
+    @Override
+    public int getGroupTypeCount() {
+        return 2;
+    }
+
+    @Override
+    public int getGroupType(int groupPosition) {
+        switch (groupPosition) {
+            case 0:
+                return GROUP_TYPE_1;
+            default:
+                return GROUP_TYPE_2;
+        }
     }
 
     /**

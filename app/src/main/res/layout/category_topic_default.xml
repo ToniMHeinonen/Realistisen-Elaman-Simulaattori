@@ -6,13 +6,5 @@
     android:layout_height="match_parent">
     <TextView
         android:id="@+id/listTitle"
-        style="@style/CategoryName"/>
-
-    <Button
-        android:id="@+id/listOptions"
-        style="@style/Category"
-        android:layout_weight="0.2"
-        android:focusable="false"
-        android:text="..."
-        android:gravity="center" />
+        style="@style/CategoryName" />
 </LinearLayout>
