@@ -9,9 +9,15 @@ public abstract class GlobalPrefs {
     private static SharedPreferences prefs;
 
     private static final String keyPrefs = "RLS_global_prefs";
+
+    // Categories
     private static final String keyAllCategories = "all_categories";
     private static final String keyCategoriesAmount = "categories_amount";
     private static final ArrayList<String> categoriesList = new ArrayList<>();
+
+    // Sorting
+    private static final String keySortType = "sort_type";
+    private static final String keySortAscending = "sort_ascending";
 
     /**
      * Loads the saved values from file.
@@ -75,5 +81,21 @@ public abstract class GlobalPrefs {
         }
 
         editor.commit();
+    }
+
+    public static int loadSortType() {
+        return prefs.getInt(keySortType, 0);
+    }
+
+    public static void saveSortType(int type) {
+        prefs.edit().putInt(keySortType, type).apply();
+    }
+
+    public static boolean loadSortAscending() {
+        return prefs.getBoolean(keySortAscending, false);
+    }
+
+    public static void saveSortAscending(boolean ascending) {
+        prefs.edit().putBoolean(keySortAscending, ascending).apply();
     }
 }

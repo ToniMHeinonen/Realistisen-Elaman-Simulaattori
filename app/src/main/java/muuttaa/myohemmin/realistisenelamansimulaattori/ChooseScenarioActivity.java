@@ -15,6 +15,7 @@ import android.view.DragEvent;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ExpandableListAdapter;
 import android.widget.ExpandableListView;
 import android.widget.Spinner;
@@ -33,8 +34,9 @@ public class ChooseScenarioActivity extends AppCompatActivity {
     private JsonInterface json = new SaveSystem(this);
     private ArrayList<ScenarioItem> scenarios = new ArrayList<>();
     private final int SORT_NAME = 0, SORT_RECENT = 1, SORT_PERCENTAGE = 2;
-    private int sortBy = SORT_NAME;
-    private boolean sortAscending = true;
+    private int sortBy;
+    private Button sortArrow;
+    private boolean sortAscending;
 
     // Categories
     ExpandableListView categoriesListView;
@@ -186,14 +188,21 @@ public class ChooseScenarioActivity extends AppCompatActivity {
      * Adds sort item selected listener to sort Spinner and sorts list items desirably.
      */
     private void setupSorting() {
+        // Load previous sorting style
+        sortBy = GlobalPrefs.loadSortType();
+        sortAscending = GlobalPrefs.loadSortAscending();
+
+        sortArrow = findViewById(R.id.sortDirection); // Load sort arrow
+
         Spinner sort = findViewById(R.id.sort);
         // Create an ArrayAdapter using the string array and a default spinner layout
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
                 R.array.scenario_sort, android.R.layout.simple_spinner_item);
         // Specify the layout to use when the list of choices appears
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        // Apply the adapter to the spinner
-        sort.setAdapter(adapter);
+
+        sort.setAdapter(adapter); // Apply the adapter to the spinner
+        sort.setSelection(sortBy); // Set selection to loaded value
 
         sort.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
@@ -220,6 +229,9 @@ public class ChooseScenarioActivity extends AppCompatActivity {
      * Sorts list by current sorting type and order.
      */
     private void sortList() {
+        GlobalPrefs.saveSortType(sortBy);
+        GlobalPrefs.saveSortAscending(sortAscending);
+
         switch (sortBy) {
             case SORT_NAME:
                 Collections.sort(scenarios, new Comparator<ScenarioItem>() {
@@ -249,6 +261,8 @@ public class ChooseScenarioActivity extends AppCompatActivity {
                 });
                 break;
         }
+
+        sortArrow.setText(sortAscending ? "v" : "^");
 
         showScenarioList();
     }
