@@ -17,7 +17,6 @@ import java.util.List;
 import java.util.Map;
 
 import muuttaa.myohemmin.realistisenelamansimulaattori.ChooseScenarioActivity;
-import muuttaa.myohemmin.realistisenelamansimulaattori.Debug;
 import muuttaa.myohemmin.realistisenelamansimulaattori.GlobalPrefs;
 import muuttaa.myohemmin.realistisenelamansimulaattori.R;
 
@@ -25,21 +24,21 @@ public class CategoriesListAdapter extends BaseExpandableListAdapter {
 
     private ChooseScenarioActivity activity;
     private Context context;
-    private List<String> ParentItem;
-    private HashMap<String, List<ScenarioItem>> ChildItem;
+    private List<String> parentItem;
+    private HashMap<String, List<ScenarioItem>> childItem;
 
     /**
      * Initializes instance of this class.
      * @param activity current activity
-     * @param ParentItem topic names of categories
-     * @param ChildItem items inside categories
+     * @param parentItem topic names of categories
+     * @param childItem items inside categories
      */
-    public CategoriesListAdapter(ChooseScenarioActivity activity, List<String> ParentItem,
-                                 HashMap<String, List<ScenarioItem>> ChildItem) {
+    public CategoriesListAdapter(ChooseScenarioActivity activity, List<String> parentItem,
+                                 HashMap<String, List<ScenarioItem>> childItem) {
         this.activity = activity;
         this.context = activity.getApplicationContext();
-        this.ParentItem = ParentItem;
-        this.ChildItem = ChildItem;
+        this.parentItem = parentItem;
+        this.childItem = childItem;
     }
 
     /**
@@ -50,7 +49,7 @@ public class CategoriesListAdapter extends BaseExpandableListAdapter {
      */
     @Override
     public Object getChild(int listPosition, int expandedListPosition) {
-        return this.ChildItem.get(this.ParentItem.get(listPosition))
+        return this.childItem.get(this.parentItem.get(listPosition))
                 .get(expandedListPosition);
     }
 
@@ -99,7 +98,7 @@ public class CategoriesListAdapter extends BaseExpandableListAdapter {
      */
     @Override
     public int getChildrenCount(int listPosition) {
-        return this.ChildItem.get(this.ParentItem.get(listPosition))
+        return this.childItem.get(this.parentItem.get(listPosition))
                 .size();
     }
 
@@ -110,7 +109,7 @@ public class CategoriesListAdapter extends BaseExpandableListAdapter {
      */
     @Override
     public Object getGroup(int listPosition) {
-        return this.ParentItem.get(listPosition);
+        return this.parentItem.get(listPosition);
     }
 
     /**
@@ -119,7 +118,7 @@ public class CategoriesListAdapter extends BaseExpandableListAdapter {
      */
     @Override
     public int getGroupCount() {
-        return this.ParentItem.size();
+        return this.parentItem.size();
     }
 
     /**
@@ -185,6 +184,12 @@ public class CategoriesListAdapter extends BaseExpandableListAdapter {
     @Override
     public boolean isChildSelectable(int listPosition, int expandedListPosition) {
         return true;
+    }
+
+    public void setNewItems(List<String> listDataHeader,HashMap<String, List<ScenarioItem>> listChildData) {
+        this.parentItem = listDataHeader;
+        this.childItem = listChildData;
+        notifyDataSetChanged();
     }
 
     /**

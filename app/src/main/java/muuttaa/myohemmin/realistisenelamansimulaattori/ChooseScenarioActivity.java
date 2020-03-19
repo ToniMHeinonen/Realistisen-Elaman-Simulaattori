@@ -15,6 +15,7 @@ import android.view.DragEvent;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.ExpandableListAdapter;
 import android.widget.ExpandableListView;
@@ -40,7 +41,7 @@ public class ChooseScenarioActivity extends AppCompatActivity {
 
     // Categories
     ExpandableListView categoriesListView;
-    ExpandableListAdapter categoriesListAdapter;
+    CategoriesListAdapter categoriesListAdapter;
     List<String> categoriesListTitle;
     HashMap<String, List<ScenarioItem>> categoriesListDetail;
 
@@ -166,7 +167,7 @@ public class ChooseScenarioActivity extends AppCompatActivity {
                                         selectedItem.setCategory(category);
                                     }
 
-                                    showScenarioList();
+                                    refreshScenarioList();
                                 }
                             }
 
@@ -182,6 +183,12 @@ public class ChooseScenarioActivity extends AppCompatActivity {
             }
         });
         categoriesListView.expandGroup(0);
+    }
+
+    private void refreshScenarioList() {
+        categoriesListDetail = CategoriesListAdapter.getData(scenarios);
+        categoriesListTitle = new ArrayList<String>(categoriesListDetail.keySet());
+        categoriesListAdapter.setNewItems(categoriesListTitle, categoriesListDetail);
     }
 
     /**
@@ -264,7 +271,7 @@ public class ChooseScenarioActivity extends AppCompatActivity {
 
         sortArrow.setText(sortAscending ? "v" : "^");
 
-        showScenarioList();
+        refreshScenarioList();
     }
 
     /**
@@ -310,7 +317,8 @@ public class ChooseScenarioActivity extends AppCompatActivity {
         }
 
         GlobalPrefs.saveCategory(category);
-        showScenarioList();
+
+        refreshScenarioList();
     }
 
     public void deleteCategory(String category) {
@@ -326,7 +334,7 @@ public class ChooseScenarioActivity extends AppCompatActivity {
 
         GlobalPrefs.deleteCategory(category);
 
-        showScenarioList();
+        refreshScenarioList();
     }
 
     public void renameCategory(String oldName, String newName) {
@@ -349,6 +357,6 @@ public class ChooseScenarioActivity extends AppCompatActivity {
 
         GlobalPrefs.renameCategory(oldName, newName);
 
-        showScenarioList();
+        refreshScenarioList();
     }
 }
