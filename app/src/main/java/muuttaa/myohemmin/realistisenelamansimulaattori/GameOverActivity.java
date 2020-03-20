@@ -1,6 +1,8 @@
 package muuttaa.myohemmin.realistisenelamansimulaattori;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 import java.text.DecimalFormat;
@@ -23,7 +25,7 @@ public class GameOverActivity extends AppCompatActivity {
             scenario = extras.getString("scenario");
             userAnswers = (ArrayList) extras.getSerializable("userAnswers");
             completedScenario = findViewById(R.id.resultScenario);
-            completedScenario.setText("Suoritettu scenario: " + scenario);
+            completedScenario.setText("Suoritettu skenaario: " + scenario);
             completedPercentage = findViewById(R.id.resultPercentage);
             completedPercentage.setText("Onnistumisprosentti: " + getPercentage(userAnswers) + "%");
         }
@@ -36,5 +38,12 @@ public class GameOverActivity extends AppCompatActivity {
         }
         result = result / (double) list.size();
         return new DecimalFormat("#.##").format(result);
+    }
+
+    public void goToMenu(View v) {
+        if (v.getId() == R.id.backToMenu) {
+            Intent intent = new Intent(this, ChooseScenarioActivity.class);
+            startActivity(intent);
+        }
     }
 }
