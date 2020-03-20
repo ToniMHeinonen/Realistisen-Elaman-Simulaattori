@@ -9,6 +9,7 @@ import java.text.DecimalFormat;
 import java.util.ArrayList;
 
 import androidx.appcompat.app.AppCompatActivity;
+import muuttaa.myohemmin.realistisenelamansimulaattori.choosescenarioitem.ScenarioItemPrefs;
 
 public class GameOverActivity extends AppCompatActivity {
     private ArrayList<Integer> userAnswers;
@@ -31,13 +32,13 @@ public class GameOverActivity extends AppCompatActivity {
         }
     }
 
-    private String getPercentage(ArrayList<Integer> list) {
+    private Integer getPercentage(ArrayList<Integer> list) {
         double result = 0;
         for (int i = 0; i < list.size(); i++) {
             result += list.get(i);
         }
         result = result / (double) list.size();
-        return new DecimalFormat("#.##").format(result);
+        return (int) Math.round(result);
     }
 
     public void goToMenu(View v) {
