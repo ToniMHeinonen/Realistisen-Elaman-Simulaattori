@@ -14,8 +14,8 @@ import muuttaa.myohemmin.realistisenelamansimulaattori.choosescenarioitem.Scenar
 public class GameOverActivity extends AppCompatActivity {
     private ArrayList<Integer> userAnswers;
     private String scenario;
-    private TextView completedScenario;
-    private TextView completedPercentage;
+    private TextView completedScenarioTextView;
+    private TextView completedPercentageTextView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,10 +25,14 @@ public class GameOverActivity extends AppCompatActivity {
         if (extras != null) {
             scenario = extras.getString("scenario");
             userAnswers = (ArrayList) extras.getSerializable("userAnswers");
-            completedScenario = findViewById(R.id.resultScenario);
-            completedScenario.setText("Suoritettu skenaario: " + scenario);
-            completedPercentage = findViewById(R.id.resultPercentage);
-            completedPercentage.setText("Onnistumisprosentti: " + getPercentage(userAnswers) + "%");
+            completedScenarioTextView = findViewById(R.id.resultScenario);
+            completedScenarioTextView.setText("Suoritettu skenaario: " + scenario);
+            completedPercentageTextView = findViewById(R.id.resultPercentage);
+            int completedPercentage = getPercentage(userAnswers);
+            completedPercentageTextView.setText("Onnistumisprosentti: " + completedPercentage + "%");
+            if (ScenarioItemPrefs.loadPercentage(scenario) < completedPercentage) {
+                ScenarioItemPrefs.savePercentage(scenario, completedPercentage);
+            }
         }
     }
 
