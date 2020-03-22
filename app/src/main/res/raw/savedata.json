@@ -1,5 +1,4 @@
 {
-  "scenarios": [ "Ford", "BMW", "Fiat", "Leffateatteri"],
-  "scenarioslist": [{"name": "Ford","file": "ford.json"}, {"name": "BMW","file": "bmw.json"}, {"name": "Fiat","file": "fiat.json"},
-    {"name": "Leffateatteri", "file": "teatteri.json"}]
+  "scenarios": [ "Leffateatteri"],
+  "scenarioslist": [{"name": "Leffateatteri", "file": "teatteri.json"}]
 }
