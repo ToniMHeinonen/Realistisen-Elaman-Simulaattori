@@ -479,4 +479,65 @@ public class SaveSystemPreferences implements JsonInterface {
         editor.putInt(key, luku);
         editor.commit();
     }
+
+    /**
+     * Scenario saving
+     * @param scenario Scenario class
+     */
+    public void saveScenario(Scenario scenario){
+        //convert data to json
+        try {
+            List<Scene> lista = scenario.getListaus();
+            JSONObject base = new JSONObject();
+            for (int lap = 0; lap < lista.size(); lap++) {
+                JSONObject scene = new JSONObject();
+                Scene apu = lista.get(lap);
+                scene.put("question", apu.getQuestion());
+                scene.put("background", apu.getBackground());
+                scene.put("person", apu.getPerson());
+                scene.put("face", apu.getFace());
+                JSONArray array = new JSONArray();
+                String[] a = apu.getAnswers();
+                for (int k=0; k < a.length; k++){
+                    array.put(a[k]);
+                }
+                scene.put("answers", array);
+                List<GeneralKeyAndValue> menee = apu.getGoList();
+                List<GeneralKeyAndValue> varit = apu.getColorList();
+                for(int k=0; k < menee.size(); k++){
+                    scene.put(menee.get(k).getKey(), menee.get(k).getValue());
+                }
+                for (int k=0; k < varit.size(); k++){
+                    scene.put(varit.get(k).getKey(), varit.get(k).getValue());
+                }
+                //put data to base
+                base.put(apu.getName(), scene);
+            }
+            String json = base.toString();
+            if(json.length() > 8000){
+                int monta = json.length() / 8000;
+                sendInteger(scenario.getName().toLowerCase() + "Size", monta);
+                int index = 0;
+                for(int lap=0; lap < monta; lap++){
+                    String osa = "";
+                    while(index < ((lap + 1) * 8000)){
+                        char merkki = json.charAt(index);
+                        osa += merkki;
+                        index++;
+                    }
+                    sendString(scenario.getName().toLowerCase() + lap, osa);
+                }
+                String vika = "";
+                while (index < json.length()){
+                    vika += json.charAt(index);
+                    index++;
+                }
+                sendString(scenario.getName().toLowerCase() + monta, vika);
+            }
+        } catch (JSONException e){
+            if(debuggi){
+                e.printStackTrace();
+            }
+        }
+    }
 }
