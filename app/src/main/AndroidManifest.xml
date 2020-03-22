@@ -11,7 +11,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="LockedOrientationActivity">
-        <activity android:name=".CreateScenario"></activity>
+        <activity android:name=".CreateScene"></activity>
+        <activity android:name=".CreateScenario" />
         <activity android:name=".SettingsActivity" />
         <activity
             android:name=".ChooseScenarioActivity"
