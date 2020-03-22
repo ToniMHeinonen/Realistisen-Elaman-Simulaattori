@@ -1,0 +1,19 @@
+{
+  "first": {
+    "question": "Saavut teatteriin aikeissa mennä katsomaan uutta elokuvaa yksin, eikä sinulla jo ole lippua. Mitä teet ensimmäisenä?",
+    "background": "kuva1",
+    "person": "kuva2",
+    "face": "kuva3",
+    "answers": [
+      "menet ostamaan liput ja herkut",
+      "käyt vessassa",
+      "jäät seisomaan paikalleen"
+    ],
+    "menet ostamaan liput ja herkut": "liput",
+    "käyt vessassa": "vessa",
+    "kolmas vastaus": "paikka",
+    "menet ostamaan liput ja herkutColor": "green",
+    "käyt vessassaColor": "green",
+    "jäät seisomaan paikalleenColor": "red"
+  }
+}

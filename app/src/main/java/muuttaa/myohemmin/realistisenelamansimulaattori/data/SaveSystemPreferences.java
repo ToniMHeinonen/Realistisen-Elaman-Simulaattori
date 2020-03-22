@@ -2,7 +2,6 @@ package muuttaa.myohemmin.realistisenelamansimulaattori.data;
 
 import android.content.Context;
 import android.content.SharedPreferences;
-import android.content.res.Resources;
 import android.util.Log;
 
 import org.json.JSONArray;
@@ -267,21 +266,45 @@ public class SaveSystemPreferences implements JsonInterface {
             }
         }
     }
+
+    /**
+     * This class help to create list of json and preferences (contains basic information)
+     */
     private class scenarioListHelp{
         private String n;
         private String f;
+
+        /**
+         * This constructor set name and filename
+         * @param nimi name
+         * @param filee file name
+         */
         public scenarioListHelp(String nimi, String filee){
             n = nimi;
             f = filee;
         }
+
+        /**
+         * return name
+         * @return name without .json end
+         */
         public String getName(){
             return n;
         }
+
+        /**
+         * return file name
+         * @return file name contains .json end
+         */
         public String getFile(){
             return f;
         }
     }
 
+    /**
+     * Get data from json file and preferences
+     * @return json data in String format
+     */
     private String getStringFromScenariesFileAndPreferences(){
         String g = getStringFromScenariesFile();
         List<scenarioListHelp> scenaariot = new ArrayList<>();
