@@ -32,5 +32,81 @@
     "kerrot mihin leffaan aiot mennä ja sanot haluavasi ostaa lipun.Color": "green",
     "annat vain herkut etkä sano mitään ja käyt myöhemmin ostamassa lipun erikseenColor": "red",
     "varmistat että edessäsi on joku, jotta näet miten pitää toimiaColor": "yellow"
+  },
+  "vessa": {
+    "question": "Tulet vessasta ulos ja huomaat ruuhkaa teatterissa.",
+    "background": "kuva1",
+    "person": "kuva2",
+    "face": "kuva3",
+    "answers": [
+      "menet ostamaan herkut ja liput.",
+      "lähdet teatterista"
+    ],
+    "menet ostamaan herkut ja liput.": "liput",
+    "lähdet teatterista": "lahteminen",
+    "menet ostamaan herkut ja liput.Color": "green",
+    "lähdet teatteristaColor": "red"
+  },
+  "paikka": {
+    "question": "Seisot paikallasi, etkä tiedä mitä tehdä.",
+    "background": "kuva1",
+    "person": "kuva2",
+    "face": "kuva3",
+    "answers": [
+      "kysyt teatterin henkilökunnalta mitä pitäisi tehdä.",
+      "lähdet teatterista"
+    ],
+    "kysyt teatterin henkilökunnalta mitä pitäisi tehdä.": "liput",
+    "lähdet teatterista": "lahteminen",
+    "kysyt teatterin henkilökunnalta mitä pitäisi tehdä.Color": "green",
+    "lähdet teatteristaColor": "red"
+  },
+  "lahteminen": {
+    "question": "Lähdet teatterista kotiin",
+    "background": "kuva1",
+    "person": "kuva2",
+    "face": "kuva3",
+    "answers": [
+      "Lähetät teatterille valituksen ilman syytä.",
+      "menet kotiin.",
+      "Lähetät teatterille realistisen palautteen."
+    ],
+    "Lähetät teatterille valituksen ilman syytä.": "null",
+    "menet kotiin.": "null",
+    "Lähetät teatterille realistisen palautteen.": "null",
+    "Lähetät teatterille valituksen ilman syytä.Color": "red",
+    "menet kotiin.Color": "green",
+    "Lähetät teatterille realistisen palautteen.Color": "green"
+  },
+  "odottaa": {
+    "question": "Olet saanut ostettua lipun ja huomaat vapaan istuma paikan salin ulkopuolella",
+    "background": "kuva1",
+    "person": "kuva2",
+    "face": "kuva3",
+    "answers": [
+      "Menet istumaan kyseiseen paikkaan",
+      "Jäät seisomaan"
+    ],
+    "Menet istumaan kyseiseen paikkaan": "tilanne",
+    "Jäät seisomaan": "saliin",
+    "Menet istumaan kyseiseen paikkaanColor": "green",
+    "Jäät seisomaanColor": "green"
+  },
+  "saliin": {
+    "question": "Saliin päästetään sisälle",
+    "background": "kuva1",
+    "person": "kuva2",
+    "face": "kuva3",
+    "answers": [
+      "menet jonoon",
+      "odotat, että jono on mennyt ja menet sitten saliin",
+      "jäät seisomaan etkä mene saliin"
+    ],
+    "menet jonoon": "jalkeen",
+    "odotat, että jono on mennyt ja menet sitten saliin": "jalkeen",
+    "jäät seisomaan etkä mene saliin": "jalkeen",
+    "menet jonoonColor": "green",
+    "odotat, että jono on mennyt ja menet sitten saliinColor": "green",
+    "jäät seisomaan etkä mene saliinColor": "red"
   }
 }
