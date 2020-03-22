@@ -11,9 +11,26 @@
     ],
     "menet ostamaan liput ja herkut": "liput",
     "käyt vessassa": "vessa",
-    "kolmas vastaus": "paikka",
+    "jäät seisomaan paikalleen": "paikka",
     "menet ostamaan liput ja herkutColor": "green",
     "käyt vessassaColor": "green",
     "jäät seisomaan paikalleenColor": "red"
+  },
+  "liput": {
+    "question": "Saavut kassalle ja laitat tiskille herkut jotka aiot juuri ostaa lipun kanssa.",
+    "background": "kuva1",
+    "person": "kuva2",
+    "face": "kuva3",
+    "answers": [
+      "kerrot mihin leffaan aiot mennä ja sanot haluavasi ostaa lipun.",
+      "annat vain herkut etkä sano mitään ja käyt myöhemmin ostamassa lipun erikseen",
+      "varmistat että edessäsi on joku, jotta näet miten pitää toimia"
+    ],
+    "kerrot mihin leffaan aiot mennä ja sanot haluavasi ostaa lipun.": "odottaa",
+    "annat vain herkut etkä sano mitään ja käyt myöhemmin ostamassa lipun erikseen": "odottaa",
+    "varmistat että edessäsi on joku, jotta näet miten pitää toimia": "odottaa",
+    "kerrot mihin leffaan aiot mennä ja sanot haluavasi ostaa lipun.Color": "green",
+    "annat vain herkut etkä sano mitään ja käyt myöhemmin ostamassa lipun erikseenColor": "red",
+    "varmistat että edessäsi on joku, jotta näet miten pitää toimiaColor": "yellow"
   }
 }
