@@ -1,22 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:layout_weight="1"
     tools:context=".ScenarioActivity">
+
+    <ImageView
+        android:id="@+id/scenarioBackground"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/background_1"/>
+
+    <ImageView
+        android:id="@+id/scenarioCharacter"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:scaleType="centerInside"
+        android:layout_centerHorizontal="true"
+        android:layout_alignBottom="@id/scenarioBackground"
+        android:src="@drawable/character_1"/>
+
+    <ImageView
+        android:id="@+id/scenarioFace"
+        android:layout_width="wrap_content"
+        android:layout_height="58dp"
+        android:scaleType="centerInside"
+        android:layout_alignTop="@id/scenarioCharacter"
+        android:paddingLeft="8dp"
+        android:layout_marginTop="65dp"
+        android:src="@drawable/face_happy"/>
 
     <TextView
         android:id="@+id/question"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="25sp"
+        android:layout_below="@id/scenarioBackground"/>
 
     <ListView
-        android:id = "@+id/answers"
-        android:layout_width = "match_parent"
-        android:layout_height = "wrap_content"
-        android:divider="#000"
-        android:dividerHeight="1dp"/>
+        android:id="@+id/answers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/question"/>
 
-</LinearLayout>
+</RelativeLayout>
