@@ -460,7 +460,23 @@ public class SaveSystemPreferences implements JsonInterface {
         editor.putInt(key, luku);
         editor.commit();
     }
+
+    /**
+     * Montako versiota on muistissa
+     * @param key haettava String
+     * @return montako on muistissa
+     */
     private int getInteger(String key){
         return tiedot.getInt(key, 0);
+    }
+    /**
+     * vaihda tietoa
+     * @param key muutettava String
+     * @param luku uusi luku
+     */
+    private void changeInteger(String key, int luku){
+        SharedPreferences.Editor editor = tiedot.edit();
+        editor.putInt(key, luku);
+        editor.commit();
     }
 }
