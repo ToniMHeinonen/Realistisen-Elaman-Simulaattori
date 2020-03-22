@@ -513,6 +513,7 @@ public class SaveSystemPreferences implements JsonInterface {
                 //put data to base
                 base.put(apu.getName(), scene);
             }
+            //data in parts so this try make them
             String json = base.toString();
             if(json.length() > 8000){
                 int monta = json.length() / 8000;
