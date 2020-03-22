@@ -108,5 +108,42 @@
     "menet jonoonColor": "green",
     "odotat, että jono on mennyt ja menet sitten saliinColor": "green",
     "jäät seisomaan etkä mene saliinColor": "red"
+  },
+  "tilanne": {
+    "question": "Huonokuntoinen ihminen tulee odottamaan, muttei pääse istumaan minnekään.",
+    "background": "kuva1",
+    "person": "kuva2",
+    "face": "kuva3",
+    "answers": [
+      "tarjoat omaa paikkaasi",
+      "et tee mitään",
+      "käsket jotain muuta antamaan paikan"
+    ],
+    "tarjoat omaa paikkaasi": "saliin",
+    "et tee mitään": "saliin",
+    "käsket jotain muuta antamaan paikan": "saliin",
+    "tarjoat omaa paikkaasiColor": "green",
+    "et tee mitäänColor": "yellow",
+    "käsket jotain muuta antamaan paikanColor": "red"
+  },
+  "jalkeen": {
+    "question": "Elokuva on loppunut",
+    "background": "kuva1",
+    "person": "kuva2",
+    "face": "kuva3",
+    "answers": [
+      "laitat omat roskat roskiin, sitten käyt vessassa ja sitten lähdet teatterista.",
+      "laitat omat roskat roskiin ja lähdet kotiin",
+      "jätät roskat, sitten käyt vessassa ja sitten lähdet teatterista.",
+      "jätät roskat ja lähdet kotiin"
+    ],
+    "laitat omat roskat roskiin, sitten käyt vessassa ja sitten lähdet teatterista.": "lahteminen",
+    "laitat omat roskat roskiin ja lähdet kotiin": "lahteminen",
+    "jätät roskat, sitten käyt vessassa ja sitten lähdet teatterista.": "lahteminen",
+    "jätät roskat ja lähdet kotiin": "lahteminen",
+    "laitat omat roskat roskiin, sitten käyt vessassa ja sitten lähdet teatterista.Color": "green",
+    "laitat omat roskat roskiin ja lähdet kotiinColor": "green",
+    "jätät roskat, sitten käyt vessassa ja sitten lähdet teatterista.Color": "red",
+    "jätät roskat ja lähdet kotiinColor": "red"
   }
 }
