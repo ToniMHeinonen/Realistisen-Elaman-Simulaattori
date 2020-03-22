@@ -11,8 +11,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="LockedOrientationActivity">
-        <activity android:name=".SettingsActivity"></activity>
-        <activity android:name=".ChooseScenarioActivity"
+        <activity android:name=".CreateScenario"></activity>
+        <activity android:name=".SettingsActivity" />
+        <activity
+            android:name=".ChooseScenarioActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,10 +22,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ScenarioActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".GameOverActivity"
-            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ScenarioActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GameOverActivity"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>
