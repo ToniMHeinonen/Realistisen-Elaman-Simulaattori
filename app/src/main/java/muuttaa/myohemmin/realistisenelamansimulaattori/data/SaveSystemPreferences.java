@@ -20,6 +20,10 @@ import java.util.List;
 import muuttaa.myohemmin.realistisenelamansimulaattori.JsonInterface;
 import muuttaa.myohemmin.realistisenelamansimulaattori.R;
 
+/**
+ * This class read data from json file in resource and preferences
+ * @author Jesse Stenroth
+ */
 public class SaveSystemPreferences implements JsonInterface {
     private Context context;
     private boolean debuggi = false;

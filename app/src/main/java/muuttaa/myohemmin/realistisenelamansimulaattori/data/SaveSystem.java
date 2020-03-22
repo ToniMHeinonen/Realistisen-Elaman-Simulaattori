@@ -19,7 +19,10 @@ import java.util.Objects;
 
 import muuttaa.myohemmin.realistisenelamansimulaattori.JsonInterface;
 import muuttaa.myohemmin.realistisenelamansimulaattori.R;
-
+/**
+ * This class read data from json file in resource
+ * @author Jesse Stenroth
+ */
 public class SaveSystem implements JsonInterface {
     private Context context;
     private boolean debuggi = true;
