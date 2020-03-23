@@ -19,6 +19,9 @@ public abstract class GlobalPrefs {
     private static final String keySortType = "sort_type";
     private static final String keySortAscending = "sort_ascending";
 
+    // Font
+    private final static String keyFontStyle = "font_style";
+
     /**
      * Loads the saved values from file.
      * @param context activity context
@@ -126,5 +129,14 @@ public abstract class GlobalPrefs {
      */
     public static void saveSortAscending(boolean ascending) {
         prefs.edit().putBoolean(keySortAscending, ascending).apply();
+    }
+
+    public static FontStyle getFontStyle() {
+        return FontStyle.valueOf(prefs.getString(keyFontStyle,
+                FontStyle.Medium.name()));
+    }
+
+    public static void setFontStyle(FontStyle style) {
+        prefs.edit().putString(keyFontStyle, style.name()).commit();
     }
 }

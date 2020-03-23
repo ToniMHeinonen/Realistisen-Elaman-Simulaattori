@@ -15,9 +15,7 @@ import android.view.DragEvent;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.BaseAdapter;
 import android.widget.Button;
-import android.widget.ExpandableListAdapter;
 import android.widget.ExpandableListView;
 import android.widget.Spinner;
 import android.widget.Toast;
@@ -51,13 +49,16 @@ public class ChooseScenarioActivity extends AppCompatActivity {
      */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        mContext = this;
-
         // Initialize abstract preferences classes
         ScenarioItemPrefs.initialize(this);
         GlobalPrefs.initialize(this);
+
+        // Load font theme
+        getTheme().applyStyle(GlobalPrefs.getFontStyle().getResId(), true);
+
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        mContext = this;
 
         loadScenarios(); // Load scenarios from json
         setupSorting(); // Setup sorting spinner

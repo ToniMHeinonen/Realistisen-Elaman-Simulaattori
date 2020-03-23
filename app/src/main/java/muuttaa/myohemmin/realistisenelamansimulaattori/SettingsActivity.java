@@ -2,7 +2,9 @@ package muuttaa.myohemmin.realistisenelamansimulaattori;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -13,6 +15,9 @@ public class SettingsActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        // Load font theme
+        getTheme().applyStyle(GlobalPrefs.getFontStyle().getResId(), true);
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
 
@@ -30,19 +35,28 @@ public class SettingsActivity extends AppCompatActivity {
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         // Apply the adapter to the spinner
         fontSize.setAdapter(adapter);
+        fontSize.setSelection(GlobalPrefs.getFontStyle().ordinal());
 
         fontSize.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            boolean started = false;
+
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 String size = (String) parent.getItemAtPosition(position);
 
                 if (size.equals(getResources().getString(R.string.font_small))) {
-
+                    GlobalPrefs.setFontStyle(FontStyle.Small);
                 } else if (size.equals(getResources().getString(R.string.font_normal))) {
-
+                    GlobalPrefs.setFontStyle(FontStyle.Medium);
                 } else if (size.equals(getResources().getString(R.string.font_large))) {
-
+                    GlobalPrefs.setFontStyle(FontStyle.Large);
                 }
+
+                // This is called automatically at the start of activity
+                if (!started)
+                    started = true;
+                else
+                    restartActivity();
             }
 
             @Override
@@ -84,5 +98,15 @@ public class SettingsActivity extends AppCompatActivity {
     private void setupAudio() {
         SeekBar musicBar = findViewById(R.id.musicBar);
         SeekBar soundBar = findViewById(R.id.soundBar);
+    }
+
+    private void restartActivity() {
+        finish();
+        startActivity(getIntent());
+    }
+
+    @Override
+    public void onBackPressed() {
+        startActivity(new Intent(this, ChooseScenarioActivity.class));
     }
 }

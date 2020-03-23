@@ -9,12 +9,11 @@
     <TextView
         style="@style/SettingsTitles"
         android:text="@string/settings"
-        android:textSize="55sp" />
+        android:textSize="55dp" />
 
     <TextView
         style="@style/SettingsTitles"
-        android:text="@string/font_title"
-        android:textSize="35sp" />
+        android:text="@string/font_title" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -50,8 +49,7 @@
 
     <TextView
         style="@style/SettingsTitles"
-        android:text="@string/audio_title"
-        android:textSize="35sp" />
+        android:text="@string/audio_title" />
 
     <LinearLayout
         android:layout_width="match_parent"
