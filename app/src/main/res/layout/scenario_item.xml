@@ -3,16 +3,28 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/scenarioName"
-        style="@style/ChooseScenarioItem"
-        android:layout_weight="0.7">
-    </TextView>
+    <!-- Second LinearLayout is needed for margins to work -->
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/button_default"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp">
 
-    <TextView
-        android:id="@+id/scenarioPercentage"
-        style="@style/ChooseScenarioItem"
-        android:layout_weight="0.3">
-    </TextView>
+        <TextView
+            android:id="@+id/scenarioName"
+            style="@style/ChooseScenarioItem"
+            android:layout_weight="0.7">
+        </TextView>
+
+        <TextView
+            android:id="@+id/scenarioPercentage"
+            style="@style/ChooseScenarioItem"
+            android:layout_weight="0.3">
+        </TextView>
+    </LinearLayout>
 
 </LinearLayout>

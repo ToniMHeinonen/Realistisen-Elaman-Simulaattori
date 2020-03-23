@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseExpandableListAdapter;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -17,7 +18,6 @@ import java.util.List;
 import java.util.Map;
 
 import muuttaa.myohemmin.realistisenelamansimulaattori.ChooseScenarioActivity;
-import muuttaa.myohemmin.realistisenelamansimulaattori.Debug;
 import muuttaa.myohemmin.realistisenelamansimulaattori.GlobalPrefs;
 import muuttaa.myohemmin.realistisenelamansimulaattori.R;
 
@@ -88,10 +88,29 @@ public class CategoriesListAdapter extends BaseExpandableListAdapter {
                     .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             convertView = layoutInflater.inflate(R.layout.scenario_item, null);
         }
+
         TextView text1 = convertView.findViewById(R.id.scenarioPercentage);
         TextView text2 = convertView.findViewById(R.id.scenarioName);
-        text1.setText(item.getPercentageCompleted() + " %");
+        int percent = item.getPercentageCompleted();
+        text1.setText(percent + " %");
         text2.setText(""+item.getName());
+
+        // If scenario has not been played yet, keep original button color
+        if (item.getLastTimePlayed().getTime() != 0) {
+            LinearLayout layout = convertView.findViewById(R.id.buttonLayout);
+
+            if (percent < 50) {
+                layout.setBackgroundResource(activity.getResources().getIdentifier("red",
+                        "drawable", activity.getPackageName()));
+            } else if (percent < 100) {
+                layout.setBackgroundResource(activity.getResources().getIdentifier("yellow",
+                        "drawable", activity.getPackageName()));
+            } else {
+                layout.setBackgroundResource(activity.getResources().getIdentifier("green",
+                        "drawable", activity.getPackageName()));
+            }
+        }
+
         return convertView;
     }
 

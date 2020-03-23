@@ -85,4 +85,13 @@ public abstract class ScenarioItemPrefs {
         editor.putString(keyCategory + scenario, category);
         editor.commit();
     }
+
+    /**
+     * Clears all scenario item preferences.
+     *
+     * Mainly used for debugging.
+     */
+    public static void clearScenarioItemPreferences() {
+        prefs.edit().clear().commit();
+    }
 }
