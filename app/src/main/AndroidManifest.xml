@@ -11,8 +11,6 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="LockedOrientationActivity">
-        <activity android:name=".AnswerCreation"
-            android:theme="@style/AppTheme.PopMe"></activity>
         <activity android:name=".CreateScene" />
         <activity android:name=".CreateScenario" />
         <activity android:name=".SettingsActivity" />

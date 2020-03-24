@@ -15,7 +15,7 @@ import android.widget.Spinner;
 import java.util.LinkedList;
 import java.util.List;
 
-public class CreateScene extends AppCompatActivity {
+public class CreateScene extends AppCompatActivity implements dialogiFragmentti.dialogiFragmentListener{
     private EditText name;
     private EditText question;
     private Spinner background;
@@ -55,11 +55,14 @@ public class CreateScene extends AppCompatActivity {
         adapterKasvot.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
         this.face.setAdapter(adapterKasvot);
+
+        kysymyksetGo = new LinkedList<>();
+        kysymyksetColor = new LinkedList<>();
     }
 
     public void vastaus(View view) {
-        Intent i = new Intent(getApplicationContext(), AnswerCreation.class);
-        startActivity(i);
+        dialogiFragmentti dia = new dialogiFragmentti();
+        dia.show(getSupportFragmentManager(), "vastauksen luonti");
     }
 
     public void pois(View view) {
@@ -73,5 +76,11 @@ public class CreateScene extends AppCompatActivity {
             ans[lap] = kysymyksetGo.get(lap).getKey();
         }
         Scene scene = new Scene(nimi,kysymys,tausta,henkilo,kasvo,ans,kysymyksetGo,kysymyksetColor);
+    }
+
+    @Override
+    public void applyDataBack(String varia, String meno, String vastaus) {
+        this.kysymyksetGo.add(new GeneralKeyAndValue(vastaus, meno));
+        this.kysymyksetColor.add(new GeneralKeyAndValue(vastaus + "Color", varia));
     }
 }
