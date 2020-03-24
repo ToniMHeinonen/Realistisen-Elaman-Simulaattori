@@ -13,6 +13,8 @@ import android.widget.Spinner;
 
 public class SettingsActivity extends AppCompatActivity {
 
+    private String fontSize = "", fontColor = "";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         // Load font theme
@@ -27,35 +29,31 @@ public class SettingsActivity extends AppCompatActivity {
     }
 
     private void setupFontSize() {
-        Spinner fontSize = findViewById(R.id.fontSize);
+        final Spinner sizeSpinner = findViewById(R.id.fontSize);
         // Create an ArrayAdapter using the string array and a default spinner layout
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
                 R.array.font_sizes, R.layout.custom_spinner);
 
         // Apply the adapter to the spinner
-        fontSize.setAdapter(adapter);
-        fontSize.setSelection(GlobalPrefs.getFontStyle().ordinal());
+        sizeSpinner.setAdapter(adapter);
+        sizeSpinner.setSelection(GlobalPrefs.getFontSizePos());
 
-        fontSize.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+        sizeSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             boolean started = false;
 
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 String size = (String) parent.getItemAtPosition(position);
-
-                if (size.equals(getResources().getString(R.string.font_small))) {
-                    GlobalPrefs.setFontStyle(FontStyle.Small);
-                } else if (size.equals(getResources().getString(R.string.font_normal))) {
-                    GlobalPrefs.setFontStyle(FontStyle.Medium);
-                } else if (size.equals(getResources().getString(R.string.font_large))) {
-                    GlobalPrefs.setFontStyle(FontStyle.Large);
-                }
+                fontSize = size;
+                GlobalPrefs.setFontSizePos(position);
 
                 // This is called automatically at the start of activity
-                if (!started)
+                if (!started) {
                     started = true;
-                else
+                } else {
+                    updateFontStyle();
                     restartActivity();
+                }
             }
 
             @Override
@@ -64,33 +62,70 @@ public class SettingsActivity extends AppCompatActivity {
     }
 
     private void setupFontColor() {
-        Spinner fontColor = findViewById(R.id.fontColor);
+        final Spinner colorSpinner = findViewById(R.id.fontColor);
         // Create an ArrayAdapter using the string array and a default spinner layout
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
                 R.array.font_colors, R.layout.custom_spinner);
 
         // Apply the adapter to the spinner
-        fontColor.setAdapter(adapter);
+        colorSpinner.setAdapter(adapter);
+        colorSpinner.setSelection(GlobalPrefs.getFontColorPos());
 
-        fontColor.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+        colorSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            boolean started = false;
+
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 String color = (String) parent.getItemAtPosition(position);
+                fontColor = color;
+                GlobalPrefs.setFontColorPos(position);
 
-                if (color.equals(getResources().getString(R.string.font_black))) {
-
-                } else if (color.equals(getResources().getString(R.string.font_red))) {
-
-                } else if (color.equals(getResources().getString(R.string.font_green))) {
-
-                } else if (color.equals(getResources().getString(R.string.font_blue))) {
-
+                // This is called automatically at the start of activity
+                if (!started) {
+                    started = true;
+                } else {
+                    updateFontStyle();
+                    restartActivity();
                 }
             }
 
             @Override
             public void onNothingSelected(AdapterView<?> parent) {}
         });
+    }
+
+    private void updateFontStyle() {
+        if (fontSize.equals(getResources().getString(R.string.font_small))) {
+            if (fontColor.equals(getResources().getString(R.string.font_black))) {
+                GlobalPrefs.setFontStyle(FontStyle.SmallBlack);
+            } else if (fontColor.equals(getResources().getString(R.string.font_red))) {
+                GlobalPrefs.setFontStyle(FontStyle.SmallRed);
+            } else if (fontColor.equals(getResources().getString(R.string.font_green))) {
+                GlobalPrefs.setFontStyle(FontStyle.SmallGreen);
+            } else if (fontColor.equals(getResources().getString(R.string.font_blue))) {
+                GlobalPrefs.setFontStyle(FontStyle.SmallBlue);
+            }
+        } else if (fontSize.equals(getResources().getString(R.string.font_normal))) {
+            if (fontColor.equals(getResources().getString(R.string.font_black))) {
+                GlobalPrefs.setFontStyle(FontStyle.MediumBlack);
+            } else if (fontColor.equals(getResources().getString(R.string.font_red))) {
+                GlobalPrefs.setFontStyle(FontStyle.MediumRed);
+            } else if (fontColor.equals(getResources().getString(R.string.font_green))) {
+                GlobalPrefs.setFontStyle(FontStyle.MediumGreen);
+            } else if (fontColor.equals(getResources().getString(R.string.font_blue))) {
+                GlobalPrefs.setFontStyle(FontStyle.MediumBlue);
+            }
+        } else if (fontSize.equals(getResources().getString(R.string.font_large))) {
+            if (fontColor.equals(getResources().getString(R.string.font_black))) {
+                GlobalPrefs.setFontStyle(FontStyle.LargeBlack);
+            } else if (fontColor.equals(getResources().getString(R.string.font_red))) {
+                GlobalPrefs.setFontStyle(FontStyle.LargeRed);
+            } else if (fontColor.equals(getResources().getString(R.string.font_green))) {
+                GlobalPrefs.setFontStyle(FontStyle.LargeGreen);
+            } else if (fontColor.equals(getResources().getString(R.string.font_blue))) {
+                GlobalPrefs.setFontStyle(FontStyle.LargeBlue);
+            }
+        }
     }
 
     private void setupAudio() {

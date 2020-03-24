@@ -21,6 +21,8 @@ public abstract class GlobalPrefs {
 
     // Font
     private final static String keyFontStyle = "font_style";
+    private final static String keyFontSizePos = "font_size_position";
+    private final static String keyFontColorPos = "font_color_position";
 
     /**
      * Loads the saved values from file.
@@ -132,11 +134,43 @@ public abstract class GlobalPrefs {
     }
 
     public static FontStyle getFontStyle() {
-        return FontStyle.valueOf(prefs.getString(keyFontStyle,
-                FontStyle.Medium.name()));
+        String defaultValue = FontStyle.SmallBlack.name();
+        FontStyle style;
+        // Check if user has previously saved fontstyle which does not exist anymore
+        try {
+            style = FontStyle.valueOf(prefs.getString(keyFontStyle, defaultValue));
+        } catch (Exception e) {
+            style = FontStyle.valueOf(defaultValue);
+        }
+        return style;
     }
 
     public static void setFontStyle(FontStyle style) {
         prefs.edit().putString(keyFontStyle, style.name()).commit();
+    }
+
+    public static int getFontSizePos() {
+        return prefs.getInt(keyFontSizePos, 0);
+    }
+
+    public static void setFontSizePos(int pos) {
+        prefs.edit().putInt(keyFontSizePos, pos).commit();
+    }
+
+    public static int getFontColorPos() {
+        return prefs.getInt(keyFontColorPos, 0);
+    }
+
+    public static void setFontColorPos(int pos) {
+        prefs.edit().putInt(keyFontColorPos, pos).commit();
+    }
+
+    /**
+     * Clears all scenario item preferences.
+     *
+     * Mainly used for debugging.
+     */
+    public static void clearGlobalPreferences() {
+        prefs.edit().clear().commit();
     }
 }

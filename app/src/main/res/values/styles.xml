@@ -62,6 +62,7 @@
         <item name="android:layout_width">125dp</item>
         <item name="android:layout_height">match_parent</item>
         <item name="android:textSize">?attr/font_medium</item>
+        <item name="android:textColor">?attr/font_color</item>
         <item name="android:gravity">center_vertical</item>
     </style>
 
@@ -102,6 +103,54 @@
         <item name="font_medium">24dp</item>
         <item name="font_large">26dp</item>
         <item name="font_xlarge">28dp</item>
+    </style>
+
+    <style name="FontStyle.Small.Black">
+        <item name="font_color">#000</item>
+    </style>
+
+    <style name="FontStyle.Small.Red">
+        <item name="font_color">#F00</item>
+    </style>
+
+    <style name="FontStyle.Small.Green">
+        <item name="font_color">#0F0</item>
+    </style>
+
+    <style name="FontStyle.Small.Blue">
+        <item name="font_color">#00F</item>
+    </style>
+
+    <style name="FontStyle.Medium.Black">
+        <item name="font_color">#000</item>
+    </style>
+
+    <style name="FontStyle.Medium.Red">
+        <item name="font_color">#F00</item>
+    </style>
+
+    <style name="FontStyle.Medium.Green">
+        <item name="font_color">#0F0</item>
+    </style>
+
+    <style name="FontStyle.Medium.Blue">
+        <item name="font_color">#00F</item>
+    </style>
+
+    <style name="FontStyle.Large.Black">
+        <item name="font_color">#000</item>
+    </style>
+
+    <style name="FontStyle.Large.Red">
+        <item name="font_color">#F00</item>
+    </style>
+
+    <style name="FontStyle.Large.Green">
+        <item name="font_color">#0F0</item>
+    </style>
+
+    <style name="FontStyle.Large.Blue">
+        <item name="font_color">#00F</item>
     </style>
 
 </resources>
