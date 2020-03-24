@@ -22,7 +22,7 @@
                 android:layout_gravity="center"
                 android:layout_margin="10dp"
                 android:hint="@string/newCategory"
-                android:textSize="25sp"
+                android:textSize="?attr/font_large"
                 android:textStyle="bold"/>
 
             <Button
@@ -32,7 +32,7 @@
                 android:layout_weight="0.3"
                 android:layout_margin="10dp"
                 android:text="@string/addCategory"
-                android:textSize="20sp"
+                android:textSize="?attr/font_medium"
                 android:textStyle="bold"
                 android:background="#4AFD4A"/>
         </LinearLayout>

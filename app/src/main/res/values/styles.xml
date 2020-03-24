@@ -14,7 +14,7 @@
         <item name="android:layout_height">60dp</item>
         <item name="android:layout_gravity">center</item>
         <item name="android:layout_margin">10dp</item>
-        <item name="android:textSize">20sp</item>
+        <item name="android:textSize">?attr/font_medium</item>
         <item name="android:textStyle">bold</item>
         <item name="android:background">#FFF</item>
     </style>
@@ -23,7 +23,7 @@
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">match_parent</item>
         <item name="android:padding">10dp</item>
-        <item name="android:textSize">25sp</item>
+        <item name="android:textSize">?attr/font_large</item>
         <item name="android:textAlignment">center</item>
     </style>
 
@@ -31,7 +31,7 @@
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textColor">#FFF</item>
-        <item name="android:textSize">20sp</item>
+        <item name="android:textSize">?attr/font_large</item>
         <item name="android:background">#4AA</item>
         <item name="android:paddingTop">15dp</item>
         <item name="android:paddingBottom">15dp</item>

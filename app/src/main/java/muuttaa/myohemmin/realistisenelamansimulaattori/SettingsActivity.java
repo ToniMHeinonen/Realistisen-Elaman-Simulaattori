@@ -30,9 +30,8 @@ public class SettingsActivity extends AppCompatActivity {
         Spinner fontSize = findViewById(R.id.fontSize);
         // Create an ArrayAdapter using the string array and a default spinner layout
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
-                R.array.font_sizes, android.R.layout.simple_spinner_item);
-        // Specify the layout to use when the list of choices appears
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                R.array.font_sizes, R.layout.custom_spinner);
+
         // Apply the adapter to the spinner
         fontSize.setAdapter(adapter);
         fontSize.setSelection(GlobalPrefs.getFontStyle().ordinal());
@@ -68,9 +67,8 @@ public class SettingsActivity extends AppCompatActivity {
         Spinner fontColor = findViewById(R.id.fontColor);
         // Create an ArrayAdapter using the string array and a default spinner layout
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
-                R.array.font_colors, android.R.layout.simple_spinner_item);
-        // Specify the layout to use when the list of choices appears
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                R.array.font_colors, R.layout.custom_spinner);
+
         // Apply the adapter to the spinner
         fontColor.setAdapter(adapter);
 

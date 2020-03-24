@@ -40,7 +40,7 @@ public class CategoriesListAdapter extends BaseExpandableListAdapter {
     public CategoriesListAdapter(ChooseScenarioActivity activity, List<String> parentItem,
                                  HashMap<String, List<ScenarioItem>> childItem) {
         this.activity = activity;
-        this.context = activity.getApplicationContext();
+        this.context = activity.getBaseContext(); // Get base context to apply styles correctly
         this.parentItem = parentItem;
         this.childItem = childItem;
     }
