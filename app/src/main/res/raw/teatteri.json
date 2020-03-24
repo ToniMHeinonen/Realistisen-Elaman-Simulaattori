@@ -1,9 +1,9 @@
 {
   "first": {
     "question": "Saavut teatteriin aikeissa mennä katsomaan uutta elokuvaa yksin, eikä sinulla jo ole lippua. Mitä teet ensimmäisenä?",
-    "background": "kuva1",
-    "person": "kuva2",
-    "face": "kuva3",
+    "background": "background_1",
+    "person": "character_1",
+    "face": "face_happy",
     "answers": [
       "menet ostamaan liput ja herkut",
       "käyt vessassa",
@@ -18,9 +18,9 @@
   },
   "liput": {
     "question": "Saavut kassalle ja laitat tiskille herkut jotka aiot juuri ostaa lipun kanssa.",
-    "background": "kuva1",
-    "person": "kuva2",
-    "face": "kuva3",
+    "background": "background_1",
+    "person": "character_1",
+    "face": "face_happy",
     "answers": [
       "kerrot mihin leffaan aiot mennä ja sanot haluavasi ostaa lipun.",
       "annat vain herkut etkä sano mitään ja käyt myöhemmin ostamassa lipun erikseen",
@@ -35,9 +35,9 @@
   },
   "vessa": {
     "question": "Tulet vessasta ulos ja huomaat ruuhkaa teatterissa.",
-    "background": "kuva1",
-    "person": "kuva2",
-    "face": "kuva3",
+    "background": "background_1",
+    "person": "character_1",
+    "face": "face_happy",
     "answers": [
       "menet ostamaan herkut ja liput.",
       "lähdet teatterista"
@@ -49,9 +49,9 @@
   },
   "paikka": {
     "question": "Seisot paikallasi, etkä tiedä mitä tehdä.",
-    "background": "kuva1",
-    "person": "kuva2",
-    "face": "kuva3",
+    "background": "background_1",
+    "person": "character_1",
+    "face": "face_happy",
     "answers": [
       "kysyt teatterin henkilökunnalta mitä pitäisi tehdä.",
       "lähdet teatterista"
@@ -63,9 +63,9 @@
   },
   "lahteminen": {
     "question": "Lähdet teatterista kotiin",
-    "background": "kuva1",
-    "person": "kuva2",
-    "face": "kuva3",
+    "background": "background_1",
+    "person": "character_1",
+    "face": "face_happy",
     "answers": [
       "Lähetät teatterille valituksen ilman syytä.",
       "menet kotiin.",
@@ -80,9 +80,9 @@
   },
   "odottaa": {
     "question": "Olet saanut ostettua lipun ja huomaat vapaan istuma paikan salin ulkopuolella",
-    "background": "kuva1",
-    "person": "kuva2",
-    "face": "kuva3",
+    "background": "background_1",
+    "person": "character_1",
+    "face": "face_happy",
     "answers": [
       "Menet istumaan kyseiseen paikkaan",
       "Jäät seisomaan"
@@ -94,9 +94,9 @@
   },
   "saliin": {
     "question": "Saliin päästetään sisälle",
-    "background": "kuva1",
-    "person": "kuva2",
-    "face": "kuva3",
+    "background": "background_1",
+    "person": "character_1",
+    "face": "face_happy",
     "answers": [
       "menet jonoon",
       "odotat, että jono on mennyt ja menet sitten saliin",
@@ -111,9 +111,9 @@
   },
   "tilanne": {
     "question": "Huonokuntoinen ihminen tulee odottamaan, muttei pääse istumaan minnekään.",
-    "background": "kuva1",
-    "person": "kuva2",
-    "face": "kuva3",
+    "background": "background_1",
+    "person": "character_1",
+    "face": "face_happy",
     "answers": [
       "tarjoat omaa paikkaasi",
       "et tee mitään",
@@ -128,9 +128,9 @@
   },
   "jalkeen": {
     "question": "Elokuva on loppunut",
-    "background": "kuva1",
-    "person": "kuva2",
-    "face": "kuva3",
+    "background": "background_1",
+    "person": "character_1",
+    "face": "face_happy",
     "answers": [
       "laitat omat roskat roskiin, sitten käyt vessassa ja sitten lähdet teatterista.",
       "laitat omat roskat roskiin ja lähdet kotiin",
