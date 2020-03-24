@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="taustat">
+        <item>background_1</item>
+    </string-array>
+    <string-array name="henkilot">
+        <item>character_1</item>
+    </string-array>
+    <string-array name="kasvot">
+        <item>face_happy</item>
+    </string-array>
+</resources>
