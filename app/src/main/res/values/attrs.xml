@@ -4,5 +4,6 @@
         <attr name="font_medium" format="dimension" />
         <attr name="font_large" format="dimension" />
         <attr name="font_xlarge" format="dimension" />
+        <attr name="font_color" format="color" />
     </declare-styleable>
 </resources>
