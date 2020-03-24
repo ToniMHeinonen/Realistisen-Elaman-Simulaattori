@@ -13,7 +13,11 @@ import android.widget.Spinner;
 
 public class SettingsActivity extends AppCompatActivity {
 
-    private String fontSize = "", fontColor = "";
+    private FontStyle[][] styles = new FontStyle[][]{
+            {FontStyle.SmallBlack, FontStyle.SmallRed, FontStyle.SmallGreen, FontStyle.SmallBlue},
+            {FontStyle.MediumBlack, FontStyle.MediumRed, FontStyle.MediumGreen, FontStyle.MediumBlue},
+            {FontStyle.LargeBlack, FontStyle.LargeRed, FontStyle.LargeGreen, FontStyle.LargeBlue}
+    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,16 +47,12 @@ public class SettingsActivity extends AppCompatActivity {
 
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                String size = (String) parent.getItemAtPosition(position);
-                fontSize = size;
-                GlobalPrefs.setFontSizePos(position);
-
                 // This is called automatically at the start of activity
                 if (!started) {
                     started = true;
                 } else {
+                    GlobalPrefs.setFontSizePos(position);
                     updateFontStyle();
-                    restartActivity();
                 }
             }
 
@@ -76,16 +76,12 @@ public class SettingsActivity extends AppCompatActivity {
 
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                String color = (String) parent.getItemAtPosition(position);
-                fontColor = color;
-                GlobalPrefs.setFontColorPos(position);
-
                 // This is called automatically at the start of activity
                 if (!started) {
                     started = true;
                 } else {
+                    GlobalPrefs.setFontColorPos(position);
                     updateFontStyle();
-                    restartActivity();
                 }
             }
 
@@ -95,47 +91,18 @@ public class SettingsActivity extends AppCompatActivity {
     }
 
     private void updateFontStyle() {
-        if (fontSize.equals(getResources().getString(R.string.font_small))) {
-            if (fontColor.equals(getResources().getString(R.string.font_black))) {
-                GlobalPrefs.setFontStyle(FontStyle.SmallBlack);
-            } else if (fontColor.equals(getResources().getString(R.string.font_red))) {
-                GlobalPrefs.setFontStyle(FontStyle.SmallRed);
-            } else if (fontColor.equals(getResources().getString(R.string.font_green))) {
-                GlobalPrefs.setFontStyle(FontStyle.SmallGreen);
-            } else if (fontColor.equals(getResources().getString(R.string.font_blue))) {
-                GlobalPrefs.setFontStyle(FontStyle.SmallBlue);
-            }
-        } else if (fontSize.equals(getResources().getString(R.string.font_normal))) {
-            if (fontColor.equals(getResources().getString(R.string.font_black))) {
-                GlobalPrefs.setFontStyle(FontStyle.MediumBlack);
-            } else if (fontColor.equals(getResources().getString(R.string.font_red))) {
-                GlobalPrefs.setFontStyle(FontStyle.MediumRed);
-            } else if (fontColor.equals(getResources().getString(R.string.font_green))) {
-                GlobalPrefs.setFontStyle(FontStyle.MediumGreen);
-            } else if (fontColor.equals(getResources().getString(R.string.font_blue))) {
-                GlobalPrefs.setFontStyle(FontStyle.MediumBlue);
-            }
-        } else if (fontSize.equals(getResources().getString(R.string.font_large))) {
-            if (fontColor.equals(getResources().getString(R.string.font_black))) {
-                GlobalPrefs.setFontStyle(FontStyle.LargeBlack);
-            } else if (fontColor.equals(getResources().getString(R.string.font_red))) {
-                GlobalPrefs.setFontStyle(FontStyle.LargeRed);
-            } else if (fontColor.equals(getResources().getString(R.string.font_green))) {
-                GlobalPrefs.setFontStyle(FontStyle.LargeGreen);
-            } else if (fontColor.equals(getResources().getString(R.string.font_blue))) {
-                GlobalPrefs.setFontStyle(FontStyle.LargeBlue);
-            }
-        }
+        int size = GlobalPrefs.getFontSizePos();
+        int color = GlobalPrefs.getFontColorPos();
+        GlobalPrefs.setFontStyle(styles[size][color]);
+
+        // Restart activity to apply changes to xml
+        finish();
+        startActivity(getIntent());
     }
 
     private void setupAudio() {
         SeekBar musicBar = findViewById(R.id.musicBar);
         SeekBar soundBar = findViewById(R.id.soundBar);
-    }
-
-    private void restartActivity() {
-        finish();
-        startActivity(getIntent());
     }
 
     @Override
