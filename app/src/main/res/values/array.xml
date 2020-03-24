@@ -9,4 +9,9 @@
     <string-array name="kasvot">
         <item>face_happy</item>
     </string-array>
+    <string-array name="varit">
+        <item>green</item>
+        <item>red</item>
+        <item>yellow</item>
+    </string-array>
 </resources>
