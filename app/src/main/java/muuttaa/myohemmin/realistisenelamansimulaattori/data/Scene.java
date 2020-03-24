@@ -1,9 +1,10 @@
 package muuttaa.myohemmin.realistisenelamansimulaattori.data;
 
+import java.io.Serializable;
 import java.util.LinkedList;
 import java.util.List;
 
-public class Scene {
+public class Scene implements Serializable {
     private String name;
     private String question;
     private String background;

@@ -3,7 +3,7 @@ package muuttaa.myohemmin.realistisenelamansimulaattori.data;
 import java.util.LinkedList;
 import java.util.List;
 
-public class Scenario {
+public class Scenario{
     private List<Scene> listaus;
     private String name;
     private String fileName;
