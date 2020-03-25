@@ -297,13 +297,6 @@ public class ChooseScenarioActivity extends AppCompatActivity {
     }
 
     /**
-     * Opens Settings Activity.
-     */
-    public void settingsSelected() {
-        startActivity(new Intent(this, SettingsActivity.class));
-    }
-
-    /**
      * Opens options for given category.
      * @param category desired category
      */

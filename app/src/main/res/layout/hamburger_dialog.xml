@@ -38,6 +38,11 @@
         </LinearLayout>
 
         <Button
+            android:id="@+id/createScenario"
+            style="@style/HamburgerButton"
+            android:text="@string/createScenario" />
+
+        <Button
             android:id="@+id/settings"
             style="@style/HamburgerButton"
             android:text="@string/settings" />

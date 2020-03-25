@@ -1,13 +1,16 @@
 package muuttaa.myohemmin.realistisenelamansimulaattori.choosescenarioitem;
 
 import android.app.Dialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.widget.EditText;
 
 import muuttaa.myohemmin.realistisenelamansimulaattori.ChooseScenarioActivity;
+import muuttaa.myohemmin.realistisenelamansimulaattori.CreateScenario;
 import muuttaa.myohemmin.realistisenelamansimulaattori.R;
+import muuttaa.myohemmin.realistisenelamansimulaattori.SettingsActivity;
 
 public class HamburgerDialog extends Dialog implements
         android.view.View.OnClickListener {
@@ -35,6 +38,7 @@ public class HamburgerDialog extends Dialog implements
 
         // Set listeners for confirm and cancel
         findViewById(R.id.addCategory).setOnClickListener(this);
+        findViewById(R.id.createScenario).setOnClickListener(this);
         findViewById(R.id.settings).setOnClickListener(this);
         findViewById(R.id.back).setOnClickListener(this);
     }
@@ -51,8 +55,12 @@ public class HamburgerDialog extends Dialog implements
                 activity.addCategory(category.getText().toString());
                 dismiss();
                 break;
+            case R.id.createScenario:
+                activity.startActivity(new Intent(activity, CreateScenario.class));
+                dismiss();
+                break;
             case R.id.settings:
-                activity.settingsSelected();
+                activity.startActivity(new Intent(activity, SettingsActivity.class));
                 dismiss();
                 break;
             case R.id.back:

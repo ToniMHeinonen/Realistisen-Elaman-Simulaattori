@@ -13,6 +13,7 @@
 
     <!-- CHOOSE SCENARIO ACTIVITY -->
     <string name="settings">Asetukset</string>
+    <string name="createScenario">Luo skenaario</string>
     <string name="scenarios">Skenaariot</string>
     <string name="addCategory">Lisää</string>
     <string name="renameCategory">Muuta</string>
