@@ -1,6 +1,8 @@
 {
-  "scenarios": [ "Leffateatteri", "Kaupan kassa"],
+  "scenarios": [ "Leffateatteri", "Kaupan kassa", "Bussimatka"],
   "scenarioslist": [
     {"name": "Leffateatteri", "file": "teatteri.json"},
-    {"name": "Kaupan kassa", "file": "kaupan_kassa.json"}]
+    {"name": "Kaupan kassa", "file": "kaupan_kassa.json"},
+    {"name":  "Bussimatka", "file":  "bussimatka.json"}
+  ]
 }
