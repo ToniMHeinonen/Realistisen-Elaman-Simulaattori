@@ -1,6 +1,6 @@
 {
   "first": {
-    "question": "Saavut kassalle. Kassalla ei ole jonoa. Ostoskorisi on puoliksi täynnä. Kassahenkilö tervehtii. \nMitä teet?",
+    "question": "Saavut kassalle. Edelläsi ei ole jonoa. Ostoskorisi on puoliksi täynnä. Kassahenkilö tervehtii. \nMitä teet?",
     "background": "background_1",
     "person": "character_1",
     "face": "face_happy",
@@ -17,7 +17,7 @@
     "Laitat ostoksesi hihnalleColor": "yellow"
   },
   "ostokset_hihnalla": {
-    "question": "Myyjä rupeaa skannaamaan tuotteita. \nMitä teet?",
+    "question": "Myyjä ryhtyy skannaamaan tuotteita. \nMitä teet?",
     "background": "background_1",
     "person": "character_1",
     "face": "face_happy",
@@ -85,7 +85,7 @@
     "Hymyilet takaisin ja keskustelet niin pitkään, että myyjä saa tuotteet skannattuaColor": "green"
   },
   "myyja_neuvoo": {
-    "question": "Myyjä sanoo: \"Laita tuotteet koristasi hihnalle, niin skannaan ne ja sitten voit maksaa ostoksesti.\", \nMitä teet?",
+    "question": "Myyjä sanoo: \"Laita tuotteet koristasi hihnalle, niin skannaan ne ja sitten voit maksaa ostoksesi.\" \nMitä teet?",
     "background": "background_1",
     "person": "character_1",
     "face": "face_happy",
@@ -116,7 +116,7 @@
     "Et uskalla ottaa asiakkaasta mallia vaan lähdet pois kaupastaColor": "red"
   },
   "maksu_kateisella": {
-    "question": "Annat myyjälle tarvittavan määrän käteisellä. Myyjä kiittää ja toivottaa hyvää päivänjatkoa. \nMitä teet?",
+    "question": "Annat myyjälle tarvittavan rahasumman käteisellä. Myyjä kiittää ja toivottaa hyvää päivänjatkoa. \nMitä teet?",
     "background": "background_1",
     "person": "character_1",
     "face": "face_happy",
@@ -202,7 +202,7 @@
       "Juokset äkkiä ulos kaupasta"
     ],
     "Poistut kaupasta rauhallisesti kävellen": "null",
-    "Juokset äkkiä ulos kaupasta": "vessa",
+    "Juokset äkkiä ulos kaupasta": "tormaaminen",
     "Poistut kaupasta rauhallisesti kävellenColor": "green",
     "Juokset äkkiä ulos kaupastaColor": "red"
   },
@@ -221,7 +221,7 @@
     "Menet pakkaamaan ostoksesiColor": "green"
   },
   "odotus_kassalla": {
-    "question": "Myyjä kysyy: \"Onko jokin hätänä?\", \nMitä teet?",
+    "question": "Myyjä kysyy: \"Onko jokin hätänä?\". \nMitä teet?",
     "background": "background_1",
     "person": "character_1",
     "face": "face_happy",
@@ -283,7 +283,7 @@
     "Suutut myyjälle kun hän ei halua keskustella ja rupeat huutamaanColor": "red"
   },
   "myyja_neuvoo_pakkaamaan": {
-    "question": "Myyjä sanoo: \"Ostoksesi on nyt maksettu, joten voit mennä pakkaamaan ostoksesi.\". \nMitä teet?",
+    "question": "Myyjä sanoo: \"Ostoksesi on nyt maksettu, joten voit mennä pakkaamaan ostoksesi.\" \nMitä teet?",
     "background": "background_1",
     "person": "character_1",
     "face": "face_happy",
