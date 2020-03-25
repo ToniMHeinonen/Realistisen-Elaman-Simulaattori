@@ -1,0 +1,70 @@
+{
+  "first": {
+    "question": "Saavut kassalle. Kassalla ei ole jonoa. Ostoskorisi on puoliksi täynnä. Kassahenkilö tervehtii. \nMitä teet?",
+    "background": "background_1",
+    "person": "character_1",
+    "face": "face_happy",
+    "answers": [
+      "Tervehdit takaisin ja laitat ostoksesi hihnalle",
+      "Et sano mitään ja jäät seisomaan paikallesi",
+      "Laitat ostoksesi hihnalle"
+    ],
+    "Tervehdit takaisin ja laitat ostoksesi hihnalle": "ostokset_hihnalla",
+    "Et sano mitään ja jäät seisomaan paikallesi": "odotus_jonossa",
+    "Laitat ostoksesi hihnalle": "ostokset_hihnalla",
+    "Tervehdit takaisin ja laitat ostoksesi hihnalleColor": "green",
+    "Et sano mitään ja jäät seisomaan paikallesiColor": "red",
+    "Laitat ostoksesi hihnalleColor": "yellow"
+  },
+  "ostokset_hihnalla": {
+    "question": "Myyjä rupeaa skannaamaan tuotteita. \nMitä teet?",
+    "background": "background_1",
+    "person": "character_1",
+    "face": "face_happy",
+    "answers": [
+      "Menet pakkaamaan tuotteita",
+      "Odotat, että kaikki tuotteet on skannattu",
+      "Alat juttelemaan myyjälle"
+    ],
+    "Menet pakkaamaan tuotteita": "ostosten_hinta",
+    "Odotat, että kaikki tuotteet on skannattu": "ostosten_hinta",
+    "Alat juttelemaan myyjälle": "paikka",
+    "Menet pakkaamaan tuotteitaColor": "green",
+    "Odotat, että kaikki tuotteet on skannattuColor": "green",
+    "Alat juttelemaan myyjälleColor": "green"
+  },
+  "odotus_jonossa": {
+    "question": "Myyjä kysyy: \"Voinko auttaa jotenkin?\" \nMitä teet?",
+    "background": "background_1",
+    "person": "character_1",
+    "face": "face_happy",
+    "answers": [
+      "Lähdet karkuun",
+      "Kysyt: \"Mitä minun kuuluisi tehdä?\"",
+      "Päästät takana olevan henkilön edellesi"
+    ],
+    "Lähdet karkuun": "liput",
+    "Kysyt: \"Mitä minun kuuluisi tehdä?\"": "vessa",
+    "Päästät takana olevan henkilön edellesi": "paikka",
+    "Lähdet karkuunColor": "red",
+    "Kysyt: \"Mitä minun kuuluisi tehdä?\"Color": "green",
+    "Päästät takana olevan henkilön edellesiColor": "yellow"
+  },
+  "ostosten_hinta": {
+    "question": "Myyjä saa kaikki tuotteet skannattua. Sitten hän kertoo tuotteiden kokonaishinnan. \nMitä teet?",
+    "background": "background_1",
+    "person": "character_1",
+    "face": "face_happy",
+    "answers": [
+      "Lähdet karkuun",
+      "Kysyt: \"Mitä minun kuuluisi tehdä?\"",
+      "Päästät takana olevan henkilön edellesi"
+    ],
+    "Lähdet karkuun": "liput",
+    "Kysyt: \"Mitä minun kuuluisi tehdä?\"": "vessa",
+    "Päästät takana olevan henkilön edellesi": "paikka",
+    "Lähdet karkuunColor": "green",
+    "Kysyt: \"Mitä minun kuuluisi tehdä?\"Color": "green",
+    "Päästät takana olevan henkilön edellesiColor": "green"
+  }
+}

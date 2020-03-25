@@ -95,10 +95,10 @@ public class CategoriesListAdapter extends BaseExpandableListAdapter {
         text1.setText(percent + " %");
         text2.setText(""+item.getName());
 
+        LinearLayout layout = convertView.findViewById(R.id.buttonLayout);
+
         // If scenario has not been played yet, keep original button color
         if (item.getLastTimePlayed().getTime() != 0) {
-            LinearLayout layout = convertView.findViewById(R.id.buttonLayout);
-
             if (percent < 50) {
                 layout.setBackgroundResource(activity.getResources().getIdentifier("red",
                         "drawable", activity.getPackageName()));
@@ -109,6 +109,9 @@ public class CategoriesListAdapter extends BaseExpandableListAdapter {
                 layout.setBackgroundResource(activity.getResources().getIdentifier("green",
                         "drawable", activity.getPackageName()));
             }
+        } else {
+            layout.setBackgroundResource(activity.getResources().getIdentifier("button_default",
+                    "drawable", activity.getPackageName()));
         }
 
         return convertView;
