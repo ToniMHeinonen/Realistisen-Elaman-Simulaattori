@@ -9,7 +9,9 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.BufferedReader;
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -32,13 +34,11 @@ public class SaveSystemPreferences implements JsonInterface {
     private String scenarioName;
     private JSONObject rootInScenario;
     private boolean run = false;
-    private SharedPreferences tiedot;
     private boolean preferencessa = false;
 
-    public SaveSystemPreferences(Context con, SharedPreferences pref){
+    public SaveSystemPreferences(Context con){
         this.context = con;
         this.list = new LinkedList<>();
-        tiedot = pref;
         setFirstSceneFromScenario();
     }
     @Override
@@ -253,11 +253,8 @@ public class SaveSystemPreferences implements JsonInterface {
                 for(int ind = 0; ind < (h1.length() - 5); ind++){
                     helpp += h1.charAt(ind);
                 }
-                int montako = getInteger(helpp + "Size");
-                String filet = "";
-                for(int lap=0; lap < montako; lap++){
-                    filet += getString(helpp + lap);
-                }
+                //haku
+                String filet = getStringFromFile(getJsonName());
                 try {
                     this.rootInScenario = new JSONObject(filet);
                 } catch (JSONException e) {
@@ -332,21 +329,19 @@ public class SaveSystemPreferences implements JsonInterface {
             }
         }
         //scenarios from preferences
-        try {
-            int montako = getInteger("scenaarioita");
-            String file = "";
-            for (int kk = 0; kk < montako; kk++){
-                file += getString("scenario" + kk);
-            }
-            JSONObject json = new JSONObject(file);
-            JSONArray array = json.getJSONArray("scenarioslist");
-            for(int lap=0; lap < array.length(); lap++){
-                JSONObject obj = array.getJSONObject(lap);
-                scenaariot.add(new scenarioListHelp(obj.getString("name"), obj.getString("file")));
-            }
-            JSONArray names = json.getJSONArray("scenarios");
-            for(int lap=0; lap < names.length(); lap++){
-                scenarioNames.add(names.getString(lap));
+        try{
+            String data = getStringFromFile("savedata2");
+            if(data != null) {
+                JSONObject b = new JSONObject(data);
+                JSONArray array2 = b.getJSONArray("scenarioslist");
+                for (int lap = 0; lap < array2.length(); lap++) {
+                    JSONObject obj = array2.getJSONObject(lap);
+                    scenaariot.add(new scenarioListHelp(obj.getString("name"), obj.getString("file")));
+                }
+                JSONArray names2 = b.getJSONArray("scenarios");
+                for (int lap = 0; lap < names2.length(); lap++) {
+                    scenarioNames.add(names2.getString(lap));
+                }
             }
         } catch (JSONException e){
             if(debuggi){
@@ -376,6 +371,7 @@ public class SaveSystemPreferences implements JsonInterface {
                 e.printStackTrace();
             }
         }
+        System.out.println("out: " + out);
         return out;
     }
 
@@ -446,99 +442,92 @@ public class SaveSystemPreferences implements JsonInterface {
         }
         return out;
     }
-    //put data
-    private void sendString(String key, String data){
-        SharedPreferences.Editor editor = tiedot.edit();
-        editor.putString(key, data);
-        editor.commit();
-    }
-    private String getString(String key){
-        return tiedot.getString(key, "{}");
-    }
-    private void sendInteger(String key, int luku){
-        SharedPreferences.Editor editor = tiedot.edit();
-        editor.putInt(key, luku);
-        editor.commit();
-    }
-
-    /**
-     * Montako versiota on muistissa
-     * @param key haettava String
-     * @return montako on muistissa
-     */
-    private int getInteger(String key){
-        return tiedot.getInt(key, 0);
-    }
-    /**
-     * vaihda tietoa
-     * @param key muutettava String
-     * @param luku uusi luku
-     */
-    private void changeInteger(String key, int luku){
-        SharedPreferences.Editor editor = tiedot.edit();
-        editor.putInt(key, luku);
-        editor.commit();
-    }
-
     /**
      * Scenario saving
      * @param scenario Scenario class
      */
     public void saveScenario(Scenario scenario){
-        //convert data to json
         try {
-            List<Scene> lista = scenario.getListaus();
+            //convert data to json
+            String file = scenario.getFileName();
+            //muunnetaan scenario jsoniksi
             JSONObject base = new JSONObject();
-            for (int lap = 0; lap < lista.size(); lap++) {
-                JSONObject scene = new JSONObject();
-                Scene apu = lista.get(lap);
-                scene.put("question", apu.getQuestion());
-                scene.put("background", apu.getBackground());
-                scene.put("person", apu.getPerson());
-                scene.put("face", apu.getFace());
+            List<Scene> li = scenario.getListaus();
+            for(int lap=0; lap < li.size(); lap++){
+                Scene scene = li.get(lap);
+                JSONObject help = new JSONObject();
+                help.put("question", scene.getQuestion());
+                help.put("background", scene.getBackground());
+                help.put("person", scene.getPerson());
+                help.put("face", scene.getFace());
                 JSONArray array = new JSONArray();
-                String[] a = apu.getAnswers();
-                for (int k=0; k < a.length; k++){
-                    array.put(a[k]);
+                String[] l = scene.getAnswers();
+                for (int k=0; k < l.length; k++){
+                    array.put(l[k]);
                 }
-                scene.put("answers", array);
-                List<GeneralKeyAndValue> menee = apu.getGoList();
-                List<GeneralKeyAndValue> varit = apu.getColorList();
-                for(int k=0; k < menee.size(); k++){
-                    scene.put(menee.get(k).getKey(), menee.get(k).getValue());
+                help.put("answers", array);
+                List<GeneralKeyAndValue> go = scene.getGoList();
+                for(int k=0; k < go.size(); k++){
+                    help.put(go.get(k).getKey(), go.get(k).getValue());
                 }
-                for (int k=0; k < varit.size(); k++){
-                    scene.put(varit.get(k).getKey(), varit.get(k).getValue());
+                List<GeneralKeyAndValue> color = scene.getColorList();
+                for(int k=0; k < color.size(); k++){
+                    help.put(color.get(k).getKey(), color.get(k).getValue());
                 }
-                //put data to base
-                base.put(apu.getName(), scene);
+                base.put(scene.getName(), help);
             }
-            //data in parts so this try make them
-            String json = base.toString();
-            if(json.length() > 8000){
-                int monta = json.length() / 8000;
-                sendInteger(scenario.getName().toLowerCase() + "Size", monta);
-                int index = 0;
-                for(int lap=0; lap < monta; lap++){
-                    String osa = "";
-                    while(index < ((lap + 1) * 8000)){
-                        char merkki = json.charAt(index);
-                        osa += merkki;
-                        index++;
+            String scenarioName2 = scenario.getName();
+            String out = base.toString();
+            //kirjoitus
+            write(file, out);
+            //yritetään lukea onko savedata2
+            String tiedosto = getStringFromFile(file);
+            if(tiedosto != null){
+                try {
+                    JSONObject obj = new JSONObject(tiedosto);
+                    obj.getJSONArray("scenarios").put(scenarioName2);
+                    JSONObject h = new JSONObject();
+                    h.put("name", scenarioName2);
+                    h.put("file", file);
+                    obj.getJSONArray("scenarioslist").put(h);
+                    write("savedata2", obj.toString());
+                } catch (JSONException e){
+                    if(debuggi){
+                        e.printStackTrace();
                     }
-                    sendString(scenario.getName().toLowerCase() + lap, osa);
                 }
-                String vika = "";
-                while (index < json.length()){
-                    vika += json.charAt(index);
-                    index++;
-                }
-                sendString(scenario.getName().toLowerCase() + monta, vika);
             }
-        } catch (JSONException e){
+        } catch (Exception e){
             if(debuggi){
                 e.printStackTrace();
             }
         }
+    }
+    private void write(String file, String con){
+        try {
+            FileOutputStream fos = context.openFileOutput(file, Context.MODE_PRIVATE);
+            fos.write(con.getBytes());
+            fos.close();
+        }catch (Exception e){
+            if (debuggi){
+                e.printStackTrace();
+            }
+        }
+    }
+    private String getStringFromFile(String file){
+        try{
+            String o = "";
+            FileInputStream fis = context.openFileInput(file);
+            int byteChar;
+            while((byteChar = fis.read()) != -1){
+                o += (char) byteChar;
+            }
+            fis.close();
+        } catch (Exception e){
+            if(debuggi){
+                e.printStackTrace();
+            }
+        }
+        return null;
     }
 }

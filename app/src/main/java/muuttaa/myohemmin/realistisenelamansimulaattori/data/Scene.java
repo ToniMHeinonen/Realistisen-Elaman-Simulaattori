@@ -104,6 +104,26 @@ public class Scene implements Parcelable {
         this.colorList.add(new GeneralKeyAndValue(key, value));
     }
 
+    public String toString(){
+        String vastaukset = "[ ";
+        for(int lap=0; lap < answers.length; lap++){
+            vastaukset += answers[lap] + ", ";
+        }
+        vastaukset += "]";
+        String go = "[ ";
+        for(int lap=0; lap < goList.size(); lap++){
+            go += "(" + goList.get(lap).toString() + "), ";
+        }
+        go += "]";
+        String color = "[ ";
+        for(int lap=0; lap < colorList.size(); lap++){
+            color += "(" + colorList.get(lap).toString() + "), ";
+        }
+        color += "]";
+
+        return "{ name: " + name + " question: " + question + " back: " + background + " person: " + person + " face: " + face + " vastaukset: " + vastaukset + " goList: " + go + " colorList: " + color + "}";
+    }
+
     @Override
     public int describeContents() {
         return 0;

@@ -34,4 +34,13 @@ public class Scenario{
     public void setFileName(String fileName) {
         this.fileName = fileName;
     }
+
+    public String toString(){
+        String lis = "[ ";
+        for(int lap=0; lap < listaus.size(); lap++){
+            lis += listaus.get(lap).toString() + ", ";
+        }
+        lis += "]";
+        return "nimi: " + name + " file: " + fileName + " scenet: " + lis;
+    }
 }

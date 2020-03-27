@@ -38,7 +38,7 @@ public class ScenarioActivity extends AppCompatActivity {
         Bundle extras = getIntent().getExtras();
         if (extras != null) {
             scenario = extras.getString("scenario");
-            saveSystem = new SaveSystemPreferences(this, getSharedPreferences("scenarios", MODE_PRIVATE));
+            saveSystem = new SaveSystemPreferences(this);
             saveSystem.setCurrentScenario(scenario);
             questionTextView = findViewById(R.id.question);
             questionTextView.setText(saveSystem.getQuestionFromScenario());

@@ -61,7 +61,7 @@ public class ChooseScenarioActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        json = new SaveSystemPreferences(this, getSharedPreferences("scenarios", MODE_PRIVATE));
+        json = new SaveSystemPreferences(this);
         mContext = this;
 
         loadScenarios(); // Load scenarios from json

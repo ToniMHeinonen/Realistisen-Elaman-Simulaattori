@@ -68,8 +68,7 @@ public class CreateScenario extends AppCompatActivity {
             String name = scenarioName.getText().toString().toLowerCase();
             scenario.setName(name);
             scenario.setFileName(name + ".json");
-            SharedPreferences test = getSharedPreferences("scenarios", MODE_PRIVATE);
-            SaveSystemPreferences json = new SaveSystemPreferences(this, test);
+            SaveSystemPreferences json = new SaveSystemPreferences(this);
             json.saveScenario(scenario);
             finish();
         } catch (Exception e){

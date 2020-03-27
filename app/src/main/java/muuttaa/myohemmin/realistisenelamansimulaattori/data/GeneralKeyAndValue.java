@@ -54,4 +54,7 @@ public class GeneralKeyAndValue implements Parcelable {
         key = in.readString();
         value = in.readString();
     }
+    public String toString(){
+        return "key: " + getKey() + " value: " + getValue();
+    }
 }
