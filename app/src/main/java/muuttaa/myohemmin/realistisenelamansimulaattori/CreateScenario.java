@@ -23,6 +23,7 @@ public class CreateScenario extends AppCompatActivity {
     private EditText scenarioName;
     private ListView listaview;
     private ArrayAdapter<String> adapter;
+    private boolean debuggi = true;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,7 +32,7 @@ public class CreateScenario extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_scenario);
-        this.scenarioName = (EditText) findViewById(R.id.scenenNimi);
+        this.scenarioName = (EditText) findViewById(R.id.ScenarioCreateName);
         this.listaview = (ListView) findViewById(R.id.listaScene);
         updateList();
     }
@@ -72,6 +73,9 @@ public class CreateScenario extends AppCompatActivity {
             json.saveScenario(scenario);
         } catch (Exception e){
             Toast.makeText(this, "Varmista, että olet antanut kaikki tiedot", Toast.LENGTH_LONG).show();
+            if(debuggi){
+                e.printStackTrace();
+            }
         }
     }
 }
