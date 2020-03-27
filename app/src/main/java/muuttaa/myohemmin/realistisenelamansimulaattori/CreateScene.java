@@ -42,7 +42,6 @@ public class CreateScene extends AppCompatActivity implements dialogiFragmentti.
         this.person = (Spinner) findViewById(R.id.personSpinner);
         this.face = (Spinner) findViewById(R.id.KasvoSpinner);
         this.lista = (ListView) findViewById(R.id.listaVastaukset);
-        updateListOfAnswers();
 
         ArrayAdapter<CharSequence> adapterTaustat = ArrayAdapter.createFromResource(this,
                 R.array.taustat, android.R.layout.simple_spinner_item);
@@ -63,6 +62,7 @@ public class CreateScene extends AppCompatActivity implements dialogiFragmentti.
 
         kysymyksetGo = new LinkedList<>();
         kysymyksetColor = new LinkedList<>();
+        updateListOfAnswers();
     }
 
     public void updateListOfAnswers(){
