@@ -13,6 +13,7 @@ import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -81,21 +82,25 @@ public class CreateScene extends AppCompatActivity implements dialogiFragmentti.
     }
 
     public void pois(View view) {
-        String nimi = this.name.getText().toString();
-        String kysymys = this.question.getText().toString();
-        String tausta = this.background.getSelectedItem().toString();
-        String henkilo = this.person.getSelectedItem().toString();
-        String kasvo = this.face.getSelectedItem().toString();
-        String[] ans = new String[kysymyksetGo.size()];
-        for(int lap=0; lap < kysymyksetGo.size(); lap++){
-            ans[lap] = kysymyksetGo.get(lap).getKey();
-        }
-        Scene scene = new Scene(nimi,kysymys,tausta,henkilo,kasvo,ans,kysymyksetGo,kysymyksetColor);
+        try {
+            String nimi = this.name.getText().toString();
+            String kysymys = this.question.getText().toString();
+            String tausta = this.background.getSelectedItem().toString();
+            String henkilo = this.person.getSelectedItem().toString();
+            String kasvo = this.face.getSelectedItem().toString();
+            String[] ans = new String[kysymyksetGo.size()];
+            for (int lap = 0; lap < kysymyksetGo.size(); lap++) {
+                ans[lap] = kysymyksetGo.get(lap).getKey();
+            }
+            Scene scene = new Scene(nimi, kysymys, tausta, henkilo, kasvo, ans, kysymyksetGo, kysymyksetColor);
 
-        Intent returnIntent = new Intent();
-        returnIntent.putExtra("scene", (Parcelable) scene);
-        setResult(Activity.RESULT_OK,returnIntent);
-        finish();
+            Intent returnIntent = new Intent();
+            returnIntent.putExtra("scene", (Parcelable) scene);
+            setResult(Activity.RESULT_OK, returnIntent);
+            finish();
+        } catch (Exception e){
+            Toast.makeText(this, "Varmista, että olet antanut kaikki tiedot", Toast.LENGTH_LONG).show();
+        }
     }
     @Override
     public void applyDataBack(String varia, String meno, String vastaus) {

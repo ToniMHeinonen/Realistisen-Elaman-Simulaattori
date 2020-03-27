@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatDialogFragment;
@@ -36,10 +37,14 @@ public class dialogiFragmentti extends AppCompatDialogFragment {
                 .setPositiveButton("Valmis", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        String v = vari.getSelectedItem().toString();
-                        String m = menee.getText().toString();
-                        String vas = vastaus.getText().toString();
-                        listener.applyDataBack(v, m, vas);
+                        try {
+                            String v = vari.getSelectedItem().toString();
+                            String m = menee.getText().toString();
+                            String vas = vastaus.getText().toString();
+                            listener.applyDataBack(v, m, vas);
+                        } catch (Exception e){
+                            Toast.makeText(getActivity(), "Anna kaikki tiedot", Toast.LENGTH_LONG).show();
+                        }
                     }
                 });
 

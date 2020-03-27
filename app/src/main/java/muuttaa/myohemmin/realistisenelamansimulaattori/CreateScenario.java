@@ -12,6 +12,7 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -44,7 +45,7 @@ public class CreateScenario extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == 1) {
             if (resultCode == RESULT_OK) {
-                list.add((Scene) data.getSerializableExtra("scene"));
+                list.add((Scene) data.getParcelableExtra("scene"));
                 updateList();
             }
         }
@@ -60,13 +61,17 @@ public class CreateScenario extends AppCompatActivity {
     }
 
     public void lisaa(View view) {
-        Scenario scenario = new Scenario();
-        scenario.setListaus(list);
-        String name = scenarioName.getText().toString().toLowerCase();
-        scenario.setName(name);
-        scenario.setFileName(name + ".json");
-        SharedPreferences test = getSharedPreferences("scenarios", MODE_PRIVATE);
-        SaveSystemPreferences json = new SaveSystemPreferences(this, test);
-        json.saveScenario(scenario);
+        try {
+            Scenario scenario = new Scenario();
+            scenario.setListaus(list);
+            String name = scenarioName.getText().toString().toLowerCase();
+            scenario.setName(name);
+            scenario.setFileName(name + ".json");
+            SharedPreferences test = getSharedPreferences("scenarios", MODE_PRIVATE);
+            SaveSystemPreferences json = new SaveSystemPreferences(this, test);
+            json.saveScenario(scenario);
+        } catch (Exception e){
+            Toast.makeText(this, "Varmista, että olet antanut kaikki tiedot", Toast.LENGTH_LONG).show();
+        }
     }
 }

@@ -117,8 +117,8 @@ public class Scene implements Parcelable {
         dest.writeString(person);
         dest.writeString(face);
         dest.writeStringArray(answers);
-        dest.writeList(goList);
-        dest.writeList(colorList);
+        dest.writeTypedList(goList);
+        dest.writeTypedList(colorList);
     }
     public static final Parcelable.Creator<Scene> CREATOR = new Parcelable.Creator<Scene>() {
         public Scene createFromParcel(Parcel in) {
@@ -135,8 +135,8 @@ public class Scene implements Parcelable {
         background = in.readString();
         person = in.readString();
         face = in.readString();
-        in.readStringArray(answers);
-        in.readList(goList, GeneralKeyAndValue.class.getClassLoader());
-        in.readList(colorList, GeneralKeyAndValue.class.getClassLoader());
+        answers = in.createStringArray();
+        goList = in.createTypedArrayList(GeneralKeyAndValue.CREATOR);
+        colorList = in.createTypedArrayList(GeneralKeyAndValue.CREATOR);
     }
 }
