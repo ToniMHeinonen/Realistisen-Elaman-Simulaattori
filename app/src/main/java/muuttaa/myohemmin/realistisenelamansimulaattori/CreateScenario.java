@@ -71,6 +71,7 @@ public class CreateScenario extends AppCompatActivity {
             SharedPreferences test = getSharedPreferences("scenarios", MODE_PRIVATE);
             SaveSystemPreferences json = new SaveSystemPreferences(this, test);
             json.saveScenario(scenario);
+            finish();
         } catch (Exception e){
             Toast.makeText(this, "Varmista, että olet antanut kaikki tiedot", Toast.LENGTH_LONG).show();
             if(debuggi){
