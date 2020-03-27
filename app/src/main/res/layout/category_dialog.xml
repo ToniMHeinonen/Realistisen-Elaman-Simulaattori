@@ -16,24 +16,12 @@
 
             <EditText
                 android:id="@+id/categoryName"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.7"
-                android:layout_gravity="center"
-                android:layout_margin="10dp"
-                android:textSize="?attr/font_large"
-                android:textStyle="bold"/>
+                style="@style/EditText"/>
 
             <Button
                 android:id="@+id/renameCategory"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.3"
-                android:layout_margin="10dp"
-                android:text="@string/renameCategory"
-                android:textSize="?attr/font_medium"
-                android:textStyle="bold"
-                android:background="#4AFD4A"/>
+                style="@style/EditTextConfirmButton"
+                android:text="@string/renameCategory" />
         </LinearLayout>
 
         <Button

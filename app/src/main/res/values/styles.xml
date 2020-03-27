@@ -9,12 +9,12 @@
         <item name="android:dropDownListViewStyle">@style/SpinnerStyle</item>
     </style>
 
-    <!-- Choose Scenario Activity -->
     <style name="SpinnerStyle" parent="Widget.AppCompat.ListView.DropDown">
         <item name="android:divider">#d1d1d1</item>
-        <item name="android:dividerHeight">0.5dp</item>
+        <item name="android:dividerHeight">1dp</item>
     </style>
 
+    <!-- Choose Scenario Activity -->
     <style name="HamburgerButton">
         <item name="android:layout_width">150dp</item>
         <item name="android:layout_height">60dp</item>
@@ -22,6 +22,7 @@
         <item name="android:layout_margin">10dp</item>
         <item name="android:textSize">?attr/font_medium</item>
         <item name="android:textStyle">bold</item>
+        <item name="android:textColor">?attr/font_color</item>
         <item name="android:background">#FFF</item>
     </style>
 
@@ -30,13 +31,14 @@
         <item name="android:layout_height">match_parent</item>
         <item name="android:padding">10dp</item>
         <item name="android:textSize">?attr/font_large</item>
+        <item name="android:textColor">?attr/font_color</item>
         <item name="android:textAlignment">center</item>
     </style>
 
     <style name="Category">
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:textColor">#FFF</item>
+        <item name="android:textColor">?attr/font_color</item>
         <item name="android:textSize">?attr/font_large</item>
         <item name="android:background">#4AA</item>
         <item name="android:paddingTop">15dp</item>
@@ -48,6 +50,28 @@
         <item name="android:paddingLeft">?android:attr/expandableListPreferredItemPaddingLeft</item>
     </style>
 
+    <style name="EditText">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_weight">0.7</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:textSize">?attr/font_large</item>
+        <item name="android:textColor">?attr/font_color</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="EditTextConfirmButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">0.3</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:textSize">?attr/font_medium</item>
+        <item name="android:textColor">?attr/font_color</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">#4AFD4A</item>
+    </style>
+
     <!-- Settings Activity -->
     <style name="SettingsTitles">
         <item name="android:layout_width">match_parent</item>
@@ -55,6 +79,7 @@
         <item name="android:layout_margin">25dp</item>
         <item name="android:textAlignment">center</item>
         <item name="android:textSize">?attr/font_large</item>
+        <item name="android:textColor">?attr/font_color</item>
         <item name="android:textStyle">bold</item>
     </style>
 
@@ -110,15 +135,15 @@
     </style>
 
     <style name="FontStyle.Small.Red">
-        <item name="font_color">#F00</item>
+        <item name="font_color">@color/colorRed</item>
     </style>
 
     <style name="FontStyle.Small.Green">
-        <item name="font_color">#0F0</item>
+        <item name="font_color">@color/colorGreen</item>
     </style>
 
     <style name="FontStyle.Small.Blue">
-        <item name="font_color">#00F</item>
+        <item name="font_color">@color/colorBlue</item>
     </style>
 
     <style name="FontStyle.Medium.Black">
@@ -126,15 +151,15 @@
     </style>
 
     <style name="FontStyle.Medium.Red">
-        <item name="font_color">#F00</item>
+        <item name="font_color">@color/colorRed</item>
     </style>
 
     <style name="FontStyle.Medium.Green">
-        <item name="font_color">#0F0</item>
+        <item name="font_color">@color/colorGreen</item>
     </style>
 
     <style name="FontStyle.Medium.Blue">
-        <item name="font_color">#00F</item>
+        <item name="font_color">@color/colorBlue</item>
     </style>
 
     <style name="FontStyle.Large.Black">
@@ -142,15 +167,15 @@
     </style>
 
     <style name="FontStyle.Large.Red">
-        <item name="font_color">#F00</item>
+        <item name="font_color">@color/colorRed</item>
     </style>
 
     <style name="FontStyle.Large.Green">
-        <item name="font_color">#0F0</item>
+        <item name="font_color">@color/colorGreen</item>
     </style>
 
     <style name="FontStyle.Large.Blue">
-        <item name="font_color">#00F</item>
+        <item name="font_color">@color/colorBlue</item>
     </style>
 
 </resources>
