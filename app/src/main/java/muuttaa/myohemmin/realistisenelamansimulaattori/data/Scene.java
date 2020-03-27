@@ -2,8 +2,6 @@ package muuttaa.myohemmin.realistisenelamansimulaattori.data;
 
 import android.os.Parcel;
 import android.os.Parcelable;
-
-import java.io.Serializable;
 import java.util.LinkedList;
 import java.util.List;
 
