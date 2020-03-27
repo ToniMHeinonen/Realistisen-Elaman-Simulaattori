@@ -7,6 +7,7 @@ import muuttaa.myohemmin.realistisenelamansimulaattori.choosescenarioitem.Hambur
 import muuttaa.myohemmin.realistisenelamansimulaattori.data.SaveSystem;
 import muuttaa.myohemmin.realistisenelamansimulaattori.choosescenarioitem.ScenarioItem;
 import muuttaa.myohemmin.realistisenelamansimulaattori.choosescenarioitem.ScenarioItemPrefs;
+import muuttaa.myohemmin.realistisenelamansimulaattori.data.SaveSystemPreferences;
 
 import android.content.Context;
 import android.content.Intent;
@@ -26,11 +27,13 @@ import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
 
+import java.util.List;
+
 public class ChooseScenarioActivity extends AppCompatActivity {
 
     private static Context mContext;
 
-    private JsonInterface json = new SaveSystem(this);
+    private JsonInterface json;
     private ArrayList<ScenarioItem> scenarios = new ArrayList<>();
     private final int SORT_NAME = 0, SORT_RECENT = 1, SORT_PERCENTAGE = 2;
     private int sortBy;
@@ -58,6 +61,7 @@ public class ChooseScenarioActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        json = new SaveSystemPreferences(this, getSharedPreferences("scenarios", MODE_PRIVATE));
         mContext = this;
 
         loadScenarios(); // Load scenarios from json

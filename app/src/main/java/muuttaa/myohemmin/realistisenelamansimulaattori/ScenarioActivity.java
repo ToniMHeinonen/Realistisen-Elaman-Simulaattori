@@ -15,10 +15,11 @@ import java.util.List;
 
 import androidx.appcompat.app.AppCompatActivity;
 import muuttaa.myohemmin.realistisenelamansimulaattori.data.SaveSystem;
+import muuttaa.myohemmin.realistisenelamansimulaattori.data.SaveSystemPreferences;
 
 public class ScenarioActivity extends AppCompatActivity {
     private String scenario;
-    private SaveSystem saveSystem;
+    private SaveSystemPreferences saveSystem;
     private TextView questionTextView;
     private List<String> colors;
     private ArrayList<Integer> userAnswers;
@@ -37,7 +38,7 @@ public class ScenarioActivity extends AppCompatActivity {
         Bundle extras = getIntent().getExtras();
         if (extras != null) {
             scenario = extras.getString("scenario");
-            saveSystem = new SaveSystem(this);
+            saveSystem = new SaveSystemPreferences(this, getSharedPreferences("scenarios", MODE_PRIVATE));
             saveSystem.setCurrentScenario(scenario);
             questionTextView = findViewById(R.id.question);
             questionTextView.setText(saveSystem.getQuestionFromScenario());
