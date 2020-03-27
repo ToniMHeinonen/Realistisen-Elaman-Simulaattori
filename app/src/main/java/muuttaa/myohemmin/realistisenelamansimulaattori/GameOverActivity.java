@@ -36,6 +36,9 @@ public class GameOverActivity extends AppCompatActivity {
             if (ScenarioItemPrefs.loadPercentage(scenario) < completedPercentage) {
                 ScenarioItemPrefs.savePercentage(scenario, completedPercentage);
             }
+
+            // Change date of last time played for this scenario
+            ScenarioItemPrefs.saveLastTimePlayed(scenario);
         }
     }
 

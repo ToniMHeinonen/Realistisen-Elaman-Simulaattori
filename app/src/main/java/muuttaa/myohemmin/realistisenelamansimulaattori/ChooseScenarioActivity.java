@@ -99,6 +99,7 @@ public class ChooseScenarioActivity extends AppCompatActivity {
         categoriesListAdapter = new CategoriesListAdapter(this, categoriesListTitle, categoriesListDetail);
         categoriesListView.setAdapter(categoriesListAdapter);
 
+        // Set listener for starting scenario
         categoriesListView.setOnChildClickListener(new ExpandableListView.OnChildClickListener() {
             @Override
             public boolean onChildClick(ExpandableListView parent, View v,
@@ -111,70 +112,35 @@ public class ChooseScenarioActivity extends AppCompatActivity {
                 Intent intent = new Intent(ChooseScenarioActivity.this, ScenarioActivity.class);
                 intent.putExtra("scenario", name);
                 startActivity(intent);
-
-                // Change date of last time played for this scenario
-                ScenarioItemPrefs.saveLastTimePlayed(name);
                 return false;
             }
         });
 
+        // Set listener for dragging and moving categories and scenarios
         categoriesListView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override
             public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
-                if (ExpandableListView.getPackedPositionType(id) == ExpandableListView.PACKED_POSITION_TYPE_CHILD) {
+                if (ExpandableListView.getPackedPositionType(id) == ExpandableListView.PACKED_POSITION_TYPE_CHILD ||
+                        ExpandableListView.getPackedPositionType(id) == ExpandableListView.PACKED_POSITION_TYPE_GROUP) {
                     int groupPosition = ExpandableListView.getPackedPositionGroup(id);
                     int childPosition = ExpandableListView.getPackedPositionChild(id);
 
-                    final ScenarioItem selectedItem = categoriesListDetail.get(
-                            categoriesListTitle.get(groupPosition)).get(
-                            childPosition);
+                    if (ExpandableListView.getPackedPositionType(id) == ExpandableListView.PACKED_POSITION_TYPE_CHILD) {
+                        final ScenarioItem selectedItem = categoriesListDetail.get(
+                                categoriesListTitle.get(groupPosition)).get(childPosition);
+                        setupScenarioDragMovement(selectedItem);
+                    } else {
+                        final String selectedCategory = categoriesListTitle.get(groupPosition);
+                        if (!selectedCategory.equals(getContext().getResources().getString(R.string.scenarios))) {
+                            setupCategoryDragMovement(selectedCategory);
+                        } else {
+                            return false;
+                        }
+                    }
 
                     // Create shadow where the finger is
                     View.DragShadowBuilder shadowBuilder = new View.DragShadowBuilder(view);
                     view.startDrag(null, shadowBuilder, categoriesListView.getItemAtPosition(position), 0);
-
-                    categoriesListView.setOnDragListener(new AdapterView.OnDragListener() {
-                        @Override
-                        public boolean onDrag(View v, DragEvent event) {
-                            int action = event.getAction();
-
-                            if (action == DragEvent.ACTION_DROP) {
-                                int x_cord = (int) event.getX();
-                                int y_cord = (int) event.getY();
-                                int nPointToPosition = categoriesListView.pointToPosition(x_cord,y_cord);
-                                if(categoriesListView.getItemAtPosition(nPointToPosition)!= null) {
-                                    Object dropped = categoriesListView.getItemAtPosition(nPointToPosition);
-
-                                    String category = null;
-
-                                    if (dropped.getClass().equals(String.class)) {
-                                        // If drop location is on top of category string object
-                                        category = (String) dropped;
-                                    } else if (dropped.getClass().equals(ScenarioItem.class)) {
-                                        // Else if drop location is on top of ScenarioItem object
-                                        ScenarioItem item = (ScenarioItem) dropped;
-                                        category = item.getCategory();
-                                    }
-
-                                    Debug.print("ChooseScenarioActivity", "onDrag",
-                                            "Category: " + category + " Scenario: "
-                                                    + selectedItem.getName(), 1);
-
-                                    // If dropped to default category, make value null
-                                    if (category == null ||
-                                            category.equals(getContext().getResources().getString(R.string.scenarios))) {
-                                        selectedItem.setCategory(null);
-                                    } else {
-                                        selectedItem.setCategory(category);
-                                    }
-
-                                    refreshScenarioList();
-                                }
-                            }
-
-                            return true;
-                        }
-                    });
 
                     // Return true as we are handling the event.
                     return true;
@@ -184,6 +150,109 @@ public class ChooseScenarioActivity extends AppCompatActivity {
             }
         });
         categoriesListView.expandGroup(0);
+    }
+
+    /**
+     * Returns name of the drop location.
+     *
+     * Used in dragging and moving categories and scenarios.
+     * @param location dropped location
+     * @return name of the drop location
+     */
+    private String getDropLocationName(Object location) {
+        String category = null;
+
+        if (location.getClass().equals(String.class)) {
+            // If drop location is on top of category string object
+            category = (String) location;
+        } else if (location.getClass().equals(ScenarioItem.class)) {
+            // Else if drop location is on top of ScenarioItem object
+            ScenarioItem item = (ScenarioItem) location;
+            category = item.getCategory();
+        }
+
+        return category;
+    }
+
+    /**
+     * Controls dragging and dropping of scenarios.
+     * @param selectedItem dragged scenario
+     */
+    private void setupScenarioDragMovement(final ScenarioItem selectedItem) {
+        categoriesListView.setOnDragListener(new AdapterView.OnDragListener() {
+            @Override
+            public boolean onDrag(View v, DragEvent event) {
+                int action = event.getAction();
+
+                if (action == DragEvent.ACTION_DROP) {
+                    int x_cord = (int) event.getX();
+                    int y_cord = (int) event.getY();
+                    int nPointToPosition = categoriesListView.pointToPosition(x_cord,y_cord);
+                    if(categoriesListView.getItemAtPosition(nPointToPosition)!= null) {
+                        Object dropped = categoriesListView.getItemAtPosition(nPointToPosition);
+
+                        String category = getDropLocationName(dropped);
+
+                        Debug.print("ChooseScenarioActivity", "onDrag",
+                                "Category: " + category + " Scenario: "
+                                        + selectedItem.getName(), 1);
+
+                        // If dropped to default category, make value null
+                        if (category == null ||
+                                category.equals(getContext().getResources().getString(R.string.scenarios))) {
+                            selectedItem.setCategory(null);
+                        } else {
+                            selectedItem.setCategory(category);
+                        }
+
+                        refreshScenarioList();
+                    }
+                }
+
+                return true;
+            }
+        });
+    }
+
+    /**
+     * Controls dragging and dropping of categories.
+     * @param selectedCategory dragged category
+     */
+    private void setupCategoryDragMovement(final String selectedCategory) {
+        categoriesListView.setOnDragListener(new AdapterView.OnDragListener() {
+            @Override
+            public boolean onDrag(View v, DragEvent event) {
+                int action = event.getAction();
+
+                if (action == DragEvent.ACTION_DROP) {
+                    int x_cord = (int) event.getX();
+                    int y_cord = (int) event.getY();
+                    int nPointToPosition = categoriesListView.pointToPosition(x_cord,y_cord);
+                    if(categoriesListView.getItemAtPosition(nPointToPosition)!= null) {
+                        Object dropped = categoriesListView.getItemAtPosition(nPointToPosition);
+
+                        String categoryNewPosition = getDropLocationName(dropped);
+
+                        Debug.print("ChooseScenarioActivity", "onDrag",
+                                "Selected category: " + selectedCategory +
+                                        " Dropped on category: " + categoryNewPosition, 1);
+
+                        // If dropped on top of item with default category, value will be null
+                        if (categoryNewPosition == null)
+                            categoryNewPosition = getContext().getResources().getString(R.string.scenarios);
+
+                        // If it did not drop on top of itself or it's children
+                        if (!categoryNewPosition.equals(selectedCategory)) {
+                            GlobalPrefs.moveCategory(selectedCategory, categoryNewPosition);
+
+                            refreshScenarioList();
+                        }
+                    }
+                }
+
+                return true;
+            }
+        });
     }
 
     /**

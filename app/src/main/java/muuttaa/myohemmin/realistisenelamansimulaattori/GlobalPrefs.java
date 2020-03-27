@@ -79,7 +79,25 @@ public abstract class GlobalPrefs {
         // Replace category at given index
         int index = categoriesList.indexOf(category);
         categoriesList.remove(index);
-        categoriesList.add(newName);
+        categoriesList.add(index, newName);
+
+        updateCurrentCategories();
+    }
+
+    /**
+     * Moves category to different position.
+     * @param categoryToMove category to be moved
+     * @param dropLocation location of where the category will be moved
+     */
+    public static void moveCategory(String categoryToMove, String dropLocation) {
+        int dropIndex = categoriesList.indexOf(dropLocation);
+
+        // If dropped on top of default category, move below it
+        if (dropIndex == -1)
+            dropIndex = 0;
+
+        categoriesList.remove(categoryToMove);
+        categoriesList.add(dropIndex, categoryToMove);
 
         updateCurrentCategories();
     }
