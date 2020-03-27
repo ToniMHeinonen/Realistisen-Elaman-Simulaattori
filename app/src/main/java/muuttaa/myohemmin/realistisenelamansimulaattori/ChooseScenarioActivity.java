@@ -112,9 +112,6 @@ public class ChooseScenarioActivity extends AppCompatActivity {
                 Intent intent = new Intent(ChooseScenarioActivity.this, ScenarioActivity.class);
                 intent.putExtra("scenario", name);
                 startActivity(intent);
-
-                // Change date of last time played for this scenario
-                ScenarioItemPrefs.saveLastTimePlayed(name);
                 return false;
             }
         });
