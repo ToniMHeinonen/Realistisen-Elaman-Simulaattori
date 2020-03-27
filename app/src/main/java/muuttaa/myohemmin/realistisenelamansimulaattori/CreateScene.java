@@ -7,6 +7,7 @@ import muuttaa.myohemmin.realistisenelamansimulaattori.data.Scene;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Parcelable;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
@@ -92,7 +93,7 @@ public class CreateScene extends AppCompatActivity implements dialogiFragmentti.
         Scene scene = new Scene(nimi,kysymys,tausta,henkilo,kasvo,ans,kysymyksetGo,kysymyksetColor);
 
         Intent returnIntent = new Intent();
-        returnIntent.putExtra("scene", scene);
+        returnIntent.putExtra("scene", (Parcelable) scene);
         setResult(Activity.RESULT_OK,returnIntent);
         finish();
     }
