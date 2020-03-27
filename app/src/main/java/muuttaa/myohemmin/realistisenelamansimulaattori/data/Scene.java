@@ -1,10 +1,11 @@
 package muuttaa.myohemmin.realistisenelamansimulaattori.data;
 
-import java.io.Serializable;
+import android.os.Parcel;
+import android.os.Parcelable;
 import java.util.LinkedList;
 import java.util.List;
 
-public class Scene implements Serializable {
+public class Scene implements Parcelable {
     private String name;
     private String question;
     private String background;
@@ -101,5 +102,41 @@ public class Scene implements Serializable {
             this.colorList = new LinkedList<>();
         }
         this.colorList.add(new GeneralKeyAndValue(key, value));
+    }
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeString(name);
+        dest.writeString(question);
+        dest.writeString(background);
+        dest.writeString(person);
+        dest.writeString(face);
+        dest.writeStringArray(answers);
+        dest.writeTypedList(goList);
+        dest.writeTypedList(colorList);
+    }
+    public static final Parcelable.Creator<Scene> CREATOR = new Parcelable.Creator<Scene>() {
+        public Scene createFromParcel(Parcel in) {
+            return new Scene(in);
+        }
+
+        public Scene[] newArray(int size) {
+            return new Scene[size];
+        }
+    };
+    private Scene(Parcel in){
+        name = in.readString();
+        question = in.readString();
+        background = in.readString();
+        person = in.readString();
+        face = in.readString();
+        answers = in.createStringArray();
+        goList = in.createTypedArrayList(GeneralKeyAndValue.CREATOR);
+        colorList = in.createTypedArrayList(GeneralKeyAndValue.CREATOR);
     }
 }

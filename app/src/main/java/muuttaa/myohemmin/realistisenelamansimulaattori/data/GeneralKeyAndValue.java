@@ -1,6 +1,9 @@
 package muuttaa.myohemmin.realistisenelamansimulaattori.data;
 
-public class GeneralKeyAndValue {
+import android.os.Parcel;
+import android.os.Parcelable;
+
+public class GeneralKeyAndValue implements Parcelable {
     private String key;
     private String value;
 
@@ -26,5 +29,29 @@ public class GeneralKeyAndValue {
 
     public void setValue(String value) {
         this.value = value;
+    }
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeString(key);
+        dest.writeString(value);
+    }
+    public static final Parcelable.Creator<GeneralKeyAndValue> CREATOR = new Parcelable.Creator<GeneralKeyAndValue>() {
+        public GeneralKeyAndValue createFromParcel(Parcel in) {
+            return new GeneralKeyAndValue(in);
+        }
+
+        public GeneralKeyAndValue[] newArray(int size) {
+            return new GeneralKeyAndValue[size];
+        }
+    };
+    private GeneralKeyAndValue(Parcel in){
+        key = in.readString();
+        value = in.readString();
     }
 }
