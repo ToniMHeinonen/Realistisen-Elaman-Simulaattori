@@ -1,12 +1,15 @@
 package muuttaa.myohemmin.realistisenelamansimulaattori;
 
 import androidx.appcompat.app.AppCompatActivity;
+import muuttaa.myohemmin.realistisenelamansimulaattori.data.SaveSystemPreferences;
 import muuttaa.myohemmin.realistisenelamansimulaattori.data.Scenario;
 import muuttaa.myohemmin.realistisenelamansimulaattori.data.Scene;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ListView;
 
@@ -15,9 +18,10 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class CreateScenario extends AppCompatActivity {
-    private ArrayList<Scene> list = new ArrayList<>();
+    private List<Scene> list = new ArrayList<>();
     private EditText scenarioName;
     private ListView listaview;
+    private ArrayAdapter<String> adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,5 +51,22 @@ public class CreateScenario extends AppCompatActivity {
     }
     //update ListView
     private void updateList() {
+        ArrayList<String> arrayList = new ArrayList<String>();
+        for(int lap=0; lap < list.size(); lap++){
+            arrayList.add(list.get(lap).getName());
+        }
+        adapter = new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_spinner_item, arrayList);
+        listaview.setAdapter(adapter);
+    }
+
+    public void lisaa(View view) {
+        Scenario scenario = new Scenario();
+        scenario.setListaus(list);
+        String name = scenarioName.getText().toString().toLowerCase();
+        scenario.setName(name);
+        scenario.setFileName(name + ".json");
+        SharedPreferences test = getSharedPreferences("scenarios", MODE_PRIVATE);
+        SaveSystemPreferences json = new SaveSystemPreferences(this, test);
+        json.saveScenario(scenario);
     }
 }

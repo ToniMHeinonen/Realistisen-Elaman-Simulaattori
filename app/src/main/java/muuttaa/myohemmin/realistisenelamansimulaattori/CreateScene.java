@@ -14,6 +14,7 @@ import android.widget.ListView;
 import android.widget.Spinner;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -26,6 +27,7 @@ public class CreateScene extends AppCompatActivity implements dialogiFragmentti.
     private ListView lista;
     private List<GeneralKeyAndValue> kysymyksetGo;
     private  List<GeneralKeyAndValue> kysymyksetColor;
+    private ArrayAdapter<String> adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,6 +62,15 @@ public class CreateScene extends AppCompatActivity implements dialogiFragmentti.
 
         kysymyksetGo = new LinkedList<>();
         kysymyksetColor = new LinkedList<>();
+    }
+
+    public void updateListOfAnswers(){
+        ArrayList<String> arrayList = new ArrayList<String>();
+        for(int lap=0; lap < kysymyksetGo.size(); lap++){
+            arrayList.add("Name: " + kysymyksetGo.get(lap).getKey() + " menee: " + kysymyksetGo.get(lap).getValue() + " väri: " + kysymyksetColor.get(lap).getValue());
+        }
+        adapter = new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_spinner_item, arrayList);
+        lista.setAdapter(adapter);
     }
 
     public void vastaus(View view) {
