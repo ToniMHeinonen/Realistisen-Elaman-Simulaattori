@@ -7,6 +7,8 @@ import muuttaa.myohemmin.realistisenelamansimulaattori.data.Scene;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -14,6 +16,7 @@ import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
@@ -76,6 +79,35 @@ public class CreateScenario extends AppCompatActivity {
             if(debuggi){
                 e.printStackTrace();
             }
+        }
+    }
+
+    public void laheta(View view) {
+        Scenario scenario = new Scenario();
+        scenario.setListaus(list);
+        String name = scenarioName.getText().toString().toLowerCase();
+        scenario.setName(name);
+        String file = name + ".json";
+        scenario.setFileName(file);
+        SaveSystemPreferences json = new SaveSystemPreferences(this);
+        json.saveScenario(scenario);
+        Intent intentShareFile = new Intent(Intent.ACTION_SEND);
+
+        String myFilePath = getFilesDir() + "/" + file;
+        File fileWithinMyDir = new File(myFilePath);
+
+        if(fileWithinMyDir.exists()) {
+            intentShareFile.setType("application/pdf");
+            if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.N){
+                intentShareFile.putExtra(Intent.EXTRA_STREAM, Uri.parse("content://"+ myFilePath));
+            } else {
+                intentShareFile.putExtra(Intent.EXTRA_STREAM, Uri.parse("file://" + myFilePath));
+            }
+            intentShareFile.putExtra(Intent.EXTRA_SUBJECT,
+                    "Sharing File...");
+            intentShareFile.putExtra(Intent.EXTRA_TEXT, "Sharing File...");
+
+            startActivity(Intent.createChooser(intentShareFile, "Lähetä Scenario"));
         }
     }
 }
