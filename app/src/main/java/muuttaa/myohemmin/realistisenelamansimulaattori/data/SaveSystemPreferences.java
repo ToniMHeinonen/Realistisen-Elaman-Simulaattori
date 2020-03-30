@@ -482,21 +482,9 @@ public class SaveSystemPreferences implements JsonInterface {
             write(file, out);
             //yritetään lukea onko savedata2
             String tiedosto = getStringFromFile("savedata2.json");
-            if(tiedosto != null){
-                try {
-                    JSONObject obj = new JSONObject(tiedosto);
-                    obj.getJSONArray("scenarios").put(scenarioName2);
-                    JSONObject h = new JSONObject();
-                    h.put("name", scenarioName2);
-                    h.put("file", file);
-                    obj.getJSONArray("scenarioslist").put(h);
-                    write("savedata2", obj.toString());
-                } catch (JSONException e){
-                    if(debuggi){
-                        e.printStackTrace();
-                    }
-                }
-            } else{
+            //vika täällä
+            System.out.println("testaus: " + tiedosto);
+            if(tiedosto == null || tiedosto.isEmpty()){
                 try {
                     JSONObject obj = new JSONObject();
                     JSONArray array1 = new JSONArray();
@@ -508,6 +496,21 @@ public class SaveSystemPreferences implements JsonInterface {
                     JSONArray array2 = new JSONArray();
                     array2.put(h);
                     obj.put("scenarioslist", array2);
+                    write("savedata2", obj.toString());
+                } catch (JSONException e){
+                    if(debuggi){
+                        e.printStackTrace();
+                    }
+                }
+            } else{
+                try {
+                    JSONObject obj = new JSONObject(tiedosto);
+                    obj.getJSONArray("scenarios").put(scenarioName2);
+                    JSONObject h = new JSONObject();
+                    h.put("name", scenarioName2);
+                    h.put("file", file);
+                    obj.getJSONArray("scenarioslist").put(h);
+                    System.out.println("kirjoitus: " + obj.toString());
                     write("savedata2", obj.toString());
                 } catch (JSONException e){
                     if(debuggi){
