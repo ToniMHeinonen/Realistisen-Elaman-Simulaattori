@@ -481,7 +481,7 @@ public class SaveSystemPreferences implements JsonInterface {
             //kirjoitus
             write(file, out);
             //yritetään lukea onko savedata2
-            String tiedosto = getStringFromFile(file);
+            String tiedosto = getStringFromFile("savedata2.json");
             if(tiedosto != null){
                 try {
                     JSONObject obj = new JSONObject(tiedosto);
@@ -490,6 +490,24 @@ public class SaveSystemPreferences implements JsonInterface {
                     h.put("name", scenarioName2);
                     h.put("file", file);
                     obj.getJSONArray("scenarioslist").put(h);
+                    write("savedata2", obj.toString());
+                } catch (JSONException e){
+                    if(debuggi){
+                        e.printStackTrace();
+                    }
+                }
+            } else{
+                try {
+                    JSONObject obj = new JSONObject();
+                    JSONArray array1 = new JSONArray();
+                    array1.put(scenarioName2);
+                    obj.put("scenarios", array1);
+                    JSONObject h = new JSONObject();
+                    h.put("name", scenarioName2);
+                    h.put("file", file);
+                    JSONArray array2 = new JSONArray();
+                    array2.put(h);
+                    obj.put("scenarioslist", array2);
                     write("savedata2", obj.toString());
                 } catch (JSONException e){
                     if(debuggi){
@@ -523,6 +541,7 @@ public class SaveSystemPreferences implements JsonInterface {
                 o += (char) byteChar;
             }
             fis.close();
+            return o;
         } catch (Exception e){
             if(debuggi){
                 e.printStackTrace();
