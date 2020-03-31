@@ -7,6 +7,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -26,6 +27,7 @@ public class ScenarioActivity extends AppCompatActivity {
     private final int CORRECT = 100;
     private final int WRONG = 0;
     private final int SEMICORRECT = 50;
+    private ImageView background, character, face;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +45,10 @@ public class ScenarioActivity extends AppCompatActivity {
             questionTextView = findViewById(R.id.question);
             questionTextView.setText(saveSystem.getQuestionFromScenario());
             colors = saveSystem.getColorsInString();
+            background = findViewById(R.id.scenarioBackground);
+            character = findViewById(R.id.scenarioCharacter);
+            face = findViewById(R.id.scenarioFace);
+            updateImages();
             setupAnswers();
         }
     }
@@ -89,6 +95,7 @@ public class ScenarioActivity extends AppCompatActivity {
                             arrayAdapter.clear();
                             arrayAdapter.addAll(saveSystem.getAnswersList());
                             arrayAdapter.notifyDataSetChanged();
+                            updateImages();
                             list.setEnabled(true);
                         }
                     }
@@ -113,6 +120,30 @@ public class ScenarioActivity extends AppCompatActivity {
             case "red":
                 userAnswers.add(WRONG);
                 break;
+        }
+    }
+
+    /**
+     * Update images from json-file.
+     */
+    private void updateImages() {
+        background.setImageResource(getResources()
+                .getIdentifier(saveSystem.getBackgroundPicture(),
+        "drawable", getApplicationContext()
+                .getPackageName()));
+
+        if (saveSystem.getPersonPicture().equals("null")) {
+            character.setImageResource(android.R.color.transparent);
+            face.setImageResource(android.R.color.transparent);
+        } else {
+            character.setImageResource(getResources()
+                    .getIdentifier(saveSystem.getPersonPicture(),
+            "drawable", getApplicationContext()
+                    .getPackageName()));
+            face.setImageResource(getResources()
+                    .getIdentifier(saveSystem.getFacePicture(),
+            "drawable", getApplicationContext()
+                    .getPackageName()));
         }
     }
 }
