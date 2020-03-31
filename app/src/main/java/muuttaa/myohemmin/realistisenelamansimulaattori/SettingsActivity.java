@@ -9,7 +9,6 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.SeekBar;
 import android.widget.Spinner;
-import android.widget.Toast;
 
 public class SettingsActivity extends AppCompatActivity {
 
@@ -19,6 +18,10 @@ public class SettingsActivity extends AppCompatActivity {
             {FontStyle.LargeBlack, FontStyle.LargeRed, FontStyle.LargeGreen, FontStyle.LargeBlue}
     };
 
+    // Sound
+    private Sound sound;
+    private int S_CORRECT = R.raw.correct;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         // Load font theme
@@ -26,6 +29,9 @@ public class SettingsActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
+
+        // Load sounds
+        sound = new Sound(this, S_CORRECT);
 
         setupFontSize();
         setupFontColor();
@@ -136,7 +142,7 @@ public class SettingsActivity extends AppCompatActivity {
 
             public void onStopTrackingTouch(SeekBar seekBar) {
                 GlobalPrefs.saveSoundVolume((float) progressChangedValue / 10);
-                Sound.playSound(Sound.CORRECT);
+                sound.playSound(S_CORRECT);
             }
         });
     }
@@ -145,5 +151,11 @@ public class SettingsActivity extends AppCompatActivity {
     public void onBackPressed() {
         finish();
         startActivity(new Intent(this, ChooseScenarioActivity.class));
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        sound.release();
     }
 }

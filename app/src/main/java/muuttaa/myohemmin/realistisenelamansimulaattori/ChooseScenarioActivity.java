@@ -38,10 +38,15 @@ public class ChooseScenarioActivity extends AppCompatActivity {
     private boolean sortAscending;
 
     // Categories
-    ExpandableListView categoriesListView;
-    CategoriesListAdapter categoriesListAdapter;
-    List<String> categoriesListTitle;
-    HashMap<String, List<ScenarioItem>> categoriesListDetail;
+    private ExpandableListView categoriesListView;
+    private CategoriesListAdapter categoriesListAdapter;
+    private List<String> categoriesListTitle;
+    private HashMap<String, List<ScenarioItem>> categoriesListDetail;
+
+    // Sound
+    private Sound sound;
+    private int S_POPUP = R.raw.popup;
+    private int S_CORRECT = R.raw.correct;
 
     /**
      * Initializes instance of this activity and all necessary values.
@@ -54,7 +59,9 @@ public class ChooseScenarioActivity extends AppCompatActivity {
         // Initialize abstract preferences classes
         ScenarioItemPrefs.initialize();
         GlobalPrefs.initialize();
-        Sound.initialize();
+
+        // Load sounds
+        sound = new Sound(this, S_POPUP, S_CORRECT);
 
         // Load font theme
         getTheme().applyStyle(GlobalPrefs.loadFontStyle().getResId(), true);
@@ -115,6 +122,7 @@ public class ChooseScenarioActivity extends AppCompatActivity {
                 Intent intent = new Intent(ChooseScenarioActivity.this, ScenarioActivity.class);
                 intent.putExtra("scenario", name);
                 startActivity(intent);
+                sound.playSound(S_CORRECT);
                 return false;
             }
         });
@@ -355,7 +363,6 @@ public class ChooseScenarioActivity extends AppCompatActivity {
     public void sortOrderClick(View v) {
         sortAscending = !sortAscending;
         sortList();
-        Sound.playSound(Sound.POPUP);
     }
 
     /**
@@ -365,7 +372,7 @@ public class ChooseScenarioActivity extends AppCompatActivity {
     public void hamburgerClicked(View v) {
         HamburgerDialog dialog = new HamburgerDialog(this);
         dialog.show();
-        Sound.playSound(Sound.POPUP);
+        sound.playSound(S_POPUP);
     }
 
     /**
@@ -375,7 +382,7 @@ public class ChooseScenarioActivity extends AppCompatActivity {
     public void openCategoryOptions(String category) {
         CategoryDialog dialog = new CategoryDialog(this, category);
         dialog.show();
-        Sound.playSound(Sound.POPUP);
+        sound.playSound(S_POPUP);
     }
 
     /**
@@ -441,5 +448,11 @@ public class ChooseScenarioActivity extends AppCompatActivity {
         GlobalPrefs.renameCategory(oldName, newName);
 
         refreshScenarioList();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        sound.release();
     }
 }
