@@ -28,7 +28,7 @@ import muuttaa.myohemmin.realistisenelamansimulaattori.R;
  */
 public class SaveSystemPreferences implements JsonInterface {
     private Context context;
-    private boolean debuggi = false;
+    private boolean debuggi = true;
     private List<String> list;
     private String scenarie;
     private String scenarioName;
@@ -330,7 +330,7 @@ public class SaveSystemPreferences implements JsonInterface {
         }
         //scenarios from preferences
         try{
-            String data = getStringFromFile("savedata2");
+            String data = getStringFromFile("savedata2.json");
             if(data != null) {
                 JSONObject b = new JSONObject(data);
                 JSONArray array2 = b.getJSONArray("scenarioslist");
@@ -484,7 +484,7 @@ public class SaveSystemPreferences implements JsonInterface {
             String tiedosto = getStringFromFile("savedata2.json");
             //vika täällä
             System.out.println("testaus: " + tiedosto);
-            if(tiedosto == null || tiedosto.isEmpty()){
+            if(tiedosto == null){
                 try {
                     JSONObject obj = new JSONObject();
                     JSONArray array1 = new JSONArray();
@@ -496,7 +496,7 @@ public class SaveSystemPreferences implements JsonInterface {
                     JSONArray array2 = new JSONArray();
                     array2.put(h);
                     obj.put("scenarioslist", array2);
-                    write("savedata2", obj.toString());
+                    write("savedata2.json", obj.toString());
                 } catch (JSONException e){
                     if(debuggi){
                         e.printStackTrace();
@@ -510,8 +510,7 @@ public class SaveSystemPreferences implements JsonInterface {
                     h.put("name", scenarioName2);
                     h.put("file", file);
                     obj.getJSONArray("scenarioslist").put(h);
-                    System.out.println("kirjoitus: " + obj.toString());
-                    write("savedata2", obj.toString());
+                    write("savedata2.json", obj.toString());
                 } catch (JSONException e){
                     if(debuggi){
                         e.printStackTrace();
