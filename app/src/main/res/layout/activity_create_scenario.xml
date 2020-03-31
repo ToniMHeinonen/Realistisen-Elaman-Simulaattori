@@ -15,12 +15,16 @@
             android:layout_height="wrap_content"
             android:id="@+id/importti"
             android:text="Import"
+            android:textSize="?attr/font_medium"
+            android:textColor="?attr/font_color"
             android:layout_weight="0.5"/>
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/exportti"
             android:text="Lähetä"
+            android:textSize="?attr/font_medium"
+            android:textColor="?attr/font_color"
             android:onClick="laheta"
             android:layout_weight="0.5"/>
     </LinearLayout>
@@ -28,6 +32,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Luo Scene"
+        android:textSize="?attr/font_medium"
+        android:textColor="?attr/font_color"
         android:layout_marginTop="15dp"
         android:onClick="luo"/>
     <LinearLayout
@@ -39,11 +45,15 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="Scenario nimi:"
+            android:textSize="?attr/font_medium"
+            android:textColor="?attr/font_color"
             android:layout_weight="0.5"/>
         <EditText
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.5"
+            android:textSize="?attr/font_medium"
+            android:textColor="?attr/font_color"
             android:id="@+id/ScenarioCreateName"/>
     </LinearLayout>
     <ListView
@@ -55,5 +65,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Lisää"
+        android:textSize="?attr/font_medium"
+        android:textColor="?attr/font_color"
         android:onClick="lisaa"/>
 </LinearLayout>

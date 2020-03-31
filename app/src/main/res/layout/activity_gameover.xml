@@ -11,6 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="?attr/font_medium"
+        android:textColor="?attr/font_color"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"/>
 
@@ -20,6 +21,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/resultScenario"
         android:textSize="?attr/font_medium"
+        android:textColor="?attr/font_color"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"/>
 
@@ -29,6 +31,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="?attr/font_medium"
+        android:textColor="?attr/font_color"
         android:layout_below="@+id/resultPercentage"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"

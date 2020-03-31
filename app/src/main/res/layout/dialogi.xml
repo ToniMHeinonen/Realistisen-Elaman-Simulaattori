@@ -10,6 +10,8 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="Valitse väri:"
+            android:textColor="?attr/font_color"
+            android:textSize="?attr/font_medium"
             android:layout_weight="0.3"/>
         <Spinner
             android:layout_width="0dp"
@@ -26,11 +28,15 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="Kirjoita vastaus:"
+            android:textColor="?attr/font_color"
+            android:textSize="?attr/font_medium"
             android:layout_weight="0.3"/>
         <EditText
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:id="@+id/vastauksenTeksti"
+            android:textColor="?attr/font_color"
+            android:textSize="?attr/font_medium"
             android:layout_weight="0.7"/>
     </LinearLayout>
     <LinearLayout
@@ -42,12 +48,15 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.6"
+            android:textColor="?attr/font_color"
             android:text="Kirjoita scenen nimi minne mennään. (null tarkoittaa loppua):"
-            android:textSize="10sp" />
+            android:textSize="?attr/font_small" />
         <EditText
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:id="@+id/menee"
+            android:textColor="?attr/font_color"
+            android:textSize="?attr/font_medium"
             android:layout_weight="0.4"/>
     </LinearLayout>
 
