@@ -13,7 +13,8 @@
         android:textSize="?attr/font_medium"
         android:textColor="?attr/font_color"
         android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"/>
+        android:layout_centerVertical="true"
+        android:textAlignment="center"/>
 
     <TextView
         android:id="@+id/resultPercentage"
@@ -23,7 +24,8 @@
         android:textSize="?attr/font_medium"
         android:textColor="?attr/font_color"
         android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"/>
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"/>
 
     <Button
         android:text="Takaisin aloitusvalikkoon"
