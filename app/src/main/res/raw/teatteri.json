@@ -2,8 +2,8 @@
   "first": {
     "question": "Saavut elokuvateatteriin ja haluat mennä katsomaan uutta elokuvaa yksin. Sinulla ei ole vielä lippua. \nMitä teet ensimmäisenä?",
     "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
+    "person": "null",
+    "face": "null",
     "answers": [
       "Menet ostamaan lipun ja herkut",
       "Käyt vessassa",
@@ -36,8 +36,8 @@
   "vessa": {
     "question": "Tulet ulos vessasta ja huomaat ruuhkaa elokuvateatterissa.",
     "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
+    "person": "null",
+    "face": "null",
     "answers": [
       "Menet ostamaan herkut ja liput",
       "Lähdet teatterista"

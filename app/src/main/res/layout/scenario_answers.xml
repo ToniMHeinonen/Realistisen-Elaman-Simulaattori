@@ -5,6 +5,7 @@
     android:padding="15dp"
     android:id="@+id/myTextView"
     android:textSize="?attr/font_medium"
+    android:textColor="?attr/font_color"
     android:textAlignment="center"
     android:background="@drawable/button_default">
 </TextView>

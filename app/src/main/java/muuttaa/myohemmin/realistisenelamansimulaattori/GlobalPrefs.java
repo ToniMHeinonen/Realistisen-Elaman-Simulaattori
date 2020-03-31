@@ -24,18 +24,28 @@ public abstract class GlobalPrefs {
     private final static String keyFontSizePos = "font_size_position";
     private final static String keyFontColorPos = "font_color_position";
 
+    // Audio
+    private final static String keySoundVolume = "sound_volume";
+    private final static String keyMusicVolume = "music_volume";
+
     /**
-     * Loads the saved values from file.
-     * @param context activity context
+     * Loads correct preferences file and fills categoriesList.
      */
-    public static void initialize(Context context) {
-        prefs = context.getSharedPreferences(keyPrefs, 0);
+    static {
+        prefs = ChooseScenarioActivity.getContext().getSharedPreferences(keyPrefs, 0);
 
         int categoriesAmount = prefs.getInt(keyCategoriesAmount, 0);
 
         for (int i = 0; i < categoriesAmount; i++) {
             categoriesList.add(prefs.getString(keyAllCategories + i, null));
         }
+    }
+
+    /**
+     * Calls static code block.
+     */
+    public static void initialize() {
+        // This calls the static code block and loads necessary preferences
     }
 
     /**
@@ -151,7 +161,7 @@ public abstract class GlobalPrefs {
         prefs.edit().putBoolean(keySortAscending, ascending).apply();
     }
 
-    public static FontStyle getFontStyle() {
+    public static FontStyle loadFontStyle() {
         String defaultValue = FontStyle.SmallBlack.name();
         FontStyle style;
         // Check if user has previously saved fontstyle which does not exist anymore
@@ -163,24 +173,40 @@ public abstract class GlobalPrefs {
         return style;
     }
 
-    public static void setFontStyle(FontStyle style) {
+    public static void saveFontStyle(FontStyle style) {
         prefs.edit().putString(keyFontStyle, style.name()).commit();
     }
 
-    public static int getFontSizePos() {
+    public static int loadFontSizePos() {
         return prefs.getInt(keyFontSizePos, 0);
     }
 
-    public static void setFontSizePos(int pos) {
+    public static void saveFontSizePos(int pos) {
         prefs.edit().putInt(keyFontSizePos, pos).commit();
     }
 
-    public static int getFontColorPos() {
+    public static int loadFontColorPos() {
         return prefs.getInt(keyFontColorPos, 0);
     }
 
-    public static void setFontColorPos(int pos) {
+    public static void saveFontColorPos(int pos) {
         prefs.edit().putInt(keyFontColorPos, pos).commit();
+    }
+
+    public static float loadSoundVolume() {
+        return prefs.getFloat(keySoundVolume, 0.8f);
+    }
+
+    public static void saveSoundVolume(float volume) {
+        prefs.edit().putFloat(keySoundVolume, volume).commit();
+    }
+
+    public static float loadMusicVolume() {
+        return prefs.getFloat(keyMusicVolume, 0.8f);
+    }
+
+    public static void saveMusicVolume(float volume) {
+        prefs.edit().putFloat(keyMusicVolume, volume).commit();
     }
 
     /**

@@ -4,12 +4,12 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.SeekBar;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 public class SettingsActivity extends AppCompatActivity {
 
@@ -22,7 +22,7 @@ public class SettingsActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         // Load font theme
-        getTheme().applyStyle(GlobalPrefs.getFontStyle().getResId(), true);
+        getTheme().applyStyle(GlobalPrefs.loadFontStyle().getResId(), true);
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
@@ -40,7 +40,7 @@ public class SettingsActivity extends AppCompatActivity {
 
         // Apply the adapter to the spinner
         sizeSpinner.setAdapter(adapter);
-        sizeSpinner.setSelection(GlobalPrefs.getFontSizePos());
+        sizeSpinner.setSelection(GlobalPrefs.loadFontSizePos());
 
         sizeSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             boolean started = false;
@@ -51,7 +51,7 @@ public class SettingsActivity extends AppCompatActivity {
                 if (!started) {
                     started = true;
                 } else {
-                    GlobalPrefs.setFontSizePos(position);
+                    GlobalPrefs.saveFontSizePos(position);
                     updateFontStyle();
                 }
             }
@@ -69,7 +69,7 @@ public class SettingsActivity extends AppCompatActivity {
 
         // Apply the adapter to the spinner
         colorSpinner.setAdapter(adapter);
-        colorSpinner.setSelection(GlobalPrefs.getFontColorPos());
+        colorSpinner.setSelection(GlobalPrefs.loadFontColorPos());
 
         colorSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             boolean started = false;
@@ -80,7 +80,7 @@ public class SettingsActivity extends AppCompatActivity {
                 if (!started) {
                     started = true;
                 } else {
-                    GlobalPrefs.setFontColorPos(position);
+                    GlobalPrefs.saveFontColorPos(position);
                     updateFontStyle();
                 }
             }
@@ -91,9 +91,9 @@ public class SettingsActivity extends AppCompatActivity {
     }
 
     private void updateFontStyle() {
-        int size = GlobalPrefs.getFontSizePos();
-        int color = GlobalPrefs.getFontColorPos();
-        GlobalPrefs.setFontStyle(styles[size][color]);
+        int size = GlobalPrefs.loadFontSizePos();
+        int color = GlobalPrefs.loadFontColorPos();
+        GlobalPrefs.saveFontStyle(styles[size][color]);
 
         // Restart activity to apply changes to xml
         finish();
@@ -101,12 +101,49 @@ public class SettingsActivity extends AppCompatActivity {
     }
 
     private void setupAudio() {
-        SeekBar musicBar = findViewById(R.id.musicBar);
-        SeekBar soundBar = findViewById(R.id.soundBar);
+        // Music
+        final SeekBar musicBar = findViewById(R.id.musicBar);
+        musicBar.setProgress((int) (GlobalPrefs.loadMusicVolume() * 10));
+        musicBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            int progressChangedValue = 0;
+
+            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+                progressChangedValue = progress;
+            }
+
+            public void onStartTrackingTouch(SeekBar seekBar) {
+                progressChangedValue = musicBar.getProgress();
+            }
+
+            public void onStopTrackingTouch(SeekBar seekBar) {
+                GlobalPrefs.saveMusicVolume((float) progressChangedValue / 10);
+            }
+        });
+
+        // Sound
+        final SeekBar soundBar = findViewById(R.id.soundBar);
+        soundBar.setProgress((int) (GlobalPrefs.loadSoundVolume() * 10));
+        soundBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            int progressChangedValue = 0;
+
+            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+                progressChangedValue = progress;
+            }
+
+            public void onStartTrackingTouch(SeekBar seekBar) {
+                progressChangedValue = soundBar.getProgress();
+            }
+
+            public void onStopTrackingTouch(SeekBar seekBar) {
+                GlobalPrefs.saveSoundVolume((float) progressChangedValue / 10);
+                Sound.playSound(Sound.CORRECT);
+            }
+        });
     }
 
     @Override
     public void onBackPressed() {
+        finish();
         startActivity(new Intent(this, ChooseScenarioActivity.class));
     }
 }

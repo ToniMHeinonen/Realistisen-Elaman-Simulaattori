@@ -11,6 +11,8 @@
         android:layout_height="wrap_content"
         android:text="Valmis"
         android:onClick="pois"
+        android:textSize="?attr/font_medium"
+        android:textColor="?attr/font_color"
         android:layout_marginTop="15dp"/>
     <TextView
         android:layout_width="match_parent"
@@ -25,10 +27,14 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.3"
+            android:textSize="?attr/font_small"
+            android:textColor="?attr/font_color"
             android:text="Scenen nimi:"/>
         <EditText
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:textSize="?attr/font_small"
+            android:textColor="?attr/font_color"
             android:id="@+id/scenenNimi"
             android:layout_weight="0.7"/>
     </LinearLayout>
@@ -41,10 +47,14 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.3"
+            android:textSize="?attr/font_small"
+            android:textColor="?attr/font_color"
             android:text="Scenen kysymys:"/>
         <EditText
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:textSize="?attr/font_small"
+            android:textColor="?attr/font_color"
             android:id="@+id/kysymys"
             android:layout_weight="0.7"/>
     </LinearLayout>
@@ -61,6 +71,8 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textSize="?attr/font_medium"
+                android:textColor="?attr/font_color"
                 android:text="Valitse tausta:"/>
             <Spinner
                 android:layout_width="wrap_content"
@@ -75,6 +87,8 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textSize="?attr/font_medium"
+                android:textColor="?attr/font_color"
                 android:text="Valitse henkilö:"/>
             <Spinner
                 android:layout_width="wrap_content"
@@ -89,6 +103,8 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textSize="?attr/font_medium"
+                android:textColor="?attr/font_color"
                 android:text="Valitse kasvot:"/>
             <Spinner
                 android:layout_width="wrap_content"
@@ -99,6 +115,8 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textSize="?attr/font_medium"
+        android:textColor="?attr/font_color"
         android:text="Luo Vastaus"
         android:onClick="vastaus"/>
     <ListView

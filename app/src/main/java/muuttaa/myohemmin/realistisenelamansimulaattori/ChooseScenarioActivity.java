@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import muuttaa.myohemmin.realistisenelamansimulaattori.choosescenarioitem.CategoriesListAdapter;
 import muuttaa.myohemmin.realistisenelamansimulaattori.choosescenarioitem.CategoryDialog;
 import muuttaa.myohemmin.realistisenelamansimulaattori.choosescenarioitem.HamburgerDialog;
-import muuttaa.myohemmin.realistisenelamansimulaattori.data.SaveSystem;
 import muuttaa.myohemmin.realistisenelamansimulaattori.choosescenarioitem.ScenarioItem;
 import muuttaa.myohemmin.realistisenelamansimulaattori.choosescenarioitem.ScenarioItemPrefs;
 import muuttaa.myohemmin.realistisenelamansimulaattori.data.SaveSystemPreferences;
@@ -25,8 +24,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
-import java.util.List;
-
 import java.util.List;
 
 public class ChooseScenarioActivity extends AppCompatActivity {
@@ -52,17 +49,19 @@ public class ChooseScenarioActivity extends AppCompatActivity {
      */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        mContext = this;
+
         // Initialize abstract preferences classes
-        ScenarioItemPrefs.initialize(this);
-        GlobalPrefs.initialize(this);
+        ScenarioItemPrefs.initialize();
+        GlobalPrefs.initialize();
+        Sound.initialize();
 
         // Load font theme
-        getTheme().applyStyle(GlobalPrefs.getFontStyle().getResId(), true);
+        getTheme().applyStyle(GlobalPrefs.loadFontStyle().getResId(), true);
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         json = new SaveSystemPreferences(this);
-        mContext = this;
 
         loadScenarios(); // Load scenarios from json
         setupSorting(); // Setup sorting spinner
@@ -356,6 +355,7 @@ public class ChooseScenarioActivity extends AppCompatActivity {
     public void sortOrderClick(View v) {
         sortAscending = !sortAscending;
         sortList();
+        Sound.playSound(Sound.POPUP);
     }
 
     /**
@@ -365,6 +365,7 @@ public class ChooseScenarioActivity extends AppCompatActivity {
     public void hamburgerClicked(View v) {
         HamburgerDialog dialog = new HamburgerDialog(this);
         dialog.show();
+        Sound.playSound(Sound.POPUP);
     }
 
     /**
@@ -374,6 +375,7 @@ public class ChooseScenarioActivity extends AppCompatActivity {
     public void openCategoryOptions(String category) {
         CategoryDialog dialog = new CategoryDialog(this, category);
         dialog.show();
+        Sound.playSound(Sound.POPUP);
     }
 
     /**

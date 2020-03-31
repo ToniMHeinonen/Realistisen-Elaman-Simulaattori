@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-import java.text.DecimalFormat;
 import java.util.ArrayList;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,7 +19,7 @@ public class GameOverActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         // Load font theme
-        getTheme().applyStyle(GlobalPrefs.getFontStyle().getResId(), true);
+        getTheme().applyStyle(GlobalPrefs.loadFontStyle().getResId(), true);
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gameover);
@@ -32,7 +31,8 @@ public class GameOverActivity extends AppCompatActivity {
             completedScenarioTextView.setText("Suoritettu skenaario: " + scenario);
             completedPercentageTextView = findViewById(R.id.resultPercentage);
             int completedPercentage = getPercentage(userAnswers);
-            completedPercentageTextView.setText("Onnistumisprosentti: " + completedPercentage + "%");
+            completedPercentageTextView.setText("Onnistumisprosentti: " + completedPercentage + "%" +
+                    "\n\n" + giveFeedback(completedPercentage));
             if (ScenarioItemPrefs.loadPercentage(scenario) < completedPercentage) {
                 ScenarioItemPrefs.savePercentage(scenario, completedPercentage);
             }
@@ -56,5 +56,19 @@ public class GameOverActivity extends AppCompatActivity {
             Intent intent = new Intent(this, ChooseScenarioActivity.class);
             startActivity(intent);
         }
+    }
+
+    private String giveFeedback(int completedPercentage) {
+        String result = "";
+        if (completedPercentage <= 50) {
+            result = "Voi harmi, nyt ei kyllä mennyt aivan putkeen... Yritä uudelleen paremmalla " +
+                    "onnella ja harkitse tarkkaan vastauksiasi.";
+        } else if (completedPercentage < 100) {
+            result = "Hienoa! Suoriuduit tästä skenaariosta varsin mallikkaasti, " +
+                    "mutta vielä on parantamisen varaa.";
+        } else {
+            result = "Loistavaa! Sait kaikki oikein tässä skenaariossa.";
+        }
+        return result;
     }
 }
