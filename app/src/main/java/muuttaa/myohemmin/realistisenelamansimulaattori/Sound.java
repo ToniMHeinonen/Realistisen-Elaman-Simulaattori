@@ -17,7 +17,6 @@ public abstract class Sound {
      * Loads sound files.
      */
     static {
-        Debug.print("Sound", "static", "", 1);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             AudioAttributes audioAttributes = new AudioAttributes.Builder()
                     .setUsage(AudioAttributes.USAGE_ASSISTANCE_SONIFICATION)
@@ -51,6 +50,7 @@ public abstract class Sound {
      * @param soundID id of the sound to play
      */
     public static void playSound(int soundID) {
-        soundPool.play(soundID, 1, 1, 0, 0, 1);
+        float volume = GlobalPrefs.loadSoundVolume();
+        soundPool.play(soundID, volume, volume, 0, 0, 1);
     }
 }

@@ -15,7 +15,6 @@ import android.widget.ListView;
 import android.widget.Spinner;
 import android.widget.Toast;
 
-import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
@@ -34,7 +33,7 @@ public class CreateScene extends AppCompatActivity implements dialogiFragmentti.
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         // Load font theme
-        getTheme().applyStyle(GlobalPrefs.getFontStyle().getResId(), true);
+        getTheme().applyStyle(GlobalPrefs.loadFontStyle().getResId(), true);
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_scene);

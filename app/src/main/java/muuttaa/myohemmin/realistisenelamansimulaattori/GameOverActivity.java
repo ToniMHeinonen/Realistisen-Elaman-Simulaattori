@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-import java.text.DecimalFormat;
 import java.util.ArrayList;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,7 +19,7 @@ public class GameOverActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         // Load font theme
-        getTheme().applyStyle(GlobalPrefs.getFontStyle().getResId(), true);
+        getTheme().applyStyle(GlobalPrefs.loadFontStyle().getResId(), true);
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gameover);

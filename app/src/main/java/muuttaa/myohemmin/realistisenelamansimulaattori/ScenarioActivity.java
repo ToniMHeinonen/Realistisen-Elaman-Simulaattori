@@ -3,7 +3,6 @@ package muuttaa.myohemmin.realistisenelamansimulaattori;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
-import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -15,7 +14,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import androidx.appcompat.app.AppCompatActivity;
-import muuttaa.myohemmin.realistisenelamansimulaattori.data.SaveSystem;
 import muuttaa.myohemmin.realistisenelamansimulaattori.data.SaveSystemPreferences;
 
 public class ScenarioActivity extends AppCompatActivity {
@@ -32,7 +30,7 @@ public class ScenarioActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         // Load font theme
-        getTheme().applyStyle(GlobalPrefs.getFontStyle().getResId(), true);
+        getTheme().applyStyle(GlobalPrefs.loadFontStyle().getResId(), true);
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_scenario);

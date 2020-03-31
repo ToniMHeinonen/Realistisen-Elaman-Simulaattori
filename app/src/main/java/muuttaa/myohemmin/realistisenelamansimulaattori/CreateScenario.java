@@ -6,7 +6,6 @@ import muuttaa.myohemmin.realistisenelamansimulaattori.data.Scenario;
 import muuttaa.myohemmin.realistisenelamansimulaattori.data.Scene;
 
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
@@ -18,7 +17,6 @@ import android.widget.Toast;
 
 import java.io.File;
 import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.List;
 
 public class CreateScenario extends AppCompatActivity {
@@ -31,7 +29,7 @@ public class CreateScenario extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         // Load font theme
-        getTheme().applyStyle(GlobalPrefs.getFontStyle().getResId(), true);
+        getTheme().applyStyle(GlobalPrefs.loadFontStyle().getResId(), true);
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_scenario);

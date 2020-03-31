@@ -26,8 +26,6 @@ import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
 
-import java.util.List;
-
 public class ChooseScenarioActivity extends AppCompatActivity {
 
     private static Context mContext;
@@ -59,7 +57,7 @@ public class ChooseScenarioActivity extends AppCompatActivity {
         Sound.initialize();
 
         // Load font theme
-        getTheme().applyStyle(GlobalPrefs.getFontStyle().getResId(), true);
+        getTheme().applyStyle(GlobalPrefs.loadFontStyle().getResId(), true);
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
