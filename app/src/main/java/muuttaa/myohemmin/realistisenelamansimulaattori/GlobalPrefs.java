@@ -25,17 +25,23 @@ public abstract class GlobalPrefs {
     private final static String keyFontColorPos = "font_color_position";
 
     /**
-     * Loads the saved values from file.
-     * @param context activity context
+     * Loads correct preferences file and fills categoriesList.
      */
-    public static void initialize(Context context) {
-        prefs = context.getSharedPreferences(keyPrefs, 0);
+    static {
+        prefs = ChooseScenarioActivity.getContext().getSharedPreferences(keyPrefs, 0);
 
         int categoriesAmount = prefs.getInt(keyCategoriesAmount, 0);
 
         for (int i = 0; i < categoriesAmount; i++) {
             categoriesList.add(prefs.getString(keyAllCategories + i, null));
         }
+    }
+
+    /**
+     * Calls static code block.
+     */
+    public static void initialize() {
+        // This calls the static code block and loads necessary preferences
     }
 
     /**

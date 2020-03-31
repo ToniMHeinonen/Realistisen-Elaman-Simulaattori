@@ -5,6 +5,8 @@ import android.content.SharedPreferences;
 
 import java.util.Date;
 
+import muuttaa.myohemmin.realistisenelamansimulaattori.ChooseScenarioActivity;
+
 public abstract class ScenarioItemPrefs {
     private static SharedPreferences prefs;
 
@@ -14,11 +16,17 @@ public abstract class ScenarioItemPrefs {
     private static final String keyCategory = "category_";
 
     /**
-     * Loads the correct preferences for ScenarioItems.
-     * @param context activity context
+     * Loads correct preferences file.
      */
-    public static void initialize(Context context) {
-        prefs = context.getSharedPreferences(keyPrefs, 0);
+    static {
+        prefs = ChooseScenarioActivity.getContext().getSharedPreferences(keyPrefs, 0);
+    }
+
+    /**
+     * Calls static code block.
+     */
+    public static void initialize() {
+        // This calls the static code block and loads necessary preferences
     }
 
     /**
