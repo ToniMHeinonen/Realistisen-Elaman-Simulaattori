@@ -1,6 +1,5 @@
 package muuttaa.myohemmin.realistisenelamansimulaattori;
 
-import android.content.Context;
 import android.content.SharedPreferences;
 
 import java.util.ArrayList;
@@ -32,7 +31,7 @@ public abstract class GlobalPrefs {
      * Loads correct preferences file and fills categoriesList.
      */
     static {
-        prefs = ChooseScenarioActivity.getContext().getSharedPreferences(keyPrefs, 0);
+        prefs = InitializeActivity.getContext().getSharedPreferences(keyPrefs, 0);
 
         int categoriesAmount = prefs.getInt(keyCategoriesAmount, 0);
 

@@ -28,8 +28,6 @@ import java.util.List;
 
 public class ChooseScenarioActivity extends AppCompatActivity {
 
-    private static Context mContext;
-
     private JsonInterface json;
     private ArrayList<ScenarioItem> scenarios = new ArrayList<>();
     private final int SORT_NAME = 0, SORT_RECENT = 1, SORT_PERCENTAGE = 2;
@@ -54,12 +52,6 @@ public class ChooseScenarioActivity extends AppCompatActivity {
      */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        mContext = this;
-
-        // Initialize abstract preferences classes
-        ScenarioItemPrefs.initialize();
-        GlobalPrefs.initialize();
-
         // Load sounds
         sound = new Sound(this, S_POPUP, S_CORRECT);
 
@@ -76,17 +68,6 @@ public class ChooseScenarioActivity extends AppCompatActivity {
         // Categories
         categoriesListView = findViewById(R.id.categoriesPlaceholder);
         showScenarioList();
-    }
-
-    /**
-     * Gets context.
-     *
-     * Used in CategoriesListAdapter to get application context in order to
-     * access saved xml Strings.
-     * @return application context
-     */
-    public static Context getContext(){
-        return mContext;
     }
 
     /**
@@ -142,7 +123,7 @@ public class ChooseScenarioActivity extends AppCompatActivity {
                         setupScenarioDragMovement(selectedItem);
                     } else {
                         final String selectedCategory = categoriesListTitle.get(groupPosition);
-                        if (!selectedCategory.equals(getContext().getResources().getString(R.string.scenarios))) {
+                        if (!selectedCategory.equals(getString(R.string.scenarios))) {
                             setupCategoryDragMovement(selectedCategory);
                         } else {
                             return false;
@@ -210,7 +191,7 @@ public class ChooseScenarioActivity extends AppCompatActivity {
 
                         // If dropped to default category, make value null
                         if (category == null ||
-                                category.equals(getContext().getResources().getString(R.string.scenarios))) {
+                                category.equals(getString(R.string.scenarios))) {
                             selectedItem.setCategory(null);
                         } else {
                             selectedItem.setCategory(category);
@@ -250,7 +231,7 @@ public class ChooseScenarioActivity extends AppCompatActivity {
 
                         // If dropped on top of item with default category, value will be null
                         if (categoryNewPosition == null)
-                            categoryNewPosition = getContext().getResources().getString(R.string.scenarios);
+                            categoryNewPosition = getString(R.string.scenarios);
 
                         // If it did not drop on top of itself or it's children
                         if (!categoryNewPosition.equals(selectedCategory)) {
