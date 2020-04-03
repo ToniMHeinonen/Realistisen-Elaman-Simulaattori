@@ -123,6 +123,7 @@ public class SettingsActivity extends ParentActivity {
 
             public void onStopTrackingTouch(SeekBar seekBar) {
                 GlobalPrefs.saveMusicVolume((float) progressChangedValue / 10);
+                Music.updateVolume();
             }
         });
 

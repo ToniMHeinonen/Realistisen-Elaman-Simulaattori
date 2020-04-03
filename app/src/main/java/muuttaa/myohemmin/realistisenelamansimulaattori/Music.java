@@ -12,7 +12,7 @@ public abstract class Music {
         if (startCounter == 1) {
             mediaPlayer = MediaPlayer.create(InitializeActivity.getContext(), R.raw.background_music);
             mediaPlayer.setLooping(true);
-            mediaPlayer.setVolume(50, 50);
+            updateVolume();
             mediaPlayer.start();
         }
     }
@@ -23,5 +23,10 @@ public abstract class Music {
             mediaPlayer.stop();
             mediaPlayer.release();
         }
+    }
+
+    public static void updateVolume() {
+        float volume = GlobalPrefs.loadMusicVolume();
+        mediaPlayer.setVolume(volume, volume);
     }
 }
