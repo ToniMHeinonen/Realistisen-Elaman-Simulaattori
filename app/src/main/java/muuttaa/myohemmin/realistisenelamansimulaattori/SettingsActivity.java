@@ -10,7 +10,7 @@ import android.widget.ArrayAdapter;
 import android.widget.SeekBar;
 import android.widget.Spinner;
 
-public class SettingsActivity extends AppCompatActivity {
+public class SettingsActivity extends ParentActivity {
 
     private FontStyle[][] styles = new FontStyle[][]{
             {FontStyle.SmallBlack, FontStyle.SmallRed, FontStyle.SmallGreen, FontStyle.SmallBlue},

@@ -19,7 +19,7 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
-public class CreateScene extends AppCompatActivity implements dialogiFragmentti.dialogiFragmentListener{
+public class CreateScene extends ParentActivity implements dialogiFragmentti.dialogiFragmentListener{
     private EditText name;
     private EditText question;
     private Spinner background;

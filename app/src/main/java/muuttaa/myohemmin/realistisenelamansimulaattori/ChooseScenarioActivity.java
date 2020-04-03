@@ -26,7 +26,7 @@ import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
 
-public class ChooseScenarioActivity extends AppCompatActivity {
+public class ChooseScenarioActivity extends ParentActivity {
 
     private JsonInterface json;
     private ArrayList<ScenarioItem> scenarios = new ArrayList<>();

@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import androidx.appcompat.app.AppCompatActivity;
 import muuttaa.myohemmin.realistisenelamansimulaattori.choosescenarioitem.ScenarioItemPrefs;
 
-public class GameOverActivity extends AppCompatActivity {
+public class GameOverActivity extends ParentActivity {
     private ArrayList<Integer> userAnswers;
     private String scenario;
     private TextView completedScenarioTextView;

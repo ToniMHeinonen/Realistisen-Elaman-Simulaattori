@@ -7,7 +7,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 
-public class InitializeActivity extends AppCompatActivity {
+public class InitializeActivity extends ParentActivity {
 
     private static Context mContext;
 
@@ -21,9 +21,6 @@ public class InitializeActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_initialize);
-
-        // Start playing background music
-        startService(new Intent(this, MusicService.class));
 
         // Start first activity
         startActivity(new Intent(this, ChooseScenarioActivity.class));

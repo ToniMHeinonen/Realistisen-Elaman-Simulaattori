@@ -16,7 +16,7 @@ import java.util.List;
 import androidx.appcompat.app.AppCompatActivity;
 import muuttaa.myohemmin.realistisenelamansimulaattori.data.SaveSystemPreferences;
 
-public class ScenarioActivity extends AppCompatActivity {
+public class ScenarioActivity extends ParentActivity {
     private String scenario;
     private SaveSystemPreferences saveSystem;
     private TextView questionTextView;

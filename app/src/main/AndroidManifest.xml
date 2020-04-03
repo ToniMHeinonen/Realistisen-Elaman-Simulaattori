@@ -13,6 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="LockedOrientationActivity">
+        <activity android:name=".ParentActivity"></activity>
         <activity
             android:name=".InitializeActivity"
             android:screenOrientation="portrait">
@@ -23,23 +24,18 @@
             </intent-filter>
         </activity>
 
-        <service
-            android:name=".MusicService"
-            android:enabled="true"
-            android:exported="true" />
-
         <activity
             android:name=".CreateScene"
             android:screenOrientation="portrait" />
         <activity
             android:name=".CreateScenario"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".SettingsActivity"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".ChooseScenarioActivity"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".ScenarioActivity"
             android:screenOrientation="portrait" />
