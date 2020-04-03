@@ -19,7 +19,6 @@ public class SettingsActivity extends ParentActivity {
     };
 
     // Sound
-    private Sound sound;
     private int S_CORRECT = R.raw.correct;
 
     @Override
@@ -30,8 +29,7 @@ public class SettingsActivity extends ParentActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
 
-        // Load sounds
-        sound = new Sound(this, S_CORRECT);
+        loadSounds(S_CORRECT);
 
         setupFontSize();
         setupFontColor();
@@ -143,7 +141,7 @@ public class SettingsActivity extends ParentActivity {
 
             public void onStopTrackingTouch(SeekBar seekBar) {
                 GlobalPrefs.saveSoundVolume((float) progressChangedValue / 10);
-                sound.playSound(S_CORRECT);
+                playSound(S_CORRECT);
             }
         });
     }
@@ -152,11 +150,5 @@ public class SettingsActivity extends ParentActivity {
     public void onBackPressed() {
         finish();
         startActivity(new Intent(this, ChooseScenarioActivity.class));
-    }
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        sound.release();
     }
 }

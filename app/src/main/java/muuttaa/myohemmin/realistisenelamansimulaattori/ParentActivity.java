@@ -6,6 +6,8 @@ import android.os.Bundle;
 
 public class ParentActivity extends AppCompatActivity {
 
+    private Sound sounds;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,5 +23,20 @@ public class ParentActivity extends AppCompatActivity {
     protected void onStop() {
         super.onStop();
         Music.onStop();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        if (sounds != null)
+            sounds.release();
+    }
+
+    public void loadSounds(final int... soundFiles) {
+        sounds = new Sound(this, soundFiles);
+    }
+
+    public void playSound(final int sound) {
+        sounds.playSound(sound);
     }
 }

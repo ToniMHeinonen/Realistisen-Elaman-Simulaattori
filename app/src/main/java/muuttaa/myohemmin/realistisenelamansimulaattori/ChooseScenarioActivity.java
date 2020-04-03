@@ -42,7 +42,6 @@ public class ChooseScenarioActivity extends ParentActivity {
     private HashMap<String, List<ScenarioItem>> categoriesListDetail;
 
     // Sound
-    private Sound sound;
     private int S_POPUP = R.raw.popup;
     private int S_CORRECT = R.raw.correct;
 
@@ -52,8 +51,7 @@ public class ChooseScenarioActivity extends ParentActivity {
      */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        // Load sounds
-        sound = new Sound(this, S_POPUP, S_CORRECT);
+        loadSounds(S_POPUP, S_CORRECT);
 
         // Load font theme
         getTheme().applyStyle(GlobalPrefs.loadFontStyle().getResId(), true);
@@ -103,7 +101,7 @@ public class ChooseScenarioActivity extends ParentActivity {
                 Intent intent = new Intent(ChooseScenarioActivity.this, ScenarioActivity.class);
                 intent.putExtra("scenario", name);
                 startActivity(intent);
-                sound.playSound(S_CORRECT);
+                playSound(S_CORRECT);
                 return false;
             }
         });
@@ -353,7 +351,7 @@ public class ChooseScenarioActivity extends ParentActivity {
     public void hamburgerClicked(View v) {
         HamburgerDialog dialog = new HamburgerDialog(this);
         dialog.show();
-        sound.playSound(S_POPUP);
+        playSound(S_POPUP);
     }
 
     /**
@@ -363,7 +361,7 @@ public class ChooseScenarioActivity extends ParentActivity {
     public void openCategoryOptions(String category) {
         CategoryDialog dialog = new CategoryDialog(this, category);
         dialog.show();
-        sound.playSound(S_POPUP);
+        playSound(S_POPUP);
     }
 
     /**
@@ -429,11 +427,5 @@ public class ChooseScenarioActivity extends ParentActivity {
         GlobalPrefs.renameCategory(oldName, newName);
 
         refreshScenarioList();
-    }
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        sound.release();
     }
 }
