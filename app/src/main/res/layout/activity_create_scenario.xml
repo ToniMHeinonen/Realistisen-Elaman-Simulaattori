@@ -17,7 +17,8 @@
             android:text="Import"
             android:textSize="?attr/font_medium"
             android:textColor="?attr/font_color"
-            android:layout_weight="0.5"/>
+            android:layout_weight="0.5"
+            android:onClick="importtaus"/>
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

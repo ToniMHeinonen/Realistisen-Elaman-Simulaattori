@@ -480,49 +480,54 @@ public class SaveSystemPreferences implements JsonInterface {
             String out = base.toString();
             //kirjoitus
             write(file, out);
-            //yritetään lukea onko savedata2
-            String tiedosto = getStringFromFile("savedata2.json");
-            //vika täällä
-            System.out.println("testaus: " + tiedosto);
-            if(tiedosto == null){
-                try {
-                    JSONObject obj = new JSONObject();
-                    JSONArray array1 = new JSONArray();
-                    array1.put(scenarioName2);
-                    obj.put("scenarios", array1);
-                    JSONObject h = new JSONObject();
-                    h.put("name", scenarioName2);
-                    h.put("file", file);
-                    JSONArray array2 = new JSONArray();
-                    array2.put(h);
-                    obj.put("scenarioslist", array2);
-                    write("savedata2.json", obj.toString());
-                } catch (JSONException e){
-                    if(debuggi){
-                        e.printStackTrace();
-                    }
-                }
-            } else{
-                try {
-                    JSONObject obj = new JSONObject(tiedosto);
-                    obj.getJSONArray("scenarios").put(scenarioName2);
-                    JSONObject h = new JSONObject();
-                    h.put("name", scenarioName2);
-                    h.put("file", file);
-                    obj.getJSONArray("scenarioslist").put(h);
-                    write("savedata2.json", obj.toString());
-                } catch (JSONException e){
-                    if(debuggi){
-                        e.printStackTrace();
-                    }
-                }
-            }
+            writeSaveData(file, scenarioName2);
         } catch (Exception e){
             if(debuggi){
                 e.printStackTrace();
             }
         }
     }
+
+    private void writeSaveData(String file, String scenarioName2) {
+        //yritetään lukea onko savedata2
+        String tiedosto = getStringFromFile("savedata2.json");
+        //vika täällä
+        System.out.println("testaus: " + tiedosto);
+        if(tiedosto == null){
+            try {
+                JSONObject obj = new JSONObject();
+                JSONArray array1 = new JSONArray();
+                array1.put(scenarioName2);
+                obj.put("scenarios", array1);
+                JSONObject h = new JSONObject();
+                h.put("name", scenarioName2);
+                h.put("file", file);
+                JSONArray array2 = new JSONArray();
+                array2.put(h);
+                obj.put("scenarioslist", array2);
+                write("savedata2.json", obj.toString());
+            } catch (JSONException e){
+                if(debuggi){
+                    e.printStackTrace();
+                }
+            }
+        } else{
+            try {
+                JSONObject obj = new JSONObject(tiedosto);
+                obj.getJSONArray("scenarios").put(scenarioName2);
+                JSONObject h = new JSONObject();
+                h.put("name", scenarioName2);
+                h.put("file", file);
+                obj.getJSONArray("scenarioslist").put(h);
+                write("savedata2.json", obj.toString());
+            } catch (JSONException e){
+                if(debuggi){
+                    e.printStackTrace();
+                }
+            }
+        }
+    }
+
     private void write(String file, String con){
         try {
             FileOutputStream fos = context.openFileOutput(file, Context.MODE_PRIVATE);
@@ -545,6 +550,57 @@ public class SaveSystemPreferences implements JsonInterface {
             fis.close();
             return o;
         } catch (Exception e){
+            if(debuggi){
+                e.printStackTrace();
+            }
+        }
+        return null;
+    }
+    public Scenario saveScenarioFromString(String in, String path){
+        String nimi = createScenarioName(path);
+        write(nimi + ".json", in);
+        writeSaveData(nimi + ".json", nimi);
+        return null;
+    }
+    private String createScenarioName(String input){
+        String[] jakaus = input.split("/");
+        int vika = jakaus.length - 1;
+        String apu = jakaus[vika];
+        String out = "";
+        for(int lap=0; lap < (apu.length() - 5); lap++){
+            out += apu.charAt(lap);
+        }
+        return out;
+    }
+    public String convertScenarioToString(Scenario scenario){
+        try {
+            JSONObject base = new JSONObject();
+            List<Scene> li = scenario.getListaus();
+            for (int lap = 0; lap < li.size(); lap++) {
+                Scene scene = li.get(lap);
+                JSONObject help = new JSONObject();
+                help.put("question", scene.getQuestion());
+                help.put("background", scene.getBackground());
+                help.put("person", scene.getPerson());
+                help.put("face", scene.getFace());
+                JSONArray array = new JSONArray();
+                String[] l = scene.getAnswers();
+                for (int k = 0; k < l.length; k++) {
+                    array.put(l[k]);
+                }
+                help.put("answers", array);
+                List<GeneralKeyAndValue> go = scene.getGoList();
+                for (int k = 0; k < go.size(); k++) {
+                    help.put(go.get(k).getKey(), go.get(k).getValue());
+                }
+                List<GeneralKeyAndValue> color = scene.getColorList();
+                for (int k = 0; k < color.size(); k++) {
+                    help.put(color.get(k).getKey(), color.get(k).getValue());
+                }
+                base.put(scene.getName(), help);
+            }
+            return base.toString();
+        } catch (JSONException e){
             if(debuggi){
                 e.printStackTrace();
             }

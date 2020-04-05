@@ -1,21 +1,37 @@
 package muuttaa.myohemmin.realistisenelamansimulaattori;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ShareCompat;
+import androidx.core.content.FileProvider;
 import muuttaa.myohemmin.realistisenelamansimulaattori.data.SaveSystemPreferences;
 import muuttaa.myohemmin.realistisenelamansimulaattori.data.Scenario;
 import muuttaa.myohemmin.realistisenelamansimulaattori.data.Scene;
 
+import android.content.Context;
 import android.content.Intent;
+import android.database.Cursor;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Environment;
 import android.view.View;
+import android.webkit.MimeTypeMap;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+import java.io.Writer;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -50,8 +66,69 @@ public class CreateScenario extends AppCompatActivity {
                 list.add((Scene) data.getParcelableExtra("scene"));
                 updateList();
             }
+        } else if(requestCode == 22){
+            if(resultCode == RESULT_OK){
+                try {
+                    Uri uri = data.getData();
+                    String path = getPath(uri);
+                    SaveSystemPreferences js = new SaveSystemPreferences(this);
+                    js.saveScenarioFromString(getStringFromFile(path), path);
+                    finish();
+                } catch (Exception e){
+                    if(debuggi){
+                        e.printStackTrace();
+                    }
+                }
+            }
         }
     }
+    public static String convertStreamToString(InputStream is) throws IOException {
+        // http://www.java2s.com/Code/Java/File-Input-Output/ConvertInputStreamtoString.htm
+        BufferedReader reader = new BufferedReader(new InputStreamReader(is));
+        StringBuilder sb = new StringBuilder();
+        String line = null;
+        Boolean firstLine = true;
+        while ((line = reader.readLine()) != null) {
+            if(firstLine){
+                sb.append(line);
+                firstLine = false;
+            } else {
+                sb.append("\n").append(line);
+            }
+        }
+        reader.close();
+        return sb.toString();
+    }
+
+    public static String getStringFromFile (String filePath) throws IOException {
+        File fl = new File(filePath);
+        FileInputStream fin = new FileInputStream(fl);
+        String ret = convertStreamToString(fin);
+        fin.close();
+        return ret;
+    }
+
+    private String getPath(Uri uri) {
+        if ("content".equalsIgnoreCase(uri.getScheme())) {
+            String[] projection = { "_data" };
+            Cursor cursor = null;
+
+            try {
+                cursor = this.getContentResolver().query(uri, projection, null, null, null);
+                int column_index = cursor.getColumnIndexOrThrow("_data");
+                if (cursor.moveToFirst()) {
+                    return cursor.getString(column_index);
+                }
+            } catch (Exception e) {
+
+            }
+        } else if ("file".equalsIgnoreCase(uri.getScheme())) {
+            return uri.getPath();
+        }
+
+        return null;
+    }
+
     //update ListView
     private void updateList() {
         ArrayList<String> arrayList = new ArrayList<String>();
@@ -80,7 +157,7 @@ public class CreateScenario extends AppCompatActivity {
         }
     }
 
-    public void laheta(View view) {
+    public void laheta(View view) throws IOException {
         Scenario scenario = new Scenario();
         scenario.setListaus(list);
         String name = scenarioName.getText().toString().toLowerCase();
@@ -89,21 +166,22 @@ public class CreateScenario extends AppCompatActivity {
         scenario.setFileName(file);
         SaveSystemPreferences json = new SaveSystemPreferences(this);
         json.saveScenario(scenario);
+
         Intent intentShareFile = new Intent(Intent.ACTION_SEND);
 
         String myFilePath = getFilesDir() + "/" + file;
         File fileWithinMyDir = new File(myFilePath);
-
-        if(fileWithinMyDir.exists()) {
+        Uri path = FileProvider.getUriForFile(this, "muuttaa.myohemmin.realistisenelamansimulaattori", fileWithinMyDir);
+        if (fileWithinMyDir.exists()) {
             intentShareFile.setType("application/pdf");
-            if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.N){
-                intentShareFile.putExtra(Intent.EXTRA_STREAM, Uri.parse("content://"+ myFilePath));
+            if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+                intentShareFile.putExtra(Intent.EXTRA_STREAM, path);
             } else {
-                intentShareFile.putExtra(Intent.EXTRA_STREAM, Uri.parse("file://" + myFilePath));
+                intentShareFile.putExtra(Intent.EXTRA_STREAM, path);
             }
             intentShareFile.putExtra(Intent.EXTRA_SUBJECT,
                     "Sharing File...");
-            intentShareFile.putExtra(Intent.EXTRA_TEXT, "Sharing File...");
+            intentShareFile.putExtra(Intent.EXTRA_TEXT, file);
 
             startActivity(Intent.createChooser(intentShareFile, "Lähetä Scenario"));
         }
