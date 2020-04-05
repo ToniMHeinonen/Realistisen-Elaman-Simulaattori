@@ -1,8 +1,11 @@
 package muuttaa.myohemmin.realistisenelamansimulaattori.data;
 
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.SharedPreferences;
+import android.text.InputType;
 import android.util.Log;
+import android.widget.EditText;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -19,6 +22,7 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
+import androidx.appcompat.app.AlertDialog;
 import muuttaa.myohemmin.realistisenelamansimulaattori.JsonInterface;
 import muuttaa.myohemmin.realistisenelamansimulaattori.R;
 
@@ -556,21 +560,10 @@ public class SaveSystemPreferences implements JsonInterface {
         }
         return null;
     }
-    public Scenario saveScenarioFromString(String in, String path){
-        String nimi = createScenarioName(path);
-        write(nimi + ".json", in);
-        writeSaveData(nimi + ".json", nimi);
+    public Scenario saveScenarioFromString(String in, String name){
+        write(name + ".json", in);
+        writeSaveData(name + ".json", name);
         return null;
-    }
-    private String createScenarioName(String input){
-        String[] jakaus = input.split("/");
-        int vika = jakaus.length - 1;
-        String apu = jakaus[vika];
-        String out = "";
-        for(int lap=0; lap < (apu.length() - 5); lap++){
-            out += apu.charAt(lap);
-        }
-        return out;
     }
     public String convertScenarioToString(Scenario scenario){
         try {
