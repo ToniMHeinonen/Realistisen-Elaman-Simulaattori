@@ -6,30 +6,33 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".CreateScene">
+
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Valmis"
+        android:layout_marginTop="15dp"
         android:onClick="pois"
-        android:textSize="?attr/font_medium"
+        android:text="@string/done"
         android:textColor="?attr/font_color"
-        android:layout_marginTop="15dp"/>
+        android:textSize="?attr/font_medium" />
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Scenaarion ensimmäisen scenen nimi pitää olla: first"/>
+        android:text="@string/first_scene_information" />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_marginTop="15dp">
+
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.3"
-            android:textSize="?attr/font_small"
+            android:text="@string/scene_name_give"
             android:textColor="?attr/font_color"
-            android:text="Scenen nimi:"/>
+            android:textSize="?attr/font_small" />
         <EditText
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -43,13 +46,14 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_marginTop="15dp">
+
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.3"
-            android:textSize="?attr/font_small"
+            android:text="@string/scene_question"
             android:textColor="?attr/font_color"
-            android:text="Scenen kysymys:"/>
+            android:textSize="?attr/font_small" />
         <EditText
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -68,12 +72,13 @@
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:layout_weight="0.32">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="?attr/font_medium"
+                android:text="@string/choose_background"
                 android:textColor="?attr/font_color"
-                android:text="Valitse tausta:"/>
+                android:textSize="?attr/font_medium" />
             <Spinner
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -84,12 +89,13 @@
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:layout_weight="0.32">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="?attr/font_medium"
+                android:text="@string/choose_person"
                 android:textColor="?attr/font_color"
-                android:text="Valitse henkilö:"/>
+                android:textSize="?attr/font_medium" />
             <Spinner
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -100,25 +106,27 @@
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:layout_weight="0.32">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="?attr/font_medium"
+                android:text="@string/choose_face"
                 android:textColor="?attr/font_color"
-                android:text="Valitse kasvot:"/>
+                android:textSize="?attr/font_medium" />
             <Spinner
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/KasvoSpinner"/>
         </LinearLayout>
     </LinearLayout>
+
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="?attr/font_medium"
+        android:onClick="vastaus"
+        android:text="@string/create_answer"
         android:textColor="?attr/font_color"
-        android:text="Luo Vastaus"
-        android:onClick="vastaus"/>
+        android:textSize="?attr/font_medium" />
     <ListView
         android:layout_width="match_parent"
         android:layout_height="match_parent"

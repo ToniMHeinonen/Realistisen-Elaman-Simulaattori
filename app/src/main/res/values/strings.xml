@@ -65,4 +65,12 @@
     <string name="create_scene">Luo kohtaus</string>
     <string name="scenario_name_give">Skenaarion nimi:</string>
     <string name="add">Lisää</string>
+    <string name="done">Valmis</string>
+    <string name="first_scene_information">Scenaarion ensimmäisen kohtauksen nimi pitää olla: first</string>
+    <string name="scene_name_give">Kohtauksen nimi:</string>
+    <string name="scene_question">Kohtauksen kysymys:</string>
+    <string name="choose_background">Valitse tausta:</string>
+    <string name="choose_person">Valitse henkilö:</string>
+    <string name="choose_face">Valitse kasvot:</string>
+    <string name="create_answer">Luo Vastaus</string>
 </resources>
