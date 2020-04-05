@@ -166,6 +166,7 @@ public class CreateScenario extends ParentActivity {
         scenario.setFileName(file);
         SaveSystemPreferences json = new SaveSystemPreferences(this);
         json.saveScenario(scenario);
+        Toast.makeText(this, "Tiedosto tallennettu", Toast.LENGTH_LONG).show();
 
         Intent intentShareFile = new Intent(Intent.ACTION_SEND);
 
@@ -173,17 +174,20 @@ public class CreateScenario extends ParentActivity {
         File fileWithinMyDir = new File(myFilePath);
         Uri path = FileProvider.getUriForFile(this, "muuttaa.myohemmin.realistisenelamansimulaattori", fileWithinMyDir);
         if (fileWithinMyDir.exists()) {
-            intentShareFile.setType("application/pdf");
+            intentShareFile.setType("application/json");
             if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
                 intentShareFile.putExtra(Intent.EXTRA_STREAM, path);
             } else {
                 intentShareFile.putExtra(Intent.EXTRA_STREAM, path);
             }
             intentShareFile.putExtra(Intent.EXTRA_SUBJECT,
-                    "Sharing File...");
+                    file);
             intentShareFile.putExtra(Intent.EXTRA_TEXT, file);
 
             startActivity(Intent.createChooser(intentShareFile, "Lähetä Scenario"));
         }
+    }
+
+    public void importtaus(View view) {
     }
 }
