@@ -58,4 +58,11 @@
         <item>@string/font_green</item>
         <item>@string/font_blue</item>
     </string-array>
+
+    <!-- SCENARIO CREATION -->
+    <string name="import_file">Tuo</string>
+    <string name="export_file">Lähetä</string>
+    <string name="create_scene">Luo kohtaus</string>
+    <string name="scenario_name_give">Skenaarion nimi:</string>
+    <string name="add">Lisää</string>
 </resources>

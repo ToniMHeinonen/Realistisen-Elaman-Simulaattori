@@ -10,45 +10,49 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
+
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:id="@+id/importti"
-            android:text="Import"
-            android:textSize="?attr/font_medium"
-            android:textColor="?attr/font_color"
-            android:layout_weight="0.5"
-            android:onClick="importtaus"/>
-        <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/exportti"
-            android:text="Lähetä"
-            android:textSize="?attr/font_medium"
+            android:layout_weight="0.5"
+            android:onClick="importtaus"
+            android:text="@string/import_file"
             android:textColor="?attr/font_color"
+            android:textSize="?attr/font_medium" />
+
+        <Button
+            android:id="@+id/exportti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
             android:onClick="laheta"
-            android:layout_weight="0.5"/>
+            android:text="@string/export_file"
+            android:textColor="?attr/font_color"
+            android:textSize="?attr/font_medium" />
     </LinearLayout>
+
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Luo Scene"
-        android:textSize="?attr/font_medium"
-        android:textColor="?attr/font_color"
         android:layout_marginTop="15dp"
-        android:onClick="luo"/>
+        android:onClick="luo"
+        android:text="@string/create_scene"
+        android:textColor="?attr/font_color"
+        android:textSize="?attr/font_medium" />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_marginTop="10dp">
+
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Scenario nimi:"
-            android:textSize="?attr/font_medium"
+            android:layout_weight="0.5"
+            android:text="@string/scenario_name_give"
             android:textColor="?attr/font_color"
-            android:layout_weight="0.5"/>
+            android:textSize="?attr/font_medium" />
         <EditText
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -62,11 +66,12 @@
         android:layout_height="0dp"
         android:layout_weight="0.5"
         android:id="@+id/listaScene"/>
+
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Lisää"
-        android:textSize="?attr/font_medium"
+        android:onClick="lisaa"
+        android:text="@string/add"
         android:textColor="?attr/font_color"
-        android:onClick="lisaa"/>
+        android:textSize="?attr/font_medium" />
 </LinearLayout>
