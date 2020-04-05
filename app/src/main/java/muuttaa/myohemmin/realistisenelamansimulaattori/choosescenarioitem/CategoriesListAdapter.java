@@ -19,6 +19,7 @@ import java.util.Map;
 
 import muuttaa.myohemmin.realistisenelamansimulaattori.ChooseScenarioActivity;
 import muuttaa.myohemmin.realistisenelamansimulaattori.GlobalPrefs;
+import muuttaa.myohemmin.realistisenelamansimulaattori.InitializeActivity;
 import muuttaa.myohemmin.realistisenelamansimulaattori.R;
 
 public class CategoriesListAdapter extends BaseExpandableListAdapter {
@@ -283,7 +284,7 @@ public class CategoriesListAdapter extends BaseExpandableListAdapter {
             }
         }
 
-        String noCategoryName = ChooseScenarioActivity.getContext().getResources().getString(R.string.scenarios);
+        String noCategoryName = InitializeActivity.getContext().getResources().getString(R.string.scenarios);
         ParentItem.put(noCategoryName, noCategory);
 
         Iterator it = categoryData.entrySet().iterator();

@@ -1,11 +1,10 @@
 package muuttaa.myohemmin.realistisenelamansimulaattori.choosescenarioitem;
 
-import android.content.Context;
 import android.content.SharedPreferences;
 
 import java.util.Date;
 
-import muuttaa.myohemmin.realistisenelamansimulaattori.ChooseScenarioActivity;
+import muuttaa.myohemmin.realistisenelamansimulaattori.InitializeActivity;
 
 public abstract class ScenarioItemPrefs {
     private static SharedPreferences prefs;
@@ -19,7 +18,7 @@ public abstract class ScenarioItemPrefs {
      * Loads correct preferences file.
      */
     static {
-        prefs = ChooseScenarioActivity.getContext().getSharedPreferences(keyPrefs, 0);
+        prefs = InitializeActivity.getContext().getSharedPreferences(keyPrefs, 0);
     }
 
     /**

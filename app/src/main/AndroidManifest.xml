@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="muuttaa.myohemmin.realistisenelamansimulaattori">
+
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
@@ -12,6 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="LockedOrientationActivity">
+        <activity android:name=".ParentActivity"></activity>
         <provider
             android:name="androidx.core.content.FileProvider"
             android:authorities="muuttaa.myohemmin.realistisenelamansimulaattori"
@@ -25,7 +27,7 @@
         <activity android:name=".CreateScenario" />
         <activity android:name=".SettingsActivity" />
         <activity
-            android:name=".ChooseScenarioActivity"
+            android:name=".InitializeActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -33,6 +35,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".CreateScene"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CreateScenario"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SettingsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ChooseScenarioActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".ScenarioActivity"
             android:screenOrientation="portrait" />

@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import androidx.appcompat.app.AppCompatActivity;
 import muuttaa.myohemmin.realistisenelamansimulaattori.choosescenarioitem.ScenarioItemPrefs;
 
-public class GameOverActivity extends AppCompatActivity {
+public class GameOverActivity extends ParentActivity {
     private ArrayList<Integer> userAnswers;
     private String scenario;
     private TextView completedScenarioTextView;
@@ -28,10 +28,10 @@ public class GameOverActivity extends AppCompatActivity {
             scenario = extras.getString("scenario");
             userAnswers = (ArrayList) extras.getSerializable("userAnswers");
             completedScenarioTextView = findViewById(R.id.resultScenario);
-            completedScenarioTextView.setText("Suoritettu skenaario: " + scenario);
+            completedScenarioTextView.setText(getString(R.string.completed_scenario) + scenario);
             completedPercentageTextView = findViewById(R.id.resultPercentage);
             int completedPercentage = getPercentage(userAnswers);
-            completedPercentageTextView.setText("Onnistumisprosentti: " + completedPercentage + "%" +
+            completedPercentageTextView.setText(getString(R.string.completed_percentage) + completedPercentage + "%" +
                     "\n\n" + giveFeedback(completedPercentage));
             if (ScenarioItemPrefs.loadPercentage(scenario) < completedPercentage) {
                 ScenarioItemPrefs.savePercentage(scenario, completedPercentage);
@@ -61,13 +61,11 @@ public class GameOverActivity extends AppCompatActivity {
     private String giveFeedback(int completedPercentage) {
         String result = "";
         if (completedPercentage <= 50) {
-            result = "Voi harmi, nyt ei kyllä mennyt aivan putkeen... Yritä uudelleen paremmalla " +
-                    "onnella ja harkitse tarkkaan vastauksiasi.";
+            result = getString(R.string.completed_bad);
         } else if (completedPercentage < 100) {
-            result = "Hienoa! Suoriuduit tästä skenaariosta varsin mallikkaasti, " +
-                    "mutta vielä on parantamisen varaa.";
+            result = getString(R.string.completed_mediocre);
         } else {
-            result = "Loistavaa! Sait kaikki oikein tässä skenaariossa.";
+            result = getString(R.string.completed_perfect);
         }
         return result;
     }

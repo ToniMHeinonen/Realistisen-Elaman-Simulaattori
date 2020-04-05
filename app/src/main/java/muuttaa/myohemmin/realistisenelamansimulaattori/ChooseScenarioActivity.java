@@ -26,9 +26,7 @@ import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
 
-public class ChooseScenarioActivity extends AppCompatActivity {
-
-    private static Context mContext;
+public class ChooseScenarioActivity extends ParentActivity {
 
     private JsonInterface json;
     private ArrayList<ScenarioItem> scenarios = new ArrayList<>();
@@ -38,10 +36,14 @@ public class ChooseScenarioActivity extends AppCompatActivity {
     private boolean sortAscending;
 
     // Categories
-    ExpandableListView categoriesListView;
-    CategoriesListAdapter categoriesListAdapter;
-    List<String> categoriesListTitle;
-    HashMap<String, List<ScenarioItem>> categoriesListDetail;
+    private ExpandableListView categoriesListView;
+    private CategoriesListAdapter categoriesListAdapter;
+    private List<String> categoriesListTitle;
+    private HashMap<String, List<ScenarioItem>> categoriesListDetail;
+
+    // Sound
+    private int S_POPUP = R.raw.popup;
+    private int S_CORRECT = R.raw.correct;
 
     /**
      * Initializes instance of this activity and all necessary values.
@@ -49,12 +51,7 @@ public class ChooseScenarioActivity extends AppCompatActivity {
      */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        mContext = this;
-
-        // Initialize abstract preferences classes
-        ScenarioItemPrefs.initialize();
-        GlobalPrefs.initialize();
-        Sound.initialize();
+        loadSounds(S_POPUP, S_CORRECT);
 
         // Load font theme
         getTheme().applyStyle(GlobalPrefs.loadFontStyle().getResId(), true);
@@ -69,17 +66,6 @@ public class ChooseScenarioActivity extends AppCompatActivity {
         // Categories
         categoriesListView = findViewById(R.id.categoriesPlaceholder);
         showScenarioList();
-    }
-
-    /**
-     * Gets context.
-     *
-     * Used in CategoriesListAdapter to get application context in order to
-     * access saved xml Strings.
-     * @return application context
-     */
-    public static Context getContext(){
-        return mContext;
     }
 
     /**
@@ -115,6 +101,7 @@ public class ChooseScenarioActivity extends AppCompatActivity {
                 Intent intent = new Intent(ChooseScenarioActivity.this, ScenarioActivity.class);
                 intent.putExtra("scenario", name);
                 startActivity(intent);
+                playSound(S_CORRECT);
                 return false;
             }
         });
@@ -134,7 +121,7 @@ public class ChooseScenarioActivity extends AppCompatActivity {
                         setupScenarioDragMovement(selectedItem);
                     } else {
                         final String selectedCategory = categoriesListTitle.get(groupPosition);
-                        if (!selectedCategory.equals(getContext().getResources().getString(R.string.scenarios))) {
+                        if (!selectedCategory.equals(getString(R.string.scenarios))) {
                             setupCategoryDragMovement(selectedCategory);
                         } else {
                             return false;
@@ -202,7 +189,7 @@ public class ChooseScenarioActivity extends AppCompatActivity {
 
                         // If dropped to default category, make value null
                         if (category == null ||
-                                category.equals(getContext().getResources().getString(R.string.scenarios))) {
+                                category.equals(getString(R.string.scenarios))) {
                             selectedItem.setCategory(null);
                         } else {
                             selectedItem.setCategory(category);
@@ -242,7 +229,7 @@ public class ChooseScenarioActivity extends AppCompatActivity {
 
                         // If dropped on top of item with default category, value will be null
                         if (categoryNewPosition == null)
-                            categoryNewPosition = getContext().getResources().getString(R.string.scenarios);
+                            categoryNewPosition = getString(R.string.scenarios);
 
                         // If it did not drop on top of itself or it's children
                         if (!categoryNewPosition.equals(selectedCategory)) {
@@ -355,7 +342,6 @@ public class ChooseScenarioActivity extends AppCompatActivity {
     public void sortOrderClick(View v) {
         sortAscending = !sortAscending;
         sortList();
-        Sound.playSound(Sound.POPUP);
     }
 
     /**
@@ -365,7 +351,7 @@ public class ChooseScenarioActivity extends AppCompatActivity {
     public void hamburgerClicked(View v) {
         HamburgerDialog dialog = new HamburgerDialog(this);
         dialog.show();
-        Sound.playSound(Sound.POPUP);
+        playSound(S_POPUP);
     }
 
     /**
@@ -375,7 +361,7 @@ public class ChooseScenarioActivity extends AppCompatActivity {
     public void openCategoryOptions(String category) {
         CategoryDialog dialog = new CategoryDialog(this, category);
         dialog.show();
-        Sound.playSound(Sound.POPUP);
+        playSound(S_POPUP);
     }
 
     /**

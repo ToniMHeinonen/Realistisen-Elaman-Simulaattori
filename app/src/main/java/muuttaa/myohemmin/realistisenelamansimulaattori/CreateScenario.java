@@ -35,7 +35,7 @@ import java.io.Writer;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CreateScenario extends AppCompatActivity {
+public class CreateScenario extends ParentActivity {
     private List<Scene> list = new ArrayList<>();
     private EditText scenarioName;
     private ListView listaview;
