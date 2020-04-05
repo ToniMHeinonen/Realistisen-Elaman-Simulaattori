@@ -89,7 +89,7 @@ public class CreateScenario extends ParentActivity {
                     }
                     SaveSystemPreferences js = new SaveSystemPreferences(this);
                     js.saveScenarioFromString(getStringFromFile(uri), outName);
-                    Toast.makeText(this, "Import valmis", Toast.LENGTH_LONG).show();
+                    Toast.makeText(this, this.getString(R.string.import_done), Toast.LENGTH_LONG).show();
                     finish();
                 } catch (Exception e){
                     if(debuggi){
@@ -146,7 +146,7 @@ public class CreateScenario extends ParentActivity {
             json.saveScenario(scenario);
             finish();
         } catch (Exception e){
-            Toast.makeText(this, "Varmista, että olet antanut kaikki tiedot", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, this.getString(R.string.is_all_data_given), Toast.LENGTH_LONG).show();
             if(debuggi){
                 e.printStackTrace();
             }
@@ -162,7 +162,7 @@ public class CreateScenario extends ParentActivity {
         scenario.setFileName(file);
         SaveSystemPreferences json = new SaveSystemPreferences(this);
         json.saveScenario(scenario);
-        Toast.makeText(this, "Tiedosto tallennettu", Toast.LENGTH_LONG).show();
+        Toast.makeText(this, this.getString(R.string.file_saved), Toast.LENGTH_LONG).show();
 
         Intent intentShareFile = new Intent(Intent.ACTION_SEND);
 
@@ -180,13 +180,13 @@ public class CreateScenario extends ParentActivity {
                     file);
             intentShareFile.putExtra(Intent.EXTRA_TEXT, file);
 
-            startActivity(Intent.createChooser(intentShareFile, "Lähetä Scenario"));
+            startActivity(Intent.createChooser(intentShareFile, this.getString(R.string.send_scenario)));
         }
     }
 
     public void importtaus(View view) {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle("Title");
+        builder.setTitle(this.getString(R.string.give_new_scenario_name));
 
         // Set up the input
         final EditText input = new EditText(this);
@@ -195,7 +195,7 @@ public class CreateScenario extends ParentActivity {
         final Context con = this;
 
         // Set up the buttons
-        builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+        builder.setPositiveButton(this.getString(R.string.done), new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 outName = input.getText().toString();
@@ -204,8 +204,8 @@ public class CreateScenario extends ParentActivity {
                     outName = sdf.format(new Date());
                 }
                 new AlertDialog.Builder(con)
-                        .setTitle("Huom!")
-                        .setMessage("Valitse vain .json päätteisiä scenaario tiedostoja.")
+                        .setTitle(con.getString(R.string.huom))
+                        .setMessage(con.getString(R.string.file_types))
                         .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int which) {
                                 Intent i = new Intent(Intent.ACTION_GET_CONTENT);
@@ -218,7 +218,7 @@ public class CreateScenario extends ParentActivity {
                         .show();
             }
         });
-        builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+        builder.setNegativeButton(this.getString(R.string.back_button), new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 dialog.cancel();

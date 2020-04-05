@@ -78,4 +78,11 @@
     <string name="info_next_scene">Kirjoita kohtauksen nimi minne mennään. (null tarkoittaa loppua):</string>
     <string name="back_button">peruuta</string>
     <string name="give_all_data">Anna kaikki tiedot</string>
+    <string name="import_done">Tuonti valmis</string>
+    <string name="is_all_data_given">Varmista, että olet antanut kaikki tiedot</string>
+    <string name="file_saved">Tiedosto tallennettu</string>
+    <string name="send_scenario">Lähetä Scenario</string>
+    <string name="give_new_scenario_name">Anna uusi skenaario nimi:</string>
+    <string name="huom">Huom!</string>
+    <string name="file_types">Valitse vain .json päätteisiä scenaario tiedostoja.</string>
 </resources>
