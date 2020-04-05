@@ -85,4 +85,7 @@
     <string name="give_new_scenario_name">Anna uusi skenaario nimi:</string>
     <string name="huom">Huom!</string>
     <string name="file_types">Valitse vain .json päätteisiä scenaario tiedostoja.</string>
+    <string name="name_file">Nimi: </string>
+    <string name="go"> menee: </string>
+    <string name="color_set"> väri: </string>
 </resources>

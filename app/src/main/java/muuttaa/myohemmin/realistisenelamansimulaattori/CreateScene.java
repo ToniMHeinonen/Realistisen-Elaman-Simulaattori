@@ -69,7 +69,7 @@ public class CreateScene extends ParentActivity implements dialogiFragmentti.dia
     public void updateListOfAnswers(){
         ArrayList<String> arrayList = new ArrayList<String>();
         for(int lap=0; lap < kysymyksetGo.size(); lap++){
-            arrayList.add("Name: " + kysymyksetGo.get(lap).getKey() + " menee: " + kysymyksetGo.get(lap).getValue() + " väri: " + kysymyksetColor.get(lap).getValue());
+            arrayList.add(this.getString(R.string.name_file) + kysymyksetGo.get(lap).getKey() + this.getString(R.string.go) + kysymyksetGo.get(lap).getValue() + this.getString(R.string.color_set) + kysymyksetColor.get(lap).getValue());
         }
         adapter = new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_spinner_item, arrayList);
         lista.setAdapter(adapter);
@@ -98,7 +98,7 @@ public class CreateScene extends ParentActivity implements dialogiFragmentti.dia
             setResult(Activity.RESULT_OK, returnIntent);
             finish();
         } catch (Exception e){
-            Toast.makeText(this, "Varmista, että olet antanut kaikki tiedot", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, this.getString(R.string.is_all_data_given), Toast.LENGTH_LONG).show();
         }
     }
     @Override
