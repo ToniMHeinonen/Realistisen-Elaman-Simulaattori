@@ -6,13 +6,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
+
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Valitse väri:"
+            android:layout_weight="0.3"
+            android:text="@string/choose_color"
             android:textColor="?attr/font_color"
-            android:textSize="?attr/font_medium"
-            android:layout_weight="0.3"/>
+            android:textSize="?attr/font_medium" />
         <Spinner
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -24,13 +25,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
+
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Kirjoita vastaus:"
+            android:layout_weight="0.3"
+            android:text="@string/write_answer"
             android:textColor="?attr/font_color"
-            android:textSize="?attr/font_medium"
-            android:layout_weight="0.3"/>
+            android:textSize="?attr/font_medium" />
         <EditText
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -48,8 +50,8 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.6"
+            android:text="@string/info_next_scene"
             android:textColor="?attr/font_color"
-            android:text="Kirjoita scenen nimi minne mennään. (null tarkoittaa loppua):"
             android:textSize="?attr/font_small" />
         <EditText
             android:layout_width="0dp"
