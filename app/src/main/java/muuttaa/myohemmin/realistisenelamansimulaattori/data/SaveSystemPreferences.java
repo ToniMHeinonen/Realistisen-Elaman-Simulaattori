@@ -1,11 +1,7 @@
 package muuttaa.myohemmin.realistisenelamansimulaattori.data;
 
 import android.content.Context;
-import android.content.DialogInterface;
-import android.content.SharedPreferences;
-import android.text.InputType;
 import android.util.Log;
-import android.widget.EditText;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -21,8 +17,6 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
-
-import androidx.appcompat.app.AlertDialog;
 import muuttaa.myohemmin.realistisenelamansimulaattori.JsonInterface;
 import muuttaa.myohemmin.realistisenelamansimulaattori.R;
 

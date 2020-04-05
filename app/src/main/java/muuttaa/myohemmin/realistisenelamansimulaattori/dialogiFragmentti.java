@@ -27,14 +27,14 @@ public class dialogiFragmentti extends AppCompatDialogFragment {
         menee = (EditText) view.findViewById(R.id.menee);
         vastaus = (EditText) view.findViewById(R.id.vastauksenTeksti);
         builder.setView(view)
-                .setTitle("Luo vastaus")
-                .setNegativeButton("peruuta", new DialogInterface.OnClickListener() {
+                .setTitle(getContext().getString(R.string.create_answer))
+                .setNegativeButton(getContext().getString(R.string.back_button), new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
 
                     }
                 })
-                .setPositiveButton("Valmis", new DialogInterface.OnClickListener() {
+                .setPositiveButton(getContext().getString(R.string.done), new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         try {
@@ -43,7 +43,7 @@ public class dialogiFragmentti extends AppCompatDialogFragment {
                             String vas = vastaus.getText().toString();
                             listener.applyDataBack(v, m, vas);
                         } catch (Exception e){
-                            Toast.makeText(getActivity(), "Anna kaikki tiedot", Toast.LENGTH_LONG).show();
+                            Toast.makeText(getActivity(), getContext().getString(R.string.give_all_data), Toast.LENGTH_LONG).show();
                         }
                     }
                 });
