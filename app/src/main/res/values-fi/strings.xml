@@ -92,5 +92,5 @@
     <string name="duplicate_warning">Tämä on jo käytössä</string>
     <string name="not_added">Ei lisätty</string>
     <string name="remove_item">Haluatko varmasti poistaa tämän?</string>
-    <string name="can_delete">Pitkä painallus poistaa vaihtoehdon listalta</string>
+    <string name="can_delete">Pitkä painallus poistaa vaihtoehdon listalta ja lyhyellä painalluksella voit muokata sitä.</string>
 </resources>
