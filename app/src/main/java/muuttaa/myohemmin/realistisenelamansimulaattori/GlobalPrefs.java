@@ -27,6 +27,9 @@ public abstract class GlobalPrefs {
     private final static String keySoundVolume = "sound_volume";
     private final static String keyMusicVolume = "music_volume";
 
+    // Language
+    private final static String keyLanguage = "language";
+
     /**
      * Loads correct preferences file and fills categoriesList.
      */
@@ -206,6 +209,14 @@ public abstract class GlobalPrefs {
 
     public static void saveMusicVolume(float volume) {
         prefs.edit().putFloat(keyMusicVolume, volume).commit();
+    }
+
+    public static String loadLanguage() {
+        return prefs.getString(keyLanguage, "");
+    }
+
+    public static void saveLanguage(String languageCode) {
+        prefs.edit().putString(keyLanguage, languageCode).commit();
     }
 
     /**

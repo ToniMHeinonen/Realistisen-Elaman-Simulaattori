@@ -10,7 +10,11 @@ import muuttaa.myohemmin.realistisenelamansimulaattori.data.SaveSystemPreference
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.res.Configuration;
+import android.content.res.Resources;
+import android.os.Build;
 import android.os.Bundle;
+import android.util.DisplayMetrics;
 import android.view.DragEvent;
 import android.view.View;
 import android.widget.AdapterView;
@@ -25,6 +29,7 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Locale;
 
 public class ChooseScenarioActivity extends ParentActivity {
 
@@ -74,8 +79,8 @@ public class ChooseScenarioActivity extends ParentActivity {
     private void loadScenarios() {
         List<String> scenarioNames = json.getScenarioList();
 
-        for (String name : scenarioNames) {
-            scenarios.add(new ScenarioItem(name));
+        for (int i = 0; i < scenarioNames.size(); i++) {
+            scenarios.add(new ScenarioItem(i, scenarioNames.get(i)));
         }
     }
 
@@ -97,9 +102,9 @@ public class ChooseScenarioActivity extends ParentActivity {
                         categoriesListTitle.get(groupPosition)).get(
                         childPosition);
 
-                String name = clickedItem.getName();
                 Intent intent = new Intent(ChooseScenarioActivity.this, ScenarioActivity.class);
-                intent.putExtra("scenario", name);
+                intent.putExtra("scenario", clickedItem.getName());
+                intent.putExtra("scenarioID", clickedItem.getId());
                 startActivity(intent);
                 playSound(S_CORRECT);
                 return false;

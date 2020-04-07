@@ -18,6 +18,7 @@ import muuttaa.myohemmin.realistisenelamansimulaattori.data.SaveSystemPreference
 
 public class ScenarioActivity extends ParentActivity {
     private String scenario;
+    private int scenarioID;
     private SaveSystemPreferences saveSystem;
     private TextView questionTextView;
     private List<String> colors;
@@ -38,6 +39,7 @@ public class ScenarioActivity extends ParentActivity {
         Bundle extras = getIntent().getExtras();
         if (extras != null) {
             scenario = extras.getString("scenario");
+            scenarioID = extras.getInt("scenarioID");
             saveSystem = new SaveSystemPreferences(this);
             saveSystem.setCurrentScenario(scenario);
             questionTextView = findViewById(R.id.question);
@@ -85,6 +87,7 @@ public class ScenarioActivity extends ParentActivity {
                         if (saveSystem.endOfScenario()) {
                             Intent intent = new Intent(getApplicationContext(), GameOverActivity.class);
                             intent.putExtra("scenario", saveSystem.getCurrentScenario());
+                            intent.putExtra("scenarioID", scenarioID);
                             intent.putExtra("userAnswers", userAnswers);
                             startActivity(intent);
                         } else {

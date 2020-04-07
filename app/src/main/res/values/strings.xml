@@ -1,10 +1,10 @@
 <resources>
-    <string name="app_name">Realistisen Elaman Simulaattori</string>
+    <string name="app_name">Realistic Life Simulator</string>
 
     <!-- SORTING -->
-    <string name="sort_name">Nimi</string>
-    <string name="sort_recent">Viimeisimmät</string>
-    <string name="sort_percentage">Prosentti</string>
+    <string name="sort_name">Name</string>
+    <string name="sort_recent">Recent</string>
+    <string name="sort_percentage">Percentage</string>
     <string-array name="scenario_sort">
         <item>@string/sort_name</item>
         <item>@string/sort_recent</item>
@@ -12,46 +12,47 @@
     </string-array>
 
     <!-- GAME OVER ACTIVITY -->
-    <string name="completed_scenario">Suoritettu skenaario:\u0020</string>
-    <string name="completed_percentage">Onnistumisprosentti:\u0020</string>
-    <string name="completed_bad">Voi harmi, nyt ei kyllä mennyt aivan putkeen.
-        Yritä uudelleen paremmalla onnella ja harkitse tarkkaan vastauksiasi.</string>
-    <string name="completed_mediocre">Hienoa! Suoriuduit tästä skenaariosta varsin mallikkaasti,
-        mutta vielä on parantamisen varaa.</string>
-    <string name="completed_perfect">Loistavaa! Sait kaikki oikein tässä skenaariossa.</string>
+    <string name="completed_scenario">Completed scenario:\u0020</string>
+    <string name="completed_percentage">Completed percentage:\u0020</string>
+    <string name="completed_bad">Oh snap, it did not go so well this time.
+        Try again with better luck and weigh your answers thoroughly.</string>
+    <string name="completed_mediocre">Nice! You succeeded on this scenario pretty well,
+        but you can still do better.</string>
+    <string name="completed_perfect">Awesome! You got all the answers correct.</string>
 
     <!-- CHOOSE SCENARIO ACTIVITY -->
-    <string name="settings">Asetukset</string>
-    <string name="createScenario">Luo skenaario</string>
-    <string name="scenarios">Skenaariot</string>
-    <string name="addCategory">Lisää</string>
-    <string name="renameCategory">Muuta</string>
-    <string name="deleteCategory">Poista</string>
-    <string name="newCategory">Uusi kategoria</string>
-    <string name="backButton">Sulje</string>
-    <string name="categoryExists">Kategoria on jo olemassa!</string>
+    <string name="settings">Settings</string>
+    <string name="createScenario">Create scenario</string>
+    <string name="scenarios">Scenarios</string>
+    <string name="addCategory">Add</string>
+    <string name="renameCategory">Rename</string>
+    <string name="deleteCategory">Delete</string>
+    <string name="newCategory">New category</string>
+    <string name="backButton">Close</string>
+    <string name="categoryExists">Category already exists!</string>
 
     <!-- SETTINGS ACTIVITY -->
-    <string name="font_title">Fontti</string>
-    <string name="font_color">Väri</string>
-    <string name="font_size">Koko</string>
+    <string name="font_title">Font</string>
+    <string name="font_color">Color</string>
+    <string name="font_size">Size</string>
     <string name="audio_title">Audio</string>
-    <string name="audio_music">Musiikki</string>
-    <string name="audio_sound">Ääni</string>
+    <string name="audio_music">Music</string>
+    <string name="audio_sound">Sound</string>
+    <string name="language_title">Language</string>
 
-    <string name="font_small">Pieni</string>
-    <string name="font_normal">Normaali</string>
-    <string name="font_large">Suuri</string>
+    <string name="font_small">Small</string>
+    <string name="font_normal">Normal</string>
+    <string name="font_large">Large</string>
     <string-array name="font_sizes">
         <item>@string/font_small</item>
         <item>@string/font_normal</item>
         <item>@string/font_large</item>
     </string-array>
 
-    <string name="font_black">Musta</string>
-    <string name="font_red">Punainen</string>
-    <string name="font_green">Vihreä</string>
-    <string name="font_blue">Sininen</string>
+    <string name="font_black">Black</string>
+    <string name="font_red">Red</string>
+    <string name="font_green">Green</string>
+    <string name="font_blue">Blue</string>
     <string-array name="font_colors">
         <item>@string/font_black</item>
         <item>@string/font_red</item>
@@ -60,34 +61,34 @@
     </string-array>
 
     <!-- SCENARIO CREATION -->
-    <string name="import_file">Tuo</string>
-    <string name="export_file">Lähetä</string>
-    <string name="create_scene">Luo kohtaus</string>
-    <string name="scenario_name_give">Skenaarion nimi:</string>
-    <string name="add">Lisää</string>
-    <string name="done">Valmis</string>
-    <string name="first_scene_information">Scenaarion ensimmäisen kohtauksen nimi pitää olla: first</string>
-    <string name="scene_name_give">Kohtauksen nimi:</string>
-    <string name="scene_question">Kohtauksen kysymys:</string>
-    <string name="choose_background">Valitse tausta:</string>
-    <string name="choose_person">Valitse henkilö:</string>
-    <string name="choose_face">Valitse kasvot:</string>
-    <string name="create_answer">Luo Vastaus</string>
-    <string name="choose_color">Valitse väri:</string>
-    <string name="write_answer">Kirjoita vastaus:</string>
-    <string name="info_next_scene">Kirjoita kohtauksen nimi minne mennään. (null tarkoittaa loppua):</string>
-    <string name="back_button">peruuta</string>
-    <string name="give_all_data">Anna kaikki tiedot</string>
-    <string name="import_done">Tuonti valmis</string>
-    <string name="is_all_data_given">Varmista, että olet antanut kaikki tiedot</string>
-    <string name="file_saved">Tiedosto tallennettu</string>
-    <string name="send_scenario">Lähetä Scenario</string>
-    <string name="give_new_scenario_name">Anna uusi skenaario nimi:</string>
-    <string name="huom">Huom!</string>
-    <string name="file_types">Valitse vain .json päätteisiä scenaario tiedostoja.</string>
-    <string name="name_file">Nimi: </string>
-    <string name="go"> menee: </string>
-    <string name="color_set"> väri: </string>
-    <string name="duplicate_warning">Tämä nimi on jo käytössä</string>
-    <string name="not_added">Ei lisätty</string>
+    <string name="import_file">Import</string>
+    <string name="export_file">Export</string>
+    <string name="create_scene">Create scene</string>
+    <string name="scenario_name_give">Scenario name:</string>
+    <string name="add">Add</string>
+    <string name="done">Done</string>
+    <string name="first_scene_information">The name of the first scene must be: first</string>
+    <string name="scene_name_give">Scene name:</string>
+    <string name="scene_question">Scene question:</string>
+    <string name="choose_background">Choose background:</string>
+    <string name="choose_person">Choose person:</string>
+    <string name="choose_face">Choose face:</string>
+    <string name="create_answer">Create answer</string>
+    <string name="choose_color">Choose color:</string>
+    <string name="write_answer">Write answer:</string>
+    <string name="info_next_scene">Write name of the scene where this leads to. (null means end):</string>
+    <string name="back_button">cancel</string>
+    <string name="give_all_data">Give all data</string>
+    <string name="import_done">Importing done</string>
+    <string name="is_all_data_given">Ensure that you have given all the data</string>
+    <string name="file_saved">File saved</string>
+    <string name="send_scenario">Send scenario</string>
+    <string name="give_new_scenario_name">Give new scenario name:</string>
+    <string name="huom">Note!</string>
+    <string name="file_types">Pick only files with .json extension.</string>
+    <string name="name_file">Name: </string>
+    <string name="go"> Goes: </string>
+    <string name="color_set"> Color: </string>
+    <string name="duplicate_warning">This is already used</string>
+    <string name="not_added">Not added</string>
 </resources>
