@@ -1,0 +1,119 @@
+{
+  "first": {
+    "question": "Olet matkalla kotiin. Odotat bussipysäkillä bussia. Bussi saapuu pysäkille.",
+    "background": "background_1",
+    "person": "character_1",
+    "face": "face_happy",
+    "answers": [
+      "Annat muiden pysäkillä seisovien mennä edellesi ja nouset heidän jälkeen bussiin",
+      "Änget muiden ihmisten eteen, jotta pääset bussiin ensimmäisenä"
+    ],
+
+    "Annat muiden pysäkillä seisovien mennä edellesi ja nouset heidän jälkeen bussiin": "käytäväpaikka",
+    "Änget muiden ihmisten eteen, jotta pääset bussiin ensimmäisenä": "ikkunapaikka",
+
+    "Annat muiden pysäkillä seisovien mennä edellesi ja nouset heidän jälkeen bussiinColor": "green",
+    "Änget muiden ihmisten eteen, jotta pääset bussiin ensimmäisenäColor": "red"
+  },
+  "käytäväpaikka": {
+    "question": "Bussissa on paljon ihmisiä. Kaikki ikkunapaikat ovat varattuja.",
+    "background": "background_1",
+    "person": "character_1",
+    "face": "face_happy",
+    "answers": [
+      "Menet istumaan kätäväpaikalle tuntemattoman henkilön viereen",
+      "Jäät seisomaan bussin keskikohtaan"
+    ],
+
+    "Menet istumaan kätäväpaikalle tuntemattoman henkilön viereen": "kp_s",
+    "Jäät seisomaan bussin keskikohtaan": null,
+
+    "Menet istumaan kätäväpaikalle tuntemattoman henkilön viereenColor": "green",
+    "Jäät seisomaan bussin keskikohtaanColor": "green"
+  },
+  "ikkunapaikka": {
+    "question": "Pääset istumaan ikkunapaikalle. Bussi täyttyy aika nopeasti ja tuntematon henkillö istuu viereesi",
+    "background": "background_1",
+    "person": "character_1",
+    "face": "face_happy",
+    "answers": [
+      "Kysyt häneltä milloin hän poistuu bussista",
+      "Olet hiljaa ja katselet pihalle",
+      "Pyydät häntä väistämään, koska jäät seuraavalla pysäkillä (valehetelet)"
+    ],
+
+    "Kysyt häneltä milloin hän poistuu bussista": null,
+    "Olet hiljaa ja katselet pihalle": null,
+    "Pyydät häntä väistämään, koska jäät seuraavalla pysäkillä (valehetelet)": "aikainen_poistuminen",
+
+    "Kysyt häneltä milloin hän poistuu bussistaColor": "green",
+    "Olet hiljaa ja katselet pihalleColor": "green",
+    "Pyydät häntä väistämään, koska jäät seuraavalla pysäkillä (valehetelet)Color": "yellow"
+  },
+  "kp_s": {
+    "question": "Lisää ihmisiä astuu bussiin. Bussi tulee täyteen",
+    "background": "background_1",
+    "person": "character_1",
+    "face": "face_happy",
+    "answers": [
+      "Istut ihan rauhassa siihen asti kunnes sinun täytyy jäädä pois",
+      "Nouset tuolista ja annat jonkun muun istua siihen"
+    ],
+
+    "Istut ihan rauhassa siihen asti kunnes sinun täytyy jäädä pois": "kp_poistuminen",
+    "Nouset tuolista ja annat jonkun muun istua siihen": "kp_poistuminen",
+
+    "Istut ihan rauhassa siihen asti kunnes sinun täytyy jäädä poisColor": "green",
+    "Nouset tuolista ja annat jonkun muun istua siihenColor": "green"
+  },
+  "kp_poistuminen": {
+    "question": "Käytävällä on paljon ihmisiä ja bussi saapuu sinun pysäkille",
+    "background": "background_1",
+    "person": "character_1",
+    "face": "face_happy",
+    "answers": [
+      "Tönit ihmisiä, änget itsesi ovelle ja astut bussista pihalle",
+      "Tönit ihmisiä kevyesti ja pyytelet anteeksi kun menet ihmisten ohi ja poistut bussista pihalle"
+    ],
+
+    "Tönit ihmisiä, änget itsesi ovelle ja astut bussista pihalle": null,
+    "Tönit ihmisiä kevyesti ja pyytelet anteeksi kun menet ihmisten ohi ja poistut bussista pihalle": null,
+
+    "Tönit ihmisiä, änget itsesi ovelle ja astut bussista pihalleColor": "red",
+    "Tönit ihmisiä kevyesti ja pyytelet anteeksi kun menet ihmisten ohi ja poistut bussista pihalleColor": "green"
+  },
+  "aikainen_poistuminen": {
+    "question": "Astut oven luokse",
+    "background": "background_1",
+    "person": "character_1",
+    "face": "face_happy",
+    "answers": [
+      "Poistu bussista (ei ole sinun pysäkkisi)",
+      "Jäät seisomaan oven luokse odottamaan omaa pysäkkiäsi"
+    ],
+
+    "Poistu bussista (ei ole sinun pysäkkisi)": null,
+    "Jäät seisomaan oven luokse odottamaan omaa pysäkkiäsi": null,
+
+    "Poistu bussista (ei ole sinun pysäkkisi)Color": "yellow",
+    "Jäät seisomaan oven luokse odottamaan omaa pysäkkiäsiColor": "green"
+  },
+
+  "": {
+    "question": "",
+    "background": "background_1",
+    "person": "character_1",
+    "face": "face_happy",
+    "answers": [
+      "0",
+      "1"
+    ],
+
+    "0": null,
+    "1": null,
+
+    "0Color": "green",
+    "1Color": "green"
+  }
+
+}
