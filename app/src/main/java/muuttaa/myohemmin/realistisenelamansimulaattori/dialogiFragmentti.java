@@ -18,6 +18,7 @@ public class dialogiFragmentti extends AppCompatDialogFragment {
     private EditText menee;
     private EditText vastaus;
     private dialogiFragmentListener listener;
+    private int korvaus = -1;
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState){
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
@@ -26,6 +27,11 @@ public class dialogiFragmentti extends AppCompatDialogFragment {
         vari = (Spinner) view.findViewById(R.id.vastausVari);
         menee = (EditText) view.findViewById(R.id.menee);
         vastaus = (EditText) view.findViewById(R.id.vastauksenTeksti);
+        if(getArguments().getBoolean("muokkaus", false)) {
+            korvaus = getArguments().getInt("korvaa", -1);
+            menee.setText(getArguments().getString("menee", " "));
+            vastaus.setText(getArguments().getString("kysymys", " "));
+        }
         builder.setView(view)
                 .setTitle(getContext().getString(R.string.create_answer))
                 .setNegativeButton(getContext().getString(R.string.back_button), new DialogInterface.OnClickListener() {
@@ -41,7 +47,7 @@ public class dialogiFragmentti extends AppCompatDialogFragment {
                             String v = vari.getSelectedItem().toString();
                             String m = menee.getText().toString();
                             String vas = vastaus.getText().toString();
-                            listener.applyDataBack(v, m, vas);
+                            listener.applyDataBack(v, m, vas, korvaus);
                         } catch (Exception e){
                             Toast.makeText(getActivity(), getContext().getString(R.string.give_all_data), Toast.LENGTH_LONG).show();
                         }
@@ -56,6 +62,7 @@ public class dialogiFragmentti extends AppCompatDialogFragment {
         listener = (dialogiFragmentListener) context;
     }
     public interface dialogiFragmentListener{
-        void applyDataBack(String varia, String meno, String vastaus);
+        //if korvaus is -1 then not replace
+        void applyDataBack(String varia, String meno, String vastaus, int korvaus);
     }
 }

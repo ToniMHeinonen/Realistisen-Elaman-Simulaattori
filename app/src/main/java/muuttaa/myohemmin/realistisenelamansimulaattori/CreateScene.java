@@ -103,10 +103,28 @@ public class CreateScene extends ParentActivity implements dialogiFragmentti.dia
                 return false;
             }
         });
+        lista.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Bundle bundle = new Bundle();
+                bundle.putBoolean("muokkaus", true);
+                GeneralKeyAndValue meno = kysymyksetGo.get(position);
+                bundle.putString("menee", meno.getValue());
+                bundle.putString("kysymys", meno.getKey());
+                bundle.putInt("korvaa", position);
+                dialogiFragmentti dia = new dialogiFragmentti();
+                dia.setArguments(bundle);
+                dia.show(getSupportFragmentManager(), "vastauksen luonti");
+            }
+        });
     }
 
     public void vastaus(View view) {
+        Bundle bundle = new Bundle();
+        bundle.putBoolean("muokkaus", false);
+        bundle.putInt("korvaa", -1);
         dialogiFragmentti dia = new dialogiFragmentti();
+        dia.setArguments(bundle);
         dia.show(getSupportFragmentManager(), "vastauksen luonti");
     }
 
@@ -132,9 +150,15 @@ public class CreateScene extends ParentActivity implements dialogiFragmentti.dia
         }
     }
     @Override
-    public void applyDataBack(String varia, String meno, String vastaus) {
-        this.kysymyksetGo.add(new GeneralKeyAndValue(vastaus, meno));
-        this.kysymyksetColor.add(new GeneralKeyAndValue(vastaus + "Color", varia));
-        updateListOfAnswers();
+    public void applyDataBack(String varia, String meno, String vastaus, int korvaus) {
+        if(korvaus >= 0){
+            this.kysymyksetGo.set(korvaus, new GeneralKeyAndValue(vastaus, meno));
+            this.kysymyksetColor.set(korvaus, new GeneralKeyAndValue(vastaus + "Color", varia));
+            updateListOfAnswers();
+        } else {
+            this.kysymyksetGo.add(new GeneralKeyAndValue(vastaus, meno));
+            this.kysymyksetColor.add(new GeneralKeyAndValue(vastaus + "Color", varia));
+            updateListOfAnswers();
+        }
     }
 }
