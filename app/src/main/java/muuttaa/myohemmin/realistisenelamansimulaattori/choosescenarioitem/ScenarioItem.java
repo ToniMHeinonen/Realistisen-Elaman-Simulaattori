@@ -6,6 +6,7 @@ import muuttaa.myohemmin.realistisenelamansimulaattori.Debug;
 
 public class ScenarioItem {
 
+    private int id;
     private String name;
     private Date lastTimePlayed;
     private int percentageCompleted;
@@ -13,14 +14,24 @@ public class ScenarioItem {
 
     /**
      * Creates new instance of Scenario Item.
+     * @param id id of the scenario
      * @param name name of the scenario
      */
-    public ScenarioItem(String name) {
+    public ScenarioItem(int id, String name) {
+        this.id = id;
         this.name = name;
-        this.lastTimePlayed = ScenarioItemPrefs.loadLastTimePlayed(name);
-        this.percentageCompleted = ScenarioItemPrefs.loadPercentage(name);
-        this.category = ScenarioItemPrefs.loadCategory(name);
+        this.lastTimePlayed = ScenarioItemPrefs.loadLastTimePlayed(id);
+        this.percentageCompleted = ScenarioItemPrefs.loadPercentage(id);
+        this.category = ScenarioItemPrefs.loadCategory(id);
         Debug.print("ScenarioItem", "()", this.toString(), 1);
+    }
+
+    /**
+     * Returns id of the scenario.
+     * @return id of the scenario
+     */
+    public int getId() {
+        return id;
     }
 
     /**
@@ -45,7 +56,7 @@ public class ScenarioItem {
      */
     public void setLastTimePlayed(Date lastTimePlayed) {
         this.lastTimePlayed = lastTimePlayed;
-        ScenarioItemPrefs.saveLastTimePlayed(name);
+        ScenarioItemPrefs.saveLastTimePlayed(id);
     }
 
     /**
@@ -62,7 +73,7 @@ public class ScenarioItem {
      */
     public void setPercentageCompleted(int percentageCompleted) {
         this.percentageCompleted = percentageCompleted;
-        ScenarioItemPrefs.savePercentage(name, percentageCompleted);
+        ScenarioItemPrefs.savePercentage(id, percentageCompleted);
     }
 
     public String getCategory() {
@@ -71,7 +82,7 @@ public class ScenarioItem {
 
     public void setCategory(String category) {
         this.category = category;
-        ScenarioItemPrefs.saveCategory(name, category);
+        ScenarioItemPrefs.saveCategory(id, category);
     }
 
     /**

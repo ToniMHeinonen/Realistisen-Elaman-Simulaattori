@@ -30,67 +30,61 @@ public abstract class ScenarioItemPrefs {
 
     /**
      * Saves given percentage to the given scenario.
-     * @param scenario name of the scenario
+     * @param scenarioID id of the scenario
      * @param percentage percentage completed
      */
-    public static void savePercentage(String scenario, int percentage) {
-        SharedPreferences.Editor editor = prefs.edit();
-
-        editor.putInt(keyPercentage + scenario, percentage);
-        editor.commit();
+    public static void savePercentage(int scenarioID, int percentage) {
+        prefs.edit().putInt(keyPercentage + scenarioID, percentage).commit();
     }
 
     /**
      * Loads saved percentage from memory to given scenario.
-     * @param scenario name of the scenario
+     * @param scenarioID id of the scenario
      * @return percentage of the scenario
      */
-    public static int loadPercentage(String scenario) {
-        return prefs.getInt(keyPercentage + scenario, 0);
+    public static int loadPercentage(int scenarioID) {
+        return prefs.getInt(keyPercentage + scenarioID, 0);
     }
 
     /**
      * Saves current time as last time played to given scenario.
-     * @param scenario name of the scenario
+     * @param scenarioID id of the scenario
      */
-    public static void saveLastTimePlayed(String scenario) {
+    public static void saveLastTimePlayed(int scenarioID) {
         SharedPreferences.Editor editor = prefs.edit();
         // Get current time and convert to long
         Date date = new Date();
         long millis = date.getTime();
 
-        editor.putLong(keyRecent + scenario, millis);
+        editor.putLong(keyRecent + scenarioID, millis);
         editor.commit();
     }
 
     /**
      * Loads the date of last time played on given scenario.
-     * @param scenario name of the scenario
+     * @param scenarioID id of the scenario
      * @return date of last time played
      */
-    public static Date loadLastTimePlayed(String scenario) {
-        return new Date(prefs.getLong(keyRecent + scenario, 0));
+    public static Date loadLastTimePlayed(int scenarioID) {
+        return new Date(prefs.getLong(keyRecent + scenarioID, 0));
     }
 
     /**
      * Loads the category of the scenario.
-     * @param scenario name of the scenario
+     * @param scenarioID id of the scenario
      * @return category of the item
      */
-    public static String loadCategory(String scenario) {
-        return prefs.getString(keyCategory + scenario, null);
+    public static String loadCategory(int scenarioID) {
+        return prefs.getString(keyCategory + scenarioID, null);
     }
 
     /**
      * Saves given category to the item.
-     * @param scenario name of the scenario
+     * @param scenarioID id of the scenario
      * @param category new category of the item
      */
-    public static void saveCategory(String scenario, String category) {
-        SharedPreferences.Editor editor = prefs.edit();
-
-        editor.putString(keyCategory + scenario, category);
-        editor.commit();
+    public static void saveCategory(int scenarioID, String category) {
+        prefs.edit().putString(keyCategory + scenarioID, category).commit();
     }
 
     /**

@@ -74,8 +74,8 @@ public class ChooseScenarioActivity extends ParentActivity {
     private void loadScenarios() {
         List<String> scenarioNames = json.getScenarioList();
 
-        for (String name : scenarioNames) {
-            scenarios.add(new ScenarioItem(name));
+        for (int i = 0; i < scenarioNames.size(); i++) {
+            scenarios.add(new ScenarioItem(i, scenarioNames.get(i)));
         }
     }
 
@@ -97,9 +97,9 @@ public class ChooseScenarioActivity extends ParentActivity {
                         categoriesListTitle.get(groupPosition)).get(
                         childPosition);
 
-                String name = clickedItem.getName();
                 Intent intent = new Intent(ChooseScenarioActivity.this, ScenarioActivity.class);
-                intent.putExtra("scenario", name);
+                intent.putExtra("scenario", clickedItem.getName());
+                intent.putExtra("scenarioID", clickedItem.getId());
                 startActivity(intent);
                 playSound(S_CORRECT);
                 return false;
