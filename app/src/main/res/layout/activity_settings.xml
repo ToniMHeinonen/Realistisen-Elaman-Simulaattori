@@ -3,83 +3,132 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="20dp"
     android:orientation = "vertical"
     tools:context=".SettingsActivity">
 
     <TextView
-        style="@style/SettingsTitles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
         android:text="@string/settings"
         android:textSize="55dp" />
 
-    <TextView
-        style="@style/SettingsTitles"
-        android:text="@string/font_title" />
 
+    <!-- FONT -->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:orientation="horizontal"
-        android:gravity="center">
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
         <TextView
-            style="@style/SettingsTopics"
-            android:text="@string/font_size" />
+            style="@style/SettingsTitles"
+            android:text="@string/font_title" />
 
-        <Spinner
-            style="@style/SettingsSpinners"
-            android:id="@+id/fontSize" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                style="@style/SettingsTopics"
+                android:text="@string/font_size" />
+
+            <Spinner
+                style="@style/SettingsSpinners"
+                android:id="@+id/fontSize" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                style="@style/SettingsTopics"
+                android:text="@string/font_color" />
+
+            <Spinner
+                style="@style/SettingsSpinners"
+                android:id="@+id/fontColor" />
+
+        </LinearLayout>
 
     </LinearLayout>
 
+    <!-- AUDIO -->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:orientation="horizontal"
-        android:gravity="center">
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
         <TextView
-            style="@style/SettingsTopics"
-            android:text="@string/font_color" />
+            style="@style/SettingsTitles"
+            android:text="@string/audio_title" />
 
-        <Spinner
-            style="@style/SettingsSpinners"
-            android:id="@+id/fontColor" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                style="@style/SettingsTopics"
+                android:text="@string/audio_music" />
+
+            <SeekBar
+                style="@style/SettingsSeekbars"
+                android:id="@+id/musicBar" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                style="@style/SettingsTopics"
+                android:text="@string/audio_sound" />
+
+            <SeekBar
+                style="@style/SettingsSeekbars"
+                android:id="@+id/soundBar" />
+
+        </LinearLayout>
 
     </LinearLayout>
 
-    <TextView
-        style="@style/SettingsTitles"
-        android:text="@string/audio_title" />
-
+    <!-- LANGUAGE -->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:orientation="horizontal"
-        android:gravity="center">
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
         <TextView
-            style="@style/SettingsTopics"
-            android:text="@string/audio_music" />
+            style="@style/SettingsTitles"
+            android:text="@string/language_title" />
 
-        <SeekBar
-            style="@style/SettingsSeekbars"
-            android:id="@+id/musicBar" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
-    </LinearLayout>
+            <ImageView
+                android:tag="en"
+                style="@style/SettingsFlags"
+                android:background="@drawable/en_flag" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:orientation="horizontal"
-        android:gravity="center">
+            <ImageView
+                android:tag="fi"
+                style="@style/SettingsFlags"
+                android:background="@drawable/fi_flag"/>
 
-        <TextView
-            style="@style/SettingsTopics"
-            android:text="@string/audio_sound" />
-
-        <SeekBar
-            style="@style/SettingsSeekbars"
-            android:id="@+id/soundBar" />
+        </LinearLayout>
 
     </LinearLayout>
 

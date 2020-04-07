@@ -38,6 +38,7 @@
     <string name="audio_title">Audio</string>
     <string name="audio_music">Musiikki</string>
     <string name="audio_sound">Ääni</string>
+    <string name="language_title">Kieli</string>
 
     <string name="font_small">Pieni</string>
     <string name="font_normal">Normaali</string>

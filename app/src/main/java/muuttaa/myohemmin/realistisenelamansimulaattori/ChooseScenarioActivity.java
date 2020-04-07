@@ -10,7 +10,11 @@ import muuttaa.myohemmin.realistisenelamansimulaattori.data.SaveSystemPreference
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.res.Configuration;
+import android.content.res.Resources;
+import android.os.Build;
 import android.os.Bundle;
+import android.util.DisplayMetrics;
 import android.view.DragEvent;
 import android.view.View;
 import android.widget.AdapterView;
@@ -25,6 +29,7 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Locale;
 
 public class ChooseScenarioActivity extends ParentActivity {
 

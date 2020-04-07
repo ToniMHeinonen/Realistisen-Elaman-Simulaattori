@@ -5,7 +5,13 @@ import muuttaa.myohemmin.realistisenelamansimulaattori.choosescenarioitem.Scenar
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.res.Configuration;
+import android.content.res.Resources;
+import android.os.Build;
 import android.os.Bundle;
+import android.util.DisplayMetrics;
+
+import java.util.Locale;
 
 public class InitializeActivity extends ParentActivity {
 
@@ -19,6 +25,11 @@ public class InitializeActivity extends ParentActivity {
         ScenarioItemPrefs.initialize();
         GlobalPrefs.initialize();
 
+        // Set language
+        String language = GlobalPrefs.loadLanguage();
+        if (!language.equals(""))
+            setAppLocale(language);
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_initialize);
 
@@ -26,6 +37,22 @@ public class InitializeActivity extends ParentActivity {
         startActivity(new Intent(this, ChooseScenarioActivity.class));
 
         finish();
+    }
+
+    /**
+     * Changes the language of the app.
+     * @param localeCode language code
+     */
+    public static void setAppLocale(String localeCode) {
+        Resources resources = getContext().getResources();
+        DisplayMetrics dm = resources.getDisplayMetrics();
+        Configuration config = resources.getConfiguration();
+        if (Build.VERSION.SDK_INT>=Build.VERSION_CODES.JELLY_BEAN_MR1){
+            config.setLocale(new Locale(localeCode.toLowerCase()));
+        } else {
+            config.locale = new Locale(localeCode.toLowerCase());
+        }
+        resources.updateConfiguration(config, dm);
     }
 
     /**

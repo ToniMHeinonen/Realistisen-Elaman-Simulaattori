@@ -38,6 +38,7 @@
     <string name="audio_title">Audio</string>
     <string name="audio_music">Music</string>
     <string name="audio_sound">Sound</string>
+    <string name="language_title">Language</string>
 
     <string name="font_small">Small</string>
     <string name="font_normal">Normal</string>

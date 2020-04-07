@@ -99,9 +99,7 @@ public class SettingsActivity extends ParentActivity {
         int color = GlobalPrefs.loadFontColorPos();
         GlobalPrefs.saveFontStyle(styles[size][color]);
 
-        // Restart activity to apply changes to xml
-        finish();
-        startActivity(getIntent());
+        updateViews();
     }
 
     private void setupAudio() {
@@ -144,6 +142,23 @@ public class SettingsActivity extends ParentActivity {
                 playSound(S_CORRECT);
             }
         });
+    }
+
+    public void languageSelected(View v) {
+        String language = (String) v.getTag();
+
+        if (!language.equals(GlobalPrefs.loadLanguage())) {
+            GlobalPrefs.saveLanguage(language);
+            InitializeActivity.setAppLocale(language);
+
+            updateViews();
+        }
+    }
+
+    private void updateViews() {
+        // Restart activity to apply changes to xml
+        finish();
+        startActivity(getIntent());
     }
 
     @Override
