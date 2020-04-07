@@ -32,7 +32,8 @@ public class ScenarioActivity extends ParentActivity {
     private final int WRONG = 0;
     private final int SEMICORRECT = 50;
     private ImageView background, character, face;
-    private Drawable drawableStart, drawableEnd;
+    private Drawable characterStart, characterEnd, faceStart, faceEnd;
+    private ColorDrawable emptyDrawable = new ColorDrawable(Color.TRANSPARENT);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -83,9 +84,10 @@ public class ScenarioActivity extends ParentActivity {
                 list.setEnabled(false);
 
                 String previousCharacter = saveSystem.getPersonPicture();
+                String previousFace = saveSystem.getFacePicture();
                 String clickedItem = (String) list.getItemAtPosition(position);
                 saveSystem.nextScene(clickedItem);
-                checkPersonTransition(previousCharacter);
+                checkPersonTransition(previousCharacter, previousFace);
 
                 // Pause 1 second, then do the run-method.
                 Handler handler = new Handler();
@@ -165,45 +167,87 @@ public class ScenarioActivity extends ParentActivity {
         }
     }
 
-    private void checkPersonTransition(String previousImage) {
+    private void checkPersonTransition(String previousCharacter, String previousFace) {
         try {
             if (saveSystem.getPersonPicture() != null) {
-                if (!previousImage.equals(saveSystem.getPersonPicture())) {
+                if (!previousCharacter.equals(saveSystem.getPersonPicture())) {
                     // from "null" to "character_"
-                    if (previousImage.equals("null") && !saveSystem.getPersonPicture().equals("null")) {
-                        drawableStart = new ColorDrawable(Color.TRANSPARENT);
-                        drawableEnd = ContextCompat.getDrawable(getApplicationContext(), getResources()
+                    if (previousCharacter.equals("null") && !saveSystem.getPersonPicture().equals("null")) {
+                        characterStart = emptyDrawable;
+                        characterEnd = ContextCompat.getDrawable(getApplicationContext(), getResources()
                                 .getIdentifier(saveSystem.getPersonPicture(),
                                         "drawable", getApplicationContext()
                                                 .getPackageName()));
                     // from "character_" to "null"
-                    } else if (saveSystem.getPersonPicture().equals("null") && !previousImage.equals("null")) {
-                        drawableStart = ContextCompat.getDrawable(getApplicationContext(), getResources()
-                                .getIdentifier(saveSystem.getPersonPicture(),
+                    } else if (saveSystem.getPersonPicture().equals("null") && !previousCharacter.equals("null")) {
+                        characterStart = ContextCompat.getDrawable(getApplicationContext(), getResources()
+                                .getIdentifier(previousCharacter,
                                         "drawable", getApplicationContext()
                                                 .getPackageName()));
-                        drawableEnd = new ColorDrawable(Color.TRANSPARENT);
+                        characterEnd = emptyDrawable;
+                        Debug.print("SCENARIO", "CHECKPERSON", "CHAR TO NULL", 1);
                     // from "character_" to "character_"
                     } else {
-                        drawableStart = ContextCompat.getDrawable(getApplicationContext(), getResources()
-                                .getIdentifier(previousImage,
+                        characterStart = ContextCompat.getDrawable(getApplicationContext(), getResources()
+                                .getIdentifier(previousCharacter,
                                         "drawable", getApplicationContext()
                                                 .getPackageName()));
-                        drawableEnd = ContextCompat.getDrawable(getApplicationContext(), getResources()
+                        characterEnd = ContextCompat.getDrawable(getApplicationContext(), getResources()
                                 .getIdentifier(saveSystem.getPersonPicture(),
                                         "drawable", getApplicationContext()
                                                 .getPackageName()));
                     }
 
-                    Drawable[] drawables = new Drawable[2];
-                    drawables[0] = drawableStart;
-                    drawables[1] = drawableEnd;
-                    TransitionDrawable transitionDrawable = new TransitionDrawable(drawables);
+                    Drawable[] characterDrawables = new Drawable[2];
+                    characterDrawables[0] = characterStart;
+                    characterDrawables[1] = characterEnd;
+                    TransitionDrawable transitionDrawable = new TransitionDrawable(characterDrawables);
                     transitionDrawable.setCrossFadeEnabled(true);
                     character.setImageDrawable(transitionDrawable);
                     transitionDrawable.startTransition(1000);
+                    checkFaceTransition(previousFace);
                 }
             }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void checkFaceTransition(String previousFace) {
+        try {
+            // from "null" to "face_"
+            if (previousFace.equals("null") && !saveSystem.getFacePicture().equals("null")) {
+                faceStart = emptyDrawable;
+                faceEnd = ContextCompat.getDrawable(getApplicationContext(), getResources()
+                        .getIdentifier(saveSystem.getFacePicture(),
+                                "drawable", getApplicationContext()
+                                        .getPackageName()));
+                // from "face_" to "null"
+            } else if (saveSystem.getFacePicture().equals("null") && !previousFace.equals("null")) {
+                faceStart = ContextCompat.getDrawable(getApplicationContext(), getResources()
+                        .getIdentifier(previousFace,
+                                "drawable", getApplicationContext()
+                                        .getPackageName()));
+                faceEnd = emptyDrawable;
+                // from "face_" to "face_"
+            } else {
+                faceStart = ContextCompat.getDrawable(getApplicationContext(), getResources()
+                        .getIdentifier(previousFace,
+                                "drawable", getApplicationContext()
+                                        .getPackageName()));
+                faceEnd = ContextCompat.getDrawable(getApplicationContext(), getResources()
+                        .getIdentifier(saveSystem.getFacePicture(),
+                                "drawable", getApplicationContext()
+                                        .getPackageName()));
+            }
+
+            Drawable[] faceDrawables = new Drawable[2];
+            faceDrawables[0] = faceStart;
+            faceDrawables[1] = faceEnd;
+            TransitionDrawable faceTransition = new TransitionDrawable(faceDrawables);
+            faceTransition.setCrossFadeEnabled(true);
+            face.setImageDrawable(faceTransition);
+            faceTransition.startTransition(1000);
         } catch (Exception e) {
             e.printStackTrace();
         }
