@@ -89,4 +89,6 @@
     <string name="name_file">Nimi: </string>
     <string name="go"> menee: </string>
     <string name="color_set"> väri: </string>
+    <string name="duplicate_warning">Tämä on jo käytössä</string>
+    <string name="not_added">Ei lisätty</string>
 </resources>
