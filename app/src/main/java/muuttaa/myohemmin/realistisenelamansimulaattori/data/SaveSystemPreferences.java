@@ -1,7 +1,6 @@
 package muuttaa.myohemmin.realistisenelamansimulaattori.data;
 
 import android.content.Context;
-import android.os.Build;
 import android.util.Log;
 
 import org.json.JSONArray;
@@ -19,8 +18,6 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
-
-import androidx.annotation.RequiresApi;
 import muuttaa.myohemmin.realistisenelamansimulaattori.JsonInterface;
 import muuttaa.myohemmin.realistisenelamansimulaattori.R;
 
