@@ -119,7 +119,10 @@
                 android:id="@+id/KasvoSpinner"/>
         </LinearLayout>
     </LinearLayout>
-
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/can_delete"/>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

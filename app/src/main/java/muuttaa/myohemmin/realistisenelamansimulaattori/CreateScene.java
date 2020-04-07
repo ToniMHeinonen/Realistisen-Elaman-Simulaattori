@@ -1,14 +1,18 @@
 package muuttaa.myohemmin.realistisenelamansimulaattori;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import muuttaa.myohemmin.realistisenelamansimulaattori.data.GeneralKeyAndValue;
 import muuttaa.myohemmin.realistisenelamansimulaattori.data.Scene;
 
 import android.app.Activity;
+import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Parcelable;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ListView;
@@ -77,6 +81,28 @@ public class CreateScene extends ParentActivity implements dialogiFragmentti.dia
         }
         adapter = new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_spinner_item, arrayList);
         lista.setAdapter(adapter);
+        final Context con = this;
+        lista.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+            @Override
+            public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
+                final GeneralKeyAndValue varin = kysymyksetColor.get(position);
+                final GeneralKeyAndValue menon = kysymyksetGo.get(position);
+                new AlertDialog.Builder(con)
+                        .setTitle(con.getString(R.string.huom))
+                        .setMessage(con.getString(R.string.remove_item))
+                        .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int which) {
+                                kysymyksetColor.remove(varin);
+                                kysymyksetGo.remove(menon);
+                                updateListOfAnswers();
+                            }
+                        })
+                        .setNegativeButton(android.R.string.no, null)
+                        .setIcon(android.R.drawable.ic_dialog_alert)
+                        .show();
+                return false;
+            }
+        });
     }
 
     public void vastaus(View view) {
