@@ -73,6 +73,8 @@ public class CreateScenario extends ParentActivity {
         Intent i = new Intent(CreateScenario.this, CreateScene.class);
         boolean onko = list.size() == 0;
         i.putExtra("eka", onko);
+        i.putExtra("muokkaus", false);
+        i.putExtra("korvaus", -1);
         startActivityForResult(i, 1);
     }
     @Override
@@ -80,8 +82,14 @@ public class CreateScenario extends ParentActivity {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == 1) {
             if (resultCode == RESULT_OK) {
-                list.add((Scene) data.getParcelableExtra("scene"));
-                updateList();
+                int k = data.getIntExtra("korvaus", -1);
+                if(k == -1) {
+                    list.add((Scene) data.getParcelableExtra("scene"));
+                    updateList();
+                } else{
+                    list.set(k, (Scene) data.getParcelableExtra("scene"));
+                    updateList();
+                }
             }
         } else if(requestCode == 22){
             if(resultCode == RESULT_OK){
@@ -156,6 +164,15 @@ public class CreateScenario extends ParentActivity {
                         .show();
                 return false;
             }
+        });
+        listaview.setOnItemClickListener((parent, view, position, id) -> {
+            Intent i = new Intent(CreateScenario.this, CreateScene.class);
+            boolean onko = list.size() == 0;
+            i.putExtra("eka", onko);
+            i.putExtra("muokkaus", true);
+            i.putExtra("scene", list.get(position));
+            i.putExtra("korvaus", position);
+            startActivityForResult(i, 1);
         });
     }
 

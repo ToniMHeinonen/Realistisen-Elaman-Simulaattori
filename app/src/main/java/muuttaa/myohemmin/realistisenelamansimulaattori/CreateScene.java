@@ -33,6 +33,7 @@ public class CreateScene extends ParentActivity implements dialogiFragmentti.dia
     private List<GeneralKeyAndValue> kysymyksetGo;
     private  List<GeneralKeyAndValue> kysymyksetColor;
     private ArrayAdapter<String> adapter;
+    private int korvaus = -1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,9 +48,20 @@ public class CreateScene extends ParentActivity implements dialogiFragmentti.dia
         this.person = (Spinner) findViewById(R.id.personSpinner);
         this.face = (Spinner) findViewById(R.id.KasvoSpinner);
         this.lista = (ListView) findViewById(R.id.listaVastaukset);
-
-        if(getIntent().getBooleanExtra("eka", false)){
-            this.name.setText("first");
+        korvaus = getIntent().getIntExtra("korvaus", -1);
+        if(getIntent().getBooleanExtra("muokkaus", false)){
+            Scene apu = (Scene) getIntent().getParcelableExtra("scene");
+            //put values
+            this.name.setText(apu.getName());
+            kysymyksetGo = apu.getGoList();
+            kysymyksetColor = apu.getColorList();
+            this.question.setText(apu.getQuestion());
+        } else{
+            if(getIntent().getBooleanExtra("eka", false)){
+                this.name.setText("first");
+            }
+            kysymyksetGo = new LinkedList<>();
+            kysymyksetColor = new LinkedList<>();
         }
 
         ArrayAdapter<CharSequence> adapterTaustat = ArrayAdapter.createFromResource(this,
@@ -68,9 +80,6 @@ public class CreateScene extends ParentActivity implements dialogiFragmentti.dia
         adapterKasvot.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
         this.face.setAdapter(adapterKasvot);
-
-        kysymyksetGo = new LinkedList<>();
-        kysymyksetColor = new LinkedList<>();
         updateListOfAnswers();
     }
 
@@ -143,6 +152,7 @@ public class CreateScene extends ParentActivity implements dialogiFragmentti.dia
 
             Intent returnIntent = new Intent();
             returnIntent.putExtra("scene", (Parcelable) scene);
+            returnIntent.putExtra("korvaus", korvaus);
             setResult(Activity.RESULT_OK, returnIntent);
             finish();
         } catch (Exception e){
