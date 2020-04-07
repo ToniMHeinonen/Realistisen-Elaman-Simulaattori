@@ -1,6 +1,7 @@
 package muuttaa.myohemmin.realistisenelamansimulaattori.data;
 
 import android.content.Context;
+import android.os.Build;
 import android.util.Log;
 
 import org.json.JSONArray;
@@ -8,6 +9,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -17,6 +19,8 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
+
+import androidx.annotation.RequiresApi;
 import muuttaa.myohemmin.realistisenelamansimulaattori.JsonInterface;
 import muuttaa.myohemmin.realistisenelamansimulaattori.R;
 
@@ -638,5 +642,47 @@ public class SaveSystemPreferences implements JsonInterface {
         }
 
         return scenarioNames.contains(nimi);
+    }
+
+    /**
+     * This method you can delete scenario from memory
+     * @param nameOfScenario scenario name (not .json name)
+     */
+    public void deleteScenario(String nameOfScenario){
+        try{
+            String data = getStringFromFile("savedata2.json");
+            if(data != null){
+                JSONObject b = new JSONObject(data);
+                JSONArray array = b.getJSONArray("scenarioslist");
+                String file = "";
+                int paikka = 0;
+                for(int lap=0; lap < array.length(); lap++){
+                    JSONObject vali = array.getJSONObject(lap);
+                    if(vali.getString("name").equals(nameOfScenario)){
+                        file = vali.getString("file");
+                        paikka = lap;
+                        break;
+                    }
+                }
+                //deletion
+                array.remove(paikka);
+                JSONArray names = b.getJSONArray("scenarios");
+                int apuPaikka = 0;
+                for(int lap=0; lap < names.length(); lap++){
+                    if(names.getString(lap).equals(nameOfScenario)){
+                        apuPaikka = lap;
+                        break;
+                    }
+                }
+                names.remove(apuPaikka);
+                write("savedata2.json", b.toString());
+                File tiedosto = new File(file);
+                tiedosto.delete();
+            }
+        } catch (JSONException e){
+            if(debuggi){
+                e.printStackTrace();
+            }
+        }
     }
 }
