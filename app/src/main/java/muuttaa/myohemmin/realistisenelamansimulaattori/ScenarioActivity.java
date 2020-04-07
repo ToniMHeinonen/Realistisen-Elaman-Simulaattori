@@ -82,10 +82,10 @@ public class ScenarioActivity extends ParentActivity {
                 addUserAnswerToList(colors.get(position));
                 list.setEnabled(false);
 
-                String previousImage = saveSystem.getPersonPicture();
+                String previousCharacter = saveSystem.getPersonPicture();
                 String clickedItem = (String) list.getItemAtPosition(position);
                 saveSystem.nextScene(clickedItem);
-                checkPersonTransition(previousImage);
+                checkPersonTransition(previousCharacter);
 
                 // Pause 1 second, then do the run-method.
                 Handler handler = new Handler();
