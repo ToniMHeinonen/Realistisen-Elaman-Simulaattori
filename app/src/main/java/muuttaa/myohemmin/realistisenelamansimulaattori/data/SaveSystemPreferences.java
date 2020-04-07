@@ -594,4 +594,49 @@ public class SaveSystemPreferences implements JsonInterface {
         }
         return null;
     }
+    public boolean containsAlready(String nimi){
+        String g = getStringFromScenariesFile();
+        List<scenarioListHelp> scenaariot = new ArrayList<>();
+        List<String> scenarioNames = new ArrayList<>();
+        String out = "";
+        //scenarios from file
+        try {
+            JSONObject json = new JSONObject(g);
+            JSONArray array = json.getJSONArray("scenarioslist");
+            for(int lap=0; lap < array.length(); lap++){
+                JSONObject obj = array.getJSONObject(lap);
+                scenaariot.add(new scenarioListHelp(obj.getString("name"), obj.getString("file")));
+            }
+            JSONArray names = json.getJSONArray("scenarios");
+            for(int lap=0; lap < names.length(); lap++){
+                scenarioNames.add(names.getString(lap));
+            }
+        } catch (JSONException e){
+            if(debuggi){
+                e.printStackTrace();
+            }
+        }
+        //scenarios from preferences
+        try{
+            String data = getStringFromFile("savedata2.json");
+            if(data != null) {
+                JSONObject b = new JSONObject(data);
+                JSONArray array2 = b.getJSONArray("scenarioslist");
+                for (int lap = 0; lap < array2.length(); lap++) {
+                    JSONObject obj = array2.getJSONObject(lap);
+                    scenaariot.add(new scenarioListHelp(obj.getString("name"), obj.getString("file")));
+                }
+                JSONArray names2 = b.getJSONArray("scenarios");
+                for (int lap = 0; lap < names2.length(); lap++) {
+                    scenarioNames.add(names2.getString(lap));
+                }
+            }
+        } catch (JSONException e){
+            if(debuggi){
+                e.printStackTrace();
+            }
+        }
+
+        return scenarioNames.contains(nimi);
+    }
 }
