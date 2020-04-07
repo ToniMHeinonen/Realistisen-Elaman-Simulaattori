@@ -14,6 +14,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.Spinner;
 import android.widget.Toast;
@@ -29,6 +30,9 @@ public class CreateScene extends ParentActivity implements dialogiFragmentti.dia
     private Spinner person;
     private Spinner face;
     private ListView lista;
+    private ImageView tausta;
+    private ImageView henkilo;
+    private ImageView kasvot;
     private List<GeneralKeyAndValue> kysymyksetGo;
     private  List<GeneralKeyAndValue> kysymyksetColor;
     private ArrayAdapter<String> adapter;
@@ -47,6 +51,9 @@ public class CreateScene extends ParentActivity implements dialogiFragmentti.dia
         this.person = (Spinner) findViewById(R.id.personSpinner);
         this.face = (Spinner) findViewById(R.id.KasvoSpinner);
         this.lista = (ListView) findViewById(R.id.listaVastaukset);
+        this.tausta = (ImageView) findViewById(R.id.createBackground);
+        this.henkilo = (ImageView) findViewById(R.id.createCharacter);
+        this.kasvot = (ImageView) findViewById(R.id.createFace);
         korvaus = getIntent().getIntExtra("korvaus", -1);
         if(getIntent().getBooleanExtra("muokkaus", false)){
             Scene apu = (Scene) getIntent().getParcelableExtra("scene");
@@ -79,7 +86,55 @@ public class CreateScene extends ParentActivity implements dialogiFragmentti.dia
         adapterKasvot.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
         this.face.setAdapter(adapterKasvot);
+        //listeners
+        this.background.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                updateImages();
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+        this.face.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                updateImages();
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+        this.person.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                updateImages();
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+        //updates
+        updateImages();
         updateListOfAnswers();
+    }
+
+    /**
+     * This method update images of preview
+     */
+    private void updateImages() {
+        String naama = this.face.getSelectedItem().toString();
+        String t = this.background.getSelectedItem().toString();
+        String h = this.person.getSelectedItem().toString();
+        this.tausta.setImageResource(getResources().getIdentifier(t, "drawable", getPackageName()));
+        this.henkilo.setImageResource(getResources().getIdentifier(h, "drawable", getPackageName()));
+        this.kasvot.setImageResource(getResources().getIdentifier(naama, "drawable", getPackageName()));
     }
 
     public void updateListOfAnswers(){
