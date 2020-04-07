@@ -44,6 +44,10 @@ public class CreateScene extends ParentActivity implements dialogiFragmentti.dia
         this.face = (Spinner) findViewById(R.id.KasvoSpinner);
         this.lista = (ListView) findViewById(R.id.listaVastaukset);
 
+        if(getIntent().getBooleanExtra("eka", false)){
+            this.name.setText("first");
+        }
+
         ArrayAdapter<CharSequence> adapterTaustat = ArrayAdapter.createFromResource(this,
                 R.array.taustat, android.R.layout.simple_spinner_item);
         adapterTaustat.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);

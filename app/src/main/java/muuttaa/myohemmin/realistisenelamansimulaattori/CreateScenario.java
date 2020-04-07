@@ -69,6 +69,8 @@ public class CreateScenario extends ParentActivity {
 
     public void luo(View view) {
         Intent i = new Intent(CreateScenario.this, CreateScene.class);
+        boolean onko = list.size() == 0;
+        i.putExtra("eka", onko);
         startActivityForResult(i, 1);
     }
     @Override
