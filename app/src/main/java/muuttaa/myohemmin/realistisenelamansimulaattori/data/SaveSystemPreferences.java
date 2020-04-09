@@ -556,8 +556,15 @@ public class SaveSystemPreferences implements JsonInterface {
         return null;
     }
     public Scenario saveScenarioFromString(String in, String name){
-        write(name + ".json", in);
-        writeSaveData(name + ".json", name);
+        String korjattu = "";
+        for(int lap=0; lap < name.length(); lap++){
+            char m = name.charAt(lap);
+            if(m != ' '){
+                korjattu += m;
+            }
+        }
+        write(korjattu + ".json", in);
+        writeSaveData(korjattu + ".json", name);
         return null;
     }
     public String convertScenarioToString(Scenario scenario){

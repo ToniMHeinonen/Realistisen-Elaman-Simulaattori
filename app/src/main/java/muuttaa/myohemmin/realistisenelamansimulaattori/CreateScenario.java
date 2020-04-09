@@ -177,7 +177,14 @@ public class CreateScenario extends ParentActivity {
                 Scenario scenario = new Scenario();
                 scenario.setListaus(list);
                 scenario.setName(name);
-                scenario.setFileName(name + ".json");
+                String korjattu = "";
+                for(int lap=0; lap < name.length(); lap++){
+                    char m = name.charAt(lap);
+                    if(m != ' '){
+                        korjattu += m;
+                    }
+                }
+                scenario.setFileName(korjattu + ".json");
                 json.saveScenario(scenario);
                 finish();
             } catch (Exception e) {
@@ -194,7 +201,14 @@ public class CreateScenario extends ParentActivity {
         scenario.setListaus(list);
         String name = scenarioName.getText().toString().toLowerCase();
         scenario.setName(name);
-        String file = name + ".json";
+        String korjattu = "";
+        for(int lap=0; lap < name.length(); lap++){
+            char m = name.charAt(lap);
+            if(m != ' '){
+                korjattu += m;
+            }
+        }
+        String file = korjattu + ".json";
         scenario.setFileName(file);
         SaveSystemPreferences json = new SaveSystemPreferences(this);
         json.saveScenario(scenario);
