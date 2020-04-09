@@ -133,8 +133,16 @@ public class CreateScene extends ParentActivity implements dialogiFragmentti.dia
         String t = this.background.getSelectedItem().toString();
         String h = this.person.getSelectedItem().toString();
         this.tausta.setImageResource(getResources().getIdentifier(t, "drawable", getPackageName()));
-        this.henkilo.setImageResource(getResources().getIdentifier(h, "drawable", getPackageName()));
-        this.kasvot.setImageResource(getResources().getIdentifier(naama, "drawable", getPackageName()));
+        if(!h.equals("null")) {
+            this.henkilo.setImageResource(getResources().getIdentifier(h, "drawable", getPackageName()));
+        } else{
+            this.henkilo.setImageResource(android.R.color.transparent);
+        }
+        if(!naama.equals("null")) {
+            this.kasvot.setImageResource(getResources().getIdentifier(naama, "drawable", getPackageName()));
+        } else{
+            this.kasvot.setImageResource(android.R.color.transparent);
+        }
     }
 
     public void updateListOfAnswers(){

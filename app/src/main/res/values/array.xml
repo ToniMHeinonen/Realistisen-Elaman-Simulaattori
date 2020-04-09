@@ -5,9 +5,11 @@
     </string-array>
     <string-array name="henkilot">
         <item>character_1</item>
+        <item>null</item>
     </string-array>
     <string-array name="kasvot">
         <item>face_happy</item>
+        <item>null</item>
     </string-array>
     <string-array name="varit">
         <item>green</item>
