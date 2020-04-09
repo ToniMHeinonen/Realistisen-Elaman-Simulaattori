@@ -1,5 +1,6 @@
 package muuttaa.myohemmin.realistisenelamansimulaattori.data;
 
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -8,7 +9,7 @@ public class Scenario{
     private String name;
     private String fileName;
     public Scenario(){
-        this.listaus = new LinkedList<>();
+        this.listaus = new ArrayList<>();
     }
 
     public List<Scene> getListaus() {

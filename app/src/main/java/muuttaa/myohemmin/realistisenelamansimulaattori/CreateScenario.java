@@ -46,6 +46,16 @@ public class CreateScenario extends ParentActivity {
         setContentView(R.layout.activity_create_scenario);
         this.scenarioName = (EditText) findViewById(R.id.ScenarioCreateName);
         this.listaview = (ListView) findViewById(R.id.listaScene);
+        //check if is edit scenario
+        Intent i = getIntent();
+        if(i.getBooleanExtra("edit", false)){
+            String name = i.getStringExtra("name");
+            SaveSystemPreferences j = new SaveSystemPreferences(this);
+            String filu = j.getScenarioFileName(name);
+            Scenario oletus = j.getDataOfScenario(name, filu);
+            scenarioName.setText(oletus.getName());
+            list = oletus.getListaus();
+        }
         updateList();
     }
 
@@ -161,17 +171,19 @@ public class CreateScenario extends ParentActivity {
         SaveSystemPreferences json = new SaveSystemPreferences(this);
         final Context con = this;
         if(json.containsAlready(name)){
-            new AlertDialog.Builder(con)
-                    .setTitle(con.getString(R.string.huom))
-                    .setMessage(con.getString(R.string.duplicate_warning))
-                    .setNegativeButton(android.R.string.no, new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialog, int which) {
-                            Toast.makeText(con, con.getString(R.string.not_added), Toast.LENGTH_LONG).show();
-                        }
-                    })
-                    .setIcon(android.R.drawable.ic_dialog_alert)
-                    .show();
+            Scenario scenario = new Scenario();
+            scenario.setListaus(list);
+            scenario.setName(name);
+            String korjattu = "";
+            for(int lap=0; lap < name.length(); lap++){
+                char m = name.charAt(lap);
+                if(m != ' '){
+                    korjattu += m;
+                }
+            }
+            scenario.setFileName(korjattu + ".json");
+            json.saveScenario(scenario, true);
+            finish();
         } else {
             try {
                 Scenario scenario = new Scenario();
@@ -185,7 +197,8 @@ public class CreateScenario extends ParentActivity {
                     }
                 }
                 scenario.setFileName(korjattu + ".json");
-                json.saveScenario(scenario);
+                json.saveScenario(scenario, false);
+                Toast.makeText(this, getString(R.string.saved_scenario), Toast.LENGTH_LONG).show();
                 finish();
             } catch (Exception e) {
                 Toast.makeText(this, this.getString(R.string.is_all_data_given), Toast.LENGTH_LONG).show();
@@ -211,7 +224,11 @@ public class CreateScenario extends ParentActivity {
         String file = korjattu + ".json";
         scenario.setFileName(file);
         SaveSystemPreferences json = new SaveSystemPreferences(this);
-        json.saveScenario(scenario);
+        if(json.containsAlready(name)){
+            json.saveScenario(scenario, true);
+        } else{
+            json.saveScenario(scenario, false);
+        }
         Toast.makeText(this, this.getString(R.string.file_saved), Toast.LENGTH_LONG).show();
 
         Intent intentShareFile = new Intent(Intent.ACTION_SEND);

@@ -22,6 +22,7 @@ import java.io.OutputStreamWriter;
 import java.io.Writer;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 import muuttaa.myohemmin.realistisenelamansimulaattori.JsonInterface;
@@ -451,7 +452,7 @@ public class SaveSystemPreferences implements JsonInterface {
      * Scenario saving
      * @param scenario Scenario class
      */
-    public void saveScenario(Scenario scenario){
+    public void saveScenario(Scenario scenario, boolean edit){
         try {
             //convert data to json
             String file = scenario.getFileName();
@@ -485,7 +486,9 @@ public class SaveSystemPreferences implements JsonInterface {
             String out = base.toString();
             //kirjoitus
             write(file, out);
-            writeSaveData(file, scenarioName2);
+            if(!edit) {
+                writeSaveData(file, scenarioName2);
+            }
         } catch (Exception e){
             if(debuggi){
                 e.printStackTrace();
@@ -702,5 +705,75 @@ public class SaveSystemPreferences implements JsonInterface {
                 e.printStackTrace();
             }
         }
+    }
+
+    /**
+     * work only user's own scenarios
+     * @param name name of scenario
+     * @return json version of name
+     */
+    public String getScenarioFileName(String name){
+        try{
+            String data = getStringFromFile("savedata2.json");
+            JSONObject base = new JSONObject(data);
+            JSONArray array = base.getJSONArray("scenarioslist");
+            String out = "";
+            for(int lap=0; lap < array.length(); lap++){
+                if(array.getJSONObject(lap).getString("name").equals(name)){
+                   out = array.getJSONObject(lap).getString("file");
+                   break;
+                }
+            }
+            return out;
+        } catch (JSONException e){
+            if(debuggi){
+                e.printStackTrace();
+            }
+        }
+        return null;
+    }
+    /**
+     * get data in scenario class
+     */
+    public Scenario getDataOfScenario(String namee, String filu){
+        try {
+            String data = getStringFromFile(filu);
+            JSONObject base = new JSONObject(data);
+            Iterator<String> keys = base.keys();
+            List<Scene> scenes = new ArrayList<>();
+            while( keys.hasNext() ){
+                String key = keys.next();
+                JSONObject apu = base.getJSONObject(key);
+                String question = apu.getString("question");
+                String back = apu.getString("background");
+                String per = apu.getString("person");
+                String fac = apu.getString("face");
+                JSONArray array = apu.getJSONArray("answers");
+                String[] ans = new String[array.length()];
+                List<GeneralKeyAndValue> goList = new LinkedList<>();
+                List<GeneralKeyAndValue> colorList = new LinkedList<>();
+                for(int lap=0; lap < array.length(); lap++){
+                    String arvo = array.get(lap).toString();
+                    ans[lap] = arvo;
+                    if(debuggi){
+                        Log.d("array", arvo);
+                    }
+                    //color and go info
+                    goList.add(new GeneralKeyAndValue(arvo, apu.getString(arvo)));
+                    colorList.add(new GeneralKeyAndValue(arvo + "Color", apu.getString(arvo + "Color")));
+                }
+                scenes.add(new Scene(key, question, back, per, fac, ans, goList, colorList));
+            }
+            Scenario scenario = new Scenario();
+            scenario.setListaus(scenes);
+            scenario.setName(namee);
+            scenario.setFileName(filu);
+            return scenario;
+        }catch (JSONException e){
+            if (debuggi){
+                e.printStackTrace();
+            }
+        }
+        return null;
     }
 }

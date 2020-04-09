@@ -93,4 +93,5 @@
     <string name="not_added">Not added</string>
     <string name="remove_item">Do you really want remove this?</string>
     <string name="can_delete">Long click remove item from list and short click you can modify it.</string>
+    <string name="saved_scenario">Scenario saved</string>
 </resources>
