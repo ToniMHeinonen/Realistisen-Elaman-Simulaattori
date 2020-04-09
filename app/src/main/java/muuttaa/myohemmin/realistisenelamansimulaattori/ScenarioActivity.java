@@ -34,6 +34,7 @@ public class ScenarioActivity extends ParentActivity {
     private ImageView background, character, face;
     private Drawable characterStart, characterEnd, faceStart, faceEnd;
     private ColorDrawable emptyDrawable = new ColorDrawable(Color.TRANSPARENT);
+    private ImageView answeredImageView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -67,21 +68,21 @@ public class ScenarioActivity extends ParentActivity {
     private void setupAnswers() {
         final ListView list = findViewById(R.id.answers);
         List<String> answersList = saveSystem.getAnswersList();
-        final ArrayAdapter<String> arrayAdapter = new ArrayAdapter<>(this,
-                R.layout.scenario_answers, answersList);
+        final ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this,
+                R.layout.scenario_adapter, R.id.choiceText, answersList);
         list.setAdapter(arrayAdapter);
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(final AdapterView<?> parent, final View view, final int position, long id) {
-                // Set background-color for button depending user's answer.
-                view.setBackgroundResource(getResources()
-                        .getIdentifier(String.valueOf(colors.get(position)),
-                                "drawable", getApplicationContext().
-                                        getPackageName()));
-
                 // Add user's answer to list and set arrayadapter non-clickable.
                 addUserAnswerToList(colors.get(position));
                 list.setEnabled(false);
+
+                answeredImageView = view.findViewById(R.id.choiceBg);
+                answeredImageView.setImageResource(getResources()
+                        .getIdentifier(String.valueOf(colors.get(position)),
+                                "drawable", getApplicationContext().
+                                        getPackageName()));
 
                 String previousCharacter = saveSystem.getPersonPicture();
                 String previousFace = saveSystem.getFacePicture();
@@ -95,7 +96,7 @@ public class ScenarioActivity extends ParentActivity {
                     @Override
                     public void run() {
                         // Set default background-color for button.
-                        view.setBackgroundResource(R.drawable.button_default);
+                        answeredImageView.setImageResource(R.drawable.button_default);
 
                         // If the question was last from the scenario, go to GameOverActivity
                         // and send user's answers. Else update the questions in arrayadapter.
