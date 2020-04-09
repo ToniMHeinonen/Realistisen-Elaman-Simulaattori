@@ -8,6 +8,9 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.DataInputStream;
+import java.io.DataOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -15,6 +18,9 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+import java.io.Writer;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
@@ -530,8 +536,11 @@ public class SaveSystemPreferences implements JsonInterface {
     private void write(String file, String con){
         try {
             FileOutputStream fos = context.openFileOutput(file, Context.MODE_PRIVATE);
-            fos.write(con.getBytes());
-            fos.close();
+            DataOutputStream o = new DataOutputStream(fos);
+            Writer w = new BufferedWriter(new OutputStreamWriter(o, StandardCharsets.UTF_8));
+            w.write(con);
+            w.flush();
+            w.close();
         }catch (Exception e){
             if (debuggi){
                 e.printStackTrace();
@@ -539,15 +548,20 @@ public class SaveSystemPreferences implements JsonInterface {
         }
     }
     private String getStringFromFile(String file){
-        try{
-            String o = "";
+        try {
             FileInputStream fis = context.openFileInput(file);
-            int byteChar;
-            while((byteChar = fis.read()) != -1){
-                o += (char) byteChar;
+            DataInputStream in = new DataInputStream(fis);
+            BufferedReader br = new BufferedReader(new InputStreamReader(in, StandardCharsets.UTF_8));
+            StringBuilder total = new StringBuilder();
+            for (String line; (line = br.readLine()) != null; ) {
+                total.append(line).append('\n');
             }
-            fis.close();
-            return o;
+            br.close();
+            if(debuggi){
+                Log.e("ulos", total.toString());
+            }
+            return total.toString();
+
         } catch (Exception e){
             if(debuggi){
                 e.printStackTrace();
