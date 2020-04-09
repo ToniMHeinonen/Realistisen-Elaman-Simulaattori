@@ -1,6 +1,10 @@
 package muuttaa.myohemmin.realistisenelamansimulaattori;
 
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
+import android.graphics.drawable.Drawable;
+import android.graphics.drawable.TransitionDrawable;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
@@ -14,6 +18,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 import muuttaa.myohemmin.realistisenelamansimulaattori.data.SaveSystemPreferences;
 
 public class ScenarioActivity extends ParentActivity {
@@ -27,6 +32,8 @@ public class ScenarioActivity extends ParentActivity {
     private final int WRONG = 0;
     private final int SEMICORRECT = 50;
     private ImageView background, character, face;
+    private Drawable characterStart, characterEnd, faceStart, faceEnd;
+    private ColorDrawable emptyDrawable = new ColorDrawable(Color.TRANSPARENT);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,17 +47,21 @@ public class ScenarioActivity extends ParentActivity {
         if (extras != null) {
             scenario = extras.getString("scenario");
             scenarioID = extras.getInt("scenarioID");
-            saveSystem = new SaveSystemPreferences(this);
-            saveSystem.setCurrentScenario(scenario);
-            questionTextView = findViewById(R.id.question);
-            questionTextView.setText(saveSystem.getQuestionFromScenario());
-            colors = saveSystem.getColorsInString();
-            background = findViewById(R.id.scenarioBackground);
-            character = findViewById(R.id.scenarioCharacter);
-            face = findViewById(R.id.scenarioFace);
+            setupStart();
             updateImages();
             setupAnswers();
         }
+    }
+
+    private void setupStart() {
+        saveSystem = new SaveSystemPreferences(this);
+        saveSystem.setCurrentScenario(scenario);
+        questionTextView = findViewById(R.id.question);
+        questionTextView.setText(saveSystem.getQuestionFromScenario());
+        colors = saveSystem.getColorsInString();
+        background = findViewById(R.id.scenarioBackground);
+        character = findViewById(R.id.scenarioCharacter);
+        face = findViewById(R.id.scenarioFace);
     }
 
     private void setupAnswers() {
@@ -72,6 +83,12 @@ public class ScenarioActivity extends ParentActivity {
                 addUserAnswerToList(colors.get(position));
                 list.setEnabled(false);
 
+                String previousCharacter = saveSystem.getPersonPicture();
+                String previousFace = saveSystem.getFacePicture();
+                String clickedItem = (String) list.getItemAtPosition(position);
+                saveSystem.nextScene(clickedItem);
+                checkPersonTransition(previousCharacter, previousFace);
+
                 // Pause 1 second, then do the run-method.
                 Handler handler = new Handler();
                 handler.postDelayed(new Runnable() {
@@ -79,17 +96,11 @@ public class ScenarioActivity extends ParentActivity {
                     public void run() {
                         // Set default background-color for button.
                         view.setBackgroundResource(R.drawable.button_default);
-                        String clickedItem = (String) list.getItemAtPosition(position);
-                        saveSystem.nextScene(clickedItem);
 
                         // If the question was last from the scenario, go to GameOverActivity
                         // and send user's answers. Else update the questions in arrayadapter.
                         if (saveSystem.endOfScenario()) {
-                            Intent intent = new Intent(getApplicationContext(), GameOverActivity.class);
-                            intent.putExtra("scenario", saveSystem.getCurrentScenario());
-                            intent.putExtra("scenarioID", scenarioID);
-                            intent.putExtra("userAnswers", userAnswers);
-                            startActivity(intent);
+                            scenarioFinished();
                         } else {
                             colors = saveSystem.getColorsInString();
                             questionTextView.setText(saveSystem.getQuestionFromScenario());
@@ -103,6 +114,14 @@ public class ScenarioActivity extends ParentActivity {
                 }, 1000);
             }
         });
+    }
+
+    private void scenarioFinished() {
+        Intent intent = new Intent(getApplicationContext(), GameOverActivity.class);
+        intent.putExtra("scenario", saveSystem.getCurrentScenario());
+        intent.putExtra("scenarioID", scenarioID);
+        intent.putExtra("userAnswers", userAnswers);
+        startActivity(intent);
     }
 
     /**
@@ -145,6 +164,92 @@ public class ScenarioActivity extends ParentActivity {
                     .getIdentifier(saveSystem.getFacePicture(),
             "drawable", getApplicationContext()
                     .getPackageName()));
+        }
+    }
+
+    private void checkPersonTransition(String previousCharacter, String previousFace) {
+        try {
+            if (saveSystem.getPersonPicture() != null) {
+                if (!previousCharacter.equals(saveSystem.getPersonPicture())) {
+                    // from "null" to "character_"
+                    if (previousCharacter.equals("null") && !saveSystem.getPersonPicture().equals("null")) {
+                        characterStart = emptyDrawable;
+                        characterEnd = ContextCompat.getDrawable(getApplicationContext(), getResources()
+                                .getIdentifier(saveSystem.getPersonPicture(),
+                                        "drawable", getApplicationContext()
+                                                .getPackageName()));
+                    // from "character_" to "null"
+                    } else if (saveSystem.getPersonPicture().equals("null") && !previousCharacter.equals("null")) {
+                        characterStart = ContextCompat.getDrawable(getApplicationContext(), getResources()
+                                .getIdentifier(previousCharacter,
+                                        "drawable", getApplicationContext()
+                                                .getPackageName()));
+                        characterEnd = emptyDrawable;
+                        Debug.print("SCENARIO", "CHECKPERSON", "CHAR TO NULL", 1);
+                    // from "character_" to "character_"
+                    } else {
+                        characterStart = ContextCompat.getDrawable(getApplicationContext(), getResources()
+                                .getIdentifier(previousCharacter,
+                                        "drawable", getApplicationContext()
+                                                .getPackageName()));
+                        characterEnd = ContextCompat.getDrawable(getApplicationContext(), getResources()
+                                .getIdentifier(saveSystem.getPersonPicture(),
+                                        "drawable", getApplicationContext()
+                                                .getPackageName()));
+                    }
+
+                    Drawable[] characterDrawables = new Drawable[2];
+                    characterDrawables[0] = characterStart;
+                    characterDrawables[1] = characterEnd;
+                    TransitionDrawable transitionDrawable = new TransitionDrawable(characterDrawables);
+                    transitionDrawable.setCrossFadeEnabled(true);
+                    character.setImageDrawable(transitionDrawable);
+                    transitionDrawable.startTransition(1000);
+                    checkFaceTransition(previousFace);
+                }
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void checkFaceTransition(String previousFace) {
+        try {
+            // from "null" to "face_"
+            if (previousFace.equals("null") && !saveSystem.getFacePicture().equals("null")) {
+                faceStart = emptyDrawable;
+                faceEnd = ContextCompat.getDrawable(getApplicationContext(), getResources()
+                        .getIdentifier(saveSystem.getFacePicture(),
+                                "drawable", getApplicationContext()
+                                        .getPackageName()));
+                // from "face_" to "null"
+            } else if (saveSystem.getFacePicture().equals("null") && !previousFace.equals("null")) {
+                faceStart = ContextCompat.getDrawable(getApplicationContext(), getResources()
+                        .getIdentifier(previousFace,
+                                "drawable", getApplicationContext()
+                                        .getPackageName()));
+                faceEnd = emptyDrawable;
+                // from "face_" to "face_"
+            } else {
+                faceStart = ContextCompat.getDrawable(getApplicationContext(), getResources()
+                        .getIdentifier(previousFace,
+                                "drawable", getApplicationContext()
+                                        .getPackageName()));
+                faceEnd = ContextCompat.getDrawable(getApplicationContext(), getResources()
+                        .getIdentifier(saveSystem.getFacePicture(),
+                                "drawable", getApplicationContext()
+                                        .getPackageName()));
+            }
+
+            Drawable[] faceDrawables = new Drawable[2];
+            faceDrawables[0] = faceStart;
+            faceDrawables[1] = faceEnd;
+            TransitionDrawable faceTransition = new TransitionDrawable(faceDrawables);
+            faceTransition.setCrossFadeEnabled(true);
+            face.setImageDrawable(faceTransition);
+            faceTransition.startTransition(1000);
+        } catch (Exception e) {
+            e.printStackTrace();
         }
     }
 }

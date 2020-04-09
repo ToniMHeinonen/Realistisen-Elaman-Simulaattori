@@ -1,0 +1,149 @@
+{
+  "first": {
+    "question": "Saavut elokuvateatteriin ja haluat mennä katsomaan uutta elokuvaa yksin. Sinulla ei ole vielä lippua. \nMitä teet ensimmäisenä?",
+    "background": "background_1",
+    "person": "null",
+    "face": "null",
+    "answers": [
+      "Menet ostamaan lipun ja herkut",
+      "Käyt vessassa",
+      "Jäät seisomaan paikoillesi"
+    ],
+    "Menet ostamaan lipun ja herkut": "liput",
+    "Käyt vessassa": "vessa",
+    "Jäät seisomaan paikoillesi": "paikka",
+    "Menet ostamaan lipun ja herkutColor": "green",
+    "Käyt vessassaColor": "green",
+    "Jäät seisomaan paikoillesiColor": "red"
+  },
+  "liput": {
+    "question": "Saavut kassalle ja laitat tiskille lipun ja herkut, jotka aiot juuri ostaa.",
+    "background": "background_1",
+    "person": "character_1",
+    "face": "face_happy",
+    "answers": [
+      "Kerrot, mihin leffaan aiot mennä ja sanot haluavasi ostaa lipun",
+      "Annat myyjälle vain herkut, et sano mitään ja käyt myöhemmin ostamassa lipun erikseen",
+      "Varmistat, että edessäsi on joku, jotta näet, miten pitää toimia"
+    ],
+    "Kerrot, mihin leffaan aiot mennä ja sanot haluavasi ostaa lipun": "odottaa",
+    "Annat myyjälle vain herkut, et sano mitään ja käyt myöhemmin ostamassa lipun erikseen": "odottaa",
+    "Varmistat, että edessäsi on joku, jotta näet, miten pitää toimia": "odottaa",
+    "Kerrot, mihin leffaan aiot mennä ja sanot haluavasi ostaa lipunColor": "green",
+    "Annat myyjälle vain herkut, et sano mitään ja käyt myöhemmin ostamassa lipun erikseenColor": "red",
+    "Varmistat, että edessäsi on joku, jotta näet, miten pitää toimiaColor": "yellow"
+  },
+  "vessa": {
+    "question": "Tulet ulos vessasta ja huomaat ruuhkaa elokuvateatterissa.",
+    "background": "background_1",
+    "person": "null",
+    "face": "null",
+    "answers": [
+      "Menet ostamaan herkut ja liput",
+      "Lähdet teatterista"
+    ],
+    "Menet ostamaan herkut ja liput": "liput",
+    "Lähdet teatterista": "lahteminen",
+    "Menet ostamaan herkut ja liputColor": "green",
+    "Lähdet teatteristaColor": "red"
+  },
+  "paikka": {
+    "question": "Seisot paikallasi, etkä tiedä mitä tehdä.",
+    "background": "background_1",
+    "person": "character_1",
+    "face": "face_happy",
+    "answers": [
+      "Kysyt teatterin henkilökunnalta, mitä sinun pitäisi tehdä",
+      "Lähdet teatterista"
+    ],
+    "Kysyt teatterin henkilökunnalta, mitä sinun pitäisi tehdä": "liput",
+    "Lähdet teatterista": "lahteminen",
+    "Kysyt teatterin henkilökunnalta, mitä sinun pitäisi tehdäColor": "green",
+    "Lähdet teatteristaColor": "red"
+  },
+  "lahteminen": {
+    "question": "Lähdet teatterista kotiin.",
+    "background": "background_1",
+    "person": "character_1",
+    "face": "face_happy",
+    "answers": [
+      "Lähetät teatterille valituksen ilman syytä",
+      "Menet kotiin",
+      "Lähetät teatterille realistisen palautteen"
+    ],
+    "Lähetät teatterille valituksen ilman syytä": "null",
+    "Menet kotiin": "null",
+    "Lähetät teatterille realistisen palautteen": "null",
+    "Lähetät teatterille valituksen ilman syytäColor": "red",
+    "Menet kotiinColor": "green",
+    "Lähetät teatterille realistisen palautteenColor": "green"
+  },
+  "odottaa": {
+    "question": "Olet saanut ostettua lipun ja huomaat vapaan istumapaikan salin ulkopuolella.",
+    "background": "background_1",
+    "person": "character_1",
+    "face": "face_happy",
+    "answers": [
+      "Menet istumaan kyseiselle paikalle",
+      "Jäät seisomaan"
+    ],
+    "Menet istumaan kyseiselle paikalle": "tilanne",
+    "Jäät seisomaan": "saliin",
+    "Menet istumaan kyseiselle paikalleColor": "green",
+    "Jäät seisomaanColor": "green"
+  },
+  "saliin": {
+    "question": "Saliin päästetään sisälle.",
+    "background": "background_1",
+    "person": "character_1",
+    "face": "face_happy",
+    "answers": [
+      "Menet jonoon",
+      "Odotat, että jono on mennyt ja menet sitten saliin",
+      "Jäät seisomaan paikoillesi etkä mene saliin"
+    ],
+    "Menet jonoon": "jalkeen",
+    "Odotat, että jono on mennyt ja menet sitten saliin": "jalkeen",
+    "Jäät seisomaan paikoillesi etkä mene saliin": "jalkeen",
+    "Menet jonoonColor": "green",
+    "Odotat, että jono on mennyt ja menet sitten saliinColor": "green",
+    "Jäät seisomaan paikoillesi etkä mene saliinColor": "red"
+  },
+  "tilanne": {
+    "question": "Huonokuntoinen ihminen tulee odottamaan saliin pääsyä, muttei pääse istumaan minnekään.",
+    "background": "background_1",
+    "person": "character_1",
+    "face": "face_happy",
+    "answers": [
+      "Tarjoat omaa paikkaasi",
+      "Et tee mitään",
+      "Käsket jonkun muun antaa paikkansa"
+    ],
+    "Tarjoat omaa paikkaasi": "saliin",
+    "Et tee mitään": "saliin",
+    "Käsket jonkun muun antaa paikkansa": "saliin",
+    "Tarjoat omaa paikkaasiColor": "green",
+    "Et tee mitäänColor": "yellow",
+    "Käsket jonkun muun antaa paikkansaColor": "red"
+  },
+  "jalkeen": {
+    "question": "Elokuva on loppunut.",
+    "background": "background_1",
+    "person": "character_1",
+    "face": "face_happy",
+    "answers": [
+      "Laitat omat roskasi roskiin, käyt vessassa ja lähdet teatterista",
+      "Laitat omat roskasi roskiin ja lähdet kotiin",
+      "Jätät roskasi, käyt vessassa ja lähdet teatterista",
+      "Jätät roskasi ja lähdet kotiin"
+    ],
+    "Laitat omat roskasi roskiin, käyt vessassa ja lähdet teatterista": "lahteminen",
+    "Laitat omat roskasi roskiin ja lähdet kotiin": "lahteminen",
+    "Jätät roskasi, käyt vessassa ja lähdet teatterista": "lahteminen",
+    "Jätät roskasi ja lähdet kotiin": "lahteminen",
+    "Laitat omat roskasi roskiin, käyt vessassa ja lähdet teatteristaColor": "green",
+    "Laitat omat roskasi roskiin ja lähdet kotiinColor": "green",
+    "Jätät roskasi, käyt vessassa ja lähdet teatteristaColor": "red",
+    "Jätät roskasi ja lähdet kotiinColor": "red"
+  }
+}
