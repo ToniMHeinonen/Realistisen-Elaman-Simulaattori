@@ -1,0 +1,25 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/choiceBg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@id/choiceText"
+        android:layout_alignStart="@id/choiceText"
+        android:layout_alignEnd="@id/choiceText"
+        android:layout_alignTop="@id/choiceText"
+        android:scaleType="fitXY"
+        android:src="@drawable/button_default"/>
+
+    <TextView
+        android:id="@+id/choiceText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:textSize="?attr/font_medium"
+        android:textColor="?attr/font_color"
+        android:textAlignment="center" />
+</RelativeLayout>
