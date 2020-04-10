@@ -1,6 +1,5 @@
 package muuttaa.myohemmin.realistisenelamansimulaattori;
 
-import androidx.appcompat.app.AppCompatActivity;
 import muuttaa.myohemmin.realistisenelamansimulaattori.choosescenarioitem.CategoriesListAdapter;
 import muuttaa.myohemmin.realistisenelamansimulaattori.choosescenarioitem.CategoryDialog;
 import muuttaa.myohemmin.realistisenelamansimulaattori.choosescenarioitem.HamburgerDialog;
@@ -9,13 +8,8 @@ import muuttaa.myohemmin.realistisenelamansimulaattori.choosescenarioitem.Scenar
 import muuttaa.myohemmin.realistisenelamansimulaattori.choosescenarioitem.ScenarioItemPrefs;
 import muuttaa.myohemmin.realistisenelamansimulaattori.data.SaveSystemPreferences;
 
-import android.content.Context;
 import android.content.Intent;
-import android.content.res.Configuration;
-import android.content.res.Resources;
-import android.os.Build;
 import android.os.Bundle;
-import android.util.DisplayMetrics;
 import android.view.DragEvent;
 import android.view.View;
 import android.widget.AdapterView;
@@ -30,7 +24,6 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
-import java.util.Locale;
 
 public class ChooseScenarioActivity extends ParentActivity {
 
@@ -83,6 +76,28 @@ public class ChooseScenarioActivity extends ParentActivity {
         for (int i = 0; i < scenarioNames.size(); i++) {
             scenarios.add(new ScenarioItem(i, scenarioNames.get(i)));
         }
+    }
+
+    /**
+     * Deletes scenario and decreases all scenarios with higher id by one
+     * @param scenario scenario to delete
+     */
+    public void deleteScenario(ScenarioItem scenario) {
+        scenarios.remove(scenario);
+
+        // Loop through all the rest scenarios and lower their id's by one
+        for (int i = scenario.getId(); i < scenarios.size(); i++) {
+            ScenarioItem higherScenario = scenarios.get(i);
+            ScenarioItemPrefs.changeScenarioID(i, higherScenario);
+        }
+
+        // Delete from json
+        SaveSystemPreferences json = new SaveSystemPreferences(this);
+        json.deleteScenario(scenario.getName());
+
+        // Restart activity
+        finish();
+        startActivity(new Intent(this, ChooseScenarioActivity.class));
     }
 
     /**

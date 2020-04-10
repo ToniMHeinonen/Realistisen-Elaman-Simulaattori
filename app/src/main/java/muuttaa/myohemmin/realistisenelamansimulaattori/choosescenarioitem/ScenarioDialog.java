@@ -42,7 +42,7 @@ public class ScenarioDialog extends Dialog implements
         TextView categoryView = findViewById(R.id.name);
         categoryView.setText(scenario.getName());
 
-        boolean editable = true;
+        boolean editable = false;
 
         // Set listeners
         Button modifyBtn = findViewById(R.id.modifyButton);
@@ -115,6 +115,7 @@ public class ScenarioDialog extends Dialog implements
      * Deletes scenario permanently.
      */
     private void deleteScenario() {
-
+        activity.deleteScenario(scenario);
+        dismiss();
     }
 }

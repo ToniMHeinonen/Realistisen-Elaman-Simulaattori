@@ -101,6 +101,23 @@ public abstract class ScenarioItemPrefs {
     }
 
     /**
+     * Lowers the id of scenario by one.
+     *
+     * This is only used when scenario is deleted.
+     * @param newID new id for the scenario
+     * @param scenario scenario values to transfer
+     */
+    public static void changeScenarioID(int newID, ScenarioItem scenario) {
+        SharedPreferences.Editor editor = prefs.edit();
+
+        editor.putLong(keyRecent + newID, scenario.getLastTimePlayed().getTime());
+        editor.putInt(keyPercentage + newID, scenario.getPercentageCompleted());
+        editor.putString(keyCategory + newID, scenario.getCategory());
+
+        editor.commit();
+    }
+
+    /**
      * Clears all scenario item preferences.
      *
      * Mainly used for debugging.
