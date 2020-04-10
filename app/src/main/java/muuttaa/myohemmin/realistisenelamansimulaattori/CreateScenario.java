@@ -199,6 +199,7 @@ public class CreateScenario extends ParentActivity {
                 scenario.setFileName(korjattu + ".json");
                 json.saveScenario(scenario, false);
                 Toast.makeText(this, getString(R.string.saved_scenario), Toast.LENGTH_LONG).show();
+                startActivity(new Intent(this, ChooseScenarioActivity.class));
                 finish();
             } catch (Exception e) {
                 Toast.makeText(this, this.getString(R.string.is_all_data_given), Toast.LENGTH_LONG).show();

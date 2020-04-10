@@ -61,6 +61,7 @@ public class HamburgerDialog extends Dialog implements
                 break;
             case R.id.settings:
                 activity.startActivity(new Intent(activity, SettingsActivity.class));
+                activity.finish();
                 dismiss();
                 break;
             case R.id.back:
