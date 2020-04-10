@@ -8,19 +8,16 @@ import android.view.Window;
 import android.widget.Button;
 import android.widget.TextView;
 
-import muuttaa.myohemmin.realistisenelamansimulaattori.AlertButtonListener;
 import muuttaa.myohemmin.realistisenelamansimulaattori.ChooseScenarioActivity;
 import muuttaa.myohemmin.realistisenelamansimulaattori.Helper;
 import muuttaa.myohemmin.realistisenelamansimulaattori.R;
 import muuttaa.myohemmin.realistisenelamansimulaattori.ScenarioActivity;
 
 public class ScenarioDialog extends Dialog implements
-        View.OnClickListener, AlertButtonListener {
+        View.OnClickListener {
 
     private ChooseScenarioActivity activity;
     private ScenarioItem scenario;
-
-    private final int RESET = 0, DELETE = 1;
 
     /**
      * Initializes instance of this class.
@@ -45,7 +42,7 @@ public class ScenarioDialog extends Dialog implements
         TextView categoryView = findViewById(R.id.name);
         categoryView.setText(scenario.getName());
 
-        boolean editable = false;
+        boolean editable = true;
 
         // Set listeners
         Button modifyBtn = findViewById(R.id.modifyButton);
@@ -80,15 +77,21 @@ public class ScenarioDialog extends Dialog implements
                 dismiss();
                 break;
             case R.id.resetButton:
-                Helper.showAlert(activity, RESET, scenario.getName(),
-                        activity.getString(R.string.scenarioResetText), this);
+                Helper.showAlert(activity, scenario.getName(),
+                        activity.getString(R.string.scenarioResetText),
+                        activity.getString(R.string.scenarioReset),
+                        null,
+                        (() -> resetScenario()), null);
                 break;
             case R.id.modifyButton:
                 dismiss();
                 break;
             case R.id.deleteButton:
-                Helper.showAlert(activity, DELETE, scenario.getName(),
-                        activity.getString(R.string.scenarioDeleteText), this);
+                Helper.showAlert(activity, scenario.getName(),
+                        activity.getString(R.string.scenarioDeleteText),
+                        activity.getString(R.string.scenarioDelete),
+                        null,
+                        (() -> deleteScenario()), null);
                 break;
             case R.id.closeButton:
                 cancel();
@@ -98,19 +101,20 @@ public class ScenarioDialog extends Dialog implements
         }
     }
 
-
-    @Override
-    public void positiveButtonClicked(int alertID) {
-        if (alertID == RESET) {
-            ScenarioItemPrefs.resetScenarioItem(scenario.getId());
-            // Reload activity
-            activity.startActivity(new Intent(activity, ChooseScenarioActivity.class));
-            activity.finish();
-        } else if (alertID == DELETE) {
-            // Delete scenario
-        }
+    /**
+     * Resets necessary values of scenario.
+     */
+    private void resetScenario() {
+        ScenarioItemPrefs.resetScenarioItem(scenario.getId());
+        // Reload activity
+        activity.startActivity(new Intent(activity, ChooseScenarioActivity.class));
+        activity.finish();
     }
 
-    @Override
-    public void negativeButtonClicked(int alertID) {}
+    /**
+     * Deletes scenario permanently.
+     */
+    private void deleteScenario() {
+
+    }
 }

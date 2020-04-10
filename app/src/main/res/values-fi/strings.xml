@@ -42,6 +42,12 @@
     <string name="scenarioDeleteText">Skenaario poistetaan lopullisesti. Haluatko varmasti poistaa
         skenaarion?</string>
 
+    <!-- CUSTOM ALERT DIALOG -->
+    <string name="alertTopic">Huomio!</string>
+    <string name="alertMessage">Oletko varma?</string>
+    <string name="alertPositiveButton">Ok</string>
+    <string name="alertNegativeButton">Peruuta</string>
+
     <!-- SETTINGS ACTIVITY -->
     <string name="font_title">Fontti</string>
     <string name="font_color">Väri</string>
