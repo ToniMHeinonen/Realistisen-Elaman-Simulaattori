@@ -72,6 +72,16 @@
         <item name="android:background">#4AFD4A</item>
     </style>
 
+    <!-- Custom alert dialog -->
+    <style name="alertDialogButtons">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">0.5</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:textSize">?attr/font_medium</item>
+        <item name="android:textColor">?attr/font_color</item>
+    </style>
+
     <!-- Settings Activity -->
     <style name="SettingsTitles">
         <item name="android:layout_width">match_parent</item>

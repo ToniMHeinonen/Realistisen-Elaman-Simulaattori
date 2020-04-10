@@ -34,6 +34,14 @@
     <string name="backButton">Close</string>
     <string name="categoryExists">Category already exists!</string>
 
+    <string name="scenarioReset">Reset</string>
+    <string name="scenarioDelete">Delete</string>
+    <string name="scenarioCancel">Cancel</string>
+    <string name="scenarioResetText">Percentage will be reset back to 0\%. Are you sure you want
+        to do this?</string>
+    <string name="scenarioDeleteText">Scenario will be deleted permanently. Are you sure you want
+        to do this?</string>
+
     <!-- SETTINGS ACTIVITY -->
     <string name="font_title">Font</string>
     <string name="font_color">Color</string>

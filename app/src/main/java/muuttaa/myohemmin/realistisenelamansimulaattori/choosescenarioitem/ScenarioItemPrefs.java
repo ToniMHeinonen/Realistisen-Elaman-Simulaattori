@@ -88,6 +88,19 @@ public abstract class ScenarioItemPrefs {
     }
 
     /**
+     * Resets necessary scenario item preferences.
+     * @param scenarioID id of the scenario
+     */
+    public static void resetScenarioItem(int scenarioID) {
+        SharedPreferences.Editor editor = prefs.edit();
+
+        editor.putLong(keyRecent + scenarioID, 0);
+        editor.putInt(keyPercentage + scenarioID, 0);
+
+        editor.commit();
+    }
+
+    /**
      * Clears all scenario item preferences.
      *
      * Mainly used for debugging.

@@ -34,6 +34,14 @@
     <string name="backButton">Sulje</string>
     <string name="categoryExists">Kategoria on jo olemassa!</string>
 
+    <string name="scenarioReset">Nollaa</string>
+    <string name="scenarioDelete">Poista</string>
+    <string name="scenarioCancel">Peruuta</string>
+    <string name="scenarioResetText">Prosentti palautetaan takaisin 0\%. Haluatko varmasti nollata
+        prosentin?</string>
+    <string name="scenarioDeleteText">Skenaario poistetaan lopullisesti. Haluatko varmasti poistaa
+        skenaarion?</string>
+
     <!-- SETTINGS ACTIVITY -->
     <string name="font_title">Fontti</string>
     <string name="font_color">Väri</string>
