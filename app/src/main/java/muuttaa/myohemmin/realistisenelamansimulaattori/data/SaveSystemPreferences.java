@@ -776,4 +776,31 @@ public class SaveSystemPreferences implements JsonInterface {
         }
         return null;
     }
+
+    /**
+     * This method check if scenario is user's created
+     * @param name name of scenario
+     * @return true if it is user's. false if it is only in res folder in app
+     */
+    public boolean checkIfScenarioIsUserCreated(String name){
+        String g = getStringFromFile("savedata2.json");
+        boolean oliko = false;
+        //scenarios from file
+        try {
+            JSONObject json = new JSONObject(g);
+            JSONArray names = json.getJSONArray("scenarios");
+            for(int lap=0; lap < names.length(); lap++){
+                String check = names.getString(lap);
+                if(check.equals(name)){
+                    oliko = true;
+                    break;
+                }
+            }
+        } catch (JSONException e){
+            if(debuggi){
+                e.printStackTrace();
+            }
+        }
+        return oliko;
+    }
 }
