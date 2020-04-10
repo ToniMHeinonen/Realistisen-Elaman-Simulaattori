@@ -26,7 +26,10 @@
     <string name="scenarios">Skenaariot</string>
     <string name="addCategory">Lisää</string>
     <string name="renameCategory">Muuta</string>
-    <string name="deleteCategory">Poista</string>
+    <string name="deleteButton">Poista</string>
+    <string name="playButton">Pelaa</string>
+    <string name="modifyButton">Muokkaa</string>
+    <string name="resetButton">Nollaa</string>
     <string name="newCategory">Uusi kategoria</string>
     <string name="backButton">Sulje</string>
     <string name="categoryExists">Kategoria on jo olemassa!</string>

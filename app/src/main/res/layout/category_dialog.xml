@@ -27,7 +27,7 @@
         <Button
             android:id="@+id/deleteCategory"
             style="@style/HamburgerButton"
-            android:text="@string/deleteCategory" />
+            android:text="@string/deleteButton" />
 
         <Button
             android:id="@+id/back"

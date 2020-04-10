@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import muuttaa.myohemmin.realistisenelamansimulaattori.choosescenarioitem.CategoriesListAdapter;
 import muuttaa.myohemmin.realistisenelamansimulaattori.choosescenarioitem.CategoryDialog;
 import muuttaa.myohemmin.realistisenelamansimulaattori.choosescenarioitem.HamburgerDialog;
+import muuttaa.myohemmin.realistisenelamansimulaattori.choosescenarioitem.ScenarioDialog;
 import muuttaa.myohemmin.realistisenelamansimulaattori.choosescenarioitem.ScenarioItem;
 import muuttaa.myohemmin.realistisenelamansimulaattori.choosescenarioitem.ScenarioItemPrefs;
 import muuttaa.myohemmin.realistisenelamansimulaattori.data.SaveSystemPreferences;
@@ -47,8 +48,8 @@ public class ChooseScenarioActivity extends ParentActivity {
     private HashMap<String, List<ScenarioItem>> categoriesListDetail;
 
     // Sound
-    private int S_POPUP = R.raw.popup;
-    private int S_CORRECT = R.raw.correct;
+    public final int S_POPUP = R.raw.popup;
+    public final int S_CORRECT = R.raw.correct;
 
     /**
      * Initializes instance of this activity and all necessary values.
@@ -102,11 +103,9 @@ public class ChooseScenarioActivity extends ParentActivity {
                         categoriesListTitle.get(groupPosition)).get(
                         childPosition);
 
-                Intent intent = new Intent(ChooseScenarioActivity.this, ScenarioActivity.class);
-                intent.putExtra("scenario", clickedItem.getName());
-                intent.putExtra("scenarioID", clickedItem.getId());
-                startActivity(intent);
-                playSound(S_CORRECT);
+                new ScenarioDialog(ChooseScenarioActivity.this, clickedItem).show();
+
+                playSound(S_POPUP);
                 return false;
             }
         });
