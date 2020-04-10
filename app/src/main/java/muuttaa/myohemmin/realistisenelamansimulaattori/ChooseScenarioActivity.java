@@ -83,13 +83,21 @@ public class ChooseScenarioActivity extends ParentActivity {
      * @param scenario scenario to delete
      */
     public void deleteScenario(ScenarioItem scenario) {
-        scenarios.remove(scenario);
+        scenarios.clear();
+
+        // Load scenarios in id order
+        loadScenarios();
+
+        scenarios.remove(scenario.getId());
 
         // Loop through all the rest scenarios and lower their id's by one
         for (int i = scenario.getId(); i < scenarios.size(); i++) {
             ScenarioItem higherScenario = scenarios.get(i);
             ScenarioItemPrefs.changeScenarioID(i, higherScenario);
         }
+
+        // Delete the last value, so it does not stay hanging
+        ScenarioItemPrefs.removeLastValueAfterDeletingScenario(scenarios.size());
 
         // Delete from json
         SaveSystemPreferences json = new SaveSystemPreferences(this);

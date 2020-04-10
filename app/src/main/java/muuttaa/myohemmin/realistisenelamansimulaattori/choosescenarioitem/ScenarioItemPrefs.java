@@ -118,6 +118,20 @@ public abstract class ScenarioItemPrefs {
     }
 
     /**
+     * Removes the last value, so it does not stay hanging in preferences.
+     * @param id last value id
+     */
+    public static void removeLastValueAfterDeletingScenario(int id) {
+        SharedPreferences.Editor editor = prefs.edit();
+
+        editor.remove(keyRecent + id);
+        editor.remove(keyPercentage + id);
+        editor.remove(keyCategory + id);
+
+        editor.commit();
+    }
+
+    /**
      * Clears all scenario item preferences.
      *
      * Mainly used for debugging.
