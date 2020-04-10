@@ -36,6 +36,7 @@ public class CreateScenario extends ParentActivity {
     private ArrayAdapter<String> adapter;
     private boolean debuggi = true;
     private String outName = "";
+    private boolean editMode = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,6 +50,7 @@ public class CreateScenario extends ParentActivity {
         //check if is edit scenario
         Intent i = getIntent();
         if(i.getBooleanExtra("edit", false)){
+            editMode = true;
             String name = i.getStringExtra("name");
             SaveSystemPreferences j = new SaveSystemPreferences(this);
             String filu = j.getScenarioFileName(name);
@@ -171,19 +173,23 @@ public class CreateScenario extends ParentActivity {
         SaveSystemPreferences json = new SaveSystemPreferences(this);
         final Context con = this;
         if(json.containsAlready(name)){
-            Scenario scenario = new Scenario();
-            scenario.setListaus(list);
-            scenario.setName(name);
-            String korjattu = "";
-            for(int lap=0; lap < name.length(); lap++){
-                char m = name.charAt(lap);
-                if(m != ' '){
-                    korjattu += m;
+            if(editMode) {
+                Scenario scenario = new Scenario();
+                scenario.setListaus(list);
+                scenario.setName(name);
+                String korjattu = "";
+                for (int lap = 0; lap < name.length(); lap++) {
+                    char m = name.charAt(lap);
+                    if (m != ' ') {
+                        korjattu += m;
+                    }
                 }
+                scenario.setFileName(korjattu + ".json");
+                json.saveScenario(scenario, true);
+                finish();
+            } else{
+                Toast.makeText(this, getString(R.string.duplicate_warning), Toast.LENGTH_LONG).show();
             }
-            scenario.setFileName(korjattu + ".json");
-            json.saveScenario(scenario, true);
-            finish();
         } else {
             try {
                 Scenario scenario = new Scenario();
@@ -226,7 +232,11 @@ public class CreateScenario extends ParentActivity {
         scenario.setFileName(file);
         SaveSystemPreferences json = new SaveSystemPreferences(this);
         if(json.containsAlready(name)){
-            json.saveScenario(scenario, true);
+            if(editMode) {
+                json.saveScenario(scenario, true);
+            } else{
+                Toast.makeText(this, getString(R.string.duplicate_warning), Toast.LENGTH_LONG).show();
+            }
         } else{
             json.saveScenario(scenario, false);
         }
