@@ -56,6 +56,7 @@ public class GameOverActivity extends ParentActivity {
         if (v.getId() == R.id.backToMenu) {
             Intent intent = new Intent(this, ChooseScenarioActivity.class);
             startActivity(intent);
+            finish();
         }
     }
 

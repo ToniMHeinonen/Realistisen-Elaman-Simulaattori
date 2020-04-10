@@ -123,6 +123,7 @@ public class ScenarioActivity extends ParentActivity {
         intent.putExtra("scenarioID", scenarioID);
         intent.putExtra("userAnswers", userAnswers);
         startActivity(intent);
+        finish();
     }
 
     /**

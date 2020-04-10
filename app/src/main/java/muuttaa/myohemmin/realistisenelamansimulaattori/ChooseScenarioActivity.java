@@ -447,4 +447,12 @@ public class ChooseScenarioActivity extends ParentActivity {
 
         refreshScenarioList();
     }
+
+    /**
+     * Closes application when user presses back on this Activity.
+     */
+    @Override
+    public void onBackPressed() {
+        finishAffinity();
+    }
 }
