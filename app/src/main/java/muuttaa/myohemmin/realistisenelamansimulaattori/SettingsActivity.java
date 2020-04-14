@@ -21,6 +21,10 @@ public class SettingsActivity extends ParentActivity {
     // Sound
     private int S_CORRECT = R.raw.correct;
 
+    /**
+     * Initializes all the necessary values.
+     * @param savedInstanceState previous instance state
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         // Load font theme
@@ -36,6 +40,9 @@ public class SettingsActivity extends ParentActivity {
         setupAudio();
     }
 
+    /**
+     * Sets up views for changing font size.
+     */
     private void setupFontSize() {
         final Spinner sizeSpinner = findViewById(R.id.fontSize);
         // Create an ArrayAdapter using the string array and a default spinner layout
@@ -65,6 +72,9 @@ public class SettingsActivity extends ParentActivity {
         });
     }
 
+    /**
+     * Sets up views for changing font color.
+     */
     private void setupFontColor() {
         final Spinner colorSpinner = findViewById(R.id.fontColor);
         // Create an ArrayAdapter using the string array and a default spinner layout
@@ -94,6 +104,9 @@ public class SettingsActivity extends ParentActivity {
         });
     }
 
+    /**
+     * Updates font size and color and saves the values on memory.
+     */
     private void updateFontStyle() {
         int size = GlobalPrefs.loadFontSizePos();
         int color = GlobalPrefs.loadFontColorPos();
@@ -102,6 +115,9 @@ public class SettingsActivity extends ParentActivity {
         updateViews();
     }
 
+    /**
+     * Sets up views for controlling audio volume.
+     */
     private void setupAudio() {
         // Music
         final SeekBar musicBar = findViewById(R.id.musicBar);
@@ -144,9 +160,14 @@ public class SettingsActivity extends ParentActivity {
         });
     }
 
+    /**
+     * Sets language for the app.
+     * @param v language view
+     */
     public void languageSelected(View v) {
         String language = (String) v.getTag();
 
+        // If clicked language is not the current one
         if (!language.equals(GlobalPrefs.loadLanguage())) {
             GlobalPrefs.saveLanguage(language);
             InitializeActivity.setAppLocale(language);
@@ -155,12 +176,17 @@ public class SettingsActivity extends ParentActivity {
         }
     }
 
+    /**
+     * Restarts activity to apply changes to views.
+     */
     private void updateViews() {
-        // Restart activity to apply changes to xml
         finish();
         startActivity(getIntent());
     }
 
+    /**
+     * Finishes current activity and starts ChooseScenarioActivity.
+     */
     @Override
     public void onBackPressed() {
         finish();
