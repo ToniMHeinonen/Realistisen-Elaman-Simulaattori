@@ -12,6 +12,7 @@ import muuttaa.myohemmin.realistisenelamansimulaattori.ChooseScenarioActivity;
 import muuttaa.myohemmin.realistisenelamansimulaattori.Helper;
 import muuttaa.myohemmin.realistisenelamansimulaattori.R;
 import muuttaa.myohemmin.realistisenelamansimulaattori.ScenarioActivity;
+import muuttaa.myohemmin.realistisenelamansimulaattori.data.SaveSystemPreferences;
 
 public class ScenarioDialog extends Dialog implements
         View.OnClickListener {
@@ -42,7 +43,8 @@ public class ScenarioDialog extends Dialog implements
         TextView categoryView = findViewById(R.id.name);
         categoryView.setText(scenario.getName());
 
-        boolean editable = false;
+        SaveSystemPreferences sys = new SaveSystemPreferences(activity);
+        boolean editable = sys.checkIfScenarioIsUserCreated(scenario.getName());
 
         // Set listeners
         Button modifyBtn = findViewById(R.id.modifyButton);
