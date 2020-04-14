@@ -1,9 +1,12 @@
-package muuttaa.myohemmin.realistisenelamansimulaattori;
+package muuttaa.myohemmin.realistisenelamansimulaattori.tools;
 
 import android.content.Context;
 import android.content.res.Resources;
 import android.util.Log;
 import android.widget.Toast;
+
+import muuttaa.myohemmin.realistisenelamansimulaattori.BuildConfig;
+import muuttaa.myohemmin.realistisenelamansimulaattori.R;
 
 public class Debug {
     private static int DEBUG_LEVEL = 5;

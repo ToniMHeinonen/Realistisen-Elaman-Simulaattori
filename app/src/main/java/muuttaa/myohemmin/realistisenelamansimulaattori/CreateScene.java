@@ -3,6 +3,7 @@ package muuttaa.myohemmin.realistisenelamansimulaattori;
 import androidx.appcompat.app.AlertDialog;
 import muuttaa.myohemmin.realistisenelamansimulaattori.data.GeneralKeyAndValue;
 import muuttaa.myohemmin.realistisenelamansimulaattori.data.Scene;
+import muuttaa.myohemmin.realistisenelamansimulaattori.tools.GlobalPrefs;
 
 import android.app.Activity;
 import android.content.Context;

@@ -17,9 +17,10 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
 
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 import muuttaa.myohemmin.realistisenelamansimulaattori.data.SaveSystemPreferences;
+import muuttaa.myohemmin.realistisenelamansimulaattori.tools.Debug;
+import muuttaa.myohemmin.realistisenelamansimulaattori.tools.GlobalPrefs;
 
 public class ScenarioActivity extends ParentActivity {
     private String scenario;

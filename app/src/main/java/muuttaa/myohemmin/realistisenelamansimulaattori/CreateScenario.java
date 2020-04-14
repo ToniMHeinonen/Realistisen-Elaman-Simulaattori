@@ -5,6 +5,8 @@ import androidx.core.content.FileProvider;
 import muuttaa.myohemmin.realistisenelamansimulaattori.data.SaveSystemPreferences;
 import muuttaa.myohemmin.realistisenelamansimulaattori.data.Scenario;
 import muuttaa.myohemmin.realistisenelamansimulaattori.data.Scene;
+import muuttaa.myohemmin.realistisenelamansimulaattori.tools.GlobalPrefs;
+
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;

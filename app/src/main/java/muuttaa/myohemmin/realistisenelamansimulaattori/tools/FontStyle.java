@@ -1,4 +1,6 @@
-package muuttaa.myohemmin.realistisenelamansimulaattori;
+package muuttaa.myohemmin.realistisenelamansimulaattori.tools;
+
+import muuttaa.myohemmin.realistisenelamansimulaattori.R;
 
 public enum FontStyle {
     SmallBlack(R.style.FontStyle_Small_Black, "SmallBlack"),

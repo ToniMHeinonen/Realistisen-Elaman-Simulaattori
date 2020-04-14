@@ -1,7 +1,7 @@
 package muuttaa.myohemmin.realistisenelamansimulaattori;
 
-import androidx.appcompat.app.AppCompatActivity;
 import muuttaa.myohemmin.realistisenelamansimulaattori.choosescenarioitem.ScenarioItemPrefs;
+import muuttaa.myohemmin.realistisenelamansimulaattori.tools.GlobalPrefs;
 
 import android.content.Context;
 import android.content.Intent;

@@ -18,7 +18,7 @@ import java.util.List;
 import java.util.Map;
 
 import muuttaa.myohemmin.realistisenelamansimulaattori.ChooseScenarioActivity;
-import muuttaa.myohemmin.realistisenelamansimulaattori.GlobalPrefs;
+import muuttaa.myohemmin.realistisenelamansimulaattori.tools.GlobalPrefs;
 import muuttaa.myohemmin.realistisenelamansimulaattori.InitializeActivity;
 import muuttaa.myohemmin.realistisenelamansimulaattori.R;
 

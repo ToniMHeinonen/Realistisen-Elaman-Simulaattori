@@ -1,6 +1,9 @@
-package muuttaa.myohemmin.realistisenelamansimulaattori;
+package muuttaa.myohemmin.realistisenelamansimulaattori.tools;
 
 import android.media.MediaPlayer;
+
+import muuttaa.myohemmin.realistisenelamansimulaattori.InitializeActivity;
+import muuttaa.myohemmin.realistisenelamansimulaattori.R;
 
 public abstract class Music {
 

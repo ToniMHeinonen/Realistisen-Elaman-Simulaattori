@@ -1,6 +1,8 @@
 package muuttaa.myohemmin.realistisenelamansimulaattori;
 
-import androidx.appcompat.app.AppCompatActivity;
+import muuttaa.myohemmin.realistisenelamansimulaattori.tools.FontStyle;
+import muuttaa.myohemmin.realistisenelamansimulaattori.tools.GlobalPrefs;
+import muuttaa.myohemmin.realistisenelamansimulaattori.tools.Music;
 
 import android.content.Intent;
 import android.os.Bundle;

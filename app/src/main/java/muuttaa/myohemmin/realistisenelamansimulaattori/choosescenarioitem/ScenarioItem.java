@@ -2,7 +2,7 @@ package muuttaa.myohemmin.realistisenelamansimulaattori.choosescenarioitem;
 
 import java.util.Date;
 
-import muuttaa.myohemmin.realistisenelamansimulaattori.Debug;
+import muuttaa.myohemmin.realistisenelamansimulaattori.tools.Debug;
 
 public class ScenarioItem {
 

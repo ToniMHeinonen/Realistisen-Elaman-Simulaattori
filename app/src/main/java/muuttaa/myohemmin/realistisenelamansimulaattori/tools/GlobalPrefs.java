@@ -1,8 +1,10 @@
-package muuttaa.myohemmin.realistisenelamansimulaattori;
+package muuttaa.myohemmin.realistisenelamansimulaattori.tools;
 
 import android.content.SharedPreferences;
 
 import java.util.ArrayList;
+
+import muuttaa.myohemmin.realistisenelamansimulaattori.InitializeActivity;
 
 public abstract class GlobalPrefs {
     private static SharedPreferences prefs;

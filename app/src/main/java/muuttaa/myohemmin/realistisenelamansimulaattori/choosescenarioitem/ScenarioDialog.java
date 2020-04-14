@@ -10,7 +10,7 @@ import android.widget.TextView;
 
 import muuttaa.myohemmin.realistisenelamansimulaattori.ChooseScenarioActivity;
 import muuttaa.myohemmin.realistisenelamansimulaattori.CreateScenario;
-import muuttaa.myohemmin.realistisenelamansimulaattori.Helper;
+import muuttaa.myohemmin.realistisenelamansimulaattori.tools.Helper;
 import muuttaa.myohemmin.realistisenelamansimulaattori.R;
 import muuttaa.myohemmin.realistisenelamansimulaattori.ScenarioActivity;
 import muuttaa.myohemmin.realistisenelamansimulaattori.data.SaveSystemPreferences;

@@ -1,4 +1,4 @@
-package muuttaa.myohemmin.realistisenelamansimulaattori;
+package muuttaa.myohemmin.realistisenelamansimulaattori.tools;
 
 public interface AlertPositiveButtonListener {
     /**

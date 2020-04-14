@@ -1,4 +1,4 @@
-package muuttaa.myohemmin.realistisenelamansimulaattori;
+package muuttaa.myohemmin.realistisenelamansimulaattori.tools;
 
 import android.app.Activity;
 import android.media.AudioManager;

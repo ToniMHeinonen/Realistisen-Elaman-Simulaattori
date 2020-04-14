@@ -7,8 +7,9 @@ import muuttaa.myohemmin.realistisenelamansimulaattori.choosescenarioitem.Scenar
 import muuttaa.myohemmin.realistisenelamansimulaattori.choosescenarioitem.ScenarioItem;
 import muuttaa.myohemmin.realistisenelamansimulaattori.choosescenarioitem.ScenarioItemPrefs;
 import muuttaa.myohemmin.realistisenelamansimulaattori.data.SaveSystemPreferences;
+import muuttaa.myohemmin.realistisenelamansimulaattori.tools.Debug;
+import muuttaa.myohemmin.realistisenelamansimulaattori.tools.GlobalPrefs;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.DragEvent;
 import android.view.View;

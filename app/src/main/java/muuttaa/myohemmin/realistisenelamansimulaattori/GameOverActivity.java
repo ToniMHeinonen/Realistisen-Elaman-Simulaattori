@@ -7,8 +7,8 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-import androidx.appcompat.app.AppCompatActivity;
 import muuttaa.myohemmin.realistisenelamansimulaattori.choosescenarioitem.ScenarioItemPrefs;
+import muuttaa.myohemmin.realistisenelamansimulaattori.tools.GlobalPrefs;
 
 public class GameOverActivity extends ParentActivity {
     private ArrayList<Integer> userAnswers;
