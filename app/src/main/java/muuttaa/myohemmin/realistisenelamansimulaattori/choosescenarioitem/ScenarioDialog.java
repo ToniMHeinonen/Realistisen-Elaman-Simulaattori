@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import muuttaa.myohemmin.realistisenelamansimulaattori.ChooseScenarioActivity;
+import muuttaa.myohemmin.realistisenelamansimulaattori.CreateScenario;
 import muuttaa.myohemmin.realistisenelamansimulaattori.Helper;
 import muuttaa.myohemmin.realistisenelamansimulaattori.R;
 import muuttaa.myohemmin.realistisenelamansimulaattori.ScenarioActivity;
@@ -86,6 +87,10 @@ public class ScenarioDialog extends Dialog implements
                         (() -> resetScenario()), null);
                 break;
             case R.id.modifyButton:
+                Intent i = new Intent(activity, CreateScenario.class);
+                i.putExtra("edit", true);
+                i.putExtra("name", scenario.getName());
+                activity.startActivity(i);
                 dismiss();
                 break;
             case R.id.deleteButton:
