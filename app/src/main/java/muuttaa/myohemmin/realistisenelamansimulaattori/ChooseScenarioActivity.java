@@ -332,8 +332,8 @@ public class ChooseScenarioActivity extends ParentActivity {
                 Collections.sort(scenarios, new Comparator<ScenarioItem>() {
                     public int compare(ScenarioItem o1, ScenarioItem o2) {
                         return sortAscending ?
-                                o1.getName().compareTo(o2.getName()) :
-                                o2.getName().compareTo(o1.getName());
+                                o1.getName().compareToIgnoreCase(o2.getName()) :
+                                o2.getName().compareToIgnoreCase(o1.getName());
                     }
                 });
                 break;
