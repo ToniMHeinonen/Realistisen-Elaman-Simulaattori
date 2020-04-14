@@ -17,10 +17,18 @@ public enum FontStyle {
     private int resId;
     private String title;
 
+    /**
+     * Returns the resource code.
+     * @return resource code
+     */
     public int getResId() {
         return resId;
     }
 
+    /**
+     * Returns the title.
+     * @return title
+     */
     public String getTitle() {
         return title;
     }
