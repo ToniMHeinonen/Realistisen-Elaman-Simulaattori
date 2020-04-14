@@ -54,9 +54,7 @@ public class GameOverActivity extends ParentActivity {
 
     public void goToMenu(View v) {
         if (v.getId() == R.id.backToMenu) {
-            Intent intent = new Intent(this, ChooseScenarioActivity.class);
-            startActivity(intent);
-            finish();
+            onBackPressed();
         }
     }
 
@@ -70,5 +68,12 @@ public class GameOverActivity extends ParentActivity {
             result = getString(R.string.completed_perfect);
         }
         return result;
+    }
+
+    @Override
+    public void onBackPressed() {
+        Intent intent = new Intent(this, ChooseScenarioActivity.class);
+        startActivity(intent);
+        finish();
     }
 }
