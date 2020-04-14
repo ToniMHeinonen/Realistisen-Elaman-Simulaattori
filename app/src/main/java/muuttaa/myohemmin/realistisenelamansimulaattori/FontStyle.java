@@ -25,6 +25,11 @@ public enum FontStyle {
         return title;
     }
 
+    /**
+     * Initializes font style.
+     * @param resId resource id
+     * @param title font style title
+     */
     FontStyle(int resId, String title) {
         this.resId = resId;
         this.title = title;

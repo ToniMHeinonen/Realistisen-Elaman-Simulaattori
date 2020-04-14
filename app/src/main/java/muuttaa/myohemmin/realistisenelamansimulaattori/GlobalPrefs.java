@@ -163,6 +163,10 @@ public abstract class GlobalPrefs {
         prefs.edit().putBoolean(keySortAscending, ascending).apply();
     }
 
+    /**
+     * Loads font style.
+     * @return saved font style
+     */
     public static FontStyle loadFontStyle() {
         String defaultValue = FontStyle.SmallBlack.name();
         FontStyle style;
@@ -175,46 +179,90 @@ public abstract class GlobalPrefs {
         return style;
     }
 
+    /**
+     * Saves font style.
+     * @param style new font style
+     */
     public static void saveFontStyle(FontStyle style) {
         prefs.edit().putString(keyFontStyle, style.name()).commit();
     }
 
+    /**
+     * Loads the spinner position of font size.
+     * @return spinner position
+     */
     public static int loadFontSizePos() {
         return prefs.getInt(keyFontSizePos, 0);
     }
 
+    /**
+     * Saves the spinner position of the font size.
+     * @param pos current position
+     */
     public static void saveFontSizePos(int pos) {
         prefs.edit().putInt(keyFontSizePos, pos).commit();
     }
 
+    /**
+     * Loads the spinner position of font color.
+     * @return spinner position
+     */
     public static int loadFontColorPos() {
         return prefs.getInt(keyFontColorPos, 0);
     }
 
+    /**
+     * Saves the spinner position of the font color.
+     * @param pos current position
+     */
     public static void saveFontColorPos(int pos) {
         prefs.edit().putInt(keyFontColorPos, pos).commit();
     }
 
+    /**
+     * Loads the volume of the sound.
+     * @return sound volume
+     */
     public static float loadSoundVolume() {
         return prefs.getFloat(keySoundVolume, 0.8f);
     }
 
+    /**
+     * Saves the volume of the sound.
+     * @param volume current sound volume
+     */
     public static void saveSoundVolume(float volume) {
         prefs.edit().putFloat(keySoundVolume, volume).commit();
     }
 
+    /**
+     * Loads the volume of the music.
+     * @return music volume
+     */
     public static float loadMusicVolume() {
         return prefs.getFloat(keyMusicVolume, 0.8f);
     }
 
+    /**
+     * Saves the volume of the music.
+     * @param volume current music volume
+     */
     public static void saveMusicVolume(float volume) {
         prefs.edit().putFloat(keyMusicVolume, volume).commit();
     }
 
+    /**
+     * Loads the app language.
+     * @return app language
+     */
     public static String loadLanguage() {
         return prefs.getString(keyLanguage, "");
     }
 
+    /**
+     * Saves the app language.
+     * @param languageCode selected language
+     */
     public static void saveLanguage(String languageCode) {
         prefs.edit().putString(keyLanguage, languageCode).commit();
     }

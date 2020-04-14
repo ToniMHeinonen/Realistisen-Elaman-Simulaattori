@@ -17,6 +17,10 @@ public class InitializeActivity extends ParentActivity {
 
     private static Context mContext;
 
+    /**
+     * Initializes necessary values.
+     * @param savedInstanceState previous instance state
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         mContext = this;
