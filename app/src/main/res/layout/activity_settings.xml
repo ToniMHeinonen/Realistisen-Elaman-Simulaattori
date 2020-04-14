@@ -25,11 +25,7 @@
             style="@style/SettingsTitles"
             android:text="@string/font_title" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:orientation="horizontal"
-            android:gravity="center">
+        <LinearLayout style="@style/SettingsRowLayouts">
 
             <TextView
                 style="@style/SettingsTopics"
@@ -41,11 +37,7 @@
 
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:orientation="horizontal"
-            android:gravity="center">
+        <LinearLayout style="@style/SettingsRowLayouts">
 
             <TextView
                 style="@style/SettingsTopics"
@@ -69,11 +61,7 @@
             style="@style/SettingsTitles"
             android:text="@string/audio_title" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:orientation="horizontal"
-            android:gravity="center">
+        <LinearLayout style="@style/SettingsRowLayouts">
 
             <TextView
                 style="@style/SettingsTopics"
@@ -85,11 +73,7 @@
 
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:orientation="horizontal"
-            android:gravity="center">
+        <LinearLayout style="@style/SettingsRowLayouts">
 
             <TextView
                 style="@style/SettingsTopics"

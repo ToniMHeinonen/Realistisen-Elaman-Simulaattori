@@ -83,10 +83,19 @@
     </style>
 
     <!-- Settings Activity -->
+    <style name="SettingsRowLayouts">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
     <style name="SettingsTitles">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_margin">25dp</item>
+        <item name="android:layout_margin">15dp</item>
         <item name="android:textAlignment">center</item>
         <item name="android:textSize">?attr/font_large</item>
         <item name="android:textColor">?attr/font_color</item>
@@ -95,7 +104,7 @@
 
     <style name="SettingsTopics">
         <item name="android:layout_width">0dp</item>
-        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_weight">0.5</item>
         <item name="android:textSize">?attr/font_medium</item>
         <item name="android:textColor">?attr/font_color</item>
@@ -104,7 +113,7 @@
 
     <style name="SettingsSpinners">
         <item name="android:layout_width">0dp</item>
-        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_weight">0.5</item>
         <item name="android:layout_gravity">center</item>
     </style>
