@@ -210,11 +210,20 @@ public class CategoriesListAdapter extends BaseExpandableListAdapter {
         return convertView;
     }
 
+    /**
+     * Returns the amount of group types.
+     * @return group type amount
+     */
     @Override
     public int getGroupTypeCount() {
         return 2;
     }
 
+    /**
+     * Returns the group type in the given position.
+     * @param groupPosition position to check
+     * @return group type
+     */
     @Override
     public int getGroupType(int groupPosition) {
         switch (groupPosition) {

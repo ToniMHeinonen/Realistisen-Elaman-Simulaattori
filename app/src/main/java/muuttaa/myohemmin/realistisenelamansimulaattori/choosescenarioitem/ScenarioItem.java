@@ -76,10 +76,18 @@ public class ScenarioItem {
         ScenarioItemPrefs.savePercentage(id, percentageCompleted);
     }
 
+    /**
+     * Returns the category of the item.
+     * @return category
+     */
     public String getCategory() {
         return category;
     }
 
+    /**
+     * Sets the category of the item.
+     * @param category category to set
+     */
     public void setCategory(String category) {
         this.category = category;
         ScenarioItemPrefs.saveCategory(id, category);
