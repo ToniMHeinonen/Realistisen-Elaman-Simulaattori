@@ -59,18 +59,36 @@ public class ChooseScenarioActivity extends ParentActivity {
         setContentView(R.layout.activity_main);
         json = new SaveSystemPreferences(this);
 
-        loadScenarios(); // Load scenarios from json
         setupSorting(); // Setup sorting spinner
 
         // Categories
         categoriesListView = findViewById(R.id.categoriesPlaceholder);
-        showScenarioList();
+        showScenarioList(); // Setup category and scenario list
+    }
+
+    /**
+     * Refresh activity when resuming.
+     */
+    @Override
+    protected void onResume() {
+        refreshActivity();
+        super.onResume();
+    }
+
+    /**
+     * Load scenarios and refresh all necessary list values.
+     */
+    public void refreshActivity() {
+        loadScenarios();        // Load scenarios from json
+        sortList();             // Sorts loaded list by current sort style
+        refreshScenarioList();  // Informs list adapter for changes
     }
 
     /**
      * Loads scenarios from json and creates ScenarioItem objects from them.
      */
     private void loadScenarios() {
+        scenarios.clear();
         List<String> scenarioNames = json.getScenarioList();
 
         for (int i = 0; i < scenarioNames.size(); i++) {
@@ -83,8 +101,6 @@ public class ChooseScenarioActivity extends ParentActivity {
      * @param scenario scenario to delete
      */
     public void deleteScenario(ScenarioItem scenario) {
-        scenarios.clear();
-
         // Load scenarios in id order
         loadScenarios();
 
@@ -103,9 +119,8 @@ public class ChooseScenarioActivity extends ParentActivity {
         SaveSystemPreferences json = new SaveSystemPreferences(this);
         json.deleteScenario(scenario.getName());
 
-        // Restart activity
-        finish();
-        startActivity(new Intent(this, ChooseScenarioActivity.class));
+        // Reload list
+        refreshActivity();
     }
 
     /**

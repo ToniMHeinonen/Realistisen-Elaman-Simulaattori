@@ -72,8 +72,8 @@ public class GameOverActivity extends ParentActivity {
 
     @Override
     public void onBackPressed() {
-        Intent intent = new Intent(this, ChooseScenarioActivity.class);
-        startActivity(intent);
+        // Start new intent just in case if previous one has been closed by the memory management
+        startActivity(new Intent(this, ChooseScenarioActivity.class));
         finish();
     }
 }

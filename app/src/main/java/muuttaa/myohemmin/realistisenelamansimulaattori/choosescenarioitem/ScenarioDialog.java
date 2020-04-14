@@ -113,9 +113,8 @@ public class ScenarioDialog extends Dialog implements
      */
     private void resetScenario() {
         ScenarioItemPrefs.resetScenarioItem(scenario.getId());
-        // Reload activity
-        activity.startActivity(new Intent(activity, ChooseScenarioActivity.class));
-        activity.finish();
+        activity.refreshActivity();
+        dismiss();
     }
 
     /**
