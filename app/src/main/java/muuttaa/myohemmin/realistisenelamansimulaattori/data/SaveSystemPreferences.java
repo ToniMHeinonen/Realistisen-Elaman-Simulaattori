@@ -784,6 +784,11 @@ public class SaveSystemPreferences implements JsonInterface {
      */
     public boolean checkIfScenarioIsUserCreated(String name){
         String g = getStringFromFile("savedata2.json");
+
+        // If user has not created own scenarios yet, g is null
+        if (g == null)
+            return false;
+
         boolean oliko = false;
         //scenarios from file
         try {
