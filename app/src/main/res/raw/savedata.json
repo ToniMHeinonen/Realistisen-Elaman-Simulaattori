@@ -1,5 +1,5 @@
 {
-  "scenarios": [ "Movie Theater", "Store Checkout", "Bus Trip", "visiting the library", "Taking care of a dog"],
+  "scenarios": [ "Movie Theater", "Store Checkout", "Bus Trip", "Visiting the library", "Taking care of a dog"],
   "scenarioslist": [
     {"name": "Movie Theater", "file": "teatteri.json"},
     {"name": "Store Checkout", "file": "kaupan_kassa.json"},
