@@ -1,9 +1,10 @@
 {
-  "scenarios": [ "Leffateatteri", "Kaupan kassa", "Bussimatka", "Kirjastossa käyminen"],
+  "scenarios": [ "Leffateatteri", "Kaupan kassa", "Bussimatka", "Kirjastossa käyminen", "Koirasta huolehtiminen"],
   "scenarioslist": [
     {"name": "Leffateatteri", "file": "teatteri.json"},
     {"name": "Kaupan kassa", "file": "kaupan_kassa.json"},
     {"name":  "Bussimatka", "file":  "bussimatka.json"},
-    {"name":  "Kirjastossa käyminen", "file": "kirjastokaynti_skenaario.json"}
+    {"name":  "Kirjastossa käyminen", "file": "kirjastokaynti_skenaario.json"},
+    {"name":  "Koirasta huolehtiminen", "file": "koirasta_huolehtiminen.json"}
   ]
 }
