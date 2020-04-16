@@ -466,6 +466,7 @@ public class SaveSystemPreferences implements JsonInterface {
                 help.put("background", scene.getBackground());
                 help.put("person", scene.getPerson());
                 help.put("face", scene.getFace());
+                help.put("fore", scene.getForeground());
                 JSONArray array = new JSONArray();
                 String[] l = scene.getAnswers();
                 for (int k=0; k < l.length; k++){
@@ -595,6 +596,7 @@ public class SaveSystemPreferences implements JsonInterface {
                 help.put("background", scene.getBackground());
                 help.put("person", scene.getPerson());
                 help.put("face", scene.getFace());
+                help.put("fore", scene.getForeground());
                 JSONArray array = new JSONArray();
                 String[] l = scene.getAnswers();
                 for (int k = 0; k < l.length; k++) {
@@ -748,6 +750,7 @@ public class SaveSystemPreferences implements JsonInterface {
                 String back = apu.getString("background");
                 String per = apu.getString("person");
                 String fac = apu.getString("face");
+                String fore = apu.getString("fore");
                 JSONArray array = apu.getJSONArray("answers");
                 String[] ans = new String[array.length()];
                 List<GeneralKeyAndValue> goList = new LinkedList<>();
@@ -762,7 +765,9 @@ public class SaveSystemPreferences implements JsonInterface {
                     goList.add(new GeneralKeyAndValue(arvo, apu.getString(arvo)));
                     colorList.add(new GeneralKeyAndValue(arvo + "Color", apu.getString(arvo + "Color")));
                 }
-                scenes.add(new Scene(key, question, back, per, fac, ans, goList, colorList));
+                Scene aut = new Scene(key, question, back, per, fac, ans, goList, colorList);
+                aut.setForeground(fore);
+                scenes.add(aut);
             }
             Scenario scenario = new Scenario();
             scenario.setListaus(scenes);
