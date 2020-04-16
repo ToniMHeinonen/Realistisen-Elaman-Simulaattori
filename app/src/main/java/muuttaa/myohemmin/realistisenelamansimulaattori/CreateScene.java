@@ -30,6 +30,7 @@ public class CreateScene extends ParentActivity implements dialogiFragmentti.dia
     private Spinner background;
     private Spinner person;
     private Spinner face;
+    private Spinner foreground;
     private ListView lista;
     private ImageView tausta;
     private ImageView henkilo;
@@ -55,6 +56,7 @@ public class CreateScene extends ParentActivity implements dialogiFragmentti.dia
         this.tausta = (ImageView) findViewById(R.id.createBackground);
         this.henkilo = (ImageView) findViewById(R.id.createCharacter);
         this.kasvot = (ImageView) findViewById(R.id.createFace);
+        this.foreground = (Spinner) findViewById(R.id.ForegroundSpinner);
         korvaus = getIntent().getIntExtra("korvaus", -1);
         if(getIntent().getBooleanExtra("muokkaus", false)){
             Scene apu = (Scene) getIntent().getParcelableExtra("scene");
@@ -87,6 +89,12 @@ public class CreateScene extends ParentActivity implements dialogiFragmentti.dia
         adapterKasvot.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
         this.face.setAdapter(adapterKasvot);
+
+        ArrayAdapter<CharSequence> adapterForeground = ArrayAdapter.createFromResource(this,
+                R.array.kolmasKuva, android.R.layout.simple_spinner_item);
+        adapterKasvot.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+
+        this.foreground.setAdapter(adapterForeground);
         //listeners
         this.background.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
@@ -121,6 +129,17 @@ public class CreateScene extends ParentActivity implements dialogiFragmentti.dia
 
             }
         });
+        this.foreground.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                updateImages();
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
         //updates
         updateImages();
         updateListOfAnswers();
@@ -144,6 +163,7 @@ public class CreateScene extends ParentActivity implements dialogiFragmentti.dia
         } else{
             this.kasvot.setImageResource(android.R.color.transparent);
         }
+        //pakko lisätä foreground koodi myöhemmin tähän
     }
 
     public void updateListOfAnswers(){

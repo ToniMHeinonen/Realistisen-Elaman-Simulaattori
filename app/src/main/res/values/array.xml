@@ -16,4 +16,7 @@
         <item>red</item>
         <item>yellow</item>
     </string-array>
+    <string-array name="kolmasKuva">
+        <item>null</item>
+    </string-array>
 </resources>

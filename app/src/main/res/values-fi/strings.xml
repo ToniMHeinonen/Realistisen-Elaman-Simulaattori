@@ -111,4 +111,5 @@
     <string name="remove_item">Haluatko varmasti poistaa tämän?</string>
     <string name="can_delete">Pitkä painallus poistaa vaihtoehdon listalta ja lyhyellä painalluksella voit muokata sitä.</string>
     <string name="saved_scenario">Skenaario tallennettu</string>
+    <string name="choose_fore">Valitse Foreground:</string>
 </resources>
