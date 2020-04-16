@@ -238,6 +238,23 @@ public class SaveSystemPreferences implements JsonInterface {
         }
         return list;
     }
+
+    @Override
+    public String getForegroundPicture() {
+        createJSONObjectOfScenario();
+        String out = null;
+        try {
+            JSONObject base = this.rootInScenario;
+            out = base.getJSONObject(this.scenarioName).getString("fore");
+        } catch (JSONException e){
+            if(debuggi){
+                Log.e("ScenarioFile", "tiedostosta ei saati dataa");
+                e.printStackTrace();
+            }
+        }
+        return out;
+    }
+
     /**
      * This method create jsonObject if it is null (not contains already)
      */
