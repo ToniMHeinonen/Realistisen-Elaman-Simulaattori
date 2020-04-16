@@ -112,4 +112,7 @@
     <string name="can_delete">Long click remove item from list and short click you can modify it.</string>
     <string name="saved_scenario">Scenario saved</string>
     <string name="choose_fore">Choose foreground:</string>
+    <string name="not_enough_scene">Need least one scene</string>
+    <string name="remember_name">Must give name</string>
+    <string name="unique_name">Give unique name</string>
 </resources>

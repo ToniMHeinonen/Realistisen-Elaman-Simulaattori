@@ -39,6 +39,7 @@ public class CreateScenario extends ParentActivity {
     private boolean debuggi = true;
     private String outName = "";
     private boolean editMode = false;
+    private SaveSystemPreferences saveSystem;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,6 +48,7 @@ public class CreateScenario extends ParentActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_scenario);
+        saveSystem = new SaveSystemPreferences(this);
         this.scenarioName = (EditText) findViewById(R.id.ScenarioCreateName);
         this.listaview = (ListView) findViewById(R.id.listaScene);
         //check if is edit scenario
@@ -171,96 +173,100 @@ public class CreateScenario extends ParentActivity {
     }
 
     public void lisaa(View view) {
-        String name = scenarioName.getText().toString().toLowerCase();
-        SaveSystemPreferences json = new SaveSystemPreferences(this);
-        final Context con = this;
-        if(json.containsAlready(name)){
-            if(editMode) {
-                Scenario scenario = new Scenario();
-                scenario.setListaus(list);
-                scenario.setName(name);
-                String korjattu = "";
-                for (int lap = 0; lap < name.length(); lap++) {
-                    char m = name.charAt(lap);
-                    if (m != ' ') {
-                        korjattu += m;
+        if(allDataGiven()) {
+            String name = scenarioName.getText().toString().toLowerCase();
+            SaveSystemPreferences json = new SaveSystemPreferences(this);
+            final Context con = this;
+            if (json.containsAlready(name)) {
+                if (editMode) {
+                    Scenario scenario = new Scenario();
+                    scenario.setListaus(list);
+                    scenario.setName(name);
+                    String korjattu = "";
+                    for (int lap = 0; lap < name.length(); lap++) {
+                        char m = name.charAt(lap);
+                        if (m != ' ') {
+                            korjattu += m;
+                        }
                     }
+                    scenario.setFileName(korjattu + ".json");
+                    json.saveScenario(scenario, true);
+                    finish();
+                } else {
+                    Toast.makeText(this, getString(R.string.duplicate_warning), Toast.LENGTH_LONG).show();
                 }
-                scenario.setFileName(korjattu + ".json");
-                json.saveScenario(scenario, true);
-                finish();
-            } else{
-                Toast.makeText(this, getString(R.string.duplicate_warning), Toast.LENGTH_LONG).show();
-            }
-        } else {
-            try {
-                Scenario scenario = new Scenario();
-                scenario.setListaus(list);
-                scenario.setName(name);
-                String korjattu = "";
-                for(int lap=0; lap < name.length(); lap++){
-                    char m = name.charAt(lap);
-                    if(m != ' '){
-                        korjattu += m;
+            } else {
+                try {
+                    Scenario scenario = new Scenario();
+                    scenario.setListaus(list);
+                    scenario.setName(name);
+                    String korjattu = "";
+                    for (int lap = 0; lap < name.length(); lap++) {
+                        char m = name.charAt(lap);
+                        if (m != ' ') {
+                            korjattu += m;
+                        }
                     }
-                }
-                scenario.setFileName(korjattu + ".json");
-                json.saveScenario(scenario, false);
-                Toast.makeText(this, getString(R.string.saved_scenario), Toast.LENGTH_LONG).show();
-                startActivity(new Intent(this, ChooseScenarioActivity.class));
-                finish();
-            } catch (Exception e) {
-                Toast.makeText(this, this.getString(R.string.is_all_data_given), Toast.LENGTH_LONG).show();
-                if (debuggi) {
-                    e.printStackTrace();
+                    scenario.setFileName(korjattu + ".json");
+                    json.saveScenario(scenario, false);
+                    Toast.makeText(this, getString(R.string.saved_scenario), Toast.LENGTH_LONG).show();
+                    startActivity(new Intent(this, ChooseScenarioActivity.class));
+                    finish();
+                } catch (Exception e) {
+                    Toast.makeText(this, this.getString(R.string.is_all_data_given), Toast.LENGTH_LONG).show();
+                    if (debuggi) {
+                        e.printStackTrace();
+                    }
                 }
             }
         }
     }
 
     public void laheta(View view) throws IOException {
-        Scenario scenario = new Scenario();
-        scenario.setListaus(list);
-        String name = scenarioName.getText().toString().toLowerCase();
-        scenario.setName(name);
-        String korjattu = "";
-        for(int lap=0; lap < name.length(); lap++){
-            char m = name.charAt(lap);
-            if(m != ' '){
-                korjattu += m;
+        if(allDataGiven()) {
+            Scenario scenario = new Scenario();
+            scenario.setListaus(list);
+            String name = scenarioName.getText().toString().toLowerCase();
+            scenario.setName(name);
+            String korjattu = "";
+            for (int lap = 0; lap < name.length(); lap++) {
+                char m = name.charAt(lap);
+                if (m != ' ') {
+                    korjattu += m;
+                }
             }
-        }
-        String file = korjattu + ".json";
-        scenario.setFileName(file);
-        SaveSystemPreferences json = new SaveSystemPreferences(this);
-        if(json.containsAlready(name)){
-            if(editMode) {
-                json.saveScenario(scenario, true);
-            } else{
-                Toast.makeText(this, getString(R.string.duplicate_warning), Toast.LENGTH_LONG).show();
-            }
-        } else{
-            json.saveScenario(scenario, false);
-        }
-        Toast.makeText(this, this.getString(R.string.file_saved), Toast.LENGTH_LONG).show();
-
-        Intent intentShareFile = new Intent(Intent.ACTION_SEND);
-
-        String myFilePath = getFilesDir() + "/" + file;
-        File fileWithinMyDir = new File(myFilePath);
-        Uri path = FileProvider.getUriForFile(this, "muuttaa.myohemmin.realistisenelamansimulaattori", fileWithinMyDir);
-        if (fileWithinMyDir.exists()) {
-            intentShareFile.setType("application/json");
-            if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
-                intentShareFile.putExtra(Intent.EXTRA_STREAM, path);
+            String file = korjattu + ".json";
+            scenario.setFileName(file);
+            SaveSystemPreferences json = new SaveSystemPreferences(this);
+            if (json.containsAlready(name)) {
+                if (editMode) {
+                    json.saveScenario(scenario, true);
+                } else {
+                    Toast.makeText(this, getString(R.string.duplicate_warning), Toast.LENGTH_LONG).show();
+                }
             } else {
-                intentShareFile.putExtra(Intent.EXTRA_STREAM, path);
+                json.saveScenario(scenario, false);
             }
-            intentShareFile.putExtra(Intent.EXTRA_SUBJECT,
-                    file);
-            intentShareFile.putExtra(Intent.EXTRA_TEXT, file);
+            Toast.makeText(this, this.getString(R.string.file_saved), Toast.LENGTH_LONG).show();
 
-            startActivity(Intent.createChooser(intentShareFile, this.getString(R.string.send_scenario)));
+            Intent intentShareFile = new Intent(Intent.ACTION_SEND);
+
+            String myFilePath = getFilesDir() + "/" + file;
+            File fileWithinMyDir = new File(myFilePath);
+            Uri path = FileProvider.getUriForFile(this, "muuttaa.myohemmin.realistisenelamansimulaattori", fileWithinMyDir);
+            if (fileWithinMyDir.exists()) {
+                intentShareFile.setType("application/json");
+                if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+                    intentShareFile.putExtra(Intent.EXTRA_STREAM, path);
+                } else {
+                    intentShareFile.putExtra(Intent.EXTRA_STREAM, path);
+                }
+                intentShareFile.putExtra(Intent.EXTRA_SUBJECT,
+                        file);
+                intentShareFile.putExtra(Intent.EXTRA_TEXT, file);
+
+                startActivity(Intent.createChooser(intentShareFile, this.getString(R.string.send_scenario)));
+            }
         }
     }
 
@@ -320,8 +326,34 @@ public class CreateScenario extends ParentActivity {
 
         builder.show();
     }
+    private boolean allDataGiven(){
+        String nimi = this.scenarioName.getText().toString();
+        int montakoScenea = this.list.size();
+        if(montakoScenea < 1){
+            dataNotGivenAlert(getString(R.string.not_enough_scene), getString(R.string.not_added));
+            return false;
+        } else if(nimi.isEmpty()){
+            dataNotGivenAlert(getString(R.string.remember_name), getString(R.string.not_added));
+            return false;
+        } else if(saveSystem.containsAlready(nimi)){
+            dataNotGivenAlert(getString(R.string.unique_name), getString(R.string.not_added));
+            return false;
+        }
+        return true;
+    }
 
-
-
-
+    private void dataNotGivenAlert(String content, String toastMessage){
+        Context co = this;
+        new AlertDialog.Builder(this)
+                .setTitle(this.getString(R.string.huom))
+                .setMessage(content)
+                .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                        Toast.makeText(co, toastMessage, Toast.LENGTH_LONG).show();
+                    }
+                })
+                .setNegativeButton(android.R.string.no, null)
+                .setIcon(android.R.drawable.ic_dialog_alert)
+                .show();
+    }
 }
