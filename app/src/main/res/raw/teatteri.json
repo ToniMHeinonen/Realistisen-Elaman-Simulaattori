@@ -4,6 +4,7 @@
     "background": "background_1",
     "person": "null",
     "face": "null",
+    "fore": "null",
     "answers": [
       "You go to buy a ticket and treats",
       "You go to the bathroom",
@@ -21,6 +22,7 @@
     "background": "background_1",
     "person": "character_1",
     "face": "face_happy",
+    "fore": "null",
     "answers": [
       "You tell at which movie you’re going to go watch and say you want to buy a ticket",
       "You just give the seller treats, you don’t say anything and you go later to buy the ticket separately",
@@ -38,6 +40,7 @@
     "background": "background_1",
     "person": "null",
     "face": "null",
+    "fore": "null",
     "answers": [
       "You go to buy treats and tickets",
       "You leave the theater"
@@ -52,6 +55,7 @@
     "background": "background_1",
     "person": "character_1",
     "face": "face_happy",
+    "fore": "null",
     "answers": [
       "You ask the theater staff what you should do",
       "You leave the theater"
@@ -66,6 +70,7 @@
     "background": "background_1",
     "person": "character_1",
     "face": "face_happy",
+    "fore": "null",
     "answers": [
       "You send a complaint to the theater for no reason",
       "You go home",
@@ -83,6 +88,7 @@
     "background": "background_1",
     "person": "character_1",
     "face": "face_happy",
+    "fore": "null",
     "answers": [
       "You go to sit in that place",
       "You stay standing"
@@ -97,6 +103,7 @@
     "background": "background_1",
     "person": "character_1",
     "face": "face_happy",
+    "fore": "null",
     "answers": [
       "You go to the queue",
       "You wait for the queue to finish and then you go to the hall",
@@ -114,6 +121,7 @@
     "background": "background_1",
     "person": "character_1",
     "face": "face_happy",
+    "fore": "null",
     "answers": [
       "You offer your own place",
       "You do nothing",
@@ -131,6 +139,7 @@
     "background": "background_1",
     "person": "character_1",
     "face": "face_happy",
+    "fore": "null",
     "answers": [
       "You put your own trash in the trash can, go to the bathroom and leave the theater",
       "You put your own trash in the trash can and go home",

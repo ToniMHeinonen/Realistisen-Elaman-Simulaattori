@@ -3,6 +3,7 @@
     "question": "Saavut elokuvateatteriin ja haluat mennä katsomaan uutta elokuvaa yksin. Sinulla ei ole vielä lippua. \nMitä teet ensimmäisenä?",
     "background": "background_1",
     "person": "null",
+    "fore": "null",
     "face": "null",
     "answers": [
       "Menet ostamaan lipun ja herkut",
@@ -21,6 +22,7 @@
     "background": "background_1",
     "person": "character_1",
     "face": "face_happy",
+    "fore": "null",
     "answers": [
       "Kerrot, mihin leffaan aiot mennä ja sanot haluavasi ostaa lipun",
       "Annat myyjälle vain herkut, et sano mitään ja käyt myöhemmin ostamassa lipun erikseen",
@@ -38,6 +40,7 @@
     "background": "background_1",
     "person": "null",
     "face": "null",
+    "fore": "null",
     "answers": [
       "Menet ostamaan herkut ja liput",
       "Lähdet teatterista"
@@ -52,6 +55,7 @@
     "background": "background_1",
     "person": "character_1",
     "face": "face_happy",
+    "fore": "null",
     "answers": [
       "Kysyt teatterin henkilökunnalta, mitä sinun pitäisi tehdä",
       "Lähdet teatterista"
@@ -66,6 +70,7 @@
     "background": "background_1",
     "person": "character_1",
     "face": "face_happy",
+    "fore": "null",
     "answers": [
       "Lähetät teatterille valituksen ilman syytä",
       "Menet kotiin",
@@ -83,6 +88,7 @@
     "background": "background_1",
     "person": "character_1",
     "face": "face_happy",
+    "fore": "null",
     "answers": [
       "Menet istumaan kyseiselle paikalle",
       "Jäät seisomaan"
@@ -97,6 +103,7 @@
     "background": "background_1",
     "person": "character_1",
     "face": "face_happy",
+    "fore": "null",
     "answers": [
       "Menet jonoon",
       "Odotat, että jono on mennyt ja menet sitten saliin",
@@ -114,6 +121,7 @@
     "background": "background_1",
     "person": "character_1",
     "face": "face_happy",
+    "fore": "null",
     "answers": [
       "Tarjoat omaa paikkaasi",
       "Et tee mitään",
@@ -131,6 +139,7 @@
     "background": "background_1",
     "person": "character_1",
     "face": "face_happy",
+    "fore": "null",
     "answers": [
       "Laitat omat roskasi roskiin, käyt vessassa ja lähdet teatterista",
       "Laitat omat roskasi roskiin ja lähdet kotiin",
