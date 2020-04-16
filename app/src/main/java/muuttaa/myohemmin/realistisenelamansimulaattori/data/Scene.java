@@ -147,6 +147,7 @@ public class Scene implements Parcelable {
         dest.writeString(background);
         dest.writeString(person);
         dest.writeString(face);
+        dest.writeString(foreground);
         dest.writeStringArray(answers);
         dest.writeTypedList(goList);
         dest.writeTypedList(colorList);
@@ -163,6 +164,7 @@ public class Scene implements Parcelable {
     private Scene(Parcel in){
         name = in.readString();
         question = in.readString();
+        foreground = in.readString();
         background = in.readString();
         person = in.readString();
         face = in.readString();
