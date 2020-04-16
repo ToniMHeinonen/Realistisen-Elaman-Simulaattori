@@ -117,4 +117,6 @@
     <string name="unique_name">Anna uniikki nimi</string>
     <string name="need_first">Tarvitaan kohtaus nimeltä first</string>
     <string name="too_many_first">Vain yhden kohtauksen nimi voi olla first</string>
+    <string name="remember_question">Muista antaa kysymys</string>
+    <string name="remember_answers">Pitää antaa vähintään yksi vastaus</string>
 </resources>

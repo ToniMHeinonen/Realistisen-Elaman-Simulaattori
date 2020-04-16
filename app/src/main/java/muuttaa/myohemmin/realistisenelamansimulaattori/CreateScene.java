@@ -221,25 +221,28 @@ public class CreateScene extends ParentActivity implements dialogiFragmentti.dia
     }
 
     public void pois(View view) {
-        try {
-            String nimi = this.name.getText().toString();
-            String kysymys = this.question.getText().toString();
-            String tausta = this.background.getSelectedItem().toString();
-            String henkilo = this.person.getSelectedItem().toString();
-            String kasvo = this.face.getSelectedItem().toString();
-            String[] ans = new String[kysymyksetGo.size()];
-            for (int lap = 0; lap < kysymyksetGo.size(); lap++) {
-                ans[lap] = kysymyksetGo.get(lap).getKey();
+        if(allDataGiven()) {
+            try {
+                String nimi = this.name.getText().toString();
+                String kysymys = this.question.getText().toString();
+                String tausta = this.background.getSelectedItem().toString();
+                String henkilo = this.person.getSelectedItem().toString();
+                String kasvo = this.face.getSelectedItem().toString();
+                String foree = this.foreground.getSelectedItem().toString();
+                String[] ans = new String[kysymyksetGo.size()];
+                for (int lap = 0; lap < kysymyksetGo.size(); lap++) {
+                    ans[lap] = kysymyksetGo.get(lap).getKey();
+                }
+                Scene scene = new Scene(nimi, kysymys, tausta, henkilo, kasvo, ans, kysymyksetGo, kysymyksetColor);
+                scene.setForeground(foree);
+                Intent returnIntent = new Intent();
+                returnIntent.putExtra("scene", (Parcelable) scene);
+                returnIntent.putExtra("korvaus", korvaus);
+                setResult(Activity.RESULT_OK, returnIntent);
+                finish();
+            } catch (Exception e) {
+                Toast.makeText(this, this.getString(R.string.is_all_data_given), Toast.LENGTH_LONG).show();
             }
-            Scene scene = new Scene(nimi, kysymys, tausta, henkilo, kasvo, ans, kysymyksetGo, kysymyksetColor);
-
-            Intent returnIntent = new Intent();
-            returnIntent.putExtra("scene", (Parcelable) scene);
-            returnIntent.putExtra("korvaus", korvaus);
-            setResult(Activity.RESULT_OK, returnIntent);
-            finish();
-        } catch (Exception e){
-            Toast.makeText(this, this.getString(R.string.is_all_data_given), Toast.LENGTH_LONG).show();
         }
     }
     @Override
@@ -253,5 +256,36 @@ public class CreateScene extends ParentActivity implements dialogiFragmentti.dia
             this.kysymyksetColor.add(new GeneralKeyAndValue(vastaus + "Color", varia));
             updateListOfAnswers();
         }
+    }
+    private boolean allDataGiven(){
+        if(this.name.getText().toString().trim().isEmpty()){
+            dataNotGivenAlert(getString(R.string.remember_name), getString(R.string.not_added));
+            return false;
+        } else if(this.question.getText().toString().trim().isEmpty()){
+            dataNotGivenAlert(getString(R.string.remember_question), getString(R.string.not_added));
+            return false;
+        } else if(this.kysymyksetGo.size() < 1){
+            dataNotGivenAlert(getString(R.string.remember_answers), getString(R.string.not_added));
+            return false;
+        }
+        return true;
+    }
+    private void dataNotGivenAlert(String content, String toastMessage){
+        Context co = this;
+        new AlertDialog.Builder(this)
+                .setTitle(this.getString(R.string.huom))
+                .setMessage(content)
+                .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                        Toast.makeText(co, toastMessage, Toast.LENGTH_LONG).show();
+                    }
+                })
+                .setNegativeButton(android.R.string.no, new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                        Toast.makeText(co, toastMessage, Toast.LENGTH_LONG).show();
+                    }
+                })
+                .setIcon(android.R.drawable.ic_dialog_alert)
+                .show();
     }
 }

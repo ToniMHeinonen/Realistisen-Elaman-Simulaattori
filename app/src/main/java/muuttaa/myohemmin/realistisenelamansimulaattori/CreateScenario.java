@@ -340,7 +340,7 @@ public class CreateScenario extends ParentActivity {
         if(montakoScenea < 1){
             dataNotGivenAlert(getString(R.string.not_enough_scene), getString(R.string.not_added));
             return false;
-        } else if(nimi.isEmpty()){
+        } else if(nimi.trim().isEmpty()){
             dataNotGivenAlert(getString(R.string.remember_name), getString(R.string.not_added));
             return false;
         } else if(saveSystem.containsAlready(nimi)){

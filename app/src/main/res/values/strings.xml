@@ -117,4 +117,6 @@
     <string name="unique_name">Give unique name</string>
     <string name="need_first">Need scene with name first</string>
     <string name="too_many_first">Only one scene can name to first</string>
+    <string name="remember_question">Must give question</string>
+    <string name="remember_answers">Must give least one answer</string>
 </resources>
