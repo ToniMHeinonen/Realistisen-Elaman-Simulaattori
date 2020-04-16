@@ -11,6 +11,7 @@ public class Scene implements Parcelable {
     private String background;
     private String person;
     private String face;
+    private String foreground;
     private String[] answers;
     private List<GeneralKeyAndValue> goList;
     private List<GeneralKeyAndValue> colorList;
@@ -37,6 +38,16 @@ public class Scene implements Parcelable {
 
     }
 
+    public String getForeground() {
+        if( foreground == null){
+            return "null";
+        }
+        return foreground;
+    }
+
+    public void setForeground(String foreground) {
+        this.foreground = foreground;
+    }
     public String getName() {
         return name;
     }
