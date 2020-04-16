@@ -115,4 +115,6 @@
     <string name="not_enough_scene">Täytyy olla vähintään yksi kohtaus</string>
     <string name="remember_name">Muista antaa nimi</string>
     <string name="unique_name">Anna uniikki nimi</string>
+    <string name="need_first">Tarvitaan kohtaus nimeltä first</string>
+    <string name="too_many_first">Vain yhden kohtauksen nimi voi olla first</string>
 </resources>

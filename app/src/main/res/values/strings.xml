@@ -115,4 +115,6 @@
     <string name="not_enough_scene">Need least one scene</string>
     <string name="remember_name">Must give name</string>
     <string name="unique_name">Give unique name</string>
+    <string name="need_first">Need scene with name first</string>
+    <string name="too_many_first">Only one scene can name to first</string>
 </resources>

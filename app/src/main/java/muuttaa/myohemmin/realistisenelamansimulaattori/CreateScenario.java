@@ -329,6 +329,14 @@ public class CreateScenario extends ParentActivity {
     private boolean allDataGiven(){
         String nimi = this.scenarioName.getText().toString();
         int montakoScenea = this.list.size();
+        boolean onkoFirst = false;
+        int montakoFirst = 0;
+        for(int lap=0; lap < this.list.size(); lap++){
+            if(this.list.get(lap).getName().equals("first")){
+                onkoFirst = true;
+                montakoFirst++;
+            }
+        }
         if(montakoScenea < 1){
             dataNotGivenAlert(getString(R.string.not_enough_scene), getString(R.string.not_added));
             return false;
@@ -337,6 +345,12 @@ public class CreateScenario extends ParentActivity {
             return false;
         } else if(saveSystem.containsAlready(nimi)){
             dataNotGivenAlert(getString(R.string.unique_name), getString(R.string.not_added));
+            return false;
+        } else if(!onkoFirst){
+            dataNotGivenAlert(getString(R.string.need_first), getString(R.string.not_added));
+            return false;
+        } else if(montakoFirst > 1){
+            dataNotGivenAlert(getString(R.string.too_many_first), getString(R.string.not_added));
             return false;
         }
         return true;
