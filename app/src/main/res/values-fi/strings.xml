@@ -119,4 +119,6 @@
     <string name="too_many_first">Vain yhden kohtauksen nimi voi olla first</string>
     <string name="remember_question">Muista antaa kysymys</string>
     <string name="remember_answers">Pitää antaa vähintään yksi vastaus</string>
+    <string name="remember_one_answer">Muista antaa vastaus</string>
+    <string name="default_answer">oletus vastaus</string>
 </resources>

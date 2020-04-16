@@ -19,6 +19,7 @@ public class dialogiFragmentti extends AppCompatDialogFragment {
     private EditText vastaus;
     private dialogiFragmentListener listener;
     private int korvaus = -1;
+    private int koko = 0;
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState){
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
@@ -32,6 +33,7 @@ public class dialogiFragmentti extends AppCompatDialogFragment {
             menee.setText(getArguments().getString("menee", " "));
             vastaus.setText(getArguments().getString("kysymys", " "));
         }
+        koko = getArguments().getInt("koko", 0);
         builder.setView(view)
                 .setTitle(getContext().getString(R.string.create_answer))
                 .setNegativeButton(getContext().getString(R.string.back_button), new DialogInterface.OnClickListener() {
@@ -43,14 +45,22 @@ public class dialogiFragmentti extends AppCompatDialogFragment {
                 .setPositiveButton(getContext().getString(R.string.done), new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        try {
-                            String v = vari.getSelectedItem().toString();
-                            String m = menee.getText().toString();
-                            String vas = vastaus.getText().toString();
-                            listener.applyDataBack(v, m, vas, korvaus);
-                        } catch (Exception e){
-                            Toast.makeText(getActivity(), getContext().getString(R.string.give_all_data), Toast.LENGTH_LONG).show();
-                        }
+                            try {
+                                String v = vari.getSelectedItem().toString();
+                                String m = menee.getText().toString();
+                                //if go is empty
+                                if(m.trim().isEmpty()){
+                                    m = "null";
+                                }
+                                String vas = vastaus.getText().toString();
+                                //if answer is empty then replace default
+                                if(vas.trim().isEmpty()){
+                                    vas = getString(R.string.default_answer) + " " + (koko + 1);
+                                }
+                                listener.applyDataBack(v, m, vas, korvaus);
+                            } catch (Exception e) {
+                                Toast.makeText(getActivity(), getContext().getString(R.string.give_all_data), Toast.LENGTH_LONG).show();
+                            }
                     }
                 });
 

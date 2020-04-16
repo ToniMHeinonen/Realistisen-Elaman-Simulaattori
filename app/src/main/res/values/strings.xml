@@ -119,4 +119,6 @@
     <string name="too_many_first">Only one scene can name to first</string>
     <string name="remember_question">Must give question</string>
     <string name="remember_answers">Must give least one answer</string>
+    <string name="remember_one_answer">Must give answer</string>
+    <string name="default_answer">default answer</string>
 </resources>

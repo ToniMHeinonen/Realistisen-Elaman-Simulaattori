@@ -204,6 +204,7 @@ public class CreateScene extends ParentActivity implements dialogiFragmentti.dia
                 bundle.putString("menee", meno.getValue());
                 bundle.putString("kysymys", meno.getKey());
                 bundle.putInt("korvaa", position);
+                bundle.putInt("koko", kysymyksetColor.size());
                 dialogiFragmentti dia = new dialogiFragmentti();
                 dia.setArguments(bundle);
                 dia.show(getSupportFragmentManager(), "vastauksen luonti");
@@ -215,6 +216,7 @@ public class CreateScene extends ParentActivity implements dialogiFragmentti.dia
         Bundle bundle = new Bundle();
         bundle.putBoolean("muokkaus", false);
         bundle.putInt("korvaa", -1);
+        bundle.putInt("koko", kysymyksetColor.size());
         dialogiFragmentti dia = new dialogiFragmentti();
         dia.setArguments(bundle);
         dia.show(getSupportFragmentManager(), "vastauksen luonti");
