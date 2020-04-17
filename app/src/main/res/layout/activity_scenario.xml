@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_weight="1"
+    android:id="@+id/scenarioLayout"
     tools:context=".ScenarioActivity">
 
     <ImageView
@@ -40,7 +41,6 @@
         android:fontFamily="sans-serif-medium"
         android:textSize="?attr/font_medium"
         android:textColor="?attr/font_color"
-        android:layout_marginBottom="10dp"
         android:layout_marginTop="10dp"
         android:paddingLeft="5dp"
         android:paddingRight="5dp"
@@ -51,6 +51,7 @@
         android:id="@+id/answers"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:layout_below="@+id/question"/>
 
 </RelativeLayout>

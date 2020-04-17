@@ -8,10 +8,13 @@ import android.graphics.drawable.TransitionDrawable;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.TranslateAnimation;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -36,6 +39,9 @@ public class ScenarioActivity extends ParentActivity {
     private Drawable characterStart, characterEnd, faceStart, faceEnd;
     private ColorDrawable emptyDrawable = new ColorDrawable(Color.TRANSPARENT);
     private ImageView answeredImageView;
+    private RelativeLayout scenarioLayout;
+    private ListView list;
+    private ArrayAdapter<String> arrayAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,6 +51,7 @@ public class ScenarioActivity extends ParentActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_scenario);
         userAnswers = new ArrayList<>();
+        scenarioLayout = findViewById(R.id.scenarioLayout);
         Bundle extras = getIntent().getExtras();
         if (extras != null) {
             scenario = extras.getString("scenario");
@@ -55,6 +62,46 @@ public class ScenarioActivity extends ParentActivity {
         }
     }
 
+    /**
+     * Called when answer is clicked.
+     */
+    private void buttonClickedAnimation() {
+        try {
+            list.animate().translationX(0 - scenarioLayout.getWidth()).setDuration(1000).start();
+            Handler handler = new Handler();
+            handler.postDelayed(this::afterButtonClickedAnimation, 1000);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    /**
+     * Called, when buttons have moved outside of the screen.
+     */
+    private void afterButtonClickedAnimation() {
+        // Set default background-color for button.
+        answeredImageView.setImageResource(R.drawable.button_default);
+        list.setX(scenarioLayout.getWidth());
+
+        // If the question was last from the scenario, go to GameOverActivity
+        // and send user's answers. Else update the questions in arrayadapter.
+        if (saveSystem.endOfScenario()) {
+            scenarioFinished();
+        } else {
+            colors = saveSystem.getColorsInString();
+            questionTextView.setText(saveSystem.getQuestionFromScenario());
+            arrayAdapter.clear();
+            arrayAdapter.addAll(saveSystem.getAnswersList());
+            arrayAdapter.notifyDataSetChanged();
+            updateImages();
+            list.animate().translationX(0).setDuration(1000).start();
+            list.setEnabled(true);
+        }
+    }
+
+    /**
+     * Define variables.
+     */
     private void setupStart() {
         saveSystem = new SaveSystemPreferences(this);
         saveSystem.setCurrentScenario(scenario);
@@ -66,10 +113,13 @@ public class ScenarioActivity extends ParentActivity {
         face = findViewById(R.id.scenarioFace);
     }
 
+    /**
+     * Setup answers in listview.
+     */
     private void setupAnswers() {
-        final ListView list = findViewById(R.id.answers);
+        list = findViewById(R.id.answers);
         List<String> answersList = saveSystem.getAnswersList();
-        final ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this,
+        arrayAdapter = new ArrayAdapter<String>(this,
                 R.layout.scenario_adapter, R.id.choiceText, answersList);
         list.setAdapter(arrayAdapter);
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -96,28 +146,16 @@ public class ScenarioActivity extends ParentActivity {
                 handler.postDelayed(new Runnable() {
                     @Override
                     public void run() {
-                        // Set default background-color for button.
-                        answeredImageView.setImageResource(R.drawable.button_default);
-
-                        // If the question was last from the scenario, go to GameOverActivity
-                        // and send user's answers. Else update the questions in arrayadapter.
-                        if (saveSystem.endOfScenario()) {
-                            scenarioFinished();
-                        } else {
-                            colors = saveSystem.getColorsInString();
-                            questionTextView.setText(saveSystem.getQuestionFromScenario());
-                            arrayAdapter.clear();
-                            arrayAdapter.addAll(saveSystem.getAnswersList());
-                            arrayAdapter.notifyDataSetChanged();
-                            updateImages();
-                            list.setEnabled(true);
-                        }
+                        buttonClickedAnimation();
                     }
-                }, 1000);
+                }, 500);
             }
         });
     }
 
+    /**
+     * Called, after last scene.
+     */
     private void scenarioFinished() {
         Intent intent = new Intent(getApplicationContext(), GameOverActivity.class);
         intent.putExtra("scenario", saveSystem.getCurrentScenario());
@@ -170,6 +208,11 @@ public class ScenarioActivity extends ParentActivity {
         }
     }
 
+    /**
+     * Animate characters.
+     * @param previousCharacter character-image of previous scene
+     * @param previousFace face-image of previous scene
+     */
     private void checkPersonTransition(String previousCharacter, String previousFace) {
         try {
             if (saveSystem.getPersonPicture() != null) {
@@ -216,6 +259,10 @@ public class ScenarioActivity extends ParentActivity {
         }
     }
 
+    /**
+     * Animate face, when character animates too.
+     * @param previousFace face-image of previous scene
+     */
     private void checkFaceTransition(String previousFace) {
         try {
             // from "null" to "face_"
