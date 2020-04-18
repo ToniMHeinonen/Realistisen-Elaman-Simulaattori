@@ -105,12 +105,12 @@
             <ImageView
                 android:tag="en"
                 style="@style/SettingsFlags"
-                android:background="@drawable/en_flag" />
+                android:src="@drawable/en_flag" />
 
             <ImageView
                 android:tag="fi"
                 style="@style/SettingsFlags"
-                android:background="@drawable/fi_flag"/>
+                android:src="@drawable/fi_flag"/>
 
         </LinearLayout>
 
