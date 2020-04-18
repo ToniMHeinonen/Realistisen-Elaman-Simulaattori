@@ -12,7 +12,6 @@
             android:layout_height="wrap_content"
             android:layout_weight="0.3"
             android:text="@string/choose_color"
-            android:textColor="?attr/font_color"
             android:textSize="?attr/font_medium" />
         <Spinner
             android:layout_width="0dp"
@@ -31,13 +30,11 @@
             android:layout_height="wrap_content"
             android:layout_weight="0.3"
             android:text="@string/write_answer"
-            android:textColor="?attr/font_color"
             android:textSize="?attr/font_medium" />
         <EditText
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:id="@+id/vastauksenTeksti"
-            android:textColor="?attr/font_color"
             android:textSize="?attr/font_medium"
             android:layout_weight="0.7"/>
     </LinearLayout>
@@ -51,13 +48,11 @@
             android:layout_height="wrap_content"
             android:layout_weight="0.6"
             android:text="@string/info_next_scene"
-            android:textColor="?attr/font_color"
             android:textSize="?attr/font_small" />
         <EditText
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:id="@+id/menee"
-            android:textColor="?attr/font_color"
             android:textSize="?attr/font_medium"
             android:layout_weight="0.4"/>
     </LinearLayout>

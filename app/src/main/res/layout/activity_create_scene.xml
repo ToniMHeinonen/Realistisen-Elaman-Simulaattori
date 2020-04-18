@@ -48,7 +48,6 @@
         android:layout_marginTop="15dp"
         android:onClick="pois"
         android:text="@string/done"
-        android:textColor="?attr/font_color"
         android:textSize="?attr/font_medium" />
 
     <TextView
@@ -66,13 +65,11 @@
             android:layout_height="wrap_content"
             android:layout_weight="0.3"
             android:text="@string/scene_name_give"
-            android:textColor="?attr/font_color"
             android:textSize="?attr/font_small" />
         <EditText
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:textSize="?attr/font_small"
-            android:textColor="?attr/font_color"
             android:id="@+id/scenenNimi"
             android:layout_weight="0.7"/>
     </LinearLayout>
@@ -87,13 +84,11 @@
             android:layout_height="wrap_content"
             android:layout_weight="0.3"
             android:text="@string/scene_question"
-            android:textColor="?attr/font_color"
             android:textSize="?attr/font_small" />
         <EditText
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:textSize="?attr/font_small"
-            android:textColor="?attr/font_color"
             android:id="@+id/kysymys"
             android:layout_weight="0.7"/>
     </LinearLayout>
@@ -112,7 +107,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/choose_background"
-                android:textColor="?attr/font_color"
                 android:textSize="?attr/font_medium" />
             <Spinner
                 android:layout_width="wrap_content"
@@ -129,7 +123,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/choose_person"
-                android:textColor="?attr/font_color"
                 android:textSize="?attr/font_medium" />
             <Spinner
                 android:layout_width="wrap_content"
@@ -146,7 +139,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/choose_face"
-                android:textColor="?attr/font_color"
                 android:textSize="?attr/font_medium" />
             <Spinner
                 android:layout_width="wrap_content"
@@ -163,7 +155,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/choose_fore"
-                android:textColor="?attr/font_color"
                 android:textSize="?attr/font_medium" />
             <Spinner
                 android:layout_width="wrap_content"
@@ -180,7 +171,6 @@
         android:layout_height="wrap_content"
         android:onClick="vastaus"
         android:text="@string/create_answer"
-        android:textColor="?attr/font_color"
         android:textSize="?attr/font_medium" />
     <ListView
         android:layout_width="match_parent"

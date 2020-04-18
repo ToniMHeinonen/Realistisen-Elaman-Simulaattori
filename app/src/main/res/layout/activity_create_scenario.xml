@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -18,7 +17,6 @@
             android:layout_weight="0.5"
             android:onClick="importtaus"
             android:text="@string/import_file"
-            android:textColor="?attr/font_color"
             android:textSize="?attr/font_medium" />
 
         <Button
@@ -28,7 +26,6 @@
             android:layout_weight="0.5"
             android:onClick="laheta"
             android:text="@string/export_file"
-            android:textColor="?attr/font_color"
             android:textSize="?attr/font_medium" />
     </LinearLayout>
 
@@ -38,7 +35,6 @@
         android:layout_marginTop="15dp"
         android:onClick="luo"
         android:text="@string/create_scene"
-        android:textColor="?attr/font_color"
         android:textSize="?attr/font_medium" />
     <TextView
         android:layout_width="match_parent"
@@ -55,14 +51,12 @@
             android:layout_height="wrap_content"
             android:layout_weight="0.5"
             android:text="@string/scenario_name_give"
-            android:textColor="?attr/font_color"
             android:textSize="?attr/font_medium" />
         <EditText
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.5"
             android:textSize="?attr/font_medium"
-            android:textColor="?attr/font_color"
             android:id="@+id/ScenarioCreateName"/>
     </LinearLayout>
     <ListView
@@ -76,6 +70,5 @@
         android:layout_height="wrap_content"
         android:onClick="lisaa"
         android:text="@string/add"
-        android:textColor="?attr/font_color"
         android:textSize="?attr/font_medium" />
 </LinearLayout>

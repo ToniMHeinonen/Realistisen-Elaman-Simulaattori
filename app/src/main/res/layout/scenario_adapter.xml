@@ -21,6 +21,5 @@
         android:padding="15dp"
         android:layout_marginBottom="5dp"
         android:textSize="?attr/font_medium"
-        android:textColor="?attr/font_color"
         android:textAlignment="center" />
 </RelativeLayout>
