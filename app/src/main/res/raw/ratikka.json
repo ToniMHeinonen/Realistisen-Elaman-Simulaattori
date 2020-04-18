@@ -1,0 +1,158 @@
+{
+  "first": {
+    "question": "Päätät kulkea ratikalla. Kävellessäsi pysäkille mietit, miten aiot maksaa matkan.",
+    "background": "background_1",
+    "person": "null",
+    "fore": "null",
+    "face": "null",
+    "answers": [
+      "Tilaat ratikkayhtiön mobiilisovelluksella",
+      "Olet jo etukäteen ladannut matkakorttiin arvoa",
+      "Ostat kertalipun automaatista ennen pysäkille menoa",
+      "Et aio maksaa"
+    ],
+    "Tilaat ratikkayhtiön mobiilisovelluksella": "pysakki",
+    "Olet jo etukäteen ladannut matkakorttiin arvoa": "pysakki",
+    "Ostat kertalipun automaatista ennen pysäkille menoa": "pysakki",
+    "Et aio maksaa": "eiMaksuaPysakki",
+    "Tilaat ratikkayhtiön mobiilisovelluksellaColor": "green",
+    "Olet jo etukäteen ladannut matkakorttiin arvoaColor": "green",
+    "Ostat kertalipun automaatista ennen pysäkille menoaColor": "green",
+    "Et aio maksaaColor": "red"
+  },
+  "pysakki": {
+    "question": "Istut pysäkillä, kunnes odottamasi ratikka saapuu näköpiiriin.",
+    "background": "background_1",
+    "person": "character_1",
+    "face": "face_happy",
+    "fore": "null",
+    "answers": [
+      "Et tee elettäkään osoittaaksesi ratikkakuskille, että olet nousemassa kyytiin",
+      "Nouset seisomaan ja heilutat toisella kädellä osoittaaksesi, että haluat kyytiin",
+      "Näet, että toinen henkilö viittilöi kuskille, joten et tee mitään"
+    ],
+    "Et tee elettäkään osoittaaksesi ratikkakuskille, että olet nousemassa kyytiin": "ratikkaOhi",
+    "Nouset seisomaan ja heilutat toisella kädellä osoittaaksesi, että haluat kyytiin": "ratikkaSisaan",
+    "Näet, että toinen henkilö viittilöi kuskille, joten et tee mitään": "ratikkaSisaan",
+    "Et tee elettäkään osoittaaksesi ratikkakuskille, että olet nousemassa kyytiinColor": "red",
+    "Nouset seisomaan ja heilutat toisella kädellä osoittaaksesi, että haluat kyytiinColor": "green",
+    "Näet, että toinen henkilö viittilöi kuskille, joten et tee mitäänColor": "green"
+  },
+  "ratikkaOhi": {
+    "question": "Ratikka jatkoi matkaa pysähtymättä pysäkille. Mitä teet?",
+    "background": "background_1",
+    "person": "character_1",
+    "face": "face_happy",
+    "fore": "null",
+    "answers": [
+      "Lähdet kotiin",
+      "Odotat seuraavaa ratikkaa, johon pääset lopulta sisään"
+    ],
+    "Lähdet kotiin": "null",
+    "Odotat seuraavaa ratikkaa, johon pääset lopulta sisään": "ratikkaSisaan",
+    "Lähdet kotiinColor": "red",
+    "Odotat seuraavaa ratikkaa, johon pääset lopulta sisäänColor": "green"
+  },
+  "eiMaksuaPysakki": {
+    "question": "Istut pysäkillä, kunnes odottamasi ratikka saapuu näköpiiriin.",
+    "background": "background_1",
+    "person": "character_1",
+    "face": "face_happy",
+    "fore": "null",
+    "answers": [
+      "Et tee elettäkään osoittaaksesi ratikkakuskille, että olet nousemassa kyytiin",
+      "Nouset seisomaan ja heilutat toisella kädellä osoittaaksesi, että haluat kyytiin",
+      "Näet, että toinen henkilö viittilöi kuskille, joten et tee mitään"
+    ],
+    "Et tee elettäkään osoittaaksesi ratikkakuskille, että olet nousemassa kyytiin": "eiMaksuaRatikkaOhi",
+    "Nouset seisomaan ja heilutat toisella kädellä osoittaaksesi, että haluat kyytiin": "eiMaksuaRatikkaSisaan",
+    "Näet, että toinen henkilö viittilöi kuskille, joten et tee mitään": "eiMaksuaRatikkaSisaan",
+    "Et tee elettäkään osoittaaksesi ratikkakuskille, että olet nousemassa kyytiinColor": "red",
+    "Nouset seisomaan ja heilutat toisella kädellä osoittaaksesi, että haluat kyytiinColor": "green",
+    "Näet, että toinen henkilö viittilöi kuskille, joten et tee mitäänColor": "green"
+  },
+  "eiMaksuaRatikkaOhi": {
+    "question": "Ratikka jatkoi matkaa pysähtymättä pysäkille. Mitä teet?",
+    "background": "background_1",
+    "person": "character_1",
+    "face": "face_happy",
+    "fore": "null",
+    "answers": [
+      "Lähdet kotiin",
+      "Tilaat lipun mobiilisovelluksella ja odotat seuraavaa ratikkaa"
+    ],
+    "Lähdet kotiin": "null",
+    "Tilaat lipun mobiilisovelluksella ja odotat seuraavaa ratikkaa": "ratikkaSisaan",
+    "Lähdet kotiinColor": "red",
+    "Tilaat lipun mobiilisovelluksella ja odotat seuraavaa ratikkaaColor": "green"
+  },
+  "eiMaksuaRatikkaSisaan": {
+    "question": "Pääset ratikkaan sisään, mutta vastassa onkin lipuntarkastaja. Hän aikoo antaa sakot ja poistaa sinut ratikasta.",
+    "background": "background_1",
+    "person": "character_1",
+    "face": "face_happy",
+    "fore": "null",
+    "answers": [
+      "Otat sakot vastaan, pahoittelet, poistut ratikasta ja ensi kerralla maksat lipusta",
+      "Yrität karata paikalta ja jatkaa samalla tavalla ensi kerrallakin"
+    ],
+    "Otat sakot vastaan, pahoittelet, poistut ratikasta ja ensi kerralla maksat lipusta": "null",
+    "Yrität karata paikalta ja jatkaa samalla tavalla ensi kerrallakin": "null",
+    "Otat sakot vastaan, pahoittelet, poistut ratikasta ja ensi kerralla maksat lipustaColor": "green",
+    "Yrität karata paikalta ja jatkaa samalla tavalla ensi kerrallakinColor": "red"
+  },
+  "ratikkaSisaan": {
+    "question": "Päästyäsi ratikkaan sisään näet, että siellä on runsaasti paikkoja vapaana.",
+    "background": "background_1",
+    "person": "character_1",
+    "face": "face_happy",
+    "fore": "null",
+    "answers": [
+      "Menet istumaan vapaalle penkille toisen henkilön viereen",
+      "Menet istumaan vapaalle penkille yksin",
+      "Jäät seisomaan keskelle käytävää ja estät samalla muiden liikkumista"
+    ],
+    "Menet istumaan vapaalle penkille toisen henkilön viereen": "haluuPysahtya",
+    "Menet istumaan vapaalle penkille yksin": "haluuPysahtya",
+    "Jäät seisomaan keskelle käytävää ja estät samalla muiden liikkumista": "haluuPysahtya",
+    "Menet istumaan vapaalle penkille toisen henkilön viereenColor": "green",
+    "Menet istumaan vapaalle penkille yksinColor": "green",
+    "Jäät seisomaan keskelle käytävää ja estät samalla muiden liikkumistaColor": "red"
+  },
+  "haluuPysahtya": {
+    "question": "Haluat poistua ratikasta seuraavalla pysäkillä.",
+    "background": "background_1",
+    "person": "character_1",
+    "face": "face_happy",
+    "fore": "null",
+    "answers": [
+      "Painat stop-painiketta aivan viime hetkellä ennen pysäkkiä",
+      "Kukaan ei ole painanut stop-painiketta, joten painat sitä hyvissä ajoin ennen pysäkkiä",
+      "Huomaat, että toinen henkilö painaa stop-painiketta, mutta painat silti varmuuden vuoksi"
+    ],
+    "Painat stop-painiketta aivan viime hetkellä ennen pysäkkiä": "ulosRatikasta",
+    "Kukaan ei ole painanut stop-painiketta, joten painat sitä hyvissä ajoin ennen pysäkkiä": "ulosRatikasta",
+    "Huomaat, että toinen henkilö painaa stop-painiketta, mutta painat silti varmuuden vuoksi": "ulosRatikasta",
+    "Painat stop-painiketta aivan viime hetkellä ennen pysäkkiäColor": "red",
+    "Kukaan ei ole painanut stop-painiketta, joten painat sitä hyvissä ajoin ennen pysäkkiäColor": "green",
+    "Huomaat, että toinen henkilö painaa stop-painiketta, mutta painat silti varmuuden vuoksiColor": "green"
+  },
+  "ulosRatikasta": {
+    "question": "Ratikka pysähtyy pysäkilläsi, ja ovet aukeavat.",
+    "background": "background_1",
+    "person": "character_1",
+    "face": "face_happy",
+    "fore": "null",
+    "answers": [
+      "Poistut rauhallisesti ratikasta",
+      "Kiität muita matkustajia kyydistä ja poistut ratikasta",
+      "Tönit ihmisiä poistuessasi ratikasta"
+    ],
+    "Poistut rauhallisesti ratikasta": "null",
+    "Kiität muita matkustajia kyydistä ja poistut ratikasta": "null",
+    "Tönit ihmisiä poistuessasi ratikasta": "null",
+    "Poistut rauhallisesti ratikastaColor": "green",
+    "Kiität muita matkustajia kyydistä ja poistut ratikastaColor": "yellow",
+    "Tönit ihmisiä poistuessasi ratikastaColor": "red"
+  }
+}
