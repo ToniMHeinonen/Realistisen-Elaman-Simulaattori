@@ -41,13 +41,7 @@ public class dialogiFragmentti extends AppCompatDialogFragment {
         }
         koko = getArguments().getInt("koko", 0);
         builder.setView(view)
-                .setTitle(getContext().getString(R.string.create_answer))
-                .setNegativeButton(getContext().getString(R.string.back_button), new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-
-                    }
-                })
+                .setNegativeButton(getContext().getString(R.string.back_button), null)
                 .setPositiveButton(getContext().getString(R.string.done), new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {

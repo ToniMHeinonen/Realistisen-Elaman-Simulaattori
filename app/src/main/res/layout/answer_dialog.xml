@@ -35,12 +35,6 @@
 
     </LinearLayout>
 
-    <Spinner
-        android:id="@+id/vastausVari"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"/>
-
     <!-- ANSWER -->
     <TextView
         style="@style/answerTopics"
