@@ -6,4 +6,8 @@
     <color name="colorRed">#910d0d</color>
     <color name="colorGreen">#0d9111</color>
     <color name="colorBlue">#160d91</color>
+
+    <color name="buttonGreen">#0F0</color>
+    <color name="buttonYellow">#FF0</color>
+    <color name="buttonRed">#F00</color>
 </resources>

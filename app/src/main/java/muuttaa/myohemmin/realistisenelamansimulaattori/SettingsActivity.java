@@ -79,7 +79,7 @@ public class SettingsActivity extends ParentActivity {
      */
     private void setupFontColor() {
         final Spinner colorSpinner = findViewById(R.id.fontColor);
-        // Create an ArrayAdapter using the string array and a default spinner layout
+        // Create an ArrayAdapter using the string array and a custom spinner layout
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
                 R.array.font_colors, R.layout.custom_spinner);
 

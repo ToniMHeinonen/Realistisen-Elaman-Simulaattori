@@ -3,8 +3,9 @@
     android:id="@+id/text1"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:gravity="center"
     android:maxLines="1"
     android:padding="5dp"
-    android:textSize="?attr/font_small">
+    android:textSize="?attr/font_medium">
 
 </TextView>

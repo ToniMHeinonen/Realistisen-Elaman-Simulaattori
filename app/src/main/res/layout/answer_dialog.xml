@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- COLOR -->
+    <TextView
+        style="@style/answerTopics"
+        android:text="@string/choose_color"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/greenButton"
+            android:tag="green"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/green_button"/>
+
+        <Button
+            android:id="@+id/yellowButton"
+            android:tag="yellow"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/yellow_button"/>
+
+        <Button
+            android:id="@+id/redButton"
+            android:tag="red"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/red_button"/>
+
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/vastausVari"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+
+    <!-- ANSWER -->
+    <TextView
+        style="@style/answerTopics"
+        android:text="@string/write_answer"/>
+
+    <EditText
+        android:id="@+id/vastauksenTeksti"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="?attr/font_medium"/>
+
+    <!-- GOES TO -->
+    <TextView
+        style="@style/answerTopics"
+        android:text="@string/info_next_scene" />
+
+    <EditText
+        android:id="@+id/menee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="?attr/font_medium"/>
+
+</LinearLayout>
