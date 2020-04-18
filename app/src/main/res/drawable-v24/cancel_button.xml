@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="false">
+        <shape
+            android:shape="rectangle">
+            <solid android:color="@color/closeButtonRed"/>
+            <corners android:radius="@dimen/custom_button_radius" />
+            <stroke android:width="@dimen/custom_button_border_width"
+                android:color="#000" />
+        </shape>
+    </item>
+
+    <item>
+        <shape
+            android:shape="rectangle">
+            <solid android:color="@color/closeButtonRed"/>
+            <corners android:radius="@dimen/custom_button_radius" />
+            <stroke android:width="@dimen/custom_button_border_width"
+                android:color="@color/buttonBorderSelected" />
+        </shape>
+    </item>
+</selector>

@@ -3,4 +3,7 @@
     <dimen name="button_radius">10dp</dimen>
     <dimen name="button_border_unselected_width">2dp</dimen>
     <dimen name="button_border_selected_width">4dp</dimen>
+
+    <dimen name="custom_button_border_width">2dp</dimen>
+    <dimen name="custom_button_radius">5dp</dimen>
 </resources>

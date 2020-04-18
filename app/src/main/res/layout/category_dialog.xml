@@ -33,6 +33,6 @@
             android:id="@+id/back"
             style="@style/HamburgerButton"
             android:text="@string/backButton"
-            android:background="#FD4A4A"/>
+            android:background="@drawable/cancel_button"/>
     </LinearLayout>
 </RelativeLayout>

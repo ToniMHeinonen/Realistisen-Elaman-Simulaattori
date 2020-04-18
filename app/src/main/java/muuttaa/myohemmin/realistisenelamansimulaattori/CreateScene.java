@@ -74,25 +74,21 @@ public class CreateScene extends ParentActivity implements dialogiFragmentti.dia
         }
 
         ArrayAdapter<CharSequence> adapterTaustat = ArrayAdapter.createFromResource(this,
-                R.array.taustat, android.R.layout.simple_spinner_item);
-        adapterTaustat.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                R.array.taustat, R.layout.custom_spinner);
         this.background.setAdapter(adapterTaustat);
 
         ArrayAdapter<CharSequence> adapterHenkilot = ArrayAdapter.createFromResource(this,
-                R.array.henkilot, android.R.layout.simple_spinner_item);
-        adapterHenkilot.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                R.array.henkilot, R.layout.custom_spinner);
 
         this.person.setAdapter(adapterHenkilot);
 
         ArrayAdapter<CharSequence> adapterKasvot = ArrayAdapter.createFromResource(this,
-                R.array.kasvot, android.R.layout.simple_spinner_item);
-        adapterKasvot.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                R.array.kasvot, R.layout.custom_spinner);
 
         this.face.setAdapter(adapterKasvot);
 
         ArrayAdapter<CharSequence> adapterForeground = ArrayAdapter.createFromResource(this,
-                R.array.kolmasKuva, android.R.layout.simple_spinner_item);
-        adapterKasvot.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                R.array.kolmasKuva, R.layout.custom_spinner);
 
         this.foreground.setAdapter(adapterForeground);
         //listeners

@@ -12,30 +12,23 @@
 
         <Button
             android:id="@+id/importti"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/createScenarioMovementButtons"
             android:layout_weight="0.5"
             android:onClick="importtaus"
-            android:text="@string/import_file"
-            android:textSize="?attr/font_medium" />
+            android:text="@string/import_file"/>
 
         <Button
             android:id="@+id/exportti"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/createScenarioMovementButtons"
             android:layout_weight="0.5"
             android:onClick="laheta"
-            android:text="@string/export_file"
-            android:textSize="?attr/font_medium" />
+            android:text="@string/export_file"/>
     </LinearLayout>
 
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
+        style="@style/createScenarioMovementButtons"
         android:onClick="luo"
-        android:text="@string/create_scene"
-        android:textSize="?attr/font_medium" />
+        android:text="@string/create_scene"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -66,9 +59,7 @@
         android:id="@+id/listaScene"/>
 
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        style="@style/createScenarioMovementButtons"
         android:onClick="lisaa"
-        android:text="@string/add"
-        android:textSize="?attr/font_medium" />
+        android:text="@string/add"/>
 </LinearLayout>

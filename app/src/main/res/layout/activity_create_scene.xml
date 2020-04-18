@@ -24,7 +24,6 @@
                 android:layout_height="250dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginRight="20dp"
-
                 android:layout_marginLeft="20dp">
 
                 <ImageView
@@ -116,12 +115,9 @@
             </LinearLayout>
 
             <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
+                style="@style/createScenarioMovementButtons"
                 android:onClick="pois"
-                android:text="@string/done"
-                android:textSize="?attr/font_medium" />
+                android:text="@string/done"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -178,8 +174,7 @@
                 android:text="@string/can_delete"/>
 
             <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                style="@style/createScenarioMovementButtons"
                 android:onClick="vastaus"
                 android:text="@string/create_answer"
                 android:textSize="?attr/font_medium" />

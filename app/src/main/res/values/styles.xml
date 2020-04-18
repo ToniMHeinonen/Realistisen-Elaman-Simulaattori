@@ -38,7 +38,7 @@
         <item name="android:textSize">?attr/font_medium</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">?attr/font_color</item>
-        <item name="android:background">#FFF</item>
+        <item name="android:background">@drawable/custom_button</item>
     </style>
 
     <style name="ChooseScenarioItem">
@@ -84,7 +84,7 @@
         <item name="android:textSize">?attr/font_medium</item>
         <item name="android:textColor">?attr/font_color</item>
         <item name="android:textStyle">bold</item>
-        <item name="android:background">#4AFD4A</item>
+        <item name="android:background">@drawable/confirm_button</item>
     </style>
 
     <!-- Custom alert dialog -->
@@ -163,6 +163,16 @@
         <item name="android:layout_width">75dp</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_margin">5dp</item>
+    </style>
+
+    <!-- Create Scene and Scenario -->
+    <style name="createScenarioMovementButtons">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">15dp</item>
+        <item name="android:textSize">?attr/font_medium</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@drawable/custom_button</item>
     </style>
 
     <!-- Create Scene Activity -->
