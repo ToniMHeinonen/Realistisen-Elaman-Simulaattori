@@ -87,9 +87,12 @@
     <string name="first_scene_information">Scenaarion ensimmäisen kohtauksen nimi pitää olla: first</string>
     <string name="scene_name_give">Kohtauksen nimi:</string>
     <string name="scene_question">Kohtauksen kysymys:</string>
-    <string name="choose_background">Valitse tausta:</string>
-    <string name="choose_person">Valitse henkilö:</string>
-    <string name="choose_face">Valitse kasvot:</string>
+
+    <string name="choose_background">Tausta:</string>
+    <string name="choose_person">Henkilö:</string>
+    <string name="choose_face">Kasvot:</string>
+    <string name="choose_fore">Esineet:</string>
+
     <string name="create_answer">Luo Vastaus</string>
     <string name="choose_color">Valitse väri:</string>
     <string name="write_answer">Kirjoita vastaus:</string>
@@ -111,7 +114,6 @@
     <string name="remove_item">Haluatko varmasti poistaa tämän?</string>
     <string name="can_delete">Pitkä painallus poistaa vaihtoehdon listalta ja lyhyellä painalluksella voit muokata sitä.</string>
     <string name="saved_scenario">Skenaario tallennettu</string>
-    <string name="choose_fore">Valitse Foreground:</string>
     <string name="not_enough_scene">Täytyy olla vähintään yksi kohtaus</string>
     <string name="remember_name">Muista antaa nimi</string>
     <string name="unique_name">Anna uniikki nimi</string>

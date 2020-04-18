@@ -156,12 +156,29 @@
         <item name="android:layout_margin">20dp</item>
         <item name="android:gravity">center</item>
         <item name="android:textSize">?attr/font_large</item>
+        <item name="android:textStyle">bold</item>
     </style>
 
     <style name="answerColorButtons">
         <item name="android:layout_width">75dp</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_margin">5dp</item>
+    </style>
+
+    <!-- Create Scene Activity -->
+    <style name="createSceneImageOptionsLayout">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">0.25</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="createSceneImageOptionsTopics">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">?attr/font_medium</item>
+        <item name="android:textStyle">bold</item>
     </style>
 
     <!-- Fonts -->

@@ -87,9 +87,12 @@
     <string name="first_scene_information">The name of the first scene must be: first</string>
     <string name="scene_name_give">Scene name:</string>
     <string name="scene_question">Scene question:</string>
-    <string name="choose_background">Choose background:</string>
-    <string name="choose_person">Choose person:</string>
-    <string name="choose_face">Choose face:</string>
+
+    <string name="choose_background">Background:</string>
+    <string name="choose_person">Person:</string>
+    <string name="choose_face">Face:</string>
+    <string name="choose_fore">Items:</string>
+
     <string name="create_answer">Create answer</string>
     <string name="choose_color">Choose color:</string>
     <string name="write_answer">Write answer:</string>
@@ -111,7 +114,6 @@
     <string name="remove_item">Do you really want remove this?</string>
     <string name="can_delete">Long click remove item from list and short click you can modify it.</string>
     <string name="saved_scenario">Scenario saved</string>
-    <string name="choose_fore">Choose foreground:</string>
     <string name="not_enough_scene">Need least one scene</string>
     <string name="remember_name">Must give name</string>
     <string name="unique_name">Give unique name</string>
