@@ -1,176 +1,176 @@
 {
   "first": {
-    "question": "Saavut lentokentälle aikeenasi matkustaa lentokoneella. Olet varannut lennot, mutta et ole vielä tehnyt lähtöselvitystä. Mitä teet ensimmäisenä?",
+    "question": "You arrive at the airport with your intention of traveling by plane. You have booked flights but have not yet checked in. What do you do first?",
     "background": "background_1",
     "person": "null",
     "fore": "null",
     "face": "null",
     "answers": [
-      "Teet lähtöselvityksen lentoyhtiön verkkosivulla",
-      "Teet lähtöselvityksen lähtöselvitystiskillä- tai automaatilla",
-      "Poistut lentokentältä"
+      "You will check in on the airline's website",
+      "You will check in at the check-in counter or check-in kiosk",
+      "You will leave the airport"
     ],
-    "Teet lähtöselvityksen lentoyhtiön verkkosivulla": "lahtoselvitysTehty",
-    "Teet lähtöselvityksen lähtöselvitystiskillä- tai automaatilla": "lahtoselvitysTehty",
-    "Poistut lentokentältä": "null",
-    "Teet lähtöselvityksen lentoyhtiön verkkosivullaColor": "green",
-    "Teet lähtöselvityksen lähtöselvitystiskillä- tai automaatillaColor": "green",
-    "Poistut lentokentältäColor": "red"
+    "You will check in on the airline's website": "lahtoselvitysTehty",
+    "You will check in at the check-in counter or check-in kiosk": "lahtoselvitysTehty",
+    "You will leave the airport": "null",
+    "You will check in on the airline's websiteColor": "green",
+    "You will check in at the check-in counter or check-in kioskColor": "green",
+    "You will leave the airportColor": "red"
   },
   "lahtoselvitysTehty": {
-    "question": "Mitä teet seuraavaksi? Mukanasi on ruumaan meneviä tavaroita.",
+    "question": "What do you do next? You have luggage to go into the baggage hold.",
     "background": "background_1",
     "person": "character_1",
     "face": "face_happy",
     "fore": "null",
     "answers": [
-      "Menet suoraan turvatarkastukseen",
-      "Menet matkatavaratiskille",
-      "Menet matkatavara-automaatille"
+      "You go straight to the security check",
+      "You go to the luggage counter",
+      "You go to the self-service bag drop"
     ],
-    "Menet suoraan turvatarkastukseen": "lahtoselvitysFail",
-    "Menet matkatavaratiskille": "matkatavaratJatetty",
-    "Menet matkatavara-automaatille": "matkatavaratJatetty",
-    "Menet suoraan turvatarkastukseenColor": "red",
-    "Menet matkatavaratiskilleColor": "green",
-    "Menet matkatavara-automaatilleColor": "green"
+    "You go straight to the security check": "lahtoselvitysFail",
+    "You go to the luggage counter": "matkatavaratJatetty",
+    "You go to the self-service bag drop": "matkatavaratJatetty",
+    "You go straight to the security checkColor": "red",
+    "You go to the luggage counterColor": "green",
+    "You go to the self-service bag dropColor": "green"
   },
   "lahtoselvitysFail": {
-    "question": "Turvatarkastuksesta sinut ohjataan takaisin matkatavaratiskille.",
+    "question": "From the security check, you will be directed back to the luggage counter.",
     "background": "background_1",
     "person": "character_1",
     "face": "face_happy",
     "fore": "null",
     "answers": [
-      "Menet uudestaan turvatarkastukseen jätettyäsi matkatavarat tiskille",
-      "Poistut lentokentältä haistateltuasi ensin turvatarkastajalle"
+      "You go to the security check again after you leave your luggage at the counter",
+      "You will leave the airport after cursing the security guard"
     ],
-    "Menet uudestaan turvatarkastukseen jätettyäsi matkatavarat tiskille": "turvatarkastus",
-    "Poistut lentokentältä haistateltuasi ensin turvatarkastajalle": "null",
-    "Menet uudestaan turvatarkastukseen jätettyäsi matkatavarat tiskilleColor": "green",
-    "Poistut lentokentältä haistateltuasi ensin turvatarkastajalleColor": "red"
+    "You go to the security check again after you leave your luggage at the counter": "turvatarkastus",
+    "You will leave the airport after cursing the security guard": "null",
+    "You go to the security check again after you leave your luggage at the counterColor": "green",
+    "You will leave the airport after cursing the security guardColor": "red"
   },
   "matkatavaratJatetty": {
-    "question": "Olet tehnyt lähtöselvityksen ja jättänyt matkatavarat matkatavaratiskille- tai automaatille. Mitä teet seuraavaksi?",
+    "question": "You have checked in and left your luggage at the luggage counter. What do you do next?",
     "background": "background_1",
     "person": "character_1",
     "face": "face_happy",
     "fore": "null",
     "answers": [
-      "Pyörit ympäri lentokenttää ja menet viime tingassa turvatarkastukseen",
-      "Menet turvatarkastukseen",
-      "Poistut lentokentältä ilman matkatavaroitasi"
+      "You wander around the airport and go to the security check at the last moment",
+      "You go to the security check",
+      "You leave the airport without your luggage"
     ],
-    "Pyörit ympäri lentokenttää ja menet viime tingassa turvatarkastukseen": "turvatarkastus",
-    "Menet turvatarkastukseen": "turvatarkastus",
-    "Poistut lentokentältä ilman matkatavaroitasi": "null",
-    "Pyörit ympäri lentokenttää ja menet viime tingassa turvatarkastukseenColor": "yellow",
-    "Menet turvatarkastukseenColor": "green",
-    "Poistut lentokentältä ilman matkatavaroitasiColor": "red"
+    "You wander around the airport and go to the security check at the last moment": "turvatarkastus",
+    "You go to the security check": "turvatarkastus",
+    "You leave the airport without your luggage": "null",
+    "You wander around the airport and go to the security check at the last momentColor": "yellow",
+    "You go to the security checkColor": "green",
+    "You leave the airport without your luggageColor": "red"
   },
   "turvatarkastus": {
-    "question": "Mitä teet turvatarkastuksessa? Taskuissasi on muun muuassa kännykkä ja lompakko.",
+    "question": "What do you do in a security check? You have a mobile phone and a wallet in your pockets.",
     "background": "background_1",
     "person": "character_1",
     "face": "face_happy",
     "fore": "null",
     "answers": [
-      "Asetat taskuissasi olevat tavarat sille kuuluvaan muovilaatikkoon ja todistat henkilöllisyytesi turvatarkastajalle",
-      "Pidät tavarat taskuissasi"
+      "You put the items from your pockets in its plastic box and prove your identity to the security inspector",
+      "You keep the items in your pockets"
     ],
-    "Asetat taskuissasi olevat tavarat sille kuuluvaan muovilaatikkoon ja todistat henkilöllisyytesi turvatarkastajalle": "turvatarkastusTakana",
-    "Pidät tavarat taskuissasi": "turvatarkastusFail",
-    "Asetat taskuissasi olevat tavarat sille kuuluvaan muovilaatikkoon ja todistat henkilöllisyytesi turvatarkastajalleColor": "green",
-    "Pidät tavarat taskuissasiColor": "red"
+    "You put the items from your pockets in its plastic box and prove your identity to the security inspector": "turvatarkastusTakana",
+    "You keep the items in your pockets": "turvatarkastusFail",
+    "You put the items from your pockets in its plastic box and prove your identity to the security inspectorColor": "green",
+    "You keep the items in your pocketsColor": "red"
   },
   "turvatarkastusFail": {
-    "question": "Turvatarkastaja ohjeistaa laittamaan tavarat muovilaatikkoon, jonka jälkeen pääset läpi tarkastuksesta. Mitä teet?",
+    "question": "The security inspector instructs you to put the items in a plastic box, after which you can get through the inspection. What will you do?",
     "background": "background_1",
     "person": "character_1",
     "face": "face_happy",
     "fore": "null",
     "answers": [
-      "Katsot infotaululta oman lentosi lähtöportin, jonka lähettyville siirryt odottelemaan lentoa",
-      "Kiertelet kaupoissa ja saavut portille viime tingassa",
-      "Päätät lähteä pois lentokentältä"
+      "You see the departure gate of your own flight on the information board, near which you will go to wait for the flight",
+      "You walk around the shops and arrive at the gate at the last moment",
+      "You decide to leave the airport"
     ],
-    "Katsot infotaululta oman lentosi lähtöportin, jonka lähettyville siirryt odottelemaan lentoa": "portilla",
-    "Kiertelet kaupoissa ja saavut portille viime tingassa": "portilla",
-    "Päätät lähteä pois lentokentältä": "null",
-    "Katsot infotaululta oman lentosi lähtöportin, jonka lähettyville siirryt odottelemaan lentoaColor": "green",
-    "Kiertelet kaupoissa ja saavut portille viime tingassaColor": "yellow",
-    "Päätät lähteä pois lentokentältäColor": "red"
+    "You see the departure gate of your own flight on the information board, near which you will go to wait for the flight": "portilla",
+    "You walk around the shops and arrive at the gate at the last moment": "portilla",
+    "You decide to leave the airport": "null",
+    "You see the departure gate of your own flight on the information board, near which you will go to wait for the flightColor": "green",
+    "You walk around the shops and arrive at the gate at the last momentColor": "yellow",
+    "You decide to leave the airportColor": "red"
   },
   "turvatarkastusTakana": {
-    "question": "Mitä teet turvatarkastuksen jälkeen?",
+    "question": "What do you do after the security check?",
     "background": "background_1",
     "person": "character_1",
     "face": "face_happy",
     "fore": "null",
     "answers": [
-      "Kiertelet kaupoissa ja saavut portille juuri ennen lähtöä",
-      "Päätätkin lähteä pois lentokentältä",
-      "Katsot infotaululta oman lentosi lähtöportin ja menet lähettyville odottelemaan lentoa"
+      "You visit the shops and arrive at the gate at the last moment",
+      "You decide to leave the airport",
+      "You see the departure gate of your own flight on the information board, near which you will go to wait for the flight"
     ],
-    "Kiertelet kaupoissa ja saavut portille juuri ennen lähtöä": "portilla",
-    "Päätätkin lähteä pois lentokentältä": "null",
-    "Katsot infotaululta oman lentosi lähtöportin ja menet lähettyville odottelemaan lentoa": "portilla",
-    "Kiertelet kaupoissa ja saavut portille juuri ennen lähtöäColor": "yellow",
-    "Päätätkin lähteä pois lentokentältäColor": "red",
-    "Katsot infotaululta oman lentosi lähtöportin ja menet lähettyville odottelemaan lentoaColor": "green"
+    "You visit the shops and arrive at the gate at the last moment": "portilla",
+    "You decide to leave the airport": "null",
+    "You see the departure gate of your own flight on the information board, near which you will go to wait for the flight": "portilla",
+    "You visit the shops and arrive at the gate at the last momentColor": "yellow",
+    "You decide to leave the airportColor": "red",
+    "You see the departure gate of your own flight on the information board, near which you will go to wait for the flightColor": "green"
   },
   "portilla": {
-    "question": "Lähtöportilla aletaan ottaa matkustajia sisään lentokoneeseen. Mitä teet?",
+    "question": "At the departure gate, passengers will be picked up on the plane. What do you do?",
     "background": "background_1",
     "person": "character_1",
     "face": "face_happy",
     "fore": "null",
     "answers": [
-      "Menet jonon perälle odottamaan vuoroasi",
-      "Lähdet vielä kaupoille ja saavut viime tingassa takaisin portille",
-      "Tunget jonon kärkeen"
+      "You go behind the queue to wait your turn",
+      "You still go to the shops and arrive back at the gate in the last minute",
+      "You go straight to the top of the queue"
     ],
-    "Menet jonon perälle odottamaan vuoroasi": "lentokoneessaAlku",
-    "Lähdet vielä kaupoille ja saavut viime tingassa takaisin portille": "lentokoneessaAlku",
-    "Tunget jonon kärkeen": "lentokoneessaAlku",
-    "Menet jonon perälle odottamaan vuoroasiColor": "green",
-    "Lähdet vielä kaupoille ja saavut viime tingassa takaisin portilleColor": "yellow",
-    "Tunget jonon kärkeenColor": "red"
+    "You go behind the queue to wait your turn": "lentokoneessaAlku",
+    "You still go to the shops and arrive back at the gate in the last minute": "lentokoneessaAlku",
+    "You go straight to the top of the queue": "lentokoneessaAlku",
+    "You go behind the queue to wait your turnColor": "green",
+    "You still go to the shops and arrive back at the gate in the last minuteColor": "yellow",
+    "You go straight to the top of the queueColor": "red"
   },
   "lentokoneessaAlku": {
-    "question": "Olet kävelemässä lentokoneeseen sisään. Mitä teet?",
+    "question": "You are walking in an airplane. What do you do?",
     "background": "background_1",
     "person": "character_1",
     "face": "face_happy",
     "fore": "null",
     "answers": [
-      "Juokset pois lentokentältä rivouksia huudellen",
-      "Kävelet sanaakaan sanomatta omalle paikallesi",
-      "Tervehdit ystävällisesti lentohenkilökuntaa ja menet omalle paikallesi"
+      "You run out of the airport screaming lewd",
+      "You walk to your own seat without saying a word to anyone",
+      "You kindly greet the flight crew and go to your own seat"
     ],
-    "Juokset pois lentokentältä rivouksia huudellen": "null",
-    "Kävelet sanaakaan sanomatta omalle paikallesi": "lentokoneessaLoppu",
-    "Tervehdit ystävällisesti lentohenkilökuntaa ja menet omalle paikallesi": "lentokoneessaLoppu",
-    "Juokset pois lentokentältä rivouksia huudellenColor": "red",
-    "Kävelet sanaakaan sanomatta omalle paikallesiColor": "yellow",
-    "Tervehdit ystävällisesti lentohenkilökuntaa ja menet omalle paikallesiColor": "green"
+    "You run out of the airport screaming lewd": "null",
+    "You walk to your own seat without saying a word to anyone": "lentokoneessaLoppu",
+    "You kindly greet the flight crew and go to your own seat": "lentokoneessaLoppu",
+    "You run out of the airport screaming lewdColor": "red",
+    "You walk to your own seat without saying a word to anyoneColor": "yellow",
+    "You kindly greet the flight crew and go to your own seatColor": "green"
   },
   "lentokoneessaLoppu": {
-    "question": "Olet päässyt omalle paikallesi lentokoneessa.",
+    "question": "You have reached your seat on the plane.",
     "background": "background_1",
     "person": "character_1",
     "face": "face_happy",
     "fore": "null",
     "answers": [
-      "Kävelet koko lennon ajan vähän väliä käytävällä jaloitellaksesi",
-      "Istut matkan ajan omalla paikallasi vessakäyntejä lukuunottamatta",
-      "Mölyät ja häiritset muita matkustajia koko matkan ajan"
+      "You walk the aisle back and forth throughout the flight to walk around",
+      "You sit in your own seat during the flight, except for using toilet",
+      "You disturb other passengers during the flight"
     ],
-    "Kävelet koko lennon ajan vähän väliä käytävällä jaloitellaksesi": "null",
-    "Istut matkan ajan omalla paikallasi vessakäyntejä lukuunottamatta": "null",
-    "Mölyät ja häiritset muita matkustajia koko matkan ajan": "null",
-    "Kävelet koko lennon ajan vähän väliä käytävällä jaloitellaksesiColor": "yellow",
-    "Istut matkan ajan omalla paikallasi vessakäyntejä lukuunottamattaColor": "green",
-    "Mölyät ja häiritset muita matkustajia koko matkan ajanColor": "red"
+    "You walk the aisle back and forth throughout the flight to walk around": "null",
+    "You sit in your own seat during the flight, except for using toilet": "null",
+    "You disturb other passengers during the flight": "null",
+    "You walk the aisle back and forth throughout the flight to walk aroundColor": "yellow",
+    "You sit in your own seat during the flight, except for using toiletColor": "green",
+    "You disturb other passengers during the flightColor": "red"
   }
 }
