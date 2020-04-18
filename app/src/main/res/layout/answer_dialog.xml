@@ -18,25 +18,19 @@
         <Button
             android:id="@+id/greenButton"
             android:tag="green"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:layout_margin="5dp"
+            style="@style/answerColorButtons"
             android:background="@drawable/green_button"/>
 
         <Button
             android:id="@+id/yellowButton"
             android:tag="yellow"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:layout_margin="5dp"
+            style="@style/answerColorButtons"
             android:background="@drawable/yellow_button"/>
 
         <Button
             android:id="@+id/redButton"
             android:tag="red"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:layout_margin="5dp"
+            style="@style/answerColorButtons"
             android:background="@drawable/red_button"/>
 
     </LinearLayout>

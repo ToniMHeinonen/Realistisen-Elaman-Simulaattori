@@ -3,33 +3,28 @@
     <item android:state_selected="true">
         <shape
             android:shape="rectangle">
-            <gradient android:startColor="#0F0"
-                android:endColor="#090"
+            <gradient android:startColor="@color/buttonGreen"
+                android:endColor="@color/buttonGreenDark"
                 android:type="linear"
                 android:angle="270" />
-            <corners android:radius="30dp" />
-            <stroke android:width="6dp" android:color="#FFF" />
+            <corners android:radius="@dimen/button_radius" />
+            <stroke android:width="@dimen/button_border_selected_width"
+                android:color="@color/buttonBorderSelected" />
         </shape>
     </item>
 
     <item android:state_pressed="false">
         <shape
             android:shape="rectangle">
-            <gradient android:startColor="#0F0"
-                android:endColor="#090"
+            <gradient android:startColor="@color/buttonGreen"
+                android:endColor="@color/buttonGreenDark"
                 android:type="linear"
                 android:angle="270" />
-            <corners android:radius="30dp" />
-            <stroke android:width="3dp" android:color="#000" />
+            <corners android:radius="@dimen/button_radius" />
+            <stroke android:width="@dimen/button_border_unselected_width"
+                android:color="@color/buttonBorderUnselected" />
         </shape>
     </item>
 
-    <item>
-        <shape
-            android:shape="rectangle">
-            <solid android:color="#FFF"/>
-            <corners android:radius="30dp" />
-            <stroke android:width="3dp" android:color="#FFF" />
-        </shape>
-    </item>
+    <item android:drawable="@drawable/clicked_color_button" />
 </selector>

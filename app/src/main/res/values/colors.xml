@@ -8,6 +8,11 @@
     <color name="colorBlue">#160d91</color>
 
     <color name="buttonGreen">#0F0</color>
+    <color name="buttonGreenDark">#090</color>
     <color name="buttonYellow">#FF0</color>
+    <color name="buttonYellowDark">#990</color>
     <color name="buttonRed">#F00</color>
+    <color name="buttonRedDark">#900</color>
+    <color name="buttonBorderUnselected">#FFF</color>
+    <color name="buttonBorderSelected">#F90</color>
 </resources>
