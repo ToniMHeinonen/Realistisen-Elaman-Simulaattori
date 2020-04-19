@@ -1,158 +1,158 @@
 {
   "first": {
-    "question": "Päätät kulkea ratikalla. Kävellessäsi pysäkille mietit, miten aiot maksaa matkan.",
+    "question": "You decide to travel by tram. As you walk to the tram stop, you think about how you plan to pay for the ride.",
     "background": "background_1",
     "person": "null",
     "fore": "null",
     "face": "null",
     "answers": [
-      "Tilaat ratikkayhtiön mobiilisovelluksella",
-      "Olet jo etukäteen ladannut matkakorttiin arvoa",
-      "Ostat kertalipun automaatista ennen pysäkille menoa",
-      "Et aio maksaa"
+      "You order a ticket with the tram company's mobile app",
+      "You have already loaded the value into the travel card in advance",
+      "You buy a one-time ticket from the ticket machine before going to the stop",
+      "You are not going to pay"
     ],
-    "Tilaat ratikkayhtiön mobiilisovelluksella": "pysakki",
-    "Olet jo etukäteen ladannut matkakorttiin arvoa": "pysakki",
-    "Ostat kertalipun automaatista ennen pysäkille menoa": "pysakki",
-    "Et aio maksaa": "eiMaksuaPysakki",
-    "Tilaat ratikkayhtiön mobiilisovelluksellaColor": "green",
-    "Olet jo etukäteen ladannut matkakorttiin arvoaColor": "green",
-    "Ostat kertalipun automaatista ennen pysäkille menoaColor": "green",
-    "Et aio maksaaColor": "red"
+    "You order a ticket with the tram company's mobile app": "pysakki",
+    "You have already loaded the value into the travel card in advance": "pysakki",
+    "You buy a one-time ticket from the ticket machine before going to the stop": "pysakki",
+    "You are not going to pay": "eiMaksuaPysakki",
+    "You order a ticket with the tram company's mobile appColor": "green",
+    "You have already loaded the value into the travel card in advanceColor": "green",
+    "You buy a one-time ticket from the ticket machine before going to the stopColor": "green",
+    "You are not going to payColor": "red"
   },
   "pysakki": {
-    "question": "Istut pysäkillä, kunnes odottamasi ratikka saapuu näköpiiriin.",
+    "question": "You sit at the stop until the tram you expect arrives in sight.",
     "background": "background_1",
     "person": "character_1",
     "face": "face_happy",
     "fore": "null",
     "answers": [
-      "Et tee elettäkään osoittaaksesi ratikkakuskille, että olet nousemassa kyytiin",
-      "Nouset seisomaan ja heilutat toisella kädellä osoittaaksesi, että haluat kyytiin",
-      "Näet, että toinen henkilö viittilöi kuskille, joten et tee mitään"
+      "You’re not doing anything to show the tram driver that you want into the tram",
+      "You stand up and wave with your other hand to indicate that you want into the tram",
+      "You see that other person is waving at the driver, so you don’t do anything"
     ],
-    "Et tee elettäkään osoittaaksesi ratikkakuskille, että olet nousemassa kyytiin": "ratikkaOhi",
-    "Nouset seisomaan ja heilutat toisella kädellä osoittaaksesi, että haluat kyytiin": "ratikkaSisaan",
-    "Näet, että toinen henkilö viittilöi kuskille, joten et tee mitään": "ratikkaSisaan",
-    "Et tee elettäkään osoittaaksesi ratikkakuskille, että olet nousemassa kyytiinColor": "red",
-    "Nouset seisomaan ja heilutat toisella kädellä osoittaaksesi, että haluat kyytiinColor": "green",
-    "Näet, että toinen henkilö viittilöi kuskille, joten et tee mitäänColor": "green"
+    "You’re not doing anything to show the tram driver that you want into the tram": "ratikkaOhi",
+    "You stand up and wave with your other hand to indicate that you want into the tram": "ratikkaSisaan",
+    "You see that other person is waving at the driver, so you don’t do anything": "ratikkaSisaan",
+    "You’re not doing anything to show the tram driver that you want into the tramColor": "red",
+    "You stand up and wave with your other hand to indicate that you want into the tramColor": "green",
+    "You see that other person is waving at the driver, so you don’t do anythingColor": "green"
   },
   "ratikkaOhi": {
-    "question": "Ratikka jatkoi matkaa pysähtymättä pysäkille. Mitä teet?",
+    "question": "The tram continued its ride without stopping at the stop. What do you do?",
     "background": "background_1",
     "person": "character_1",
     "face": "face_happy",
     "fore": "null",
     "answers": [
-      "Lähdet kotiin",
-      "Odotat seuraavaa ratikkaa, johon pääset lopulta sisään"
+      "You will go home",
+      "You will wait for the next tram you will eventually get into"
     ],
-    "Lähdet kotiin": "null",
-    "Odotat seuraavaa ratikkaa, johon pääset lopulta sisään": "ratikkaSisaan",
-    "Lähdet kotiinColor": "red",
-    "Odotat seuraavaa ratikkaa, johon pääset lopulta sisäänColor": "green"
+    "You will go home": "null",
+    "You will wait for the next tram you will eventually get into": "ratikkaSisaan",
+    "You will go homeColor": "red",
+    "You will wait for the next tram you will eventually get intoColor": "green"
   },
   "eiMaksuaPysakki": {
-    "question": "Istut pysäkillä, kunnes odottamasi ratikka saapuu näköpiiriin.",
+    "question": "You sit at the stop until the tram you expect arrives in sight.",
     "background": "background_1",
     "person": "character_1",
     "face": "face_happy",
     "fore": "null",
     "answers": [
-      "Et tee elettäkään osoittaaksesi ratikkakuskille, että olet nousemassa kyytiin",
-      "Nouset seisomaan ja heilutat toisella kädellä osoittaaksesi, että haluat kyytiin",
-      "Näet, että toinen henkilö viittilöi kuskille, joten et tee mitään"
+      "You’re not doing anything to show the tram driver that you want into the tram",
+      "You stand up and wave with your other hand to indicate that you want into the tram",
+      "You see that other person is waving at the driver, so you don’t do anything"
     ],
-    "Et tee elettäkään osoittaaksesi ratikkakuskille, että olet nousemassa kyytiin": "eiMaksuaRatikkaOhi",
-    "Nouset seisomaan ja heilutat toisella kädellä osoittaaksesi, että haluat kyytiin": "eiMaksuaRatikkaSisaan",
-    "Näet, että toinen henkilö viittilöi kuskille, joten et tee mitään": "eiMaksuaRatikkaSisaan",
-    "Et tee elettäkään osoittaaksesi ratikkakuskille, että olet nousemassa kyytiinColor": "red",
-    "Nouset seisomaan ja heilutat toisella kädellä osoittaaksesi, että haluat kyytiinColor": "green",
-    "Näet, että toinen henkilö viittilöi kuskille, joten et tee mitäänColor": "green"
+    "You’re not doing anything to show the tram driver that you want into the tram": "eiMaksuaRatikkaOhi",
+    "You stand up and wave with your other hand to indicate that you want into the tram": "eiMaksuaRatikkaSisaan",
+    "You see that other person is waving at the driver, so you don’t do anything": "eiMaksuaRatikkaSisaan",
+    "You’re not doing anything to show the tram driver that you want into the tramColor": "red",
+    "You stand up and wave with your other hand to indicate that you want into the tramColor": "green",
+    "You see that other person is waving at the driver, so you don’t do anythingColor": "green"
   },
   "eiMaksuaRatikkaOhi": {
-    "question": "Ratikka jatkoi matkaa pysähtymättä pysäkille. Mitä teet?",
+    "question": "The tram continued its ride without stopping at the stop. What do you do?",
     "background": "background_1",
     "person": "character_1",
     "face": "face_happy",
     "fore": "null",
     "answers": [
-      "Lähdet kotiin",
-      "Tilaat lipun mobiilisovelluksella ja odotat seuraavaa ratikkaa"
+      "You will go home",
+      "You will order the ticket with the mobile app and wait for the next tram"
     ],
-    "Lähdet kotiin": "null",
-    "Tilaat lipun mobiilisovelluksella ja odotat seuraavaa ratikkaa": "ratikkaSisaan",
-    "Lähdet kotiinColor": "red",
-    "Tilaat lipun mobiilisovelluksella ja odotat seuraavaa ratikkaaColor": "green"
+    "You will go home": "null",
+    "You will order the ticket with the mobile app and wait for the next tram": "ratikkaSisaan",
+    "You will go homeColor": "red",
+    "You will order the ticket with the mobile app and wait for the next tramColor": "green"
   },
   "eiMaksuaRatikkaSisaan": {
-    "question": "Pääset ratikkaan sisään, mutta vastassa onkin lipuntarkastaja. Hän aikoo antaa sakot ja poistaa sinut ratikasta.",
+    "question": "You get into the tram, but there is a ticket inspector in front of you. He's going to give you a fine and remove you from the tram.",
     "background": "background_1",
     "person": "character_1",
     "face": "face_happy",
     "fore": "null",
     "answers": [
-      "Otat sakot vastaan, pahoittelet, poistut ratikasta ja ensi kerralla maksat lipusta",
-      "Yrität karata paikalta ja jatkaa samalla tavalla ensi kerrallakin"
+      "You accept the fine, apologize, leave the tram, and next time you will pay for the ticket",
+      "You try to run away and will try the same way next time too"
     ],
-    "Otat sakot vastaan, pahoittelet, poistut ratikasta ja ensi kerralla maksat lipusta": "null",
-    "Yrität karata paikalta ja jatkaa samalla tavalla ensi kerrallakin": "null",
-    "Otat sakot vastaan, pahoittelet, poistut ratikasta ja ensi kerralla maksat lipustaColor": "green",
-    "Yrität karata paikalta ja jatkaa samalla tavalla ensi kerrallakinColor": "red"
+    "You accept the fine, apologize, leave the tram, and next time you will pay for the ticket": "null",
+    "You try to run away and will try the same way next time too": "null",
+    "You accept the fine, apologize, leave the tram, and next time you will pay for the ticketColor": "green",
+    "You try to run away and will try the same way next time tooColor": "red"
   },
   "ratikkaSisaan": {
-    "question": "Päästyäsi ratikkaan sisään näet, että siellä on runsaasti paikkoja vapaana.",
+    "question": "Once you get into the tram, you'll see that there are plenty of empty places available.",
     "background": "background_1",
     "person": "character_1",
     "face": "face_happy",
     "fore": "null",
     "answers": [
-      "Menet istumaan vapaalle penkille toisen henkilön viereen",
-      "Menet istumaan vapaalle penkille yksin",
-      "Jäät seisomaan keskelle käytävää ja estät samalla muiden liikkumista"
+      "You go to sit on a free bench next to another person",
+      "You go to sit on a free bench alone",
+      "You stay standing in the middle of the hallway while preventing others from moving"
     ],
-    "Menet istumaan vapaalle penkille toisen henkilön viereen": "haluuPysahtya",
-    "Menet istumaan vapaalle penkille yksin": "haluuPysahtya",
-    "Jäät seisomaan keskelle käytävää ja estät samalla muiden liikkumista": "haluuPysahtya",
-    "Menet istumaan vapaalle penkille toisen henkilön viereenColor": "green",
-    "Menet istumaan vapaalle penkille yksinColor": "green",
-    "Jäät seisomaan keskelle käytävää ja estät samalla muiden liikkumistaColor": "red"
+    "You go to sit on a free bench next to another person": "haluuPysahtya",
+    "You go to sit on a free bench alone": "haluuPysahtya",
+    "You stay standing in the middle of the hallway while preventing others from moving": "haluuPysahtya",
+    "You go to sit on a free bench next to another personColor": "green",
+    "You go to sit on a free bench aloneColor": "green",
+    "You stay standing in the middle of the hallway while preventing others from movingColor": "red"
   },
   "haluuPysahtya": {
-    "question": "Haluat poistua ratikasta seuraavalla pysäkillä.",
+    "question": "You want to leave the tram at the next stop.",
     "background": "background_1",
     "person": "character_1",
     "face": "face_happy",
     "fore": "null",
     "answers": [
-      "Painat stop-painiketta aivan viime hetkellä ennen pysäkkiä",
-      "Kukaan ei ole painanut stop-painiketta, joten painat sitä hyvissä ajoin ennen pysäkkiä",
-      "Huomaat, että toinen henkilö painaa stop-painiketta, mutta painat silti varmuuden vuoksi"
+      "You press the stop button at the very last minute before the stop",
+      "No one has pressed the stop button, so you press it well in advance before the stop",
+      "You notice that other person presses the stop button, but you still press the button just in case"
     ],
-    "Painat stop-painiketta aivan viime hetkellä ennen pysäkkiä": "ulosRatikasta",
-    "Kukaan ei ole painanut stop-painiketta, joten painat sitä hyvissä ajoin ennen pysäkkiä": "ulosRatikasta",
-    "Huomaat, että toinen henkilö painaa stop-painiketta, mutta painat silti varmuuden vuoksi": "ulosRatikasta",
-    "Painat stop-painiketta aivan viime hetkellä ennen pysäkkiäColor": "red",
-    "Kukaan ei ole painanut stop-painiketta, joten painat sitä hyvissä ajoin ennen pysäkkiäColor": "green",
-    "Huomaat, että toinen henkilö painaa stop-painiketta, mutta painat silti varmuuden vuoksiColor": "green"
+    "You press the stop button at the very last minute before the stop": "ulosRatikasta",
+    "No one has pressed the stop button, so you press it well in advance before the stop": "ulosRatikasta",
+    "You notice that other person presses the stop button, but you still press the button just in case": "ulosRatikasta",
+    "You press the stop button at the very last minute before the stopColor": "red",
+    "No one has pressed the stop button, so you press it well in advance before the stopColor": "green",
+    "You notice that other person presses the stop button, but you still press the button just in caseColor": "green"
   },
   "ulosRatikasta": {
-    "question": "Ratikka pysähtyy pysäkilläsi, ja ovet aukeavat.",
+    "question": "The tram will stop at your stop and the doors will open.",
     "background": "background_1",
     "person": "character_1",
     "face": "face_happy",
     "fore": "null",
     "answers": [
-      "Poistut rauhallisesti ratikasta",
-      "Kiität muita matkustajia kyydistä ja poistut ratikasta",
-      "Tönit ihmisiä poistuessasi ratikasta"
+      "You calmly leave the tram",
+      "You thank the other passengers for the ride and leave the tram",
+      "You push other people as you leave the tram"
     ],
-    "Poistut rauhallisesti ratikasta": "null",
-    "Kiität muita matkustajia kyydistä ja poistut ratikasta": "null",
-    "Tönit ihmisiä poistuessasi ratikasta": "null",
-    "Poistut rauhallisesti ratikastaColor": "green",
-    "Kiität muita matkustajia kyydistä ja poistut ratikastaColor": "yellow",
-    "Tönit ihmisiä poistuessasi ratikastaColor": "red"
+    "You calmly leave the tram": "null",
+    "You thank the other passengers for the ride and leave the tram": "null",
+    "You push other people as you leave the tram": "null",
+    "You calmly leave the tramColor": "green",
+    "You thank the other passengers for the ride and leave the tramColor": "yellow",
+    "You push other people as you leave the tramColor": "red"
   }
 }

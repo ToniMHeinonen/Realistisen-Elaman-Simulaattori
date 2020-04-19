@@ -6,16 +6,16 @@
     "fore": "null",
     "face": "null",
     "answers": [
-      "Tilaat ratikkayhtiön mobiilisovelluksella",
+      "Tilaat lipun ratikkayhtiön mobiilisovelluksella",
       "Olet jo etukäteen ladannut matkakorttiin arvoa",
       "Ostat kertalipun automaatista ennen pysäkille menoa",
       "Et aio maksaa"
     ],
-    "Tilaat ratikkayhtiön mobiilisovelluksella": "pysakki",
+    "Tilaat lipun ratikkayhtiön mobiilisovelluksella": "pysakki",
     "Olet jo etukäteen ladannut matkakorttiin arvoa": "pysakki",
     "Ostat kertalipun automaatista ennen pysäkille menoa": "pysakki",
     "Et aio maksaa": "eiMaksuaPysakki",
-    "Tilaat ratikkayhtiön mobiilisovelluksellaColor": "green",
+    "Tilaat lipun ratikkayhtiön mobiilisovelluksellaColor": "green",
     "Olet jo etukäteen ladannut matkakorttiin arvoaColor": "green",
     "Ostat kertalipun automaatista ennen pysäkille menoaColor": "green",
     "Et aio maksaaColor": "red"
