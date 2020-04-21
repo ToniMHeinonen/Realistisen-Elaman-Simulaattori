@@ -1,10 +1,11 @@
 package muuttaa.myohemmin.realistisenelamansimulaattori;
 
 import androidx.appcompat.app.AlertDialog;
-import muuttaa.myohemmin.realistisenelamansimulaattori.data.Answer;
+import muuttaa.myohemmin.realistisenelamansimulaattori.scenariocreation.Answer;
 import muuttaa.myohemmin.realistisenelamansimulaattori.data.GeneralKeyAndValue;
 import muuttaa.myohemmin.realistisenelamansimulaattori.data.Scene;
-import muuttaa.myohemmin.realistisenelamansimulaattori.tools.Debug;
+import muuttaa.myohemmin.realistisenelamansimulaattori.scenariocreation.CreateAnswerAdapter;
+import muuttaa.myohemmin.realistisenelamansimulaattori.scenariocreation.CreateAnswerDialogFragment;
 import muuttaa.myohemmin.realistisenelamansimulaattori.tools.GlobalPrefs;
 
 import android.app.Activity;
@@ -26,7 +27,7 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
-public class CreateScene extends ParentActivity implements dialogiFragmentti.dialogiFragmentListener,
+public class CreateScene extends ParentActivity implements CreateAnswerDialogFragment.dialogiFragmentListener,
 View.OnClickListener, View.OnLongClickListener{
     private EditText name;
     private EditText question;
@@ -186,7 +187,7 @@ View.OnClickListener, View.OnLongClickListener{
         bundle.putBoolean("muokkaus", false);
         bundle.putInt("korvaa", -1);
         bundle.putInt("koko", kysymyksetColor.size());
-        dialogiFragmentti dia = new dialogiFragmentti();
+        CreateAnswerDialogFragment dia = new CreateAnswerDialogFragment();
         dia.setArguments(bundle);
         dia.show(getSupportFragmentManager(), "vastauksen luonti");
     }
@@ -274,7 +275,7 @@ View.OnClickListener, View.OnLongClickListener{
         bundle.putString("kysymys", meno.getKey());
         bundle.putInt("korvaa", position);
         bundle.putInt("koko", kysymyksetColor.size());
-        dialogiFragmentti dia = new dialogiFragmentti();
+        CreateAnswerDialogFragment dia = new CreateAnswerDialogFragment();
         dia.setArguments(bundle);
         dia.show(getSupportFragmentManager(), "vastauksen luonti");
     }

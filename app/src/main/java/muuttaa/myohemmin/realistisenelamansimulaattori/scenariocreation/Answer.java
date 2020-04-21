@@ -1,4 +1,4 @@
-package muuttaa.myohemmin.realistisenelamansimulaattori.data;
+package muuttaa.myohemmin.realistisenelamansimulaattori.scenariocreation;
 
 public class Answer {
 

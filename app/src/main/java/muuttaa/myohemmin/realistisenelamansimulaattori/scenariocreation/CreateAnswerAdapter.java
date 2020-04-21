@@ -1,4 +1,4 @@
-package muuttaa.myohemmin.realistisenelamansimulaattori;
+package muuttaa.myohemmin.realistisenelamansimulaattori.scenariocreation;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -10,7 +10,9 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-import muuttaa.myohemmin.realistisenelamansimulaattori.data.Answer;
+import muuttaa.myohemmin.realistisenelamansimulaattori.CreateScene;
+import muuttaa.myohemmin.realistisenelamansimulaattori.R;
+import muuttaa.myohemmin.realistisenelamansimulaattori.scenariocreation.Answer;
 
 public class CreateAnswerAdapter extends BaseAdapter {
 
