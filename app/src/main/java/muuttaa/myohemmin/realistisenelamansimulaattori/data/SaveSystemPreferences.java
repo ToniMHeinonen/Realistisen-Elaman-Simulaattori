@@ -41,6 +41,7 @@ public class SaveSystemPreferences implements JsonInterface {
     private JSONObject rootInScenario;
     private boolean run = false;
     private boolean preferencessa = false;
+    private boolean userCreatedScenario = false;
 
     public SaveSystemPreferences(Context con){
         this.context = con;
@@ -137,6 +138,13 @@ public class SaveSystemPreferences implements JsonInterface {
     @Override
     public void setCurrentScenario(String scenario) {
         this.scenarie = scenario;
+        this.userCreatedScenario = false;
+    }
+
+    @Override
+    public void setCurrentScenario(String scenario, boolean user) {
+        this.scenarie = scenario;
+        this.userCreatedScenario = user;
     }
 
     @Override
@@ -261,33 +269,53 @@ public class SaveSystemPreferences implements JsonInterface {
     private void createJSONObjectOfScenario(){
         if(rootInScenario == null){
                 String data = getStringFromSceneFile();
-            if(!preferencessa) {
-                try {
-                    this.rootInScenario = new JSONObject(data);
-                } catch (JSONException e) {
-                    if (debuggi) {
-                        Log.e("ScenarioFile", "tiedostosta ei saati dataa");
-                        e.printStackTrace();
+                //test
+                if(userCreatedScenario){
+                    String h1 = getJsonName();
+                    String helpp = "";
+                    for (int ind = 0; ind < (h1.length() - 5); ind++) {
+                        helpp += h1.charAt(ind);
+                    }
+                    //haku
+                    String filet = getStringFromFile(getJsonName());
+                    try {
+                        this.rootInScenario = new JSONObject(filet);
+                    } catch (JSONException e) {
+                        if (debuggi) {
+                            Log.e("ScenarioFile", "preferencesta ei saatu dataa");
+                            e.printStackTrace();
+                        }
+                    }
+                    preferencessa = false;
+                } else {
+                    if (!preferencessa) {
+                        try {
+                            this.rootInScenario = new JSONObject(data);
+                        } catch (JSONException e) {
+                            if (debuggi) {
+                                Log.e("ScenarioFile", "tiedostosta ei saati dataa");
+                                e.printStackTrace();
+                            }
+                        }
+                    } else {
+                        String h1 = getJsonName();
+                        String helpp = "";
+                        for (int ind = 0; ind < (h1.length() - 5); ind++) {
+                            helpp += h1.charAt(ind);
+                        }
+                        //haku
+                        String filet = getStringFromFile(getJsonName());
+                        try {
+                            this.rootInScenario = new JSONObject(filet);
+                        } catch (JSONException e) {
+                            if (debuggi) {
+                                Log.e("ScenarioFile", "preferencesta ei saatu dataa");
+                                e.printStackTrace();
+                            }
+                        }
+                        preferencessa = false;
                     }
                 }
-            } else{
-                String h1 = getJsonName();
-                String helpp = "";
-                for(int ind = 0; ind < (h1.length() - 5); ind++){
-                    helpp += h1.charAt(ind);
-                }
-                //haku
-                String filet = getStringFromFile(getJsonName());
-                try {
-                    this.rootInScenario = new JSONObject(filet);
-                } catch (JSONException e) {
-                    if (debuggi) {
-                        Log.e("ScenarioFile", "preferencesta ei saatu dataa");
-                        e.printStackTrace();
-                    }
-                }
-                preferencessa = false;
-            }
         }
     }
 

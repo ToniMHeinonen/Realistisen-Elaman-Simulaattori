@@ -249,6 +249,11 @@ public class SaveSystem implements JsonInterface {
     }
 
     @Override
+    public void setCurrentScenario(String scenario, boolean user) {
+        this.scenarie = scenario;
+    }
+
+    @Override
     public String getQuestionFromScenario() {
         createJSONObjectOfScenario();
         String out = "";
