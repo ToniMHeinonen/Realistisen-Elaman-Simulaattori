@@ -160,6 +160,8 @@ View.OnClickListener, View.OnLongClickListener{
             this.henkilo.setImageResource(getResources().getIdentifier(h, "drawable", getPackageName()));
         } else{
             this.henkilo.setImageResource(android.R.color.transparent);
+            int faceNullPosition =  getResources().getStringArray(R.array.kasvot).length - 1;
+            this.face.setSelection(faceNullPosition);
         }
         if(!naama.equals("null")) {
             this.kasvot.setImageResource(getResources().getIdentifier(naama, "drawable", getPackageName()));
