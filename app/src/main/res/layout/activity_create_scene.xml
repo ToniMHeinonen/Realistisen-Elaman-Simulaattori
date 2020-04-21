@@ -178,6 +178,12 @@
                 android:textSize="?attr/font_small"
                 android:id="@+id/kysymys"/>
 
+            <!-- ANSWERS -->
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/listaVastaukset"/>
+
             <Button
                 style="@style/createScenarioMovementButtons"
                 android:onClick="vastaus"
@@ -187,12 +193,11 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textSize="?attr/font_small"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
                 android:text="@string/can_delete"/>
-
-            <ListView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/listaVastaukset"/>
 
         </LinearLayout>
     </ScrollView>

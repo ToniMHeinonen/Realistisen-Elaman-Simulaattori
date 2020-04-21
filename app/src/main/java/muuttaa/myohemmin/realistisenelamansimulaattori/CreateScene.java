@@ -1,8 +1,10 @@
 package muuttaa.myohemmin.realistisenelamansimulaattori;
 
 import androidx.appcompat.app.AlertDialog;
+import muuttaa.myohemmin.realistisenelamansimulaattori.data.Answer;
 import muuttaa.myohemmin.realistisenelamansimulaattori.data.GeneralKeyAndValue;
 import muuttaa.myohemmin.realistisenelamansimulaattori.data.Scene;
+import muuttaa.myohemmin.realistisenelamansimulaattori.tools.Debug;
 import muuttaa.myohemmin.realistisenelamansimulaattori.tools.GlobalPrefs;
 
 import android.app.Activity;
@@ -24,7 +26,8 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
-public class CreateScene extends ParentActivity implements dialogiFragmentti.dialogiFragmentListener{
+public class CreateScene extends ParentActivity implements dialogiFragmentti.dialogiFragmentListener,
+View.OnClickListener, View.OnLongClickListener{
     private EditText name;
     private EditText question;
     private Spinner background;
@@ -37,7 +40,7 @@ public class CreateScene extends ParentActivity implements dialogiFragmentti.dia
     private ImageView kasvot;
     private List<GeneralKeyAndValue> kysymyksetGo;
     private  List<GeneralKeyAndValue> kysymyksetColor;
-    private ArrayAdapter<String> adapter;
+    private CreateAnswerAdapter adapter;
     private int korvaus = -1;
 
     @Override
@@ -167,49 +170,12 @@ public class CreateScene extends ParentActivity implements dialogiFragmentti.dia
     }
 
     public void updateListOfAnswers(){
-        ArrayList<String> arrayList = new ArrayList<String>();
+        ArrayList<Answer> arrayList = new ArrayList<>();
         for(int lap=0; lap < kysymyksetGo.size(); lap++){
-            arrayList.add(this.getString(R.string.name_file) + kysymyksetGo.get(lap).getKey() + this.getString(R.string.go) + kysymyksetGo.get(lap).getValue() + this.getString(R.string.color_set) + kysymyksetColor.get(lap).getValue());
+            arrayList.add(new Answer(kysymyksetGo.get(lap).getKey(),kysymyksetGo.get(lap).getValue(), kysymyksetColor.get(lap).getValue()));
         }
-        adapter = new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_spinner_item, arrayList);
+        adapter = new CreateAnswerAdapter(this, arrayList, this);
         lista.setAdapter(adapter);
-        final Context con = this;
-        lista.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
-            @Override
-            public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
-                final GeneralKeyAndValue varin = kysymyksetColor.get(position);
-                final GeneralKeyAndValue menon = kysymyksetGo.get(position);
-                new AlertDialog.Builder(con)
-                        .setTitle(con.getString(R.string.huom))
-                        .setMessage(con.getString(R.string.remove_item))
-                        .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
-                            public void onClick(DialogInterface dialog, int which) {
-                                kysymyksetColor.remove(varin);
-                                kysymyksetGo.remove(menon);
-                                updateListOfAnswers();
-                            }
-                        })
-                        .setNegativeButton(android.R.string.no, null)
-                        .setIcon(android.R.drawable.ic_dialog_alert)
-                        .show();
-                return false;
-            }
-        });
-        lista.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Bundle bundle = new Bundle();
-                bundle.putBoolean("muokkaus", true);
-                GeneralKeyAndValue meno = kysymyksetGo.get(position);
-                bundle.putString("menee", meno.getValue());
-                bundle.putString("kysymys", meno.getKey());
-                bundle.putInt("korvaa", position);
-                bundle.putInt("koko", kysymyksetColor.size());
-                dialogiFragmentti dia = new dialogiFragmentti();
-                dia.setArguments(bundle);
-                dia.show(getSupportFragmentManager(), "vastauksen luonti");
-            }
-        });
     }
 
     public void vastaus(View view) {
@@ -289,5 +255,41 @@ public class CreateScene extends ParentActivity implements dialogiFragmentti.dia
                 })
                 .setIcon(android.R.drawable.ic_dialog_alert)
                 .show();
+    }
+
+    @Override
+    public void onClick(View v) {
+        int position = (int) v.getTag();
+        Bundle bundle = new Bundle();
+        bundle.putBoolean("muokkaus", true);
+        GeneralKeyAndValue meno = kysymyksetGo.get(position);
+        bundle.putString("menee", meno.getValue());
+        bundle.putString("kysymys", meno.getKey());
+        bundle.putInt("korvaa", position);
+        bundle.putInt("koko", kysymyksetColor.size());
+        dialogiFragmentti dia = new dialogiFragmentti();
+        dia.setArguments(bundle);
+        dia.show(getSupportFragmentManager(), "vastauksen luonti");
+    }
+
+    @Override
+    public boolean onLongClick(View v) {
+        int position = (int) v.getTag();
+        final GeneralKeyAndValue varin = kysymyksetColor.get(position);
+        final GeneralKeyAndValue menon = kysymyksetGo.get(position);
+        new AlertDialog.Builder(this)
+                .setTitle(getString(R.string.huom))
+                .setMessage(getString(R.string.remove_item))
+                .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                        kysymyksetColor.remove(varin);
+                        kysymyksetGo.remove(menon);
+                        updateListOfAnswers();
+                    }
+                })
+                .setNegativeButton(android.R.string.no, null)
+                .setIcon(android.R.drawable.ic_dialog_alert)
+                .show();
+        return false;
     }
 }

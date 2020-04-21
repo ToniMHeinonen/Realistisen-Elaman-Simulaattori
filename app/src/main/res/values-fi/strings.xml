@@ -112,7 +112,7 @@
     <string name="duplicate_warning">Tämä on jo käytössä</string>
     <string name="not_added">Ei lisätty</string>
     <string name="remove_item">Haluatko varmasti poistaa tämän?</string>
-    <string name="can_delete">Pitkä painallus poistaa vaihtoehdon listalta ja lyhyellä painalluksella voit muokata sitä.</string>
+    <string name="can_delete">Voit poistaa vastauksen pitämällä vastausnappia pohjassa</string>
     <string name="saved_scenario">Skenaario tallennettu</string>
     <string name="not_enough_scene">Täytyy olla vähintään yksi kohtaus</string>
     <string name="remember_name">Muista antaa nimi</string>
