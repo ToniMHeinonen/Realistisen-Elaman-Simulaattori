@@ -17,12 +17,20 @@
             android:layout_weight="0.1"
             android:onClick="sortOrderClick"/>
 
-        <Spinner
-            android:id="@+id/sort"
+        <LinearLayout
             android:layout_width="0dp"
-            android:layout_height="match_parent"
             android:layout_weight="0.6"
-            android:spinnerMode="dropdown" />
+            android:layout_margin="5dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/spinner_background">
+
+            <Spinner
+                android:id="@+id/sort"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:spinnerMode="dropdown" />
+
+        </LinearLayout>
 
         <Button
             style="?android:attr/buttonBarButtonStyle"

@@ -50,6 +50,7 @@ public class SettingsActivity extends ParentActivity {
         // Create an ArrayAdapter using the string array and a default spinner layout
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
                 R.array.font_sizes, R.layout.custom_spinner);
+        adapter.setDropDownViewResource(R.layout.custom_spinner_dropdown);
 
         // Apply the adapter to the spinner
         sizeSpinner.setAdapter(adapter);
@@ -82,6 +83,7 @@ public class SettingsActivity extends ParentActivity {
         // Create an ArrayAdapter using the string array and a custom spinner layout
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
                 R.array.font_colors, R.layout.custom_spinner);
+        adapter.setDropDownViewResource(R.layout.custom_spinner_dropdown);
 
         // Apply the adapter to the spinner
         colorSpinner.setAdapter(adapter);

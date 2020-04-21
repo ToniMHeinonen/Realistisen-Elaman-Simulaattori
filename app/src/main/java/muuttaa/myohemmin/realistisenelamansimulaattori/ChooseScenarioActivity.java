@@ -311,6 +311,7 @@ public class ChooseScenarioActivity extends ParentActivity {
         // Create an ArrayAdapter using the string array and a default spinner layout
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
                 R.array.scenario_sort, R.layout.custom_spinner);
+        adapter.setDropDownViewResource(R.layout.custom_spinner_dropdown);
 
         sort.setAdapter(adapter); // Apply the adapter to the spinner
         sort.setSelection(sortBy); // Set selection to loaded value

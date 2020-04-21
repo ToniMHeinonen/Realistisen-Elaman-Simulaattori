@@ -66,10 +66,14 @@
                         style="@style/createSceneImageOptionsTopics"
                         android:text="@string/choose_background"/>
 
-                    <Spinner
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/taustaSpinner"/>
+                    <LinearLayout style="@style/createSceneImageOptionsSpinners">
+
+                        <Spinner
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/taustaSpinner"/>
+
+                    </LinearLayout>
 
                 </LinearLayout>
 
@@ -79,10 +83,39 @@
                         style="@style/createSceneImageOptionsTopics"
                         android:text="@string/choose_person"/>
 
-                    <Spinner
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/personSpinner"/>
+                    <LinearLayout style="@style/createSceneImageOptionsSpinners">
+
+                        <Spinner
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/personSpinner"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+
+                <LinearLayout style="@style/createSceneImageOptionsLayout">
+
+                    <TextView
+                        style="@style/createSceneImageOptionsTopics"
+                        android:text="@string/choose_fore"/>
+
+                    <LinearLayout style="@style/createSceneImageOptionsSpinners">
+
+                        <Spinner
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/ForegroundSpinner"/>
+
+                    </LinearLayout>
 
                 </LinearLayout>
 
@@ -92,23 +125,14 @@
                         style="@style/createSceneImageOptionsTopics"
                         android:text="@string/choose_face"/>
 
-                    <Spinner
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/KasvoSpinner"/>
+                    <LinearLayout style="@style/createSceneImageOptionsSpinners">
 
-                </LinearLayout>
+                        <Spinner
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/KasvoSpinner"/>
 
-                <LinearLayout style="@style/createSceneImageOptionsLayout">
-
-                    <TextView
-                        style="@style/createSceneImageOptionsTopics"
-                        android:text="@string/choose_fore"/>
-
-                    <Spinner
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/ForegroundSpinner"/>
+                    </LinearLayout>
 
                 </LinearLayout>
 
@@ -118,11 +142,6 @@
                 style="@style/createScenarioMovementButtons"
                 android:onClick="pois"
                 android:text="@string/done"/>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/first_scene_information" />
 
             <LinearLayout
                 android:layout_width="match_parent"

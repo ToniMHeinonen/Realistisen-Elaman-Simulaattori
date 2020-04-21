@@ -75,20 +75,24 @@ public class CreateScene extends ParentActivity implements dialogiFragmentti.dia
 
         ArrayAdapter<CharSequence> adapterTaustat = ArrayAdapter.createFromResource(this,
                 R.array.taustat, R.layout.custom_spinner);
+        adapterTaustat.setDropDownViewResource(R.layout.custom_spinner_dropdown);
         this.background.setAdapter(adapterTaustat);
 
         ArrayAdapter<CharSequence> adapterHenkilot = ArrayAdapter.createFromResource(this,
                 R.array.henkilot, R.layout.custom_spinner);
+        adapterHenkilot.setDropDownViewResource(R.layout.custom_spinner_dropdown);
 
         this.person.setAdapter(adapterHenkilot);
 
         ArrayAdapter<CharSequence> adapterKasvot = ArrayAdapter.createFromResource(this,
                 R.array.kasvot, R.layout.custom_spinner);
+        adapterKasvot.setDropDownViewResource(R.layout.custom_spinner_dropdown);
 
         this.face.setAdapter(adapterKasvot);
 
         ArrayAdapter<CharSequence> adapterForeground = ArrayAdapter.createFromResource(this,
                 R.array.kolmasKuva, R.layout.custom_spinner);
+        adapterForeground.setDropDownViewResource(R.layout.custom_spinner_dropdown);
 
         this.foreground.setAdapter(adapterForeground);
         //listeners

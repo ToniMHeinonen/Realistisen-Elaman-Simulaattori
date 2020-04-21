@@ -31,9 +31,15 @@
                 style="@style/SettingsTopics"
                 android:text="@string/font_size" />
 
-            <Spinner
+            <LinearLayout
                 style="@style/SettingsSpinners"
-                android:id="@+id/fontSize" />
+                android:background="@drawable/spinner_background">
+
+                <Spinner
+                    style="@style/SettingsSpinners"
+                    android:id="@+id/fontSize" />
+
+            </LinearLayout>
 
         </LinearLayout>
 
@@ -43,9 +49,15 @@
                 style="@style/SettingsTopics"
                 android:text="@string/font_color" />
 
-            <Spinner
+            <LinearLayout
                 style="@style/SettingsSpinners"
-                android:id="@+id/fontColor" />
+                android:background="@drawable/spinner_background">
+
+                <Spinner
+                    style="@style/SettingsSpinners"
+                    android:id="@+id/fontColor" />
+
+            </LinearLayout>
 
         </LinearLayout>
 
