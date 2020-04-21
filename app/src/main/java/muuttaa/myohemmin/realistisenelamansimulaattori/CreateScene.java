@@ -169,6 +169,9 @@ View.OnClickListener, View.OnLongClickListener{
         //pakko lisätä foreground koodi myöhemmin tähän
     }
 
+    /**
+     * Shows answers in a list.
+     */
     public void updateListOfAnswers(){
         ArrayList<Answer> arrayList = new ArrayList<>();
         for(int lap=0; lap < kysymyksetGo.size(); lap++){
@@ -257,6 +260,10 @@ View.OnClickListener, View.OnLongClickListener{
                 .show();
     }
 
+    /**
+     * Listens to answer button clicks.
+     * @param v answer button
+     */
     @Override
     public void onClick(View v) {
         int position = (int) v.getTag();
@@ -272,6 +279,10 @@ View.OnClickListener, View.OnLongClickListener{
         dia.show(getSupportFragmentManager(), "vastauksen luonti");
     }
 
+    /**
+     * Listens to answer button long clicks.
+     * @param v answer button
+     */
     @Override
     public boolean onLongClick(View v) {
         int position = (int) v.getTag();
