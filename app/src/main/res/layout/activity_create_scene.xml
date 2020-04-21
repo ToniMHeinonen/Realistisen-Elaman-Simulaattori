@@ -18,15 +18,11 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <Button
-                style="@style/createScenarioMovementButtons"
-                android:onClick="pois"
-                android:text="@string/done"/>
-
             <!-- SCENE IMAGE -->
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="250dp"
+                android:layout_marginTop="20dp"
                 android:layout_marginRight="20dp"
                 android:layout_marginLeft="20dp">
 
@@ -199,6 +195,11 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:text="@string/can_delete"/>
+
+            <Button
+                style="@style/createScenarioMovementButtons"
+                android:onClick="pois"
+                android:text="@string/done"/>
 
         </LinearLayout>
     </ScrollView>
