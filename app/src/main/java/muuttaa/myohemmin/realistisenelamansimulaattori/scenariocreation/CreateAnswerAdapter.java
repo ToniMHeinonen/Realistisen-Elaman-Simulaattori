@@ -87,14 +87,11 @@ public class CreateAnswerAdapter extends BaseAdapter {
             layout.setOnLongClickListener(listener);
 
             if (item.getColor().equals("green")) {
-                layout.setBackgroundResource(context.getResources().getIdentifier("green_button",
-                        "drawable", context.getPackageName()));
+                layout.setBackground(context.getResources().getDrawable(R.drawable.green_button));
             } else if (item.getColor().equals("yellow")) {
-                layout.setBackgroundResource(context.getResources().getIdentifier("yellow_button",
-                        "drawable", context.getPackageName()));
+                layout.setBackground(context.getResources().getDrawable(R.drawable.yellow_button));
             } else if (item.getColor().equals("red")) {
-                layout.setBackgroundResource(context.getResources().getIdentifier("red_button",
-                        "drawable", context.getPackageName()));
+                layout.setBackground(context.getResources().getDrawable(R.drawable.red_button));
             }
 
             TextView text = view.findViewById(R.id.answerText);

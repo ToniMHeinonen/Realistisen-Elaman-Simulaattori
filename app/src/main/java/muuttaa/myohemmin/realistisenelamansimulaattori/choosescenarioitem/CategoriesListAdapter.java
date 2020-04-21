@@ -101,18 +101,14 @@ public class CategoriesListAdapter extends BaseExpandableListAdapter {
         // If scenario has not been played yet, keep original button color
         if (item.getLastTimePlayed().getTime() != 0) {
             if (percent < 50) {
-                layout.setBackgroundResource(activity.getResources().getIdentifier("red",
-                        "drawable", activity.getPackageName()));
+                layout.setBackground(activity.getResources().getDrawable(R.drawable.red_button));
             } else if (percent < 100) {
-                layout.setBackgroundResource(activity.getResources().getIdentifier("yellow",
-                        "drawable", activity.getPackageName()));
+                layout.setBackground(activity.getResources().getDrawable(R.drawable.yellow_button));
             } else {
-                layout.setBackgroundResource(activity.getResources().getIdentifier("green",
-                        "drawable", activity.getPackageName()));
+                layout.setBackground(activity.getResources().getDrawable(R.drawable.green_button));
             }
         } else {
-            layout.setBackgroundResource(activity.getResources().getIdentifier("button_default",
-                    "drawable", activity.getPackageName()));
+            layout.setBackground(activity.getResources().getDrawable(R.drawable.custom_button));
         }
 
         return convertView;
