@@ -12,7 +12,6 @@ import java.util.ArrayList;
 
 import muuttaa.myohemmin.realistisenelamansimulaattori.CreateScene;
 import muuttaa.myohemmin.realistisenelamansimulaattori.R;
-import muuttaa.myohemmin.realistisenelamansimulaattori.scenariocreation.Answer;
 
 public class CreateAnswerAdapter extends BaseAdapter {
 
