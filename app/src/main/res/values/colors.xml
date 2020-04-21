@@ -13,8 +13,8 @@
     <color name="buttonYellowDark">#990</color>
     <color name="buttonRed">#F00</color>
     <color name="buttonRedDark">#900</color>
-    <color name="buttonBorderUnselected">#FFF</color>
-    <color name="buttonBorderSelected">#F90</color>
+    <color name="buttonBorderUnselected">@color/colorPrimary</color>
+    <color name="buttonBorderSelected">@color/colorAccent</color>
 
     <color name="closeButtonRed">#FD4A4A</color>
     <color name="confirmButtonGreen">#4AFD4A</color>
