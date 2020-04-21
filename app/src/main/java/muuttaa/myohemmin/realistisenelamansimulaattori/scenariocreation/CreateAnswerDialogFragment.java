@@ -75,6 +75,7 @@ public class CreateAnswerDialogFragment extends AppCompatDialogFragment {
         colorButtons[0] = view.findViewById(R.id.greenButton);
         // Default selected green, modify later when selected color loading is working
         colorButtons[0].setSelected(true);
+        selectedButton = colorButtons[0];
         colorButtons[1] = view.findViewById(R.id.yellowButton);
         colorButtons[2] = view.findViewById(R.id.redButton);
 

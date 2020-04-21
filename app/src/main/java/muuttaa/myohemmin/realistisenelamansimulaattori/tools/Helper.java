@@ -20,8 +20,9 @@ public abstract class Helper {
      * @param negativeText negative button text, null = "Cancel"
      * @param positiveListener listener for positive button
      * @param negativeListener listener for negative button
+     * @return created alert dialog
      */
-    public static void showAlert(Context context, String topicText, String messageText,
+    public static AlertDialog showAlert(Context context, String topicText, String messageText,
                                  String positiveText, String negativeText,
                                  AlertPositiveButtonListener positiveListener,
                                  AlertNegativeButtonListener negativeListener) {
@@ -61,5 +62,7 @@ public abstract class Helper {
         // Show alert
         alertD.setView(view);
         alertD.show();
+
+        return alertD;
     }
 }

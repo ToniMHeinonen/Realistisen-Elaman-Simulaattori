@@ -115,12 +115,14 @@
     <string name="can_delete">You can delete answers by holding the answer button</string>
     <string name="saved_scenario">Scenario saved</string>
     <string name="not_enough_scene">Need least one scene</string>
-    <string name="remember_name">Must give name</string>
+
+    <string name="remember_name">You must give a name to the scene.</string>
+    <string name="remember_question">You must give a question to the scene.</string>
+    <string name="remember_answers">You must create at least one answer.</string>
+
     <string name="unique_name">Give unique name</string>
     <string name="need_first">Need scene with name first</string>
     <string name="too_many_first">Only one scene can name to first</string>
-    <string name="remember_question">Must give question</string>
-    <string name="remember_answers">Must give least one answer</string>
     <string name="remember_one_answer">Must give answer</string>
     <string name="default_answer">default answer</string>
 </resources>

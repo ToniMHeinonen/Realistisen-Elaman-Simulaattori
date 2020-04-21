@@ -7,10 +7,9 @@ import muuttaa.myohemmin.realistisenelamansimulaattori.data.Scene;
 import muuttaa.myohemmin.realistisenelamansimulaattori.scenariocreation.CreateAnswerAdapter;
 import muuttaa.myohemmin.realistisenelamansimulaattori.scenariocreation.CreateAnswerDialogFragment;
 import muuttaa.myohemmin.realistisenelamansimulaattori.tools.GlobalPrefs;
+import muuttaa.myohemmin.realistisenelamansimulaattori.tools.Helper;
 
 import android.app.Activity;
-import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Parcelable;
@@ -243,22 +242,12 @@ View.OnClickListener, View.OnLongClickListener{
         return true;
     }
     private void dataNotGivenAlert(String content, String toastMessage){
-        Context co = this;
-        new AlertDialog.Builder(this)
-                .setTitle(this.getString(R.string.huom))
-                .setMessage(content)
-                .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog, int which) {
-                        Toast.makeText(co, toastMessage, Toast.LENGTH_LONG).show();
-                    }
-                })
-                .setNegativeButton(android.R.string.no, new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog, int which) {
-                        Toast.makeText(co, toastMessage, Toast.LENGTH_LONG).show();
-                    }
-                })
-                .setIcon(android.R.drawable.ic_dialog_alert)
-                .show();
+        // Show content of what data is missing in alert dialog
+        AlertDialog alert = Helper.showAlert(this, getString(R.string.huom), content,
+                getString(android.R.string.yes), getString(android.R.string.no),
+                null, null);
+        // Show toast message after dialog has been dismissed
+        alert.setOnDismissListener((d) -> Toast.makeText(this, toastMessage, Toast.LENGTH_LONG).show());
     }
 
     /**
@@ -289,19 +278,13 @@ View.OnClickListener, View.OnLongClickListener{
         int position = (int) v.getTag();
         final GeneralKeyAndValue varin = kysymyksetColor.get(position);
         final GeneralKeyAndValue menon = kysymyksetGo.get(position);
-        new AlertDialog.Builder(this)
-                .setTitle(getString(R.string.huom))
-                .setMessage(getString(R.string.remove_item))
-                .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog, int which) {
-                        kysymyksetColor.remove(varin);
-                        kysymyksetGo.remove(menon);
-                        updateListOfAnswers();
-                    }
-                })
-                .setNegativeButton(android.R.string.no, null)
-                .setIcon(android.R.drawable.ic_dialog_alert)
-                .show();
+        Helper.showAlert(this, getString(R.string.huom), getString(R.string.remove_item),
+                getString(android.R.string.yes), getString(android.R.string.no),
+                () -> {
+                    kysymyksetColor.remove(varin);
+                    kysymyksetGo.remove(menon);
+                    updateListOfAnswers();
+                }, null);
         return false;
     }
 }

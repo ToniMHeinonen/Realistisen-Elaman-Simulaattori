@@ -115,12 +115,14 @@
     <string name="can_delete">Voit poistaa vastauksen pitämällä vastausnappia pohjassa</string>
     <string name="saved_scenario">Skenaario tallennettu</string>
     <string name="not_enough_scene">Täytyy olla vähintään yksi kohtaus</string>
-    <string name="remember_name">Muista antaa nimi</string>
+
+    <string name="remember_name">Kohtaukselle täytyy antaa nimi.</string>
+    <string name="remember_question">Kohtaukselle täytyy antaa kysymys.</string>
+    <string name="remember_answers">Täytyy antaa vähintään yksi vastaus.</string>
+
     <string name="unique_name">Anna uniikki nimi</string>
     <string name="need_first">Tarvitaan kohtaus nimeltä first</string>
     <string name="too_many_first">Vain yhden kohtauksen nimi voi olla first</string>
-    <string name="remember_question">Muista antaa kysymys</string>
-    <string name="remember_answers">Pitää antaa vähintään yksi vastaus</string>
     <string name="remember_one_answer">Muista antaa vastaus</string>
     <string name="default_answer">oletus vastaus</string>
 </resources>
