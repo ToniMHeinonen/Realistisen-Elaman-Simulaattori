@@ -13,10 +13,11 @@ import muuttaa.myohemmin.realistisenelamansimulaattori.tools.GlobalPrefs;
 import android.os.Bundle;
 import android.view.DragEvent;
 import android.view.View;
+import android.view.animation.AccelerateDecelerateInterpolator;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.widget.ExpandableListView;
+import android.widget.ImageButton;
 import android.widget.Spinner;
 import android.widget.Toast;
 
@@ -32,7 +33,7 @@ public class ChooseScenarioActivity extends ParentActivity {
     private ArrayList<ScenarioItem> scenarios = new ArrayList<>();
     private final int SORT_NAME = 0, SORT_RECENT = 1, SORT_PERCENTAGE = 2;
     private int sortBy;
-    private Button sortArrow;
+    private ImageButton sortArrow;
     private boolean sortAscending;
 
     // Categories
@@ -374,7 +375,8 @@ public class ChooseScenarioActivity extends ParentActivity {
                 break;
         }
 
-        sortArrow.setText(sortAscending ? "v" : "^");
+        float deg = (sortAscending) ? 0f : 180f;
+        sortArrow.animate().rotation(deg).setInterpolator(new AccelerateDecelerateInterpolator());
 
         refreshScenarioList();
     }

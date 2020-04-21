@@ -10,15 +10,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <Button
+        <ImageButton
             android:id="@+id/sortDirection"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-
             android:layout_margin="5dp"
             android:layout_weight="0.1"
             android:onClick="sortOrderClick"
-            android:background="@drawable/custom_button"/>
+            android:background="@drawable/spinner_background"
+            android:src="@drawable/ic_dropdown"/>
 
         <LinearLayout
             android:layout_width="0dp"
