@@ -9,7 +9,7 @@
                 android:angle="270" />
             <corners android:radius="@dimen/button_radius" />
             <stroke android:width="@dimen/button_border_selected_width"
-                android:color="@color/buttonBorderSelected" />
+                android:color="@color/colorButtonBorderSelected" />
         </shape>
     </item>
 
@@ -22,7 +22,7 @@
                 android:angle="270" />
             <corners android:radius="@dimen/button_radius" />
             <stroke android:width="@dimen/button_border_unselected_width"
-                android:color="@color/buttonBorderUnselected" />
+                android:color="@color/colorButtonBorderUnselected" />
         </shape>
     </item>
 

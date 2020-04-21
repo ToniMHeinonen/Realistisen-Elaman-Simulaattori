@@ -10,6 +10,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatDialogFragment;
 import muuttaa.myohemmin.realistisenelamansimulaattori.R;
@@ -22,6 +25,12 @@ public class CreateAnswerDialogFragment extends AppCompatDialogFragment {
     private int korvaus = -1;
     private int koko = 0;
 
+
+    private Map<String, Integer> colorMap = new HashMap<String, Integer>() {{
+        put("green", 0);
+        put("yellow", 1);
+        put("red", 2);
+    }};
     private Button[] colorButtons = new Button[3];
     private Button selectedButton;
 
@@ -39,6 +48,12 @@ public class CreateAnswerDialogFragment extends AppCompatDialogFragment {
             korvaus = getArguments().getInt("korvaa", -1);
             menee.setText(getArguments().getString("menee", " "));
             vastaus.setText(getArguments().getString("kysymys", " "));
+
+            // Load color
+            String color = getArguments().getString("color");
+            int colorPos = colorMap.get(color);
+            colorButtons[colorPos].setSelected(true);
+            selectedButton = colorButtons[colorPos];
         }
         koko = getArguments().getInt("koko", 0);
         builder.setView(view)
@@ -73,9 +88,6 @@ public class CreateAnswerDialogFragment extends AppCompatDialogFragment {
      */
     private void setupColorButtons() {
         colorButtons[0] = view.findViewById(R.id.greenButton);
-        // Default selected green, modify later when selected color loading is working
-        colorButtons[0].setSelected(true);
-        selectedButton = colorButtons[0];
         colorButtons[1] = view.findViewById(R.id.yellowButton);
         colorButtons[2] = view.findViewById(R.id.redButton);
 

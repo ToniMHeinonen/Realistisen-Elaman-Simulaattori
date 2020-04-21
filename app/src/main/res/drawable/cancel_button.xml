@@ -16,7 +16,7 @@
             <solid android:color="@color/closeButtonRed"/>
             <corners android:radius="@dimen/custom_button_radius" />
             <stroke android:width="@dimen/custom_button_border_width"
-                android:color="@color/buttonBorderSelected" />
+                android:color="@color/customButtonBorderSelected" />
         </shape>
     </item>
 </selector>

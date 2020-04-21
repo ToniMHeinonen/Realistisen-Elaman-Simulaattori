@@ -6,6 +6,7 @@ import muuttaa.myohemmin.realistisenelamansimulaattori.data.GeneralKeyAndValue;
 import muuttaa.myohemmin.realistisenelamansimulaattori.data.Scene;
 import muuttaa.myohemmin.realistisenelamansimulaattori.scenariocreation.CreateAnswerAdapter;
 import muuttaa.myohemmin.realistisenelamansimulaattori.scenariocreation.CreateAnswerDialogFragment;
+import muuttaa.myohemmin.realistisenelamansimulaattori.tools.Debug;
 import muuttaa.myohemmin.realistisenelamansimulaattori.tools.GlobalPrefs;
 import muuttaa.myohemmin.realistisenelamansimulaattori.tools.Helper;
 
@@ -39,8 +40,7 @@ View.OnClickListener, View.OnLongClickListener{
     private ImageView henkilo;
     private ImageView kasvot;
     private List<GeneralKeyAndValue> kysymyksetGo;
-    private  List<GeneralKeyAndValue> kysymyksetColor;
-    private CreateAnswerAdapter adapter;
+    private List<GeneralKeyAndValue> kysymyksetColor;
     private int korvaus = -1;
 
     @Override
@@ -179,7 +179,7 @@ View.OnClickListener, View.OnLongClickListener{
         for(int lap=0; lap < kysymyksetGo.size(); lap++){
             arrayList.add(new Answer(kysymyksetGo.get(lap).getKey(),kysymyksetGo.get(lap).getValue(), kysymyksetColor.get(lap).getValue()));
         }
-        adapter = new CreateAnswerAdapter(this, arrayList, this);
+        CreateAnswerAdapter adapter = new CreateAnswerAdapter(this, arrayList, this);
         lista.setAdapter(adapter);
     }
 
@@ -266,6 +266,8 @@ View.OnClickListener, View.OnLongClickListener{
         bundle.putString("kysymys", meno.getKey());
         bundle.putInt("korvaa", position);
         bundle.putInt("koko", kysymyksetColor.size());
+        GeneralKeyAndValue color = kysymyksetColor.get(position);
+        bundle.putString("color", color.getValue());
         CreateAnswerDialogFragment dia = new CreateAnswerDialogFragment();
         dia.setArguments(bundle);
         dia.show(getSupportFragmentManager(), "vastauksen luonti");
