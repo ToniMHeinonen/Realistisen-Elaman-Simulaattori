@@ -128,4 +128,6 @@
     <string name="too_many_first">Only one scene can name to first</string>
     <string name="remember_one_answer">Must give answer</string>
     <string name="default_answer">default answer</string>
+    <string name="not_number">do not give number</string>
+    <string name="or">or</string>
 </resources>

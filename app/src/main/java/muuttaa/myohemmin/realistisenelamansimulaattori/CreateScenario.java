@@ -175,47 +175,51 @@ public class CreateScenario extends ParentActivity {
     public void lisaa(View view) {
         if(allDataGiven()) {
             String name = scenarioName.getText().toString().toLowerCase();
-            SaveSystemPreferences json = new SaveSystemPreferences(this);
-            final Context con = this;
-            if (json.containsAlready(name)) {
-                if (editMode) {
-                    Scenario scenario = new Scenario();
-                    scenario.setListaus(list);
-                    scenario.setName(name);
-                    String korjattu = "";
-                    for (int lap = 0; lap < name.length(); lap++) {
-                        char m = name.charAt(lap);
-                        if (m != ' ') {
-                            korjattu += m;
-                        }
-                    }
-                    scenario.setFileName(korjattu + ".json");
-                    json.saveScenario(scenario, true);
-                    finish();
-                } else {
-                    Toast.makeText(this, getString(R.string.duplicate_warning), Toast.LENGTH_LONG).show();
-                }
+            if (StringContainsNumber(name)) {
+                Toast.makeText(this, getString(R.string.not_number), Toast.LENGTH_SHORT).show();
             } else {
-                try {
-                    Scenario scenario = new Scenario();
-                    scenario.setListaus(list);
-                    scenario.setName(name);
-                    String korjattu = "";
-                    for (int lap = 0; lap < name.length(); lap++) {
-                        char m = name.charAt(lap);
-                        if (m != ' ') {
-                            korjattu += m;
+                SaveSystemPreferences json = new SaveSystemPreferences(this);
+                final Context con = this;
+                if (json.containsAlready(name)) {
+                    if (editMode) {
+                        Scenario scenario = new Scenario();
+                        scenario.setListaus(list);
+                        scenario.setName(name);
+                        String korjattu = "";
+                        for (int lap = 0; lap < name.length(); lap++) {
+                            char m = name.charAt(lap);
+                            if (m != ' ') {
+                                korjattu += m;
+                            }
                         }
+                        scenario.setFileName(korjattu + ".json");
+                        json.saveScenario(scenario, true);
+                        finish();
+                    } else {
+                        Toast.makeText(this, getString(R.string.duplicate_warning), Toast.LENGTH_LONG).show();
                     }
-                    scenario.setFileName(korjattu + ".json");
-                    json.saveScenario(scenario, false);
-                    Toast.makeText(this, getString(R.string.saved_scenario), Toast.LENGTH_LONG).show();
-                    startActivity(new Intent(this, ChooseScenarioActivity.class));
-                    finish();
-                } catch (Exception e) {
-                    Toast.makeText(this, this.getString(R.string.is_all_data_given), Toast.LENGTH_LONG).show();
-                    if (debuggi) {
-                        e.printStackTrace();
+                } else {
+                    try {
+                        Scenario scenario = new Scenario();
+                        scenario.setListaus(list);
+                        scenario.setName(name);
+                        String korjattu = "";
+                        for (int lap = 0; lap < name.length(); lap++) {
+                            char m = name.charAt(lap);
+                            if (m != ' ') {
+                                korjattu += m;
+                            }
+                        }
+                        scenario.setFileName(korjattu + ".json");
+                        json.saveScenario(scenario, false);
+                        Toast.makeText(this, getString(R.string.saved_scenario), Toast.LENGTH_LONG).show();
+                        startActivity(new Intent(this, ChooseScenarioActivity.class));
+                        finish();
+                    } catch (Exception e) {
+                        Toast.makeText(this, this.getString(R.string.is_all_data_given), Toast.LENGTH_LONG).show();
+                        if (debuggi) {
+                            e.printStackTrace();
+                        }
                     }
                 }
             }
@@ -284,10 +288,10 @@ public class CreateScenario extends ParentActivity {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 outName = input.getText().toString().toLowerCase();
-                if(new SaveSystemPreferences(con).containsAlready(outName)) {
+                if(new SaveSystemPreferences(con).containsAlready(outName) || StringContainsNumber(outName)) {
                     new AlertDialog.Builder(con)
                             .setTitle(con.getString(R.string.huom))
-                            .setMessage(con.getString(R.string.duplicate_warning))
+                            .setMessage(con.getString(R.string.duplicate_warning) + " " + con.getString(R.string.or) + " " + con.getString(R.string.not_number))
                             .setNegativeButton(android.R.string.no, new DialogInterface.OnClickListener() {
                                 @Override
                                 public void onClick(DialogInterface dialog, int which) {
@@ -354,6 +358,18 @@ public class CreateScenario extends ParentActivity {
             return false;
         }
         return true;
+    }
+
+    private boolean StringContainsNumber(String input){
+        String numbers = "1234567890";
+        boolean oliko = false;
+        for(int lap=0; lap < input.length(); lap++){
+            if(input.contains("" +numbers.charAt(lap))){
+                oliko = true;
+                break;
+            }
+        }
+        return oliko;
     }
 
     private void dataNotGivenAlert(String content, String toastMessage){

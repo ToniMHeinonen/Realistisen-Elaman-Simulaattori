@@ -126,4 +126,6 @@
     <string name="too_many_first">Vain yhden kohtauksen nimi voi olla first</string>
     <string name="remember_one_answer">Muista antaa vastaus</string>
     <string name="default_answer">oletus vastaus</string>
+    <string name="not_number">älä anna numeroa</string>
+    <string name="or">tai</string>
 </resources>
