@@ -5,11 +5,11 @@
     </string-array>
     <string-array name="henkilot">
         <item>character_1</item>
-        <item>empty</item>
+        <item>tyhjä</item>
     </string-array>
     <string-array name="kasvot">
         <item>face_happy</item>
-        <item>empty</item>
+        <item>tyhjä</item>
     </string-array>
     <string-array name="varit">
         <item>green</item>
@@ -17,6 +17,6 @@
         <item>yellow</item>
     </string-array>
     <string-array name="kolmasKuva">
-        <item>empty</item>
+        <item>tyhjä</item>
     </string-array>
 </resources>

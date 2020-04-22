@@ -156,14 +156,15 @@ View.OnClickListener, View.OnLongClickListener{
         String t = this.background.getSelectedItem().toString();
         String h = this.person.getSelectedItem().toString();
         this.tausta.setImageResource(getResources().getIdentifier(t, "drawable", getPackageName()));
-        if(!h.equals("null")) {
+        if(!h.equals("null") && !h.equals("tyhjä") && !h.equals("empty")) {
             this.henkilo.setImageResource(getResources().getIdentifier(h, "drawable", getPackageName()));
         } else{
             this.henkilo.setImageResource(android.R.color.transparent);
+            //null value must be last
             int faceNullPosition =  getResources().getStringArray(R.array.kasvot).length - 1;
             this.face.setSelection(faceNullPosition);
         }
-        if(!naama.equals("null")) {
+        if(!naama.equals("null") && !naama.equals("tyhjä") && !naama.equals("empty")) {
             this.kasvot.setImageResource(getResources().getIdentifier(naama, "drawable", getPackageName()));
         } else{
             this.kasvot.setImageResource(android.R.color.transparent);
@@ -202,6 +203,15 @@ View.OnClickListener, View.OnLongClickListener{
                 String henkilo = this.person.getSelectedItem().toString();
                 String kasvo = this.face.getSelectedItem().toString();
                 String foree = this.foreground.getSelectedItem().toString();
+                if(henkilo.equals("tyhjä") || henkilo.equals("empty")){
+                    henkilo = "null";
+                }
+                if(kasvo.equals("tyhjä") || kasvo.equals("empty")){
+                    kasvo = "null";
+                }
+                if(foree.equals("tyhjä") || foree.equals("empty")){
+                    foree = "null";
+                }
                 String[] ans = new String[kysymyksetGo.size()];
                 for (int lap = 0; lap < kysymyksetGo.size(); lap++) {
                     ans[lap] = kysymyksetGo.get(lap).getKey();
