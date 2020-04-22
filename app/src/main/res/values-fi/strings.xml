@@ -129,4 +129,5 @@
     <string name="not_number">älä anna numeroa</string>
     <string name="or">tai</string>
     <string name="not_null">et voi antaa arvoa null</string>
+    <string name="null_value">lopetus</string>
 </resources>

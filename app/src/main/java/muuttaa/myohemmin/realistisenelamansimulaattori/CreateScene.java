@@ -178,7 +178,7 @@ View.OnClickListener, View.OnLongClickListener{
     public void updateListOfAnswers(){
         ArrayList<Answer> arrayList = new ArrayList<>();
         for(int lap=0; lap < kysymyksetGo.size(); lap++){
-            arrayList.add(new Answer(kysymyksetGo.get(lap).getKey(),kysymyksetGo.get(lap).getValue(), kysymyksetColor.get(lap).getValue()));
+            arrayList.add(new Answer(this, kysymyksetGo.get(lap).getKey(),kysymyksetGo.get(lap).getValue(), kysymyksetColor.get(lap).getValue()));
         }
         CreateAnswerAdapter adapter = new CreateAnswerAdapter(this, arrayList, this);
         lista.setAdapter(adapter);
@@ -272,7 +272,11 @@ View.OnClickListener, View.OnLongClickListener{
         Bundle bundle = new Bundle();
         bundle.putBoolean("muokkaus", true);
         GeneralKeyAndValue meno = kysymyksetGo.get(position);
-        bundle.putString("menee", meno.getValue());
+        String me = meno.getValue();
+        if(me.equals("null")){
+            me = "";
+        }
+        bundle.putString("menee", me);
         bundle.putString("kysymys", meno.getKey());
         bundle.putInt("korvaa", position);
         bundle.putInt("koko", kysymyksetColor.size());
