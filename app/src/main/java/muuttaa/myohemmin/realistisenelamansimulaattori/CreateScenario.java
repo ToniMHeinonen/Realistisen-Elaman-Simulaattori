@@ -379,7 +379,7 @@ public class CreateScenario extends ParentActivity {
     private boolean StringContainsNumber(String input){
         String numbers = "1234567890";
         boolean oliko = false;
-        for(int lap=0; lap < input.length(); lap++){
+        for(int lap=0; lap < numbers.length(); lap++){
             if(input.contains("" +numbers.charAt(lap))){
                 oliko = true;
                 break;
