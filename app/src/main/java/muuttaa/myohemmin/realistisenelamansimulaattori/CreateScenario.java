@@ -139,7 +139,7 @@ public class CreateScenario extends ParentActivity {
         for(int lap=0; lap < list.size(); lap++){
             arrayList.add(list.get(lap).getName());
         }
-        adapter = new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_spinner_item, arrayList);
+        adapter = new ArrayAdapter<String>(this, R.layout.scene_item, arrayList);
         listaview.setAdapter(adapter);
         final Context con = this;
         listaview.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {

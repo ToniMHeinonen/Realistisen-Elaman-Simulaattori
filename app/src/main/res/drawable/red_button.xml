@@ -9,7 +9,7 @@
                 android:angle="270" />
             <corners android:radius="@dimen/button_radius" />
             <stroke android:width="@dimen/button_border_selected_width"
-                android:color="@color/buttonBorderSelected" />
+                android:color="@color/colorButtonBorderSelected" />
         </shape>
     </item>
 
@@ -22,9 +22,20 @@
                 android:angle="270" />
             <corners android:radius="@dimen/button_radius" />
             <stroke android:width="@dimen/button_border_unselected_width"
-                android:color="@color/buttonBorderUnselected" />
+                android:color="@color/colorButtonBorderUnselected" />
         </shape>
     </item>
 
-    <item android:drawable="@drawable/clicked_color_button" />
+    <item>
+        <shape
+            android:shape="rectangle">
+            <gradient android:startColor="@color/buttonRed"
+                android:endColor="@color/buttonRedDark"
+                android:type="linear"
+                android:angle="270" />
+            <corners android:radius="@dimen/button_radius" />
+            <stroke android:width="@dimen/button_border_unselected_width"
+                android:color="@color/colorButtonBorderSelected" />
+        </shape>
+    </item>
 </selector>

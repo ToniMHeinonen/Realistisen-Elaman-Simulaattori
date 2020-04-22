@@ -112,7 +112,10 @@
     <string name="duplicate_warning">This is already used</string>
     <string name="not_added">Not added</string>
     <string name="remove_item">Do you really want remove this?</string>
-    <string name="can_delete">You can delete answers by holding the answer button</string>
+
+    <string name="can_delete_scene">You can delete scenes by holding the scene button</string>
+    <string name="can_delete_answer">You can delete answers by holding the answer button</string>
+
     <string name="saved_scenario">Scenario saved</string>
     <string name="not_enough_scene">Need least one scene</string>
 
