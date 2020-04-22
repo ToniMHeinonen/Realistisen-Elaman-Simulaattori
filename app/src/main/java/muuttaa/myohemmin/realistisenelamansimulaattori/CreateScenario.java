@@ -86,6 +86,11 @@ public class CreateScenario extends ParentActivity {
                     list.set(k, (Scene) data.getParcelableExtra("scene"));
                     updateList();
                 }
+                if(scenarioName.getText().toString().trim().isEmpty()){
+                    Toast.makeText(this, getString(R.string.autosave_not), Toast.LENGTH_LONG).show();
+                } else {
+                    basicSave(false);
+                }
             }
         } else if(requestCode == 22){
             if(resultCode == RESULT_OK){
@@ -173,6 +178,10 @@ public class CreateScenario extends ParentActivity {
     }
 
     public void lisaa(View view) {
+        basicSave(true);
+    }
+
+    private void basicSave(boolean end){
         if(allDataGiven()) {
             String name = scenarioName.getText().toString();
             if (StringContainsNumber(name)) {
@@ -196,7 +205,9 @@ public class CreateScenario extends ParentActivity {
                         }
                         scenario.setFileName(korjattu.toLowerCase() + ".json");
                         json.saveScenario(scenario, true);
-                        finish();
+                        if(end) {
+                            finish();
+                        }
                     } else {
                         Toast.makeText(this, getString(R.string.duplicate_warning), Toast.LENGTH_LONG).show();
                     }
@@ -215,8 +226,10 @@ public class CreateScenario extends ParentActivity {
                         scenario.setFileName(korjattu.toLowerCase() + ".json");
                         json.saveScenario(scenario, false);
                         Toast.makeText(this, getString(R.string.saved_scenario), Toast.LENGTH_LONG).show();
+                        if(end) {
                         startActivity(new Intent(this, ChooseScenarioActivity.class));
-                        finish();
+                            finish();
+                        }
                     } catch (Exception e) {
                         Toast.makeText(this, this.getString(R.string.is_all_data_given), Toast.LENGTH_LONG).show();
                         if (debuggi) {

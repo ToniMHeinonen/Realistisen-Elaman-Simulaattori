@@ -130,4 +130,5 @@
     <string name="or">tai</string>
     <string name="not_null">et voi antaa arvoa null</string>
     <string name="null_value">lopetus</string>
+    <string name="autosave_not">nimi tarvitaan automaattiseen tallennukseen</string>
 </resources>

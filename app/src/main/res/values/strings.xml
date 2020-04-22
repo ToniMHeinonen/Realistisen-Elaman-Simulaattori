@@ -132,4 +132,5 @@
     <string name="or">or</string>
     <string name="not_null">you can not give null</string>
     <string name="null_value">end</string>
+    <string name="autosave_not">Give name for autosave</string>
 </resources>
