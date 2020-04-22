@@ -130,4 +130,5 @@
     <string name="default_answer">default answer</string>
     <string name="not_number">do not give number</string>
     <string name="or">or</string>
+    <string name="not_null">you can not give null</string>
 </resources>

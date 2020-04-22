@@ -626,8 +626,8 @@ public class SaveSystemPreferences implements JsonInterface {
                 korjattu += m;
             }
         }
-        write(korjattu + ".json", in);
-        writeSaveData(korjattu + ".json", name);
+        write(korjattu.toLowerCase() + ".json", in);
+        writeSaveData(korjattu.toLowerCase() + ".json", name);
         return null;
     }
     public String convertScenarioToString(Scenario scenario){

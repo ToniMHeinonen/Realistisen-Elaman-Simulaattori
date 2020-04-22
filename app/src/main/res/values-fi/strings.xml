@@ -128,4 +128,5 @@
     <string name="default_answer">oletus vastaus</string>
     <string name="not_number">älä anna numeroa</string>
     <string name="or">tai</string>
+    <string name="not_null">et voi antaa arvoa null</string>
 </resources>

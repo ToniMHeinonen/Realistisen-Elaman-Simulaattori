@@ -174,9 +174,11 @@ public class CreateScenario extends ParentActivity {
 
     public void lisaa(View view) {
         if(allDataGiven()) {
-            String name = scenarioName.getText().toString().toLowerCase();
+            String name = scenarioName.getText().toString();
             if (StringContainsNumber(name)) {
                 Toast.makeText(this, getString(R.string.not_number), Toast.LENGTH_SHORT).show();
+            } else if(name.equals("null")){
+                Toast.makeText(this, getString(R.string.not_null), Toast.LENGTH_SHORT).show();
             } else {
                 SaveSystemPreferences json = new SaveSystemPreferences(this);
                 final Context con = this;
@@ -192,7 +194,7 @@ public class CreateScenario extends ParentActivity {
                                 korjattu += m;
                             }
                         }
-                        scenario.setFileName(korjattu + ".json");
+                        scenario.setFileName(korjattu.toLowerCase() + ".json");
                         json.saveScenario(scenario, true);
                         finish();
                     } else {
@@ -210,7 +212,7 @@ public class CreateScenario extends ParentActivity {
                                 korjattu += m;
                             }
                         }
-                        scenario.setFileName(korjattu + ".json");
+                        scenario.setFileName(korjattu.toLowerCase() + ".json");
                         json.saveScenario(scenario, false);
                         Toast.makeText(this, getString(R.string.saved_scenario), Toast.LENGTH_LONG).show();
                         startActivity(new Intent(this, ChooseScenarioActivity.class));
@@ -288,10 +290,10 @@ public class CreateScenario extends ParentActivity {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 outName = input.getText().toString().toLowerCase();
-                if(new SaveSystemPreferences(con).containsAlready(outName) || StringContainsNumber(outName)) {
+                if (outName.equals("null")) {
                     new AlertDialog.Builder(con)
                             .setTitle(con.getString(R.string.huom))
-                            .setMessage(con.getString(R.string.duplicate_warning) + " " + con.getString(R.string.or) + " " + con.getString(R.string.not_number))
+                            .setMessage(con.getString(R.string.not_null))
                             .setNegativeButton(android.R.string.no, new DialogInterface.OnClickListener() {
                                 @Override
                                 public void onClick(DialogInterface dialog, int which) {
@@ -301,23 +303,37 @@ public class CreateScenario extends ParentActivity {
                             .setIcon(android.R.drawable.ic_dialog_alert)
                             .show();
                 } else{
-                    if (outName == null || outName.isEmpty()) {
-                        SimpleDateFormat sdf = new SimpleDateFormat("yyyy.MM.dd G 'at' HH:mm:ss z");
-                        outName = sdf.format(new Date());
+                        if ((new SaveSystemPreferences(con).containsAlready(outName) || StringContainsNumber(outName))) {
+                        new AlertDialog.Builder(con)
+                                .setTitle(con.getString(R.string.huom))
+                                .setMessage(con.getString(R.string.duplicate_warning) + " " + con.getString(R.string.or) + " " + con.getString(R.string.not_number))
+                                .setNegativeButton(android.R.string.no, new DialogInterface.OnClickListener() {
+                                    @Override
+                                    public void onClick(DialogInterface dialog, int which) {
+                                        Toast.makeText(con, con.getString(R.string.not_added), Toast.LENGTH_LONG).show();
+                                    }
+                                })
+                                .setIcon(android.R.drawable.ic_dialog_alert)
+                                .show();
+                    } else {
+                        if (outName == null || outName.isEmpty()) {
+                            SimpleDateFormat sdf = new SimpleDateFormat("yyyy.MM.dd G 'at' HH:mm:ss z");
+                            outName = sdf.format(new Date());
+                        }
+                        new AlertDialog.Builder(con)
+                                .setTitle(con.getString(R.string.huom))
+                                .setMessage(con.getString(R.string.file_types))
+                                .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
+                                    public void onClick(DialogInterface dialog, int which) {
+                                        Intent i = new Intent(Intent.ACTION_GET_CONTENT);
+                                        i.setType("*/*");
+                                        startActivityForResult(i, 22);
+                                    }
+                                })
+                                .setNegativeButton(android.R.string.no, null)
+                                .setIcon(android.R.drawable.ic_dialog_alert)
+                                .show();
                     }
-                    new AlertDialog.Builder(con)
-                            .setTitle(con.getString(R.string.huom))
-                            .setMessage(con.getString(R.string.file_types))
-                            .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
-                                public void onClick(DialogInterface dialog, int which) {
-                                    Intent i = new Intent(Intent.ACTION_GET_CONTENT);
-                                    i.setType("*/*");
-                                    startActivityForResult(i, 22);
-                                }
-                            })
-                            .setNegativeButton(android.R.string.no, null)
-                            .setIcon(android.R.drawable.ic_dialog_alert)
-                            .show();
                 }
             }
         });
