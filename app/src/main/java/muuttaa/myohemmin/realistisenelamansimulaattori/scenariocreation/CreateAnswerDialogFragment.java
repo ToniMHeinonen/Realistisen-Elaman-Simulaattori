@@ -65,7 +65,7 @@ public class CreateAnswerDialogFragment extends AppCompatDialogFragment {
                                 String v = (String) selectedButton.getTag();
                                 String m = menee.getText().toString();
                                 //if go is empty
-                                if(m.trim().isEmpty()){
+                                if(m.trim().isEmpty() || m.trim().equals("end") || m.trim().equals("lopetus")){
                                     m = "null";
                                 }
                                 String vas = vastaus.getText().toString();
