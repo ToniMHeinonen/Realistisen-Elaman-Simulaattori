@@ -53,12 +53,20 @@
         style="@style/answerTopics"
         android:text="@string/info_next_scene" />
 
-    <EditText
-        android:id="@+id/menee"
-        android:layout_width="match_parent"
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_margin="5dp"
+        android:padding="5dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:textSize="?attr/font_medium"/>
+        android:layout_gravity="center"
+        android:background="@drawable/spinner_background">
+
+        <Spinner
+            android:id="@+id/sceneSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:spinnerMode="dropdown" />
+
+    </LinearLayout>
 
 </LinearLayout>

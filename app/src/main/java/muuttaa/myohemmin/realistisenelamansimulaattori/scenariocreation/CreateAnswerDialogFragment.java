@@ -6,8 +6,10 @@ import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -18,13 +20,13 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatDialogFragment;
 import muuttaa.myohemmin.realistisenelamansimulaattori.R;
 import muuttaa.myohemmin.realistisenelamansimulaattori.data.Scene;
-import muuttaa.myohemmin.realistisenelamansimulaattori.tools.Debug;
 
 public class CreateAnswerDialogFragment extends AppCompatDialogFragment {
     private View view;
-    private EditText menee;
+    private Spinner sceneSpinner;
     private EditText vastaus;
     private dialogiFragmentListener listener;
+    private String goesTo;
     private int korvaus = -1;
     private int koko = 0;
     private ArrayList<Scene> scenes;
@@ -46,11 +48,10 @@ public class CreateAnswerDialogFragment extends AppCompatDialogFragment {
 
         setupColorButtons();
 
-        menee = (EditText) view.findViewById(R.id.menee);
         vastaus = (EditText) view.findViewById(R.id.vastauksenTeksti);
         if(getArguments().getBoolean("muokkaus", false)) {
             korvaus = getArguments().getInt("korvaa", -1);
-            menee.setText(getArguments().getString("menee", " "));
+            goesTo = getArguments().getString("menee", " ");
             vastaus.setText(getArguments().getString("kysymys", " "));
 
             // Load color
@@ -59,8 +60,10 @@ public class CreateAnswerDialogFragment extends AppCompatDialogFragment {
             colorButtons[colorPos].setSelected(true);
             selectedButton = colorButtons[colorPos];
         }
+
         scenes = getArguments().getParcelableArrayList("createdScenes");
-        Debug.print("Create", "", scenes.toString(),1);
+        setupSceneSpinner();
+
         koko = getArguments().getInt("koko", 0);
         builder.setView(view)
                 .setNegativeButton(getContext().getString(R.string.back_button), null)
@@ -69,7 +72,7 @@ public class CreateAnswerDialogFragment extends AppCompatDialogFragment {
                     public void onClick(DialogInterface dialog, int which) {
                             try {
                                 String v = (String) selectedButton.getTag();
-                                String m = menee.getText().toString();
+                                String m = (String) sceneSpinner.getSelectedItem();
                                 //if go is empty
                                 if(m.trim().isEmpty() || m.trim().equals("end") || m.trim().equals("lopetus")){
                                     m = "null";
@@ -110,6 +113,32 @@ public class CreateAnswerDialogFragment extends AppCompatDialogFragment {
                 }
             });
         }
+    }
+
+    /**
+     * Sets up scene spinner for selecting where this answer leads to.
+     */
+    private void setupSceneSpinner() {
+        sceneSpinner = view.findViewById(R.id.sceneSpinner);
+
+        // Add scene names to scenes list
+        ArrayList<String> sceneNames = new ArrayList<>();
+        for (Scene scene : scenes)
+            sceneNames.add(scene.getName());
+
+        // Add end to the top of the list
+        sceneNames.add(0, getString(R.string.null_value));
+
+        // Create an ArrayAdapter using the string array and a default spinner layout
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(getActivity(),
+                R.layout.custom_spinner, sceneNames);
+        adapter.setDropDownViewResource(R.layout.custom_spinner_dropdown);
+
+        sceneSpinner.setAdapter(adapter);
+
+        // Set spinner selection to saved value
+        if (goesTo != null)
+            sceneSpinner.setSelection(scenes.indexOf(goesTo));
     }
 
     @Override

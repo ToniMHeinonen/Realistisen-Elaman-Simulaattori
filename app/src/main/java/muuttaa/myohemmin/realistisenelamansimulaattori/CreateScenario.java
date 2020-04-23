@@ -80,17 +80,20 @@ public class CreateScenario extends ParentActivity {
         boolean onko = list.size() == 0;
         i.putExtra("eka", onko);
 
+        // Create ArrayList of scenes List
+        ArrayList<Scene> scenes = new ArrayList<>(list);
+
         if (createNew) {
             i.putExtra("muokkaus", false);
             i.putExtra("korvaus", -1);
         } else {
             i.putExtra("muokkaus", true);
             i.putExtra("scene", list.get(position));
+            // Remove selected scene so it can't be selected from answer goes to spinner
+            scenes.remove(list.get(position));
             i.putExtra("korvaus", position);
         }
 
-        // Change list from List to ArrayList and put them as extra
-        ArrayList<Scene> scenes = new ArrayList<>(list);
         i.putParcelableArrayListExtra("createdScenes", scenes);
 
         startActivityForResult(i, 1);

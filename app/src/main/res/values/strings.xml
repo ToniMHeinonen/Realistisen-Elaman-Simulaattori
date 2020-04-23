@@ -96,7 +96,7 @@
     <string name="create_answer">Create answer</string>
     <string name="choose_color">Choose color:</string>
     <string name="write_answer">Write answer:</string>
-    <string name="info_next_scene">To what scene does this answer lead to (leaving this empty ends the game):</string>
+    <string name="info_next_scene">Select where does this answer lead to:</string>
     <string name="back_button">cancel</string>
     <string name="give_all_data">Give all data</string>
     <string name="import_done">Importing done</string>
