@@ -1,0 +1,131 @@
+{
+  "first": {
+    "question": "Olet kävelemässä kadulla, kun näet henkilön makaavan maassa tajuttomana.",
+    "background": "background_1",
+    "person": "null",
+    "fore": "null",
+    "face": "null",
+    "answers": [
+      "Et ole huomaavinasi ja jatkat matkaasi",
+      "Koitat varovasti herätellä häntä",
+      "Soitat hätänumeroon"
+    ],
+    "Et ole huomaavinasi ja jatkat matkaasi": "null",
+    "Koitat varovasti herätellä häntä": "eiHeraa",
+    "Soitat hätänumeroon": "alkuSoitto",
+    "Et ole huomaavinasi ja jatkat matkaasiColor": "red",
+    "Koitat varovasti herätellä häntäColor": "green",
+    "Soitat hätänumeroonColor": "green"
+  },
+  "eiHeraa": {
+    "question": "Tajuton henkilö ei reagoi mitenkään yrittäessäsi herättää hänet.",
+    "background": "background_1",
+    "person": "character_1",
+    "face": "face_happy",
+    "fore": "null",
+    "answers": [
+      "Soitat hätänumeroon",
+      "Poistut paikalta"
+    ],
+    "Soitat hätänumeroon": "alkuSoitto",
+    "Poistut paikalta": "null",
+    "Soitat hätänumeroonColor": "green",
+    "Poistut paikaltaColor": "red"
+  },
+  "alkuSoitto": {
+    "question": "Hätäkeskuksessa vastataan nopeasti puheluusi.",
+    "background": "background_1",
+    "person": "character_1",
+    "face": "face_happy",
+    "fore": "null",
+    "answers": [
+      "Kerrot rauhallisesti maassa makaavasta tajuttomasta henkilöstä",
+      "Kyselet kuulumiset hätäkeskuksen päivystäjältä, jonka jälkeen kerrot tajuttomasta henkilöstä",
+      "Lopetat puhelun"
+    ],
+    "Kerrot rauhallisesti maassa makaavasta tajuttomasta henkilöstä": "soittoKaks",
+    "Kyselet kuulumiset hätäkeskuksen päivystäjältä, jonka jälkeen kerrot tajuttomasta henkilöstä": "soittoKaks",
+    "Lopetat puhelun": "alkuSoittoFail",
+    "Kerrot rauhallisesti maassa makaavasta tajuttomasta henkilöstäColor": "green",
+    "Kyselet kuulumiset hätäkeskuksen päivystäjältä, jonka jälkeen kerrot tajuttomasta henkilöstäColor": "red",
+    "Lopetat puhelunColor": "red"
+  },
+  "alkuSoittoFail": {
+    "question": "Hätäkeskuksesta soitetaan sinulle takaisin, jonka jälkeen kerrot tajuttomasta henkilöstä. Päivystäjä kysyy osoitetta.",
+    "background": "background_1",
+    "person": "character_1",
+    "face": "face_happy",
+    "fore": "null",
+    "answers": [
+      "Kerrot kotiosoitteesi",
+      "Kerrot osoitteen, missä olette juuri nyt"
+    ],
+    "Kerrot kotiosoitteesi": "alkuSoittoOsoiteFail",
+    "Kerrot osoitteen, missä olette juuri nyt": "soittoKaks",
+    "Kerrot kotiosoitteesiColor": "red",
+    "Kerrot osoitteen, missä olette juuri nytColor": "green"
+  },
+  "alkuSoittoOsoiteFail": {
+    "question": "Tajuat tehneesi virheen ja kerrot osoitteen, missä olette juuri nyt. Päivystäjä kyselee tajuttoman henkilön tilasta.",
+    "background": "background_1",
+    "person": "character_1",
+    "face": "face_happy",
+    "fore": "null",
+    "answers": [
+      "Vastailet kysymyksiin rauhallisesti ja totuudenmukaisesti parhaasi mukaan",
+      "Vastailet kysymyksiin epäselvästi"
+    ],
+    "Vastailet kysymyksiin rauhallisesti ja totuudenmukaisesti parhaasi mukaan": "soittoKolme",
+    "Vastailet kysymyksiin epäselvästi": "soittoKolme",
+    "Vastailet kysymyksiin rauhallisesti ja totuudenmukaisesti parhaasi mukaanColor": "green",
+    "Vastailet kysymyksiin epäselvästiColor": "red"
+  },
+  "soittoKaks": {
+    "question": "Päivystäjä kyselee tajuttoman henkilön tilasta.",
+    "background": "background_1",
+    "person": "character_1",
+    "face": "face_happy",
+    "fore": "null",
+    "answers": [
+      "Vastailet kysymyksiin rauhallisesti ja totuudenmukaisesti parhaasi mukaan",
+      "Vastailet kysymyksiin epäselvästi"
+    ],
+    "Vastailet kysymyksiin rauhallisesti ja totuudenmukaisesti parhaasi mukaan": "soittoKolme",
+    "Vastailet kysymyksiin epäselvästi": "soittoKolme",
+    "Vastailet kysymyksiin rauhallisesti ja totuudenmukaisesti parhaasi mukaanColor": "green",
+    "Vastailet kysymyksiin epäselvästiColor": "red"
+  },
+  "soittoKolme": {
+    "question": "Päivystäjä ilmoittaa, että voit lopettaa puhelun, mutta pyytää sinua tarkkailemaan tajuttoman henkilön tilaa ambulanssia odottaessa.",
+    "background": "background_1",
+    "person": "character_1",
+    "face": "face_happy",
+    "fore": "null",
+    "answers": [
+      "Lopetat puhelun ja lähdet kotiin",
+      "Lopetat puhelun ja odotat ambulanssia",
+      "Lopetat puhelun ja tarkkailet tajuttoman henkilön tilaa odottaessasi ambulanssia"
+    ],
+    "Lopetat puhelun ja lähdet kotiin": "null",
+    "Lopetat puhelun ja odotat ambulanssia": "soittoNelja",
+    "Lopetat puhelun ja tarkkailet tajuttoman henkilön tilaa odottaessasi ambulanssia": "soittoNelja",
+    "Lopetat puhelun ja lähdet kotiinColor": "red",
+    "Lopetat puhelun ja odotat ambulanssiaColor": "yellow",
+    "Lopetat puhelun ja tarkkailet tajuttoman henkilön tilaa odottaessasi ambulanssiaColor": "green"
+  },
+  "soittoNelja": {
+    "question": "Ambulanssi saapuu, ja ambulanssin työntekijä ilmoittaa, että voit poistua paikalta.",
+    "background": "background_1",
+    "person": "character_1",
+    "face": "face_happy",
+    "fore": "null",
+    "answers": [
+      "Lähdet kotiin",
+      "Jäät häiritsemään ambulanssin työntekijöiden toimintaa"
+    ],
+    "Lähdet kotiin": "null",
+    "Jäät häiritsemään ambulanssin työntekijöiden toimintaa": "null",
+    "Lähdet kotiinColor": "green",
+    "Jäät häiritsemään ambulanssin työntekijöiden toimintaaColor": "red"
+  }
+}
