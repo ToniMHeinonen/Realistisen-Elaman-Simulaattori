@@ -6,6 +6,7 @@ import muuttaa.myohemmin.realistisenelamansimulaattori.data.SaveSystemPreference
 import muuttaa.myohemmin.realistisenelamansimulaattori.data.Scenario;
 import muuttaa.myohemmin.realistisenelamansimulaattori.data.Scene;
 import muuttaa.myohemmin.realistisenelamansimulaattori.tools.GlobalPrefs;
+import muuttaa.myohemmin.realistisenelamansimulaattori.tools.Helper;
 
 import android.content.Context;
 import android.content.DialogInterface;
@@ -151,19 +152,13 @@ public class CreateScenario extends ParentActivity {
             @Override
             public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
                 final Scene scene = list.get(position);
-                new AlertDialog.Builder(con)
-                        .setTitle(con.getString(R.string.huom))
-                        .setMessage(con.getString(R.string.remove_item))
-                        .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
-                            public void onClick(DialogInterface dialog, int which) {
-                                list.remove(scene);
-                                updateList();
-                            }
-                        })
-                        .setNegativeButton(android.R.string.no, null)
-                        .setIcon(android.R.drawable.ic_dialog_alert)
-                        .show();
-                return false;
+                Helper.showAlert(con, getString(R.string.huom), getString(R.string.remove_item),
+                        getString(android.R.string.yes), getString(android.R.string.no),
+                        () -> {
+                            list.remove(scene);
+                            updateList();
+                        }, null);
+                return true;
             }
         });
         listaview.setOnItemClickListener((parent, view, position, id) -> {

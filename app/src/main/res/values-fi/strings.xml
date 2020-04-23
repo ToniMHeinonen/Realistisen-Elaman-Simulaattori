@@ -96,7 +96,7 @@
     <string name="create_answer">Luo Vastaus</string>
     <string name="choose_color">Valitse väri:</string>
     <string name="write_answer">Kirjoita vastaus:</string>
-    <string name="info_next_scene">Kirjoita kohtauksen nimi minne mennään. (null tarkoittaa loppua):</string>
+    <string name="info_next_scene">Mihin kohtaukseen tämä vastaus johtaa (jättämällä tekstin tyhjäksi peli loppuu):</string>
     <string name="back_button">peruuta</string>
     <string name="give_all_data">Anna kaikki tiedot</string>
     <string name="import_done">Tuonti valmis</string>

@@ -303,6 +303,6 @@ View.OnClickListener, View.OnLongClickListener{
                     kysymyksetGo.remove(menon);
                     updateListOfAnswers();
                 }, null);
-        return false;
+        return true;
     }
 }
