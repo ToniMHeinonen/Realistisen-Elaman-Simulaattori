@@ -30,7 +30,7 @@ public class CreateAnswerDialogFragment extends AppCompatDialogFragment {
     private int korvaus = -1;
     private int koko = 0;
     private ArrayList<Scene> scenes;
-
+    private int END_POSITION = 0;
 
     private Map<String, Integer> colorMap = new HashMap<String, Integer>() {{
         put("green", 0);
@@ -72,11 +72,15 @@ public class CreateAnswerDialogFragment extends AppCompatDialogFragment {
                     public void onClick(DialogInterface dialog, int which) {
                             try {
                                 String v = (String) selectedButton.getTag();
-                                String m = (String) sceneSpinner.getSelectedItem();
-                                //if go is empty
-                                if(m.trim().isEmpty() || m.trim().equals("end") || m.trim().equals("lopetus")){
+                                String m;
+
+                                // If spinner is at end position, set value as null
+                                if (sceneSpinner.getSelectedItemPosition() == END_POSITION) {
                                     m = "null";
+                                } else {
+                                    m = (String) sceneSpinner.getSelectedItem();
                                 }
+
                                 String vas = vastaus.getText().toString();
                                 //if answer is empty then replace default
                                 if(vas.trim().isEmpty()){
@@ -127,7 +131,7 @@ public class CreateAnswerDialogFragment extends AppCompatDialogFragment {
             sceneNames.add(scene.getName());
 
         // Add end to the top of the list
-        sceneNames.add(0, getString(R.string.null_value));
+        sceneNames.add(END_POSITION, getString(R.string.null_value));
 
         // Create an ArrayAdapter using the string array and a default spinner layout
         ArrayAdapter<String> adapter = new ArrayAdapter<>(getActivity(),
