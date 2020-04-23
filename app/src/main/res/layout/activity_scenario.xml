@@ -27,11 +27,9 @@
     <ImageView
         android:id="@+id/scenarioFace"
         android:layout_width="wrap_content"
-        android:layout_height="58dp"
+        android:layout_height="250dp"
         android:scaleType="centerInside"
         android:layout_centerHorizontal="true"
-        android:paddingLeft="8dp"
-        android:layout_marginTop="65dp"
         android:src="@drawable/face_happy"/>
 
     <TextView

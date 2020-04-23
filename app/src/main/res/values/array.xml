@@ -2,9 +2,12 @@
 <resources>
     <string-array name="taustat">
         <item>background_1</item>
+        <item>background_2</item>
     </string-array>
     <string-array name="henkilot">
         <item>character_1</item>
+        <item>character_2</item>
+        <item>character_3</item>
         <item>empty</item>
     </string-array>
     <string-array name="kasvot">
