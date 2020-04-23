@@ -41,6 +41,7 @@ View.OnClickListener, View.OnLongClickListener{
     private ImageView kasvot;
     private List<GeneralKeyAndValue> kysymyksetGo;
     private List<GeneralKeyAndValue> kysymyksetColor;
+    private ArrayList<Scene> scenes = new ArrayList<>();
     private int korvaus = -1;
 
     @Override
@@ -61,6 +62,7 @@ View.OnClickListener, View.OnLongClickListener{
         this.kasvot = (ImageView) findViewById(R.id.createFace);
         this.foreground = (Spinner) findViewById(R.id.ForegroundSpinner);
         korvaus = getIntent().getIntExtra("korvaus", -1);
+        scenes = getIntent().getParcelableArrayListExtra("createdScenes");
         if(getIntent().getBooleanExtra("muokkaus", false)){
             Scene apu = (Scene) getIntent().getParcelableExtra("scene");
             //put values
@@ -189,6 +191,9 @@ View.OnClickListener, View.OnLongClickListener{
         bundle.putBoolean("muokkaus", false);
         bundle.putInt("korvaa", -1);
         bundle.putInt("koko", kysymyksetColor.size());
+        // Pass all the created scenes to AnswerDialog
+        bundle.putParcelableArrayList("createdScenes", scenes);
+
         CreateAnswerDialogFragment dia = new CreateAnswerDialogFragment();
         dia.setArguments(bundle);
         dia.show(getSupportFragmentManager(), "vastauksen luonti");
@@ -282,6 +287,9 @@ View.OnClickListener, View.OnLongClickListener{
         bundle.putInt("koko", kysymyksetColor.size());
         GeneralKeyAndValue color = kysymyksetColor.get(position);
         bundle.putString("color", color.getValue());
+        // Pass all the created scenes to AnswerDialog
+        bundle.putParcelableArrayList("createdScenes", scenes);
+
         CreateAnswerDialogFragment dia = new CreateAnswerDialogFragment();
         dia.setArguments(bundle);
         dia.show(getSupportFragmentManager(), "vastauksen luonti");

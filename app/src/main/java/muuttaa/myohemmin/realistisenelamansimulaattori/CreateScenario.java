@@ -67,13 +67,35 @@ public class CreateScenario extends ParentActivity {
     }
 
     public void luo(View view) {
+        moveToCreateScene(true, -1);
+    }
+
+    /**
+     * Moves to Create Scene Activity.
+     * @param createNew whether to create new scene or modify existing
+     * @param position position of the existing scene in list
+     */
+    private void moveToCreateScene(boolean createNew, int position) {
         Intent i = new Intent(CreateScenario.this, CreateScene.class);
         boolean onko = list.size() == 0;
         i.putExtra("eka", onko);
-        i.putExtra("muokkaus", false);
-        i.putExtra("korvaus", -1);
+
+        if (createNew) {
+            i.putExtra("muokkaus", false);
+            i.putExtra("korvaus", -1);
+        } else {
+            i.putExtra("muokkaus", true);
+            i.putExtra("scene", list.get(position));
+            i.putExtra("korvaus", position);
+        }
+
+        // Change list from List to ArrayList and put them as extra
+        ArrayList<Scene> scenes = new ArrayList<>(list);
+        i.putParcelableArrayListExtra("createdScenes", scenes);
+
         startActivityForResult(i, 1);
     }
+
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -162,13 +184,7 @@ public class CreateScenario extends ParentActivity {
             }
         });
         listaview.setOnItemClickListener((parent, view, position, id) -> {
-            Intent i = new Intent(CreateScenario.this, CreateScene.class);
-            boolean onko = list.size() == 0;
-            i.putExtra("eka", onko);
-            i.putExtra("muokkaus", true);
-            i.putExtra("scene", list.get(position));
-            i.putExtra("korvaus", position);
-            startActivityForResult(i, 1);
+            moveToCreateScene(false, position);
         });
     }
 

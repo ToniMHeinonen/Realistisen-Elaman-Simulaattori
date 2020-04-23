@@ -10,12 +10,15 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatDialogFragment;
 import muuttaa.myohemmin.realistisenelamansimulaattori.R;
+import muuttaa.myohemmin.realistisenelamansimulaattori.data.Scene;
+import muuttaa.myohemmin.realistisenelamansimulaattori.tools.Debug;
 
 public class CreateAnswerDialogFragment extends AppCompatDialogFragment {
     private View view;
@@ -24,6 +27,7 @@ public class CreateAnswerDialogFragment extends AppCompatDialogFragment {
     private dialogiFragmentListener listener;
     private int korvaus = -1;
     private int koko = 0;
+    private ArrayList<Scene> scenes;
 
 
     private Map<String, Integer> colorMap = new HashMap<String, Integer>() {{
@@ -55,6 +59,8 @@ public class CreateAnswerDialogFragment extends AppCompatDialogFragment {
             colorButtons[colorPos].setSelected(true);
             selectedButton = colorButtons[colorPos];
         }
+        scenes = getArguments().getParcelableArrayList("createdScenes");
+        Debug.print("Create", "", scenes.toString(),1);
         koko = getArguments().getInt("koko", 0);
         builder.setView(view)
                 .setNegativeButton(getContext().getString(R.string.back_button), null)
