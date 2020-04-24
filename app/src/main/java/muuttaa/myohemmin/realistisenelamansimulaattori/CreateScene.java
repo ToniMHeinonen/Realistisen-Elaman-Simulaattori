@@ -13,6 +13,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Parcelable;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -42,6 +43,7 @@ View.OnClickListener, View.OnLongClickListener{
     private List<GeneralKeyAndValue> kysymyksetColor;
     private ArrayList<Scene> scenes = new ArrayList<>();
     private int korvaus = -1;
+    private boolean debuggi = true;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,13 +64,16 @@ View.OnClickListener, View.OnLongClickListener{
         this.foreground = (Spinner) findViewById(R.id.ForegroundSpinner);
         korvaus = getIntent().getIntExtra("korvaus", -1);
         scenes = getIntent().getParcelableArrayListExtra("createdScenes");
+        boolean paivitaSpinnerit = false;
+        Scene apu = null;
         if(getIntent().getBooleanExtra("muokkaus", false)){
-            Scene apu = (Scene) getIntent().getParcelableExtra("scene");
+            apu = (Scene) getIntent().getParcelableExtra("scene");
             //put values
             this.name.setText(apu.getName());
             kysymyksetGo = apu.getGoList();
             kysymyksetColor = apu.getColorList();
             this.question.setText(apu.getQuestion());
+            paivitaSpinnerit = true;
         } else{
             if(getIntent().getBooleanExtra("eka", false)){
                 this.name.setText("first");
@@ -147,6 +152,70 @@ View.OnClickListener, View.OnLongClickListener{
         //updates
         updateImages();
         updateListOfAnswers();
+        if(paivitaSpinnerit){
+            updateSpinners(apu);
+        }
+    }
+
+    private void updateSpinners(Scene apu) {
+        if(apu != null) {
+            if(debuggi){
+                Log.e("scene", apu.toString());
+            }
+            String faceKuva = apu.getFace();
+            String backKuva = apu.getBackground();
+            String foreKuva = apu.getForeground();
+            String hahmoKuva = apu.getPerson();
+            if(debuggi){
+                Log.e("scene", "face: " + faceKuva + " back: " + backKuva + " fore: " + foreKuva + " hahmo: " + hahmoKuva);
+            }
+            String[] taustat = getResources().getStringArray(R.array.taustat);
+            int paikka = 0;
+            //background spinner
+            for(int lap=0; lap < taustat.length; lap++){
+                if(taustat[lap].equals(backKuva)){
+                    paikka = lap;
+                    break;
+                }
+            }
+            this.background.setSelection(paikka);
+            paikka = 0;
+            String[] facet = getResources().getStringArray(R.array.kasvot);
+            for(int lap=0; lap < facet.length; lap++){
+                if(facet[lap].equals(faceKuva)){
+                    paikka = lap;
+                    break;
+                } else if(facet[lap].equals("empty") || facet[lap].equals("tyhjä")){
+                    paikka = lap;
+                    break;
+                }
+            }
+            this.face.setSelection(paikka);
+            paikka = 0;
+            String[] foret = getResources().getStringArray(R.array.kolmasKuva);
+            for(int lap=0; lap < foret.length; lap++){
+                if(foret[lap].equals(foreKuva)){
+                    paikka = lap;
+                    break;
+                } else if(foret[lap].equals("empty") || foret[lap].equals("tyhjä")){
+                    paikka = lap;
+                    break;
+                }
+            }
+            this.foreground.setSelection(paikka);
+            paikka = 0;
+            String[] hahmot = getResources().getStringArray(R.array.henkilot);
+            for(int lap=0; lap < hahmot.length; lap++){
+                if(hahmot[lap].equals(hahmoKuva)){
+                    paikka = lap;
+                    break;
+                } else if(hahmot[lap].equals("empty") || hahmot[lap].equals("tyhjä")){
+                    paikka = lap;
+                    break;
+                }
+            }
+            this.person.setSelection(paikka);
+        }
     }
 
     /**

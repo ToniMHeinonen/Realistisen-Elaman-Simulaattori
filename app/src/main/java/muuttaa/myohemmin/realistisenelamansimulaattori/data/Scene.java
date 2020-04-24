@@ -132,7 +132,7 @@ public class Scene implements Parcelable {
         }
         color += "]";
 
-        return "{ name: " + name + " question: " + question + " back: " + background + " person: " + person + " face: " + face + " vastaukset: " + vastaukset + " goList: " + go + " colorList: " + color + "}";
+        return "{ name: " + name + " question: " + question + " back: " + background + " person: " + person + " face: " + face + " foreground: " + foreground + " vastaukset: " + vastaukset + " goList: " + go + " colorList: " + color + "}";
     }
 
     @Override
@@ -164,10 +164,10 @@ public class Scene implements Parcelable {
     private Scene(Parcel in){
         name = in.readString();
         question = in.readString();
-        foreground = in.readString();
         background = in.readString();
         person = in.readString();
         face = in.readString();
+        foreground = in.readString();
         answers = in.createStringArray();
         goList = in.createTypedArrayList(GeneralKeyAndValue.CREATOR);
         colorList = in.createTypedArrayList(GeneralKeyAndValue.CREATOR);
