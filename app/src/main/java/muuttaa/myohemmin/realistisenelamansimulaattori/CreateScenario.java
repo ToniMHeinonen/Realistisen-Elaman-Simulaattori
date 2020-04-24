@@ -318,7 +318,7 @@ public class CreateScenario extends ParentActivity {
         builder.setPositiveButton(this.getString(R.string.done), new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                outName = input.getText().toString().toLowerCase();
+                outName = input.getText().toString();
                 if (outName.equals("null")) {
                     new AlertDialog.Builder(con)
                             .setTitle(con.getString(R.string.huom))
