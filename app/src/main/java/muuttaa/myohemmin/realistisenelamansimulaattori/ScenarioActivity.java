@@ -68,6 +68,7 @@ public class ScenarioActivity extends ParentActivity {
     private void buttonClickedAnimation() {
         try {
             list.animate().translationX(0 - scenarioLayout.getWidth()).setDuration(1000).start();
+            questionTextView.animate().alpha(0f).setDuration(1000).start();
             Handler handler = new Handler();
             handler.postDelayed(this::afterButtonClickedAnimation, 1000);
         } catch (Exception e) {
@@ -94,8 +95,12 @@ public class ScenarioActivity extends ParentActivity {
             arrayAdapter.addAll(saveSystem.getAnswersList());
             arrayAdapter.notifyDataSetChanged();
             updateImages();
-            list.animate().translationX(0).setDuration(1000).start();
-            list.setEnabled(true);
+            questionTextView.animate().alpha(1f).setDuration(1000).start();
+            Handler handler = new Handler();
+            handler.postDelayed(() -> {
+                list.animate().translationX(0).setDuration(1000).start();
+                list.setEnabled(true);
+            }, 800);
         }
     }
 
