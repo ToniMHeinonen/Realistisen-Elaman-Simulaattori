@@ -6,25 +6,31 @@ import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.Toast;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatDialogFragment;
 import muuttaa.myohemmin.realistisenelamansimulaattori.R;
+import muuttaa.myohemmin.realistisenelamansimulaattori.data.Scene;
 
 public class CreateAnswerDialogFragment extends AppCompatDialogFragment {
     private View view;
-    private EditText menee;
+    private Spinner sceneSpinner;
     private EditText vastaus;
     private dialogiFragmentListener listener;
+    private String goesTo;
     private int korvaus = -1;
     private int koko = 0;
-
+    private ArrayList<Scene> scenes;
+    private int END_POSITION = 0;
 
     private Map<String, Integer> colorMap = new HashMap<String, Integer>() {{
         put("green", 0);
@@ -42,11 +48,10 @@ public class CreateAnswerDialogFragment extends AppCompatDialogFragment {
 
         setupColorButtons();
 
-        menee = (EditText) view.findViewById(R.id.menee);
         vastaus = (EditText) view.findViewById(R.id.vastauksenTeksti);
         if(getArguments().getBoolean("muokkaus", false)) {
             korvaus = getArguments().getInt("korvaa", -1);
-            menee.setText(getArguments().getString("menee", " "));
+            goesTo = getArguments().getString("menee", " ");
             vastaus.setText(getArguments().getString("kysymys", " "));
 
             // Load color
@@ -55,6 +60,10 @@ public class CreateAnswerDialogFragment extends AppCompatDialogFragment {
             colorButtons[colorPos].setSelected(true);
             selectedButton = colorButtons[colorPos];
         }
+
+        scenes = getArguments().getParcelableArrayList("createdScenes");
+        setupSceneSpinner();
+
         koko = getArguments().getInt("koko", 0);
         builder.setView(view)
                 .setNegativeButton(getContext().getString(R.string.back_button), null)
@@ -63,11 +72,15 @@ public class CreateAnswerDialogFragment extends AppCompatDialogFragment {
                     public void onClick(DialogInterface dialog, int which) {
                             try {
                                 String v = (String) selectedButton.getTag();
-                                String m = menee.getText().toString();
-                                //if go is empty
-                                if(m.trim().isEmpty() || m.trim().equals("end") || m.trim().equals("lopetus")){
+                                String m;
+
+                                // If spinner is at end position, set value as null
+                                if (sceneSpinner.getSelectedItemPosition() == END_POSITION) {
                                     m = "null";
+                                } else {
+                                    m = (String) sceneSpinner.getSelectedItem();
                                 }
+
                                 String vas = vastaus.getText().toString();
                                 //if answer is empty then replace default
                                 if(vas.trim().isEmpty()){
@@ -104,6 +117,32 @@ public class CreateAnswerDialogFragment extends AppCompatDialogFragment {
                 }
             });
         }
+    }
+
+    /**
+     * Sets up scene spinner for selecting where this answer leads to.
+     */
+    private void setupSceneSpinner() {
+        sceneSpinner = view.findViewById(R.id.sceneSpinner);
+
+        // Add scene names to scenes list
+        ArrayList<String> sceneNames = new ArrayList<>();
+        for (Scene scene : scenes)
+            sceneNames.add(scene.getName());
+
+        // Add end to the top of the list
+        sceneNames.add(END_POSITION, getString(R.string.null_value));
+
+        // Create an ArrayAdapter using the string array and a default spinner layout
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(getActivity(),
+                R.layout.custom_spinner, sceneNames);
+        adapter.setDropDownViewResource(R.layout.custom_spinner_dropdown);
+
+        sceneSpinner.setAdapter(adapter);
+
+        // Set spinner selection to saved value
+        if (goesTo != null)
+            sceneSpinner.setSelection(scenes.indexOf(goesTo));
     }
 
     @Override

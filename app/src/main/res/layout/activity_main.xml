@@ -22,7 +22,7 @@
 
         <LinearLayout
             android:layout_width="0dp"
-            android:layout_weight="0.6"
+            android:layout_weight="0.7"
             android:layout_margin="5dp"
             android:layout_height="match_parent"
             android:background="@drawable/spinner_background">
@@ -35,14 +35,13 @@
 
         </LinearLayout>
 
-        <Button
+        <ImageButton
             style="?android:attr/buttonBarButtonStyle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="0.3"
+            android:layout_weight="0.2"
             android:onClick="hamburgerClicked"
-            android:textSize="?attr/font_medium"
-            android:text="Ratas" />
+            android:src="@drawable/ic_hamburger" />
     </LinearLayout>
 
     <ExpandableListView

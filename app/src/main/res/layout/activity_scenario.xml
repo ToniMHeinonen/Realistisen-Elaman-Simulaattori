@@ -25,13 +25,20 @@
         android:src="@drawable/character_1"/>
 
     <ImageView
-        android:id="@+id/scenarioFace"
+        android:id="@+id/scenarioFore"
         android:layout_width="wrap_content"
-        android:layout_height="58dp"
+        android:layout_height="250dp"
         android:scaleType="centerInside"
         android:layout_centerHorizontal="true"
-        android:paddingLeft="8dp"
-        android:layout_marginTop="65dp"
+        android:layout_alignBottom="@id/scenarioBackground"
+        android:src="@drawable/fore_1"/>
+
+    <ImageView
+        android:id="@+id/scenarioFace"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:scaleType="centerInside"
+        android:layout_centerHorizontal="true"
         android:src="@drawable/face_happy"/>
 
     <TextView
@@ -40,10 +47,12 @@
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-medium"
         android:textSize="?attr/font_medium"
+        android:padding="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
-        android:paddingLeft="5dp"
-        android:paddingRight="5dp"
         android:textAlignment="center"
+        android:background="#6d7eff"
         android:layout_below="@id/scenarioBackground"/>
 
     <ListView
@@ -51,6 +60,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
+        android:scrollbars="none"
         android:layout_below="@+id/question"/>
 
 </RelativeLayout>

@@ -6,6 +6,7 @@ import muuttaa.myohemmin.realistisenelamansimulaattori.data.SaveSystemPreference
 import muuttaa.myohemmin.realistisenelamansimulaattori.data.Scenario;
 import muuttaa.myohemmin.realistisenelamansimulaattori.data.Scene;
 import muuttaa.myohemmin.realistisenelamansimulaattori.tools.GlobalPrefs;
+import muuttaa.myohemmin.realistisenelamansimulaattori.tools.Helper;
 
 import android.content.Context;
 import android.content.DialogInterface;
@@ -66,13 +67,38 @@ public class CreateScenario extends ParentActivity {
     }
 
     public void luo(View view) {
+        moveToCreateScene(true, -1);
+    }
+
+    /**
+     * Moves to Create Scene Activity.
+     * @param createNew whether to create new scene or modify existing
+     * @param position position of the existing scene in list
+     */
+    private void moveToCreateScene(boolean createNew, int position) {
         Intent i = new Intent(CreateScenario.this, CreateScene.class);
         boolean onko = list.size() == 0;
         i.putExtra("eka", onko);
-        i.putExtra("muokkaus", false);
-        i.putExtra("korvaus", -1);
+
+        // Create ArrayList of scenes List
+        ArrayList<Scene> scenes = new ArrayList<>(list);
+
+        if (createNew) {
+            i.putExtra("muokkaus", false);
+            i.putExtra("korvaus", -1);
+        } else {
+            i.putExtra("muokkaus", true);
+            i.putExtra("scene", list.get(position));
+            // Remove selected scene so it can't be selected from answer goes to spinner
+            scenes.remove(list.get(position));
+            i.putExtra("korvaus", position);
+        }
+
+        i.putParcelableArrayListExtra("createdScenes", scenes);
+
         startActivityForResult(i, 1);
     }
+
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -151,29 +177,17 @@ public class CreateScenario extends ParentActivity {
             @Override
             public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
                 final Scene scene = list.get(position);
-                new AlertDialog.Builder(con)
-                        .setTitle(con.getString(R.string.huom))
-                        .setMessage(con.getString(R.string.remove_item))
-                        .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
-                            public void onClick(DialogInterface dialog, int which) {
-                                list.remove(scene);
-                                updateList();
-                            }
-                        })
-                        .setNegativeButton(android.R.string.no, null)
-                        .setIcon(android.R.drawable.ic_dialog_alert)
-                        .show();
-                return false;
+                Helper.showAlert(con, getString(R.string.huom), getString(R.string.remove_item),
+                        getString(android.R.string.yes), getString(android.R.string.no),
+                        () -> {
+                            list.remove(scene);
+                            updateList();
+                        }, null);
+                return true;
             }
         });
         listaview.setOnItemClickListener((parent, view, position, id) -> {
-            Intent i = new Intent(CreateScenario.this, CreateScene.class);
-            boolean onko = list.size() == 0;
-            i.putExtra("eka", onko);
-            i.putExtra("muokkaus", true);
-            i.putExtra("scene", list.get(position));
-            i.putExtra("korvaus", position);
-            startActivityForResult(i, 1);
+            moveToCreateScene(false, position);
         });
     }
 
