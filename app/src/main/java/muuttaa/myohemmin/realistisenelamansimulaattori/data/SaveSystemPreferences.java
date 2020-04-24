@@ -1,6 +1,10 @@
 package muuttaa.myohemmin.realistisenelamansimulaattori.data;
 
 import android.content.Context;
+import android.content.res.AssetManager;
+import android.content.res.Configuration;
+import android.content.res.Resources;
+import android.util.DisplayMetrics;
 import android.util.Log;
 
 import org.json.JSONArray;
@@ -25,6 +29,8 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Locale;
+
 import muuttaa.myohemmin.realistisenelamansimulaattori.JsonInterface;
 import muuttaa.myohemmin.realistisenelamansimulaattori.R;
 
@@ -452,6 +458,33 @@ public class SaveSystemPreferences implements JsonInterface {
         }
         return out;
     }
+    /**
+     * This method get information from file
+     * @param resources resource where get
+     * @return String what contains data in file
+     */
+    private String getStringFromScenariesFile(Resources resources){
+        String out = "";
+        try {
+            InputStream test = resources.openRawResource(R.raw.savedata);
+            BufferedReader br = new BufferedReader(new InputStreamReader(test));
+            String nextLine;
+            while ((nextLine = br.readLine()) != null) {
+                out += nextLine;
+            }
+        } catch (FileNotFoundException e){
+            if(debuggi){
+                Log.e("FILE/SaveSystem/get", "Tiedostoa ei löytynyt");
+                e.printStackTrace();
+            }
+        } catch (IOException e){
+            if(debuggi){
+                Log.e("FILE/SaveSystem/get", "kirjoituksessa ongelmaa");
+                e.printStackTrace();
+            }
+        }
+        return out;
+    }
 
     /**
      * This method get information from scenario file
@@ -618,6 +651,7 @@ public class SaveSystemPreferences implements JsonInterface {
         }
         return null;
     }
+
     public Scenario saveScenarioFromString(String in, String name){
         String korjattu = "";
         for(int lap=0; lap < name.length(); lap++){
@@ -667,13 +701,32 @@ public class SaveSystemPreferences implements JsonInterface {
         return null;
     }
     public boolean containsAlready(String nimi){
-        String g = getStringFromScenariesFile();
         List<scenarioListHelp> scenaariot = new ArrayList<>();
         List<String> scenarioNames = new ArrayList<>();
         String out = "";
         //scenarios from file
+        //english
+        String g = getStringFromScenariesFile(getLocalizedResources(context, new Locale("en")));
         try {
             JSONObject json = new JSONObject(g);
+            JSONArray array = json.getJSONArray("scenarioslist");
+            for(int lap=0; lap < array.length(); lap++){
+                JSONObject obj = array.getJSONObject(lap);
+                scenaariot.add(new scenarioListHelp(obj.getString("name"), obj.getString("file")));
+            }
+            JSONArray names = json.getJSONArray("scenarios");
+            for(int lap=0; lap < names.length(); lap++){
+                scenarioNames.add(names.getString(lap));
+            }
+        } catch (JSONException e){
+            if(debuggi){
+                e.printStackTrace();
+            }
+        }
+        //finnish
+        String f = getStringFromScenariesFile(getLocalizedResources(context, new Locale("fi")));
+        try {
+            JSONObject json = new JSONObject(f);
             JSONArray array = json.getJSONArray("scenarioslist");
             for(int lap=0; lap < array.length(); lap++){
                 JSONObject obj = array.getJSONObject(lap);
@@ -709,6 +762,56 @@ public class SaveSystemPreferences implements JsonInterface {
             }
         }
 
+        return scenarioNames.contains(nimi);
+    }
+    public boolean alreadyInResources(String nimi){
+        List<scenarioListHelp> scenaariot = new ArrayList<>();
+        List<String> scenarioNames = new ArrayList<>();
+        String out = "";
+        //scenarios from file
+        //english
+        String g = getStringFromScenariesFile(getLocalizedResources(context, new Locale("en")));
+        try {
+            JSONObject json = new JSONObject(g);
+            JSONArray array = json.getJSONArray("scenarioslist");
+            for(int lap=0; lap < array.length(); lap++){
+                JSONObject obj = array.getJSONObject(lap);
+                scenaariot.add(new scenarioListHelp(obj.getString("name"), obj.getString("file")));
+            }
+            JSONArray names = json.getJSONArray("scenarios");
+            for(int lap=0; lap < names.length(); lap++){
+                scenarioNames.add(names.getString(lap));
+            }
+        } catch (JSONException e){
+            if(debuggi){
+                e.printStackTrace();
+            }
+        }
+        //finnish
+        String f = getStringFromScenariesFile(getLocalizedResources(context, new Locale("fi")));
+        try {
+            JSONObject json = new JSONObject(f);
+            JSONArray array = json.getJSONArray("scenarioslist");
+            for(int lap=0; lap < array.length(); lap++){
+                JSONObject obj = array.getJSONObject(lap);
+                scenaariot.add(new scenarioListHelp(obj.getString("name"), obj.getString("file")));
+            }
+            JSONArray names = json.getJSONArray("scenarios");
+            for(int lap=0; lap < names.length(); lap++){
+                scenarioNames.add(names.getString(lap));
+            }
+        } catch (JSONException e){
+            if(debuggi){
+                e.printStackTrace();
+            }
+        }
+        if(debuggi){
+            String tu = "";
+            for(int lap=0; lap < scenarioNames.size(); lap++){
+                tu += " [ " + scenarioNames.get(lap) + " ]";
+            }
+            Log.e("testi", "listalla: " + tu);
+        }
         return scenarioNames.contains(nimi);
     }
 
@@ -857,5 +960,12 @@ public class SaveSystemPreferences implements JsonInterface {
             }
         }
         return oliko;
+    }
+    private Resources getLocalizedResources(Context context, Locale desiredLocale) {
+        Configuration conf = context.getResources().getConfiguration();
+        conf = new Configuration(conf);
+        conf.setLocale(desiredLocale);
+        Context localizedContext = context.createConfigurationContext(conf);
+        return localizedContext.getResources();
     }
 }

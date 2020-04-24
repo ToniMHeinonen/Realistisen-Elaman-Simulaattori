@@ -15,6 +15,7 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.text.InputType;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -397,7 +398,7 @@ public class CreateScenario extends ParentActivity {
         } else if(montakoFirst > 1){
             dataNotGivenAlert(getString(R.string.too_many_first), getString(R.string.not_added));
             return false;
-        } else if(saveSystem.containsAlready(nimi) && !editMode){
+        } else if((saveSystem.containsAlready(nimi) && !editMode) || saveSystem.alreadyInResources(nimi)){
             dataNotGivenAlert(getString(R.string.unique_name), getString(R.string.not_added));
             return false;
         }
