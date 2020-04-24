@@ -11,7 +11,7 @@ public class Scene implements Parcelable {
     private String background;
     private String person;
     private String face;
-    private String foreground;
+    private String foreground = "null";
     private String[] answers;
     private List<GeneralKeyAndValue> goList;
     private List<GeneralKeyAndValue> colorList;
