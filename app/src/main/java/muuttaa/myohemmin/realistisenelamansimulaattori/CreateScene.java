@@ -320,6 +320,9 @@ View.OnClickListener, View.OnLongClickListener{
         if(this.question.getText().toString().trim().isEmpty()){
             dataNotGivenAlert(getString(R.string.remember_question), getString(R.string.not_added));
             return false;
+        } else if(this.name.getText().toString().trim().equals("null")){
+            dataNotGivenAlert(getString(R.string.not_null), getString(R.string.not_added));
+            return false;
         } else if(this.kysymyksetGo.size() < 1){
             dataNotGivenAlert(getString(R.string.remember_answers), getString(R.string.not_added));
             return false;

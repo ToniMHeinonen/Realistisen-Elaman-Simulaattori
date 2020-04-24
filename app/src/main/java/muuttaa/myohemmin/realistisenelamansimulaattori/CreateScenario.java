@@ -392,6 +392,9 @@ public class CreateScenario extends ParentActivity {
         } else if(nimi.trim().isEmpty()){
             dataNotGivenAlert(getString(R.string.remember_name), getString(R.string.not_added));
             return false;
+        } else if(nimi.trim().equals("null")){
+            dataNotGivenAlert(getString(R.string.not_null), getString(R.string.not_added));
+            return false;
         } else if(!onkoFirst){
             dataNotGivenAlert(getString(R.string.need_first), getString(R.string.not_added));
             return false;
