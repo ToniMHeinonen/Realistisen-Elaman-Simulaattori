@@ -391,14 +391,14 @@ public class CreateScenario extends ParentActivity {
         } else if(nimi.trim().isEmpty()){
             dataNotGivenAlert(getString(R.string.remember_name), getString(R.string.not_added));
             return false;
-        } else if(saveSystem.containsAlready(nimi)){
-            dataNotGivenAlert(getString(R.string.unique_name), getString(R.string.not_added));
-            return false;
         } else if(!onkoFirst){
             dataNotGivenAlert(getString(R.string.need_first), getString(R.string.not_added));
             return false;
         } else if(montakoFirst > 1){
             dataNotGivenAlert(getString(R.string.too_many_first), getString(R.string.not_added));
+            return false;
+        } else if(saveSystem.containsAlready(nimi) && !editMode){
+            dataNotGivenAlert(getString(R.string.unique_name), getString(R.string.not_added));
             return false;
         }
         return true;
