@@ -212,6 +212,9 @@ View.OnClickListener, View.OnLongClickListener{
                 if(foree.equals("tyhjä") || foree.equals("empty")){
                     foree = "null";
                 }
+                if(nimi.trim().isEmpty()){
+                    nimi = "first";
+                }
                 String[] ans = new String[kysymyksetGo.size()];
                 for (int lap = 0; lap < kysymyksetGo.size(); lap++) {
                     ans[lap] = kysymyksetGo.get(lap).getKey();
