@@ -11,6 +11,8 @@
         android:layout_alignStart="@id/choiceText"
         android:layout_alignEnd="@id/choiceText"
         android:layout_alignTop="@id/choiceText"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
         android:scaleType="fitXY"
         android:src="@drawable/button_default"/>
 
