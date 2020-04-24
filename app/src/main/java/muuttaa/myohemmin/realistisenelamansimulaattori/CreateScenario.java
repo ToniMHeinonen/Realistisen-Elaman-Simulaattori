@@ -115,8 +115,8 @@ public class CreateScenario extends ParentActivity {
                 if(scenarioName.getText().toString().trim().isEmpty()){
                     Toast.makeText(this, getString(R.string.autosave_not), Toast.LENGTH_LONG).show();
                 } else {
-                    basicSave(false);
                     editMode = true;
+                    basicSave(false);
                 }
             }
         } else if(requestCode == 22){
