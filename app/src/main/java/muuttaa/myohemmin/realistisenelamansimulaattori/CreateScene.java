@@ -244,10 +244,7 @@ View.OnClickListener, View.OnLongClickListener{
         }
     }
     private boolean allDataGiven(){
-        if(this.name.getText().toString().trim().isEmpty()){
-            dataNotGivenAlert(getString(R.string.remember_name), getString(R.string.not_added));
-            return false;
-        } else if(this.question.getText().toString().trim().isEmpty()){
+        if(this.question.getText().toString().trim().isEmpty()){
             dataNotGivenAlert(getString(R.string.remember_question), getString(R.string.not_added));
             return false;
         } else if(this.kysymyksetGo.size() < 1){
