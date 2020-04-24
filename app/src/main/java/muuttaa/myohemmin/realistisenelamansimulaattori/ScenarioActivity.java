@@ -57,8 +57,27 @@ public class ScenarioActivity extends ParentActivity {
             scenario = extras.getString("scenario");
             scenarioID = extras.getInt("scenarioID");
             setupStart();
-            updateImages();
+            updateImagesStart();
             setupAnswers();
+        }
+    }
+
+    private void characterAnimation(String previousCharacter) {
+        try {
+            if (saveSystem.getPersonPicture() != null) {
+                if (!previousCharacter.equals(saveSystem.getPersonPicture())) {
+                    character.animate().alpha(0f).setDuration(1000).start();
+                    face.animate().alpha(0f).setDuration(1000).start();
+                    Handler handler = new Handler();
+                    handler.postDelayed(() -> {
+                        updatePersonAndFace();
+                        character.animate().alpha(1f).setDuration(1000).start();
+                        face.animate().alpha(1f).setDuration(1000).start();
+                    }, 1000);
+                }
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
         }
     }
 
@@ -94,7 +113,7 @@ public class ScenarioActivity extends ParentActivity {
             arrayAdapter.clear();
             arrayAdapter.addAll(saveSystem.getAnswersList());
             arrayAdapter.notifyDataSetChanged();
-            updateImages();
+            updateBackground();
             questionTextView.animate().alpha(1f).setDuration(1000).start();
             Handler handler = new Handler();
             handler.postDelayed(() -> {
@@ -141,10 +160,8 @@ public class ScenarioActivity extends ParentActivity {
                                         getPackageName()));
 
                 String previousCharacter = saveSystem.getPersonPicture();
-                String previousFace = saveSystem.getFacePicture();
                 String clickedItem = (String) list.getItemAtPosition(position);
                 saveSystem.nextScene(clickedItem);
-                checkPersonTransition(previousCharacter, previousFace);
 
                 // Pause 1 second, then do the run-method.
                 Handler handler = new Handler();
@@ -152,6 +169,7 @@ public class ScenarioActivity extends ParentActivity {
                     @Override
                     public void run() {
                         buttonClickedAnimation();
+                        characterAnimation(previousCharacter);
                     }
                 }, 500);
             }
@@ -192,7 +210,7 @@ public class ScenarioActivity extends ParentActivity {
     /**
      * Update images from json-file.
      */
-    private void updateImages() {
+    private void updateImagesStart() {
         background.setImageResource(getResources()
                 .getIdentifier(saveSystem.getBackgroundPicture(),
         "drawable", getApplicationContext()
@@ -213,98 +231,26 @@ public class ScenarioActivity extends ParentActivity {
         }
     }
 
-    /**
-     * Animate characters.
-     * @param previousCharacter character-image of previous scene
-     * @param previousFace face-image of previous scene
-     */
-    private void checkPersonTransition(String previousCharacter, String previousFace) {
-        try {
-            if (saveSystem.getPersonPicture() != null) {
-                if (!previousCharacter.equals(saveSystem.getPersonPicture())) {
-                    // from "null" to "character_"
-                    if (previousCharacter.equals("null") && !saveSystem.getPersonPicture().equals("null")) {
-                        characterStart = emptyDrawable;
-                        characterEnd = ContextCompat.getDrawable(getApplicationContext(), getResources()
-                                .getIdentifier(saveSystem.getPersonPicture(),
-                                        "drawable", getApplicationContext()
-                                                .getPackageName()));
-                    // from "character_" to "null"
-                    } else if (saveSystem.getPersonPicture().equals("null") && !previousCharacter.equals("null")) {
-                        characterStart = ContextCompat.getDrawable(getApplicationContext(), getResources()
-                                .getIdentifier(previousCharacter,
-                                        "drawable", getApplicationContext()
-                                                .getPackageName()));
-                        characterEnd = emptyDrawable;
-                        Debug.print("SCENARIO", "CHECKPERSON", "CHAR TO NULL", 1);
-                    // from "character_" to "character_"
-                    } else {
-                        characterStart = ContextCompat.getDrawable(getApplicationContext(), getResources()
-                                .getIdentifier(previousCharacter,
-                                        "drawable", getApplicationContext()
-                                                .getPackageName()));
-                        characterEnd = ContextCompat.getDrawable(getApplicationContext(), getResources()
-                                .getIdentifier(saveSystem.getPersonPicture(),
-                                        "drawable", getApplicationContext()
-                                                .getPackageName()));
-                    }
-
-                    Drawable[] characterDrawables = new Drawable[2];
-                    characterDrawables[0] = characterStart;
-                    characterDrawables[1] = characterEnd;
-                    TransitionDrawable transitionDrawable = new TransitionDrawable(characterDrawables);
-                    transitionDrawable.setCrossFadeEnabled(true);
-                    character.setImageDrawable(transitionDrawable);
-                    transitionDrawable.startTransition(1000);
-                    checkFaceTransition(previousFace);
-                }
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+    private void updateBackground() {
+        background.setImageResource(getResources()
+                .getIdentifier(saveSystem.getBackgroundPicture(),
+                        "drawable", getApplicationContext()
+                                .getPackageName()));
     }
 
-    /**
-     * Animate face, when character animates too.
-     * @param previousFace face-image of previous scene
-     */
-    private void checkFaceTransition(String previousFace) {
-        try {
-            // from "null" to "face_"
-            if (previousFace.equals("null") && !saveSystem.getFacePicture().equals("null")) {
-                faceStart = emptyDrawable;
-                faceEnd = ContextCompat.getDrawable(getApplicationContext(), getResources()
-                        .getIdentifier(saveSystem.getFacePicture(),
-                                "drawable", getApplicationContext()
-                                        .getPackageName()));
-                // from "face_" to "null"
-            } else if (saveSystem.getFacePicture().equals("null") && !previousFace.equals("null")) {
-                faceStart = ContextCompat.getDrawable(getApplicationContext(), getResources()
-                        .getIdentifier(previousFace,
-                                "drawable", getApplicationContext()
-                                        .getPackageName()));
-                faceEnd = emptyDrawable;
-                // from "face_" to "face_"
-            } else {
-                faceStart = ContextCompat.getDrawable(getApplicationContext(), getResources()
-                        .getIdentifier(previousFace,
-                                "drawable", getApplicationContext()
-                                        .getPackageName()));
-                faceEnd = ContextCompat.getDrawable(getApplicationContext(), getResources()
-                        .getIdentifier(saveSystem.getFacePicture(),
-                                "drawable", getApplicationContext()
-                                        .getPackageName()));
-            }
-
-            Drawable[] faceDrawables = new Drawable[2];
-            faceDrawables[0] = faceStart;
-            faceDrawables[1] = faceEnd;
-            TransitionDrawable faceTransition = new TransitionDrawable(faceDrawables);
-            faceTransition.setCrossFadeEnabled(true);
-            face.setImageDrawable(faceTransition);
-            faceTransition.startTransition(1000);
-        } catch (Exception e) {
-            e.printStackTrace();
+    private void updatePersonAndFace() {
+        if (saveSystem.getPersonPicture().equals("null")) {
+            character.setImageResource(android.R.color.transparent);
+            face.setImageResource(android.R.color.transparent);
+        } else {
+            character.setImageResource(getResources()
+                    .getIdentifier(saveSystem.getPersonPicture(),
+                            "drawable", getApplicationContext()
+                                    .getPackageName()));
+            face.setImageResource(getResources()
+                    .getIdentifier(saveSystem.getFacePicture(),
+                            "drawable", getApplicationContext()
+                                    .getPackageName()));
         }
     }
 }

@@ -20,7 +20,7 @@
   "lahtoselvitysTehty": {
     "question": "What do you do next? You have luggage to go into the baggage hold.",
     "background": "background_1",
-    "person": "character_1",
+    "person": "character_2",
     "face": "face_happy",
     "fore": "null",
     "answers": [
