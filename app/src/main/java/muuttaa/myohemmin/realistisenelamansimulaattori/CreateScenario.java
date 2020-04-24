@@ -116,6 +116,7 @@ public class CreateScenario extends ParentActivity {
                     Toast.makeText(this, getString(R.string.autosave_not), Toast.LENGTH_LONG).show();
                 } else {
                     basicSave(false);
+                    editMode = true;
                 }
             }
         } else if(requestCode == 22){
