@@ -25,6 +25,15 @@
         android:src="@drawable/character_1"/>
 
     <ImageView
+        android:id="@+id/scenarioFore"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:scaleType="centerInside"
+        android:layout_centerHorizontal="true"
+        android:layout_alignBottom="@id/scenarioBackground"
+        android:src="@drawable/fore_1"/>
+
+    <ImageView
         android:id="@+id/scenarioFace"
         android:layout_width="wrap_content"
         android:layout_height="250dp"

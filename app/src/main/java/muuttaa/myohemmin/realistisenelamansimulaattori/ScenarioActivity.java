@@ -35,9 +35,7 @@ public class ScenarioActivity extends ParentActivity {
     private final int CORRECT = 100;
     private final int WRONG = 0;
     private final int SEMICORRECT = 50;
-    private ImageView background, character, face;
-    private Drawable characterStart, characterEnd, faceStart, faceEnd;
-    private ColorDrawable emptyDrawable = new ColorDrawable(Color.TRANSPARENT);
+    private ImageView background, character, face, fore;
     private ImageView answeredImageView;
     private RelativeLayout scenarioLayout;
     private ListView list;
@@ -113,7 +111,7 @@ public class ScenarioActivity extends ParentActivity {
             arrayAdapter.clear();
             arrayAdapter.addAll(saveSystem.getAnswersList());
             arrayAdapter.notifyDataSetChanged();
-            updateBackground();
+            updateBackgrounds();
             questionTextView.animate().alpha(1f).setDuration(1000).start();
             Handler handler = new Handler();
             handler.postDelayed(() -> {
@@ -135,6 +133,7 @@ public class ScenarioActivity extends ParentActivity {
         background = findViewById(R.id.scenarioBackground);
         character = findViewById(R.id.scenarioCharacter);
         face = findViewById(R.id.scenarioFace);
+        fore = findViewById(R.id.scenarioFore);
     }
 
     /**
@@ -216,6 +215,15 @@ public class ScenarioActivity extends ParentActivity {
         "drawable", getApplicationContext()
                 .getPackageName()));
 
+        if (saveSystem.getForegroundPicture().equals("null")) {
+            fore.setImageResource(android.R.color.transparent);
+        } else {
+            fore.setImageResource(getResources()
+                    .getIdentifier(saveSystem.getForegroundPicture(),
+                            "drawable", getApplicationContext()
+                                    .getPackageName()));
+        }
+
         if (saveSystem.getPersonPicture().equals("null")) {
             character.setImageResource(android.R.color.transparent);
             face.setImageResource(android.R.color.transparent);
@@ -231,11 +239,20 @@ public class ScenarioActivity extends ParentActivity {
         }
     }
 
-    private void updateBackground() {
+    private void updateBackgrounds() {
         background.setImageResource(getResources()
                 .getIdentifier(saveSystem.getBackgroundPicture(),
                         "drawable", getApplicationContext()
                                 .getPackageName()));
+
+        if (saveSystem.getForegroundPicture().equals("null")) {
+            fore.setImageResource(android.R.color.transparent);
+        } else {
+            fore.setImageResource(getResources()
+                    .getIdentifier(saveSystem.getForegroundPicture(),
+                            "drawable", getApplicationContext()
+                                    .getPackageName()));
+        }
     }
 
     private void updatePersonAndFace() {

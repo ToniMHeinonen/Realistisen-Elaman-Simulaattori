@@ -3,7 +3,7 @@
     "question": "You arrive at the airport with your intention of traveling by plane. You have booked flights but have not yet checked in. What do you do first?",
     "background": "background_1",
     "person": "null",
-    "fore": "null",
+    "fore": "fore_1",
     "face": "null",
     "answers": [
       "You will check in on the airline's website",
@@ -22,7 +22,7 @@
     "background": "background_1",
     "person": "character_2",
     "face": "face_happy",
-    "fore": "null",
+    "fore": "fore_1",
     "answers": [
       "You go straight to the security check",
       "You go to the luggage counter",

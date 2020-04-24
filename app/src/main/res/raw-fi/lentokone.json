@@ -3,7 +3,7 @@
     "question": "Saavut lentokentälle aikeenasi matkustaa lentokoneella. Olet varannut lennot, mutta et ole vielä tehnyt lähtöselvitystä. Mitä teet ensimmäisenä?",
     "background": "background_1",
     "person": "null",
-    "fore": "null",
+    "fore": "fore_1",
     "face": "null",
     "answers": [
       "Teet lähtöselvityksen lentoyhtiön verkkosivulla",
@@ -22,7 +22,7 @@
     "background": "background_1",
     "person": "character_2",
     "face": "face_happy",
-    "fore": "null",
+    "fore": "fore_1",
     "answers": [
       "Menet suoraan turvatarkastukseen",
       "Menet matkatavaratiskille",
