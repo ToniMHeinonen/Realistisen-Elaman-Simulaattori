@@ -3,7 +3,7 @@
     "question": "Saavut kassalle. Edelläsi ei ole jonoa. Ostoskorisi on puoliksi täynnä. Kassahenkilö tervehtii. \nMitä teet?",
     "background": "background_1",
     "person": "character_1",
-    "face": "face_happy",
+    "fore": "null","face": "face_happy",
     "answers": [
       "Tervehdit takaisin ja laitat ostoksesi hihnalle",
       "Et sano mitään ja jäät seisomaan paikallesi",
@@ -20,7 +20,7 @@
     "question": "Myyjä ryhtyy skannaamaan tuotteita. \nMitä teet?",
     "background": "background_1",
     "person": "character_1",
-    "face": "face_happy",
+    "fore": "null","face": "face_happy",
     "answers": [
       "Menet pakkaamaan tuotteita",
       "Odotat, että kaikki tuotteet on skannattu",
@@ -37,7 +37,7 @@
     "question": "Myyjä kysyy: \"Voinko auttaa jotenkin?\" \nMitä teet?",
     "background": "background_1",
     "person": "character_1",
-    "face": "face_happy",
+    "fore": "null","face": "face_happy",
     "answers": [
       "Lähdet karkuun",
       "Kysyt: \"Mitä minun kuuluisi tehdä?\"",
@@ -54,7 +54,7 @@
     "question": "Myyjä saa kaikki tuotteet skannattua. Sitten hän kertoo tuotteiden kokonaishinnan. \nMitä teet?",
     "background": "background_1",
     "person": "character_1",
-    "face": "face_happy",
+    "fore": "null","face": "face_happy",
     "answers": [
       "Maksat myyjälle tuotteiden hinnan käteisellä",
       "Maksat myyjälle tuotteiden hinnan kortilla",
@@ -71,7 +71,7 @@
     "question": "Myyjä hymyilee ja keskustelee kanssasi. \nMitä teet?",
     "background": "background_1",
     "person": "character_1",
-    "face": "face_happy",
+    "fore": "null","face": "face_happy",
     "answers": [
       "Odotat, että myyjä saa tuotteet skannattua",
       "Suutut myyjän puheista ja alat huutamaan",
@@ -88,7 +88,7 @@
     "question": "Myyjä sanoo: \"Laita tuotteet koristasi hihnalle, niin skannaan ne ja sitten voit maksaa ostoksesi.\" \nMitä teet?",
     "background": "background_1",
     "person": "character_1",
-    "face": "face_happy",
+    "fore": "null","face": "face_happy",
     "answers": [
       "Lähdet karkuun",
       "Laitat ostoksesi hihnalle"
@@ -102,7 +102,7 @@
     "question": "Katsot, miten edelläsi oleva asiakas käyttäytyy kassalla. \nMitä teet?",
     "background": "background_1",
     "person": "character_1",
-    "face": "face_happy",
+    "fore": "null","face": "face_happy",
     "answers": [
       "Odotat, että asiakas on valmis ja laitat sitten ostoksesi hihnalle",
       "Suutut, kun asiakas ei maksanut sinunkin ostoksiasi ja huudat hänelle",
@@ -119,7 +119,7 @@
     "question": "Annat myyjälle tarvittavan rahasumman käteisellä. Myyjä kiittää ja toivottaa hyvää päivänjatkoa. \nMitä teet?",
     "background": "background_1",
     "person": "character_1",
-    "face": "face_happy",
+    "fore": "null","face": "face_happy",
     "answers": [
       "Sanot: \"Kiitos samoin!\" ja menet pakkaamaan ostoksesi",
       "Menet pakkaamaan ostoksesi",
@@ -139,7 +139,7 @@
     "question": "Laitat pankkikorttisi maksulaitteeseen ja näppäilet pin-koodisi. Odotat, että maksu on valmis ja otat korttisi pois. Myyjä kiittää  ja toivottaa hyvää päivänjatkoa. \nMitä teet?",
     "background": "background_1",
     "person": "character_1",
-    "face": "face_happy",
+    "fore": "null","face": "face_happy",
     "answers": [
       "Sanot: \"Kiitos samoin!\" ja menet pakkaamaan ostoksesi",
       "Menet pakkaamaan ostoksesi",
@@ -159,7 +159,7 @@
     "question": "Myyjä kertoo, että ruokakaupoissa ei voi tinkiä, vaan tuotteista kuuluu maksaa koko hinta. \nMitä teet?",
     "background": "background_1",
     "person": "character_1",
-    "face": "face_happy",
+    "fore": "null","face": "face_happy",
     "answers": [
       "Suutut, kun myyjä ei suostu laskemaan hintaa ja alat huutamaan",
       "Maksat myyjälle tuotteiden hinnan käteisellä",
@@ -179,7 +179,7 @@
     "question": "Myyjä kutsuu vartijan paikalle. \nMitä teet?",
     "background": "background_1",
     "person": "character_1",
-    "face": "face_happy",
+    "fore": "null","face": "face_happy",
     "answers": [
       "Lähdet ulos kaupasta raivoissasi",
       "Pahoittelet käytöstäsi, lupaat ettei se enää toistu ja poistut kaupasta",
@@ -196,7 +196,7 @@
     "question": "Menet pakkaamaan ostoksesi mukanasi olevaan laukkuun. Saat ostoksesi pakattua. \nMitä teet?",
     "background": "background_1",
     "person": "character_1",
-    "face": "face_happy",
+    "fore": "null","face": "face_happy",
     "answers": [
       "Poistut kaupasta rauhallisesti kävellen",
       "Juokset äkkiä ulos kaupasta"
@@ -210,7 +210,7 @@
     "question": "Takanasi oleva jono vaikuttaa vihaiselta ja kassahenkilö on vaivaantunut. \nMitä teet?",
     "background": "background_1",
     "person": "character_1",
-    "face": "face_happy",
+    "fore": "null","face": "face_happy",
     "answers": [
       "Jatkat keskustelua",
       "Menet pakkaamaan ostoksesi"
@@ -224,7 +224,7 @@
     "question": "Myyjä kysyy: \"Onko jokin hätänä?\". \nMitä teet?",
     "background": "background_1",
     "person": "character_1",
-    "face": "face_happy",
+    "fore": "null","face": "face_happy",
     "answers": [
       "Sanot, ettei ole mitään hätää ja menet pakkaamaan ostoksesi",
       "Kysyt: \"Mitä minun kuuluisi tehdä seuraavaksi?\"",
@@ -241,7 +241,7 @@
     "question": "Juokset karkuun niin nopeasti kuin pääset, mutta vartija nappaa sinut kiinni. \nMitä teet?",
     "background": "background_1",
     "person": "character_1",
-    "face": "face_happy",
+    "fore": "null","face": "face_happy",
     "answers": [
       "Potkit ja raivoat",
       "Annat ostokset takaisin ja pahoittelet tapahtunutta"
@@ -255,7 +255,7 @@
     "question": "Kun juokset nopeasti poistuaksesi kaupasta, niin törmäät toiseen henkilöön. \nMitä teet?",
     "background": "background_1",
     "person": "character_1",
-    "face": "face_happy",
+    "fore": "null","face": "face_happy",
     "answers": [
       "Pyydät anteeksi ja kävelet loppumatkan rauhallisesti",
       "Jatkat juoksemista ja poistut kaupasta"
@@ -269,7 +269,7 @@
     "question": "Myyjä pyytää, että menisit pakkaamaan, sillä takana on jonossa ihmisiä. \nMitä teet?",
     "background": "background_1",
     "person": "character_1",
-    "face": "face_happy",
+    "fore": "null","face": "face_happy",
     "answers": [
       "Pahoittelet ja menet pakkaamaan",
       "Katsot myyjää vihaisesti ja menet pakkaamaan",
@@ -286,7 +286,7 @@
     "question": "Myyjä sanoo: \"Ostoksesi on nyt maksettu, joten voit mennä pakkaamaan ostoksesi.\" \nMitä teet?",
     "background": "background_1",
     "person": "character_1",
-    "face": "face_happy",
+    "fore": "null","face": "face_happy",
     "answers": [
       "Menet pakkaamaan ostoksesi",
       "Et uskalla pakata ostoksiasi vaan lähdet ulos kaupasta"
@@ -300,7 +300,7 @@
     "question": "Vartija pitää sinusta tiukasti kiinni ja soittaa poliisin paikalle. \nMitä mietit?",
     "background": "background_1",
     "person": "character_1",
-    "face": "face_happy",
+    "fore": "null","face": "face_happy",
     "answers": [
       "Nyt tein suuren virheen",
       "Jos olisin ollut vähän nopeampi, niin olisin päässyt pakoon",
@@ -317,7 +317,7 @@
     "question": "Vartija kertoo, että tästä tehdään rikosilmoitus. \nMitä teet?",
     "background": "background_1",
     "person": "character_1",
-    "face": "face_happy",
+    "fore": "null","face": "face_happy",
     "answers": [
       "Suutut ilmoituksesta suunnattomasti ja rupeat raivoamaan",
       "Tiedostat, että nyt tuli tehtyä huonoja päätöksiä",

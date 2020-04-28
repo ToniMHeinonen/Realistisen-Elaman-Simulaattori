@@ -3,7 +3,7 @@
     "question": "Olet matkalla kotiin. Odotat bussipysäkillä bussia. Bussi saapuu pysäkille.",
     "background": "background_1",
     "person": "character_1",
-    "face": "face_happy",
+    "fore": "null","face": "face_happy",
     "answers": [
       "Annat muiden pysäkillä seisovien mennä edellesi ja nouset heidän jälkeen bussiin",
       "Änget muiden ihmisten eteen, jotta pääset bussiin ensimmäisenä"
@@ -19,7 +19,7 @@
     "question": "Bussissa on paljon ihmisiä. Kaikki ikkunapaikat ovat varattuja.",
     "background": "background_1",
     "person": "character_1",
-    "face": "face_happy",
+    "fore": "null","face": "face_happy",
     "answers": [
       "Menet istumaan kätäväpaikalle tuntemattoman henkilön viereen",
       "Jäät seisomaan bussin keskikohtaan"
@@ -35,7 +35,7 @@
     "question": "Pääset istumaan ikkunapaikalle. Bussi täyttyy aika nopeasti ja tuntematon henkillö istuu viereesi",
     "background": "background_1",
     "person": "character_1",
-    "face": "face_happy",
+    "fore": "null","face": "face_happy",
     "answers": [
       "Kysyt häneltä milloin hän poistuu bussista",
       "Olet hiljaa ja katselet pihalle",
@@ -54,7 +54,7 @@
     "question": "Lisää ihmisiä astuu bussiin. Bussi tulee täyteen",
     "background": "background_1",
     "person": "character_1",
-    "face": "face_happy",
+    "fore": "null","face": "face_happy",
     "answers": [
       "Istut ihan rauhassa siihen asti kunnes sinun täytyy jäädä pois",
       "Nouset tuolista ja annat jonkun muun istua siihen"
@@ -70,7 +70,7 @@
     "question": "Käytävällä on paljon ihmisiä ja bussi saapuu sinun pysäkille",
     "background": "background_1",
     "person": "character_1",
-    "face": "face_happy",
+    "fore": "null","face": "face_happy",
     "answers": [
       "Tönit ihmisiä, änget itsesi ovelle ja astut bussista pihalle",
       "Tönit ihmisiä kevyesti ja pyytelet anteeksi kun menet ihmisten ohi ja poistut bussista pihalle"
@@ -86,7 +86,7 @@
     "question": "Astut oven luokse",
     "background": "background_1",
     "person": "character_1",
-    "face": "face_happy",
+    "fore": "null","face": "face_happy",
     "answers": [
       "Poistu bussista (ei ole sinun pysäkkisi)",
       "Jäät seisomaan oven luokse odottamaan omaa pysäkkiäsi"
@@ -103,7 +103,7 @@
     "question": "",
     "background": "background_1",
     "person": "character_1",
-    "face": "face_happy",
+    "fore": "null","face": "face_happy",
     "answers": [
       "0",
       "1"
