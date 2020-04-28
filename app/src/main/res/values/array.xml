@@ -3,15 +3,28 @@
     <string-array name="taustat">
         <item>background_1</item>
         <item>background_2</item>
+        <item>background_3</item>
+        <item>background_4</item>
+        <item>background_5</item>
+        <item>background_6</item>
+        <item>background_7</item>
     </string-array>
     <string-array name="henkilot">
         <item>character_1</item>
         <item>character_2</item>
         <item>character_3</item>
+        <item>character_4</item>
+        <item>character_5</item>
+        <item>character_6</item>
+        <item>character_7</item>
         <item>empty</item>
     </string-array>
     <string-array name="kasvot">
         <item>face_happy</item>
+        <item>face_confused</item>
+        <item>face_sad</item>
+        <item>face_surprised</item>
+        <item>face_uncomfortable</item>
         <item>empty</item>
     </string-array>
     <string-array name="varit">
@@ -20,6 +33,13 @@
         <item>yellow</item>
     </string-array>
     <string-array name="kolmasKuva">
+        <item>fore_1</item>
+        <item>fore_2</item>
+        <item>fore_3</item>
+        <item>fore_4</item>
+        <item>fore_5</item>
+        <item>fore_6</item>
+        <item>fore_7</item>
         <item>empty</item>
     </string-array>
 </resources>
