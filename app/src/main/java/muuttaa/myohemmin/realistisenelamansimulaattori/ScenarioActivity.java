@@ -55,27 +55,8 @@ public class ScenarioActivity extends ParentActivity {
             scenario = extras.getString("scenario");
             scenarioID = extras.getInt("scenarioID");
             setupStart();
-            updateImagesStart();
+            updateImages();
             setupAnswers();
-        }
-    }
-
-    private void characterAnimation(String previousCharacter) {
-        try {
-            if (saveSystem.getPersonPicture() != null) {
-                if (!previousCharacter.equals(saveSystem.getPersonPicture())) {
-                    character.animate().alpha(0f).setDuration(1000).start();
-                    face.animate().alpha(0f).setDuration(1000).start();
-                    Handler handler = new Handler();
-                    handler.postDelayed(() -> {
-                        updatePersonAndFace();
-                        character.animate().alpha(1f).setDuration(1000).start();
-                        face.animate().alpha(1f).setDuration(1000).start();
-                    }, 1000);
-                }
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
         }
     }
 
@@ -84,10 +65,8 @@ public class ScenarioActivity extends ParentActivity {
      */
     private void buttonClickedAnimation() {
         try {
-            list.animate().translationX(0 - scenarioLayout.getWidth()).setDuration(1000).start();
-            questionTextView.animate().alpha(0f).setDuration(1000).start();
-            Handler handler = new Handler();
-            handler.postDelayed(this::afterButtonClickedAnimation, 1000);
+            scenarioLayout.animate().translationX(0 - scenarioLayout.getWidth()).setDuration(1000)
+                    .withEndAction(this::afterButtonClickedAnimation).start();
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -99,7 +78,7 @@ public class ScenarioActivity extends ParentActivity {
     private void afterButtonClickedAnimation() {
         // Set default background-color for button.
         answeredImageView.setImageResource(R.drawable.button_default);
-        list.setX(scenarioLayout.getWidth());
+        scenarioLayout.setX(scenarioLayout.getWidth());
 
         // If the question was last from the scenario, go to GameOverActivity
         // and send user's answers. Else update the questions in arrayadapter.
@@ -111,13 +90,12 @@ public class ScenarioActivity extends ParentActivity {
             arrayAdapter.clear();
             arrayAdapter.addAll(saveSystem.getAnswersList());
             arrayAdapter.notifyDataSetChanged();
-            updateBackgrounds();
-            questionTextView.animate().alpha(1f).setDuration(1000).start();
+            updateImages();
             Handler handler = new Handler();
             handler.postDelayed(() -> {
-                list.animate().translationX(0).setDuration(1000).start();
+                scenarioLayout.animate().translationX(0).setDuration(1000).start();
                 list.setEnabled(true);
-            }, 800);
+            }, 200);
         }
     }
 
@@ -145,33 +123,23 @@ public class ScenarioActivity extends ParentActivity {
         arrayAdapter = new ArrayAdapter<String>(this,
                 R.layout.scenario_adapter, R.id.choiceText, answersList);
         list.setAdapter(arrayAdapter);
-        list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(final AdapterView<?> parent, final View view, final int position, long id) {
-                // Add user's answer to list and set arrayadapter non-clickable.
-                addUserAnswerToList(colors.get(position));
-                list.setEnabled(false);
+        list.setOnItemClickListener((parent, view, position, id) -> {
+            // Add user's answer to list and set arrayadapter non-clickable.
+            addUserAnswerToList(colors.get(position));
+            list.setEnabled(false);
 
-                answeredImageView = view.findViewById(R.id.choiceBg);
-                answeredImageView.setImageResource(getResources()
-                        .getIdentifier(String.valueOf(colors.get(position)),
-                                "drawable", getApplicationContext().
-                                        getPackageName()));
+            answeredImageView = view.findViewById(R.id.choiceBg);
+            answeredImageView.setImageResource(getResources()
+                    .getIdentifier(String.valueOf(colors.get(position)),
+                            "drawable", getApplicationContext().
+                                    getPackageName()));
 
-                String previousCharacter = saveSystem.getPersonPicture();
-                String clickedItem = (String) list.getItemAtPosition(position);
-                saveSystem.nextScene(clickedItem);
+            String clickedItem = (String) list.getItemAtPosition(position);
+            saveSystem.nextScene(clickedItem);
 
-                // Pause 1 second, then do the run-method.
-                Handler handler = new Handler();
-                handler.postDelayed(new Runnable() {
-                    @Override
-                    public void run() {
-                        buttonClickedAnimation();
-                        characterAnimation(previousCharacter);
-                    }
-                }, 500);
-            }
+            // Pause 1 second, then do the run-method.
+            Handler handler = new Handler();
+            handler.postDelayed(this::buttonClickedAnimation, 500);
         });
     }
 
@@ -209,7 +177,7 @@ public class ScenarioActivity extends ParentActivity {
     /**
      * Update images from json-file.
      */
-    private void updateImagesStart() {
+    private void updateImages() {
         background.setImageResource(getResources()
                 .getIdentifier(saveSystem.getBackgroundPicture(),
         "drawable", getApplicationContext()
@@ -236,38 +204,6 @@ public class ScenarioActivity extends ParentActivity {
                     .getIdentifier(saveSystem.getFacePicture(),
             "drawable", getApplicationContext()
                     .getPackageName()));
-        }
-    }
-
-    private void updateBackgrounds() {
-        background.setImageResource(getResources()
-                .getIdentifier(saveSystem.getBackgroundPicture(),
-                        "drawable", getApplicationContext()
-                                .getPackageName()));
-
-        if (saveSystem.getForegroundPicture().equals("null")) {
-            fore.setImageResource(android.R.color.transparent);
-        } else {
-            fore.setImageResource(getResources()
-                    .getIdentifier(saveSystem.getForegroundPicture(),
-                            "drawable", getApplicationContext()
-                                    .getPackageName()));
-        }
-    }
-
-    private void updatePersonAndFace() {
-        if (saveSystem.getPersonPicture().equals("null")) {
-            character.setImageResource(android.R.color.transparent);
-            face.setImageResource(android.R.color.transparent);
-        } else {
-            character.setImageResource(getResources()
-                    .getIdentifier(saveSystem.getPersonPicture(),
-                            "drawable", getApplicationContext()
-                                    .getPackageName()));
-            face.setImageResource(getResources()
-                    .getIdentifier(saveSystem.getFacePicture(),
-                            "drawable", getApplicationContext()
-                                    .getPackageName()));
         }
     }
 }

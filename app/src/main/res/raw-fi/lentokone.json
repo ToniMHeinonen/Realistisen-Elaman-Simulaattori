@@ -19,10 +19,10 @@
   },
   "lahtoselvitysTehty": {
     "question": "Mitä teet seuraavaksi? Mukanasi on ruumaan meneviä tavaroita.",
-    "background": "background_1",
+    "background": "background_2",
     "person": "character_2",
     "face": "face_happy",
-    "fore": "fore_1",
+    "fore": "fore_2",
     "answers": [
       "Menet suoraan turvatarkastukseen",
       "Menet matkatavaratiskille",
@@ -52,10 +52,10 @@
   },
   "matkatavaratJatetty": {
     "question": "Olet tehnyt lähtöselvityksen ja jättänyt matkatavarat matkatavaratiskille- tai automaatille. Mitä teet seuraavaksi?",
-    "background": "background_1",
-    "person": "character_1",
+    "background": "background_2",
+    "person": "character_2",
     "face": "face_happy",
-    "fore": "null",
+    "fore": "fore_2",
     "answers": [
       "Pyörit ympäri lentokenttää ja menet viime tingassa turvatarkastukseen",
       "Menet turvatarkastukseen",

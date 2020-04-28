@@ -19,10 +19,10 @@
   },
   "lahtoselvitysTehty": {
     "question": "What do you do next? You have luggage to go into the baggage hold.",
-    "background": "background_1",
+    "background": "background_2",
     "person": "character_2",
     "face": "face_happy",
-    "fore": "fore_1",
+    "fore": "fore_2",
     "answers": [
       "You go straight to the security check",
       "You go to the luggage counter",
@@ -52,10 +52,10 @@
   },
   "matkatavaratJatetty": {
     "question": "You have checked in and left your luggage at the luggage counter. What do you do next?",
-    "background": "background_1",
-    "person": "character_1",
+    "background": "background_2",
+    "person": "character_2",
     "face": "face_happy",
-    "fore": "null",
+    "fore": "fore_2",
     "answers": [
       "You wander around the airport and go to the security check at the last moment",
       "You go to the security check",
