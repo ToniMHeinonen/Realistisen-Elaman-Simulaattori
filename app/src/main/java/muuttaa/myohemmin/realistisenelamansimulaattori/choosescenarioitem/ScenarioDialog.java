@@ -74,7 +74,6 @@ public class ScenarioDialog extends Dialog implements
             case R.id.playButton:
                 Intent intent = new Intent(activity, ScenarioActivity.class);
                 intent.putExtra("scenario", scenario.getName());
-                intent.putExtra("scenarioID", scenario.getId());
                 activity.startActivity(intent);
                 activity.playSound(activity.S_CORRECT);
                 dismiss();
@@ -112,7 +111,7 @@ public class ScenarioDialog extends Dialog implements
      * Resets necessary values of scenario.
      */
     private void resetScenario() {
-        ScenarioItemPrefs.resetScenarioItem(scenario.getId());
+        ScenarioItemPrefs.resetScenarioItem(scenario.getName());
         activity.refreshActivity();
         dismiss();
     }

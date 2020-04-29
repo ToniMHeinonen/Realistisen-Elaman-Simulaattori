@@ -26,7 +26,6 @@ public class GameOverActivity extends ParentActivity {
         Bundle extras = getIntent().getExtras();
         if (extras != null) {
             scenario = extras.getString("scenario");
-            int scenarioID = extras.getInt("scenarioID");
             userAnswers = (ArrayList) extras.getSerializable("userAnswers");
             completedScenarioTextView = findViewById(R.id.resultScenario);
             completedScenarioTextView.setText(getString(R.string.completed_scenario) + scenario);
@@ -34,12 +33,12 @@ public class GameOverActivity extends ParentActivity {
             int completedPercentage = getPercentage(userAnswers);
             completedPercentageTextView.setText(getString(R.string.completed_percentage) + completedPercentage + "%" +
                     "\n\n" + giveFeedback(completedPercentage));
-            if (ScenarioItemPrefs.loadPercentage(scenarioID) < completedPercentage) {
-                ScenarioItemPrefs.savePercentage(scenarioID, completedPercentage);
+            if (ScenarioItemPrefs.loadPercentage(scenario) < completedPercentage) {
+                ScenarioItemPrefs.savePercentage(scenario, completedPercentage);
             }
 
             // Change date of last time played for this scenario
-            ScenarioItemPrefs.saveLastTimePlayed(scenarioID);
+            ScenarioItemPrefs.saveLastTimePlayed(scenario);
         }
     }
 

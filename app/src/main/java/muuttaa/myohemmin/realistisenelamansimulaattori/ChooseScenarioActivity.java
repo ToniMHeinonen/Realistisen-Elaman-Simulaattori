@@ -94,7 +94,7 @@ public class ChooseScenarioActivity extends ParentActivity {
         List<String> scenarioNames = json.getScenarioList();
 
         for (int i = 0; i < scenarioNames.size(); i++) {
-            scenarios.add(new ScenarioItem(i, scenarioNames.get(i)));
+            scenarios.add(new ScenarioItem(scenarioNames.get(i)));
         }
     }
 
@@ -103,23 +103,16 @@ public class ChooseScenarioActivity extends ParentActivity {
      * @param scenario scenario to delete
      */
     public void deleteScenario(ScenarioItem scenario) {
-        // Load scenarios in id order
-        loadScenarios();
+        String name = scenario.getName();
 
-        scenarios.remove(scenario.getId());
+        scenarios.remove(scenario);
 
-        // Loop through all the rest scenarios and lower their id's by one
-        for (int i = scenario.getId(); i < scenarios.size(); i++) {
-            ScenarioItem higherScenario = scenarios.get(i);
-            ScenarioItemPrefs.changeScenarioID(i, higherScenario);
-        }
-
-        // Delete the last value, so it does not stay hanging
-        ScenarioItemPrefs.removeLastValueAfterDeletingScenario(scenarios.size());
+        // Delete the value, so it does not stay hanging in preferences
+        ScenarioItemPrefs.deleteScenarioitem(name);
 
         // Delete from json
         SaveSystemPreferences json = new SaveSystemPreferences(this);
-        json.deleteScenario(scenario.getName());
+        json.deleteScenario(name);
 
         // Reload list
         refreshActivity();

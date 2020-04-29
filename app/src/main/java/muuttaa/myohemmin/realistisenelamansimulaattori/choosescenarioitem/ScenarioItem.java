@@ -6,7 +6,6 @@ import muuttaa.myohemmin.realistisenelamansimulaattori.tools.Debug;
 
 public class ScenarioItem {
 
-    private int id;
     private String name;
     private Date lastTimePlayed;
     private int percentageCompleted;
@@ -14,24 +13,14 @@ public class ScenarioItem {
 
     /**
      * Creates new instance of Scenario Item.
-     * @param id id of the scenario
      * @param name name of the scenario
      */
-    public ScenarioItem(int id, String name) {
-        this.id = id;
+    public ScenarioItem(String name) {
         this.name = name;
-        this.lastTimePlayed = ScenarioItemPrefs.loadLastTimePlayed(id);
-        this.percentageCompleted = ScenarioItemPrefs.loadPercentage(id);
-        this.category = ScenarioItemPrefs.loadCategory(id);
+        this.lastTimePlayed = ScenarioItemPrefs.loadLastTimePlayed(name);
+        this.percentageCompleted = ScenarioItemPrefs.loadPercentage(name);
+        this.category = ScenarioItemPrefs.loadCategory(name);
         Debug.print("ScenarioItem", "()", this.toString(), 1);
-    }
-
-    /**
-     * Returns id of the scenario.
-     * @return id of the scenario
-     */
-    public int getId() {
-        return id;
     }
 
     /**
@@ -56,7 +45,7 @@ public class ScenarioItem {
      */
     public void setLastTimePlayed(Date lastTimePlayed) {
         this.lastTimePlayed = lastTimePlayed;
-        ScenarioItemPrefs.saveLastTimePlayed(id);
+        ScenarioItemPrefs.saveLastTimePlayed(this.name);
     }
 
     /**
@@ -73,7 +62,7 @@ public class ScenarioItem {
      */
     public void setPercentageCompleted(int percentageCompleted) {
         this.percentageCompleted = percentageCompleted;
-        ScenarioItemPrefs.savePercentage(id, percentageCompleted);
+        ScenarioItemPrefs.savePercentage(this.name, percentageCompleted);
     }
 
     /**
@@ -90,7 +79,7 @@ public class ScenarioItem {
      */
     public void setCategory(String category) {
         this.category = category;
-        ScenarioItemPrefs.saveCategory(id, category);
+        ScenarioItemPrefs.saveCategory(this.name, category);
     }
 
     /**

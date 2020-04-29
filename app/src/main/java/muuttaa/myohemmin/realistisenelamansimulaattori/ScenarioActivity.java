@@ -27,7 +27,6 @@ import muuttaa.myohemmin.realistisenelamansimulaattori.tools.GlobalPrefs;
 
 public class ScenarioActivity extends ParentActivity {
     private String scenario;
-    private int scenarioID;
     private SaveSystemPreferences saveSystem;
     private TextView questionTextView;
     private List<String> colors;
@@ -53,7 +52,6 @@ public class ScenarioActivity extends ParentActivity {
         Bundle extras = getIntent().getExtras();
         if (extras != null) {
             scenario = extras.getString("scenario");
-            scenarioID = extras.getInt("scenarioID");
             setupStart();
             updateImages();
             setupAnswers();
@@ -149,7 +147,6 @@ public class ScenarioActivity extends ParentActivity {
     private void scenarioFinished() {
         Intent intent = new Intent(getApplicationContext(), GameOverActivity.class);
         intent.putExtra("scenario", saveSystem.getCurrentScenario());
-        intent.putExtra("scenarioID", scenarioID);
         intent.putExtra("userAnswers", userAnswers);
         startActivity(intent);
         finish();
