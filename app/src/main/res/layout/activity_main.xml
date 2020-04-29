@@ -6,6 +6,16 @@
     android:orientation = "vertical"
     tools:context=".ChooseScenarioActivity">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/my_tasks"
+        android:padding="10dp"
+        android:textSize="40dp"
+        android:textColor="#FFF"
+        android:gravity="center"
+        android:background="@color/colorPrimary"/>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">

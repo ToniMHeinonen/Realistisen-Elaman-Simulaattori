@@ -21,6 +21,7 @@
     <string name="completed_perfect">Loistavaa! Sait kaikki oikein tässä skenaariossa.</string>
 
     <!-- CHOOSE SCENARIO ACTIVITY -->
+    <string name="my_tasks">Mun tehtävät</string>
     <string name="settings">Asetukset</string>
     <string name="createScenario">Luo skenaario</string>
     <string name="scenarios">Skenaariot</string>
