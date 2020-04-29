@@ -63,7 +63,7 @@ public class ScenarioActivity extends ParentActivity {
      */
     private void buttonClickedAnimation() {
         try {
-            scenarioLayout.animate().translationX(0 - scenarioLayout.getWidth()).setDuration(1000)
+            scenarioLayout.animate().translationX(0 - scenarioLayout.getWidth()).setDuration(600)
                     .withEndAction(this::afterButtonClickedAnimation).start();
         } catch (Exception e) {
             e.printStackTrace();
@@ -91,9 +91,9 @@ public class ScenarioActivity extends ParentActivity {
             updateImages();
             Handler handler = new Handler();
             handler.postDelayed(() -> {
-                scenarioLayout.animate().translationX(0).setDuration(1000).start();
+                scenarioLayout.animate().translationX(0).setDuration(600).start();
                 list.setEnabled(true);
-            }, 200);
+            }, 50);
         }
     }
 
@@ -110,6 +110,7 @@ public class ScenarioActivity extends ParentActivity {
         character = findViewById(R.id.scenarioCharacter);
         face = findViewById(R.id.scenarioFace);
         fore = findViewById(R.id.scenarioFore);
+        loadSounds(R.raw.correct, R.raw.wrong);
     }
 
     /**
@@ -161,12 +162,15 @@ public class ScenarioActivity extends ParentActivity {
         switch (color) {
             case "green":
                 userAnswers.add(CORRECT);
+                playSound(R.raw.correct);
                 break;
             case "yellow":
                 userAnswers.add(SEMICORRECT);
+                playSound(R.raw.correct);
                 break;
             case "red":
                 userAnswers.add(WRONG);
+                playSound(R.raw.wrong);
                 break;
         }
     }
