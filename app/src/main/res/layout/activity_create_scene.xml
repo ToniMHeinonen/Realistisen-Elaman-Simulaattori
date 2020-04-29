@@ -29,26 +29,27 @@
                 <ImageView
                     android:id="@+id/createBackground"
                     android:layout_width="match_parent"
-                    android:layout_height="250dp"
+                    android:layout_height="match_parent"
                     android:scaleType="fitXY"
                     android:src="@drawable/background_1"/>
 
                 <ImageView
                     android:id="@+id/createCharacter"
-                    android:layout_width="wrap_content"
-                    android:layout_height="250dp"
-                    android:scaleType="centerInside"
-                    android:layout_centerHorizontal="true"
-                    android:layout_alignBottom="@id/createBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:src="@drawable/character_1"/>
 
                 <ImageView
                     android:id="@+id/createFace"
-                    android:layout_width="wrap_content"
-                    android:layout_height="250dp"
-                    android:scaleType="centerInside"
-                    android:layout_centerHorizontal="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:src="@drawable/face_happy"/>
+
+                <ImageView
+                    android:id="@+id/createForeground"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/fore_1"/>
             </RelativeLayout>
 
             <!-- IMAGE OPTIONS -->
