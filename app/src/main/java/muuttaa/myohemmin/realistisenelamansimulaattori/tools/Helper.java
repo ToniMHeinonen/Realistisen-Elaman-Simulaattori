@@ -11,6 +11,8 @@ import muuttaa.myohemmin.realistisenelamansimulaattori.R;
 
 public abstract class Helper {
 
+    public static final String HIDE_NEGATIVE_BUTTON = "HIDE_NEGATIVE_BUTTON";
+
     /**
      * Creates custom alert dialog.
      * @param context application context
@@ -52,12 +54,17 @@ public abstract class Helper {
         });
         // Set negative button text and listener
         Button negative = view.findViewById(R.id.negativeButton);
-        negative.setText(negText);
-        negative.setOnClickListener((e) -> {
-            if (negativeListener != null)
-                negativeListener.onClick();
-            alertD.dismiss();
-        });
+        // Hide negative if you only need one button
+        if (negativeText.equals(HIDE_NEGATIVE_BUTTON)) {
+            negative.setVisibility(View.INVISIBLE);
+        } else {
+            negative.setText(negText);
+            negative.setOnClickListener((e) -> {
+                if (negativeListener != null)
+                    negativeListener.onClick();
+                alertD.dismiss();
+            });
+        }
 
         // Show alert
         alertD.setView(view);

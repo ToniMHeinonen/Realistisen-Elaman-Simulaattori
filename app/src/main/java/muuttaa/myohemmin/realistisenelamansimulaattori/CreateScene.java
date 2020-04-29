@@ -331,11 +331,10 @@ View.OnClickListener, View.OnLongClickListener{
     }
     private void dataNotGivenAlert(String content, String toastMessage){
         // Show content of what data is missing in alert dialog
-        AlertDialog alert = Helper.showAlert(this, getString(R.string.huom), content,
-                getString(android.R.string.yes), getString(android.R.string.no),
-                null, null);
-        // Show toast message after dialog has been dismissed
-        alert.setOnDismissListener((d) -> Toast.makeText(this, toastMessage, Toast.LENGTH_LONG).show());
+        Helper.showAlert(this, getString(R.string.huom), content,
+                getString(android.R.string.yes), Helper.HIDE_NEGATIVE_BUTTON,
+                () -> Toast.makeText(this, toastMessage, Toast.LENGTH_LONG).show(),
+                null);
     }
 
     /**
