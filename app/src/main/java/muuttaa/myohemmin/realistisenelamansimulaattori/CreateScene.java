@@ -187,52 +187,55 @@ View.OnClickListener, View.OnLongClickListener{
             if(debuggi){
                 Log.e("scene", "face: " + faceKuva + " back: " + backKuva + " fore: " + foreKuva + " hahmo: " + hahmoKuva);
             }
-            String[] taustat = getResources().getStringArray(R.array.taustat);
+
+            // Background
             int paikka = 0;
-            //background spinner
-            for(int lap=0; lap < taustat.length; lap++){
-                if(taustat[lap].equals(backKuva)){
+            for(int lap=0; lap < this.backgroundFiles.length; lap++){
+                if(this.backgroundFiles[lap].equals(backKuva)){
                     paikka = lap;
                     break;
                 }
             }
             this.background.setSelection(paikka);
+
+            // Foreground
             paikka = 0;
-            String[] facet = getResources().getStringArray(R.array.kasvot);
-            for(int lap=0; lap < facet.length; lap++){
-                if(facet[lap].equals(faceKuva)){
+            for(int lap=0; lap < this.foregroundFiles.length; lap++){
+                if(this.foregroundFiles[lap].equals(foreKuva)){
                     paikka = lap;
                     break;
-                } else if(facet[lap].equals("empty") || facet[lap].equals("tyhjä")){
-                    paikka = lap;
-                    break;
-                }
-            }
-            this.face.setSelection(paikka);
-            paikka = 0;
-            String[] foret = getResources().getStringArray(R.array.kolmasKuva);
-            for(int lap=0; lap < foret.length; lap++){
-                if(foret[lap].equals(foreKuva)){
-                    paikka = lap;
-                    break;
-                } else if(foret[lap].equals("empty") || foret[lap].equals("tyhjä")){
+                } else if(this.foregroundFiles[lap].equals("empty") || this.foregroundFiles[lap].equals("tyhjä")){
                     paikka = lap;
                     break;
                 }
             }
             this.foreground.setSelection(paikka);
+
+            // Person
             paikka = 0;
-            String[] hahmot = getResources().getStringArray(R.array.henkilot);
-            for(int lap=0; lap < hahmot.length; lap++){
-                if(hahmot[lap].equals(hahmoKuva)){
+            for(int lap=0; lap < this.personFiles.length; lap++){
+                if(this.personFiles[lap].equals(hahmoKuva)){
                     paikka = lap;
                     break;
-                } else if(hahmot[lap].equals("empty") || hahmot[lap].equals("tyhjä")){
+                } else if(this.personFiles[lap].equals("empty") || this.personFiles[lap].equals("tyhjä")){
                     paikka = lap;
                     break;
                 }
             }
             this.person.setSelection(paikka);
+
+            // Face
+            paikka = 0;
+            for(int lap=0; lap < this.faceFiles.length; lap++){
+                if(this.faceFiles[lap].equals(faceKuva)){
+                    paikka = lap;
+                    break;
+                } else if(this.faceFiles[lap].equals("empty") || this.faceFiles[lap].equals("tyhjä")){
+                    paikka = lap;
+                    break;
+                }
+            }
+            this.face.setSelection(paikka);
         }
     }
 
