@@ -38,6 +38,7 @@ View.OnClickListener, View.OnLongClickListener{
     private ImageView tausta;
     private ImageView henkilo;
     private ImageView kasvot;
+    private ImageView foreGroundView;
     private List<GeneralKeyAndValue> kysymyksetGo;
     private List<GeneralKeyAndValue> kysymyksetColor;
     private ArrayList<Scene> scenes = new ArrayList<>();
@@ -77,6 +78,7 @@ View.OnClickListener, View.OnLongClickListener{
         this.tausta = (ImageView) findViewById(R.id.createBackground);
         this.henkilo = (ImageView) findViewById(R.id.createCharacter);
         this.kasvot = (ImageView) findViewById(R.id.createFace);
+        this.foreGroundView = (ImageView) findViewById(R.id.createForeground);
         this.foreground = (Spinner) findViewById(R.id.ForegroundSpinner);
         korvaus = getIntent().getIntExtra("korvaus", -1);
         scenes = getIntent().getParcelableArrayListExtra("createdScenes");
@@ -241,6 +243,7 @@ View.OnClickListener, View.OnLongClickListener{
         selectedBackground = backgroundFiles[this.background.getSelectedItemPosition()];
         selectedPerson = personFiles[this.person.getSelectedItemPosition()];
         selectedFace = faceFiles[this.face.getSelectedItemPosition()];
+        selectedForeground = foregroundFiles[this.foreground.getSelectedItemPosition()];
         this.tausta.setImageResource(getResources().getIdentifier(selectedBackground, "drawable", getPackageName()));
         if(!selectedPerson.equals("null") && !selectedPerson.equals("tyhjä") && !selectedPerson.equals("empty")) {
             this.henkilo.setImageResource(getResources().getIdentifier(selectedPerson, "drawable", getPackageName()));
@@ -255,7 +258,11 @@ View.OnClickListener, View.OnLongClickListener{
         } else{
             this.kasvot.setImageResource(android.R.color.transparent);
         }
-        //pakko lisätä foreground koodi myöhemmin tähän
+        if(!selectedForeground.equals("null") && !selectedForeground.equals("tyhjä") && !selectedForeground.equals("empty")) {
+            this.foreGroundView.setImageResource(getResources().getIdentifier(selectedForeground, "drawable", getPackageName()));
+        } else{
+            this.foreGroundView.setImageResource(android.R.color.transparent);
+        }
     }
 
     /**
@@ -291,7 +298,7 @@ View.OnClickListener, View.OnLongClickListener{
                 String tausta = selectedBackground;
                 String henkilo = selectedPerson;
                 String kasvo = selectedFace;
-                String foree = this.foreground.getSelectedItem().toString();
+                String foree = selectedForeground;
                 if(henkilo.equals("tyhjä") || henkilo.equals("empty")){
                     henkilo = "null";
                 }
