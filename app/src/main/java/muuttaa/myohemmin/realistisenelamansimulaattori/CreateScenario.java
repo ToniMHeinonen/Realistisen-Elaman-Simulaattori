@@ -260,7 +260,7 @@ public class CreateScenario extends ParentActivity {
         if(allDataGiven()) {
             Scenario scenario = new Scenario();
             scenario.setListaus(list);
-            String name = scenarioName.getText().toString().toLowerCase();
+            String name = scenarioName.getText().toString();
             scenario.setName(name);
             String korjattu = "";
             for (int lap = 0; lap < name.length(); lap++) {
@@ -269,7 +269,7 @@ public class CreateScenario extends ParentActivity {
                     korjattu += m;
                 }
             }
-            String file = korjattu + ".json";
+            String file = korjattu.toLowerCase() + ".json";
             scenario.setFileName(file);
             SaveSystemPreferences json = new SaveSystemPreferences(this);
             if (json.containsAlready(name)) {
