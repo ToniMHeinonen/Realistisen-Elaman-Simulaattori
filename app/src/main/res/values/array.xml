@@ -9,6 +9,15 @@
         <item>background_6</item>
         <item>background_7</item>
     </string-array>
+    <string-array name="taustatName">
+        <item>Blue</item>
+        <item>Orange</item>
+        <item>Yellow</item>
+        <item>Pink</item>
+        <item>Blue 2</item>
+        <item>Orange 2</item>
+        <item>Orange 3</item>
+    </string-array>
     <string-array name="henkilot">
         <item>character_1</item>
         <item>character_2</item>
@@ -19,6 +28,16 @@
         <item>character_7</item>
         <item>empty</item>
     </string-array>
+    <string-array name="henkilotName">
+        <item>Guard</item>
+        <item>Clerk</item>
+        <item>Cleaner</item>
+        <item>Grandma</item>
+        <item>Doctor</item>
+        <item>Girl</item>
+        <item>Lawyer</item>
+        <item>empty</item>
+    </string-array>
     <string-array name="kasvot">
         <item>face_happy</item>
         <item>face_confused</item>
@@ -27,10 +46,13 @@
         <item>face_uncomfortable</item>
         <item>empty</item>
     </string-array>
-    <string-array name="varit">
-        <item>green</item>
-        <item>red</item>
-        <item>yellow</item>
+    <string-array name="kasvotName">
+        <item>Happy</item>
+        <item>Confused</item>
+        <item>Sad</item>
+        <item>Surprised</item>
+        <item>Uncomfortable</item>
+        <item>empty</item>
     </string-array>
     <string-array name="kolmasKuva">
         <item>fore_1</item>
@@ -41,5 +63,20 @@
         <item>fore_6</item>
         <item>fore_7</item>
         <item>empty</item>
+    </string-array>
+    <string-array name="kolmasKuvaName">
+        <item>Bus Stop</item>
+        <item>Movie Theater</item>
+        <item>Shop</item>
+        <item>Library</item>
+        <item>Hospital</item>
+        <item>Restaurant</item>
+        <item>Office</item>
+        <item>empty</item>
+    </string-array>
+    <string-array name="varit">
+        <item>green</item>
+        <item>red</item>
+        <item>yellow</item>
     </string-array>
 </resources>

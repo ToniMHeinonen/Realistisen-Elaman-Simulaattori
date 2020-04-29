@@ -44,6 +44,16 @@ View.OnClickListener, View.OnLongClickListener{
     private int korvaus = -1;
     private boolean debuggi = true;
 
+    // Using custom names in image files
+    private String[] backgroundFiles;
+    private String selectedBackground;
+    private String[] foregroundFiles;
+    private String selectedForeground;
+    private String[] personFiles;
+    private String selectedPerson;
+    private String[] faceFiles;
+    private String selectedFace;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         // Load font theme
@@ -51,6 +61,13 @@ View.OnClickListener, View.OnLongClickListener{
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_scene);
+
+        // Load drawable file names for images
+        backgroundFiles = getResources().getStringArray(R.array.taustat);
+        foregroundFiles = getResources().getStringArray(R.array.kolmasKuva);
+        personFiles = getResources().getStringArray(R.array.henkilot);
+        faceFiles = getResources().getStringArray(R.array.kasvot);
+
         this.name = (EditText) findViewById(R.id.scenenNimi);
         this.question = (EditText) findViewById(R.id.kysymys);
         this.background = (Spinner) findViewById(R.id.taustaSpinner);
@@ -82,24 +99,24 @@ View.OnClickListener, View.OnLongClickListener{
         }
 
         ArrayAdapter<CharSequence> adapterTaustat = ArrayAdapter.createFromResource(this,
-                R.array.taustat, R.layout.custom_spinner);
+                R.array.taustatName, R.layout.custom_spinner);
         adapterTaustat.setDropDownViewResource(R.layout.custom_spinner_dropdown);
         this.background.setAdapter(adapterTaustat);
 
         ArrayAdapter<CharSequence> adapterHenkilot = ArrayAdapter.createFromResource(this,
-                R.array.henkilot, R.layout.custom_spinner);
+                R.array.henkilotName, R.layout.custom_spinner);
         adapterHenkilot.setDropDownViewResource(R.layout.custom_spinner_dropdown);
 
         this.person.setAdapter(adapterHenkilot);
 
         ArrayAdapter<CharSequence> adapterKasvot = ArrayAdapter.createFromResource(this,
-                R.array.kasvot, R.layout.custom_spinner);
+                R.array.kasvotName, R.layout.custom_spinner);
         adapterKasvot.setDropDownViewResource(R.layout.custom_spinner_dropdown);
 
         this.face.setAdapter(adapterKasvot);
 
         ArrayAdapter<CharSequence> adapterForeground = ArrayAdapter.createFromResource(this,
-                R.array.kolmasKuva, R.layout.custom_spinner);
+                R.array.kolmasKuvaName, R.layout.custom_spinner);
         adapterForeground.setDropDownViewResource(R.layout.custom_spinner_dropdown);
 
         this.foreground.setAdapter(adapterForeground);
@@ -221,20 +238,20 @@ View.OnClickListener, View.OnLongClickListener{
      * This method update images of preview
      */
     private void updateImages() {
-        String naama = this.face.getSelectedItem().toString();
-        String t = this.background.getSelectedItem().toString();
-        String h = this.person.getSelectedItem().toString();
-        this.tausta.setImageResource(getResources().getIdentifier(t, "drawable", getPackageName()));
-        if(!h.equals("null") && !h.equals("tyhjä") && !h.equals("empty")) {
-            this.henkilo.setImageResource(getResources().getIdentifier(h, "drawable", getPackageName()));
+        selectedBackground = backgroundFiles[this.background.getSelectedItemPosition()];
+        selectedPerson = personFiles[this.person.getSelectedItemPosition()];
+        selectedFace = faceFiles[this.face.getSelectedItemPosition()];
+        this.tausta.setImageResource(getResources().getIdentifier(selectedBackground, "drawable", getPackageName()));
+        if(!selectedPerson.equals("null") && !selectedPerson.equals("tyhjä") && !selectedPerson.equals("empty")) {
+            this.henkilo.setImageResource(getResources().getIdentifier(selectedPerson, "drawable", getPackageName()));
         } else{
             this.henkilo.setImageResource(android.R.color.transparent);
             //null value must be last
             int faceNullPosition =  getResources().getStringArray(R.array.kasvot).length - 1;
             this.face.setSelection(faceNullPosition);
         }
-        if(!naama.equals("null") && !naama.equals("tyhjä") && !naama.equals("empty")) {
-            this.kasvot.setImageResource(getResources().getIdentifier(naama, "drawable", getPackageName()));
+        if(!selectedFace.equals("null") && !selectedFace.equals("tyhjä") && !selectedFace.equals("empty")) {
+            this.kasvot.setImageResource(getResources().getIdentifier(selectedFace, "drawable", getPackageName()));
         } else{
             this.kasvot.setImageResource(android.R.color.transparent);
         }
@@ -271,9 +288,9 @@ View.OnClickListener, View.OnLongClickListener{
             try {
                 String nimi = this.name.getText().toString();
                 String kysymys = this.question.getText().toString();
-                String tausta = this.background.getSelectedItem().toString();
-                String henkilo = this.person.getSelectedItem().toString();
-                String kasvo = this.face.getSelectedItem().toString();
+                String tausta = selectedBackground;
+                String henkilo = selectedPerson;
+                String kasvo = selectedFace;
                 String foree = this.foreground.getSelectedItem().toString();
                 if(henkilo.equals("tyhjä") || henkilo.equals("empty")){
                     henkilo = "null";
