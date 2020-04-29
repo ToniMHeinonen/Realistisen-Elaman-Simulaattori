@@ -15,7 +15,6 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.text.InputType;
-import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -320,48 +319,34 @@ public class CreateScenario extends ParentActivity {
             public void onClick(DialogInterface dialog, int which) {
                 outName = input.getText().toString();
                 if (outName.equals("null")) {
-                    new AlertDialog.Builder(con)
-                            .setTitle(con.getString(R.string.huom))
-                            .setMessage(con.getString(R.string.not_null))
-                            .setNegativeButton(android.R.string.no, new DialogInterface.OnClickListener() {
-                                @Override
-                                public void onClick(DialogInterface dialog, int which) {
-                                    Toast.makeText(con, con.getString(R.string.not_added), Toast.LENGTH_LONG).show();
-                                }
-                            })
-                            .setIcon(android.R.drawable.ic_dialog_alert)
-                            .show();
+                    Helper.showAlert(con, con.getString(R.string.huom),
+                            con.getString(R.string.not_null),
+                            getString(android.R.string.no), Helper.HIDE_NEGATIVE_BUTTON,
+                            () -> Toast.makeText(con, con.getString(R.string.not_added), Toast.LENGTH_LONG).show(),
+                            null);
                 } else{
                         if ((new SaveSystemPreferences(con).containsAlready(outName) || StringContainsNumber(outName))) {
-                        new AlertDialog.Builder(con)
-                                .setTitle(con.getString(R.string.huom))
-                                .setMessage(con.getString(R.string.duplicate_warning) + " " + con.getString(R.string.or) + " " + con.getString(R.string.not_number))
-                                .setNegativeButton(android.R.string.no, new DialogInterface.OnClickListener() {
-                                    @Override
-                                    public void onClick(DialogInterface dialog, int which) {
-                                        Toast.makeText(con, con.getString(R.string.not_added), Toast.LENGTH_LONG).show();
-                                    }
-                                })
-                                .setIcon(android.R.drawable.ic_dialog_alert)
-                                .show();
+                            Helper.showAlert(con, con.getString(R.string.huom),
+                                    con.getString(R.string.duplicate_warning) + " " +
+                                            con.getString(R.string.or) + " " +
+                                            con.getString(R.string.not_number),
+                                    getString(android.R.string.no), Helper.HIDE_NEGATIVE_BUTTON,
+                                    () -> Toast.makeText(con, con.getString(R.string.not_added), Toast.LENGTH_LONG).show(),
+                                    null);
                     } else {
                         if (outName == null || outName.isEmpty()) {
                             SimpleDateFormat sdf = new SimpleDateFormat("yyyy.MM.dd G 'at' HH:mm:ss z");
                             outName = sdf.format(new Date());
                         }
-                        new AlertDialog.Builder(con)
-                                .setTitle(con.getString(R.string.huom))
-                                .setMessage(con.getString(R.string.file_types))
-                                .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
-                                    public void onClick(DialogInterface dialog, int which) {
-                                        Intent i = new Intent(Intent.ACTION_GET_CONTENT);
-                                        i.setType("*/*");
-                                        startActivityForResult(i, 22);
-                                    }
-                                })
-                                .setNegativeButton(android.R.string.no, null)
-                                .setIcon(android.R.drawable.ic_dialog_alert)
-                                .show();
+                        Helper.showAlert(con, con.getString(R.string.huom),
+                                con.getString(R.string.file_types),
+                                getString(android.R.string.yes), Helper.HIDE_NEGATIVE_BUTTON,
+                                () -> {
+                                    Intent i = new Intent(Intent.ACTION_GET_CONTENT);
+                                    i.setType("*/*");
+                                    startActivityForResult(i, 22);
+                                },
+                                null);
                     }
                 }
             }
@@ -422,16 +407,9 @@ public class CreateScenario extends ParentActivity {
 
     private void dataNotGivenAlert(String content, String toastMessage){
         Context co = this;
-        new AlertDialog.Builder(this)
-                .setTitle(this.getString(R.string.huom))
-                .setMessage(content)
-                .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog, int which) {
-                        Toast.makeText(co, toastMessage, Toast.LENGTH_LONG).show();
-                    }
-                })
-                .setNegativeButton(android.R.string.no, null)
-                .setIcon(android.R.drawable.ic_dialog_alert)
-                .show();
+        Helper.showAlert(this, getString(R.string.huom), content,
+                getString(android.R.string.yes), Helper.HIDE_NEGATIVE_BUTTON,
+                () -> Toast.makeText(co, toastMessage, Toast.LENGTH_LONG).show(),
+                null);
     }
 }
