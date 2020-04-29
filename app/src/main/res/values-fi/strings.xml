@@ -12,13 +12,14 @@
     </string-array>
 
     <!-- GAME OVER ACTIVITY -->
-    <string name="completed_scenario">Suoritettu skenaario:\u0020</string>
+    <string name="completed_scenario">Suoritettu skenaario:\u0020\n</string>
     <string name="completed_percentage">Onnistumisprosentti:\u0020</string>
     <string name="completed_bad">Voi harmi, nyt ei kyllä mennyt aivan putkeen.
         Yritä uudelleen paremmalla onnella ja harkitse tarkkaan vastauksiasi.</string>
     <string name="completed_mediocre">Hienoa! Suoriuduit tästä skenaariosta varsin mallikkaasti,
         mutta vielä on parantamisen varaa.</string>
     <string name="completed_perfect">Loistavaa! Sait kaikki oikein tässä skenaariossa.</string>
+    <string name="back_to_menu">Takaisin aloitusvalikkoon</string>
 
     <!-- CHOOSE SCENARIO ACTIVITY -->
     <string name="my_tasks">Mun tehtävät</string>

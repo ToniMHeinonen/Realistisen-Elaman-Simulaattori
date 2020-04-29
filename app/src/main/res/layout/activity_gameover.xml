@@ -6,14 +6,36 @@
     android:layout_height="match_parent"
     tools:context=".GameOverActivity">
 
+    <ImageView
+        android:id="@+id/resultScenarioBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@id/resultScenario"
+        android:layout_alignTop="@id/resultScenario"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:scaleType="fitXY"
+        android:src="#6d7eff"/>
+
     <TextView
         android:id="@+id/resultScenario"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="?attr/font_medium"
         android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
+        android:layout_marginTop="15dp"
+        android:padding="15dp"
         android:textAlignment="center"/>
+
+    <ImageView
+        android:id="@+id/resultPercentageBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@id/resultPercentage"
+        android:layout_alignTop="@id/resultPercentage"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:scaleType="fitXY" />
 
     <TextView
         android:id="@+id/resultPercentage"
@@ -23,17 +45,34 @@
         android:textSize="?attr/font_medium"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/feedback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/resultPercentage"
+        android:textSize="?attr/font_medium"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
         android:textAlignment="center"/>
 
     <Button
-        android:text="Takaisin aloitusvalikkoon"
+        android:text="@string/back_to_menu"
         android:id="@+id/backToMenu"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="?attr/font_medium"
-        android:layout_below="@+id/resultPercentage"
+        android:layout_below="@+id/feedback"
         android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="#32b0ff"
         android:onClick="goToMenu"/>
 
 </RelativeLayout>

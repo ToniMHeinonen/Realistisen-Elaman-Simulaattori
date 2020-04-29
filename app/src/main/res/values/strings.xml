@@ -12,13 +12,14 @@
     </string-array>
 
     <!-- GAME OVER ACTIVITY -->
-    <string name="completed_scenario">Completed scenario:\u0020</string>
+    <string name="completed_scenario">Completed scenario:\u0020\n</string>
     <string name="completed_percentage">Completed percentage:\u0020</string>
     <string name="completed_bad">Oh snap, it did not go so well this time.
         Try again with better luck and weigh your answers thoroughly.</string>
     <string name="completed_mediocre">Nice! You succeeded on this scenario pretty well,
         but you can still do better.</string>
     <string name="completed_perfect">Awesome! You got all the answers correct.</string>
+    <string name="back_to_menu">Back to menu</string>
 
     <!-- CHOOSE SCENARIO ACTIVITY -->
     <string name="my_tasks">My Tasks</string>

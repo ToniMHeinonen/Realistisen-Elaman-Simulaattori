@@ -3,6 +3,7 @@ package muuttaa.myohemmin.realistisenelamansimulaattori;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -15,6 +16,8 @@ public class GameOverActivity extends ParentActivity {
     private String scenario;
     private TextView completedScenarioTextView;
     private TextView completedPercentageTextView;
+    private TextView feedbackTextView;
+    private ImageView percentageBg;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,14 +28,18 @@ public class GameOverActivity extends ParentActivity {
         setContentView(R.layout.activity_gameover);
         Bundle extras = getIntent().getExtras();
         if (extras != null) {
+            loadSounds(R.raw.correct);
             scenario = extras.getString("scenario");
             userAnswers = (ArrayList) extras.getSerializable("userAnswers");
             completedScenarioTextView = findViewById(R.id.resultScenario);
             completedScenarioTextView.setText(getString(R.string.completed_scenario) + scenario);
             completedPercentageTextView = findViewById(R.id.resultPercentage);
+            feedbackTextView = findViewById(R.id.feedback);
+            percentageBg = findViewById(R.id.resultPercentageBackground);
             int completedPercentage = getPercentage(userAnswers);
-            completedPercentageTextView.setText(getString(R.string.completed_percentage) + completedPercentage + "%" +
-                    "\n\n" + giveFeedback(completedPercentage));
+            feedbackTextView.setText(giveFeedback(completedPercentage));
+            completedPercentageTextView.setText(getString(R.string.completed_percentage) + completedPercentage + "%");
+            giveFeedback(completedPercentage);
             if (ScenarioItemPrefs.loadPercentage(scenario) < completedPercentage) {
                 ScenarioItemPrefs.savePercentage(scenario, completedPercentage);
             }
@@ -53,6 +60,7 @@ public class GameOverActivity extends ParentActivity {
 
     public void goToMenu(View v) {
         if (v.getId() == R.id.backToMenu) {
+            playSound(R.raw.correct);
             onBackPressed();
         }
     }
@@ -61,10 +69,13 @@ public class GameOverActivity extends ParentActivity {
         String result = "";
         if (completedPercentage <= 50) {
             result = getString(R.string.completed_bad);
+            percentageBg.setImageResource(R.drawable.red);
         } else if (completedPercentage < 100) {
             result = getString(R.string.completed_mediocre);
+            percentageBg.setImageResource(R.drawable.yellow);
         } else {
             result = getString(R.string.completed_perfect);
+            percentageBg.setImageResource(R.drawable.green);
         }
         return result;
     }
