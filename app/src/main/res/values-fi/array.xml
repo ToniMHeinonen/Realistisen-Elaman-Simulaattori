@@ -7,7 +7,6 @@
         <item>background_4</item>
         <item>background_5</item>
         <item>background_6</item>
-        <item>background_7</item>
     </string-array>
     <string-array name="taustatName">
         <item>Sininen</item>
@@ -16,7 +15,6 @@
         <item>Pinkki</item>
         <item>Sininen 2</item>
         <item>Oranssi 2</item>
-        <item>Oranssi 3</item>
     </string-array>
     <string-array name="henkilot">
         <item>character_1</item>
