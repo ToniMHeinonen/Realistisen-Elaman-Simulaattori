@@ -141,8 +141,11 @@ public class CreateAnswerDialogFragment extends AppCompatDialogFragment {
         sceneSpinner.setAdapter(adapter);
 
         // Set spinner selection to saved value
-        if (goesTo != null)
-            sceneSpinner.setSelection(scenes.indexOf(goesTo));
+        if (goesTo != null) {
+            int index = sceneNames.indexOf(goesTo);
+            if (index != -1)
+                sceneSpinner.setSelection(index);
+        }
     }
 
     @Override
