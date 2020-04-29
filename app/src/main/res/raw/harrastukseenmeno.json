@@ -1,5 +1,4 @@
-{
-  "first":{
+{"first":{
     "question":"Are you getting exercises how do you prepare?",
     "background":"background_1",
     "person":"null",
@@ -186,5 +185,5 @@
     "I call the pacifier and ask them to take me.Color":"green",
     "I go home by bus.Color":"green",
     "I go home some other way.Color":"green",
-    "I will stand and I will not go anywhere, though i should.Color":"red"},
+    "I will stand and I will not go anywhere, though i should.Color":"red"}
 }

@@ -1,5 +1,4 @@
-{
-  "first":{
+{"first":{
     "question":"Sinulla on tulossa harjoitukset miten valmistaudut?",
     "background":"background_1",
     "person":"null",
@@ -186,5 +185,5 @@
     "Soitan tutuille ja pyydän heitä viemään minutColor":"green",
     "menen bussilla kotiin.Color":"green",
     "menen jollain muulla tavalla kotiin.Color":"green",
-    "Jään seisomaan enkä lähde minnekään, vaikka pitäisi.Color":"red"},
+    "Jään seisomaan enkä lähde minnekään, vaikka pitäisi.Color":"red"}
 }
