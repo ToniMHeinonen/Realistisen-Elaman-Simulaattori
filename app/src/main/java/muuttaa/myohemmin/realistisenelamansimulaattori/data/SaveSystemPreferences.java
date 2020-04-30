@@ -581,7 +581,7 @@ public class SaveSystemPreferences implements JsonInterface {
                     Log.e("muokattu nimeaminen", "edit= " + edit + " toka if = " + !beforeName.equals(scenario.getName()) + ". beforeName = " + beforeName + " scenario name = " + scenarioName2);
                 }
                 if(!beforeName.trim().isEmpty()) {
-                    if (!beforeName.equals(scenarioName2) && already) {
+                    if (!beforeName.equals(scenarioName2)) {
                         if(debuggi){
                             Log.e("ilmoitus", "deletet mukana");
                         }
