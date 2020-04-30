@@ -585,7 +585,9 @@ public class SaveSystemPreferences implements JsonInterface {
                         if(debuggi){
                             Log.e("ilmoitus", "deletet mukana");
                         }
-                        writeSaveData(file, scenarioName2);
+                        if(!containsAlready(scenarioName2)) {
+                            writeSaveData(file, scenarioName2);
+                        }
                         deleteScenario(beforeName);
                     }
                 }
