@@ -55,7 +55,7 @@ public abstract class Helper {
         // Set negative button text and listener
         Button negative = view.findViewById(R.id.negativeButton);
         // Hide negative if you only need one button
-        if (negativeText.equals(HIDE_NEGATIVE_BUTTON)) {
+        if (negText.equals(HIDE_NEGATIVE_BUTTON)) {
             negative.setVisibility(View.INVISIBLE);
         } else {
             negative.setText(negText);

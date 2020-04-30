@@ -89,8 +89,6 @@ public class CreateScenario extends ParentActivity {
         } else {
             i.putExtra("muokkaus", true);
             i.putExtra("scene", list.get(position));
-            // Remove selected scene so it can't be selected from answer goes to spinner
-            scenes.remove(list.get(position));
             i.putExtra("korvaus", position);
         }
 
