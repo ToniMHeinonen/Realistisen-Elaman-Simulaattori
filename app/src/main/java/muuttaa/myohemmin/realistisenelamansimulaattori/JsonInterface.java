@@ -18,4 +18,5 @@ public interface JsonInterface {
     public boolean endOfScenario();
     public List getColorsInString();
     public String getForegroundPicture();
+    public String getCategory(String scenario);
 }

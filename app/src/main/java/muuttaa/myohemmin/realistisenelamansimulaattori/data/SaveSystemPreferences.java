@@ -267,6 +267,29 @@ public class SaveSystemPreferences implements JsonInterface {
         return out;
     }
 
+    @Override
+    public String getCategory(String scenario) {
+        String data = getStringFromScenariesFile();
+        try{
+            JSONObject base = new JSONObject(data);
+            JSONArray array = base.getJSONArray("scenarioslist");
+            String pois = "";
+            for(int lap=0; lap < array.length(); lap++){
+                JSONObject object = array.getJSONObject(lap);
+                if(object.getString("name").equals(scenario)){
+                    pois = object.getString("category");
+                    break;
+                }
+            }
+            return pois;
+        } catch (JSONException e){
+            if(debuggi){
+                e.printStackTrace();
+            }
+        }
+        return null;
+    }
+
     /**
      * This method create jsonObject if it is null (not contains already)
      */
