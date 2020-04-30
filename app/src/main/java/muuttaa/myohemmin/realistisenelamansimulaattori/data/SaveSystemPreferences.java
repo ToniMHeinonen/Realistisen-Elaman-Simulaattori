@@ -527,9 +527,14 @@ public class SaveSystemPreferences implements JsonInterface {
     /**
      * Scenario saving
      * @param scenario Scenario class
+     * @param edit true if is edit mode
+     * @param beforeName name what was in scenario before
      */
-    public void saveScenario(Scenario scenario, boolean edit){
+    public void saveScenario(Scenario scenario, boolean edit, String beforeName){
         try {
+            if(debuggi){
+                Log.e("saveScenario", "edit = " + edit);
+            }
             //convert data to json
             String file = scenario.getFileName();
             //muunnetaan scenario jsoniksi
@@ -563,8 +568,27 @@ public class SaveSystemPreferences implements JsonInterface {
             String out = base.toString();
             //kirjoitus
             write(file, out);
-            if(!edit) {
+            boolean already = containsAlready(scenarioName2);
+            if((!edit && !already) || !already) {
+                if(debuggi){
+                    Log.e("tallennus", "savedata");
+                }
                 writeSaveData(file, scenarioName2);
+            }
+            if(edit){
+                //if scenario name was changed
+                if(debuggi){
+                    Log.e("muokattu nimeaminen", "edit= " + edit + " toka if = " + !beforeName.equals(scenario.getName()) + ". beforeName = " + beforeName + " scenario name = " + scenarioName2);
+                }
+                if(!beforeName.trim().isEmpty()) {
+                    if (!beforeName.equals(scenarioName2) && already) {
+                        if(debuggi){
+                            Log.e("ilmoitus", "deletet mukana");
+                        }
+                        writeSaveData(file, scenarioName2);
+                        deleteScenario(beforeName);
+                    }
+                }
             }
         } catch (Exception e){
             if(debuggi){
