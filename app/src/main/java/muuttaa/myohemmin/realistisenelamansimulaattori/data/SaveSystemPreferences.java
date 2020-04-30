@@ -1,10 +1,8 @@
 package muuttaa.myohemmin.realistisenelamansimulaattori.data;
 
 import android.content.Context;
-import android.content.res.AssetManager;
 import android.content.res.Configuration;
 import android.content.res.Resources;
-import android.util.DisplayMetrics;
 import android.util.Log;
 
 import org.json.JSONArray;
