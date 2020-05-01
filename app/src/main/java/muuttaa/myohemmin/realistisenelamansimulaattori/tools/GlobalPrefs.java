@@ -14,6 +14,7 @@ public abstract class GlobalPrefs {
     // Categories
     private static final String keyAllCategories = "all_categories";
     private static final String keyCategoriesAmount = "categories_amount";
+    private static final String keyCategoryOpen = "category_open";
     private static final ArrayList<String> categoriesList = new ArrayList<>();
 
     // Sorting
@@ -131,6 +132,24 @@ public abstract class GlobalPrefs {
         editor.putInt(keyCategoriesAmount, categoriesList.size());
 
         editor.commit();
+    }
+
+    /**
+     * Loads whether group should be open or not.
+     * @param category category to check
+     * @return true if open
+     */
+    public static boolean loadCategoryOpen(String category) {
+        return prefs.getBoolean(keyCategoryOpen + category, false);
+    }
+
+    /**
+     * Saves whether group should be open or not.
+     * @param category category to check
+     * @param open true if open
+     */
+    public static void saveCategoryOpen(String category, boolean open) {
+        prefs.edit().putBoolean(keyCategoryOpen + category, open).apply();
     }
 
     /**

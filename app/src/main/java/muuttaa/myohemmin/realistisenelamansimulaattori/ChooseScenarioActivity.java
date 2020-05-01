@@ -196,7 +196,18 @@ public class ChooseScenarioActivity extends ParentActivity {
                 return false;
             }
         });
-        categoriesListView.expandGroup(0);
+
+        // Save opened groups
+        categoriesListView.setOnGroupExpandListener((pos) ->  {
+            String name = categoriesListTitle.get(pos);
+            GlobalPrefs.saveCategoryOpen(name, true);
+        });
+
+        // Save closed groups
+        categoriesListView.setOnGroupCollapseListener((pos) ->  {
+            String name = categoriesListTitle.get(pos);
+            GlobalPrefs.saveCategoryOpen(name, false);
+        });
     }
 
     /**
@@ -309,6 +320,14 @@ public class ChooseScenarioActivity extends ParentActivity {
         categoriesListDetail = CategoriesListAdapter.getData(scenarios, resourcesCategories);
         categoriesListTitle = new ArrayList<String>(categoriesListDetail.keySet());
         categoriesListAdapter.setNewItems(categoriesListTitle, categoriesListDetail);
+
+        // Loop through categories and open the ones user has left open
+        for (int i = 0; i < categoriesListAdapter.getGroupCount(); i++) {
+            String name = (String) categoriesListAdapter.getGroup(i);
+
+            if (GlobalPrefs.loadCategoryOpen(name))
+                categoriesListView.expandGroup(i);
+        }
     }
 
     /**
