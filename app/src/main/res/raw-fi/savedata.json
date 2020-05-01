@@ -1,14 +1,14 @@
 {
   "scenarios": [ "Leffateatteri", "Kaupan kassa", "Bussimatka", "Kirjastossa käyminen", "Koirasta huolehtiminen", "Lentokoneella kulkeminen", "Ratikalla kulkeminen", "Hätänumeroon soittaminen", "Harrastukseen meneminen"],
   "scenarioslist": [
-    {"name": "Leffateatteri", "file": "teatteri.json", "category": "kahvi"},
-    {"name": "Kaupan kassa", "file": "kaupan_kassa.json", "category": "kahvi"},
-    {"name":  "Bussimatka", "file":  "bussimatka.json", "category": "kahvi"},
-    {"name":  "Kirjastossa käyminen", "file": "kirjastokaynti_skenaario.json", "category": "kalle"},
-    {"name":  "Koirasta huolehtiminen", "file": "koirasta_huolehtiminen.json", "category": "kahvi"},
-    {"name":  "Lentokoneella kulkeminen", "file": "lentokone.json", "category": "kahvi"},
-    {"name":  "Ratikalla kulkeminen", "file": "ratikka.json", "category": "kahvi"},
-    {"name":  "Hätänumeroon soittaminen", "file": "hatanumero.json", "category": "kalle"},
-    {"name":  "Harrastukseen meneminen", "file": "harrastukseenmeno.json", "category": "kahvi"}
+    {"name": "Leffateatteri", "file": "teatteri.json", "category": "Huvitukset"},
+    {"name": "Kaupan kassa", "file": "kaupan_kassa.json", "category": "Kauppa"},
+    {"name":  "Bussimatka", "file":  "bussimatka.json", "category": "Matkustaminen"},
+    {"name":  "Kirjastossa käyminen", "file": "kirjastokaynti_skenaario.json", "category": "Huvitukset"},
+    {"name":  "Koirasta huolehtiminen", "file": "koirasta_huolehtiminen.json", "category": "Lemmikit"},
+    {"name":  "Lentokoneella kulkeminen", "file": "lentokone.json", "category": "Matkustaminen"},
+    {"name":  "Ratikalla kulkeminen", "file": "ratikka.json", "category": "Matkustaminen"},
+    {"name":  "Hätänumeroon soittaminen", "file": "hatanumero.json", "category": "Hätätilanteet"},
+    {"name":  "Harrastukseen meneminen", "file": "harrastukseenmeno.json", "category": "Huvitukset"}
   ]
 }
