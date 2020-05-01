@@ -2,6 +2,7 @@ package muuttaa.myohemmin.realistisenelamansimulaattori;
 
 import muuttaa.myohemmin.realistisenelamansimulaattori.choosescenarioitem.ScenarioItemPrefs;
 import muuttaa.myohemmin.realistisenelamansimulaattori.tools.GlobalPrefs;
+import muuttaa.myohemmin.realistisenelamansimulaattori.tools.Helper;
 
 import android.content.Context;
 import android.content.Intent;
@@ -28,6 +29,7 @@ public class InitializeActivity extends ParentActivity {
         // Initialize abstract preferences classes
         ScenarioItemPrefs.initialize();
         GlobalPrefs.initialize();
+        Helper.loadResourcesCategories();
 
         // Set language
         String language = GlobalPrefs.loadLanguage();

@@ -96,6 +96,7 @@ public class ChooseScenarioActivity extends ParentActivity {
     private void loadScenarios() {
         scenarios.clear();
         resourcesCategories.clear();
+
         List<String> scenarioNames = json.getScenarioList();
 
         for (int i = 0; i < scenarioNames.size(); i++) {
@@ -113,8 +114,6 @@ public class ChooseScenarioActivity extends ParentActivity {
             }
             scenarios.add(scenario);
         }
-        // Set resources categories to helper
-        Helper.setResourcesCategories(resourcesCategories);
     }
 
     /**
