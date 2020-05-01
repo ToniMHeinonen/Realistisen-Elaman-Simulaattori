@@ -95,9 +95,11 @@ public class CreateScenario extends ParentActivity {
         } else {
             i.putExtra("muokkaus", true);
             i.putExtra("scene", list.get(position));
+            // Remove selected scene and add it later in CreateScene,
+            // in case user changes the name of scene
+            sceneNames.remove(list.get(position).getName());
             i.putExtra("korvaus", position);
         }
-
         i.putStringArrayListExtra("createdScenes", sceneNames);
 
         startActivityForResult(i, 1);

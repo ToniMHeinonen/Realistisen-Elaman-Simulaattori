@@ -23,6 +23,7 @@ import android.widget.Spinner;
 import android.widget.Toast;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -41,7 +42,10 @@ View.OnClickListener, View.OnLongClickListener{
     private ImageView foreGroundView;
     private List<GeneralKeyAndValue> kysymyksetGo;
     private List<GeneralKeyAndValue> kysymyksetColor;
-    private ArrayList<String> sceneNames = new ArrayList<>();
+
+    // Scene name values
+    private HashSet<String> retrievedSceneNames;
+
     private int korvaus = -1;
     private boolean debuggi = true;
 
@@ -81,7 +85,7 @@ View.OnClickListener, View.OnLongClickListener{
         this.foreGroundView = (ImageView) findViewById(R.id.createForeground);
         this.foreground = (Spinner) findViewById(R.id.ForegroundSpinner);
         korvaus = getIntent().getIntExtra("korvaus", -1);
-        sceneNames = getIntent().getStringArrayListExtra("createdScenes");
+        retrievedSceneNames = new HashSet<>(getIntent().getStringArrayListExtra("createdScenes"));
         boolean paivitaSpinnerit = false;
         Scene apu = null;
         if(getIntent().getBooleanExtra("muokkaus", false)){
@@ -378,6 +382,11 @@ View.OnClickListener, View.OnLongClickListener{
             GeneralKeyAndValue color = kysymyksetColor.get(position);
             bundle.putString("color", color.getValue());
         }
+
+        // For some reason sceneNames gets duplicated if I pass the class variable
+        // ArrayList of sceneNames, DialogFragment is probably the reason why it happens
+        ArrayList<String> sceneNames = new ArrayList<>(retrievedSceneNames);
+        sceneNames.add(name.getText().toString());
 
         // Pass all the created scenes to AnswerDialog
         bundle.putStringArrayList("createdScenes", sceneNames);
