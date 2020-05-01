@@ -83,7 +83,11 @@ public class CreateScenario extends ParentActivity {
         i.putExtra("eka", onko);
 
         // Create ArrayList of scenes List
-        ArrayList<Scene> scenes = new ArrayList<>(list);
+        ArrayList<String> sceneNames = new ArrayList<>();
+
+        for (Scene scene : list) {
+            sceneNames.add(scene.getName());
+        }
 
         if (createNew) {
             i.putExtra("muokkaus", false);
@@ -94,7 +98,7 @@ public class CreateScenario extends ParentActivity {
             i.putExtra("korvaus", position);
         }
 
-        i.putParcelableArrayListExtra("createdScenes", scenes);
+        i.putStringArrayListExtra("createdScenes", sceneNames);
 
         startActivityForResult(i, 1);
     }

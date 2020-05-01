@@ -41,7 +41,7 @@ View.OnClickListener, View.OnLongClickListener{
     private ImageView foreGroundView;
     private List<GeneralKeyAndValue> kysymyksetGo;
     private List<GeneralKeyAndValue> kysymyksetColor;
-    private ArrayList<Scene> scenes = new ArrayList<>();
+    private ArrayList<String> sceneNames = new ArrayList<>();
     private int korvaus = -1;
     private boolean debuggi = true;
 
@@ -81,7 +81,7 @@ View.OnClickListener, View.OnLongClickListener{
         this.foreGroundView = (ImageView) findViewById(R.id.createForeground);
         this.foreground = (Spinner) findViewById(R.id.ForegroundSpinner);
         korvaus = getIntent().getIntExtra("korvaus", -1);
-        scenes = getIntent().getParcelableArrayListExtra("createdScenes");
+        sceneNames = getIntent().getStringArrayListExtra("createdScenes");
         boolean paivitaSpinnerit = false;
         Scene apu = null;
         if(getIntent().getBooleanExtra("muokkaus", false)){
@@ -380,7 +380,7 @@ View.OnClickListener, View.OnLongClickListener{
         }
 
         // Pass all the created scenes to AnswerDialog
-        bundle.putParcelableArrayList("createdScenes", scenes);
+        bundle.putStringArrayList("createdScenes", sceneNames);
 
         CreateAnswerDialogFragment dia = new CreateAnswerDialogFragment();
         dia.setArguments(bundle);

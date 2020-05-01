@@ -29,7 +29,7 @@ public class CreateAnswerDialogFragment extends AppCompatDialogFragment {
     private String goesTo;
     private int korvaus = -1;
     private int koko = 0;
-    private ArrayList<Scene> scenes;
+    private ArrayList<String> sceneNames;
     private int END_POSITION = 0;
 
     private Map<String, Integer> colorMap = new HashMap<String, Integer>() {{
@@ -61,7 +61,7 @@ public class CreateAnswerDialogFragment extends AppCompatDialogFragment {
             selectedButton = colorButtons[colorPos];
         }
 
-        scenes = getArguments().getParcelableArrayList("createdScenes");
+        sceneNames = getArguments().getStringArrayList("createdScenes");
         setupSceneSpinner();
 
         koko = getArguments().getInt("koko", 0);
@@ -124,11 +124,6 @@ public class CreateAnswerDialogFragment extends AppCompatDialogFragment {
      */
     private void setupSceneSpinner() {
         sceneSpinner = view.findViewById(R.id.sceneSpinner);
-
-        // Add scene names to scenes list
-        ArrayList<String> sceneNames = new ArrayList<>();
-        for (Scene scene : scenes)
-            sceneNames.add(scene.getName());
 
         // Add end to the top of the list
         sceneNames.add(END_POSITION, getString(R.string.null_value));
