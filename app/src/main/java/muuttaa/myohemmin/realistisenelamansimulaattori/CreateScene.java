@@ -281,16 +281,7 @@ View.OnClickListener, View.OnLongClickListener{
     }
 
     public void vastaus(View view) {
-        Bundle bundle = new Bundle();
-        bundle.putBoolean("muokkaus", false);
-        bundle.putInt("korvaa", -1);
-        bundle.putInt("koko", kysymyksetColor.size());
-        // Pass all the created scenes to AnswerDialog
-        bundle.putParcelableArrayList("createdScenes", scenes);
-
-        CreateAnswerDialogFragment dia = new CreateAnswerDialogFragment();
-        dia.setArguments(bundle);
-        dia.show(getSupportFragmentManager(), "vastauksen luonti");
+        openAnswerDialog(false, -1);
     }
 
     public void pois(View view) {
@@ -364,31 +355,46 @@ View.OnClickListener, View.OnLongClickListener{
     }
 
     /**
-     * Listens to answer button clicks.
-     * @param v answer button
+     * Opens answer dialog.
+     * @param editOldAnswer true if editing old answer, false if creating new answer
+     * @param position positions of the answer to edit
      */
-    @Override
-    public void onClick(View v) {
-        int position = (int) v.getTag();
+    private void openAnswerDialog(boolean editOldAnswer, int position) {
         Bundle bundle = new Bundle();
-        bundle.putBoolean("muokkaus", true);
-        GeneralKeyAndValue meno = kysymyksetGo.get(position);
-        String me = meno.getValue();
-        if(me.equals("null")){
-            me = "";
-        }
-        bundle.putString("menee", me);
-        bundle.putString("kysymys", meno.getKey());
-        bundle.putInt("korvaa", position);
+        bundle.putBoolean("muokkaus", editOldAnswer);
         bundle.putInt("koko", kysymyksetColor.size());
-        GeneralKeyAndValue color = kysymyksetColor.get(position);
-        bundle.putString("color", color.getValue());
+        bundle.putInt("korvaa", position); // If not editing, position is -1
+
+        // If editing old answer
+        if (editOldAnswer) {
+            GeneralKeyAndValue meno = kysymyksetGo.get(position);
+            String me = meno.getValue();
+            if(me.equals("null")){
+                me = "";
+            }
+            bundle.putString("menee", me);
+            bundle.putString("kysymys", meno.getKey());
+
+            GeneralKeyAndValue color = kysymyksetColor.get(position);
+            bundle.putString("color", color.getValue());
+        }
+
         // Pass all the created scenes to AnswerDialog
         bundle.putParcelableArrayList("createdScenes", scenes);
 
         CreateAnswerDialogFragment dia = new CreateAnswerDialogFragment();
         dia.setArguments(bundle);
         dia.show(getSupportFragmentManager(), "vastauksen luonti");
+    }
+
+    /**
+     * Listens to answer button clicks.
+     * @param v answer button
+     */
+    @Override
+    public void onClick(View v) {
+        int position = (int) v.getTag();
+        openAnswerDialog(true, position);
     }
 
     /**
