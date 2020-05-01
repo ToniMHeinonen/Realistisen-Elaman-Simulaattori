@@ -9,6 +9,7 @@ import muuttaa.myohemmin.realistisenelamansimulaattori.choosescenarioitem.Scenar
 import muuttaa.myohemmin.realistisenelamansimulaattori.data.SaveSystemPreferences;
 import muuttaa.myohemmin.realistisenelamansimulaattori.tools.Debug;
 import muuttaa.myohemmin.realistisenelamansimulaattori.tools.GlobalPrefs;
+import muuttaa.myohemmin.realistisenelamansimulaattori.tools.Helper;
 
 import android.os.Bundle;
 import android.view.DragEvent;
@@ -25,11 +26,13 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 
 public class ChooseScenarioActivity extends ParentActivity {
 
     private JsonInterface json;
+    SaveSystemPreferences jsonPrefs = new SaveSystemPreferences(this);
     private ArrayList<ScenarioItem> scenarios = new ArrayList<>();
     private final int SORT_NAME = 0, SORT_RECENT = 1, SORT_PERCENTAGE = 2;
     private int sortBy;
@@ -41,6 +44,7 @@ public class ChooseScenarioActivity extends ParentActivity {
     private CategoriesListAdapter categoriesListAdapter;
     private List<String> categoriesListTitle;
     private HashMap<String, List<ScenarioItem>> categoriesListDetail;
+    private HashSet<String> resourcesCategories = new HashSet<>();
 
     // Sound
     public final int S_POPUP = R.raw.popup;
@@ -91,11 +95,26 @@ public class ChooseScenarioActivity extends ParentActivity {
      */
     private void loadScenarios() {
         scenarios.clear();
+        resourcesCategories.clear();
         List<String> scenarioNames = json.getScenarioList();
 
         for (int i = 0; i < scenarioNames.size(); i++) {
-            scenarios.add(new ScenarioItem(scenarioNames.get(i)));
+            String name = scenarioNames.get(i);
+            ScenarioItem scenario = new ScenarioItem(name);
+
+            // If scenario is not user created
+            if (!jsonPrefs.checkIfScenarioIsUserCreated(name)) {
+                String category = json.getCategory(name);
+                resourcesCategories.add(category);
+                // If user has not changed the category of the scenario
+                if (scenario.getCategory() == null) {
+                    loadScenarioCategoryFromResources(scenario);
+                }
+            }
+            scenarios.add(scenario);
         }
+        // Set resources categories to helper
+        Helper.setResourcesCategories(resourcesCategories);
     }
 
     /**
@@ -122,7 +141,7 @@ public class ChooseScenarioActivity extends ParentActivity {
      * Displays scenario items in a categorized list.
      */
     private void showScenarioList() {
-        categoriesListDetail = CategoriesListAdapter.getData(scenarios);
+        categoriesListDetail = CategoriesListAdapter.getData(scenarios, resourcesCategories);
         categoriesListTitle = new ArrayList<String>(categoriesListDetail.keySet());
         categoriesListAdapter = new CategoriesListAdapter(this, categoriesListTitle, categoriesListDetail);
         categoriesListView.setAdapter(categoriesListAdapter);
@@ -158,7 +177,9 @@ public class ChooseScenarioActivity extends ParentActivity {
                         setupScenarioDragMovement(selectedItem);
                     } else {
                         final String selectedCategory = categoriesListTitle.get(groupPosition);
-                        if (!selectedCategory.equals(getString(R.string.scenarios))) {
+                        // Don't allow moving of default and resources categories
+                        if (!selectedCategory.equals(getString(R.string.scenarios)) &&
+                            !Helper.isCategoryFromResources(selectedCategory)) {
                             setupCategoryDragMovement(selectedCategory);
                         } else {
                             return false;
@@ -286,7 +307,7 @@ public class ChooseScenarioActivity extends ParentActivity {
      * Refreshes categories and scenarios.
      */
     private void refreshScenarioList() {
-        categoriesListDetail = CategoriesListAdapter.getData(scenarios);
+        categoriesListDetail = CategoriesListAdapter.getData(scenarios, resourcesCategories);
         categoriesListTitle = new ArrayList<String>(categoriesListDetail.keySet());
         categoriesListAdapter.setNewItems(categoriesListTitle, categoriesListDetail);
     }
@@ -405,13 +426,12 @@ public class ChooseScenarioActivity extends ParentActivity {
 
     /**
      * Adds category.
+     *
+     * Note: This does not check categories with different languages.
      * @param category name
      */
     public void addCategory(String category) {
-        if (GlobalPrefs.loadCategories().contains(category) ||
-            category.equals(getResources().getString(R.string.scenarios))) {
-            Toast.makeText(this, getResources().getString(R.string.categoryExists),
-                    Toast.LENGTH_LONG).show();
+        if (!checkIfCategoryNameUnique(category)) {
             return;
         }
 
@@ -430,14 +450,34 @@ public class ChooseScenarioActivity extends ParentActivity {
 
         for (ScenarioItem item : scenarios) {
             String curCategory = item.getCategory();
+
             if (curCategory != null && curCategory.equals(category)) {
-                item.setCategory(null);
+                // If scenario is user created, move it to default category
+                if (jsonPrefs.checkIfScenarioIsUserCreated(item.getName()))
+                    item.setCategory(null);
+                // Else load the category from resources
+                else
+                    loadScenarioCategoryFromResources(item);
             }
         }
 
         GlobalPrefs.deleteCategory(category);
 
         refreshScenarioList();
+    }
+
+    /**
+     * Sets category to scenario from resources.
+     * @param scenario scenario which is inside resources
+     */
+    private void loadScenarioCategoryFromResources(ScenarioItem scenario) {
+        String name = scenario.getName();
+
+        // Set category to the one defined in resources file
+        scenario.setCategory(json.getCategory(name));
+
+        // Save category to prefs as null
+        ScenarioItemPrefs.saveCategory(name, null);
     }
 
     /**
@@ -449,10 +489,7 @@ public class ChooseScenarioActivity extends ParentActivity {
         if (oldName.equals(getResources().getString(R.string.scenarios)))
             return;
 
-        if (GlobalPrefs.loadCategories().contains(newName) ||
-                newName.equals(getResources().getString(R.string.scenarios))) {
-            Toast.makeText(this, getResources().getString(R.string.categoryExists),
-                    Toast.LENGTH_LONG).show();
+        if (!checkIfCategoryNameUnique(newName)) {
             return;
         }
 
@@ -466,6 +503,23 @@ public class ChooseScenarioActivity extends ParentActivity {
         GlobalPrefs.renameCategory(oldName, newName);
 
         refreshScenarioList();
+    }
+
+    /**
+     * Checks if created category name is unigue.
+     * @param category name of the category to check
+     * @return true if name is unique
+     */
+    private boolean checkIfCategoryNameUnique(String category) {
+        if (GlobalPrefs.loadCategories().contains(category) ||
+                category.equals(getResources().getString(R.string.scenarios)) ||
+                Helper.isCategoryFromResources(category)) {
+            Toast.makeText(this, getResources().getString(R.string.categoryExists),
+                    Toast.LENGTH_LONG).show();
+            return false;
+        }
+
+        return true;
     }
 
     /**

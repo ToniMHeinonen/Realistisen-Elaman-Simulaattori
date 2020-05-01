@@ -12,6 +12,7 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Iterator;
 import java.util.LinkedHashMap;
 import java.util.List;
@@ -21,6 +22,7 @@ import muuttaa.myohemmin.realistisenelamansimulaattori.ChooseScenarioActivity;
 import muuttaa.myohemmin.realistisenelamansimulaattori.tools.GlobalPrefs;
 import muuttaa.myohemmin.realistisenelamansimulaattori.InitializeActivity;
 import muuttaa.myohemmin.realistisenelamansimulaattori.R;
+import muuttaa.myohemmin.realistisenelamansimulaattori.tools.Helper;
 
 public class CategoriesListAdapter extends BaseExpandableListAdapter {
 
@@ -192,13 +194,7 @@ public class CategoriesListAdapter extends BaseExpandableListAdapter {
                 break;
             default:
                 Button optionsButton = convertView.findViewById(R.id.listOptions);
-                optionsButton.setOnClickListener(new View.OnClickListener() {
-
-                    @Override
-                    public void onClick(View v) {
-                        activity.openCategoryOptions(listTitle);
-                    }
-                });
+                optionsButton.setOnClickListener((v) -> activity.openCategoryOptions(listTitle));
                 break;
 
         }
@@ -222,11 +218,13 @@ public class CategoriesListAdapter extends BaseExpandableListAdapter {
      */
     @Override
     public int getGroupType(int groupPosition) {
-        switch (groupPosition) {
-            case 0:
-                return GROUP_TYPE_1;
-            default:
-                return GROUP_TYPE_2;
+        final String listTitle = (String) getGroup(groupPosition);
+
+        if (listTitle == null || Helper.isCategoryFromResources(listTitle) ||
+                listTitle.equals(context.getString(R.string.scenarios))) {
+            return GROUP_TYPE_1;
+        } else {
+            return GROUP_TYPE_2;
         }
     }
 
@@ -266,29 +264,43 @@ public class CategoriesListAdapter extends BaseExpandableListAdapter {
      * @param scenarios list of scenarios to check for category
      * @return map of categorized values
      */
-    public static LinkedHashMap<String, List<ScenarioItem>> getData(List<ScenarioItem> scenarios) {
+    public static LinkedHashMap<String, List<ScenarioItem>> getData(List<ScenarioItem> scenarios,
+    HashSet<String> resourcesCategories) {
         LinkedHashMap<String, List<ScenarioItem>> ParentItem = new LinkedHashMap<>();
 
-        ArrayList<String> categories = GlobalPrefs.loadCategories();
+        // Add categories from resources and user created to same list
+        ArrayList<String> allCategories = new ArrayList<>(resourcesCategories); // Resources
+        allCategories.addAll(GlobalPrefs.loadCategories()); // User created
         LinkedHashMap<String, List<ScenarioItem>> categoryData = new LinkedHashMap<>();
 
-        for (int i = 0; i < categories.size(); i++) {
-            categoryData.put(categories.get(i), new ArrayList<ScenarioItem>());
+        // Add all categories to hash map which hold category name and array list
+        for (int i = 0; i < allCategories.size(); i++) {
+            categoryData.put(allCategories.get(i), new ArrayList<ScenarioItem>());
         }
 
+        // Create list which holds scenarios which category is null
         List<ScenarioItem> noCategory = new ArrayList<>();
 
+        // Loop through all scenarios and add them to the correct category
         for (int i = 0; i < scenarios.size(); i++) {
             ScenarioItem item = scenarios.get(i);
             String category = item.getCategory();
 
+            // If category is null, add it to the default category
             if (category == null) {
                 noCategory.add(item);
             } else {
-                categoryData.get(category).add(item);
+                List<ScenarioItem> categoryList = categoryData.get(category);
+                // If user moves scenario to for example "Traveling" and then changes language
+                // categoryList will be null or if category gets deleted from resources
+                if (categoryList != null)
+                    categoryData.get(category).add(item);
+                else
+                    noCategory.add(item);
             }
         }
 
+        // Get default category name from resources
         String noCategoryName = InitializeActivity.getContext().getResources().getString(R.string.scenarios);
         ParentItem.put(noCategoryName, noCategory);
 

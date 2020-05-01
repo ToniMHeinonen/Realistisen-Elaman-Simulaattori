@@ -6,12 +6,15 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import java.util.HashSet;
+
 import androidx.appcompat.app.AlertDialog;
 import muuttaa.myohemmin.realistisenelamansimulaattori.R;
 
 public abstract class Helper {
 
     public static final String HIDE_NEGATIVE_BUTTON = "HIDE_NEGATIVE_BUTTON";
+    private static HashSet<String> resourcesCategories;
 
     /**
      * Creates custom alert dialog.
@@ -71,5 +74,22 @@ public abstract class Helper {
         alertD.show();
 
         return alertD;
+    }
+
+    /**
+     * Sets resourcesCategories.
+     * @param categories resources categories
+     */
+    public static void setResourcesCategories(HashSet<String> categories) {
+        resourcesCategories = categories;
+    }
+
+    /**
+     * Check if category is from resources.
+     * @param category category to check
+     * @return true if in resources
+     */
+    public static boolean isCategoryFromResources(String category) {
+        return resourcesCategories.contains(category);
     }
 }
