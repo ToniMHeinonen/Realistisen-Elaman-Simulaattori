@@ -25,6 +25,7 @@ public class InitializeActivity extends ParentActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         mContext = this;
+        setTheme(R.style.AppTheme);
 
         // Initialize abstract preferences classes
         ScenarioItemPrefs.initialize();
