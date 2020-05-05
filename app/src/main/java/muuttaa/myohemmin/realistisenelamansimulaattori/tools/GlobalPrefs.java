@@ -39,6 +39,11 @@ public abstract class GlobalPrefs {
     private final static String keyPersonPos = "person_position";
     private final static String keyFacePos = "face_position";
 
+    // Tutorial
+    private final static String keyTutorialScenario = "tutorial_scenario";
+    private final static String keyTutorialScene = "tutorial_scene";
+    private final static String keyTutorialAnswer = "tutorial_answer";
+
     /**
      * Loads correct preferences file and fills categoriesList.
      */
@@ -368,6 +373,56 @@ public abstract class GlobalPrefs {
      */
     public static void saveFacePos(int position) {
         prefs.edit().putInt(keyFacePos, position).apply();
+    }
+
+    //****************** TUTORIAL ******************//
+
+    /**
+     * Loads whether to show scenario tutorial or not.
+     * @return true if to show
+     */
+    public static boolean loadTutorialScenario() {
+        return prefs.getBoolean(keyTutorialScenario, true);
+    }
+
+    /**
+     * Loads whether to show scenario tutorial or not.
+     * @param show true if to show
+     */
+    public static void saveTutorialScenario(boolean show) {
+        prefs.edit().putBoolean(keyTutorialScenario, show).apply();
+    }
+
+    /**
+     * Loads whether to show scene tutorial or not.
+     * @return true if to show
+     */
+    public static boolean loadTutorialScene() {
+        return prefs.getBoolean(keyTutorialScene, true);
+    }
+
+    /**
+     * Loads whether to show scene tutorial or not.
+     * @param show true if to show
+     */
+    public static void saveTutorialScene(boolean show) {
+        prefs.edit().putBoolean(keyTutorialScene, show).apply();
+    }
+
+    /**
+     * Loads whether to show answer tutorial or not.
+     * @return true if to show
+     */
+    public static boolean loadTutorialAnswer() {
+        return prefs.getBoolean(keyTutorialAnswer, true);
+    }
+
+    /**
+     * Loads whether to show answer tutorial or not.
+     * @param show true if to show
+     */
+    public static void saveTutorialAnswer(boolean show) {
+        prefs.edit().putBoolean(keyTutorialAnswer, show).apply();
     }
 
     //****************** DEBUGGING ******************//
