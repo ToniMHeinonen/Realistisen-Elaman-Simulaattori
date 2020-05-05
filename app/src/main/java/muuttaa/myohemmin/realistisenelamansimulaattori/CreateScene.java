@@ -20,6 +20,7 @@ import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.RelativeLayout;
 import android.widget.Spinner;
 import android.widget.Toast;
 
@@ -60,6 +61,10 @@ View.OnClickListener, View.OnLongClickListener{
     private String[] faceFiles;
     private String selectedFace;
 
+    // Loading icon for image
+    private RelativeLayout loadingPanel, imageLayout;
+    private boolean imageVisible;
+
     private final int BACKGROUND = 1, FOREGROUND = 2, PERSON = 3, FACE = 4;
 
     @Override
@@ -87,6 +92,13 @@ View.OnClickListener, View.OnLongClickListener{
         this.kasvot = (ImageView) findViewById(R.id.createFace);
         this.foreGroundView = (ImageView) findViewById(R.id.createForeground);
         this.foreground = (Spinner) findViewById(R.id.ForegroundSpinner);
+
+        // Show loading icon
+        this.loadingPanel = findViewById(R.id.loadingPanel);
+        this.imageLayout = findViewById(R.id.imageLayout);
+        loadingPanel.setVisibility(View.VISIBLE);
+        imageLayout.setVisibility(View.GONE);
+
         korvaus = getIntent().getIntExtra("korvaus", -1);
         retrievedSceneNames = new HashSet<>(getIntent().getStringArrayListExtra("createdScenes"));
         boolean paivitaSpinnerit = false;
@@ -303,6 +315,13 @@ View.OnClickListener, View.OnLongClickListener{
                 // Save spinner position
                 GlobalPrefs.saveFacePos(this.face.getSelectedItemPosition());
                 break;
+        }
+
+        // Show loaded images if not already shown
+        if (!imageVisible) {
+            imageVisible = true;
+            loadingPanel.setVisibility(View.GONE);
+            imageLayout.setVisibility(View.VISIBLE);
         }
     }
 

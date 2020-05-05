@@ -189,6 +189,14 @@
     </style>
 
     <!-- Create Scene Activity -->
+    <style name="createSceneImagePreviewLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">250dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+    </style>
+
     <style name="createSceneImageOptionsLayout">
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">match_parent</item>

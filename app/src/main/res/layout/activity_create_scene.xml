@@ -18,13 +18,23 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
+            <!-- LOADING ICON FOR SCENE IMAGE -->
+            <RelativeLayout
+                android:id="@+id/loadingPanel"
+                style="@style/createSceneImagePreviewLayout"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <ProgressBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:indeterminate="true"/>
+            </RelativeLayout>
+
             <!-- SCENE IMAGE -->
             <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="250dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginRight="20dp"
-                android:layout_marginLeft="20dp">
+                android:id="@+id/imageLayout"
+                style="@style/createSceneImagePreviewLayout">
 
                 <ImageView
                     android:id="@+id/createBackground"
