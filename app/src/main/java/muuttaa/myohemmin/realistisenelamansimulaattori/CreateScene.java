@@ -60,6 +60,8 @@ View.OnClickListener, View.OnLongClickListener{
     private String[] faceFiles;
     private String selectedFace;
 
+    private final int BACKGROUND = 1, FOREGROUND = 2, PERSON = 3, FACE = 4;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         // Load font theme
@@ -127,50 +129,43 @@ View.OnClickListener, View.OnLongClickListener{
         adapterForeground.setDropDownViewResource(R.layout.custom_spinner_dropdown);
 
         this.foreground.setAdapter(adapterForeground);
-        //listeners
+
+        // Set listeners for image spinners
         this.background.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                updateImages();
+                updateImages(BACKGROUND);
             }
 
             @Override
-            public void onNothingSelected(AdapterView<?> parent) {
-
-            }
-        });
-        this.face.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                updateImages();
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> parent) {
-
-            }
-        });
-        this.person.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                updateImages();
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> parent) {
-
-            }
+            public void onNothingSelected(AdapterView<?> parent) {}
         });
         this.foreground.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                updateImages();
+                updateImages(FOREGROUND);
             }
 
             @Override
-            public void onNothingSelected(AdapterView<?> parent) {
-
+            public void onNothingSelected(AdapterView<?> parent) {}
+        });
+        this.face.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                updateImages(FACE);
             }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {}
+        });
+        this.person.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                updateImages(PERSON);
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {}
         });
         //updates
         updateListOfAnswers();
@@ -250,38 +245,65 @@ View.OnClickListener, View.OnLongClickListener{
     }
 
     /**
-     * This method update images of preview
+     * This method update scene preview images.
      */
-    private void updateImages() {
-        selectedBackground = backgroundFiles[this.background.getSelectedItemPosition()];
-        selectedPerson = personFiles[this.person.getSelectedItemPosition()];
-        selectedFace = faceFiles[this.face.getSelectedItemPosition()];
-        selectedForeground = foregroundFiles[this.foreground.getSelectedItemPosition()];
-        this.tausta.setImageResource(getResources().getIdentifier(selectedBackground, "drawable", getPackageName()));
-        if(!selectedPerson.equals("null") && !selectedPerson.equals("tyhjä") && !selectedPerson.equals("empty")) {
-            this.henkilo.setImageResource(getResources().getIdentifier(selectedPerson, "drawable", getPackageName()));
-        } else{
-            this.henkilo.setImageResource(android.R.color.transparent);
-            //null value must be last
-            int faceNullPosition =  getResources().getStringArray(R.array.kasvot).length - 1;
-            this.face.setSelection(faceNullPosition);
+    private void updateImages(int image) {
+        switch (image) {
+            case BACKGROUND:
+                // Get correct file from the spinner position
+                selectedBackground = backgroundFiles[this.background.getSelectedItemPosition()];
+                // Set image as the file
+                this.tausta.setImageResource(getResources().getIdentifier(selectedBackground,
+                        "drawable", getPackageName()));
+                // Save spinner position
+                GlobalPrefs.saveBackgroundPos(this.background.getSelectedItemPosition());
+                break;
+            case FOREGROUND:
+                // Get correct file from the spinner position
+                selectedForeground = foregroundFiles[this.foreground.getSelectedItemPosition()];
+                // Set image as the file (hide if value is null)
+                if(!selectedForeground.equals("null") && !selectedForeground.equals("tyhjä") &&
+                        !selectedForeground.equals("empty")) {
+                    this.foreGroundView.setImageResource(getResources().getIdentifier(
+                            selectedForeground, "drawable", getPackageName()));
+                } else {
+                    this.foreGroundView.setImageResource(android.R.color.transparent);
+                }
+                // Save spinner position
+                GlobalPrefs.saveForegroundPos(this.foreground.getSelectedItemPosition());
+                break;
+            case PERSON:
+                // Get correct file from the spinner position
+                selectedPerson = personFiles[this.person.getSelectedItemPosition()];
+                // Set image as the file (hide if value is null)
+                if(!selectedPerson.equals("null") && !selectedPerson.equals("tyhjä") &&
+                        !selectedPerson.equals("empty")) {
+                    this.henkilo.setImageResource(getResources().getIdentifier(selectedPerson,
+                            "drawable", getPackageName()));
+                } else{
+                    this.henkilo.setImageResource(android.R.color.transparent);
+                    //null value must be last
+                    int faceNullPosition = getResources().getStringArray(R.array.kasvot).length - 1;
+                    this.face.setSelection(faceNullPosition);
+                }
+                // Save spinner position
+                GlobalPrefs.savePersonPos(this.person.getSelectedItemPosition());
+                break;
+            case FACE:
+                // Get correct file from the spinner position
+                selectedFace = faceFiles[this.face.getSelectedItemPosition()];
+                // Set image as the file (hide if value is null)
+                if(!selectedFace.equals("null") && !selectedFace.equals("tyhjä") &&
+                        !selectedFace.equals("empty")) {
+                    this.kasvot.setImageResource(getResources().getIdentifier(selectedFace,
+                            "drawable", getPackageName()));
+                } else {
+                    this.kasvot.setImageResource(android.R.color.transparent);
+                }
+                // Save spinner position
+                GlobalPrefs.saveFacePos(this.face.getSelectedItemPosition());
+                break;
         }
-        if(!selectedFace.equals("null") && !selectedFace.equals("tyhjä") && !selectedFace.equals("empty")) {
-            this.kasvot.setImageResource(getResources().getIdentifier(selectedFace, "drawable", getPackageName()));
-        } else{
-            this.kasvot.setImageResource(android.R.color.transparent);
-        }
-        if(!selectedForeground.equals("null") && !selectedForeground.equals("tyhjä") && !selectedForeground.equals("empty")) {
-            this.foreGroundView.setImageResource(getResources().getIdentifier(selectedForeground, "drawable", getPackageName()));
-        } else{
-            this.foreGroundView.setImageResource(android.R.color.transparent);
-        }
-
-        // Save spinner positions
-        GlobalPrefs.saveBackgroundPos(this.background.getSelectedItemPosition());
-        GlobalPrefs.saveForegroundPos(this.foreground.getSelectedItemPosition());
-        GlobalPrefs.savePersonPos(this.person.getSelectedItemPosition());
-        GlobalPrefs.saveFacePos(this.face.getSelectedItemPosition());
     }
 
     /**
