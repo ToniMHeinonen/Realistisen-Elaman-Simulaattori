@@ -5,6 +5,7 @@ import muuttaa.myohemmin.realistisenelamansimulaattori.data.GeneralKeyAndValue;
 import muuttaa.myohemmin.realistisenelamansimulaattori.data.Scene;
 import muuttaa.myohemmin.realistisenelamansimulaattori.scenariocreation.CreateAnswerAdapter;
 import muuttaa.myohemmin.realistisenelamansimulaattori.scenariocreation.CreateAnswerDialogFragment;
+import muuttaa.myohemmin.realistisenelamansimulaattori.tools.Debug;
 import muuttaa.myohemmin.realistisenelamansimulaattori.tools.GlobalPrefs;
 import muuttaa.myohemmin.realistisenelamansimulaattori.tools.Helper;
 
@@ -172,10 +173,15 @@ View.OnClickListener, View.OnLongClickListener{
             }
         });
         //updates
-        updateImages();
         updateListOfAnswers();
         if(paivitaSpinnerit){
             updateSpinners(apu);
+        } else {
+            // User is creating new scene, load spinner positions
+            this.background.setSelection(GlobalPrefs.loadBackgroundPos());
+            this.foreground.setSelection(GlobalPrefs.loadForegroundPos());
+            this.person.setSelection(GlobalPrefs.loadPersonPos());
+            this.face.setSelection(GlobalPrefs.loadFacePos());
         }
     }
 
@@ -270,6 +276,12 @@ View.OnClickListener, View.OnLongClickListener{
         } else{
             this.foreGroundView.setImageResource(android.R.color.transparent);
         }
+
+        // Save spinner positions
+        GlobalPrefs.saveBackgroundPos(this.background.getSelectedItemPosition());
+        GlobalPrefs.saveForegroundPos(this.foreground.getSelectedItemPosition());
+        GlobalPrefs.savePersonPos(this.person.getSelectedItemPosition());
+        GlobalPrefs.saveFacePos(this.face.getSelectedItemPosition());
     }
 
     /**
