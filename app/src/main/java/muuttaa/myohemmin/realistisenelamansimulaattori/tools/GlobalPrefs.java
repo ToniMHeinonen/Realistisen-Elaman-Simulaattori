@@ -33,6 +33,12 @@ public abstract class GlobalPrefs {
     // Language
     private final static String keyLanguage = "language";
 
+    // Scenario creation images
+    private final static String keyBackgroundPos = "background_position";
+    private final static String keyForegroundPos = "foreground_position";
+    private final static String keyPersonPos = "person_position";
+    private final static String keyFacePos = "face_position";
+
     /**
      * Loads correct preferences file and fills categoriesList.
      */
@@ -52,6 +58,8 @@ public abstract class GlobalPrefs {
     public static void initialize() {
         // This calls the static code block and loads necessary preferences
     }
+
+    //****************** CATEGORIES ******************//
 
     /**
      * Loads saved categories.
@@ -152,6 +160,8 @@ public abstract class GlobalPrefs {
         prefs.edit().putBoolean(keyCategoryOpen + category, open).apply();
     }
 
+    //****************** SORTING SCENARIOS ******************//
+
     /**
      * Loads current sorting type.
      * @return sorting type
@@ -183,6 +193,8 @@ public abstract class GlobalPrefs {
     public static void saveSortAscending(boolean ascending) {
         prefs.edit().putBoolean(keySortAscending, ascending).apply();
     }
+
+    //****************** FONT ******************//
 
     /**
      * Loads font style.
@@ -240,6 +252,8 @@ public abstract class GlobalPrefs {
         prefs.edit().putInt(keyFontColorPos, pos).commit();
     }
 
+    //****************** AUDIO VOLUME ******************//
+
     /**
      * Loads the volume of the sound.
      * @return sound volume
@@ -272,6 +286,8 @@ public abstract class GlobalPrefs {
         prefs.edit().putFloat(keyMusicVolume, volume).commit();
     }
 
+    //****************** LANGUAGE ******************//
+
     /**
      * Loads the app language.
      * @return app language
@@ -287,6 +303,74 @@ public abstract class GlobalPrefs {
     public static void saveLanguage(String languageCode) {
         prefs.edit().putString(keyLanguage, languageCode).commit();
     }
+
+    //****************** CREATE SCENE IMAGE SPINNER ******************//
+
+    /**
+     * Loads the background image spinner position in CreateScene.
+     * @return background image spinner position
+     */
+    public static int loadBackgroundPos() {
+        return prefs.getInt(keyBackgroundPos, 0);
+    }
+
+    /**
+     * Loads the background image spinner position in CreateScene.
+     * @param position background image spinner position
+     */
+    public static void saveBackgroundPos(int position) {
+        prefs.edit().putInt(keyBackgroundPos, position).apply();
+    }
+
+    /**
+     * Loads the foreground image spinner position in CreateScene.
+     * @return foreground image spinner position
+     */
+    public static int loadForegroundPos() {
+        return prefs.getInt(keyForegroundPos, 0);
+    }
+
+    /**
+     * Loads the foreground image spinner position in CreateScene.
+     * @param position foreground image spinner position
+     */
+    public static void saveForegroundPos(int position) {
+        prefs.edit().putInt(keyForegroundPos, position).apply();
+    }
+
+    /**
+     * Loads the person image spinner position in CreateScene.
+     * @return person image spinner position
+     */
+    public static int loadPersonPos() {
+        return prefs.getInt(keyPersonPos, 0);
+    }
+
+    /**
+     * Loads the person image spinner position in CreateScene.
+     * @param position person image spinner position
+     */
+    public static void savePersonPos(int position) {
+        prefs.edit().putInt(keyPersonPos, position).apply();
+    }
+
+    /**
+     * Loads the face image spinner position in CreateScene.
+     * @return face image spinner position
+     */
+    public static int loadFacePos() {
+        return prefs.getInt(keyFacePos, 0);
+    }
+
+    /**
+     * Loads the face image spinner position in CreateScene.
+     * @param position face image spinner position
+     */
+    public static void saveFacePos(int position) {
+        prefs.edit().putInt(keyFacePos, position).apply();
+    }
+
+    //****************** DEBUGGING ******************//
 
     /**
      * Clears all scenario item preferences.
