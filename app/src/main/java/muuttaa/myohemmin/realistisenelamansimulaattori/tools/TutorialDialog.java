@@ -2,7 +2,9 @@ package muuttaa.myohemmin.realistisenelamansimulaattori.tools;
 
 import android.app.Activity;
 import android.app.Dialog;
+import android.os.Build;
 import android.os.Bundle;
+import android.text.Html;
 import android.view.View;
 import android.view.Window;
 import android.widget.TextView;
@@ -64,14 +66,24 @@ public class TutorialDialog extends Dialog implements
      * Changes texts of views and shows necessary views.
      */
     private void initializeViews() {
-        TextView topic = findViewById(R.id.settingTopic);
-        TextView text = findViewById(R.id.settingText);
-
         switch (tutorial) {
             case SCENARIO:
-                topic.setText(activity.getString(R.string.tutorial_scenario));
-                text.setText(activity.getString(R.string.tutorial_scenario_text));
+                setTutorialText(activity.getString(R.string.tutorial_scenario));
                 break;
+        }
+    }
+
+    /**
+     * Formats html text correctly to TextView.
+     * @param text html text to set on TextView
+     */
+    private void setTutorialText(String text) {
+        TextView textView = findViewById(R.id.tutorialText);
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+            textView.setText(Html.fromHtml(text, Html.FROM_HTML_MODE_LEGACY));
+        } else {
+            textView.setText(Html.fromHtml(text));
         }
     }
 

@@ -142,15 +142,13 @@
     <string name="autosave_not">nimi tarvitaan automaattiseen tallennukseen</string>
 
     <!-- TUTORIAL -->
-    <string name="tutorial_scenario">Skenaarion luominen</string>
-    <string name="tutorial_scenario_text">1. Anna skenaariollesi nimi (nimen on oltava uniikki)\n
-        2. Paina \"&create_scene;\" nappia lisätäksesi kohtauksia skenaariollesi\n
-        3. Kun skenaario on valmis paina \"&add;\" nappia\n
-        \n
-        Pystyt viemään luodut skenaariosi json tiedostona painamalla \"&export_file;\" nappia ja valitsemalla
-        mihin haluat skenaariosi viedä talteen. On myös mahdollista tuoda json skenaario tiedostoja sovellukseesi,
-        paina vain \"&import_file;\" nappia jaa valitse tiedosto minkä haluat tuoda.\n
-        \n
-        Jos haluta poistaa luotuja kohtauksia, paina vain luodun skenesi nappia pohjassa, niin varmistus
-        ponnahdusikkuna ilmestyy.</string>
+    <string name="tutorial_scenario">
+    &lt;h1&gt;Skenaarion luominen&lt;/h1&gt;
+    &lt;p&gt;1. Anna skenaariollesi nimi (nimen on oltava uniikki)&lt;/p&gt;
+    &lt;p&gt;2. Paina \"&create_scene;\" nappia lisätäksesi kohtauksia skenaariollesi&lt;/p&gt;
+    &lt;p&gt;3. Kun skenaario on valmis paina \"&add;\" nappia&lt;/p&gt;
+    &lt;p&gt;Pystyt viemään luodut skenaariosi json tiedostona painamalla \"&export_file;\" nappia ja valitsemalla
+    mihin haluat skenaariosi viedä talteen. On myös mahdollista tuoda json skenaario tiedostoja sovellukseesi,
+    paina vain \"&import_file;\" nappia ja valitse tiedosto minkä haluat tuoda.&lt;/p&gt;
+    &lt;p&gt;Voit myös poistaa luotuja kohtauksia pitämällä luodun kohtauksen nappia pohjassa.&lt;/p&gt;</string>
 </resources>

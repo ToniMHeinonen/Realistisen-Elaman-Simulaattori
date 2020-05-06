@@ -14,36 +14,28 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/settingTopic"
+                android:id="@+id/tutorialText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_margin="10dp"
-                android:text="{Setting}"
-                android:textSize="?attr/font_large"
-                android:textStyle="bold"/>
-
-            <TextView
-                android:id="@+id/settingText"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="15dp"
-                android:text="{Paragsdas dsa}"
+                android:text="{Tutorial}"
                 android:textSize="?attr/font_medium"/>
 
-                <Button
-                    android:id="@+id/confirm"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center"
-                    android:textSize="?attr/font_medium"
-                    android:textStyle="bold"
-                    android:text="@string/alertPositiveButton"
-                    android:background="@drawable/confirm_button" />
+            <Button
+                android:id="@+id/confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:textSize="?attr/font_medium"
+                android:textStyle="bold"
+                android:layout_marginBottom="15dp"
+                android:text="@string/alertPositiveButton"
+                android:background="@drawable/confirm_button" />
 
         </LinearLayout>
 

@@ -144,15 +144,14 @@
     <string name="autosave_not">Give name for autosave</string>
 
     <!-- TUTORIAL -->
-    <string name="tutorial_scenario">Creating Scenario</string>
-    <string name="tutorial_scenario_text">1. Give name to your scenario (name must be unique)\n
-        2. Press the \"&create_scene;\" button to add scenes to your scenario\n
-        3. When scenario is ready press the \"&add;\" button\n
-        \n
-        You can export your created scenarios as a json file by pressing the \"&export_file;\" button and by selecting
+    <string name="tutorial_scenario">
+    &lt;h1&gt;Creating a scenario&lt;/h1&gt;
+    &lt;p&gt;1. Give name to your scenario (name must be unique)&lt;/p&gt;
+    &lt;p&gt;2. Press the \"&create_scene;\" button to add scenes to your scenario&lt;/p&gt;
+    &lt;p&gt;3. When scenario is ready press the \"&add;\" button&lt;/p&gt;
+    &lt;p&gt;You can export your created scenario as a json file by pressing the \"&export_file;\" button and by selecting
         where to export your scenario. It is also possible to import json scenario files in to your
-        app, just press the \"&import_file;\" button and select the file to import.\n
-        \n
-        If you want to delete created scenes, just hold the created scene button and a confirmation
-        popup will show up.</string>
+        app, just press the \"&import_file;\" button and select the file to import.&lt;/p&gt;
+    &lt;p&gt;If you want to delete created scenes, just hold the created scene button and a confirmation
+        popup will show up.&lt;/p&gt;</string>
 </resources>
