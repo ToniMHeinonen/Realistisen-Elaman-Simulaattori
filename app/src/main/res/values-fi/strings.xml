@@ -161,4 +161,14 @@
     &lt;p&gt;4. Luo ainakin yksi vastaus kohtaukselle painamalla \"&create_answer;\" nappia&lt;/p&gt;
     &lt;p&gt;5. Kun kohtaus on valmis paina \"&done;\" nappia&lt;/p&gt;
     &lt;p&gt;Voit myös poistaa luotuja vastauksia pitämällä luodun vastauksen nappia pohjassa.&lt;/p&gt;</string>
+    <string name="tutorial_answer">
+    &lt;h1&gt;Vastauksen luominen&lt;/h1&gt;
+    &lt;p&gt;1. Valitse väri vastaukselle&lt;/p&gt;
+    &lt;p&gt;2. Kirjoita vastaus&lt;/p&gt;
+    &lt;p&gt;3. Valitse mihin kohtaukseen tämä vastaus johtaa&lt;/p&gt;
+    &lt;p&gt;4. Kun vastaus on valmis paina \"&done;\" nappia&lt;/p&gt;
+    &lt;p&gt;Värien merkitykset: Vihreä on haluttu vastaus, keltainen on melkein oikein ja punainen ei ole
+        niin hyvä vastaus.&lt;/p&gt;
+    &lt;p&gt;Huom: Jos poistat tai uudelleennimeät kohtauksia ja jotkut vastaukset johtavat siihen kohtaukseen,
+        muista käydä muuttamassa mihin ne vastaukset johtavat.&lt;/p&gt;</string>
 </resources>

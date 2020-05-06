@@ -165,4 +165,14 @@
     &lt;p&gt;5. When the scene is ready press the \"&done;\" button&lt;/p&gt;
     &lt;p&gt;If you want to delete created answers, just hold the created answer button and a confirmation
         popup will show up.&lt;/p&gt;</string>
+    <string name="tutorial_answer">
+    &lt;h1&gt;Creating an answer&lt;/h1&gt;
+    &lt;p&gt;1. Select a color to your answer&lt;/p&gt;
+    &lt;p&gt;2. Write an answer&lt;/p&gt;
+    &lt;p&gt;3. Select to what scene does this answer lead to&lt;/p&gt;
+    &lt;p&gt;4. When the answer is ready press the \"&done;\" button&lt;/p&gt;
+    &lt;p&gt;Meaning of colors: Green is the desired answer, yellow is almost right and red is not so good
+        answer.&lt;/p&gt;
+    &lt;p&gt;Note: If you delete or rename scenes and some of the answers led to that scene, remember to
+        go and change where those answers lead to.&lt;/p&gt;</string>
 </resources>

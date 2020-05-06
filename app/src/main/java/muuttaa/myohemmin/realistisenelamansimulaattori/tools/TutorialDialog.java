@@ -73,6 +73,9 @@ public class TutorialDialog extends Dialog implements
             case SCENE:
                 setTutorialText(activity.getString(R.string.tutorial_scene));
                 break;
+            case ANSWER:
+                setTutorialText(activity.getString(R.string.tutorial_answer));
+                break;
         }
     }
 

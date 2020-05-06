@@ -19,7 +19,8 @@ import java.util.Map;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatDialogFragment;
 import muuttaa.myohemmin.realistisenelamansimulaattori.R;
-import muuttaa.myohemmin.realistisenelamansimulaattori.data.Scene;
+import muuttaa.myohemmin.realistisenelamansimulaattori.tools.GlobalPrefs;
+import muuttaa.myohemmin.realistisenelamansimulaattori.tools.TutorialDialog;
 
 public class CreateAnswerDialogFragment extends AppCompatDialogFragment {
     private View view;
@@ -61,6 +62,9 @@ public class CreateAnswerDialogFragment extends AppCompatDialogFragment {
             selectedButton = colorButtons[colorPos];
         }
 
+        // Set listener for info button since onClick does not work on DialogFragment
+        view.findViewById(R.id.infoButton).setOnClickListener((v) -> showInfo());
+
         sceneNames = getArguments().getStringArrayList("createdScenes");
         setupSceneSpinner();
 
@@ -94,6 +98,15 @@ public class CreateAnswerDialogFragment extends AppCompatDialogFragment {
                 });
 
         return builder.create();
+    }
+
+    @Override
+    public void onResume() {
+        // Check if to show tutorial dialog
+        if (GlobalPrefs.loadTutorialAnswer()) {
+            showInfo();
+        }
+        super.onResume();
     }
 
     /**
@@ -141,6 +154,10 @@ public class CreateAnswerDialogFragment extends AppCompatDialogFragment {
             if (index != -1)
                 sceneSpinner.setSelection(index);
         }
+    }
+
+    public void showInfo() {
+        new TutorialDialog(getActivity(), TutorialDialog.Tutorial.ANSWER).show();
     }
 
     @Override
