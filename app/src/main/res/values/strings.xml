@@ -4,6 +4,8 @@
     <!ENTITY import_file "Import">
     <!ENTITY export_file "Export">
     <!ENTITY add "Add">
+    <!ENTITY done "Done">
+    <!ENTITY create_answer "Create answer">
     ]>
 <resources>
     <string name="app_name">Realistic Life Simulator</string>
@@ -92,7 +94,7 @@
     <string name="create_scene">&create_scene;</string>
     <string name="scenario_name_give">Scenario name:</string>
     <string name="add">&add;</string>
-    <string name="done">Done</string>
+    <string name="done">&done;</string>
     <string name="first_scene_information">The name of the first scene must be: first</string>
     <string name="scene_name_give">Scene name:</string>
     <string name="scene_question">Scene question:</string>
@@ -102,7 +104,7 @@
     <string name="choose_face">Face:</string>
     <string name="choose_fore">Items:</string>
 
-    <string name="create_answer">Create answer</string>
+    <string name="create_answer">&create_answer;</string>
     <string name="choose_color">Choose color:</string>
     <string name="write_answer">Write answer:</string>
     <string name="info_next_scene">Select where does this answer lead to:</string>
@@ -153,5 +155,14 @@
         where to export your scenario. It is also possible to import json scenario files in to your
         app, just press the \"&import_file;\" button and select the file to import.&lt;/p&gt;
     &lt;p&gt;If you want to delete created scenes, just hold the created scene button and a confirmation
+        popup will show up.&lt;/p&gt;</string>
+    <string name="tutorial_scene">
+    &lt;h1&gt;Creating a scene&lt;/h1&gt;
+    &lt;p&gt;1. Select your desired image for the scene&lt;/p&gt;
+    &lt;p&gt;2. Give name to your scene (name must be unique)&lt;/p&gt;
+    &lt;p&gt;3. Write a question to your scene&lt;/p&gt;
+    &lt;p&gt;4. Create at least one answer to your scene by clicking the \"&create_answer;\" button&lt;/p&gt;
+    &lt;p&gt;5. When the scene is ready press the \"&done;\" button&lt;/p&gt;
+    &lt;p&gt;If you want to delete created answers, just hold the created answer button and a confirmation
         popup will show up.&lt;/p&gt;</string>
 </resources>

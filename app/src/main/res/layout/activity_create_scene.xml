@@ -196,19 +196,30 @@
                 android:text="@string/create_answer"
                 android:textSize="?attr/font_medium" />
 
-            <TextView
+            <!-- BOTTOM BUTTONS -->
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="?attr/font_small"
-                android:gravity="center"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:text="@string/can_delete_answer"/>
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
 
-            <Button
-                style="@style/createScenarioMovementButtons"
-                android:onClick="pois"
-                android:text="@string/done"/>
+                <Button
+                    style="@style/createScenarioMovementButtons"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.8"
+                    android:onClick="pois"
+                    android:text="@string/done"/>
+
+                <ImageButton
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:layout_gravity="center"
+                    android:onClick="showInfo"
+                    android:src="@drawable/ic_info_48dp" />
+            </LinearLayout>
 
         </LinearLayout>
     </ScrollView>

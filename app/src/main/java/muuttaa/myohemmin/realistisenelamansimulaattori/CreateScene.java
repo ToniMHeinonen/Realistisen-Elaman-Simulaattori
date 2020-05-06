@@ -5,9 +5,9 @@ import muuttaa.myohemmin.realistisenelamansimulaattori.data.GeneralKeyAndValue;
 import muuttaa.myohemmin.realistisenelamansimulaattori.data.Scene;
 import muuttaa.myohemmin.realistisenelamansimulaattori.scenariocreation.CreateAnswerAdapter;
 import muuttaa.myohemmin.realistisenelamansimulaattori.scenariocreation.CreateAnswerDialogFragment;
-import muuttaa.myohemmin.realistisenelamansimulaattori.tools.Debug;
 import muuttaa.myohemmin.realistisenelamansimulaattori.tools.GlobalPrefs;
 import muuttaa.myohemmin.realistisenelamansimulaattori.tools.Helper;
+import muuttaa.myohemmin.realistisenelamansimulaattori.tools.TutorialDialog;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -190,6 +190,11 @@ View.OnClickListener, View.OnLongClickListener{
             this.person.setSelection(GlobalPrefs.loadPersonPos());
             this.face.setSelection(GlobalPrefs.loadFacePos());
         }
+
+        // Check if to show tutorial dialog
+        if (GlobalPrefs.loadTutorialScene()) {
+            showInfo(null);
+        }
     }
 
     private void updateSpinners(Scene apu) {
@@ -335,6 +340,10 @@ View.OnClickListener, View.OnLongClickListener{
         }
         CreateAnswerAdapter adapter = new CreateAnswerAdapter(this, arrayList, this);
         lista.setAdapter(adapter);
+    }
+
+    public void showInfo(View v) {
+        new TutorialDialog(this, TutorialDialog.Tutorial.SCENE).show();
     }
 
     public void vastaus(View view) {
