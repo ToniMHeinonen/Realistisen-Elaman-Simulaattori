@@ -7,6 +7,7 @@ import muuttaa.myohemmin.realistisenelamansimulaattori.data.Scenario;
 import muuttaa.myohemmin.realistisenelamansimulaattori.data.Scene;
 import muuttaa.myohemmin.realistisenelamansimulaattori.tools.GlobalPrefs;
 import muuttaa.myohemmin.realistisenelamansimulaattori.tools.Helper;
+import muuttaa.myohemmin.realistisenelamansimulaattori.tools.TutorialDialog;
 
 import android.content.Context;
 import android.content.DialogInterface;
@@ -66,6 +67,11 @@ public class CreateScenario extends ParentActivity {
             beforeName = oletus.getName();
         }
         updateList();
+
+        // Check if to show tutorial dialog
+        if (GlobalPrefs.loadTutorialScenario()) {
+            showInfo(null);
+        }
     }
 
     public void luo(View view) {
@@ -196,6 +202,10 @@ public class CreateScenario extends ParentActivity {
         listaview.setOnItemClickListener((parent, view, position, id) -> {
             moveToCreateScene(false, position);
         });
+    }
+
+    public void showInfo(View v) {
+        new TutorialDialog(this, TutorialDialog.Tutorial.SCENARIO).show();
     }
 
     public void lisaa(View view) {

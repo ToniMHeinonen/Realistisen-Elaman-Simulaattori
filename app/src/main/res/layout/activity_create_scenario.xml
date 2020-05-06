@@ -60,17 +60,27 @@
         android:layout_margin="20dp"
         android:id="@+id/listaScene"/>
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="?attr/font_small"
-        android:gravity="center"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:text="@string/can_delete_scene"/>
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
 
-    <Button
-        style="@style/createScenarioMovementButtons"
-        android:onClick="lisaa"
-        android:text="@string/add"/>
+        <Button
+            style="@style/createScenarioMovementButtons"
+            android:layout_width="0dp"
+            android:layout_weight="0.8"
+            android:onClick="lisaa"
+            android:text="@string/add"/>
+
+        <ImageButton
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:layout_gravity="center"
+            android:onClick="showInfo"
+            android:src="@drawable/ic_info_48dp" />
+    </LinearLayout>
 </LinearLayout>

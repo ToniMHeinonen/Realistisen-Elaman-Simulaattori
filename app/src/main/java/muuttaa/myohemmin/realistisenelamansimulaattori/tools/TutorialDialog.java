@@ -69,8 +69,8 @@ public class TutorialDialog extends Dialog implements
 
         switch (tutorial) {
             case SCENARIO:
-                //topic.setText(activity.getString(R.string.first_tutorial));
-                //text.setText(activity.getString(R.string.first_tutorial_text));
+                topic.setText(activity.getString(R.string.tutorial_scenario));
+                text.setText(activity.getString(R.string.tutorial_scenario_text));
                 break;
         }
     }

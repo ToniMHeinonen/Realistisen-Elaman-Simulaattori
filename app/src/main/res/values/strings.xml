@@ -1,3 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources [
+    <!ENTITY create_scene "Create scene">
+    <!ENTITY import_file "Import">
+    <!ENTITY export_file "Export">
+    <!ENTITY add "Add">
+    ]>
 <resources>
     <string name="app_name">Realistic Life Simulator</string>
 
@@ -80,11 +87,11 @@
     </string-array>
 
     <!-- SCENARIO CREATION -->
-    <string name="import_file">Import</string>
-    <string name="export_file">Export</string>
-    <string name="create_scene">Create scene</string>
+    <string name="import_file">&import_file;</string>
+    <string name="export_file">&export_file;</string>
+    <string name="create_scene">&create_scene;</string>
     <string name="scenario_name_give">Scenario name:</string>
-    <string name="add">Add</string>
+    <string name="add">&add;</string>
     <string name="done">Done</string>
     <string name="first_scene_information">The name of the first scene must be: first</string>
     <string name="scene_name_give">Scene name:</string>
@@ -135,4 +142,17 @@
     <string name="not_null">you can not give null</string>
     <string name="null_value">end</string>
     <string name="autosave_not">Give name for autosave</string>
+
+    <!-- TUTORIAL -->
+    <string name="tutorial_scenario">Creating Scenario</string>
+    <string name="tutorial_scenario_text">1. Give name to your scenario (name must be unique)\n
+        2. Press the \"&create_scene;\" button to add scenes to your scenario\n
+        3. When scenario is ready press the \"&add;\" button\n
+        \n
+        You can export your created scenarios as a json file by pressing the \"&export_file;\" button and by selecting
+        where to export your scenario. It is also possible to import json scenario files in to your
+        app, just press the \"&import_file;\" button and select the file to import.\n
+        \n
+        If you want to delete created scenes, just hold the created scene button and a confirmation
+        popup will show up.</string>
 </resources>

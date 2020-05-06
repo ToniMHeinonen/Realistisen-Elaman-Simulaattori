@@ -1,3 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources [
+    <!ENTITY create_scene "Luo kohtaus">
+    <!ENTITY import_file "Tuo">
+    <!ENTITY export_file "Lähetä">
+    <!ENTITY add "Lisää">
+    ]>
 <resources>
     <string name="app_name">Realistisen Elaman Simulaattori</string>
 
@@ -80,11 +87,11 @@
     </string-array>
 
     <!-- SCENARIO CREATION -->
-    <string name="import_file">Tuo</string>
-    <string name="export_file">Lähetä</string>
-    <string name="create_scene">Luo kohtaus</string>
+    <string name="import_file">&import_file;</string>
+    <string name="export_file">&export_file;</string>
+    <string name="create_scene">&create_scene;</string>
     <string name="scenario_name_give">Skenaarion nimi:</string>
-    <string name="add">Lisää</string>
+    <string name="add">&add;</string>
     <string name="done">Valmis</string>
     <string name="first_scene_information">Scenaarion ensimmäisen kohtauksen nimi pitää olla: first</string>
     <string name="scene_name_give">Kohtauksen nimi:</string>
@@ -133,4 +140,17 @@
     <string name="not_null">et voi antaa arvoa null</string>
     <string name="null_value">lopetus</string>
     <string name="autosave_not">nimi tarvitaan automaattiseen tallennukseen</string>
+
+    <!-- TUTORIAL -->
+    <string name="tutorial_scenario">Skenaarion luominen</string>
+    <string name="tutorial_scenario_text">1. Anna skenaariollesi nimi (nimen on oltava uniikki)\n
+        2. Paina \"&create_scene;\" nappia lisätäksesi kohtauksia skenaariollesi\n
+        3. Kun skenaario on valmis paina \"&add;\" nappia\n
+        \n
+        Pystyt viemään luodut skenaariosi json tiedostona painamalla \"&export_file;\" nappia ja valitsemalla
+        mihin haluat skenaariosi viedä talteen. On myös mahdollista tuoda json skenaario tiedostoja sovellukseesi,
+        paina vain \"&import_file;\" nappia jaa valitse tiedosto minkä haluat tuoda.\n
+        \n
+        Jos haluta poistaa luotuja kohtauksia, paina vain luodun skenesi nappia pohjassa, niin varmistus
+        ponnahdusikkuna ilmestyy.</string>
 </resources>
