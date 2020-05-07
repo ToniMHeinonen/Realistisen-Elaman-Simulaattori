@@ -153,7 +153,7 @@ public abstract class GlobalPrefs {
      * @return true if open
      */
     public static boolean loadCategoryOpen(String category) {
-        return prefs.getBoolean(keyCategoryOpen + category, false);
+        return prefs.getBoolean(keyCategoryOpen + category, true);
     }
 
     /**
