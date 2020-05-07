@@ -17,6 +17,7 @@ import android.view.View;
 import android.view.animation.AccelerateDecelerateInterpolator;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.EditText;
 import android.widget.ExpandableListView;
 import android.widget.ImageButton;
 import android.widget.Spinner;
@@ -38,6 +39,9 @@ public class ChooseScenarioActivity extends ParentActivity {
     private int sortBy;
     private ImageButton sortArrow;
     private boolean sortAscending;
+
+    // Header
+    private EditText header;
 
     // Categories
     private ExpandableListView categoriesListView;
@@ -65,6 +69,7 @@ public class ChooseScenarioActivity extends ParentActivity {
         setContentView(R.layout.activity_main);
         json = new SaveSystemPreferences(this);
 
+        loadHeaderText();
         setupSorting(); // Setup sorting spinner
 
         // Categories
@@ -79,6 +84,18 @@ public class ChooseScenarioActivity extends ParentActivity {
     protected void onResume() {
         refreshActivity();
         super.onResume();
+    }
+
+    /**
+     * Loads header text if user has changed it.
+     */
+    private void loadHeaderText() {
+        header = findViewById(R.id.header);
+        String savedHeader = GlobalPrefs.loadHeaderText();
+
+        if (!savedHeader.equals("")) {
+            header.setText(savedHeader);
+        }
     }
 
     /**
@@ -538,6 +555,25 @@ public class ChooseScenarioActivity extends ParentActivity {
         }
 
         return true;
+    }
+
+    /**
+     * Saves header text if it has changed.
+     */
+    @Override
+    protected void onStop() {
+        super.onStop();
+        // Saves header text if it has changed
+        String text = header.getText().toString();
+        String savedText = GlobalPrefs.loadHeaderText();
+        // If text is the same as resources text
+        if (text.equals(getString(R.string.my_tasks))) {
+            GlobalPrefs.saveHeaderText(""); // Save header text back to default value
+        }
+        // If text is not the same as saved text
+        else if (!text.equals(savedText)) {
+            GlobalPrefs.saveHeaderText(text);
+        }
     }
 
     /**

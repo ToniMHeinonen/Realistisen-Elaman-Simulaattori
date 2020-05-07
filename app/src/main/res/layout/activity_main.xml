@@ -4,9 +4,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation = "vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
     tools:context=".ChooseScenarioActivity">
 
-    <TextView
+    <EditText
+        android:id="@+id/header"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/my_tasks"

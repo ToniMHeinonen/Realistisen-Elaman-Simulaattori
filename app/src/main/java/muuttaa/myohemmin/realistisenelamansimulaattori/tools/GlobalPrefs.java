@@ -11,6 +11,9 @@ public abstract class GlobalPrefs {
 
     private static final String keyPrefs = "RLS_global_prefs";
 
+    // Header text
+    private static final String keyHeaderText = "header_text";
+
     // Categories
     private static final String keyAllCategories = "all_categories";
     private static final String keyCategoriesAmount = "categories_amount";
@@ -62,6 +65,24 @@ public abstract class GlobalPrefs {
      */
     public static void initialize() {
         // This calls the static code block and loads necessary preferences
+    }
+
+    //****************** HEADER TEXT ******************//
+
+    /**
+     * Loads header text for ChooseScenarioActivity.
+     * @return saved header text
+     */
+    public static String loadHeaderText() {
+        return prefs.getString(keyHeaderText, "");
+    }
+
+    /**
+     * Saves header text for ChooseScenarioActivity.
+     * @param text header text to save
+     */
+    public static void saveHeaderText(String text) {
+        prefs.edit().putString(keyHeaderText, text).apply();
     }
 
     //****************** CATEGORIES ******************//
