@@ -11,6 +11,7 @@ import muuttaa.myohemmin.realistisenelamansimulaattori.ChooseScenarioActivity;
 import muuttaa.myohemmin.realistisenelamansimulaattori.CreateScenario;
 import muuttaa.myohemmin.realistisenelamansimulaattori.R;
 import muuttaa.myohemmin.realistisenelamansimulaattori.SettingsActivity;
+import muuttaa.myohemmin.realistisenelamansimulaattori.tools.HTMLDialog;
 
 public class HamburgerDialog extends Dialog implements
         android.view.View.OnClickListener {
@@ -40,6 +41,7 @@ public class HamburgerDialog extends Dialog implements
         findViewById(R.id.addCategory).setOnClickListener(this);
         findViewById(R.id.createScenario).setOnClickListener(this);
         findViewById(R.id.settings).setOnClickListener(this);
+        findViewById(R.id.credits).setOnClickListener(this);
         findViewById(R.id.back).setOnClickListener(this);
     }
 
@@ -63,6 +65,9 @@ public class HamburgerDialog extends Dialog implements
                 activity.startActivity(new Intent(activity, SettingsActivity.class));
                 activity.finish();
                 dismiss();
+                break;
+            case R.id.credits:
+                new HTMLDialog(activity, HTMLDialog.HTMLText.CREDITS).show();
                 break;
             case R.id.back:
                 cancel();

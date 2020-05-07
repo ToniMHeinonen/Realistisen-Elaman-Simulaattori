@@ -20,7 +20,7 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatDialogFragment;
 import muuttaa.myohemmin.realistisenelamansimulaattori.R;
 import muuttaa.myohemmin.realistisenelamansimulaattori.tools.GlobalPrefs;
-import muuttaa.myohemmin.realistisenelamansimulaattori.tools.TutorialDialog;
+import muuttaa.myohemmin.realistisenelamansimulaattori.tools.HTMLDialog;
 
 public class CreateAnswerDialogFragment extends AppCompatDialogFragment {
     private View view;
@@ -157,7 +157,7 @@ public class CreateAnswerDialogFragment extends AppCompatDialogFragment {
     }
 
     public void showInfo() {
-        new TutorialDialog(getActivity(), TutorialDialog.Tutorial.ANSWER).show();
+        new HTMLDialog(getActivity(), HTMLDialog.HTMLText.ANSWER).show();
     }
 
     @Override

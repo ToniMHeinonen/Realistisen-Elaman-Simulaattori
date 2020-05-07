@@ -7,7 +7,7 @@ import muuttaa.myohemmin.realistisenelamansimulaattori.data.Scenario;
 import muuttaa.myohemmin.realistisenelamansimulaattori.data.Scene;
 import muuttaa.myohemmin.realistisenelamansimulaattori.tools.GlobalPrefs;
 import muuttaa.myohemmin.realistisenelamansimulaattori.tools.Helper;
-import muuttaa.myohemmin.realistisenelamansimulaattori.tools.TutorialDialog;
+import muuttaa.myohemmin.realistisenelamansimulaattori.tools.HTMLDialog;
 
 import android.content.Context;
 import android.content.DialogInterface;
@@ -205,7 +205,7 @@ public class CreateScenario extends ParentActivity {
     }
 
     public void showInfo(View v) {
-        new TutorialDialog(this, TutorialDialog.Tutorial.SCENARIO).show();
+        new HTMLDialog(this, HTMLDialog.HTMLText.SCENARIO).show();
     }
 
     public void lisaa(View view) {

@@ -38,6 +38,7 @@
     <!-- CHOOSE SCENARIO ACTIVITY -->
     <string name="my_tasks">My Tasks</string>
     <string name="settings">Settings</string>
+    <string name="credits">Credits</string>
     <string name="createScenario">Create scenario</string>
     <string name="scenarios">My created scenarios</string>
     <string name="addCategory">Add</string>
@@ -150,7 +151,7 @@
     <string name="null_value">end</string>
     <string name="autosave_not">Give name for autosave</string>
 
-    <!-- TUTORIAL -->
+    <!-- HTML TEXT -->
     <string name="tutorial_scenario">
     &lt;h1&gt;Creating a scenario&lt;/h1&gt;
     &lt;p&gt;1. Give name to your scenario (name must be unique)&lt;/p&gt;
@@ -186,4 +187,15 @@
     &lt;h2&gt;Note:&lt;/h2&gt;
     &lt;p&gt;If you delete or rename scenes and some of the answers led to that scene, remember to
         go and change where those answers lead to.&lt;/p&gt;</string>
+    <string name="credits_html">
+    &lt;h1&gt;Credits&lt;/h1&gt;
+    &lt;p&gt;This app was produced together with Tampereen Kaupunki and Nepsy project.&lt;/p&gt;
+    &lt;h2&gt;Programmers&lt;/h2&gt;
+    &lt;p&gt;Toni Heinonen&lt;br/&gt;Jesse Stenroth&lt;br/&gt;Olli Ahonen&lt;/p&gt;
+    &lt;h2&gt;Scrum Master&lt;/h2&gt;
+    &lt;p&gt;Viktor Haimi&lt;/p&gt;
+    &lt;h2&gt;Graphics&lt;/h2&gt;
+    &lt;p&gt;Frida Brander&lt;/p&gt;
+    &lt;h2&gt;Music&lt;/h2&gt;
+    &lt;p&gt;www.bensound.com&lt;/p&gt;</string>
 </resources>

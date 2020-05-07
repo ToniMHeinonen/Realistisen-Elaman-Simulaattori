@@ -7,7 +7,7 @@ import muuttaa.myohemmin.realistisenelamansimulaattori.scenariocreation.CreateAn
 import muuttaa.myohemmin.realistisenelamansimulaattori.scenariocreation.CreateAnswerDialogFragment;
 import muuttaa.myohemmin.realistisenelamansimulaattori.tools.GlobalPrefs;
 import muuttaa.myohemmin.realistisenelamansimulaattori.tools.Helper;
-import muuttaa.myohemmin.realistisenelamansimulaattori.tools.TutorialDialog;
+import muuttaa.myohemmin.realistisenelamansimulaattori.tools.HTMLDialog;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -343,7 +343,7 @@ View.OnClickListener, View.OnLongClickListener{
     }
 
     public void showInfo(View v) {
-        new TutorialDialog(this, TutorialDialog.Tutorial.SCENE).show();
+        new HTMLDialog(this, HTMLDialog.HTMLText.SCENE).show();
     }
 
     public void vastaus(View view) {

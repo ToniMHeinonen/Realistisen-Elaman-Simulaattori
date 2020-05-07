@@ -38,6 +38,7 @@
     <!-- CHOOSE SCENARIO ACTIVITY -->
     <string name="my_tasks">Minun tehtäväni</string>
     <string name="settings">Asetukset</string>
+    <string name="credits">Tekijät</string>
     <string name="createScenario">Luo skenaario</string>
     <string name="scenarios">Omat luodut skenaariot</string>
     <string name="addCategory">Lisää</string>
@@ -148,7 +149,7 @@
     <string name="null_value">lopetus</string>
     <string name="autosave_not">nimi tarvitaan automaattiseen tallennukseen</string>
 
-    <!-- TUTORIAL -->
+    <!-- HTML TEXT -->
     <string name="tutorial_scenario">
     &lt;h1&gt;Skenaarion luominen&lt;/h1&gt;
     &lt;p&gt;1. Anna skenaariollesi nimi (nimen on oltava uniikki)&lt;/p&gt;
@@ -182,4 +183,15 @@
     &lt;h2&gt;Huom:&lt;/h2&gt;
     &lt;p&gt;Jos poistat tai uudelleennimeät kohtauksia ja jotkut vastaukset johtavat siihen kohtaukseen,
         muista käydä muuttamassa mihin ne vastaukset johtavat.&lt;/p&gt;</string>
+    <string name="credits_html">
+    &lt;h1&gt;Credits&lt;/h1&gt;
+    &lt;p&gt;Tämä sovellus on toteutettu yhteistyössä Tampereen Kaupungin ja Nepsy projektin kanssa.&lt;/p&gt;
+    &lt;h2&gt;Ohjelmoijat&lt;/h2&gt;
+    &lt;p&gt;Toni Heinonen&lt;br/&gt;Jesse Stenroth&lt;br/&gt;Olli Ahonen&lt;/p&gt;
+    &lt;h2&gt;Scrum Master&lt;/h2&gt;
+    &lt;p&gt;Viktor Haimi&lt;/p&gt;
+    &lt;h2&gt;Grafiikat&lt;/h2&gt;
+    &lt;p&gt;Frida Brander&lt;/p&gt;
+    &lt;h2&gt;Musiikki&lt;/h2&gt;
+    &lt;p&gt;www.bensound.com&lt;/p&gt;</string>
 </resources>

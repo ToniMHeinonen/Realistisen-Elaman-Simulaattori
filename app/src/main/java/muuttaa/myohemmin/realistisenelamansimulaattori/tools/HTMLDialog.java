@@ -18,27 +18,28 @@ import muuttaa.myohemmin.realistisenelamansimulaattori.R;
  * @version 1.0.2
  * @since 1.0
  */
-public class TutorialDialog extends Dialog implements
+public class HTMLDialog extends Dialog implements
         View.OnClickListener {
 
-    public enum Tutorial {
+    public enum HTMLText {
         SCENARIO,
         SCENE,
-        ANSWER
+        ANSWER,
+        CREDITS
     }
 
     private Activity activity;
-    private Tutorial tutorial;
+    private HTMLText htmlText;
 
     /**
      * Initializes necessary values.
      * @param a current activity
-     * @param tutorial selected tutorial
+     * @param htmlText selected text to show
      */
-    public TutorialDialog(Activity a, Tutorial tutorial) {
+    public HTMLDialog(Activity a, HTMLText htmlText) {
         super(a);
         this.activity = a;
-        this.tutorial = tutorial;
+        this.htmlText = htmlText;
     }
 
     /**
@@ -49,7 +50,7 @@ public class TutorialDialog extends Dialog implements
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
-        setContentView(R.layout.tutorial_dialog);
+        setContentView(R.layout.html_dialog);
 
         // Set dialog window size to 90% of the screen width and height
         int width = (int)(activity.getResources().getDisplayMetrics().widthPixels*0.90);
@@ -66,7 +67,7 @@ public class TutorialDialog extends Dialog implements
      * Changes texts of views and shows necessary views.
      */
     private void initializeViews() {
-        switch (tutorial) {
+        switch (htmlText) {
             case SCENARIO:
                 setTutorialText(activity.getString(R.string.tutorial_scenario));
                 break;
@@ -75,6 +76,9 @@ public class TutorialDialog extends Dialog implements
                 break;
             case ANSWER:
                 setTutorialText(activity.getString(R.string.tutorial_answer));
+                break;
+            case CREDITS:
+                setTutorialText(activity.getString(R.string.credits_html));
                 break;
         }
     }
@@ -112,19 +116,18 @@ public class TutorialDialog extends Dialog implements
      * Checks tutorial as read.
      */
     private void confirm() {
-        switch (tutorial) {
+        switch (htmlText) {
             case SCENARIO:
                 GlobalPrefs.saveTutorialScenario(false);
-                dismiss();
                 break;
             case SCENE:
                 GlobalPrefs.saveTutorialScene(false);
-                dismiss();
                 break;
             case ANSWER:
                 GlobalPrefs.saveTutorialAnswer(false);
-                dismiss();
                 break;
         }
+
+        dismiss();
     }
 }
