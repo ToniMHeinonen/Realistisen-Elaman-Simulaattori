@@ -69,6 +69,8 @@ public class ChooseScenarioActivity extends ParentActivity {
         setContentView(R.layout.activity_main);
         json = new SaveSystemPreferences(this);
 
+        checkIfSceneNull(getIntent().getBooleanExtra("null_scene", false));
+
         loadHeaderText();
         setupSorting(); // Setup sorting spinner
 
@@ -84,6 +86,20 @@ public class ChooseScenarioActivity extends ParentActivity {
     protected void onResume() {
         refreshActivity();
         super.onResume();
+    }
+
+    /**
+     * If user trained a scenario and it did not have the scene where an answer was supposed
+     * to lead to, show an error to the user.
+     * @param isNull if scene is null where answer leads to
+     */
+    private void checkIfSceneNull(boolean isNull) {
+        if (isNull) {
+            Helper.showAlert(this, getString(R.string.scene_null_error),
+                    getString(R.string.scene_null_error_text),
+                    null, Helper.HIDE_NEGATIVE_BUTTON,
+                    null, null);
+        }
     }
 
     /**

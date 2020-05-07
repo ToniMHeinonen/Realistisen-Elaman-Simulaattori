@@ -20,6 +20,11 @@
         <item>@string/sort_percentage</item>
     </string-array>
 
+    <!-- SCENARIO -->
+    <string name="scene_null_error">Scene was not found!</string>
+    <string name="scene_null_error_text">Scene was not found where this answer leads to. Check that
+    your answer leads to a correct scene in this scenario.</string>
+
     <!-- GAME OVER ACTIVITY -->
     <string name="completed_scenario">Completed scenario:\u0020\n</string>
     <string name="completed_percentage">Completed percentage:\u0020</string>

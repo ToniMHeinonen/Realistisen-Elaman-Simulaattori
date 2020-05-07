@@ -20,6 +20,11 @@
         <item>@string/sort_percentage</item>
     </string-array>
 
+    <!-- SCENARIO -->
+    <string name="scene_null_error">Kohtausta ei löytynyt!</string>
+    <string name="scene_null_error_text">Kohtausta, johon tämä vastaus johtaa ei löytynyt. Tarkista,
+    että vastauksesi johtaa oikeaan kohtaukseen tässä skenaariossa.</string>
+
     <!-- GAME OVER ACTIVITY -->
     <string name="completed_scenario">Suoritettu skenaario:\u0020\n</string>
     <string name="completed_percentage">Onnistumisprosentti:\u0020</string>

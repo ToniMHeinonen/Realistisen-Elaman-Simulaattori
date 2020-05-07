@@ -1,16 +1,8 @@
 package muuttaa.myohemmin.realistisenelamansimulaattori;
 
 import android.content.Intent;
-import android.graphics.Color;
-import android.graphics.drawable.ColorDrawable;
-import android.graphics.drawable.Drawable;
-import android.graphics.drawable.TransitionDrawable;
 import android.os.Bundle;
 import android.os.Handler;
-import android.view.View;
-import android.view.animation.Animation;
-import android.view.animation.TranslateAnimation;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
@@ -20,9 +12,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
 
-import androidx.core.content.ContextCompat;
 import muuttaa.myohemmin.realistisenelamansimulaattori.data.SaveSystemPreferences;
-import muuttaa.myohemmin.realistisenelamansimulaattori.tools.Debug;
 import muuttaa.myohemmin.realistisenelamansimulaattori.tools.GlobalPrefs;
 
 public class ScenarioActivity extends ParentActivity {
@@ -179,6 +169,12 @@ public class ScenarioActivity extends ParentActivity {
      * Update images from json-file.
      */
     private void updateImages() {
+        // If this is null, then scene name is wrong
+        if (saveSystem.getBackgroundPicture() == null) {
+            showSceneNullError();
+            return;
+        }
+
         background.setImageResource(getResources()
                 .getIdentifier(saveSystem.getBackgroundPicture(),
         "drawable", getApplicationContext()
@@ -206,5 +202,15 @@ public class ScenarioActivity extends ParentActivity {
             "drawable", getApplicationContext()
                     .getPackageName()));
         }
+    }
+
+    /**
+     * Shows scene is null error in ChooseScenarioActivity.
+     */
+    private void showSceneNullError() {
+        Intent i = new Intent(this, ChooseScenarioActivity.class);
+        i.putExtra("null_scene", true);
+        startActivity(i);
+        finish();
     }
 }
