@@ -34,7 +34,7 @@
     <string name="my_tasks">My Tasks</string>
     <string name="settings">Settings</string>
     <string name="createScenario">Create scenario</string>
-    <string name="scenarios">Scenarios</string>
+    <string name="scenarios">My created scenarios</string>
     <string name="addCategory">Add</string>
     <string name="renameCategory">Rename</string>
     <string name="deleteButton">Delete</string>

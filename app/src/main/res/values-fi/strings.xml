@@ -31,10 +31,10 @@
     <string name="back_to_menu">Takaisin aloitusvalikkoon</string>
 
     <!-- CHOOSE SCENARIO ACTIVITY -->
-    <string name="my_tasks">Mun tehtävät</string>
+    <string name="my_tasks">Minun tehtäväni</string>
     <string name="settings">Asetukset</string>
     <string name="createScenario">Luo skenaario</string>
-    <string name="scenarios">Skenaariot</string>
+    <string name="scenarios">Omat luodut skenaariot</string>
     <string name="addCategory">Lisää</string>
     <string name="renameCategory">Muuta</string>
     <string name="deleteButton">Poista</string>
