@@ -43,7 +43,7 @@
     <string name="addCategory">Add</string>
     <string name="renameCategory">Rename</string>
     <string name="deleteButton">Delete</string>
-    <string name="playButton">Play</string>
+    <string name="playButton">Train</string>
     <string name="modifyButton">Modify</string>
     <string name="resetButton">Reset</string>
     <string name="newCategory">New category</string>

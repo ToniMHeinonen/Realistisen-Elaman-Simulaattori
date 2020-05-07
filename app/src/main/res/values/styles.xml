@@ -51,7 +51,7 @@
 
     <!-- Choose Scenario Activity -->
     <style name="HamburgerButton">
-        <item name="android:layout_width">150dp</item>
+        <item name="android:layout_width">175dp</item>
         <item name="android:layout_height">60dp</item>
         <item name="android:layout_gravity">center</item>
         <item name="android:layout_margin">10dp</item>

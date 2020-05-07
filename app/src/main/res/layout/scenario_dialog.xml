@@ -22,7 +22,8 @@
             <Button
                 android:id="@+id/playButton"
                 style="@style/HamburgerButton"
-                android:text="@string/playButton" />
+                android:text="@string/playButton"
+                android:background="@drawable/confirm_button"/>
 
             <Button
                 android:id="@+id/resetButton"
