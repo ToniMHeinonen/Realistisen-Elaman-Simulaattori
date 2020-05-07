@@ -154,9 +154,13 @@
     &lt;p&gt;1. Anna skenaariollesi nimi (nimen on oltava uniikki)&lt;/p&gt;
     &lt;p&gt;2. Paina \"&create_scene;\" nappia lisätäksesi kohtauksia skenaariollesi&lt;/p&gt;
     &lt;p&gt;3. Kun skenaario on valmis paina \"&add;\" nappia&lt;/p&gt;
+    &lt;h2&gt;&export_file;&lt;/h2&gt;
     &lt;p&gt;Pystyt viemään luodut skenaariosi json tiedostona painamalla \"&export_file;\" nappia ja valitsemalla
-    mihin haluat skenaariosi viedä talteen. On myös mahdollista tuoda json skenaario tiedostoja sovellukseesi,
+    mihin haluat skenaariosi viedä talteen.&lt;/p&gt;
+    &lt;h2&gt;&import_file;&lt;/h2&gt;
+    &lt;p&gt;On myös mahdollista tuoda json skenaario tiedostoja sovellukseesi,
     paina vain \"&import_file;\" nappia ja valitse tiedosto minkä haluat tuoda.&lt;/p&gt;
+    &lt;h2&gt;Kohtauksien poistaminen&lt;/h2&gt;
     &lt;p&gt;Voit myös poistaa luotuja kohtauksia pitämällä luodun kohtauksen nappia pohjassa.&lt;/p&gt;</string>
     <string name="tutorial_scene">
     &lt;h1&gt;Kohtauksen luominen&lt;/h1&gt;
@@ -165,6 +169,7 @@
     &lt;p&gt;3. Kirjoita kysymys kohtaukselle&lt;/p&gt;
     &lt;p&gt;4. Luo ainakin yksi vastaus kohtaukselle painamalla \"&create_answer;\" nappia&lt;/p&gt;
     &lt;p&gt;5. Kun kohtaus on valmis paina \"&done;\" nappia&lt;/p&gt;
+    &lt;h2&gt;Vastauksien poistaminen&lt;/h2&gt;
     &lt;p&gt;Voit myös poistaa luotuja vastauksia pitämällä luodun vastauksen nappia pohjassa.&lt;/p&gt;</string>
     <string name="tutorial_answer">
     &lt;h1&gt;Vastauksen luominen&lt;/h1&gt;
@@ -174,6 +179,7 @@
     &lt;p&gt;4. Kun vastaus on valmis paina \"&done;\" nappia&lt;/p&gt;
     &lt;p&gt;Värien merkitykset: Vihreä on haluttu vastaus, keltainen on melkein oikein ja punainen ei ole
         niin hyvä vastaus.&lt;/p&gt;
-    &lt;p&gt;Huom: Jos poistat tai uudelleennimeät kohtauksia ja jotkut vastaukset johtavat siihen kohtaukseen,
+    &lt;h2&gt;Huom:&lt;/h2&gt;
+    &lt;p&gt;Jos poistat tai uudelleennimeät kohtauksia ja jotkut vastaukset johtavat siihen kohtaukseen,
         muista käydä muuttamassa mihin ne vastaukset johtavat.&lt;/p&gt;</string>
 </resources>
