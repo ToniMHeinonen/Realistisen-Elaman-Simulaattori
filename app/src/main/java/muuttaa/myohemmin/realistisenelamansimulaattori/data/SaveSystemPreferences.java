@@ -1015,4 +1015,56 @@ public class SaveSystemPreferences implements JsonInterface {
         Context localizedContext = context.createConfigurationContext(conf);
         return localizedContext.getResources();
     }
+
+    /**
+     * This method tell if same scenario is in user's save and resources
+     * @return true if contains same else false
+     */
+    public boolean containsSameScenarioUserAndApp(){
+        String user = getStringFromFile("savedata2.json");
+        try{
+            JSONObject base = new JSONObject(user);
+            JSONArray array = base.getJSONArray("scenarios");
+            for(int la=0; la < array.length(); la++) {
+                if (alreadyInResources(array.getString(la))){
+                    return true;
+                }
+            }
+        } catch (JSONException e){
+            if(debuggi){
+                e.printStackTrace();
+            }
+        }
+        return false;
+    }
+
+    /**
+     * This method give list all same scenarios
+     * @return if null list is zero else list contains data
+     */
+    public List<String> getSameScenariosInResourceAndUser(){
+        String user = getStringFromFile("savedata2.json");
+        try{
+            JSONObject base = new JSONObject(user);
+            JSONArray array = base.getJSONArray("scenarios");
+            List<String> helppi = new LinkedList<>();
+            for(int la=0; la < array.length(); la++) {
+                String vertaus = array.getString(la);
+                if (alreadyInResources(vertaus)){
+                    helppi.add(vertaus);
+                }
+            }
+            if(helppi.size() == 0){
+                return null;
+            } else{
+                return helppi;
+            }
+        } catch (JSONException e){
+            if(debuggi){
+                e.printStackTrace();
+            }
+        }
+
+        return null;
+    }
 }
