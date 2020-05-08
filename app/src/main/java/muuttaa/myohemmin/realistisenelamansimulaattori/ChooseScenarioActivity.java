@@ -70,6 +70,7 @@ public class ChooseScenarioActivity extends ParentActivity {
         json = new SaveSystemPreferences(this);
 
         checkIfSceneNull(getIntent().getBooleanExtra("null_scene", false));
+        checkDuplicateScenarios();
 
         loadHeaderText();
         setupSorting(); // Setup sorting spinner
@@ -86,6 +87,23 @@ public class ChooseScenarioActivity extends ParentActivity {
     protected void onResume() {
         refreshActivity();
         super.onResume();
+    }
+
+    /**
+     * Show warning about duplicate scenarios if any.
+     *
+     * Duplicates are possible if user has created for example scenario "Shop" and then
+     * we add a scenario in a update called "Shop".
+     */
+    private void checkDuplicateScenarios() {
+        if (jsonPrefs.containsSameScenarioUserAndApp()) {
+            List<String>  duplicates = jsonPrefs.getSameScenariosInResourceAndUser();
+            for (String name : duplicates) {
+                Helper.showAlert(this, getString(R.string.duplicateScenarioWarning),
+                        getString(R.string.duplicateScenarioWarningText, name), null,
+                        Helper.HIDE_NEGATIVE_BUTTON, null, null);
+            }
+        }
     }
 
     /**
@@ -135,7 +153,6 @@ public class ChooseScenarioActivity extends ParentActivity {
         for (int i = 0; i < scenarioNames.size(); i++) {
             String name = scenarioNames.get(i);
             ScenarioItem scenario = new ScenarioItem(name);
-
             // If scenario is not user created
             if (!jsonPrefs.checkIfScenarioIsUserCreated(name)) {
                 String category = json.getCategory(name);

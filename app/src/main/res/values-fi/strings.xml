@@ -59,6 +59,11 @@
     <string name="scenarioDeleteText">Skenaario poistetaan lopullisesti. Haluatko varmasti poistaa
         skenaarion?</string>
 
+    <string name="duplicateScenarioWarning">Kaksi saman nimistä skenaariota!</string>
+    <string name="duplicateScenarioWarningText">Päivitys lisäsi uusia skenaarioita, joista yhdellä on
+    sama nimi kuin luodullasi skenaariolla \"%1$s\". Nimeä luomasi skenaario uudestaan, muuten se
+    ei toimi oikein.</string>
+
     <!-- CUSTOM ALERT DIALOG -->
     <string name="alertTopic">Huomio!</string>
     <string name="alertMessage">Oletko varma?</string>
