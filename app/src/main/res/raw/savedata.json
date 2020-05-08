@@ -1,5 +1,5 @@
 {
-  "scenarios": [ "Movie Theater", "Store Checkout", "Bus Trip", "Visiting the library", "Taking care of a dog", "Traveling by plane", "Traveling by tram", "Calling the emergency number", "Practices"],
+  "scenarios": [ "Movie Theater", "Store Checkout", "Bus Trip", "Visiting the library", "Taking care of a dog", "Traveling by plane", "Traveling by tram", "Calling the emergency number", "Practices", "Restaurant"],
   "scenarioslist": [
     {"name": "Movie Theater", "file": "teatteri.json", "category": "Entertainment"},
     {"name": "Store Checkout", "file": "kaupan_kassa.json", "category": "Store"},
@@ -9,6 +9,7 @@
     {"name":  "Traveling by plane", "file": "lentokone.json", "category": "Traveling"},
     {"name":  "Traveling by tram", "file": "ratikka.json", "category": "Traveling"},
     {"name":  "Calling the emergency number", "file": "hatanumero.json", "category": "Emergency"},
-    {"name":  "Practices", "file": "harrastukseenmeno.json", "category": "Entertainment"}
+    {"name":  "Practices", "file": "harrastukseenmeno.json", "category": "Entertainment"},
+    {"name":  "Restaurant", "file": "ravintola.json", "category": "Entertainment"}
   ]
 }

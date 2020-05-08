@@ -1,5 +1,5 @@
 {
-  "scenarios": [ "Leffateatteri", "Kaupan kassa", "Bussimatka", "Kirjastossa käyminen", "Koirasta huolehtiminen", "Lentokoneella kulkeminen", "Ratikalla kulkeminen", "Hätänumeroon soittaminen", "Harrastukseen meneminen"],
+  "scenarios": [ "Leffateatteri", "Kaupan kassa", "Bussimatka", "Kirjastossa käyminen", "Koirasta huolehtiminen", "Lentokoneella kulkeminen", "Ratikalla kulkeminen", "Hätänumeroon soittaminen", "Harrastukseen meneminen", "Ravintola"],
   "scenarioslist": [
     {"name": "Leffateatteri", "file": "teatteri.json", "category": "Huvitukset"},
     {"name": "Kaupan kassa", "file": "kaupan_kassa.json", "category": "Kauppa"},
@@ -9,6 +9,7 @@
     {"name":  "Lentokoneella kulkeminen", "file": "lentokone.json", "category": "Matkustaminen"},
     {"name":  "Ratikalla kulkeminen", "file": "ratikka.json", "category": "Matkustaminen"},
     {"name":  "Hätänumeroon soittaminen", "file": "hatanumero.json", "category": "Hätätilanteet"},
-    {"name":  "Harrastukseen meneminen", "file": "harrastukseenmeno.json", "category": "Huvitukset"}
+    {"name":  "Harrastukseen meneminen", "file": "harrastukseenmeno.json", "category": "Huvitukset"},
+    {"name":  "Ravintola", "file": "ravintola.json", "category": "Huvitukset"}
   ]
 }
