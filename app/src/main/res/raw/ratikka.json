@@ -2,9 +2,9 @@
   "first": {
     "question": "You decide to travel by tram. As you walk to the tram stop, you think about how you plan to pay for the ride.",
     "background": "background_1",
-    "person": "null",
-    "fore": "null",
-    "face": "null",
+    "person": "character_1",
+    "fore": "fore_1",
+    "face": "face_happy",
     "answers": [
       "You order a ticket with the tram company's mobile app",
       "You have already loaded the value into the travel card in advance",
@@ -25,7 +25,7 @@
     "background": "background_1",
     "person": "character_1",
     "face": "face_happy",
-    "fore": "null",
+    "fore": "fore_1",
     "answers": [
       "You’re not doing anything to show the tram driver that you want into the tram",
       "You stand up and wave with your other hand to indicate that you want into the tram",
@@ -42,8 +42,8 @@
     "question": "The tram continued its ride without stopping at the stop. What do you do?",
     "background": "background_1",
     "person": "character_1",
-    "face": "face_happy",
-    "fore": "null",
+    "face": "face_confused",
+    "fore": "fore_1",
     "answers": [
       "You will go home",
       "You will wait for the next tram you will eventually get into"
@@ -58,7 +58,7 @@
     "background": "background_1",
     "person": "character_1",
     "face": "face_happy",
-    "fore": "null",
+    "fore": "fore_1",
     "answers": [
       "You’re not doing anything to show the tram driver that you want into the tram",
       "You stand up and wave with your other hand to indicate that you want into the tram",
@@ -75,8 +75,8 @@
     "question": "The tram continued its ride without stopping at the stop. What do you do?",
     "background": "background_1",
     "person": "character_1",
-    "face": "face_happy",
-    "fore": "null",
+    "face": "face_confused",
+    "fore": "fore_1",
     "answers": [
       "You will go home",
       "You will order the ticket with the mobile app and wait for the next tram"
@@ -90,8 +90,8 @@
     "question": "You get into the tram, but there is a ticket inspector in front of you. He's going to give you a fine and remove you from the tram.",
     "background": "background_1",
     "person": "character_1",
-    "face": "face_happy",
-    "fore": "null",
+    "face": "face_sad",
+    "fore": "fore_1",
     "answers": [
       "You accept the fine, apologize, leave the tram, and next time you will pay for the ticket",
       "You try to run away and will try the same way next time too"
@@ -106,7 +106,7 @@
     "background": "background_1",
     "person": "character_1",
     "face": "face_happy",
-    "fore": "null",
+    "fore": "fore_1",
     "answers": [
       "You go to sit on a free bench next to another person",
       "You go to sit on a free bench alone",
@@ -124,7 +124,7 @@
     "background": "background_1",
     "person": "character_1",
     "face": "face_happy",
-    "fore": "null",
+    "fore": "fore_1",
     "answers": [
       "You press the stop button at the very last minute before the stop",
       "No one has pressed the stop button, so you press it well in advance before the stop",
@@ -142,7 +142,7 @@
     "background": "background_1",
     "person": "character_1",
     "face": "face_happy",
-    "fore": "null",
+    "fore": "fore_1",
     "answers": [
       "You calmly leave the tram",
       "You thank the other passengers for the ride and leave the tram",
