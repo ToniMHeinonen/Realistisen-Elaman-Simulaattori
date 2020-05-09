@@ -38,7 +38,7 @@ import muuttaa.myohemmin.realistisenelamansimulaattori.R;
  */
 public class SaveSystemPreferences implements JsonInterface {
     private Context context;
-    private boolean debuggi = true;
+    private boolean debuggi = false;
     private List<String> list;
     private String scenarie;
     private String scenarioName;
@@ -1022,6 +1022,9 @@ public class SaveSystemPreferences implements JsonInterface {
      */
     public boolean containsSameScenarioUserAndApp(){
         String user = getStringFromFile("savedata2.json");
+        if(user == null){
+            return false;
+        }
         try{
             JSONObject base = new JSONObject(user);
             JSONArray array = base.getJSONArray("scenarios");
