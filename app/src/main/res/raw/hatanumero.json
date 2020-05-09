@@ -2,9 +2,9 @@
   "first": {
     "question": "You are walking down the street when you see a man lying on the ground unconscious.",
     "background": "background_1",
-    "person": "null",
+    "person": "character_7",
     "fore": "null",
-    "face": "null",
+    "face": "face_uncomfortable",
     "answers": [
       "You ignore him and continue your journey",
       "You try to gently wake him up",
@@ -20,9 +20,9 @@
   "eiHeraa": {
     "question": "The unconscious person does not react in any way when trying to wake him up.",
     "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
+    "person": "character_7",
     "fore": "null",
+    "face": "face_uncomfortable",
     "answers": [
       "You call the emergency number",
       "You walk away"
@@ -34,10 +34,10 @@
   },
   "alkuSoitto": {
     "question": "The emergency center answers your call quickly.",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
+    "background": "background_5",
+    "person": "character_5",
     "fore": "null",
+    "face": "face_happy",
     "answers": [
       "You calmly tell of an unconscious person lying on the ground",
       "You ask the ERC operator how they're doing, after which you tell about the unconscious person",
@@ -52,10 +52,10 @@
   },
   "alkuSoittoFail": {
     "question": "You will be called back from the emergency center, after which you will tell about the unconscious person. The ERC operator asks for the address.",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
+    "background": "background_5",
+    "person": "character_5",
     "fore": "null",
+    "face": "face_happy",
     "answers": [
       "You tell them your home address",
       "You tell them the address where you are right now"
@@ -67,10 +67,10 @@
   },
   "alkuSoittoOsoiteFail": {
     "question": "You realize you made a mistake and tell the address where you are right now. The ERC operator asks about the condition of the unconscious person.",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
+    "background": "background_5",
+    "person": "character_5",
     "fore": "null",
+    "face": "face_happy",
     "answers": [
       "You answer the questions calmly and truthfully to the best of your ability",
       "You answer the questions vaguely"
@@ -82,10 +82,10 @@
   },
   "soittoKaks": {
     "question": "The ERC operator asks about the condition of the unconscious person.",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
+    "background": "background_5",
+    "person": "character_5",
     "fore": "null",
+    "face": "face_happy",
     "answers": [
       "You answer the questions calmly and truthfully to the best of your ability",
       "You answer the questions vaguely"
@@ -97,10 +97,10 @@
   },
   "soittoKolme": {
     "question": "The ERC operator will tell that you can end the call, but asks you to monitor the condition of the unconscious person while waiting for the ambulance.",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
+    "background": "background_5",
+    "person": "character_5",
     "fore": "null",
+    "face": "face_happy",
     "answers": [
       "You end the call and go home",
       "You end the call and wait for the ambulance",
@@ -116,9 +116,9 @@
   "soittoNelja": {
     "question": "The ambulance arrives, and the ambulance worker notifies you that you can leave the scene.",
     "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
+    "person": "character_7",
     "fore": "null",
+    "face": "face_happy",
     "answers": [
       "You will go home",
       "You disturb the ambulance workers"

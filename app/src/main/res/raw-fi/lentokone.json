@@ -2,9 +2,9 @@
   "first": {
     "question": "Saavut lentokentälle aikeenasi matkustaa lentokoneella. Olet varannut lennot, mutta et ole vielä tehnyt lähtöselvitystä. Mitä teet ensimmäisenä?",
     "background": "background_1",
-    "person": "null",
+    "person": "character_1",
     "fore": "fore_1",
-    "face": "null",
+    "face": "face_happy",
     "answers": [
       "Teet lähtöselvityksen lentoyhtiön verkkosivulla",
       "Teet lähtöselvityksen lähtöselvitystiskillä- tai automaatilla",
@@ -19,10 +19,10 @@
   },
   "lahtoselvitysTehty": {
     "question": "Mitä teet seuraavaksi? Mukanasi on ruumaan meneviä tavaroita.",
-    "background": "background_2",
-    "person": "character_2",
+    "background": "background_1",
+    "person": "character_1",
     "face": "face_happy",
-    "fore": "fore_2",
+    "fore": "fore_1",
     "answers": [
       "Menet suoraan turvatarkastukseen",
       "Menet matkatavaratiskille",
@@ -39,8 +39,8 @@
     "question": "Turvatarkastuksesta sinut ohjataan takaisin matkatavaratiskille.",
     "background": "background_1",
     "person": "character_1",
-    "face": "face_happy",
-    "fore": "null",
+    "face": "face_sad",
+    "fore": "fore_7",
     "answers": [
       "Menet uudestaan turvatarkastukseen jätettyäsi matkatavarat tiskille",
       "Poistut lentokentältä haistateltuasi ensin turvatarkastajalle"
@@ -52,10 +52,10 @@
   },
   "matkatavaratJatetty": {
     "question": "Olet tehnyt lähtöselvityksen ja jättänyt matkatavarat matkatavaratiskille- tai automaatille. Mitä teet seuraavaksi?",
-    "background": "background_2",
-    "person": "character_2",
+    "background": "background_1",
+    "person": "character_1",
     "face": "face_happy",
-    "fore": "fore_2",
+    "fore": "null",
     "answers": [
       "Pyörit ympäri lentokenttää ja menet viime tingassa turvatarkastukseen",
       "Menet turvatarkastukseen",
@@ -73,7 +73,7 @@
     "background": "background_1",
     "person": "character_1",
     "face": "face_happy",
-    "fore": "null",
+    "fore": "fore_7",
     "answers": [
       "Asetat taskuissasi olevat tavarat sille kuuluvaan muovilaatikkoon ja todistat henkilöllisyytesi turvatarkastajalle",
       "Pidät tavarat taskuissasi"
@@ -88,7 +88,7 @@
     "background": "background_1",
     "person": "character_1",
     "face": "face_happy",
-    "fore": "null",
+    "fore": "fore_7",
     "answers": [
       "Katsot infotaululta oman lentosi lähtöportin, jonka lähettyville siirryt odottelemaan lentoa",
       "Kiertelet kaupoissa ja saavut portille viime tingassa",
@@ -124,7 +124,7 @@
     "background": "background_1",
     "person": "character_1",
     "face": "face_happy",
-    "fore": "null",
+    "fore": "fore_1",
     "answers": [
       "Menet jonon perälle odottamaan vuoroasi",
       "Lähdet vielä kaupoille ja saavut viime tingassa takaisin portille",

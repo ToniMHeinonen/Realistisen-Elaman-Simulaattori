@@ -2,9 +2,9 @@
   "first": {
     "question": "Päätät kulkea ratikalla. Kävellessäsi pysäkille mietit, miten aiot maksaa matkan.",
     "background": "background_1",
-    "person": "null",
-    "fore": "null",
-    "face": "null",
+    "person": "character_1",
+    "fore": "fore_1",
+    "face": "face_happy",
     "answers": [
       "Tilaat lipun ratikkayhtiön mobiilisovelluksella",
       "Olet jo etukäteen ladannut matkakorttiin arvoa",
@@ -25,7 +25,7 @@
     "background": "background_1",
     "person": "character_1",
     "face": "face_happy",
-    "fore": "null",
+    "fore": "fore_1",
     "answers": [
       "Et tee elettäkään osoittaaksesi ratikkakuskille, että olet nousemassa kyytiin",
       "Nouset seisomaan ja heilutat toisella kädellä osoittaaksesi, että haluat kyytiin",
@@ -42,8 +42,8 @@
     "question": "Ratikka jatkoi matkaa pysähtymättä pysäkille. Mitä teet?",
     "background": "background_1",
     "person": "character_1",
-    "face": "face_happy",
-    "fore": "null",
+    "face": "face_confused",
+    "fore": "fore_1",
     "answers": [
       "Lähdet kotiin",
       "Odotat seuraavaa ratikkaa, johon pääset lopulta sisään"
@@ -58,7 +58,7 @@
     "background": "background_1",
     "person": "character_1",
     "face": "face_happy",
-    "fore": "null",
+    "fore": "fore_1",
     "answers": [
       "Et tee elettäkään osoittaaksesi ratikkakuskille, että olet nousemassa kyytiin",
       "Nouset seisomaan ja heilutat toisella kädellä osoittaaksesi, että haluat kyytiin",
@@ -75,8 +75,8 @@
     "question": "Ratikka jatkoi matkaa pysähtymättä pysäkille. Mitä teet?",
     "background": "background_1",
     "person": "character_1",
-    "face": "face_happy",
-    "fore": "null",
+    "face": "face_confused",
+    "fore": "fore_1",
     "answers": [
       "Lähdet kotiin",
       "Tilaat lipun mobiilisovelluksella ja odotat seuraavaa ratikkaa"
@@ -90,8 +90,8 @@
     "question": "Pääset ratikkaan sisään, mutta vastassa onkin lipuntarkastaja. Hän aikoo antaa sakot ja poistaa sinut ratikasta.",
     "background": "background_1",
     "person": "character_1",
-    "face": "face_happy",
-    "fore": "null",
+    "face": "face_sad",
+    "fore": "fore_1",
     "answers": [
       "Otat sakot vastaan, pahoittelet, poistut ratikasta ja ensi kerralla maksat lipusta",
       "Yrität karata paikalta ja jatkaa samalla tavalla ensi kerrallakin"
@@ -106,7 +106,7 @@
     "background": "background_1",
     "person": "character_1",
     "face": "face_happy",
-    "fore": "null",
+    "fore": "fore_1",
     "answers": [
       "Menet istumaan vapaalle penkille toisen henkilön viereen",
       "Menet istumaan vapaalle penkille yksin",
@@ -124,7 +124,7 @@
     "background": "background_1",
     "person": "character_1",
     "face": "face_happy",
-    "fore": "null",
+    "fore": "fore_1",
     "answers": [
       "Painat stop-painiketta aivan viime hetkellä ennen pysäkkiä",
       "Kukaan ei ole painanut stop-painiketta, joten painat sitä hyvissä ajoin ennen pysäkkiä",
@@ -142,7 +142,7 @@
     "background": "background_1",
     "person": "character_1",
     "face": "face_happy",
-    "fore": "null",
+    "fore": "fore_1",
     "answers": [
       "Poistut rauhallisesti ratikasta",
       "Kiität muita matkustajia kyydistä ja poistut ratikasta",

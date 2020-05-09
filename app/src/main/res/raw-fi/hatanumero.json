@@ -2,9 +2,9 @@
   "first": {
     "question": "Olet kävelemässä kadulla, kun näet henkilön makaavan maassa tajuttomana.",
     "background": "background_1",
-    "person": "null",
+    "person": "character_7",
     "fore": "null",
-    "face": "null",
+    "face": "face_uncomfortable",
     "answers": [
       "Et ole huomaavinasi ja jatkat matkaasi",
       "Koitat varovasti herätellä häntä",
@@ -20,9 +20,9 @@
   "eiHeraa": {
     "question": "Tajuton henkilö ei reagoi mitenkään yrittäessäsi herättää hänet.",
     "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
+    "person": "character_7",
     "fore": "null",
+    "face": "face_uncomfortable",
     "answers": [
       "Soitat hätänumeroon",
       "Poistut paikalta"
@@ -34,10 +34,10 @@
   },
   "alkuSoitto": {
     "question": "Hätäkeskuksessa vastataan nopeasti puheluusi.",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
+    "background": "background_5",
+    "person": "character_5",
     "fore": "null",
+    "face": "face_happy",
     "answers": [
       "Kerrot rauhallisesti maassa makaavasta tajuttomasta henkilöstä",
       "Kyselet kuulumiset hätäkeskuksen päivystäjältä, jonka jälkeen kerrot tajuttomasta henkilöstä",
@@ -52,10 +52,10 @@
   },
   "alkuSoittoFail": {
     "question": "Hätäkeskuksesta soitetaan sinulle takaisin, jonka jälkeen kerrot tajuttomasta henkilöstä. Päivystäjä kysyy osoitetta.",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
+    "background": "background_5",
+    "person": "character_5",
     "fore": "null",
+    "face": "face_happy",
     "answers": [
       "Kerrot kotiosoitteesi",
       "Kerrot osoitteen, missä olette juuri nyt"
@@ -67,10 +67,10 @@
   },
   "alkuSoittoOsoiteFail": {
     "question": "Tajuat tehneesi virheen ja kerrot osoitteen, missä olette juuri nyt. Päivystäjä kyselee tajuttoman henkilön tilasta.",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
+    "background": "background_5",
+    "person": "character_5",
     "fore": "null",
+    "face": "face_happy",
     "answers": [
       "Vastailet kysymyksiin rauhallisesti ja totuudenmukaisesti parhaasi mukaan",
       "Vastailet kysymyksiin epäselvästi"
@@ -82,10 +82,10 @@
   },
   "soittoKaks": {
     "question": "Päivystäjä kyselee tajuttoman henkilön tilasta.",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
+    "background": "background_5",
+    "person": "character_5",
     "fore": "null",
+    "face": "face_happy",
     "answers": [
       "Vastailet kysymyksiin rauhallisesti ja totuudenmukaisesti parhaasi mukaan",
       "Vastailet kysymyksiin epäselvästi"
@@ -97,10 +97,10 @@
   },
   "soittoKolme": {
     "question": "Päivystäjä ilmoittaa, että voit lopettaa puhelun, mutta pyytää sinua tarkkailemaan tajuttoman henkilön tilaa ambulanssia odottaessa.",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
+    "background": "background_5",
+    "person": "character_5",
     "fore": "null",
+    "face": "face_happy",
     "answers": [
       "Lopetat puhelun ja lähdet kotiin",
       "Lopetat puhelun ja odotat ambulanssia",
@@ -116,9 +116,9 @@
   "soittoNelja": {
     "question": "Ambulanssi saapuu, ja ambulanssin työntekijä ilmoittaa, että voit poistua paikalta.",
     "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
+    "person": "character_7",
     "fore": "null",
+    "face": "face_happy",
     "answers": [
       "Lähdet kotiin",
       "Jäät häiritsemään ambulanssin työntekijöiden toimintaa"
