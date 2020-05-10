@@ -8,7 +8,7 @@
     <!ENTITY create_answer "Luo vastaus">
     ]>
 <resources>
-    <string name="app_name">Realistisen Elaman Simulaattori</string>
+    <string name="app_name">Realistisen Elämän Simulaattori</string>
 
     <!-- SORTING -->
     <string name="sort_name">Nimi</string>
