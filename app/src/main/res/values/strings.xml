@@ -174,7 +174,7 @@
     <string name="tutorial_scene">
     &lt;h1&gt;Creating a scene&lt;/h1&gt;
     &lt;p&gt;1. Select your desired image for the scene&lt;/p&gt;
-    &lt;p&gt;2. Give name to your scene (name must be unique)&lt;/p&gt;
+    &lt;p&gt;2. Give name to your scene (the name must be unique and first scene must be named "first")&lt;/p&gt;
     &lt;p&gt;3. Write a question to your scene&lt;/p&gt;
     &lt;p&gt;4. Create at least one answer to your scene by clicking the \"&create_answer;\" button&lt;/p&gt;
     &lt;p&gt;5. When the scene is ready press the \"&done;\" button&lt;/p&gt;
