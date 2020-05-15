@@ -20,9 +20,9 @@
   "liput": {
     "question": "You arrive at the checkout and put a ticket and treats you are about to buy on the counter.",
     "background": "background_1",
-    "person": "character_1",
+    "person": "character_2",
     "face": "face_happy",
-    "fore": "null",
+    "fore": "fore_2",
     "answers": [
       "You tell at which movie you’re going to go watch and say you want to buy a ticket",
       "You just give the seller treats, you don’t say anything and you go later to buy the ticket separately",
@@ -38,8 +38,8 @@
   "vessa": {
     "question": "You come out of the bathroom and notice a traffic jam in the movie theater.",
     "background": "background_1",
-    "person": "null",
-    "face": "null",
+    "person": "character_7",
+    "face": "face_uncomfortable",
     "fore": "null",
     "answers": [
       "You go to buy treats and tickets",
@@ -53,8 +53,8 @@
   "paikka": {
     "question": "You stand still and you don’t know what to do.",
     "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
+    "person": "character_7",
+    "face": "face_uncomfortable",
     "fore": "null",
     "answers": [
       "You ask the theater staff what you should do",
@@ -68,7 +68,7 @@
   "lahteminen": {
     "question": "You leave the theater and go back home.",
     "background": "background_1",
-    "person": "character_1",
+    "person": "character_7",
     "face": "face_happy",
     "fore": "null",
     "answers": [
@@ -86,8 +86,8 @@
   "odottaa": {
     "question": "You have purchased a ticket and you notice a free seat outside the hall.",
     "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
+    "person": "character_7",
+    "face": "face_surprised",
     "fore": "null",
     "answers": [
       "You go to sit in that place",
@@ -101,8 +101,8 @@
   "saliin": {
     "question": "People are allowed to enter the hall.",
     "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
+    "person": "character_7",
+    "face": "face_confused",
     "fore": "null",
     "answers": [
       "You go to the queue",
@@ -119,8 +119,8 @@
   "tilanne": {
     "question": "A person in poor condition comes to wait to enter the hall, but is not able to sit anywhere.",
     "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
+    "person": "character_7",
+    "face": "face_confused",
     "fore": "null",
     "answers": [
       "You offer your own place",
@@ -137,7 +137,7 @@
   "jalkeen": {
     "question": "The movie is over.",
     "background": "background_1",
-    "person": "character_1",
+    "person": "character_7",
     "face": "face_happy",
     "fore": "null",
     "answers": [

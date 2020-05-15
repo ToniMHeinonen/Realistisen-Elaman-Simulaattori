@@ -20,9 +20,9 @@
   "liput": {
     "question": "Saavut kassalle ja laitat tiskille lipun ja herkut, jotka aiot juuri ostaa.",
     "background": "background_1",
-    "person": "character_1",
+    "person": "character_2",
     "face": "face_happy",
-    "fore": "null",
+    "fore": "fore_2",
     "answers": [
       "Kerrot, mihin leffaan aiot mennä ja sanot haluavasi ostaa lipun",
       "Annat myyjälle vain herkut, et sano mitään ja käyt myöhemmin ostamassa lipun erikseen",
@@ -38,8 +38,8 @@
   "vessa": {
     "question": "Tulet ulos vessasta ja huomaat ruuhkaa elokuvateatterissa.",
     "background": "background_1",
-    "person": "null",
-    "face": "null",
+    "person": "character_7",
+    "face": "face_uncomfortable",
     "fore": "null",
     "answers": [
       "Menet ostamaan herkut ja liput",
@@ -53,8 +53,8 @@
   "paikka": {
     "question": "Seisot paikallasi, etkä tiedä mitä tehdä.",
     "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
+    "person": "character_7",
+    "face": "face_uncomfortable",
     "fore": "null",
     "answers": [
       "Kysyt teatterin henkilökunnalta, mitä sinun pitäisi tehdä",
@@ -68,7 +68,7 @@
   "lahteminen": {
     "question": "Lähdet teatterista kotiin.",
     "background": "background_1",
-    "person": "character_1",
+    "person": "character_7",
     "face": "face_happy",
     "fore": "null",
     "answers": [
@@ -86,8 +86,8 @@
   "odottaa": {
     "question": "Olet saanut ostettua lipun ja huomaat vapaan istumapaikan salin ulkopuolella.",
     "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
+    "person": "character_7",
+    "face": "face_surprised",
     "fore": "null",
     "answers": [
       "Menet istumaan kyseiselle paikalle",
@@ -101,8 +101,8 @@
   "saliin": {
     "question": "Saliin päästetään sisälle.",
     "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
+    "person": "character_7",
+    "face": "face_confused",
     "fore": "null",
     "answers": [
       "Menet jonoon",
@@ -119,8 +119,8 @@
   "tilanne": {
     "question": "Huonokuntoinen ihminen tulee odottamaan saliin pääsyä, muttei pääse istumaan minnekään.",
     "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
+    "person": "character_7",
+    "face": "face_confused",
     "fore": "null",
     "answers": [
       "Tarjoat omaa paikkaasi",
@@ -137,7 +137,7 @@
   "jalkeen": {
     "question": "Elokuva on loppunut.",
     "background": "background_1",
-    "person": "character_1",
+    "person": "character_7",
     "face": "face_happy",
     "fore": "null",
     "answers": [
