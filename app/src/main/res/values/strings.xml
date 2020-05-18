@@ -50,6 +50,8 @@
     <string name="newCategory">New category</string>
     <string name="backButton">Close</string>
     <string name="categoryExists">Category already exists!</string>
+    <string name="defaultCategoryPremade">You can only move your own crated scenarios in to this
+    category!</string>
 
     <string name="scenarioReset">Reset</string>
     <string name="scenarioDelete">Delete</string>

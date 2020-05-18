@@ -50,6 +50,8 @@
     <string name="newCategory">Uusi kategoria</string>
     <string name="backButton">Sulje</string>
     <string name="categoryExists">Kategoria on jo olemassa!</string>
+    <string name="defaultCategoryPremade">Voit siirtää vain omia luotuja skenaarioitasi tähän
+    kategoriaan!</string>
 
     <string name="scenarioReset">Nollaa</string>
     <string name="scenarioDelete">Poista</string>

@@ -308,6 +308,13 @@ public class ChooseScenarioActivity extends ParentActivity {
                         // If dropped to default category, make value null
                         if (category == null ||
                                 category.equals(getString(R.string.scenarios))) {
+                            // Prevent moving premade scenarios to "My created scenarios" category
+                            if (!jsonPrefs.checkIfScenarioIsUserCreated(selectedItem.getName())) {
+                                Toast.makeText(ChooseScenarioActivity.this,
+                                        getString(R.string.defaultCategoryPremade),
+                                        Toast.LENGTH_LONG).show();
+                                return false;
+                            }
                             selectedItem.setCategory(null);
                         } else {
                             selectedItem.setCategory(category);
