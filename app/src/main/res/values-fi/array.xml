@@ -73,6 +73,11 @@
         <item>fore_5</item>
         <item>fore_6</item>
         <item>fore_7</item>
+        <item>fore_8</item>
+        <item>fore_9</item>
+        <item>fore_10</item>
+        <item>fore_11</item>
+        <item>fore_12</item>
         <item>tyhjä</item>
     </string-array>
     <string-array name="kolmasKuvaName">
@@ -83,6 +88,11 @@
         <item>Sairaala</item>
         <item>Ravintola</item>
         <item>Toimisto</item>
+        <item>Ovi</item>
+        <item>Muutto</item>
+        <item>Lentokenttä</item>
+        <item>Lemmikit</item>
+        <item>112</item>
         <item>tyhjä</item>
     </string-array>
 </resources>
