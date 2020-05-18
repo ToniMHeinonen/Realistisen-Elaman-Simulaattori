@@ -67,6 +67,9 @@ View.OnClickListener, View.OnLongClickListener{
 
     private final int BACKGROUND = 1, FOREGROUND = 2, PERSON = 3, FACE = 4;
 
+    // Used for preventing multiple "first" scenes
+    private boolean firstScene = false;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         // Load font theme
@@ -207,6 +210,7 @@ View.OnClickListener, View.OnLongClickListener{
      * Disables editing of scene name if the scene is first.
      */
     private void disableSceneName() {
+        firstScene = true;
         this.name.setTextColor(getResources().getColor(R.color.disabledEditText)); // Dark grey
         this.name.setFocusable(false);      // Don't allow typing
         this.name.setEnabled(true);         // Allow clicking
@@ -425,7 +429,11 @@ View.OnClickListener, View.OnLongClickListener{
             dataNotGivenAlert(getString(R.string.not_null), getString(R.string.not_added));
             return false;
         } else if(this.name.getText().toString().trim().isEmpty()){
-            this.name.setText("first");
+            dataNotGivenAlert(getString(R.string.scene_name_empty), getString(R.string.not_added));
+            return false;
+        } else if(this.name.getText().toString().trim().equals("first") && !firstScene){
+            dataNotGivenAlert(getString(R.string.duplicate_first), getString(R.string.not_added));
+            return false;
         }
 
         if(this.kysymyksetGo.size() < 1){
