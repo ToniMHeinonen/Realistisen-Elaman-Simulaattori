@@ -43,6 +43,10 @@ public class SaveSystem implements JsonInterface {
         setFirstSceneFromScenario();
     }
 
+    /**
+     * This method return scenario what is now
+     * @return scenario name
+     */
     public String getCurrentScenario() {
         return scenarie;
     }

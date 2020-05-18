@@ -33,7 +33,7 @@ import muuttaa.myohemmin.realistisenelamansimulaattori.JsonInterface;
 import muuttaa.myohemmin.realistisenelamansimulaattori.R;
 
 /**
- * This class read data from json file in resource and preferences
+ * This class read data from json file in resource and preferences (preference is in this context own json files in app memory)
  * @author Jesse Stenroth
  */
 public class SaveSystemPreferences implements JsonInterface {
@@ -47,6 +47,10 @@ public class SaveSystemPreferences implements JsonInterface {
     private boolean preferencessa = false;
     private boolean userCreatedScenario = false;
 
+    /**
+     * This constructor set basic informations
+     * @param con context of current activity
+     */
     public SaveSystemPreferences(Context con){
         this.context = con;
         this.list = new LinkedList<>();
@@ -622,11 +626,13 @@ public class SaveSystemPreferences implements JsonInterface {
         }
     }
 
+    /**
+     * This method write scenario to savedata2 memory (savedata2 contains user's creations)
+     * @param file file name
+     * @param scenarioName2 scenario name
+     */
     private void writeSaveData(String file, String scenarioName2) {
-        //yritetään lukea onko savedata2
         String tiedosto = getStringFromFile("savedata2.json");
-        //vika täällä
-        System.out.println("testaus: " + tiedosto);
         if(tiedosto == null){
             try {
                 JSONObject obj = new JSONObject();
@@ -662,6 +668,11 @@ public class SaveSystemPreferences implements JsonInterface {
         }
     }
 
+    /**
+     * This method write data to file
+     * @param file file name
+     * @param con data of file
+     */
     private void write(String file, String con){
         try {
             FileOutputStream fos = context.openFileOutput(file, Context.MODE_PRIVATE);
@@ -676,6 +687,12 @@ public class SaveSystemPreferences implements JsonInterface {
             }
         }
     }
+
+    /**
+     * This method get content from file
+     * @param file file name
+     * @return content in String format
+     */
     private String getStringFromFile(String file){
         try {
             FileInputStream fis = context.openFileInput(file);
@@ -699,6 +716,12 @@ public class SaveSystemPreferences implements JsonInterface {
         return null;
     }
 
+    /**
+     * This method save scenario from String format
+     * @param in content of file
+     * @param name file name
+     * @return null
+     */
     public Scenario saveScenarioFromString(String in, String name){
         String korjattu = "";
         for(int lap=0; lap < name.length(); lap++){
@@ -711,6 +734,12 @@ public class SaveSystemPreferences implements JsonInterface {
         writeSaveData(korjattu.toLowerCase() + ".json", name);
         return null;
     }
+
+    /**
+     * This method convert scenario content to String format
+     * @param scenario scenario what want convert
+     * @return String format scenario
+     */
     public String convertScenarioToString(Scenario scenario){
         try {
             JSONObject base = new JSONObject();
@@ -747,6 +776,12 @@ public class SaveSystemPreferences implements JsonInterface {
         }
         return null;
     }
+
+    /**
+     * This method check if scenario name already is
+     * @param nimi scenario name
+     * @return true if contains false if not
+     */
     public boolean containsAlready(String nimi){
         List<scenarioListHelp> scenaariot = new ArrayList<>();
         List<String> scenarioNames = new ArrayList<>();
@@ -811,6 +846,12 @@ public class SaveSystemPreferences implements JsonInterface {
 
         return scenarioNames.contains(nimi);
     }
+
+    /**
+     * This method check if scenario name is already in resources
+     * @param nimi scenario name
+     * @return true if is in resources false if not
+     */
     public boolean alreadyInResources(String nimi){
         List<scenarioListHelp> scenaariot = new ArrayList<>();
         List<String> scenarioNames = new ArrayList<>();
@@ -931,6 +972,8 @@ public class SaveSystemPreferences implements JsonInterface {
     }
     /**
      * get data in scenario class
+     * @param filu file name
+     * @param namee scenario name
      */
     public Scenario getDataOfScenario(String namee, String filu){
         try {
