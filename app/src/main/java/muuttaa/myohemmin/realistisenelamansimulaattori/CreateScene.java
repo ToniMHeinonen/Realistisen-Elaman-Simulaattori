@@ -106,7 +106,12 @@ View.OnClickListener, View.OnLongClickListener{
         if(getIntent().getBooleanExtra("muokkaus", false)){
             apu = (Scene) getIntent().getParcelableExtra("scene");
             //put values
+            // Retrieve name
             this.name.setText(apu.getName());
+            // If name is "first", disable editing
+            if (apu.getName().equals("first"))
+                disableSceneName();
+
             kysymyksetGo = apu.getGoList();
             kysymyksetColor = apu.getColorList();
             this.question.setText(apu.getQuestion());
@@ -114,6 +119,7 @@ View.OnClickListener, View.OnLongClickListener{
         } else{
             if(getIntent().getBooleanExtra("eka", false)){
                 this.name.setText("first");
+                disableSceneName();
             }
             kysymyksetGo = new LinkedList<>();
             kysymyksetColor = new LinkedList<>();
@@ -195,6 +201,18 @@ View.OnClickListener, View.OnLongClickListener{
         if (GlobalPrefs.loadTutorialScene()) {
             showInfo(null);
         }
+    }
+
+    /**
+     * Disables editing of scene name if the scene is first.
+     */
+    private void disableSceneName() {
+        this.name.setTextColor(getResources().getColor(R.color.disabledEditText)); // Dark grey
+        this.name.setFocusable(false);      // Don't allow typing
+        this.name.setEnabled(true);         // Allow clicking
+        this.name.setOnClickListener((e) -> // Show Toast when clicked
+                Toast.makeText(this, getString(R.string.disabled_scene_name),
+                        Toast.LENGTH_LONG).show());
     }
 
     private void updateSpinners(Scene apu) {

@@ -111,6 +111,7 @@
     <string name="first_scene_information">The name of the first scene must be: first</string>
     <string name="scene_name_give">Scene name:</string>
     <string name="scene_question">Scene question:</string>
+    <string name="disabled_scene_name">You can\'t rename the first scene!</string>
 
     <string name="choose_background">Background:</string>
     <string name="choose_person">Person:</string>

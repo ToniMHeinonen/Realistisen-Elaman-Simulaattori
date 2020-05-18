@@ -111,6 +111,7 @@
     <string name="first_scene_information">Scenaarion ensimmäisen kohtauksen nimi pitää olla: first</string>
     <string name="scene_name_give">Kohtauksen nimi:</string>
     <string name="scene_question">Kohtauksen kysymys:</string>
+    <string name="disabled_scene_name">Et voi vaihtaa ensimmäisen kohtauksen nimeä!</string>
 
     <string name="choose_background">Tausta:</string>
     <string name="choose_person">Henkilö:</string>
