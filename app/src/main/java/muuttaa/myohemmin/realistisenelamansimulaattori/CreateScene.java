@@ -422,17 +422,10 @@ View.OnClickListener, View.OnLongClickListener{
         }
     }
     private boolean allDataGiven(){
-        if(this.question.getText().toString().trim().isEmpty()){
+        if (this.question.getText().toString().trim().isEmpty()){
             dataNotGivenAlert(getString(R.string.remember_question), getString(R.string.not_added));
             return false;
-        } else if(this.name.getText().toString().trim().equals("null")){
-            dataNotGivenAlert(getString(R.string.not_null), getString(R.string.not_added));
-            return false;
-        } else if(this.name.getText().toString().trim().isEmpty()){
-            dataNotGivenAlert(getString(R.string.scene_name_empty), getString(R.string.not_added));
-            return false;
-        } else if(this.name.getText().toString().trim().equals("first") && !firstScene){
-            dataNotGivenAlert(getString(R.string.duplicate_first), getString(R.string.not_added));
+        } else if (!checkSceneNameIsValid()) {
             return false;
         }
 
@@ -451,11 +444,37 @@ View.OnClickListener, View.OnLongClickListener{
     }
 
     /**
+     * Checks whether scene name is valid or not.
+     * @return true if name is valid
+     */
+    private boolean checkSceneNameIsValid() {
+        String sceneName = this.name.getText().toString().trim();
+
+        if (sceneName.equals("null")){
+            dataNotGivenAlert(getString(R.string.not_null), getString(R.string.not_added));
+            return false;
+        } else if (sceneName.isEmpty()){
+            dataNotGivenAlert(getString(R.string.scene_name_empty), getString(R.string.not_added));
+            return false;
+        } else if (retrievedSceneNames.contains(sceneName)){
+            dataNotGivenAlert(getString(R.string.duplicate_scene_name, sceneName), getString(R.string.not_added));
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
      * Opens answer dialog.
      * @param editOldAnswer true if editing old answer, false if creating new answer
      * @param position positions of the answer to edit
      */
     private void openAnswerDialog(boolean editOldAnswer, int position) {
+        // If scene name is not valid, don't allow editing answers,
+        // since it adds the scene name to the spinner
+        if (!checkSceneNameIsValid())
+            return;
+
         Bundle bundle = new Bundle();
         bundle.putBoolean("muokkaus", editOldAnswer);
         bundle.putInt("koko", kysymyksetColor.size());

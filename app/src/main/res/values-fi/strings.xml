@@ -155,7 +155,8 @@
     <string name="or">tai</string>
     <string name="not_null">et voi antaa arvoa null</string>
     <string name="scene_name_empty">Sinun täytyy antaa nimi kohtaukselle!</string>
-    <string name="duplicate_first">Et voi nimetä kahta kohtausta \"first\" nimellä!</string>
+    <string name="duplicate_scene_name">Olet jo luonut kohtauksen nimeltä \"%1$s\"! Vaihda
+        kohtauksen nimi.</string>
     <string name="null_value">lopetus</string>
     <string name="autosave_not">nimi tarvitaan automaattiseen tallennukseen</string>
 

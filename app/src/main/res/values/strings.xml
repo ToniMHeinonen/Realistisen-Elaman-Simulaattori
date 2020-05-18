@@ -157,7 +157,8 @@
     <string name="or">or</string>
     <string name="not_null">you can not give null</string>
     <string name="scene_name_empty">You must give a name to the scene!</string>
-    <string name="duplicate_first">You can\'t name 2 scenes as \"first\"!</string>
+    <string name="duplicate_scene_name">You have already created scene named \"%1$s\"! Please rename
+        your scene.</string>
     <string name="null_value">end</string>
     <string name="autosave_not">Give name for autosave</string>
 
