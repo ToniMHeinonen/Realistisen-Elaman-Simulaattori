@@ -67,7 +67,7 @@ public class GameOverActivity extends ParentActivity {
 
     private String giveFeedback(int completedPercentage) {
         String result = "";
-        if (completedPercentage <= 50) {
+        if (completedPercentage < 50) {
             result = getString(R.string.completed_bad);
             percentageBg.setImageResource(R.drawable.red);
         } else if (completedPercentage < 100) {
