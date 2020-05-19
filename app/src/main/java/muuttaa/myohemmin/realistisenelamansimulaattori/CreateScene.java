@@ -67,9 +67,6 @@ View.OnClickListener, View.OnLongClickListener{
 
     private final int BACKGROUND = 1, FOREGROUND = 2, PERSON = 3, FACE = 4;
 
-    // Used for preventing multiple "first" scenes
-    private boolean firstScene = false;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         // Load font theme
@@ -210,7 +207,6 @@ View.OnClickListener, View.OnLongClickListener{
      * Disables editing of scene name if the scene is first.
      */
     private void disableSceneName() {
-        firstScene = true;
         this.name.setTextColor(getResources().getColor(R.color.disabledEditText)); // Dark grey
         this.name.setFocusable(false);      // Don't allow typing
         this.name.setEnabled(true);         // Allow clicking
