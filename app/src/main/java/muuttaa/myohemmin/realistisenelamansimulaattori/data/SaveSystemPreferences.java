@@ -34,7 +34,6 @@ import muuttaa.myohemmin.realistisenelamansimulaattori.R;
 
 /**
  * This class read data from json file in resource and preferences (preference is in this context own json files in app memory)
- * @author Jesse Stenroth
  */
 public class SaveSystemPreferences implements JsonInterface {
     private Context context;
@@ -99,14 +98,19 @@ public class SaveSystemPreferences implements JsonInterface {
     @Override
     public String getJsonName() {
         String out = "";
+        //get String data from resource savedata and user's savedata files
         String data = getStringFromScenariesFileAndPreferences();
         try {
             JSONObject json = new JSONObject(data);
+            //get list of scenario names
             JSONArray array = json.getJSONArray("scenarioslist");
+            //check every names
             for(int lap=0; lap < array.length(); lap++){
                 String test = array.getString(lap);
                 JSONObject obj = new JSONObject(test);
+                //if name is same as current scenario name
                 if(scenarie.equals(obj.getString("name"))){
+                    //get file name
                     out = obj.getString("file");
                     break;
                 }
@@ -300,14 +304,13 @@ public class SaveSystemPreferences implements JsonInterface {
     private void createJSONObjectOfScenario(){
         if(rootInScenario == null){
                 String data = getStringFromSceneFile();
-                //test
                 if(userCreatedScenario){
                     String h1 = getJsonName();
                     String helpp = "";
                     for (int ind = 0; ind < (h1.length() - 5); ind++) {
                         helpp += h1.charAt(ind);
                     }
-                    //haku
+                    //search and read data from user's created scenarios
                     String filet = getStringFromFile(getJsonName());
                     try {
                         this.rootInScenario = new JSONObject(filet);
@@ -334,7 +337,7 @@ public class SaveSystemPreferences implements JsonInterface {
                         for (int ind = 0; ind < (h1.length() - 5); ind++) {
                             helpp += h1.charAt(ind);
                         }
-                        //haku
+                        //search and read data from user's created scenarios
                         String filet = getStringFromFile(getJsonName());
                         try {
                             this.rootInScenario = new JSONObject(filet);
@@ -564,9 +567,10 @@ public class SaveSystemPreferences implements JsonInterface {
             }
             //convert data to json
             String file = scenario.getFileName();
-            //muunnetaan scenario jsoniksi
+            //root element of data
             JSONObject base = new JSONObject();
             List<Scene> li = scenario.getListaus();
+            //add data from every scene
             for(int lap=0; lap < li.size(); lap++){
                 Scene scene = li.get(lap);
                 JSONObject help = new JSONObject();
@@ -577,10 +581,12 @@ public class SaveSystemPreferences implements JsonInterface {
                 help.put("fore", scene.getForeground());
                 JSONArray array = new JSONArray();
                 String[] l = scene.getAnswers();
+                //add data of answers
                 for (int k=0; k < l.length; k++){
                     array.put(l[k]);
                 }
                 help.put("answers", array);
+                //add information of answers colors and go informations
                 List<GeneralKeyAndValue> go = scene.getGoList();
                 for(int k=0; k < go.size(); k++){
                     help.put(go.get(k).getKey(), go.get(k).getValue());
@@ -593,8 +599,9 @@ public class SaveSystemPreferences implements JsonInterface {
             }
             String scenarioName2 = scenario.getName();
             String out = base.toString();
-            //kirjoitus
+            //write scenario
             write(file, out);
+            //check if contains already scenario of name
             boolean already = containsAlready(scenarioName2);
             if((!edit && !already) || !already) {
                 if(debuggi){
@@ -632,6 +639,7 @@ public class SaveSystemPreferences implements JsonInterface {
      * @param scenarioName2 scenario name
      */
     private void writeSaveData(String file, String scenarioName2) {
+        //try get data from user's savedata if get data then modify information
         String tiedosto = getStringFromFile("savedata2.json");
         if(tiedosto == null){
             try {
@@ -787,7 +795,7 @@ public class SaveSystemPreferences implements JsonInterface {
         List<String> scenarioNames = new ArrayList<>();
         String out = "";
         //scenarios from file
-        //english
+        //english resources
         String g = getStringFromScenariesFile(getLocalizedResources(context, new Locale("en")));
         try {
             JSONObject json = new JSONObject(g);
@@ -805,7 +813,7 @@ public class SaveSystemPreferences implements JsonInterface {
                 e.printStackTrace();
             }
         }
-        //finnish
+        //finnish resources
         String f = getStringFromScenariesFile(getLocalizedResources(context, new Locale("fi")));
         try {
             JSONObject json = new JSONObject(f);
@@ -823,7 +831,7 @@ public class SaveSystemPreferences implements JsonInterface {
                 e.printStackTrace();
             }
         }
-        //scenarios from preferences
+        //scenarios from user's savedata
         try{
             String data = getStringFromFile("savedata2.json");
             if(data != null) {
@@ -857,7 +865,7 @@ public class SaveSystemPreferences implements JsonInterface {
         List<String> scenarioNames = new ArrayList<>();
         String out = "";
         //scenarios from file
-        //english
+        //english resources
         String g = getStringFromScenariesFile(getLocalizedResources(context, new Locale("en")));
         try {
             JSONObject json = new JSONObject(g);
@@ -875,7 +883,7 @@ public class SaveSystemPreferences implements JsonInterface {
                 e.printStackTrace();
             }
         }
-        //finnish
+        //finnish resources
         String f = getStringFromScenariesFile(getLocalizedResources(context, new Locale("fi")));
         try {
             JSONObject json = new JSONObject(f);
@@ -971,7 +979,7 @@ public class SaveSystemPreferences implements JsonInterface {
         return null;
     }
     /**
-     * get data in scenario class
+     * get data in scenario class. This means method read json data and create scenario class of it
      * @param filu file name
      * @param namee scenario name
      */

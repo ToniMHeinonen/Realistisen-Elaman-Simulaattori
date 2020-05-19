@@ -38,7 +38,7 @@ public class CreateScenario extends ParentActivity {
     private EditText scenarioName;
     private ListView listaview;
     private ArrayAdapter<String> adapter;
-    private boolean debuggi = true;
+    private boolean debuggi = false;
     private String outName = "";
     private boolean editMode = false;
     private SaveSystemPreferences saveSystem;

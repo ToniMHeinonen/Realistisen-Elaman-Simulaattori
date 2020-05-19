@@ -49,7 +49,7 @@ View.OnClickListener, View.OnLongClickListener{
     private HashSet<String> retrievedSceneNames;
 
     private int korvaus = -1;
-    private boolean debuggi = true;
+    private boolean debuggi = false;
 
     // Using custom names in image files
     private String[] backgroundFiles;
