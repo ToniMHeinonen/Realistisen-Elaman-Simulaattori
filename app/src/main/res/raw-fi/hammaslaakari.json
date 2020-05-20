@@ -1,0 +1,137 @@
+{
+  "first": {
+    "question": "Hammastasi on särkenyt jo useamman päivän. Mitä aiot tehdä asialle?",
+    "background": "background_5",
+    "person": "character_5",
+    "fore": "fore_5",
+    "face": "face_uncomfortable",
+    "answers": [
+      "Odotat, kyllä se kipu menee vielä ohi",
+      "Soitat hammaslääkäriin varataksesi ajan",
+      "Revit hampaan irti"
+    ],
+    "Odotat, kyllä se kipu menee vielä ohi": "kipuJatkuu",
+    "Soitat hammaslääkäriin varataksesi ajan": "laakariAlku",
+    "Revit hampaan irti": "hammasRevitty",
+    "Odotat, kyllä se kipu menee vielä ohiColor": "yellow",
+    "Soitat hammaslääkäriin varataksesi ajanColor": "green",
+    "Revit hampaan irtiColor": "red"
+  },
+  "laakariAlku": {
+    "question": "Sait varattua ajan. Mitä teet ensimmäisenä saavuttuasi hammaslääkäriin?",
+    "background": "background_5",
+    "person": "character_5",
+    "face": "face_happy",
+    "fore": "fore_5",
+    "answers": [
+      "Ilmoittaudut vastaanottovirkailijalle",
+      "Ilmoittaudut itsepalveluautomaatilla",
+      "Päätät kestää hammaskivun ja poistut hammaslääkäristä"
+    ],
+    "Ilmoittaudut vastaanottovirkailijalle": "odotusHuone",
+    "Ilmoittaudut itsepalveluautomaatilla": "odotusHuone",
+    "Päätät kestää hammaskivun ja poistut hammaslääkäristä": "null",
+    "Ilmoittaudut vastaanottovirkailijalleColor": "green",
+    "Ilmoittaudut itsepalveluautomaatillaColor": "green",
+    "Päätät kestää hammaskivun ja poistut hammaslääkäristäColor": "red"
+  },
+  "hammasRevitty": {
+    "question": "Revit hampaan irti, mutta kipu jatkuu yhä. Mitä teet?",
+    "background": "background_5",
+    "person": "character_5",
+    "face": "face_uncomfortable",
+    "fore": "fore_5",
+    "answers": [
+      "Soitat hammaslääkäriin varataksesi ajan",
+      "Et aio varata aikaa hammaslääkäristä"
+    ],
+    "Soitat hammaslääkäriin varataksesi ajan": "laakariAlku",
+    "Et aio varata aikaa hammaslääkäristä": "null",
+    "Soitat hammaslääkäriin varataksesi ajanColor": "green",
+    "Et aio varata aikaa hammaslääkäristäColor": "red"
+  },
+  "kipuJatkuu": {
+    "question": "Hammassärky ei helpota. Mitä teet?",
+    "background": "background_5",
+    "person": "character_5",
+    "face": "face_uncomfortable",
+    "fore": "fore_5",
+    "answers": [
+      "Soitat hammaslääkäriin varataksesi ajan",
+      "Et aio varata aikaa hammaslääkäristä",
+      "Revit hampaan irti"
+    ],
+    "Soitat hammaslääkäriin varataksesi ajan": "laakariAlku",
+    "Et aio varata aikaa hammaslääkäristä": "null",
+    "Revit hampaan irti": "hammasRevitty",
+    "Soitat hammaslääkäriin varataksesi ajanColor": "green",
+    "Et aio varata aikaa hammaslääkäristäColor": "red",
+    "Revit hampaan irtiColor": "red"
+  },
+  "odotusHuone": {
+    "question": "Mitä teet seuraavaksi?",
+    "background": "background_5",
+    "person": "character_5",
+    "face": "face_happy",
+    "fore": "fore_5",
+    "answers": [
+      "Istut penkille odottamaan vuoroasi",
+      "Odotat seisten vuoroasi",
+      "Poistut hammaslääkäristä"
+    ],
+    "Istut penkille odottamaan vuoroasi": "sisaanOtto",
+    "Odotat seisten vuoroasi": "sisaanOtto",
+    "Poistut hammaslääkäristä": "null",
+    "Istut penkille odottamaan vuoroasiColor": "green",
+    "Odotat seisten vuoroasiColor": "green",
+    "Poistut hammaslääkäristäColor": "red"
+  },
+  "sisaanOtto": {
+    "question": "Odotettuasi hetken sinua pyydetään siirtymään hammaslääkärin huoneeseen",
+    "background": "background_5",
+    "person": "character_5",
+    "face": "face_happy",
+    "fore": "fore_5",
+    "answers": [
+      "Menet pyydettyyn huoneeseen",
+      "Teet kuperkeikan, jonka jälkeen menet pyydettyyn huoneeseen",
+      "Poistut hammaslääkäristä"
+    ],
+    "Menet pyydettyyn huoneeseen": "huoneessa",
+    "Teet kuperkeikan, jonka jälkeen menet pyydettyyn huoneeseen": "huoneessa",
+    "Poistut hammaslääkäristä": "null",
+    "Menet pyydettyyn huoneeseenColor": "green",
+    "Teet kuperkeikan, jonka jälkeen menet pyydettyyn huoneeseenColor": "yellow",
+    "Poistut hammaslääkäristäColor": "red"
+  },
+  "huoneessa": {
+    "question": "Istut tuolille, jonka jälkeen hammaslääkäri alkaa hoitamaan hampaitasi.",
+    "background": "background_5",
+    "person": "character_5",
+    "face": "face_happy",
+    "fore": "fore_5",
+    "answers": [
+      "Kuuntelet ja toimit hammaslääkärin ohjeiden mukaan",
+      "Kääntelehdit tuolissa hankaloittaaksesi hammaslääkärin työtä"
+    ],
+    "Kuuntelet ja toimit hammaslääkärin ohjeiden mukaan": "loppu",
+    "Kääntelehdit tuolissa hankaloittaaksesi hammaslääkärin työtä": "loppu",
+    "Kuuntelet ja toimit hammaslääkärin ohjeiden mukaanColor": "green",
+    "Kääntelehdit tuolissa hankaloittaaksesi hammaslääkärin työtäColor": "red"
+  },
+  "loppu": {
+    "question": "Hammaslääkäri saa hoidettua hampaasi ja toivottaa hyvät päivänjatkot.",
+    "background": "background_5",
+    "person": "character_5",
+    "face": "face_happy",
+    "fore": "fore_5",
+    "answers": [
+      "Poistut hammaslääkäristä sanaakaan sanomatta",
+      "Kiität käynnistä ja poistut hammaslääkäristä"
+    ],
+    "Poistut hammaslääkäristä sanaakaan sanomatta": "null",
+    "Kiität käynnistä ja poistut hammaslääkäristä": "null",
+    "Poistut hammaslääkäristä sanaakaan sanomattaColor": "red",
+    "Kiität käynnistä ja poistut hammaslääkäristäColor": "green"
+  }
+}
