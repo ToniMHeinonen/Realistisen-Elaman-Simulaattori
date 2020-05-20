@@ -87,7 +87,7 @@
     "Poistut hammaslääkäristäColor": "red"
   },
   "sisaanOtto": {
-    "question": "Odotettuasi hetken sinua pyydetään siirtymään hammaslääkärin huoneeseen",
+    "question": "Odotettuasi hetken sinua pyydetään siirtymään hammaslääkärin huoneeseen.",
     "background": "background_5",
     "person": "character_5",
     "face": "face_happy",
