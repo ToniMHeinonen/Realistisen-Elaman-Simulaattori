@@ -1,10 +1,10 @@
 {
   "first": {
     "question": "Saavut lentokentälle aikeenasi matkustaa lentokoneella. Olet varannut lennot, mutta et ole vielä tehnyt lähtöselvitystä. Mitä teet ensimmäisenä?",
-    "background": "background_1",
-    "person": "character_1",
-    "fore": "fore_1",
-    "face": "face_happy",
+    "background": "background_10",
+    "person": "null",
+    "fore": "fore_10",
+    "face": "null",
     "answers": [
       "Teet lähtöselvityksen lentoyhtiön verkkosivulla",
       "Teet lähtöselvityksen lähtöselvitystiskillä- tai automaatilla",
@@ -19,10 +19,10 @@
   },
   "lahtoselvitysTehty": {
     "question": "Mitä teet seuraavaksi? Mukanasi on ruumaan meneviä tavaroita.",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
-    "fore": "fore_1",
+    "background": "background_10",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_10",
     "answers": [
       "Menet suoraan turvatarkastukseen",
       "Menet matkatavaratiskille",
@@ -37,10 +37,10 @@
   },
   "lahtoselvitysFail": {
     "question": "Turvatarkastuksesta sinut ohjataan takaisin matkatavaratiskille.",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_sad",
-    "fore": "fore_7",
+    "background": "background_10",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_10",
     "answers": [
       "Menet uudestaan turvatarkastukseen jätettyäsi matkatavarat tiskille",
       "Poistut lentokentältä haistateltuasi ensin turvatarkastajalle"
@@ -52,10 +52,10 @@
   },
   "matkatavaratJatetty": {
     "question": "Olet tehnyt lähtöselvityksen ja jättänyt matkatavarat matkatavaratiskille- tai automaatille. Mitä teet seuraavaksi?",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
-    "fore": "null",
+    "background": "background_10",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_10",
     "answers": [
       "Pyörit ympäri lentokenttää ja menet viime tingassa turvatarkastukseen",
       "Menet turvatarkastukseen",
@@ -70,10 +70,10 @@
   },
   "turvatarkastus": {
     "question": "Mitä teet turvatarkastuksessa? Taskuissasi on muun muuassa kännykkä ja lompakko.",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
-    "fore": "fore_7",
+    "background": "background_10",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_10",
     "answers": [
       "Asetat taskuissasi olevat tavarat sille kuuluvaan muovilaatikkoon ja todistat henkilöllisyytesi turvatarkastajalle",
       "Pidät tavarat taskuissasi"
@@ -85,10 +85,10 @@
   },
   "turvatarkastusFail": {
     "question": "Turvatarkastaja ohjeistaa laittamaan tavarat muovilaatikkoon, jonka jälkeen pääset läpi tarkastuksesta. Mitä teet?",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
-    "fore": "fore_7",
+    "background": "background_10",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_10",
     "answers": [
       "Katsot infotaululta oman lentosi lähtöportin, jonka lähettyville siirryt odottelemaan lentoa",
       "Kiertelet kaupoissa ja saavut portille viime tingassa",
@@ -103,10 +103,10 @@
   },
   "turvatarkastusTakana": {
     "question": "Mitä teet turvatarkastuksen jälkeen?",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
-    "fore": "null",
+    "background": "background_10",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_10",
     "answers": [
       "Kiertelet kaupoissa ja saavut portille juuri ennen lähtöä",
       "Päätätkin lähteä pois lentokentältä",
@@ -121,10 +121,10 @@
   },
   "portilla": {
     "question": "Lähtöportilla aletaan ottaa matkustajia sisään lentokoneeseen. Mitä teet?",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
-    "fore": "fore_1",
+    "background": "background_10",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_10",
     "answers": [
       "Menet jonon perälle odottamaan vuoroasi",
       "Lähdet vielä kaupoille ja saavut viime tingassa takaisin portille",
@@ -139,10 +139,10 @@
   },
   "lentokoneessaAlku": {
     "question": "Olet kävelemässä lentokoneeseen sisään. Mitä teet?",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
-    "fore": "null",
+    "background": "background_10",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_10",
     "answers": [
       "Juokset pois lentokentältä rivouksia huudellen",
       "Kävelet sanaakaan sanomatta omalle paikallesi",
@@ -157,10 +157,10 @@
   },
   "lentokoneessaLoppu": {
     "question": "Olet päässyt omalle paikallesi lentokoneessa.",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
-    "fore": "null",
+    "background": "background_10",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_10",
     "answers": [
       "Kävelet koko lennon ajan vähän väliä käytävällä jaloitellaksesi",
       "Istut matkan ajan omalla paikallasi vessakäyntejä lukuunottamatta",

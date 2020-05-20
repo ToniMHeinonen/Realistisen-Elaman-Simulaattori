@@ -1,10 +1,10 @@
 {
   "first": {
     "question": "You arrive at the airport with your intention of traveling by plane. You have booked flights but have not yet checked in. What do you do first?",
-    "background": "background_1",
-    "person": "character_1",
-    "fore": "fore_1",
-    "face": "face_happy",
+    "background": "background_10",
+    "person": "null",
+    "fore": "fore_10",
+    "face": "null",
     "answers": [
       "You will check in on the airline's website",
       "You will check in at the check-in counter or check-in kiosk",
@@ -19,10 +19,10 @@
   },
   "lahtoselvitysTehty": {
     "question": "What do you do next? You have luggage to go into the baggage hold.",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
-    "fore": "fore_1",
+    "background": "background_10",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_10",
     "answers": [
       "You go straight to the security check",
       "You go to the luggage counter",
@@ -37,10 +37,10 @@
   },
   "lahtoselvitysFail": {
     "question": "From the security check, you will be directed back to the luggage counter.",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_sad",
-    "fore": "fore_7",
+    "background": "background_10",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_10",
     "answers": [
       "You go to the security check again after you leave your luggage at the counter",
       "You will leave the airport after cursing the security guard"
@@ -52,10 +52,10 @@
   },
   "matkatavaratJatetty": {
     "question": "You have checked in and left your luggage at the luggage counter. What do you do next?",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
-    "fore": "null",
+    "background": "background_10",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_10",
     "answers": [
       "You wander around the airport and go to the security check at the last moment",
       "You go to the security check",
@@ -70,10 +70,10 @@
   },
   "turvatarkastus": {
     "question": "What do you do in a security check? You have a mobile phone and a wallet in your pockets.",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
-    "fore": "fore_7",
+    "background": "background_10",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_10",
     "answers": [
       "You put the items from your pockets in its plastic box and prove your identity to the security inspector",
       "You keep the items in your pockets"
@@ -85,10 +85,10 @@
   },
   "turvatarkastusFail": {
     "question": "The security inspector instructs you to put the items in a plastic box, after which you can get through the inspection. What will you do?",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
-    "fore": "fore_7",
+    "background": "background_10",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_10",
     "answers": [
       "You see the departure gate of your own flight on the information board, near which you will go to wait for the flight",
       "You walk around the shops and arrive at the gate at the last moment",
@@ -103,10 +103,10 @@
   },
   "turvatarkastusTakana": {
     "question": "What do you do after the security check?",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
-    "fore": "null",
+    "background": "background_10",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_10",
     "answers": [
       "You visit the shops and arrive at the gate at the last moment",
       "You decide to leave the airport",
@@ -121,10 +121,10 @@
   },
   "portilla": {
     "question": "At the departure gate, passengers will be picked up on the plane. What do you do?",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
-    "fore": "fore_1",
+    "background": "background_10",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_10",
     "answers": [
       "You go behind the queue to wait your turn",
       "You still go to the shops and arrive back at the gate in the last minute",
@@ -139,10 +139,10 @@
   },
   "lentokoneessaAlku": {
     "question": "You are walking in an airplane. What do you do?",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
-    "fore": "null",
+    "background": "background_10",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_10",
     "answers": [
       "You run out of the airport screaming lewd",
       "You walk to your own seat without saying a word to anyone",
@@ -157,10 +157,10 @@
   },
   "lentokoneessaLoppu": {
     "question": "You have reached your seat on the plane.",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
-    "fore": "null",
+    "background": "background_10",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_10",
     "answers": [
       "You walk the aisle back and forth throughout the flight to walk around",
       "You sit in your own seat during the flight, except for using toilet",
