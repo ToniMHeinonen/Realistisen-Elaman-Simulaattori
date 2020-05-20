@@ -23,13 +23,13 @@ import muuttaa.myohemmin.realistisenelamansimulaattori.R;
  * @author Jesse Stenroth
  */
 public class SaveSystem implements JsonInterface {
-    private Context context;
-    private boolean debuggi = true;
-    private List<String> list;
-    private String scenarie;
-    private String scenarioName;
-    private JSONObject rootInScenario;
-    private boolean run = false;
+    protected Context context;
+    protected boolean debuggi = false;
+    protected List<String> list;
+    protected String scenarie;
+    protected String scenarioName;
+    protected JSONObject rootInScenario;
+    protected boolean run = false;
 
     /**
      * This constructor get Context information
@@ -132,7 +132,7 @@ public class SaveSystem implements JsonInterface {
     @Override
     public String getForegroundPicture() {
         createJSONObjectOfScenario();
-        String out = "null";
+        String out = null;
         try {
             JSONObject base = this.rootInScenario;
             out = base.getJSONObject(this.scenarioName).getString("fore");
@@ -171,7 +171,7 @@ public class SaveSystem implements JsonInterface {
     /**
      * This method create jsonObject if it is null (not contains already)
      */
-    private void createJSONObjectOfScenario(){
+    protected void createJSONObjectOfScenario(){
         if(rootInScenario == null){
             String data = getStringFromSceneFile();
             try {
@@ -300,7 +300,7 @@ public class SaveSystem implements JsonInterface {
      * This method get information from file
      * @return String what contains data in file
      */
-    private String getStringFromScenariesFile(){
+    protected String getStringFromScenariesFile(){
         String out = "";
         try {
             InputStream test = context.getResources().openRawResource(R.raw.savedata);
@@ -327,7 +327,7 @@ public class SaveSystem implements JsonInterface {
      * This method get information from scenario file
      * @return string contains data from file
      */
-    private String getStringFromSceneFile(){
+    protected String getStringFromSceneFile(){
         String out = "";
         String h1 = getJsonName();
         String helpp = "";
