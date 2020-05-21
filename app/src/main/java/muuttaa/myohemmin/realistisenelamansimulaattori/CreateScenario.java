@@ -2,6 +2,7 @@ package muuttaa.myohemmin.realistisenelamansimulaattori;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.core.content.FileProvider;
+import muuttaa.myohemmin.realistisenelamansimulaattori.data.PermissionsCheck;
 import muuttaa.myohemmin.realistisenelamansimulaattori.data.SaveSystemPreferences;
 import muuttaa.myohemmin.realistisenelamansimulaattori.data.Scenario;
 import muuttaa.myohemmin.realistisenelamansimulaattori.data.Scene;
@@ -12,6 +13,7 @@ import muuttaa.myohemmin.realistisenelamansimulaattori.tools.HTMLDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
@@ -43,6 +45,8 @@ public class CreateScenario extends ParentActivity {
     private boolean editMode = false;
     private SaveSystemPreferences saveSystem;
     private String beforeName = "";
+    private boolean writePermissionGiven = false;
+    private boolean readPermissionGiven = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -148,6 +152,27 @@ public class CreateScenario extends ParentActivity {
                         e.printStackTrace();
                     }
                 }
+            }
+        }
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResult){
+        boolean allOK = true;
+        for(int lap=0; lap < grantResult.length; lap++){
+            if(grantResult[lap] == PackageManager.PERMISSION_DENIED){
+                allOK = false;
+                break;
+            }
+        }
+        if(requestCode == 22114){
+            //permission check
+            if(grantResult.length > 0 && allOK){
+                readPermissionGiven = true;
+                writePermissionGiven = true;
+            } else{
+                readPermissionGiven = false;
+                writePermissionGiven = false;
             }
         }
     }
@@ -278,107 +303,111 @@ public class CreateScenario extends ParentActivity {
 
     public void laheta(View view) throws IOException {
         if(allDataGiven()) {
-            Scenario scenario = new Scenario();
-            scenario.setListaus(list);
-            String name = scenarioName.getText().toString();
-            scenario.setName(name);
-            String korjattu = "";
-            for (int lap = 0; lap < name.length(); lap++) {
-                char m = name.charAt(lap);
-                if (m != ' ') {
-                    korjattu += m;
+            new PermissionsCheck(this, this).BothPermission(() ->{
+                Scenario scenario = new Scenario();
+                scenario.setListaus(list);
+                String name = scenarioName.getText().toString();
+                scenario.setName(name);
+                String korjattu = "";
+                for (int lap = 0; lap < name.length(); lap++) {
+                    char m = name.charAt(lap);
+                    if (m != ' ') {
+                        korjattu += m;
+                    }
                 }
-            }
-            String file = korjattu.toLowerCase() + ".json";
-            scenario.setFileName(file);
-            SaveSystemPreferences json = new SaveSystemPreferences(this);
-            if (json.containsAlready(name)) {
-                if (editMode) {
+                String file = korjattu.toLowerCase() + ".json";
+                scenario.setFileName(file);
+                SaveSystemPreferences json = new SaveSystemPreferences(this);
+                if (json.containsAlready(name)) {
+                    if (editMode) {
+                        json.saveScenario(scenario, editMode, beforeName);
+                    } else {
+                        Toast.makeText(this, getString(R.string.duplicate_warning), Toast.LENGTH_LONG).show();
+                    }
+                } else {
                     json.saveScenario(scenario, editMode, beforeName);
-                } else {
-                    Toast.makeText(this, getString(R.string.duplicate_warning), Toast.LENGTH_LONG).show();
                 }
-            } else {
-                json.saveScenario(scenario, editMode, beforeName);
-            }
-            Toast.makeText(this, this.getString(R.string.file_saved), Toast.LENGTH_LONG).show();
+                Toast.makeText(this, this.getString(R.string.file_saved), Toast.LENGTH_LONG).show();
 
-            Intent intentShareFile = new Intent(Intent.ACTION_SEND);
+                Intent intentShareFile = new Intent(Intent.ACTION_SEND);
 
-            String myFilePath = getFilesDir() + "/" + file;
-            File fileWithinMyDir = new File(myFilePath);
-            Uri path = FileProvider.getUriForFile(this, "muuttaa.myohemmin.realistisenelamansimulaattori", fileWithinMyDir);
-            if (fileWithinMyDir.exists()) {
-                intentShareFile.setType("application/json");
-                if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
-                    intentShareFile.putExtra(Intent.EXTRA_STREAM, path);
-                } else {
-                    intentShareFile.putExtra(Intent.EXTRA_STREAM, path);
+                String myFilePath = getFilesDir() + "/" + file;
+                File fileWithinMyDir = new File(myFilePath);
+                Uri path = FileProvider.getUriForFile(this, "muuttaa.myohemmin.realistisenelamansimulaattori", fileWithinMyDir);
+                if (fileWithinMyDir.exists()) {
+                    intentShareFile.setType("application/json");
+                    if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+                        intentShareFile.putExtra(Intent.EXTRA_STREAM, path);
+                    } else {
+                        intentShareFile.putExtra(Intent.EXTRA_STREAM, path);
+                    }
+                    intentShareFile.putExtra(Intent.EXTRA_SUBJECT,
+                            file);
+                    intentShareFile.putExtra(Intent.EXTRA_TEXT, file);
+
+                    startActivity(Intent.createChooser(intentShareFile, this.getString(R.string.send_scenario)));
                 }
-                intentShareFile.putExtra(Intent.EXTRA_SUBJECT,
-                        file);
-                intentShareFile.putExtra(Intent.EXTRA_TEXT, file);
-
-                startActivity(Intent.createChooser(intentShareFile, this.getString(R.string.send_scenario)));
-            }
+            });
         }
     }
 
     public void importtaus(View view) {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle(this.getString(R.string.give_new_scenario_name));
+            new PermissionsCheck(this, this).BothPermission(() ->{
+                AlertDialog.Builder builder = new AlertDialog.Builder(this);
+                builder.setTitle(this.getString(R.string.give_new_scenario_name));
 
-        // Set up the input
-        final EditText input = new EditText(this);
-        input.setInputType(InputType.TYPE_CLASS_TEXT);
-        builder.setView(input);
-        final Context con = this;
-        // Set up the buttons
-        builder.setPositiveButton(this.getString(R.string.done), new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                outName = input.getText().toString();
-                if (outName.equals("null")) {
-                    Helper.showAlert(con, con.getString(R.string.huom),
-                            con.getString(R.string.not_null),
-                            getString(android.R.string.no), Helper.HIDE_NEGATIVE_BUTTON,
-                            () -> Toast.makeText(con, con.getString(R.string.not_added), Toast.LENGTH_LONG).show(),
-                            null);
-                } else{
-                        if ((new SaveSystemPreferences(con).containsAlready(outName) || StringContainsNumber(outName))) {
+                // Set up the input
+                final EditText input = new EditText(this);
+                input.setInputType(InputType.TYPE_CLASS_TEXT);
+                builder.setView(input);
+                final Context con = this;
+                // Set up the buttons
+                builder.setPositiveButton(this.getString(R.string.done), new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        outName = input.getText().toString();
+                        if (outName.equals("null")) {
                             Helper.showAlert(con, con.getString(R.string.huom),
-                                    con.getString(R.string.duplicate_warning) + " " +
-                                            con.getString(R.string.or) + " " +
-                                            con.getString(R.string.not_number),
+                                    con.getString(R.string.not_null),
                                     getString(android.R.string.no), Helper.HIDE_NEGATIVE_BUTTON,
                                     () -> Toast.makeText(con, con.getString(R.string.not_added), Toast.LENGTH_LONG).show(),
                                     null);
-                    } else {
-                        if (outName == null || outName.isEmpty()) {
-                            SimpleDateFormat sdf = new SimpleDateFormat("yyyy.MM.dd G 'at' HH:mm:ss z");
-                            outName = sdf.format(new Date());
+                        } else {
+                            if ((new SaveSystemPreferences(con).containsAlready(outName) || StringContainsNumber(outName))) {
+                                Helper.showAlert(con, con.getString(R.string.huom),
+                                        con.getString(R.string.duplicate_warning) + " " +
+                                                con.getString(R.string.or) + " " +
+                                                con.getString(R.string.not_number),
+                                        getString(android.R.string.no), Helper.HIDE_NEGATIVE_BUTTON,
+                                        () -> Toast.makeText(con, con.getString(R.string.not_added), Toast.LENGTH_LONG).show(),
+                                        null);
+                            } else {
+                                if (outName == null || outName.isEmpty()) {
+                                    SimpleDateFormat sdf = new SimpleDateFormat("yyyy.MM.dd G 'at' HH:mm:ss z");
+                                    outName = sdf.format(new Date());
+                                }
+                                Helper.showAlert(con, con.getString(R.string.huom),
+                                        con.getString(R.string.file_types),
+                                        getString(android.R.string.yes), Helper.HIDE_NEGATIVE_BUTTON,
+                                        () -> {
+                                            Intent i = new Intent(Intent.ACTION_GET_CONTENT);
+                                            i.setType("*/*");
+                                            startActivityForResult(i, 22);
+                                        },
+                                        null);
+                            }
                         }
-                        Helper.showAlert(con, con.getString(R.string.huom),
-                                con.getString(R.string.file_types),
-                                getString(android.R.string.yes), Helper.HIDE_NEGATIVE_BUTTON,
-                                () -> {
-                                    Intent i = new Intent(Intent.ACTION_GET_CONTENT);
-                                    i.setType("*/*");
-                                    startActivityForResult(i, 22);
-                                },
-                                null);
                     }
-                }
-            }
-        });
-        builder.setNegativeButton(this.getString(R.string.back_button), new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                dialog.cancel();
-            }
-        });
+                });
+                builder.setNegativeButton(this.getString(R.string.back_button), new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.cancel();
+                    }
+                });
 
-        builder.show();
+                builder.show();
+            });
     }
     private boolean allDataGiven(){
         String nimi = this.scenarioName.getText().toString();
