@@ -119,6 +119,7 @@ public class CreateScenario extends ParentActivity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == 1) {
+            //after scene creation
             if (resultCode == RESULT_OK) {
                 int k = data.getIntExtra("korvaus", -1);
                 if(k == -1) {
@@ -136,6 +137,7 @@ public class CreateScenario extends ParentActivity {
                 }
             }
         } else if(requestCode == 22){
+            //after import
             if(resultCode == RESULT_OK){
                 try {
                     Uri uri = data.getData();
@@ -166,7 +168,7 @@ public class CreateScenario extends ParentActivity {
             }
         }
         if(requestCode == 22114){
-            //permission check
+            //after permission check
             if(grantResult.length > 0 && allOK){
                 readPermissionGiven = true;
                 writePermissionGiven = true;
@@ -211,6 +213,7 @@ public class CreateScenario extends ParentActivity {
         adapter = new ArrayAdapter<String>(this, R.layout.scene_item, arrayList);
         listaview.setAdapter(adapter);
         final Context con = this;
+        //remove function
         listaview.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override
             public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
@@ -224,6 +227,7 @@ public class CreateScenario extends ParentActivity {
                 return true;
             }
         });
+        //modify scene
         listaview.setOnItemClickListener((parent, view, position, id) -> {
             moveToCreateScene(false, position);
         });
@@ -251,6 +255,7 @@ public class CreateScenario extends ParentActivity {
             } else {
                 SaveSystemPreferences json = new SaveSystemPreferences(this);
                 final Context con = this;
+                //if scenario contains already that name
                 if (json.containsAlready(name)) {
                     if (editMode) {
                         Scenario scenario = new Scenario();
@@ -317,6 +322,7 @@ public class CreateScenario extends ParentActivity {
                 }
                 String file = korjattu.toLowerCase() + ".json";
                 scenario.setFileName(file);
+                //check if name already used
                 SaveSystemPreferences json = new SaveSystemPreferences(this);
                 if (json.containsAlready(name)) {
                     if (editMode) {
@@ -328,7 +334,7 @@ public class CreateScenario extends ParentActivity {
                     json.saveScenario(scenario, editMode, beforeName);
                 }
                 Toast.makeText(this, this.getString(R.string.file_saved), Toast.LENGTH_LONG).show();
-
+                //send option
                 Intent intentShareFile = new Intent(Intent.ACTION_SEND);
 
                 String myFilePath = getFilesDir() + "/" + file;
@@ -409,6 +415,11 @@ public class CreateScenario extends ParentActivity {
                 builder.show();
             });
     }
+
+    /**
+     * This method check user was given all data
+     * @return true if all data given else false
+     */
     private boolean allDataGiven(){
         String nimi = this.scenarioName.getText().toString();
         int montakoScenea = this.list.size();
@@ -442,6 +453,11 @@ public class CreateScenario extends ParentActivity {
         return true;
     }
 
+    /**
+     * This method check if String contains number value
+     * @param input String what user want to check
+     * @return true if contains number else false
+     */
     private boolean StringContainsNumber(String input){
         String numbers = "1234567890";
         boolean oliko = false;
@@ -453,7 +469,6 @@ public class CreateScenario extends ParentActivity {
         }
         return oliko;
     }
-
     private void dataNotGivenAlert(String content, String toastMessage){
         Context co = this;
         Helper.showAlert(this, getString(R.string.huom), content,
