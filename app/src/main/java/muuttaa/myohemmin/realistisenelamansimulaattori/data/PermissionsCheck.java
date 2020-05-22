@@ -17,11 +17,15 @@ public class PermissionsCheck {
         this.activity = act;
     }
     public void BothPermission(Runnable runnable){
-        int permissions = ContextCompat.checkSelfPermission(context, Manifest.permission.READ_EXTERNAL_STORAGE);
-        int permissions2 = ContextCompat.checkSelfPermission(context, Manifest.permission.WRITE_EXTERNAL_STORAGE);
-        if((permissions == PackageManager.PERMISSION_DENIED) || (permissions2 == PackageManager.PERMISSION_DENIED)){
-            String[] list = {Manifest.permission.READ_EXTERNAL_STORAGE, Manifest.permission.WRITE_EXTERNAL_STORAGE};
-            ActivityCompat.requestPermissions(activity, list, permissionBoth);
+        if(android.os.Build.VERSION.SDK_INT >= 23) {
+            int permissions = ContextCompat.checkSelfPermission(context, Manifest.permission.READ_EXTERNAL_STORAGE);
+            int permissions2 = ContextCompat.checkSelfPermission(context, Manifest.permission.WRITE_EXTERNAL_STORAGE);
+            if ((permissions == PackageManager.PERMISSION_DENIED) || (permissions2 == PackageManager.PERMISSION_DENIED)) {
+                String[] list = {Manifest.permission.READ_EXTERNAL_STORAGE, Manifest.permission.WRITE_EXTERNAL_STORAGE};
+                ActivityCompat.requestPermissions(activity, list, permissionBoth);
+            } else {
+                runnable.run();
+            }
         } else{
             runnable.run();
         }
