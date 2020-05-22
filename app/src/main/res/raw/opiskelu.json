@@ -1,0 +1,107 @@
+{
+  "first": {
+    "question": "You would like to apply for higher education, and the apply for polytechnics and universities has begun.",
+    "background": "background_6",
+    "person": "character_6",
+    "fore": "fore_7",
+    "face": "face_happy",
+    "answers": [
+      "You search online for information on areas of education that might interest you",
+      "You don't look for any information about the areas of education, but you are filling in the application form according to the areas that sound interesting",
+      "You are not going to fill out the application form because you just do not feel like it"
+    ],
+    "You search online for information on areas of education that might interest you": "alaLoydetty",
+    "You don't look for any information about the areas of education, but you are filling in the application form according to the areas that sound interesting": "kutsu",
+    "You are not going to fill out the application form because you just do not feel like it": "uusiYritys",
+    "You search online for information on areas of education that might interest youColor": "green",
+    "You don't look for any information about the areas of education, but you are filling in the application form according to the areas that sound interestingColor": "yellow",
+    "You are not going to fill out the application form because you just do not feel like itColor": "red"
+  },
+  "alaLoydetty": {
+    "question": "You found areas of education that interest you.",
+    "background": "background_6",
+    "person": "character_6",
+    "fore": "fore_7",
+    "face": "face_happy",
+    "answers": [
+      "You follow the instructions to fill out the application form",
+      "Completing the application form is too difficult, so you are not going to apply",
+      "Completing the application form is too difficult, so you ask an acquaintance for help"
+    ],
+    "You follow the instructions to fill out the application form": "kutsu",
+    "Completing the application form is too difficult, so you are not going to apply": "null",
+    "Completing the application form is too difficult, so you ask an acquaintance for help": "kutsu",
+    "You follow the instructions to fill out the application formColor": "green",
+    "Completing the application form is too difficult, so you are not going to applyColor": "red",
+    "Completing the application form is too difficult, so you ask an acquaintance for helpColor": "green"
+  },
+  "uusiYritys": {
+    "question": "A year has passed and the apply for polytechnics and universities has begun again.",
+    "background": "background_6",
+    "person": "character_6",
+    "fore": "fore_7",
+    "face": "face_happy",
+    "answers": [
+      "You search online for information on areas of education that might interest you",
+      "You don't look for any information about the areas of education, but you are filling in the application form according to the areas that sound interesting",
+      "You are not going to fill out the application form this year either"
+    ],
+    "You search online for information on areas of education that might interest you": "alaLoydetty",
+    "You don't look for any information about the areas of education, but you are filling in the application form according to the areas that sound interesting": "kutsu",
+    "You are not going to fill out the application form this year either": "null",
+    "You search online for information on areas of education that might interest youColor": "green",
+    "You don't look for any information about the areas of education, but you are filling in the application form according to the areas that sound interestingColor": "yellow",
+    "You are not going to fill out the application form this year eitherColor": "red"
+  },
+  "kutsu": {
+    "question": "You will later receive a message in your mail/\e-mail containing information and an invitation to the entrance exam.",
+    "background": "background_6",
+    "person": "character_6",
+    "fore": "fore_7",
+    "face": "face_happy",
+    "answers": [
+      "You will read the instructions carefully and you are going to take the entrance exam at the agreed time",
+      "You don't have to read the instructions because they are so long, but you still plan to go to the entrance exam at the agreed time",
+      "You throw it in trash, no fun to go to study"
+    ],
+    "You will read the instructions carefully and you are going to take the entrance exam at the agreed time": "paasykoe",
+    "You don't have to read the instructions because they are so long, but you still plan to go to the entrance exam at the agreed time": "paasykoe",
+    "You throw it in trash, no fun to go to study": "null",
+    "You will read the instructions carefully and you are going to take the entrance exam at the agreed timeColor": "green",
+    "You don't have to read the instructions because they are so long, but you still plan to go to the entrance exam at the agreed timeColor": "red",
+    "You throw it in trash, no fun to go to studyColor": "red"
+  },
+  "paasykoe": {
+    "question": "It is an entrance exam day. What will you do?",
+    "background": "background_6",
+    "person": "character_6",
+    "fore": "null",
+    "face": "face_happy",
+    "answers": [
+      "You go to the entrance exam well in advance and follow the instructions there",
+      "You go to the entrance exam last minute and follow the instructions there",
+      "You would like to have some pizza now, so you go to eat and apply again next year"
+    ],
+    "You go to the entrance exam well in advance and follow the instructions there": "loppu",
+    "You go to the entrance exam last minute and follow the instructions there": "loppu",
+    "You would like to have some pizza now, so you go to eat and apply again next year": "null",
+    "You go to the entrance exam well in advance and follow the instructions thereColor": "green",
+    "You go to the entrance exam last minute and follow the instructions thereColor": "yellow",
+    "You would like to have some pizza now, so you go to eat and apply again next yearColor": "red"
+  },
+  "loppu": {
+    "question": "You will find out later that you passed the entrance exam. You were also sent information about your new place of study.",
+    "background": "background_6",
+    "person": "character_6",
+    "fore": "null",
+    "face": "face_happy",
+    "answers": [
+      "You will carefully read the information about your new place of study, receive the place of study and start school on the day stated in the instructions",
+      "It's not fun to study, so you don't accept a place to study"
+    ],
+    "You will carefully read the information about your new place of study, receive the place of study and start school on the day stated in the instructions": "null",
+    "It's not fun to study, so you don't accept a place to study": "null",
+    "You will carefully read the information about your new place of study, receive the place of study and start school on the day stated in the instructionsColor": "green",
+    "It's not fun to study, so you don't accept a place to studyColor": "red"
+  }
+}
