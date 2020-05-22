@@ -18,6 +18,7 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.text.InputType;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -47,6 +48,7 @@ public class CreateScenario extends ParentActivity {
     private String beforeName = "";
     private boolean writePermissionGiven = false;
     private boolean readPermissionGiven = false;
+    private boolean nowEdit = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -69,6 +71,7 @@ public class CreateScenario extends ParentActivity {
             scenarioName.setText(oletus.getName());
             list = oletus.getListaus();
             beforeName = oletus.getName();
+            nowEdit = true;
         }
         updateList();
 
@@ -132,7 +135,7 @@ public class CreateScenario extends ParentActivity {
                 if(scenarioName.getText().toString().trim().isEmpty()){
                     Toast.makeText(this, getString(R.string.autosave_not), Toast.LENGTH_LONG).show();
                 } else {
-                    editMode = true;
+                    nowEdit = true;
                     basicSave(false);
                 }
             }
@@ -278,6 +281,7 @@ public class CreateScenario extends ParentActivity {
                     }
                 } else {
                     try {
+                        editMode = true;
                         Scenario scenario = new Scenario();
                         scenario.setListaus(list);
                         scenario.setName(name);
