@@ -159,6 +159,7 @@
         kohtauksen nimi.</string>
     <string name="null_value">lopetus</string>
     <string name="autosave_not">nimi tarvitaan automaattiseen tallennukseen</string>
+    <string name="save">Tallenna</string>
 
     <!-- HTML TEXT -->
     <string name="tutorial_scenario">

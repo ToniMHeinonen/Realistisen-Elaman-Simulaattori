@@ -28,21 +28,12 @@ import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Locale;
-
-import muuttaa.myohemmin.realistisenelamansimulaattori.JsonInterface;
 import muuttaa.myohemmin.realistisenelamansimulaattori.R;
 
 /**
  * This class read data from json file in resource and preferences (preference is in this context own json files in app memory)
  */
-public class SaveSystemPreferences implements JsonInterface {
-    private Context context;
-    private boolean debuggi = false;
-    private List<String> list;
-    private String scenarie;
-    private String scenarioName;
-    private JSONObject rootInScenario;
-    private boolean run = false;
+public class SaveSystemPreferences extends SaveSystem{
     private boolean preferencessa = false;
     private boolean userCreatedScenario = false;
 
@@ -51,48 +42,8 @@ public class SaveSystemPreferences implements JsonInterface {
      * @param con context of current activity
      */
     public SaveSystemPreferences(Context con){
-        this.context = con;
-        this.list = new LinkedList<>();
+        super(con);
         setFirstSceneFromScenario();
-    }
-    @Override
-    public List getScenarioList() {
-        list.clear();
-        this.rootInScenario = null;
-        String data = getStringFromScenariesFileAndPreferences();
-        try {
-            JSONObject base = new JSONObject(data);
-            JSONArray help = base.getJSONArray("scenarios");
-            for(int index = 0; index < help.length(); index++){
-                String adding = help.getString(index);
-                list.add(adding);
-            }
-        }catch (JSONException e){
-            if(debuggi){
-                Log.e("JSON/SaveSystem", "Virhe muodostaessa json objektia");
-                e.printStackTrace();
-            }
-        }
-        return list;
-    }
-
-    @Override
-    public List getAnswersList() {
-        createJSONObjectOfScenario();
-        List<String> list = new LinkedList<>();
-        try{
-            JSONObject base = this.rootInScenario;
-            JSONArray array = base.getJSONObject(this.scenarioName).getJSONArray("answers");
-            for(int lap=0; lap < array.length(); lap++){
-                list.add(array.getString(lap));
-            }
-        } catch (JSONException e){
-            if(debuggi){
-                Log.e("ScenarioFile", "tiedostosta ei saati dataa");
-                e.printStackTrace();
-            }
-        }
-        return list;
     }
 
     @Override
@@ -125,29 +76,6 @@ public class SaveSystemPreferences implements JsonInterface {
     }
 
     @Override
-    public void setFirstSceneFromScenario() {
-        this.scenarioName = "first";
-        this.run = false;
-    }
-
-    @Override
-    public void nextScene(String selectionAnswer) {
-        createJSONObjectOfScenario();
-        try{
-            JSONObject base = this.rootInScenario;
-            this.scenarioName = base.getJSONObject(this.scenarioName).getString(selectionAnswer);
-            if(this.scenarioName.equals("null")){
-                this.run = true;
-            }
-        } catch (JSONException e){
-            if(debuggi){
-                Log.e("ScenarioFile", "tiedostosta ei saati dataa");
-                e.printStackTrace();
-            }
-        }
-    }
-
-    @Override
     public void setCurrentScenario(String scenario) {
         this.scenarie = scenario;
         this.userCreatedScenario = false;
@@ -158,150 +86,10 @@ public class SaveSystemPreferences implements JsonInterface {
         this.scenarie = scenario;
         this.userCreatedScenario = user;
     }
-
-    @Override
-    public String getQuestionFromScenario() {
-        createJSONObjectOfScenario();
-        String out = "";
-        try {
-            JSONObject base = this.rootInScenario;
-            System.out.println("base: " + base);
-            out = base.getJSONObject(this.scenarioName).getString("question");
-        } catch (JSONException e){
-            if(debuggi){
-                Log.e("ScenarioFile", "tiedostosta ei saati dataa");
-                e.printStackTrace();
-            }
-        }
-        return out;
-    }
-
-    @Override
-    public String getCurrentScenario() {
-        return scenarie;
-    }
-
-    @Override
-    public String getBackgroundPicture() {
-        createJSONObjectOfScenario();
-        String out = null;
-        try {
-            JSONObject base = this.rootInScenario;
-            out = base.getJSONObject(this.scenarioName).getString("background");
-        } catch (JSONException e){
-            if(debuggi){
-                Log.e("ScenarioFile", "tiedostosta ei saati dataa");
-                e.printStackTrace();
-            }
-        }
-        return out;
-    }
-
-    @Override
-    public String getPersonPicture() {
-        createJSONObjectOfScenario();
-        String out = null;
-        try {
-            JSONObject base = this.rootInScenario;
-            out = base.getJSONObject(this.scenarioName).getString("person");
-        } catch (JSONException e){
-            if(debuggi){
-                Log.e("ScenarioFile", "tiedostosta ei saati dataa");
-                e.printStackTrace();
-            }
-        }
-        return out;
-    }
-
-    @Override
-    public String getFacePicture() {
-        createJSONObjectOfScenario();
-        String out = null;
-        try {
-            JSONObject base = this.rootInScenario;
-            out = base.getJSONObject(this.scenarioName).getString("face");
-        } catch (JSONException e){
-            if(debuggi){
-                Log.e("ScenarioFile", "tiedostosta ei saati dataa");
-                e.printStackTrace();
-            }
-        }
-        return out;
-    }
-
-    @Override
-    public boolean endOfScenario() {
-        return run;
-    }
-
-    @Override
-    public List getColorsInString() {
-        List listaus = getAnswersList();
-        //convert object list to String list
-        List<String> strings = new ArrayList<>(listaus.size());
-        for (Object object : listaus) {
-            strings.add(object != null ? object.toString() : null);
-        }
-        createJSONObjectOfScenario();
-        List<String> list = new LinkedList<>();
-        try{
-            JSONObject base = this.rootInScenario.getJSONObject(this.scenarioName);
-            for(int lap=0; lap < listaus.size(); lap++){
-                String sana = strings.get(lap);
-                list.add(base.getString(sana + "Color"));
-            }
-        } catch (JSONException e){
-            if(debuggi){
-                Log.e("ScenarioFile", "tiedostosta ei saati dataa");
-                e.printStackTrace();
-            }
-        }
-        return list;
-    }
-
-    @Override
-    public String getForegroundPicture() {
-        createJSONObjectOfScenario();
-        String out = null;
-        try {
-            JSONObject base = this.rootInScenario;
-            out = base.getJSONObject(this.scenarioName).getString("fore");
-        } catch (JSONException e){
-            if(debuggi){
-                Log.e("ScenarioFile", "tiedostosta ei saati dataa");
-                e.printStackTrace();
-            }
-        }
-        return out;
-    }
-
-    @Override
-    public String getCategory(String scenario) {
-        String data = getStringFromScenariesFile();
-        try{
-            JSONObject base = new JSONObject(data);
-            JSONArray array = base.getJSONArray("scenarioslist");
-            String pois = null;
-            for(int lap=0; lap < array.length(); lap++){
-                JSONObject object = array.getJSONObject(lap);
-                if(object.getString("name").equals(scenario)){
-                    pois = object.getString("category");
-                    break;
-                }
-            }
-            return pois;
-        } catch (JSONException e){
-            if(debuggi){
-                e.printStackTrace();
-            }
-        }
-        return null;
-    }
-
     /**
      * This method create jsonObject if it is null (not contains already)
      */
-    private void createJSONObjectOfScenario(){
+    protected void createJSONObjectOfScenario(){
         if(rootInScenario == null){
                 String data = getStringFromSceneFile();
                 if(userCreatedScenario){
@@ -464,7 +252,7 @@ public class SaveSystemPreferences implements JsonInterface {
      * This method get information from file
      * @return String what contains data in file
      */
-    private String getStringFromScenariesFile(){
+    protected String getStringFromScenariesFile(){
         String out = "";
         try {
             InputStream test = context.getResources().openRawResource(R.raw.savedata);
@@ -491,7 +279,7 @@ public class SaveSystemPreferences implements JsonInterface {
      * @param resources resource where get
      * @return String what contains data in file
      */
-    private String getStringFromScenariesFile(Resources resources){
+    protected String getStringFromScenariesFile(Resources resources){
         String out = "";
         try {
             InputStream test = resources.openRawResource(R.raw.savedata);
@@ -518,7 +306,7 @@ public class SaveSystemPreferences implements JsonInterface {
      * This method get information from scenario file
      * @return string contains data from file
      */
-    private String getStringFromSceneFile(){
+    protected String getStringFromSceneFile(){
         String out = "";
         String h1 = getJsonName();
         String helpp = "";
@@ -1121,5 +909,25 @@ public class SaveSystemPreferences implements JsonInterface {
         }
 
         return null;
+    }
+    @Override
+    public List getScenarioList() {
+        list.clear();
+        this.rootInScenario = null;
+        String data = getStringFromScenariesFileAndPreferences();
+        try {
+            JSONObject base = new JSONObject(data);
+            JSONArray help = base.getJSONArray("scenarios");
+            for(int index = 0; index < help.length(); index++){
+                String adding = help.getString(index);
+                list.add(adding);
+            }
+        }catch (JSONException e){
+            if(debuggi){
+                Log.e("JSON/SaveSystem", "Virhe muodostaessa json objektia");
+                e.printStackTrace();
+            }
+        }
+        return list;
     }
 }
