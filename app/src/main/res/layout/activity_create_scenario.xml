@@ -30,7 +30,7 @@
     <Button
         style="@style/createScenarioMovementButtons"
         android:onClick="lisaa"
-        android:text="@string/save"/>
+        android:text="@string/add"/>
 
     <LinearLayout
         android:layout_width="match_parent"

@@ -3,7 +3,7 @@
     <!ENTITY create_scene "Luo kohtaus">
     <!ENTITY import_file "Tuo">
     <!ENTITY export_file "Lähetä">
-    <!ENTITY add "Lisää">
+    <!ENTITY add "Tallenna">
     <!ENTITY done "Valmis">
     <!ENTITY create_answer "Luo vastaus">
     ]>
@@ -159,7 +159,6 @@
         kohtauksen nimi.</string>
     <string name="null_value">lopetus</string>
     <string name="autosave_not">nimi tarvitaan automaattiseen tallennukseen</string>
-    <string name="save">Tallenna</string>
 
     <!-- HTML TEXT -->
     <string name="tutorial_scenario">

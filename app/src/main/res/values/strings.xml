@@ -3,7 +3,7 @@
     <!ENTITY create_scene "Create scene">
     <!ENTITY import_file "Import">
     <!ENTITY export_file "Export">
-    <!ENTITY add "Add">
+    <!ENTITY add "Save">
     <!ENTITY done "Done">
     <!ENTITY create_answer "Create answer">
     ]>
@@ -161,7 +161,6 @@
         your scene.</string>
     <string name="null_value">end</string>
     <string name="autosave_not">Give name for autosave</string>
-    <string name="save">Save</string>
 
     <!-- HTML TEXT -->
     <string name="tutorial_scenario">
