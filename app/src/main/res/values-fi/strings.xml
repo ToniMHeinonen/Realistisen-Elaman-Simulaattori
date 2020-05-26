@@ -196,7 +196,13 @@
         muista käydä muuttamassa mihin ne vastaukset johtavat.&lt;/p&gt;</string>
     <string name="credits_html">
     &lt;h1&gt;Credits&lt;/h1&gt;
-    &lt;p&gt;Tämä sovellus on toteutettu yhteistyössä Tampereen Kaupungin ja Nepsy projektin kanssa.&lt;/p&gt;
+    &lt;p&gt;Realistisen Elämän Simulaattori on toteutettu Tampereen ammattikorkeakoulun
+        tietojenkäsittelyn opiskelijoiden toimesta yhteistyössä Tampereen kaupungin
+        Nepsy-tukitiimin koordinoiman ”Nepsy-nuorten palvelut nousuun” -työryhmän kanssa.
+        Työryhmään on kuulunut monialaisesti Tampereen kaupungin henkilöstöä,
+        kokemusasiantuntijoita sekä Tampereen seudun autismiyhdistys ry:n jäseniä.
+        Toimeksiantaja on Tampereen kaupunki.&lt;/p&gt;
+    &lt;p&gt;www.tampere.fi/nepsy&lt;/p&gt;
     &lt;h2&gt;Ohjelmoijat&lt;/h2&gt;
     &lt;p&gt;Toni Heinonen&lt;br/&gt;Jesse Stenroth&lt;br/&gt;Olli Ahonen&lt;/p&gt;
     &lt;h2&gt;Scrum Master&lt;/h2&gt;
