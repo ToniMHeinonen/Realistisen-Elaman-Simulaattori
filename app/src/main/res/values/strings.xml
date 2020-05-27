@@ -200,7 +200,13 @@
         go and change where those answers lead to.&lt;/p&gt;</string>
     <string name="credits_html">
     &lt;h1&gt;Credits&lt;/h1&gt;
-    &lt;p&gt;This app was produced together with Tampereen Kaupunki and Nepsy project.&lt;/p&gt;
+    &lt;p&gt;Realistic Life Simulator is produced by software engineering students of Tampere
+        University of Applied Sciences, together with the “Services of the Nepsy Youth to the Rise”
+        working group coordinated by the Nepsy support team of City of Tampere. The working group
+        has included the staff from the City of Tampere in a multidisciplinary manner, experience
+        experts and members of the Autism Association of the Region of Tampere. Client is the City
+        of Tampere.&lt;/p&gt;
+    &lt;p&gt;www.tampere.fi/nepsy&lt;/p&gt;
     &lt;h2&gt;Programmers&lt;/h2&gt;
     &lt;p&gt;Toni Heinonen&lt;br/&gt;Jesse Stenroth&lt;br/&gt;Olli Ahonen&lt;/p&gt;
     &lt;h2&gt;Scrum Master&lt;/h2&gt;
