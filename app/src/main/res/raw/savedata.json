@@ -1,5 +1,5 @@
 {
-  "scenarios": [ "Movie Theater", "Store Checkout", "Bus Trip", "Visiting the library", "Taking care of a dog", "Traveling by plane", "Traveling by tram", "Calling the emergency number", "Practices", "Restaurant", "Dentist", "Applying to higher education"],
+  "scenarios": [ "Movie Theater", "Store Checkout", "Bus Trip", "Visiting the library", "Taking care of a dog", "Traveling by plane", "Traveling by tram", "Calling the emergency number", "Practices", "Restaurant", "Dentist", "Applying to higher education", "New Apartment"],
   "scenarioslist": [
     {"name": "Movie Theater", "file": "teatteri.json", "category": "Entertainment"},
     {"name": "Store Checkout", "file": "kaupan_kassa.json", "category": "Store"},
@@ -12,6 +12,7 @@
     {"name":  "Practices", "file": "harrastukseenmeno.json", "category": "Entertainment"},
     {"name":  "Restaurant", "file": "ravintola.json", "category": "Entertainment"},
     {"name":  "Dentist", "file":  "hammaslaakari.json", "category": "Doctor visits"},
-    {"name":  "Applying to higher education", "file":  "opiskelu.json", "category": "Study"}
+    {"name":  "Applying to higher education", "file":  "opiskelu.json", "category": "Study"},
+    {"name":  "New Apartment", "file": "omaanasuntoon.json", "category": "home"}
   ]
 }
