@@ -13,6 +13,6 @@
     {"name":  "Restaurant", "file": "ravintola.json", "category": "Entertainment"},
     {"name":  "Dentist", "file":  "hammaslaakari.json", "category": "Doctor visits"},
     {"name":  "Applying to higher education", "file":  "opiskelu.json", "category": "Study"},
-    {"name":  "New Apartment", "file": "omaanasuntoon.json", "category": "home"}
+    {"name":  "New Apartment", "file": "omaanasuntoon.json", "category": "Home"}
   ]
 }

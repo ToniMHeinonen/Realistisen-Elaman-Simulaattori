@@ -13,6 +13,6 @@
     {"name":  "Ravintola", "file": "ravintola.json", "category": "Huvitukset"},
     {"name":  "Hammaslääkäri", "file": "hammaslaakari.json", "category": "Lääkärikäynnit"},
     {"name":  "Hakeutuminen opiskelemaan", "file": "opiskelu.json", "category": "Opiskelu"},
-    {"name":  "Uusi asunto", "file": "omaanasuntoon.json", "category": "asunto"}
+    {"name":  "Uusi asunto", "file": "omaanasuntoon.json", "category": "Asunto"}
   ]
 }
