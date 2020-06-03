@@ -9,6 +9,7 @@
     <color name="colorBlue">#160d91</color>
     <color name="dialogBackground">#DDD</color>
     <color name="disabledEditText">#888</color>
+    <color name="colorWhite">#FFF</color>
 
     <color name="buttonGreen">#0F0</color>
     <color name="buttonGreenDark">#090</color>
