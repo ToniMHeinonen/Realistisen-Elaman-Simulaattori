@@ -1,18 +1,18 @@
 {
-  "scenarios": [ "Leffateatteri", "Kaupan kassa", "Bussimatka", "Kirjastossa käyminen", "Koirasta huolehtiminen", "Lentokoneella kulkeminen", "Ratikalla kulkeminen", "Hätänumeroon soittaminen", "Harrastukseen meneminen", "Ravintola", "Hammaslääkäri", "Hakeutuminen opiskelemaan", "Uusi asunto"],
+  "scenarios": [ "Elokuvateatterissa käyminen", "Kaupan kassalla toimiminen", "Bussilla matkustaminen", "Kirjastossa käyminen", "Koirasta huolehtiminen", "Lentokoneella matkustaminen", "Ratikalla matkustaminen", "Hätänumeroon soittaminen", "Harrastukseen meneminen", "Ravintolassa käyminen", "Hammaslääkärissä käyminen", "Opiskelemaan hakeutuminen", "Asuntoon muuttaminen"],
   "scenarioslist": [
-    {"name": "Leffateatteri", "file": "teatteri.json", "category": "Huvitukset"},
-    {"name": "Kaupan kassa", "file": "kaupan_kassa.json", "category": "Kauppa"},
-    {"name":  "Bussimatka", "file":  "bussimatka.json", "category": "Matkustaminen"},
+    {"name": "Elokuvateatterissa käyminen", "file": "teatteri.json", "category": "Huvitukset"},
+    {"name": "Kaupan kassalla toimiminen", "file": "kaupan_kassa.json", "category": "Kaupassa käynti"},
+    {"name":  "Bussilla matkustaminen", "file":  "bussimatka.json", "category": "Matkustus"},
     {"name":  "Kirjastossa käyminen", "file": "kirjastokaynti_skenaario.json", "category": "Huvitukset"},
     {"name":  "Koirasta huolehtiminen", "file": "koirasta_huolehtiminen.json", "category": "Lemmikit"},
-    {"name":  "Lentokoneella kulkeminen", "file": "lentokone.json", "category": "Matkustaminen"},
-    {"name":  "Ratikalla kulkeminen", "file": "ratikka.json", "category": "Matkustaminen"},
+    {"name":  "Lentokoneella matkustaminen", "file": "lentokone.json", "category": "Matkustus"},
+    {"name":  "Ratikalla matkustaminen", "file": "ratikka.json", "category": "Matkustus"},
     {"name":  "Hätänumeroon soittaminen", "file": "hatanumero.json", "category": "Hätätilanteet"},
     {"name":  "Harrastukseen meneminen", "file": "harrastukseenmeno.json", "category": "Huvitukset"},
-    {"name":  "Ravintola", "file": "ravintola.json", "category": "Huvitukset"},
-    {"name":  "Hammaslääkäri", "file": "hammaslaakari.json", "category": "Lääkärikäynnit"},
-    {"name":  "Hakeutuminen opiskelemaan", "file": "opiskelu.json", "category": "Opiskelu"},
-    {"name":  "Uusi asunto", "file": "omaanasuntoon.json", "category": "Asunto"}
+    {"name":  "Ravintolassa käyminen", "file": "ravintola.json", "category": "Huvitukset"},
+    {"name":  "Hammaslääkärissä käyminen", "file": "hammaslaakari.json", "category": "Terveydenhuolto"},
+    {"name":  "Opiskelemaan hakeutuminen", "file": "opiskelu.json", "category": "Opiskelu"},
+    {"name":  "Asuntoon muuttaminen", "file": "omaanasuntoon.json", "category": "Asunnon hankinta"}
   ]
 }
