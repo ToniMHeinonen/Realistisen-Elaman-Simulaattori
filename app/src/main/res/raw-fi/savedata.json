@@ -1,16 +1,16 @@
 {
-  "scenarios": [ "Elokuvateatterissa käyminen", "Kaupan kassalla toimiminen", "Bussilla matkustaminen", "Kirjastossa käyminen", "Koirasta huolehtiminen", "Ratikalla matkustaminen", "Harrastukseen meneminen", "Ravintolassa käyminen", "Hammaslääkärissä käyminen", "Opiskelemaan hakeutuminen", "Asuntoon muuttaminen"],
+  "scenarios": [ "Elokuvateatterissa käyminen", "Kaupassa käyminen", "Bussilla matkustaminen", "Kirjastossa käyminen", "Koirasta huolehtiminen", "Ratikalla matkustaminen", "Harrastukseen meneminen", "Ravintolassa käyminen", "Lääkärissä käyminen", "Opiskelemaan hakeutuminen", "Vuokra-asunnon hankinta"],
   "scenarioslist": [
-    {"name": "Elokuvateatterissa käyminen", "file": "teatteri.json", "category": "Huvitukset"},
-    {"name": "Kaupan kassalla toimiminen", "file": "kaupan_kassa.json", "category": "Kaupassa käynti"},
-    {"name":  "Bussilla matkustaminen", "file":  "bussimatka.json", "category": "Matkustus"},
-    {"name":  "Kirjastossa käyminen", "file": "kirjastokaynti_skenaario.json", "category": "Huvitukset"},
-    {"name":  "Koirasta huolehtiminen", "file": "koirasta_huolehtiminen.json", "category": "Lemmikit"},
-    {"name":  "Ratikalla matkustaminen", "file": "ratikka.json", "category": "Matkustus"},
-    {"name":  "Harrastukseen meneminen", "file": "harrastukseenmeno.json", "category": "Huvitukset"},
-    {"name":  "Ravintolassa käyminen", "file": "ravintola.json", "category": "Huvitukset"},
-    {"name":  "Hammaslääkärissä käyminen", "file": "hammaslaakari.json", "category": "Terveydenhuolto"},
+    {"name": "Elokuvateatterissa käyminen", "file": "teatteri.json", "category": "Vapaa-ajan toiminta"},
+    {"name": "Kaupassa käyminen", "file": "kaupan_kassa.json", "category": "Kaupassa käynti"},
+    {"name":  "Bussilla matkustaminen", "file":  "bussimatka.json", "category": "Matkustaminen"},
+    {"name":  "Kirjastossa käyminen", "file": "kirjastokaynti_skenaario.json", "category": "Vapaa-ajan toiminta"},
+    {"name":  "Koirasta huolehtiminen", "file": "koirasta_huolehtiminen.json", "category": "Lemmikin hoito"},
+    {"name":  "Ratikalla matkustaminen", "file": "ratikka.json", "category": "Matkustaminen"},
+    {"name":  "Harrastukseen meneminen", "file": "harrastukseenmeno.json", "category": "Vapaa-ajan toiminta"},
+    {"name":  "Ravintolassa käyminen", "file": "ravintola.json", "category": "Vapaa-ajan toiminta"},
+    {"name":  "Lääkärissä käyminen", "file": "hammaslaakari.json", "category": "Lääkärissä käyminen"},
     {"name":  "Opiskelemaan hakeutuminen", "file": "opiskelu.json", "category": "Opiskelu"},
-    {"name":  "Asuntoon muuttaminen", "file": "omaanasuntoon.json", "category": "Asunnon hankinta"}
+    {"name":  "Vuokra-asunnon hankinta", "file": "omaanasuntoon.json", "category": "Vuokra-asunto"}
   ]
 }

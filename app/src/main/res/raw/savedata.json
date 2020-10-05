@@ -1,16 +1,16 @@
 {
-  "scenarios": [ "Going to a movie theater", "Paying for the groceries", "Traveling by bus", "Visiting the library", "Taking care of a dog", "Traveling by tram", "Going to a hobby", "Going to a restaurant", "Going to a dentist", "Applying to higher education", "Moving to an apartment"],
+  "scenarios": [ "Going to a movie theater", "Going to a store", "Traveling by bus", "Visiting the library", "Taking care of a dog", "Traveling by tram", "Going to a hobby", "Going to a restaurant", "Going to a doctor", "Applying to higher education", "Acquiring a rental apartment"],
   "scenarioslist": [
-    {"name": "Going to a movie theater", "file": "teatteri.json", "category": "Entertainment"},
-    {"name": "Paying for the groceries", "file": "kaupan_kassa.json", "category": "Store"},
+    {"name": "Going to a movie theater", "file": "teatteri.json", "category": "Leisure activity"},
+    {"name": "Going to a store", "file": "kaupan_kassa.json", "category": "Behaving at store"},
     {"name":  "Traveling by bus", "file":  "bussimatka.json", "category": "Traveling"},
-    {"name":  "Visiting the library", "file": "kirjastokaynti_skenaario.json", "category": "Entertainment"},
-    {"name":  "Taking care of a dog", "file": "koirasta_huolehtiminen.json", "category": "Pets"},
+    {"name":  "Visiting the library", "file": "kirjastokaynti_skenaario.json", "category": "Leisure activity"},
+    {"name":  "Taking care of a dog", "file": "koirasta_huolehtiminen.json", "category": "Taking care of pets"},
     {"name":  "Traveling by tram", "file": "ratikka.json", "category": "Traveling"},
-    {"name":  "Going to a hobby", "file": "harrastukseenmeno.json", "category": "Entertainment"},
-    {"name":  "Going to a restaurant", "file": "ravintola.json", "category": "Entertainment"},
-    {"name":  "Going to a dentist", "file":  "hammaslaakari.json", "category": "Healthcare"},
+    {"name":  "Going to a hobby", "file": "harrastukseenmeno.json", "category": "Leisure activity"},
+    {"name":  "Going to a restaurant", "file": "ravintola.json", "category": "Leisure activity"},
+    {"name":  "Going to a doctor", "file":  "hammaslaakari.json", "category": "Going to a doctor"},
     {"name":  "Applying to higher education", "file":  "opiskelu.json", "category": "Education"},
-    {"name":  "Moving to an apartment", "file": "omaanasuntoon.json", "category": "Apartment"}
+    {"name":  "Acquiring a rental apartment", "file": "omaanasuntoon.json", "category": "Rental apartment"}
   ]
 }
