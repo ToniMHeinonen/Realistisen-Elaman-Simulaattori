@@ -1,14 +1,12 @@
 {
-  "scenarios": [ "Going to a movie theater", "Paying for the groceries", "Traveling by bus", "Visiting the library", "Taking care of a dog", "Traveling by plane", "Traveling by tram", "Calling the emergency number", "Going to a hobby", "Going to a restaurant", "Going to a dentist", "Applying to higher education", "Moving to an apartment"],
+  "scenarios": [ "Going to a movie theater", "Paying for the groceries", "Traveling by bus", "Visiting the library", "Taking care of a dog", "Traveling by tram", "Going to a hobby", "Going to a restaurant", "Going to a dentist", "Applying to higher education", "Moving to an apartment"],
   "scenarioslist": [
     {"name": "Going to a movie theater", "file": "teatteri.json", "category": "Entertainment"},
     {"name": "Paying for the groceries", "file": "kaupan_kassa.json", "category": "Store"},
     {"name":  "Traveling by bus", "file":  "bussimatka.json", "category": "Traveling"},
     {"name":  "Visiting the library", "file": "kirjastokaynti_skenaario.json", "category": "Entertainment"},
     {"name":  "Taking care of a dog", "file": "koirasta_huolehtiminen.json", "category": "Pets"},
-    {"name":  "Traveling by plane", "file": "lentokone.json", "category": "Traveling"},
     {"name":  "Traveling by tram", "file": "ratikka.json", "category": "Traveling"},
-    {"name":  "Calling the emergency number", "file": "hatanumero.json", "category": "Emergency"},
     {"name":  "Going to a hobby", "file": "harrastukseenmeno.json", "category": "Entertainment"},
     {"name":  "Going to a restaurant", "file": "ravintola.json", "category": "Entertainment"},
     {"name":  "Going to a dentist", "file":  "hammaslaakari.json", "category": "Healthcare"},
