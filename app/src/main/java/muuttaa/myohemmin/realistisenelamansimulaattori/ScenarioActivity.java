@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -26,7 +27,7 @@ public class ScenarioActivity extends ParentActivity {
     private final int SEMICORRECT = 50;
     private ImageView background, character, face, fore;
     private ImageView answeredImageView;
-    private RelativeLayout scenarioLayout;
+    private LinearLayout scenarioLayout;
     private ListView list;
     private ArrayAdapter<String> arrayAdapter;
 

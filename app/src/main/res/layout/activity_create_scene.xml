@@ -21,7 +21,8 @@
             <!-- LOADING ICON FOR SCENE IMAGE -->
             <RelativeLayout
                 android:id="@+id/loadingPanel"
-                style="@style/createSceneImagePreviewLayout"
+                style="@style/scenarioImageLayout"
+                android:layout_height="300dp"
                 android:gravity="center"
                 android:visibility="gone">
 
@@ -34,31 +35,26 @@
             <!-- SCENE IMAGE -->
             <RelativeLayout
                 android:id="@+id/imageLayout"
-                style="@style/createSceneImagePreviewLayout">
+                style="@style/scenarioImageLayout">
 
                 <ImageView
                     android:id="@+id/createBackground"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:scaleType="fitXY"
+                    style="@style/scenarioImageValues"
                     android:src="@drawable/background_1"/>
 
                 <ImageView
                     android:id="@+id/createCharacter"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    style="@style/scenarioImageValues"
                     android:src="@drawable/character_1"/>
 
                 <ImageView
                     android:id="@+id/createFace"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    style="@style/scenarioImageValues"
                     android:src="@drawable/face_happy"/>
 
                 <ImageView
                     android:id="@+id/createForeground"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    style="@style/scenarioImageValues"
                     android:src="@drawable/fore_1"/>
             </RelativeLayout>
 
