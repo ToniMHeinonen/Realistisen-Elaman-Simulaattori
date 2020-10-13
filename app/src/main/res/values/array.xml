@@ -11,6 +11,9 @@
         <item>background_8</item>
         <item>background_9</item>
         <item>background_10</item>
+        <item>background_11</item>
+        <item>background_12</item>
+        <item>background_13</item>
     </string-array>
     <string-array name="taustatName">
         <item>Blue</item>
@@ -23,6 +26,9 @@
         <item>Green</item>
         <item>Light Red</item>
         <item>Cyan</item>
+        <item>Light Green</item>
+        <item>Light Blue</item>
+        <item>Orange 3</item>
     </string-array>
     <string-array name="henkilot">
         <item>character_1</item>
@@ -73,12 +79,15 @@
         <item>fore_10</item>
         <item>fore_11</item>
         <item>fore_12</item>
+        <item>fore_13</item>
+        <item>fore_14</item>
+        <item>fore_15</item>
         <item>empty</item>
     </string-array>
     <string-array name="kolmasKuvaName">
         <item>Bus Stop</item>
         <item>Movie Theater</item>
-        <item>Shop</item>
+        <item>Shop Checkout</item>
         <item>Library</item>
         <item>Hospital</item>
         <item>Restaurant</item>
@@ -88,6 +97,9 @@
         <item>Airport</item>
         <item>Pets</item>
         <item>112</item>
+        <item>Paper</item>
+        <item>Shopping Basket</item>
+        <item>Dog</item>
         <item>empty</item>
     </string-array>
     <string-array name="varit">

@@ -11,6 +11,9 @@
         <item>background_8</item>
         <item>background_9</item>
         <item>background_10</item>
+        <item>background_11</item>
+        <item>background_12</item>
+        <item>background_13</item>
     </string-array>
     <string-array name="taustatName">
         <item>Sininen</item>
@@ -23,6 +26,9 @@
         <item>Vihreä</item>
         <item>Vaaleanpunainen</item>
         <item>Syaani</item>
+        <item>Vaaleanvihreä</item>
+        <item>Vaaleansininen</item>
+        <item>Oranssi 3</item>
     </string-array>
     <string-array name="henkilot">
         <item>character_1</item>
@@ -78,12 +84,15 @@
         <item>fore_10</item>
         <item>fore_11</item>
         <item>fore_12</item>
+        <item>fore_13</item>
+        <item>fore_14</item>
+        <item>fore_15</item>
         <item>tyhjä</item>
     </string-array>
     <string-array name="kolmasKuvaName">
         <item>Bussipysäkki</item>
         <item>Leffateatteri</item>
-        <item>Kauppa</item>
+        <item>Kaupan kassa</item>
         <item>Kirjasto</item>
         <item>Sairaala</item>
         <item>Ravintola</item>
@@ -93,6 +102,9 @@
         <item>Lentokenttä</item>
         <item>Lemmikit</item>
         <item>112</item>
+        <item>Paperi</item>
+        <item>Ostoskori</item>
+        <item>Koira</item>
         <item>tyhjä</item>
     </string-array>
 </resources>
