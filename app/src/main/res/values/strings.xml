@@ -62,6 +62,8 @@
         to do this?</string>
     <string name="sceneDeleteText">Scene will be deleted permanently. Are you sure you want
         to do this?</string>
+    <string name="answerDeleteText">Answer will be deleted permanently. Are you sure you want
+        to do this?</string>
 
     <string name="duplicateScenarioWarning">Duplicate scenario found!</string>
     <string name="duplicateScenarioWarningText">Update added new scenarios and one of the scenarios
@@ -191,9 +193,8 @@
     &lt;p&gt;3. Write a question to your scene&lt;/p&gt;
     &lt;p&gt;4. Create at least one answer to your scene by clicking the \"&create_answer;\" button&lt;/p&gt;
     &lt;p&gt;5. When the scene is ready press the \"&done;\" button&lt;/p&gt;
-    &lt;h2&gt;Deleting an answer&lt;/h2&gt;
-    &lt;p&gt;If you want to delete created answers, just hold the created answer button and a confirmation
-        popup will show up.&lt;/p&gt;</string>
+    &lt;h2&gt;Deleting, moving and duplicating answer&lt;/h2&gt;
+    &lt;p&gt;If you want to delete, move or duplicate created answers, just hold the created answer button.&lt;/p&gt;</string>
     <string name="tutorial_answer">
     &lt;h1&gt;Creating an answer&lt;/h1&gt;
     &lt;p&gt;1. Select a color to your answer&lt;/p&gt;

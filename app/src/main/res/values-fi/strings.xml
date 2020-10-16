@@ -62,6 +62,8 @@
         skenaarion?</string>
     <string name="sceneDeleteText">Kohtaus poistetaan lopullisesti. Haluatko varmasti poistaa
         kohtauksen?</string>
+    <string name="answerDeleteText">Vastaus poistetaan lopullisesti. Haluatko varmasti poistaa
+        vastauksen?</string>
 
     <string name="duplicateScenarioWarning">Kaksi saman nimistä skenaariota!</string>
     <string name="duplicateScenarioWarningText">Päivitys lisäsi uusia skenaarioita, joista yhdellä on
@@ -189,8 +191,8 @@
     &lt;p&gt;3. Kirjoita kysymys kohtaukselle&lt;/p&gt;
     &lt;p&gt;4. Luo ainakin yksi vastaus kohtaukselle painamalla \"&create_answer;\" nappia&lt;/p&gt;
     &lt;p&gt;5. Kun kohtaus on valmis paina \"&done;\" nappia&lt;/p&gt;
-    &lt;h2&gt;Vastauksien poistaminen&lt;/h2&gt;
-    &lt;p&gt;Voit myös poistaa luotuja vastauksia pitämällä luodun vastauksen nappia pohjassa.&lt;/p&gt;</string>
+    &lt;h2&gt;Vastauksien poistaminen, liikuttaminen ja kopioiminen&lt;/h2&gt;
+    &lt;p&gt;Voit myös poistaa, liikuttaa ja kopioida luotuja vastauksia pitämällä luodun vastauksen nappia pohjassa.&lt;/p&gt;</string>
     <string name="tutorial_answer">
     &lt;h1&gt;Vastauksen luominen&lt;/h1&gt;
     &lt;p&gt;1. Valitse väri vastaukselle&lt;/p&gt;

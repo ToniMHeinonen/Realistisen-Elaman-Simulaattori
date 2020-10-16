@@ -5,6 +5,8 @@ import muuttaa.myohemmin.realistisenelamansimulaattori.data.GeneralKeyAndValue;
 import muuttaa.myohemmin.realistisenelamansimulaattori.data.Scene;
 import muuttaa.myohemmin.realistisenelamansimulaattori.scenariocreation.CreateAnswerAdapter;
 import muuttaa.myohemmin.realistisenelamansimulaattori.scenariocreation.CreateAnswerDialogFragment;
+import muuttaa.myohemmin.realistisenelamansimulaattori.scenariocreation.CreatedAnswerDialog;
+import muuttaa.myohemmin.realistisenelamansimulaattori.scenariocreation.CreatedSceneDialog;
 import muuttaa.myohemmin.realistisenelamansimulaattori.tools.GlobalPrefs;
 import muuttaa.myohemmin.realistisenelamansimulaattori.tools.Helper;
 import muuttaa.myohemmin.realistisenelamansimulaattori.tools.HTMLDialog;
@@ -42,8 +44,8 @@ View.OnClickListener, View.OnLongClickListener{
     private ImageView henkilo;
     private ImageView kasvot;
     private ImageView foreGroundView;
-    private List<GeneralKeyAndValue> kysymyksetGo;
-    private List<GeneralKeyAndValue> kysymyksetColor;
+    private List<GeneralKeyAndValue> vastauksetGo;
+    private List<GeneralKeyAndValue> vastauksetColor;
 
     // Scene name values
     private HashSet<String> retrievedSceneNames;
@@ -112,8 +114,8 @@ View.OnClickListener, View.OnLongClickListener{
             if (apu.getName().equals("first"))
                 disableSceneName();
 
-            kysymyksetGo = apu.getGoList();
-            kysymyksetColor = apu.getColorList();
+            vastauksetGo = apu.getGoList();
+            vastauksetColor = apu.getColorList();
             this.question.setText(apu.getQuestion());
             paivitaSpinnerit = true;
         } else{
@@ -121,8 +123,8 @@ View.OnClickListener, View.OnLongClickListener{
                 this.name.setText("first");
                 disableSceneName();
             }
-            kysymyksetGo = new LinkedList<>();
-            kysymyksetColor = new LinkedList<>();
+            vastauksetGo = new LinkedList<>();
+            vastauksetColor = new LinkedList<>();
         }
 
         ArrayAdapter<CharSequence> adapterTaustat = ArrayAdapter.createFromResource(this,
@@ -353,8 +355,8 @@ View.OnClickListener, View.OnLongClickListener{
      */
     public void updateListOfAnswers(){
         ArrayList<Answer> arrayList = new ArrayList<>();
-        for(int lap=0; lap < kysymyksetGo.size(); lap++){
-            arrayList.add(new Answer(this, kysymyksetGo.get(lap).getKey(),kysymyksetGo.get(lap).getValue(), kysymyksetColor.get(lap).getValue()));
+        for(int lap = 0; lap < vastauksetGo.size(); lap++){
+            arrayList.add(new Answer(this, vastauksetGo.get(lap).getKey(), vastauksetGo.get(lap).getValue(), vastauksetColor.get(lap).getValue()));
         }
         CreateAnswerAdapter adapter = new CreateAnswerAdapter(this, arrayList, this);
         lista.setAdapter(adapter);
@@ -389,11 +391,11 @@ View.OnClickListener, View.OnLongClickListener{
                 if(nimi.trim().isEmpty()){
                     nimi = "first";
                 }
-                String[] ans = new String[kysymyksetGo.size()];
-                for (int lap = 0; lap < kysymyksetGo.size(); lap++) {
-                    ans[lap] = kysymyksetGo.get(lap).getKey();
+                String[] ans = new String[vastauksetGo.size()];
+                for (int lap = 0; lap < vastauksetGo.size(); lap++) {
+                    ans[lap] = vastauksetGo.get(lap).getKey();
                 }
-                Scene scene = new Scene(nimi, kysymys, tausta, henkilo, kasvo, ans, kysymyksetGo, kysymyksetColor);
+                Scene scene = new Scene(nimi, kysymys, tausta, henkilo, kasvo, ans, vastauksetGo, vastauksetColor);
                 scene.setForeground(foree);
                 Intent returnIntent = new Intent();
                 returnIntent.putExtra("scene", (Parcelable) scene);
@@ -408,12 +410,12 @@ View.OnClickListener, View.OnLongClickListener{
     @Override
     public void applyDataBack(String varia, String meno, String vastaus, int korvaus) {
         if(korvaus >= 0){
-            this.kysymyksetGo.set(korvaus, new GeneralKeyAndValue(vastaus, meno));
-            this.kysymyksetColor.set(korvaus, new GeneralKeyAndValue(vastaus + "Color", varia));
+            this.vastauksetGo.set(korvaus, new GeneralKeyAndValue(vastaus, meno));
+            this.vastauksetColor.set(korvaus, new GeneralKeyAndValue(vastaus + "Color", varia));
             updateListOfAnswers();
         } else {
-            this.kysymyksetGo.add(new GeneralKeyAndValue(vastaus, meno));
-            this.kysymyksetColor.add(new GeneralKeyAndValue(vastaus + "Color", varia));
+            this.vastauksetGo.add(new GeneralKeyAndValue(vastaus, meno));
+            this.vastauksetColor.add(new GeneralKeyAndValue(vastaus + "Color", varia));
             updateListOfAnswers();
         }
     }
@@ -425,7 +427,7 @@ View.OnClickListener, View.OnLongClickListener{
             return false;
         }
 
-        if(this.kysymyksetGo.size() < 1){
+        if(this.vastauksetGo.size() < 1){
             dataNotGivenAlert(getString(R.string.remember_answers), getString(R.string.not_added));
             return false;
         }
@@ -473,12 +475,12 @@ View.OnClickListener, View.OnLongClickListener{
 
         Bundle bundle = new Bundle();
         bundle.putBoolean("muokkaus", editOldAnswer);
-        bundle.putInt("koko", kysymyksetColor.size());
+        bundle.putInt("koko", vastauksetColor.size());
         bundle.putInt("korvaa", position); // If not editing, position is -1
 
         // If editing old answer
         if (editOldAnswer) {
-            GeneralKeyAndValue meno = kysymyksetGo.get(position);
+            GeneralKeyAndValue meno = vastauksetGo.get(position);
             String me = meno.getValue();
             if(me.equals("null")){
                 me = "";
@@ -486,7 +488,7 @@ View.OnClickListener, View.OnLongClickListener{
             bundle.putString("menee", me);
             bundle.putString("kysymys", meno.getKey());
 
-            GeneralKeyAndValue color = kysymyksetColor.get(position);
+            GeneralKeyAndValue color = vastauksetColor.get(position);
             bundle.putString("color", color.getValue());
         }
 
@@ -520,15 +522,38 @@ View.OnClickListener, View.OnLongClickListener{
     @Override
     public boolean onLongClick(View v) {
         int position = (int) v.getTag();
-        final GeneralKeyAndValue varin = kysymyksetColor.get(position);
-        final GeneralKeyAndValue menon = kysymyksetGo.get(position);
-        Helper.showAlert(this, getString(R.string.huom), getString(R.string.remove_item),
-                getString(android.R.string.yes), getString(android.R.string.no),
-                () -> {
-                    kysymyksetColor.remove(varin);
-                    kysymyksetGo.remove(menon);
-                    updateListOfAnswers();
-                }, null);
+        String text = vastauksetGo.get(position).getKey();
+        new CreatedAnswerDialog(this, text, position).show();
         return true;
+    }
+
+    /**
+     * Deletes an answer at the position.
+     * @param position position to delete the answer at
+     */
+    public void deleteAnswer(int position) {
+        final GeneralKeyAndValue color = vastauksetColor.get(position);
+        final GeneralKeyAndValue go = vastauksetGo.get(position);
+
+        vastauksetColor.remove(color);
+        vastauksetGo.remove(go);
+        updateListOfAnswers();
+    }
+
+    /**
+     * Duplicates an answer at the position.
+     * @param position position to duplicate the answer at
+     */
+    public void duplicateAnswer(int position) {
+        final GeneralKeyAndValue color = vastauksetColor.get(position);
+        final GeneralKeyAndValue go = vastauksetGo.get(position);
+
+        int index = vastauksetColor.indexOf(color);
+        GeneralKeyAndValue duplicateColor = new GeneralKeyAndValue(color.getKey(), color.getValue());
+        GeneralKeyAndValue duplicateGo = new GeneralKeyAndValue(go.getKey(), go.getValue());
+
+        vastauksetColor.add(index + 1, duplicateColor);
+        vastauksetGo.add(index + 1, duplicateGo);
+        updateListOfAnswers();
     }
 }
