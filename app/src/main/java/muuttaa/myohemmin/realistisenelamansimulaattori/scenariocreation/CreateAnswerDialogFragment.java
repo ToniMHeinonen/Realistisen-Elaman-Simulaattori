@@ -71,33 +71,11 @@ public class CreateAnswerDialogFragment extends AppCompatDialogFragment {
         koko = getArguments().getInt("koko", 0);
         builder.setView(view)
                 .setNegativeButton(getContext().getString(R.string.back_button), null)
-                .setPositiveButton(getContext().getString(R.string.done), new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                            try {
-                                String v = (String) selectedButton.getTag();
-                                String m;
+                .setPositiveButton(getContext().getString(R.string.done), null);
 
-                                // If spinner is at end position, set value as null
-                                if (sceneSpinner.getSelectedItemPosition() == END_POSITION) {
-                                    m = "null";
-                                } else {
-                                    m = (String) sceneSpinner.getSelectedItem();
-                                }
+        final AlertDialog mAlertDialog = listenForCancelAndConfirm(builder);
 
-                                String vas = vastaus.getText().toString();
-                                //if answer is empty then replace default
-                                if(vas.trim().isEmpty()){
-                                    vas = getString(R.string.default_answer) + " " + (koko + 1);
-                                }
-                                listener.applyDataBack(v, m, vas, korvaus);
-                            } catch (Exception e) {
-                                Toast.makeText(getActivity(), getContext().getString(R.string.give_all_data), Toast.LENGTH_LONG).show();
-                            }
-                    }
-                });
-
-        return builder.create();
+        return mAlertDialog;
     }
 
     @Override
@@ -107,6 +85,53 @@ public class CreateAnswerDialogFragment extends AppCompatDialogFragment {
             showInfo();
         }
         super.onResume();
+    }
+
+    /**
+     * Listens for confirm and cancel button presses.
+     *
+     * Creates and AlertDialog, so the dismiss call can be handled manually.
+     * This prevents the AlertDialog from closing when it catches an error.
+     * @param builder builder which is used to make the dialog
+     * @return created AlertDialog object
+     */
+    private AlertDialog listenForCancelAndConfirm(AlertDialog.Builder builder) {
+        final AlertDialog mAlertDialog = builder.create();
+        mAlertDialog.setOnShowListener(new DialogInterface.OnShowListener() {
+            @Override
+            public void onShow(DialogInterface dialog) {
+                Button b = mAlertDialog.getButton(AlertDialog.BUTTON_POSITIVE);
+                b.setOnClickListener(new View.OnClickListener() {
+
+                    @Override
+                    public void onClick(View view) {
+                        try {
+                            String v = (String) selectedButton.getTag();
+                            String m;
+
+                            // If spinner is at end position, set value as null
+                            if (sceneSpinner.getSelectedItemPosition() == END_POSITION) {
+                                m = "null";
+                            } else {
+                                m = (String) sceneSpinner.getSelectedItem();
+                            }
+
+                            String vas = vastaus.getText().toString();
+                            //if answer is empty then replace default
+                            if(vas.trim().isEmpty()){
+                                vas = getString(R.string.default_answer) + " " + (koko + 1);
+                            }
+                            listener.applyDataBack(v, m, vas, korvaus);
+                            dismiss();
+                        } catch (Exception e) {
+                            Toast.makeText(getActivity(), getContext().getString(R.string.give_all_data), Toast.LENGTH_LONG).show();
+                        }
+                    }
+                });
+            }
+        });
+
+        return mAlertDialog;
     }
 
     /**
