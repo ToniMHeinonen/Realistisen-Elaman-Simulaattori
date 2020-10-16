@@ -10,6 +10,7 @@ import muuttaa.myohemmin.realistisenelamansimulaattori.scenariocreation.CreatedS
 import muuttaa.myohemmin.realistisenelamansimulaattori.tools.GlobalPrefs;
 import muuttaa.myohemmin.realistisenelamansimulaattori.tools.Helper;
 import muuttaa.myohemmin.realistisenelamansimulaattori.tools.HTMLDialog;
+import muuttaa.myohemmin.realistisenelamansimulaattori.tools.MoveCheck;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -523,7 +524,8 @@ View.OnClickListener, View.OnLongClickListener{
     public boolean onLongClick(View v) {
         int position = (int) v.getTag();
         String text = vastauksetGo.get(position).getKey();
-        new CreatedAnswerDialog(this, text, position).show();
+        final MoveCheck moveCheck = new MoveCheck(vastauksetGo.size(), position);
+        new CreatedAnswerDialog(this, text, position, moveCheck).show();
         return true;
     }
 
@@ -554,6 +556,24 @@ View.OnClickListener, View.OnLongClickListener{
 
         vastauksetColor.add(index + 1, duplicateColor);
         vastauksetGo.add(index + 1, duplicateGo);
+        updateListOfAnswers();
+    }
+
+    /**
+     * Moves the answer up or down.
+     * @param position current position of the answer
+     * @param up whether to move up or down
+     */
+    public void moveAnswer(int position, boolean up) {
+        final GeneralKeyAndValue color = vastauksetColor.get(position);
+        final GeneralKeyAndValue go = vastauksetGo.get(position);
+
+        vastauksetColor.remove(color);
+        vastauksetGo.remove(go);
+
+        int amount = up ? -1 : 1;
+        vastauksetColor.add(position + amount, color);
+        vastauksetGo.add(position + amount, go);
         updateListOfAnswers();
     }
 }

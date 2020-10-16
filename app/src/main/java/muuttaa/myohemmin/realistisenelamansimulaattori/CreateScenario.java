@@ -10,6 +10,7 @@ import muuttaa.myohemmin.realistisenelamansimulaattori.scenariocreation.CreatedS
 import muuttaa.myohemmin.realistisenelamansimulaattori.tools.GlobalPrefs;
 import muuttaa.myohemmin.realistisenelamansimulaattori.tools.Helper;
 import muuttaa.myohemmin.realistisenelamansimulaattori.tools.HTMLDialog;
+import muuttaa.myohemmin.realistisenelamansimulaattori.tools.MoveCheck;
 
 import android.content.Context;
 import android.content.DialogInterface;
@@ -218,7 +219,8 @@ public class CreateScenario extends ParentActivity {
             public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
                 // Show CreatedSceneDialog
                 final Scene scene = list.get(position);
-                new CreatedSceneDialog(_this, scene).show();
+                final MoveCheck moveCheck = new MoveCheck(list.size(), position);
+                new CreatedSceneDialog(_this, scene, moveCheck).show();
                 return true;
             }
         });
@@ -262,6 +264,20 @@ public class CreateScenario extends ParentActivity {
         }
 
         list.add(index + 1, duplicate);
+        updateList();
+    }
+
+    /**
+     * Moves the scene up or down.
+     * @param scene selected scene
+     * @param up whether to move up or down
+     */
+    public void moveScene(Scene scene, boolean up) {
+        int index = list.indexOf(scene);
+        list.remove(scene);
+
+        int amount = up ? -1 : 1;
+        list.add(index + amount, scene);
         updateList();
     }
 
