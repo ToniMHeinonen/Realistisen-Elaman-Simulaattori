@@ -6,6 +6,7 @@ import muuttaa.myohemmin.realistisenelamansimulaattori.data.PermissionsCheck;
 import muuttaa.myohemmin.realistisenelamansimulaattori.data.SaveSystemPreferences;
 import muuttaa.myohemmin.realistisenelamansimulaattori.data.Scenario;
 import muuttaa.myohemmin.realistisenelamansimulaattori.data.Scene;
+import muuttaa.myohemmin.realistisenelamansimulaattori.scenariocreation.CreatedSceneDialog;
 import muuttaa.myohemmin.realistisenelamansimulaattori.tools.GlobalPrefs;
 import muuttaa.myohemmin.realistisenelamansimulaattori.tools.Helper;
 import muuttaa.myohemmin.realistisenelamansimulaattori.tools.HTMLDialog;
@@ -95,11 +96,7 @@ public class CreateScenario extends ParentActivity {
         i.putExtra("eka", onko);
 
         // Create ArrayList of scenes List
-        ArrayList<String> sceneNames = new ArrayList<>();
-
-        for (Scene scene : list) {
-            sceneNames.add(scene.getName());
-        }
+        ArrayList<String> sceneNames = createNamesOfScenesList();
 
         if (createNew) {
             i.putExtra("muokkaus", false);
@@ -214,18 +211,14 @@ public class CreateScenario extends ParentActivity {
         }
         adapter = new ArrayAdapter<String>(this, R.layout.scene_item, arrayList);
         listaview.setAdapter(adapter);
-        final Context con = this;
+        final CreateScenario _this = this;
         //remove function
         listaview.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override
             public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
+                // Show CreatedSceneDialog
                 final Scene scene = list.get(position);
-                Helper.showAlert(con, getString(R.string.huom), getString(R.string.remove_item),
-                        getString(android.R.string.yes), getString(android.R.string.no),
-                        () -> {
-                            list.remove(scene);
-                            updateList();
-                        }, null);
+                new CreatedSceneDialog(_this, scene).show();
                 return true;
             }
         });
@@ -233,6 +226,57 @@ public class CreateScenario extends ParentActivity {
         listaview.setOnItemClickListener((parent, view, position, id) -> {
             moveToCreateScene(false, position);
         });
+    }
+
+    /**
+     * Deletes the provided scene.
+     * @param scene scene to delete
+     */
+    public void deleteScene(Scene scene) {
+        list.remove(scene);
+        updateList();
+    }
+
+    /**
+     * Duplicates the provided scene.
+     * @param scene scene to duplicate
+     */
+    public void duplicateScene(Scene scene) {
+        int index = list.indexOf(scene);
+        Scene duplicate = new Scene(scene, getString(R.string.copy));
+        ArrayList<String> sceneNames = createNamesOfScenesList();
+
+        // Check if this is not the first copy of the scene
+        if (sceneNames.contains(duplicate.getName())) {
+            int copyNumber = 1;
+            while (true) {
+                // Add number at the end of the name until the name does not exist
+                String newName = duplicate.getName() + copyNumber;
+                if (sceneNames.contains(newName)) {
+                    copyNumber++;
+                } else {
+                    duplicate.setName(newName);
+                    break;
+                }
+            }
+        }
+
+        list.add(index + 1, duplicate);
+        updateList();
+    }
+
+    /**
+     * Retrieves the names of the scenes and creates a list from it.
+     * @return created list of names of the scenes
+     */
+    private ArrayList<String> createNamesOfScenesList() {
+        ArrayList<String> sceneNames = new ArrayList<>();
+
+        for (Scene scene : list) {
+            sceneNames.add(scene.getName());
+        }
+
+        return sceneNames;
     }
 
     public void showInfo(View v) {

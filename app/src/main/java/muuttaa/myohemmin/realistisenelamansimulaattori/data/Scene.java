@@ -20,6 +20,8 @@ public class Scene implements Parcelable {
     private List<GeneralKeyAndValue> goList;
     private List<GeneralKeyAndValue> colorList;
 
+    public Scene(){}
+
     /**
      * This constructor contains all data what scene need
      * @param name name of scene
@@ -49,8 +51,20 @@ public class Scene implements Parcelable {
             }
         }
     }
-    public Scene(){
 
+    /**
+     * Copy values from other Scene object.
+     * @param otherScene other Scene object
+     */
+    public Scene(Scene otherScene, String copy) {
+        this.name = otherScene.name + copy;
+        this.question = otherScene.question;
+        this.background = otherScene.background;
+        this.person = otherScene.person;
+        this.face = otherScene.face;
+        this.answers = otherScene.answers;
+        this.goList = otherScene.goList;
+        this.colorList = otherScene.colorList;
     }
 
     /**

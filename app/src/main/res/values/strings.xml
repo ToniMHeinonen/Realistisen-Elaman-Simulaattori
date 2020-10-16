@@ -60,6 +60,8 @@
         to do this?</string>
     <string name="scenarioDeleteText">Scenario will be deleted permanently. Are you sure you want
         to do this?</string>
+    <string name="sceneDeleteText">Scene will be deleted permanently. Are you sure you want
+        to do this?</string>
 
     <string name="duplicateScenarioWarning">Duplicate scenario found!</string>
     <string name="duplicateScenarioWarningText">Update added new scenarios and one of the scenarios
@@ -162,6 +164,12 @@
     <string name="null_value">end</string>
     <string name="autosave_not">Give name for autosave</string>
 
+    <!-- CREATED SCENE DIALOG -->
+    <string name="duplicate_scene">Duplicate</string>
+    <string name="move_up">Move up</string>
+    <string name="move_down">Move down</string>
+    <string name="copy">Copy</string>
+
     <!-- HTML TEXT -->
     <string name="tutorial_scenario">
     &lt;h1&gt;Creating a scenario&lt;/h1&gt;
@@ -174,9 +182,8 @@
     &lt;h2&gt;&import_file;&lt;/h2&gt;
     &lt;p&gt;It is also possible to import json scenario files in to your
         app, just press the \"&import_file;\" button and select the file to import.&lt;/p&gt;
-    &lt;h2&gt;Deleting scenes&lt;/h2&gt;
-    &lt;p&gt;If you want to delete created scenes, just hold the created scene button and a confirmation
-        popup will show up.&lt;/p&gt;</string>
+    &lt;h2&gt;Deleting, moving and duplicating scenes&lt;/h2&gt;
+    &lt;p&gt;If you want to delete, move or duplicate created scenes, just hold the created scene button.&lt;/p&gt;</string>
     <string name="tutorial_scene">
     &lt;h1&gt;Creating a scene&lt;/h1&gt;
     &lt;p&gt;1. Select your desired image for the scene&lt;/p&gt;

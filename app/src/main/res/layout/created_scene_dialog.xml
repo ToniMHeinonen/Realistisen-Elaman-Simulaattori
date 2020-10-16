@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Add inside RelativeLayout to make it wider -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/dialogBackground">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="?attr/font_large"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/duplicateBtn"
+                style="@style/HamburgerButton"
+                android:text="@string/duplicate_scene"/>
+
+            <Button
+                android:id="@+id/moveUpBtn"
+                style="@style/HamburgerButton"
+                android:text="@string/move_up" />
+
+            <Button
+                android:id="@+id/moveDownBtn"
+                style="@style/HamburgerButton"
+                android:text="@string/move_down" />
+
+            <Button
+                android:id="@+id/deleteButton"
+                style="@style/HamburgerButton"
+                android:text="@string/deleteButton" />
+
+            <Button
+                android:id="@+id/closeButton"
+                style="@style/HamburgerButton"
+                android:text="@string/backButton"
+                android:background="@drawable/cancel_button"/>
+        </LinearLayout>
+</RelativeLayout>
