@@ -51,7 +51,7 @@ View.OnClickListener, View.OnLongClickListener, ModifiableInterface {
     private CreateAnswerAdapter adapter;
 
     // Scene name values
-    private HashSet<String> retrievedSceneNames;
+    private ArrayList<String> retrievedSceneNames;
 
     private int korvaus = -1;
     private boolean debuggi = false;
@@ -105,7 +105,7 @@ View.OnClickListener, View.OnLongClickListener, ModifiableInterface {
         imageLayout.setVisibility(View.GONE);
 
         korvaus = getIntent().getIntExtra("korvaus", -1);
-        retrievedSceneNames = new HashSet<>(getIntent().getStringArrayListExtra("createdScenes"));
+        retrievedSceneNames = getIntent().getStringArrayListExtra("createdScenes");
         boolean paivitaSpinnerit = false;
         Scene apu = null;
         if(getIntent().getBooleanExtra("muokkaus", false)){
@@ -501,8 +501,7 @@ View.OnClickListener, View.OnLongClickListener, ModifiableInterface {
             bundle.putString("color", color.getValue());
         }
 
-        // For some reason sceneNames gets duplicated if I pass the class variable
-        // ArrayList of sceneNames, DialogFragment is probably the reason why it happens
+        // Create new array list of scene names and add current scene to the last
         ArrayList<String> sceneNames = new ArrayList<>(retrievedSceneNames);
         sceneNames.add(name.getText().toString());
 

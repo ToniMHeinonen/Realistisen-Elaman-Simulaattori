@@ -165,7 +165,7 @@
     <string name="duplicate_modifiable">Kopioi</string>
     <string name="move_up">Liikuta ylemmäs</string>
     <string name="move_down">Liikuta alemmas</string>
-    <string name="copy">Kopio</string>
+    <string name="copy">-kopio</string>
 
     <!-- HTML TEXT -->
     <string name="tutorial_scenario">
