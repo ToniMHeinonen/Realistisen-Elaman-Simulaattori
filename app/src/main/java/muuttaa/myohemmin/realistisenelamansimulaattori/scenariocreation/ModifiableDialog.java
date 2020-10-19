@@ -42,7 +42,7 @@ public class ModifiableDialog extends Dialog implements
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
-        setContentView(R.layout.created_scene_dialog);
+        setContentView(R.layout.modifiable_dialog);
 
         TextView categoryView = findViewById(R.id.name);
         // Show only the beginning of the answer text

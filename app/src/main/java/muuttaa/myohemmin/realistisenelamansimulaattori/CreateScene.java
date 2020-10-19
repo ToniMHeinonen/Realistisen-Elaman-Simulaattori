@@ -47,6 +47,8 @@ View.OnClickListener, View.OnLongClickListener, ModifiableInterface {
     private ImageView foreGroundView;
     private List<GeneralKeyAndValue> vastauksetGo;
     private List<GeneralKeyAndValue> vastauksetColor;
+    private ArrayList<Answer> answersList = new ArrayList<>();
+    private CreateAnswerAdapter adapter;
 
     // Scene name values
     private HashSet<String> retrievedSceneNames;
@@ -355,12 +357,18 @@ View.OnClickListener, View.OnLongClickListener, ModifiableInterface {
      * Shows answers in a list.
      */
     public void updateListOfAnswers(){
-        ArrayList<Answer> arrayList = new ArrayList<>();
+        answersList.clear();
         for(int lap = 0; lap < vastauksetGo.size(); lap++){
-            arrayList.add(new Answer(this, vastauksetGo.get(lap).getKey(), vastauksetGo.get(lap).getValue(), vastauksetColor.get(lap).getValue()));
+            answersList.add(new Answer(this, vastauksetGo.get(lap).getKey(), vastauksetGo.get(lap).getValue(), vastauksetColor.get(lap).getValue()));
         }
-        CreateAnswerAdapter adapter = new CreateAnswerAdapter(this, arrayList, this);
-        lista.setAdapter(adapter);
+
+        if (adapter == null) {
+            adapter = new CreateAnswerAdapter(this, answersList, this);
+            lista.setAdapter(adapter);
+        } else {
+            // Refresh adapter list instead of creating new adapter
+            adapter.notifyDataSetChanged();
+        }
     }
 
     public void showInfo(View v) {

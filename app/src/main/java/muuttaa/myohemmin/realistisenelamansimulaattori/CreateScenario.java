@@ -40,6 +40,7 @@ import java.util.List;
 
 public class CreateScenario extends ParentActivity implements ModifiableInterface {
     private List<Scene> list = new ArrayList<>();
+    private ArrayList<String> sceneNames = new ArrayList<>();
     private EditText scenarioName;
     private ListView listaview;
     private ArrayAdapter<String> adapter;
@@ -207,12 +208,19 @@ public class CreateScenario extends ParentActivity implements ModifiableInterfac
 
     //update ListView
     private void updateList() {
-        ArrayList<String> arrayList = new ArrayList<String>();
-        for(int lap=0; lap < list.size(); lap++){
-            arrayList.add(list.get(lap).getName());
+        sceneNames.clear();
+        for(int lap=0; lap < list.size(); lap++) {
+            sceneNames.add(list.get(lap).getName());
         }
-        adapter = new ArrayAdapter<String>(this, R.layout.scene_item, arrayList);
-        listaview.setAdapter(adapter);
+
+        if (adapter == null) {
+            adapter = new ArrayAdapter<String>(this, R.layout.scene_item, sceneNames);
+            listaview.setAdapter(adapter);
+        } else {
+            // Refresh adapter list so the scrollbar does not jump on top
+            adapter.notifyDataSetChanged();
+        }
+
         final CreateScenario _this = this;
         //remove function
         listaview.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
