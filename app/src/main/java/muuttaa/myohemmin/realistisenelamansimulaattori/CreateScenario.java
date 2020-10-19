@@ -6,7 +6,8 @@ import muuttaa.myohemmin.realistisenelamansimulaattori.data.PermissionsCheck;
 import muuttaa.myohemmin.realistisenelamansimulaattori.data.SaveSystemPreferences;
 import muuttaa.myohemmin.realistisenelamansimulaattori.data.Scenario;
 import muuttaa.myohemmin.realistisenelamansimulaattori.data.Scene;
-import muuttaa.myohemmin.realistisenelamansimulaattori.scenariocreation.CreatedSceneDialog;
+import muuttaa.myohemmin.realistisenelamansimulaattori.scenariocreation.ModifiableDialog;
+import muuttaa.myohemmin.realistisenelamansimulaattori.scenariocreation.ModifiableInterface;
 import muuttaa.myohemmin.realistisenelamansimulaattori.tools.GlobalPrefs;
 import muuttaa.myohemmin.realistisenelamansimulaattori.tools.Helper;
 import muuttaa.myohemmin.realistisenelamansimulaattori.tools.HTMLDialog;
@@ -37,7 +38,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-public class CreateScenario extends ParentActivity {
+public class CreateScenario extends ParentActivity implements ModifiableInterface {
     private List<Scene> list = new ArrayList<>();
     private EditText scenarioName;
     private ListView listaview;
@@ -220,7 +221,7 @@ public class CreateScenario extends ParentActivity {
                 // Show CreatedSceneDialog
                 final Scene scene = list.get(position);
                 final MoveCheck moveCheck = new MoveCheck(list.size(), position);
-                new CreatedSceneDialog(_this, scene, moveCheck).show();
+                new ModifiableDialog(_this, _this, scene.getName(), position, moveCheck).show();
                 return true;
             }
         });
@@ -231,20 +232,20 @@ public class CreateScenario extends ParentActivity {
     }
 
     /**
-     * Deletes the provided scene.
-     * @param scene scene to delete
+     * Deletes the scene at the position.
+     * @param position position of the scene to delete
      */
-    public void deleteScene(Scene scene) {
-        list.remove(scene);
+    public void deleteModifiable(int position) {
+        list.remove(position);
         updateList();
     }
 
     /**
-     * Duplicates the provided scene.
-     * @param scene scene to duplicate
+     * Duplicates the scene at the position.
+     * @param position position of the scene to duplicate
      */
-    public void duplicateScene(Scene scene) {
-        int index = list.indexOf(scene);
+    public void duplicateModifiable(int position) {
+        Scene scene = list.get(position);
         Scene duplicate = new Scene(scene, getString(R.string.copy));
         ArrayList<String> sceneNames = createNamesOfScenesList();
 
@@ -263,21 +264,21 @@ public class CreateScenario extends ParentActivity {
             }
         }
 
-        list.add(index + 1, duplicate);
+        list.add(position + 1, duplicate);
         updateList();
     }
 
     /**
      * Moves the scene up or down.
-     * @param scene selected scene
+     * @param position position of the selected scene
      * @param up whether to move up or down
      */
-    public void moveScene(Scene scene, boolean up) {
-        int index = list.indexOf(scene);
+    public void moveModifiable(int position, boolean up) {
+        Scene scene = list.get(position);
         list.remove(scene);
 
         int amount = up ? -1 : 1;
-        list.add(index + amount, scene);
+        list.add(position + amount, scene);
         updateList();
     }
 

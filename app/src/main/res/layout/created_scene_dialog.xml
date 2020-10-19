@@ -22,7 +22,7 @@
             <Button
                 android:id="@+id/duplicateBtn"
                 style="@style/HamburgerButton"
-                android:text="@string/duplicate_scene"/>
+                android:text="@string/duplicate_modifiable"/>
 
             <Button
                 android:id="@+id/moveUpBtn"

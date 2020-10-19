@@ -60,10 +60,7 @@
         prosentin?</string>
     <string name="scenarioDeleteText">Skenaario poistetaan lopullisesti. Haluatko varmasti poistaa
         skenaarion?</string>
-    <string name="sceneDeleteText">Kohtaus poistetaan lopullisesti. Haluatko varmasti poistaa
-        kohtauksen?</string>
-    <string name="answerDeleteText">Vastaus poistetaan lopullisesti. Haluatko varmasti poistaa
-        vastauksen?</string>
+    <string name="modifiableDeleteText">Haluatko varmasti poistaa tämän lopullisesti?</string>
 
     <string name="duplicateScenarioWarning">Kaksi saman nimistä skenaariota!</string>
     <string name="duplicateScenarioWarningText">Päivitys lisäsi uusia skenaarioita, joista yhdellä on
@@ -165,7 +162,7 @@
     <string name="autosave_not">nimi tarvitaan automaattiseen tallennukseen</string>
 
     <!-- CREATED SCENE DIALOG -->
-    <string name="duplicate_scene">Kopioi</string>
+    <string name="duplicate_modifiable">Kopioi</string>
     <string name="move_up">Liikuta ylemmäs</string>
     <string name="move_down">Liikuta alemmas</string>
     <string name="copy">Kopio</string>

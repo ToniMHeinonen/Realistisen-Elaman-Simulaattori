@@ -60,10 +60,7 @@
         to do this?</string>
     <string name="scenarioDeleteText">Scenario will be deleted permanently. Are you sure you want
         to do this?</string>
-    <string name="sceneDeleteText">Scene will be deleted permanently. Are you sure you want
-        to do this?</string>
-    <string name="answerDeleteText">Answer will be deleted permanently. Are you sure you want
-        to do this?</string>
+    <string name="modifiableDeleteText">Are you sure you want to delete this permanently?</string>
 
     <string name="duplicateScenarioWarning">Duplicate scenario found!</string>
     <string name="duplicateScenarioWarningText">Update added new scenarios and one of the scenarios
@@ -167,7 +164,7 @@
     <string name="autosave_not">Give name for autosave</string>
 
     <!-- CREATED SCENE DIALOG -->
-    <string name="duplicate_scene">Duplicate</string>
+    <string name="duplicate_modifiable">Duplicate</string>
     <string name="move_up">Move up</string>
     <string name="move_down">Move down</string>
     <string name="copy">Copy</string>

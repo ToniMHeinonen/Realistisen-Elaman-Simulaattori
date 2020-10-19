@@ -5,8 +5,8 @@ import muuttaa.myohemmin.realistisenelamansimulaattori.data.GeneralKeyAndValue;
 import muuttaa.myohemmin.realistisenelamansimulaattori.data.Scene;
 import muuttaa.myohemmin.realistisenelamansimulaattori.scenariocreation.CreateAnswerAdapter;
 import muuttaa.myohemmin.realistisenelamansimulaattori.scenariocreation.CreateAnswerDialogFragment;
-import muuttaa.myohemmin.realistisenelamansimulaattori.scenariocreation.CreatedAnswerDialog;
-import muuttaa.myohemmin.realistisenelamansimulaattori.scenariocreation.CreatedSceneDialog;
+import muuttaa.myohemmin.realistisenelamansimulaattori.scenariocreation.ModifiableDialog;
+import muuttaa.myohemmin.realistisenelamansimulaattori.scenariocreation.ModifiableInterface;
 import muuttaa.myohemmin.realistisenelamansimulaattori.tools.GlobalPrefs;
 import muuttaa.myohemmin.realistisenelamansimulaattori.tools.Helper;
 import muuttaa.myohemmin.realistisenelamansimulaattori.tools.HTMLDialog;
@@ -33,7 +33,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class CreateScene extends ParentActivity implements CreateAnswerDialogFragment.dialogiFragmentListener,
-View.OnClickListener, View.OnLongClickListener{
+View.OnClickListener, View.OnLongClickListener, ModifiableInterface {
     private EditText name;
     private EditText question;
     private Spinner background;
@@ -525,7 +525,7 @@ View.OnClickListener, View.OnLongClickListener{
         int position = (int) v.getTag();
         String text = vastauksetGo.get(position).getKey();
         final MoveCheck moveCheck = new MoveCheck(vastauksetGo.size(), position);
-        new CreatedAnswerDialog(this, text, position, moveCheck).show();
+        new ModifiableDialog(this, this, text, position, moveCheck).show();
         return true;
     }
 
@@ -533,7 +533,7 @@ View.OnClickListener, View.OnLongClickListener{
      * Deletes an answer at the position.
      * @param position position to delete the answer at
      */
-    public void deleteAnswer(int position) {
+    public void deleteModifiable(int position) {
         final GeneralKeyAndValue color = vastauksetColor.get(position);
         final GeneralKeyAndValue go = vastauksetGo.get(position);
 
@@ -546,7 +546,7 @@ View.OnClickListener, View.OnLongClickListener{
      * Duplicates an answer at the position.
      * @param position position to duplicate the answer at
      */
-    public void duplicateAnswer(int position) {
+    public void duplicateModifiable(int position) {
         final GeneralKeyAndValue color = vastauksetColor.get(position);
         final GeneralKeyAndValue go = vastauksetGo.get(position);
 
@@ -564,7 +564,7 @@ View.OnClickListener, View.OnLongClickListener{
      * @param position current position of the answer
      * @param up whether to move up or down
      */
-    public void moveAnswer(int position, boolean up) {
+    public void moveModifiable(int position, boolean up) {
         final GeneralKeyAndValue color = vastauksetColor.get(position);
         final GeneralKeyAndValue go = vastauksetGo.get(position);
 

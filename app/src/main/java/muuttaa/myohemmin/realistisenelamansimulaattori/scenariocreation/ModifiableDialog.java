@@ -1,33 +1,36 @@
 package muuttaa.myohemmin.realistisenelamansimulaattori.scenariocreation;
 
 import android.app.Dialog;
+import android.content.Context;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.widget.Button;
 import android.widget.TextView;
 
-import muuttaa.myohemmin.realistisenelamansimulaattori.CreateScenario;
 import muuttaa.myohemmin.realistisenelamansimulaattori.R;
-import muuttaa.myohemmin.realistisenelamansimulaattori.data.Scene;
 import muuttaa.myohemmin.realistisenelamansimulaattori.tools.Helper;
 import muuttaa.myohemmin.realistisenelamansimulaattori.tools.MoveCheck;
 
-public class CreatedSceneDialog extends Dialog implements
+public class ModifiableDialog extends Dialog implements
         View.OnClickListener {
 
-    private CreateScenario activity;
-    private Scene scene;
+    private Context context;
+    private ModifiableInterface activity;
+    private String text;
+    private int position;
     private MoveCheck moveCheck;
 
     /**
      * Initializes instance of this class.
      * @param a current activity
      */
-    public CreatedSceneDialog(CreateScenario a, Scene scene, MoveCheck moveCheck) {
-        super(a);
+    public ModifiableDialog(Context context, ModifiableInterface a, String text, int position, MoveCheck moveCheck) {
+        super(context);
+        this.context = context;
         this.activity = a;
-        this.scene = scene;
+        this.text = text;
+        this.position = position;
         this.moveCheck = moveCheck;
     }
 
@@ -42,7 +45,10 @@ public class CreatedSceneDialog extends Dialog implements
         setContentView(R.layout.created_scene_dialog);
 
         TextView categoryView = findViewById(R.id.name);
-        categoryView.setText(scene.getName());
+        // Show only the beginning of the answer text
+        if (text.length() > 50)
+            text = text.substring(0, 50) + "...";
+        categoryView.setText(text);
 
         // Disable up and down buttons if index is not valid
         Button moveUp = findViewById(R.id.moveUpBtn);
@@ -60,30 +66,30 @@ public class CreatedSceneDialog extends Dialog implements
     }
 
     /**
-     * Listens button clicks on view.
+     * Listens for button clicks on view.
      * @param v clicked view
      */
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.duplicateBtn:
-                activity.duplicateScene(scene);
+                activity.duplicateModifiable(position);
                 dismiss();
                 break;
             case R.id.moveUpBtn:
-                activity.moveScene(scene, true);
+                activity.moveModifiable(position, true);
                 dismiss();
                 break;
             case R.id.moveDownBtn:
-                activity.moveScene(scene, false);
+                activity.moveModifiable(position, false);
                 dismiss();
                 break;
             case R.id.deleteButton:
-                Helper.showAlert(activity, scene.getName(),
-                        activity.getString(R.string.sceneDeleteText),
-                        activity.getString(R.string.scenarioDelete),
+                Helper.showAlert(context, text,
+                        context.getString(R.string.modifiableDeleteText),
+                        context.getString(R.string.scenarioDelete),
                         null,
-                        (() -> deleteScene()), null);
+                        (() -> deleteModifiable()), null);
                 break;
             case R.id.closeButton:
                 cancel();
@@ -94,10 +100,10 @@ public class CreatedSceneDialog extends Dialog implements
     }
 
     /**
-     * Deletes scene permanently.
+     * Deletes item permanently.
      */
-    private void deleteScene() {
-        activity.deleteScene(scene);
+    private void deleteModifiable() {
+        activity.deleteModifiable(position);
         dismiss();
     }
 }
