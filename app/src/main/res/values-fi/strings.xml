@@ -163,8 +163,9 @@
 
     <!-- CREATED SCENE DIALOG -->
     <string name="duplicate_modifiable">Kopioi</string>
-    <string name="move_up">Liikuta ylemmäs</string>
-    <string name="move_down">Liikuta alemmas</string>
+    <string name="move_up">Siirrä ylemmäs</string>
+    <string name="move_down">Siirrä alemmas</string>
+    <string name="moved_to">Siirretty sijaintiin %1$d / %2$d</string>
     <string name="copy">-kopio</string>
 
     <!-- HTML TEXT -->

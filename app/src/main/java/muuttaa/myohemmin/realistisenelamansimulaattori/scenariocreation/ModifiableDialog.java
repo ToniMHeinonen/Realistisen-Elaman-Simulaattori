@@ -5,8 +5,10 @@ import android.content.Context;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import muuttaa.myohemmin.realistisenelamansimulaattori.R;
 import muuttaa.myohemmin.realistisenelamansimulaattori.tools.Helper;
@@ -19,7 +21,9 @@ public class ModifiableDialog extends Dialog implements
     private ModifiableInterface activity;
     private String text;
     private int position;
+
     private MoveCheck moveCheck;
+    private Button moveUpBtn, moveDownBtn;
 
     /**
      * Initializes instance of this class.
@@ -44,22 +48,22 @@ public class ModifiableDialog extends Dialog implements
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.modifiable_dialog);
 
+        // Change window width to 80 % of screen size
+        int width = (int)(context.getResources().getDisplayMetrics().widthPixels*0.80);
+        getWindow().setLayout(width, WindowManager.LayoutParams.WRAP_CONTENT);
+
         TextView categoryView = findViewById(R.id.name);
         // Show only the beginning of the answer text
         if (text.length() > 50)
             text = text.substring(0, 50) + "...";
         categoryView.setText(text);
 
-        // Disable up and down buttons if index is not valid
-        Button moveUp = findViewById(R.id.moveUpBtn);
-        moveUp.setEnabled(moveCheck.isCanMoveUp());
-        moveUp.setOnClickListener(this);
-
-        Button moveDown = findViewById(R.id.moveDownBtn);
-        moveDown.setEnabled(moveCheck.isCanMoveDown());
-        moveDown.setOnClickListener(this);
-
         // Set listeners
+        moveUpBtn = findViewById(R.id.moveUpBtn);
+        moveUpBtn.setOnClickListener(this);
+        moveDownBtn = findViewById(R.id.moveDownBtn);
+        moveDownBtn.setOnClickListener(this);
+        toggleMoveButtons();
         findViewById(R.id.duplicateBtn).setOnClickListener(this);
         findViewById(R.id.deleteButton).setOnClickListener(this);
         findViewById(R.id.closeButton).setOnClickListener(this);
@@ -78,11 +82,11 @@ public class ModifiableDialog extends Dialog implements
                 break;
             case R.id.moveUpBtn:
                 activity.moveModifiable(position, true);
-                dismiss();
+                changePosition(--position);
                 break;
             case R.id.moveDownBtn:
                 activity.moveModifiable(position, false);
-                dismiss();
+                changePosition(++position);
                 break;
             case R.id.deleteButton:
                 Helper.showAlert(context, text,
@@ -97,6 +101,30 @@ public class ModifiableDialog extends Dialog implements
             default:
                 break;
         }
+    }
+
+    /**
+     * Toggles the move up and down buttons on and off.
+     */
+    private void toggleMoveButtons() {
+        moveCheck.refreshMovement(position);
+        moveUpBtn.setEnabled(moveCheck.isCanMoveUp());
+        moveDownBtn.setEnabled(moveCheck.isCanMoveDown());
+    }
+
+    /**
+     * Changes the position of the selected item.
+     * @param position new position
+     */
+    private void changePosition(int position) {
+        int size = moveCheck.getListSize();
+        // Show toast of the new position
+        Toast.makeText(context,
+                // Position + 1 since index starts at 0
+                context.getString(R.string.moved_to, position + 1, size),
+                Toast.LENGTH_SHORT).show();
+
+        toggleMoveButtons();
     }
 
     /**

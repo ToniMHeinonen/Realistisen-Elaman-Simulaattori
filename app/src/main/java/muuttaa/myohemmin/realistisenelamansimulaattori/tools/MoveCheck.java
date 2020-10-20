@@ -2,10 +2,23 @@ package muuttaa.myohemmin.realistisenelamansimulaattori.tools;
 
 public class MoveCheck {
 
-    private boolean canMoveUp = false;
-    private boolean canMoveDown = false;
+    private int listSize;
+    private boolean canMoveUp, canMoveDown;
 
     public MoveCheck(int listSize, int index) {
+        this.listSize = listSize;
+
+        refreshMovement(index);
+    }
+
+    /**
+     * Checks if moving up and down is possible with given index.
+     * @param index position of the item in list
+     */
+    public void refreshMovement(int index) {
+        canMoveUp = false;
+        canMoveDown = false;
+
         // If there is only 1 item in list, movement is not possible
         if (listSize == 1) {
             return;
@@ -30,5 +43,9 @@ public class MoveCheck {
 
     public boolean isCanMoveDown() {
         return canMoveDown;
+    }
+
+    public int getListSize() {
+        return listSize;
     }
 }

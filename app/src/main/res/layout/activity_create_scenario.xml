@@ -57,7 +57,10 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="0.4"
-        android:layout_margin="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
         android:id="@+id/listaScene"/>
 
     <!-- BOTTOM BUTTONS -->
