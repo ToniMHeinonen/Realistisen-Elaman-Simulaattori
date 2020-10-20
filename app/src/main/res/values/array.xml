@@ -14,21 +14,23 @@
         <item>background_11</item>
         <item>background_12</item>
         <item>background_13</item>
+        <item>background_14</item>
     </string-array>
     <string-array name="taustatName">
         <item>Blue</item>
         <item>Orange</item>
         <item>Yellow</item>
-        <item>Pink</item>
+        <item>Light Red</item>
         <item>Blue 2</item>
         <item>Orange 2</item>
         <item>Pink</item>
         <item>Green</item>
-        <item>Light Red</item>
+        <item>Purple</item>
         <item>Cyan</item>
         <item>Light Green</item>
         <item>Light Blue</item>
         <item>Orange 3</item>
+        <item>Lime</item>
     </string-array>
     <string-array name="henkilot">
         <item>character_1</item>
@@ -82,6 +84,8 @@
         <item>fore_13</item>
         <item>fore_14</item>
         <item>fore_15</item>
+        <item>fore_16</item>
+        <item>fore_17</item>
         <item>empty</item>
     </string-array>
     <string-array name="kolmasKuvaName">
@@ -100,6 +104,8 @@
         <item>Paper</item>
         <item>Shopping Basket</item>
         <item>Dog</item>
+        <item>Cleaning</item>
+        <item>Plants</item>
         <item>empty</item>
     </string-array>
     <string-array name="varit">
