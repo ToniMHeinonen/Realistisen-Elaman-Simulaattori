@@ -15,6 +15,8 @@
         <item>background_12</item>
         <item>background_13</item>
         <item>background_14</item>
+        <item>background_15</item>
+        <item>background_16</item>
     </string-array>
     <string-array name="taustatName">
         <item>Blue</item>
@@ -31,6 +33,8 @@
         <item>Light Blue</item>
         <item>Orange 3</item>
         <item>Lime</item>
+        <item>Light Yellow</item>
+        <item>Light Blue 2</item>
     </string-array>
     <string-array name="henkilot">
         <item>character_1</item>
@@ -40,6 +44,9 @@
         <item>character_5</item>
         <item>character_6</item>
         <item>character_7</item>
+        <item>character_8</item>
+        <item>character_9</item>
+        <item>character_10</item>
         <item>empty</item>
     </string-array>
     <string-array name="henkilotName">
@@ -50,6 +57,9 @@
         <item>Doctor</item>
         <item>Girl</item>
         <item>Lawyer</item>
+        <item>Boy</item>
+        <item>Man</item>
+        <item>Grandpa</item>
         <item>empty</item>
     </string-array>
     <string-array name="kasvot">
@@ -58,6 +68,8 @@
         <item>face_sad</item>
         <item>face_surprised</item>
         <item>face_uncomfortable</item>
+        <item>face_angry</item>
+        <item>face_smirk</item>
         <item>empty</item>
     </string-array>
     <string-array name="kasvotName">
@@ -66,6 +78,8 @@
         <item>Sad</item>
         <item>Surprised</item>
         <item>Uncomfortable</item>
+        <item>Angry</item>
+        <item>Smirk</item>
         <item>empty</item>
     </string-array>
     <string-array name="kolmasKuva">
@@ -86,6 +100,8 @@
         <item>fore_15</item>
         <item>fore_16</item>
         <item>fore_17</item>
+        <item>fore_18</item>
+        <item>fore_19</item>
         <item>empty</item>
     </string-array>
     <string-array name="kolmasKuvaName">
@@ -106,6 +122,8 @@
         <item>Dog</item>
         <item>Cleaning</item>
         <item>Plants</item>
+        <item>Cat</item>
+        <item>Friend</item>
         <item>empty</item>
     </string-array>
     <string-array name="varit">
