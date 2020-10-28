@@ -30,7 +30,7 @@ public class CreateAnswerDialogFragment extends AppCompatDialogFragment {
     private String goesTo;
     private int korvaus = -1;
     private int koko = 0;
-    private ArrayList<String> sceneNames;
+    private ArrayList<String> sceneNames, answers;
     private int END_POSITION = 0;
 
     private Map<String, Integer> colorMap = new HashMap<String, Integer>() {{
@@ -66,6 +66,7 @@ public class CreateAnswerDialogFragment extends AppCompatDialogFragment {
         view.findViewById(R.id.infoButton).setOnClickListener((v) -> showInfo());
 
         sceneNames = getArguments().getStringArrayList("createdScenes");
+        answers = getArguments().getStringArrayList("createdAnswers");
         setupSceneSpinner();
 
         koko = getArguments().getInt("koko", 0);
@@ -120,6 +121,10 @@ public class CreateAnswerDialogFragment extends AppCompatDialogFragment {
                             //if answer is empty then replace default
                             if(vas.trim().isEmpty()){
                                 vas = getString(R.string.default_answer) + " " + (koko + 1);
+                            } else if (answers.contains(vas)) {
+                                // If answer is a duplicate, exit
+                                Toast.makeText(getActivity(), getContext().getString(R.string.duplicate_answer), Toast.LENGTH_LONG).show();
+                                return;
                             }
                             listener.applyDataBack(v, m, vas, korvaus);
                             dismiss();

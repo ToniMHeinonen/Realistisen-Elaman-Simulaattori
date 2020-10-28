@@ -487,11 +487,22 @@ View.OnClickListener, View.OnLongClickListener, ModifiableInterface {
         bundle.putInt("koko", vastauksetColor.size());
         bundle.putInt("korvaa", position); // If not editing, position is -1
 
+        // Create new array list of scene names and add current scene to the last
+        ArrayList<String> sceneNames = new ArrayList<>(retrievedSceneNames);
+        sceneNames.add(name.getText().toString());
+
+        // Create new array list of answers
+        ArrayList<String> answers = new ArrayList<>();
+
+        for (GeneralKeyAndValue answer : vastauksetGo) {
+            answers.add(answer.getKey());
+        }
+
         // If editing old answer
         if (editOldAnswer) {
             GeneralKeyAndValue meno = vastauksetGo.get(position);
             String me = meno.getValue();
-            if(me.equals("null")){
+            if (me.equals("null")) {
                 me = "";
             }
             bundle.putString("menee", me);
@@ -499,14 +510,13 @@ View.OnClickListener, View.OnLongClickListener, ModifiableInterface {
 
             GeneralKeyAndValue color = vastauksetColor.get(position);
             bundle.putString("color", color.getValue());
+            // Remove opened answer so it does not throw duplicate name warning
+            answers.remove(position);
         }
 
-        // Create new array list of scene names and add current scene to the last
-        ArrayList<String> sceneNames = new ArrayList<>(retrievedSceneNames);
-        sceneNames.add(name.getText().toString());
-
-        // Pass all the created scenes to AnswerDialog
+        // Pass all the created scenes and answers to AnswerDialog
         bundle.putStringArrayList("createdScenes", sceneNames);
+        bundle.putStringArrayList("createdAnswers", answers);
 
         CreateAnswerDialogFragment dia = new CreateAnswerDialogFragment();
         dia.setArguments(bundle);

@@ -125,6 +125,7 @@
     <string name="info_next_scene">Select where does this answer lead to:</string>
     <string name="back_button">cancel</string>
     <string name="give_all_data">Give all data</string>
+    <string name="duplicate_answer">Answer already exists, change the text!</string>
     <string name="import_done">Importing done</string>
     <string name="is_all_data_given">Ensure that you have given all the data</string>
     <string name="file_saved">File saved</string>
