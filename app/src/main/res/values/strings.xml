@@ -44,7 +44,7 @@
     <string name="addCategory">Add</string>
     <string name="renameCategory">Rename</string>
     <string name="deleteButton">Delete</string>
-    <string name="playButton">Train</string>
+    <string name="playButton">Practise</string>
     <string name="modifyButton">Modify</string>
     <string name="resetButton">Reset</string>
     <string name="newCategory">New category</string>
@@ -123,20 +123,20 @@
     <string name="choose_color">Choose color:</string>
     <string name="write_answer">Write answer:</string>
     <string name="info_next_scene">Select where does this answer lead to:</string>
-    <string name="back_button">cancel</string>
-    <string name="give_all_data">Give all data</string>
+    <string name="back_button">Cancel</string>
+    <string name="give_all_data">Give all required data!</string>
     <string name="duplicate_answer">Answer already exists, change the text!</string>
     <string name="import_done">Importing done</string>
     <string name="is_all_data_given">Ensure that you have given all the data</string>
     <string name="file_saved">File saved</string>
     <string name="send_scenario">Send scenario</string>
-    <string name="give_new_scenario_name">Give new scenario name:</string>
+    <string name="give_new_scenario_name">Give name for the scenario you are about import:</string>
     <string name="huom">Note!</string>
     <string name="file_types">Pick only files with .json extension.</string>
     <string name="name_file">Name: </string>
     <string name="go"> Goes: </string>
     <string name="color_set"> Color: </string>
-    <string name="duplicate_warning">This is already used</string>
+    <string name="duplicate_warning">This name is already used!</string>
     <string name="not_added">Not added</string>
     <string name="remove_item">Do you really want remove this?</string>
 
@@ -144,25 +144,25 @@
     <string name="can_delete_answer">You can delete answers by holding the answer button</string>
 
     <string name="saved_scenario">Scenario saved</string>
-    <string name="not_enough_scene">Need least one scene</string>
+    <string name="not_enough_scene">At least one scene is needed</string>
 
     <string name="remember_name">You must give a name to the scene.</string>
     <string name="remember_question">You must give a question to the scene.</string>
     <string name="remember_answers">You must create at least one answer.</string>
 
     <string name="unique_name">Give unique name</string>
-    <string name="need_first">Need scene with name first</string>
-    <string name="too_many_first">Only one scene can name to first</string>
+    <string name="need_first">Scene named \"first\" is needed</string>
+    <string name="too_many_first">Only one scene can be named as \"first\"</string>
     <string name="remember_one_answer">Must give answer</string>
-    <string name="default_answer">default answer</string>
-    <string name="not_number">do not give number</string>
+    <string name="default_answer">Default answer</string>
+    <string name="not_number">Do not use numbers!</string>
     <string name="or">or</string>
-    <string name="not_null">you can not give null</string>
+    <string name="not_null">You can not give null</string>
     <string name="scene_name_empty">You must give a name to the scene!</string>
     <string name="duplicate_scene_name">You have already created scene named \"%1$s\"! Please rename
         your scene.</string>
     <string name="null_value">end</string>
-    <string name="autosave_not">Give name for autosave</string>
+    <string name="autosave_not">Name is needed for the auto save to function correctly.</string>
 
     <!-- CREATED SCENE DIALOG -->
     <string name="duplicate_modifiable">Duplicate</string>
