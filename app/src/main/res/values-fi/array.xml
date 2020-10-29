@@ -51,12 +51,12 @@
     </string-array>
     <string-array name="henkilotName">
         <item>Vartija</item>
-        <item>Kassaneiti</item>
+        <item>Kassahenkilö</item>
         <item>Siivooja</item>
         <item>Mummo</item>
         <item>Lääkäri</item>
         <item>Tyttö</item>
-        <item>Lakimies</item>
+        <item>Juristi</item>
         <item>Poika</item>
         <item>Mies</item>
         <item>Vaari</item>
