@@ -1,0 +1,197 @@
+{
+  "first": {
+    "question": "Likaisia astioita on alkanut kertymään ympäri asuntoasi.",
+    "background": "background_1",
+    "person": "character_1",
+    "fore": "fore_1",
+    "face": "face_happy",
+    "answers": [
+      "Ei haittaa, kaapissa on vielä puhtaita astioita muutama jäljellä",
+      "Huuhtelet pelkällä vedellä pari astiaa ja pistät ne kaappiin",
+      "Päätät kerätä astiat ja tiskata ne"
+    ],
+    "Ei haittaa, kaapissa on vielä puhtaita astioita muutama jäljellä": "uusiAlku",
+    "Huuhtelet pelkällä vedellä pari astiaa ja pistät ne kaappiin": "uusiAlku",
+    "Päätät kerätä astiat ja tiskata ne": "koneVaiEi",
+    "Ei haittaa, kaapissa on vielä puhtaita astioita muutama jäljelläColor": "red",
+    "Huuhtelet pelkällä vedellä pari astiaa ja pistät ne kaappiinColor": "red",
+    "Päätät kerätä astiat ja tiskata neColor": "green"
+  },
+  "uusiAlku": {
+    "question": "Likaisia astioita on yhä enemmän ja kaapistakin on puhtaat astiat loppu.",
+    "background": "background_1",
+    "person": "character_1",
+    "face": "face_happy",
+    "fore": "fore_1",
+    "answers": [
+      "Päätät kerätä astiat ja tiskata ne",
+      "Sinua ei huvita tiskata ja syöt tästä lähtien likaisista astioista"
+    ],
+    "Päätät kerätä astiat ja tiskata ne": "koneVaiEi",
+    "Sinua ei huvita tiskata ja syöt tästä lähtien likaisista astioista": "null",
+    "Päätät kerätä astiat ja tiskata neColor": "green",
+    "Sinua ei huvita tiskata ja syöt tästä lähtien likaisista astioistaColor": "red"
+  },
+  "koneVaiEi": {
+    "question": "Omistatko astianpesukonetta?",
+    "background": "background_1",
+    "person": "character_1",
+    "face": "face_happy",
+    "fore": "fore_1",
+    "answers": [
+      "Kyllä",
+      "Ei"
+    ],
+    "Kyllä": "koneAlku",
+    "Ei": "kasinAlku",
+    "KylläColor": "green",
+    "EiColor": "green"
+  },
+  "koneAlku": {
+    "question": "Olet kerännyt likaiset astiat astianpesukoneen lähettyville.",
+    "background": "background_1",
+    "person": "character_1",
+    "face": "face_happy",
+    "fore": "fore_1",
+    "answers": [
+      "Pistät likaiset astiat suoraan astianpesukoneeseen huuhtelematta niitä",
+      "Pistät astiat astianpesukoneeseen huuhdeltuasi ensin likaisimmat astiat kädenlämpöisellä vedellä"
+    ],
+    "Pistät likaiset astiat suoraan astianpesukoneeseen huuhtelematta niitä": "koneKaksi",
+    "Pistät astiat astianpesukoneeseen huuhdeltuasi ensin likaisimmat astiat kädenlämpöisellä vedellä": "koneKaksi",
+    "Pistät likaiset astiat suoraan astianpesukoneeseen huuhtelematta niitäColor": "yellow",
+    "Pistät astiat astianpesukoneeseen huuhdeltuasi ensin likaisimmat astiat kädenlämpöisellä vedelläColor": "green"
+  },
+  "koneKaksi": {
+    "question": "Olet laittanut kaikki likaiset astiat astianpesukoneeseen.",
+    "background": "background_1",
+    "person": "character_1",
+    "face": "face_happy",
+    "fore": "fore_1",
+    "answers": [
+      "Jätät astiat astianpesukoneeseen laittamatta sitä päälle",
+      "Avaat vesihanan, laitat pesuaineen tai pesuainetabletin koneeseen, valitset sopivan ohjelman ja käynnistät koneen"
+    ],
+    "Jätät astiat astianpesukoneeseen laittamatta sitä päälle": "likaisetKoneessa",
+    "Avaat vesihanan, laitat pesuaineen tai pesuainetabletin koneeseen, valitset sopivan ohjelman ja käynnistät koneen": "koneKolme",
+    "Jätät astiat astianpesukoneeseen laittamatta sitä päälleColor": "red",
+    "Avaat vesihanan, laitat pesuaineen tai pesuainetabletin koneeseen, valitset sopivan ohjelman ja käynnistät koneenColor": "green"
+  },
+  "likaisetKoneessa": {
+    "question": "Likaiset astiat lojuvat edelleen astianpesukoneessa.",
+    "background": "background_1",
+    "person": "character_1",
+    "face": "face_happy",
+    "fore": "fore_1",
+    "answers": [
+      "Antaa olla, et tarvitse astioita tästä lähtien ollenkaan",
+      "Avaat vesihanan, laitat pesuaineen tai pesuainetabletin koneeseen, valitset sopivan ohjelman ja käynnistät koneen"
+    ],
+    "Antaa olla, et tarvitse astioita tästä lähtien ollenkaan": "null",
+    "Avaat vesihanan, laitat pesuaineen tai pesuainetabletin koneeseen, valitset sopivan ohjelman ja käynnistät koneen": "koneKolme",
+    "Antaa olla, et tarvitse astioita tästä lähtien ollenkaanColor": "red",
+    "Avaat vesihanan, laitat pesuaineen tai pesuainetabletin koneeseen, valitset sopivan ohjelman ja käynnistät koneenColor": "green"
+  },
+  "koneKolme": {
+    "question": "Astianpesukone on puhdistanut astiat.",
+    "background": "background_1",
+    "person": "character_1",
+    "face": "face_happy",
+    "fore": "fore_1",
+    "answers": [
+      "Suljet vesihanan, sammutat astianpesukoneen ja laitat puhtaat astiat kaappiin, kunhan ne ovat ensin hieman kuivuneet",
+      "Suljet vesihanan, sammutat astianpesukoneen ja jätät astiat lojumaan koneeseen pitkäksi aikaa",
+      "Jätät vesihanan auki ja astianpesukoneen päälle"
+    ],
+    "Suljet vesihanan, sammutat astianpesukoneen ja laitat puhtaat astiat kaappiin, kunhan ne ovat ensin hieman kuivuneet": "null",
+    "Suljet vesihanan, sammutat astianpesukoneen ja jätät astiat lojumaan koneeseen pitkäksi aikaa": "null",
+    "Jätät vesihanan auki ja astianpesukoneen päälle": "null",
+    "Suljet vesihanan, sammutat astianpesukoneen ja laitat puhtaat astiat kaappiin, kunhan ne ovat ensin hieman kuivuneetColor": "green",
+    "Suljet vesihanan, sammutat astianpesukoneen ja jätät astiat lojumaan koneeseen pitkäksi aikaaColor": "yellow",
+    "Jätät vesihanan auki ja astianpesukoneen päälleColor": "red"
+  },
+  "kasinAlku": {
+    "question": "Olet kerännyt likaiset astiat tiskialtaan lähettyville.",
+    "background": "background_1",
+    "person": "character_1",
+    "face": "face_happy",
+    "fore": "fore_1",
+    "answers": [
+      "Huuhtelet ensin likaisimmat astiat kädenlämpöisellä vedellä",
+      "Et huuhtele astioita ollenkaan",
+      "Sinua ei huvitakaan tiskata, joten jätät astiat lojumaan tiskipöydälle"
+    ],
+    "Huuhtelet ensin likaisimmat astiat kädenlämpöisellä vedellä": "kasinKaksi",
+    "Et huuhtele astioita ollenkaan": "kasinKaksi",
+    "Sinua ei huvitakaan tiskata, joten jätät astiat lojumaan tiskipöydälle": "null",
+    "Huuhtelet ensin likaisimmat astiat kädenlämpöisellä vedelläColor": "green",
+    "Et huuhtele astioita ollenkaanColor": "yellow",
+    "Sinua ei huvitakaan tiskata, joten jätät astiat lojumaan tiskipöydälleColor": "red"
+  },
+  "kasinKaksi": {
+    "question": "Seuraavaksi pitäisi täyttää tiskiallas vedellä.",
+    "background": "background_1",
+    "person": "character_1",
+    "face": "face_happy",
+    "fore": "fore_1",
+    "answers": [
+      "Täytät sen niin kuumalla vedellä kuin kätesi kestävät",
+      "Täytät sen kylmällä vedellä",
+      "Täytät sen niin kuumalla vedellä, että se polttelee käsiäsi"
+    ],
+    "Täytät sen niin kuumalla vedellä kuin kätesi kestävät": "kasinKolme",
+    "Täytät sen kylmällä vedellä": "kasinKolme",
+    "Täytät sen niin kuumalla vedellä, että se polttelee käsiäsi": "kasinKolme",
+    "Täytät sen niin kuumalla vedellä kuin kätesi kestävätColor": "green",
+    "Täytät sen kylmällä vedelläColor": "red",
+    "Täytät sen niin kuumalla vedellä, että se polttelee käsiäsiColor": "red"
+  },
+  "kasinKolme": {
+    "question": "Mitä teet seuraavaksi?",
+    "background": "background_1",
+    "person": "character_1",
+    "face": "face_happy",
+    "fore": "fore_1",
+    "answers": [
+      "Peset ensin puhtaimmat astiat tiskiharjalla, jonka jälkeen siirryt likaisiin astioihin",
+      "Peset ensin likaisimmat astiat tiskiharjalla, jonka jälkeen siirryt puhtaisiin astioihin",
+      "Peset astiat tiskiharjalla sattumanvaraisessa järjestyksessä"
+    ],
+    "Peset ensin puhtaimmat astiat tiskiharjalla, jonka jälkeen siirryt likaisiin astioihin": "kasinNelja",
+    "Peset ensin likaisimmat astiat tiskiharjalla, jonka jälkeen siirryt puhtaisiin astioihin": "kasinNelja",
+    "Peset astiat tiskiharjalla sattumanvaraisessa järjestyksessä": "kasinNelja",
+    "Peset ensin puhtaimmat astiat tiskiharjalla, jonka jälkeen siirryt likaisiin astioihinColor": "green",
+    "Peset ensin likaisimmat astiat tiskiharjalla, jonka jälkeen siirryt puhtaisiin astioihinColor": "yellow",
+    "Peset astiat tiskiharjalla sattumanvaraisessa järjestyksessäColor": "yellow"
+  },
+  "kasinNelja": {
+    "question": "Mitä teet seuraavaksi?",
+    "background": "background_1",
+    "person": "character_1",
+    "face": "face_happy",
+    "fore": "fore_1",
+    "answers": [
+      "Huuhtelet astiat ja laitat ne kuivumaan heti pesun jälkeen",
+      "Laitat astiat suoraan kaappiin huuhtelematta niitä"
+    ],
+    "Huuhtelet astiat ja laitat ne kuivumaan heti pesun jälkeen": "kasinLoppu",
+    "Laitat astiat suoraan kaappiin huuhtelematta niitä": "kasinLoppu",
+    "Huuhtelet astiat ja laitat ne kuivumaan heti pesun jälkeenColor": "green",
+    "Laitat astiat suoraan kaappiin huuhtelematta niitäColor": "red"
+  },
+  "kasinLoppu": {
+    "question": "Mitä teet vielä lopuksi?",
+    "background": "background_1",
+    "person": "character_1",
+    "face": "face_happy",
+    "fore": "fore_1",
+    "answers": [
+      "Jätät veden lojumaan tiskialtaaseen seuraavaa kertaa varten",
+      "Tyhjennät tiskialtaan ja pyyhit tiskipöydän"
+    ],
+    "Jätät veden lojumaan tiskialtaaseen seuraavaa kertaa varten": "null",
+    "Tyhjennät tiskialtaan ja pyyhit tiskipöydän": "null",
+    "Jätät veden lojumaan tiskialtaaseen seuraavaa kertaa vartenColor": "red",
+    "Tyhjennät tiskialtaan ja pyyhit tiskipöydänColor": "green"
+  }
+}

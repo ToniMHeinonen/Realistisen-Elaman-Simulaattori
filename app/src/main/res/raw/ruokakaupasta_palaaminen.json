@@ -1,0 +1,287 @@
+{
+  "first": {
+    "question": "Poistuit ruokakaupasta ostostesi kanssa. Mitä teet seuraavaksi?",
+    "background": "background_1",
+    "person": "character_1",
+    "fore": "fore_1",
+    "face": "face_happy",
+    "answers": [
+      "Lähdet kyläilemään kaverin luokse",
+      "Menet suorinta tietä kotiin",
+      "Teet pienen kävelylenkin ostosten kanssa ennen kotiin menoa"
+    ],
+    "Lähdet kyläilemään kaverin luokse": "kaveri",
+    "Menet suorinta tietä kotiin": "koti",
+    "Teet pienen kävelylenkin ostosten kanssa ennen kotiin menoa": "koti",
+    "Lähdet kyläilemään kaverin luokseColor": "red",
+    "Menet suorinta tietä kotiinColor": "green",
+    "Teet pienen kävelylenkin ostosten kanssa ennen kotiin menoaColor": "red"
+  },
+  "kaveri": {
+    "question": "Pääset kaverisi luokse, ja hän ihmettelee, miksi sinulla on ruokaostokset mukana.",
+    "background": "background_1",
+    "person": "character_1",
+    "face": "face_happy",
+    "fore": "fore_1",
+    "answers": [
+      "Menet sittenkin viemään ostokset kotiin",
+      "Kysyt kaveriltasi, voisitko jättää ostokset hänen luokseen"
+    ],
+    "Menet sittenkin viemään ostokset kotiin": "koti",
+    "Kysyt kaveriltasi, voisitko jättää ostokset hänen luokseen": "kaveriKaks",
+    "Menet sittenkin viemään ostokset kotiinColor": "green",
+    "Kysyt kaveriltasi, voisitko jättää ostokset hänen luokseenColor": "red"
+  },
+  "kaveriKaks": {
+    "question": "Kaverisi kieltäytyy ja sanoo, että sinun pitäisi viedä ostokset kotiisi.",
+    "background": "background_1",
+    "person": "character_1",
+    "face": "face_happy",
+    "fore": "fore_1",
+    "answers": [
+      "Suutut hänelle ja menet sitten kotiisi",
+      "Ymmärrät, ettet saa jättää ostoksia hänen luokseen ja menet sitten kotiisi"
+    ],
+    "Suutut hänelle ja menet sitten kotiisi": "koti",
+    "Ymmärrät, ettet saa jättää ostoksia hänen luokseen ja menet sitten kotiisi": "koti",
+    "Suutut hänelle ja menet sitten kotiisiColor": "red",
+    "Ymmärrät, ettet saa jättää ostoksia hänen luokseen ja menet sitten kotiisiColor": "green"
+  },
+  "koti": {
+    "question": "Astut sisään asuntoosi. Mitä teet seuraavaksi?",
+    "background": "background_1",
+    "person": "character_1",
+    "face": "face_happy",
+    "fore": "fore_1",
+    "answers": [
+      "Jätät ostokset eteiseen ja menet pelaamaan tietokoneella",
+      "Menet keittiöön tyhjentääksesi ostokset ruokakassistasi",
+      "Jätät ostokset eteiseen ja menet katsomaan televisiota"
+    ],
+    "Jätät ostokset eteiseen ja menet pelaamaan tietokoneella": "tietokone",
+    "Menet keittiöön tyhjentääksesi ostokset ruokakassistasi": "keittio",
+    "Jätät ostokset eteiseen ja menet katsomaan televisiota": "televisio",
+    "Jätät ostokset eteiseen ja menet pelaamaan tietokoneellaColor": "red",
+    "Menet keittiöön tyhjentääksesi ostokset ruokakassistasiColor": "green",
+    "Jätät ostokset eteiseen ja menet katsomaan televisiotaColor": "red"
+  },
+  "tietokone": {
+    "question": "Pelattuasi hetken tietokoneella huomaat, että ostokset lojuvat yhä eteisessä.",
+    "background": "background_1",
+    "person": "character_1",
+    "face": "face_happy",
+    "fore": "fore_1",
+    "answers": [
+      "Jatkat pelaamista",
+      "Lopetat pelaamisen hetkeksi ja viet ostokset keittiöön"
+    ],
+    "Jatkat pelaamista": "tietokoneKaks",
+    "Lopetat pelaamisen hetkeksi ja viet ostokset keittiöön": "keittio",
+    "Jatkat pelaamistaColor": "red",
+    "Lopetat pelaamisen hetkeksi ja viet ostokset keittiöönColor": "green"
+  },
+  "tietokoneKaks": {
+    "question": "Ostokset ovat edelleen eteisessä.",
+    "background": "background_1",
+    "person": "character_1",
+    "face": "face_happy",
+    "fore": "fore_1",
+    "answers": [
+      "Lopetat pelaamisen hetkeksi ja viet ostokset keittiöön",
+      "Jätät ostokset lopullisesti eteiseen"
+    ],
+    "Lopetat pelaamisen hetkeksi ja viet ostokset keittiöön": "keittio",
+    "Jätät ostokset lopullisesti eteiseen": "null",
+    "Lopetat pelaamisen hetkeksi ja viet ostokset keittiöönColor": "green",
+    "Jätät ostokset lopullisesti eteiseenColor": "red"
+  },
+  "televisio": {
+    "question": "Katseltuasi hetken televisiota huomaat, että ostokset lojuvat yhä eteisessä.",
+    "background": "background_1",
+    "person": "character_1",
+    "face": "face_happy",
+    "fore": "fore_1",
+    "answers": [
+      "Jatkat television katsomista, koska ohjelma on juuri jännittävässä kohdassa",
+      "Lopetat television katselemisen hetkeksi ja viet ostokset keittiöön"
+    ],
+    "Jatkat television katsomista, koska ohjelma on juuri jännittävässä kohdassa": "televisioKaks",
+    "Lopetat television katselemisen hetkeksi ja viet ostokset keittiöön": "keittio",
+    "Jatkat television katsomista, koska ohjelma on juuri jännittävässä kohdassaColor": "red",
+    "Lopetat television katselemisen hetkeksi ja viet ostokset keittiöönColor": "green"
+  },
+  "televisioKaks": {
+    "question": "Ostokset ovat edelleen eteisessä.",
+    "background": "background_1",
+    "person": "character_1",
+    "face": "face_happy",
+    "fore": "fore_1",
+    "answers": [
+      "Lopetat television katselemisen hetkeksi ja viet ostokset keittiöön",
+      "Jätät ostokset lopullisesti eteiseen"
+    ],
+    "Lopetat television katselemisen hetkeksi ja viet ostokset keittiöön": "keittio",
+    "Jätät ostokset lopullisesti eteiseen": "null",
+    "Lopetat television katselemisen hetkeksi ja viet ostokset keittiöönColor": "green",
+    "Jätät ostokset lopullisesti eteiseenColor": "red"
+  },
+  "keittio": {
+    "question": "Menet keittiöön ja alat tyhjentämään ruokakassia. Otat ensimmäisenä kassista voin ja maidon. Mihin laitat ne?",
+    "background": "background_1",
+    "person": "character_1",
+    "face": "face_happy",
+    "fore": "fore_1",
+    "answers": [
+      "Jääkaappiin",
+      "Pakastimeen",
+      "Kuivakaappiin"
+    ],
+    "Jääkaappiin": "keittioKaks",
+    "Pakastimeen": "keittioKaks",
+    "Kuivakaappiin": "keittioKaks",
+    "JääkaappiinColor": "green",
+    "PakastimeenColor": "red",
+    "KuivakaappiinColor": "red"
+  },
+  "keittioKaks": {
+    "question": "Seuraavaksi otat ruokakassista jäätelön ja ranskanperunat. Mihin laitat ne?",
+    "background": "background_1",
+    "person": "character_1",
+    "face": "face_happy",
+    "fore": "fore_1",
+    "answers": [
+      "Jääkaappiin",
+      "Pakastimeen",
+      "Kuivakaappiin"
+    ],
+    "Jääkaappiin": "keittioEpavarma",
+    "Pakastimeen": "keittioEpavarma",
+    "Kuivakaappiin": "keittioEpavarma",
+    "JääkaappiinColor": "red",
+    "PakastimeenColor": "green",
+    "KuivakaappiinColor": "red"
+  },
+  "keittioEpavarma": {
+    "question": "Seuraavaksi otat ruokakassista ostoksen, josta et ole varma, missä sitä kuuluisi säilyttää.",
+    "background": "background_1",
+    "person": "character_1",
+    "face": "face_happy",
+    "fore": "fore_1",
+    "answers": [
+      "Katsot tarkkaan ostoksesta tekstit, jos siinä kerrottaisiin, missä sitä kuuluu säilyttää",
+      "Soitat tuttavallesi, jos hän sattuisi tietämään",
+      "Pistät sen jääkaappiin"
+    ],
+    "Katsot tarkkaan ostoksesta tekstit, jos siinä kerrottaisiin, missä sitä kuuluu säilyttää": "ostosTeksti",
+    "Soitat tuttavallesi, jos hän sattuisi tietämään": "tuttava",
+    "Pistät sen jääkaappiin": "keittioKysymys",
+    "Katsot tarkkaan ostoksesta tekstit, jos siinä kerrottaisiin, missä sitä kuuluu säilyttääColor": "green",
+    "Soitat tuttavallesi, jos hän sattuisi tietämäänColor": "green",
+    "Pistät sen jääkaappiinColor": "red"
+  },
+  "ostosTeksti": {
+    "question": "Ostoksen tiedoissa lukee, että sitä kuuluisi säilyttää pakastelämpötilassa. Mihin laitat sen?",
+    "background": "background_1",
+    "person": "character_1",
+    "face": "face_happy",
+    "fore": "fore_1",
+    "answers": [
+      "Jääkaappiin",
+      "Pakastimeen",
+      "Kuivakaappiin"
+    ],
+    "Jääkaappiin": "keittioKysymys",
+    "Pakastimeen": "keittioKysymys",
+    "Kuivakaappiin": "keittioKysymys",
+    "JääkaappiinColor": "red",
+    "PakastimeenColor": "green",
+    "KuivakaappiinColor": "red"
+  },
+  "tuttava": {
+    "question": "Tuttavasi tietää, että kyseistä ostosta tulee säilyttää pakastimessa. Mihin laitat sen?",
+    "background": "background_1",
+    "person": "character_1",
+    "face": "face_happy",
+    "fore": "fore_1",
+    "answers": [
+      "Jääkaappiin",
+      "Pakastimeen",
+      "Kuivakaappiin"
+    ],
+    "Jääkaappiin": "keittioKysymys",
+    "Pakastimeen": "keittioKysymys",
+    "Kuivakaappiin": "keittioKysymys",
+    "JääkaappiinColor": "red",
+    "PakastimeenColor": "green",
+    "KuivakaappiinColor": "red"
+  },
+  "keittioKysymys": {
+    "question": "Onko ruokakassissa vielä ostoksia jäljellä?",
+    "background": "background_1",
+    "person": "character_1",
+    "face": "face_happy",
+    "fore": "fore_1",
+    "answers": [
+      "Kyllä",
+      "Ei"
+    ],
+    "Kyllä": "keittioKolme",
+    "Ei": "loppu",
+    "KylläColor": "green",
+    "EiColor": "green"
+  },
+  "keittioKolme": {
+    "question": "Seuraavaksi otat ruokakassista makaronipussin ja kahvipaketin. Mihin laitat ne?",
+    "background": "background_1",
+    "person": "character_1",
+    "face": "face_happy",
+    "fore": "fore_1",
+    "answers": [
+      "Jääkaappiin",
+      "Pakastimeen",
+      "Kuivakaappiin"
+    ],
+    "Jääkaappiin": "keittioNelja",
+    "Pakastimeen": "keittioNelja",
+    "Kuivakaappiin": "keittioNelja",
+    "JääkaappiinColor": "red",
+    "PakastimeenColor": "red",
+    "KuivakaappiinColor": "green"
+  },
+  "keittioNelja": {
+    "question": "Viimeisenä otat ruokakassista shampoon ja suihkusaippuan. Mihin laitat ne?",
+    "background": "background_1",
+    "person": "character_1",
+    "face": "face_happy",
+    "fore": "fore_1",
+    "answers": [
+      "Jääkaappiin",
+      "Pakastimeen",
+      "Kuivakaappiin",
+      "Viet ne kylpytiloihin"
+    ],
+    "Jääkaappiin": "loppu",
+    "Pakastimeen": "loppu",
+    "Kuivakaappiin": "loppu",
+    "Viet ne kylpytiloihin": "loppu",
+    "JääkaappiinColor": "red",
+    "PakastimeenColor": "red",
+    "KuivakaappiinColor": "red",
+    "Viet ne kylpytiloihinColor": "green"
+  },
+  "loppu": {
+    "question": "Olet saanut tyhjennettyä ruokakassisi. Mitä teet vielä lopuksi?",
+    "background": "background_1",
+    "person": "character_1",
+    "face": "face_happy",
+    "fore": "fore_1",
+    "answers": [
+      "Pistät ruokakassin siististi kaappiin",
+      "Jätät ruokakassin lojumaan lattialle"
+    ],
+    "Pistät ruokakassin siististi kaappiin": "null",
+    "Jätät ruokakassin lojumaan lattialle": "null",
+    "Pistät ruokakassin siististi kaappiinColor": "green",
+    "Jätät ruokakassin lojumaan lattialleColor": "red"
+  }
+}

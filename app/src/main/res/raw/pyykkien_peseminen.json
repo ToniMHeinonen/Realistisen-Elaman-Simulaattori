@@ -1,0 +1,119 @@
+{
+  "first": {
+    "question": "Pyykkikorisi alkaa olemaan täynnä likaisista vaatteista.",
+    "background": "background_1",
+    "person": "character_1",
+    "fore": "fore_1",
+    "face": "face_happy",
+    "answers": [
+      "Päätät hoitaa asian myöhemmin",
+      "Alat pesemään likaisia vaatteita",
+      "Tyhjennät pyykkikoristasi vaatteet roskakoriin"
+    ],
+    "Päätät hoitaa asian myöhemmin": "uusiAlku",
+    "Alat pesemään likaisia vaatteita": "lajittelu",
+    "Tyhjennät pyykkikoristasi vaatteet roskakoriin": "null",
+    "Päätät hoitaa asian myöhemminColor": "yellow",
+    "Alat pesemään likaisia vaatteitaColor": "green",
+    "Tyhjennät pyykkikoristasi vaatteet roskakoriinColor": "red"
+  },
+  "uusiAlku": {
+    "question": "Pyykkikori on aivan täynnä likaisista vaatteista, eikä kaapissasi ole juuri enää puhtaita vaatteita.",
+    "background": "background_1",
+    "person": "character_1",
+    "face": "face_happy",
+    "fore": "fore_1",
+    "answers": [
+      "Tyhjennät pyykkikoristasi vaatteet roskakoriin",
+      "Alat pesemään likaisia vaatteita"
+    ],
+    "Tyhjennät pyykkikoristasi vaatteet roskakoriin": "null",
+    "Alat pesemään likaisia vaatteita": "lajittelu",
+    "Tyhjennät pyykkikoristasi vaatteet roskakoriinColor": "red",
+    "Alat pesemään likaisia vaatteitaColor": "green"
+  },
+  "lajittelu": {
+    "question": "Päätät pestä likaisia vaatteitasi.",
+    "background": "background_1",
+    "person": "character_1",
+    "face": "face_happy",
+    "fore": "fore_1",
+    "answers": [
+      "Lajittelet vaatteesi värien mukaan ja tarkastat vaatteen pesulapusta pesulämpötilan ja muut merkinnät",
+      "Et lajittele vaatteita mitenkään, vaan peset erivärisiä ja eri materiaalisia vaatteita keskenään"
+    ],
+    "Lajittelet vaatteesi värien mukaan ja tarkastat vaatteen pesulapusta pesulämpötilan ja muut merkinnät": "pesu",
+    "Et lajittele vaatteita mitenkään, vaan peset erivärisiä ja eri materiaalisia vaatteita keskenään": "vaaraPesu",
+    "Lajittelet vaatteesi värien mukaan ja tarkastat vaatteen pesulapusta pesulämpötilan ja muut merkinnätColor": "green",
+    "Et lajittele vaatteita mitenkään, vaan peset erivärisiä ja eri materiaalisia vaatteita keskenäänColor": "red"
+  },
+  "vaaraPesu": {
+    "question": "Olet pistänyt erivärisiä ja eri materiaalisia vaatteita pesukoneeseen.",
+    "background": "background_1",
+    "person": "character_1",
+    "face": "face_happy",
+    "fore": "fore_1",
+    "answers": [
+      "Otat vaatteet pois pesukoneesta ja lajittelet ne sittenkin värien mukaan",
+      "Lisäät pesuaineen, valitset mielestäsi sopivan ohjelman ja käynnistät pesukoneen"
+    ],
+    "Otat vaatteet pois pesukoneesta ja lajittelet ne sittenkin värien mukaan": "pesu",
+    "Lisäät pesuaineen, valitset mielestäsi sopivan ohjelman ja käynnistät pesukoneen": "vaaraPesuKaksi",
+    "Otat vaatteet pois pesukoneesta ja lajittelet ne sittenkin värien mukaanColor": "green",
+    "Lisäät pesuaineen, valitset mielestäsi sopivan ohjelman ja käynnistät pesukoneenColor": "red"
+  },
+  "vaaraPesuKaksi": {
+    "question": "Pesukone on saanut ohjelmansa päätökseen ja huomaat, että vaatteiden värit ovat haalistuneet ja saaneet tahroja.",
+    "background": "background_1",
+    "person": "character_1",
+    "face": "face_happy",
+    "fore": "fore_1",
+    "answers": [
+      "Asetat vaatteet kuivumaan ja peset ensi kerrallakin erivärisiä vaatteita keskenään",
+      "Asetat vaatteet kuivumaan ja lajittelet vaatteet paremmin ensi kerralla",
+      "Jätät vaatteet lojumaan pesukoneeseen pitkäksi aikaa"
+    ],
+    "Asetat vaatteet kuivumaan ja peset ensi kerrallakin erivärisiä vaatteita keskenään": "null",
+    "Asetat vaatteet kuivumaan ja lajittelet vaatteet paremmin ensi kerralla": "null",
+    "Jätät vaatteet lojumaan pesukoneeseen pitkäksi aikaa": "null",
+    "Asetat vaatteet kuivumaan ja peset ensi kerrallakin erivärisiä vaatteita keskenäänColor": "red",
+    "Asetat vaatteet kuivumaan ja lajittelet vaatteet paremmin ensi kerrallaColor": "green",
+    "Jätät vaatteet lojumaan pesukoneeseen pitkäksi aikaaColor": "red"
+  },
+  "pesu": {
+    "question": "Päätät pestä ensimmäisenä tummia vaatteita, joiden sopiva pesulämpötila on pesulapun mukaan 40 astetta.",
+    "background": "background_1",
+    "person": "character_1",
+    "face": "face_happy",
+    "fore": "fore_1",
+    "answers": [
+      "Pistät tummat vaatteet pesukoneeseen, lisäät pesuaineen, valitset sopivan ohjelman ja asetat lämpötilaksi 40 astetta",
+      "Pistät tummat vaatteet pesukoneeseen, mutta se ei mielestäsi tule tarpeeksi täyteen, joten lisäät sinne vielä valkoisia vaatteita",
+      "Pistät tummat vaatteet pesukoneeseen, lisäät pesuaineen, valitset sopivan ohjelman ja asetat lämpötilaksi 60 astetta"
+    ],
+    "Pistät tummat vaatteet pesukoneeseen, lisäät pesuaineen, valitset sopivan ohjelman ja asetat lämpötilaksi 40 astetta": "pesunJalkeen",
+    "Pistät tummat vaatteet pesukoneeseen, mutta se ei mielestäsi tule tarpeeksi täyteen, joten lisäät sinne vielä valkoisia vaatteita": "pesunJalkeen",
+    "Pistät tummat vaatteet pesukoneeseen, lisäät pesuaineen, valitset sopivan ohjelman ja asetat lämpötilaksi 60 astetta": "pesunJalkeen",
+    "Pistät tummat vaatteet pesukoneeseen, lisäät pesuaineen, valitset sopivan ohjelman ja asetat lämpötilaksi 40 astettaColor": "green",
+    "Pistät tummat vaatteet pesukoneeseen, mutta se ei mielestäsi tule tarpeeksi täyteen, joten lisäät sinne vielä valkoisia vaatteitaColor": "red",
+    "Pistät tummat vaatteet pesukoneeseen, lisäät pesuaineen, valitset sopivan ohjelman ja asetat lämpötilaksi 60 astettaColor": "red"
+  },
+  "pesunJalkeen": {
+    "question": "Pesukone on saanut ohjelmansa päätökseen.",
+    "background": "background_1",
+    "person": "character_1",
+    "face": "face_happy",
+    "fore": "fore_1",
+    "answers": [
+      "Otat vaatteet pesukoneesta ja asetat ne kuivumaan",
+      "Pelaat juuri Realistisen Elämän Simulaattoria puhelimellasi, joten pistät vaatteet kuivumaan myöhemmin",
+      "Peset samat vaatteet uudestaan"
+    ],
+    "Otat vaatteet pesukoneesta ja asetat ne kuivumaan": "null",
+    "Pelaat juuri Realistisen Elämän Simulaattoria puhelimellasi, joten pistät vaatteet kuivumaan myöhemmin": "null",
+    "Peset samat vaatteet uudestaan": "null",
+    "Otat vaatteet pesukoneesta ja asetat ne kuivumaanColor": "green",
+    "Pelaat juuri Realistisen Elämän Simulaattoria puhelimellasi, joten pistät vaatteet kuivumaan myöhemminColor": "red",
+    "Peset samat vaatteet uudestaanColor": "red"
+  }
+}

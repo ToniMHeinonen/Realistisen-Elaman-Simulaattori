@@ -1,0 +1,266 @@
+{
+  "first": {
+    "question": "Sinun olisi tarkoitus hankkia vuokra-asunto, johon pääsisit muuttamaan parin kuukauden sisällä.",
+    "background": "background_1",
+    "person": "character_1",
+    "fore": "fore_1",
+    "face": "face_happy",
+    "answers": [
+      "Aloitat saman tien uuden vuokra-asunnon etsinnän netistä",
+      "Mahdolliseen muuttoon on vielä aikaa, joten hoidat vuokra-asunnon etsinnän myöhemmin"
+    ],
+    "Aloitat saman tien uuden vuokra-asunnon etsinnän netistä": "etsinta",
+    "Mahdolliseen muuttoon on vielä aikaa, joten hoidat vuokra-asunnon etsinnän myöhemmin": "uusiAlku",
+    "Aloitat saman tien uuden vuokra-asunnon etsinnän netistäColor": "green",
+    "Mahdolliseen muuttoon on vielä aikaa, joten hoidat vuokra-asunnon etsinnän myöhemminColor": "red"
+  },
+  "uusiAlku": {
+    "question": "Sinun pitäisi päästä muuttamaan mahdollisimman pian, etkä ole vielä edes aloittanut vuokra-asunnon etsintää.",
+    "background": "background_1",
+    "person": "character_1",
+    "face": "face_happy",
+    "fore": "fore_1",
+    "answers": [
+      "Aloitat saman tien uuden vuokra-asunnon etsinnän netistä",
+      "Et aio sittenkään muuttaa"
+    ],
+    "Aloitat saman tien uuden vuokra-asunnon etsinnän netistä": "etsinta",
+    "Et aio sittenkään muuttaa": "null",
+    "Aloitat saman tien uuden vuokra-asunnon etsinnän netistäColor": "green",
+    "Et aio sittenkään muuttaaColor": "red"
+  },
+  "etsinta": {
+    "question": "Olet löytänyt netistä verkkosivuja, joissa on mahdollisuus selata vapaana olevia vuokra-asuntoja.",
+    "background": "background_1",
+    "person": "character_1",
+    "face": "face_happy",
+    "fore": "fore_1",
+    "answers": [
+      "Asunnon etsintä vaikuttaa liian työläältä, joten hoidat sen myöhemmin",
+      "Etsit asuntoja, jotka näyttävät hyväkuntoisilta ja joihin sinulla on varaa",
+      "Etsit asuntoja, jotka näyttävät hyväkuntoisilta, mutta niiden vuokra on paljon suurempi, mihin sinulla on varaa"
+    ],
+    "Asunnon etsintä vaikuttaa liian työläältä, joten hoidat sen myöhemmin": "uusiEtsinta",
+    "Etsit asuntoja, jotka näyttävät hyväkuntoisilta ja joihin sinulla on varaa": "selaus",
+    "Etsit asuntoja, jotka näyttävät hyväkuntoisilta, mutta niiden vuokra on paljon suurempi, mihin sinulla on varaa": "selaus",
+    "Asunnon etsintä vaikuttaa liian työläältä, joten hoidat sen myöhemminColor": "red",
+    "Etsit asuntoja, jotka näyttävät hyväkuntoisilta ja joihin sinulla on varaaColor": "green",
+    "Etsit asuntoja, jotka näyttävät hyväkuntoisilta, mutta niiden vuokra on paljon suurempi, mihin sinulla on varaaColor": "red"
+  },
+  "uusiEtsinta": {
+    "question": "Aikaa on kulunut, etkä ole vieläkään aloittanut vuokra-asunnon etsintää.",
+    "background": "background_1",
+    "person": "character_1",
+    "face": "face_happy",
+    "fore": "fore_1",
+    "answers": [
+      "Et aio sittenkään muuttaa, joten et etsi uutta asuntoa",
+      "Etsit asuntoja, jotka näyttävät hyväkuntoisilta ja joihin sinulla on varaa",
+      "Etsit asuntoja, jotka näyttävät hyväkuntoisilta, mutta niiden vuokra on paljon suurempi, mihin sinulla on varaa"
+    ],
+    "Et aio sittenkään muuttaa, joten et etsi uutta asuntoa": "null",
+    "Etsit asuntoja, jotka näyttävät hyväkuntoisilta ja joihin sinulla on varaa": "selaus",
+    "Etsit asuntoja, jotka näyttävät hyväkuntoisilta, mutta niiden vuokra on paljon suurempi, mihin sinulla on varaa": "selaus",
+    "Et aio sittenkään muuttaa, joten et etsi uutta asuntoaColor": "red",
+    "Etsit asuntoja, jotka näyttävät hyväkuntoisilta ja joihin sinulla on varaaColor": "green",
+    "Etsit asuntoja, jotka näyttävät hyväkuntoisilta, mutta niiden vuokra on paljon suurempi, mihin sinulla on varaaColor": "red"
+  },
+  "selaus": {
+    "question": "Olet mielestäsi löytänyt useamman sopivan asunnon.",
+    "background": "background_1",
+    "person": "character_1",
+    "face": "face_happy",
+    "fore": "fore_1",
+    "answers": [
+      "Otat yhteyttä vain yhden asunnon vuokraajaan",
+      "Otat yhteyttä useampaan asunnon vuokraajaan, jotta mahdollisuutesi saada asunto on isompi"
+    ],
+    "Otat yhteyttä vain yhden asunnon vuokraajaan": "valmistautuminen",
+    "Otat yhteyttä useampaan asunnon vuokraajaan, jotta mahdollisuutesi saada asunto on isompi": "valmistautuminen",
+    "Otat yhteyttä vain yhden asunnon vuokraajaanColor": "yellow",
+    "Otat yhteyttä useampaan asunnon vuokraajaan, jotta mahdollisuutesi saada asunto on isompiColor": "green"
+  },
+  "valmistautuminen": {
+    "question": "Sait sovittua asuntonäytön yhden asunnon vuokraajan kanssa.",
+    "background": "background_1",
+    "person": "character_1",
+    "face": "face_happy",
+    "fore": "fore_1",
+    "answers": [
+      "Mietit etukäteen jo valmiiksi kysymyksiä asunnosta ja menet ajoissa paikalle asuntonäyttöön",
+      "Menet ajoissa paikalle asuntonäyttöön",
+      "Menet tyylikkäästi myöhässä asuntonäyttöön"
+    ],
+    "Mietit etukäteen jo valmiiksi kysymyksiä asunnosta ja menet ajoissa paikalle asuntonäyttöön": "naytto",
+    "Menet ajoissa paikalle asuntonäyttöön": "naytto",
+    "Menet tyylikkäästi myöhässä asuntonäyttöön": "naytto",
+    "Mietit etukäteen jo valmiiksi kysymyksiä asunnosta ja menet ajoissa paikalle asuntonäyttöönColor": "green",
+    "Menet ajoissa paikalle asuntonäyttöönColor": "yellow",
+    "Menet tyylikkäästi myöhässä asuntonäyttöönColor": "red"
+  },
+  "naytto": {
+    "question": "Saavuit asuntonäyttöön.",
+    "background": "background_1",
+    "person": "character_1",
+    "face": "face_happy",
+    "fore": "fore_1",
+    "answers": [
+      "Asunto ei mielestäsi olekaan niin hyvässä kunnossa kuin luulit, joten et aiokaan pyrkiä saamaan sitä asuntoa",
+      "Tarkastat asunnon kunnon ja kerrot asuntonäytön pitäjälle itsestäsi ja miksi olisit hyvä vuokralainen",
+      "Et tarkasta asunnon kuntoa ollenkaan, mutta kerrot kuitenkin asuntonäytön pitäjälle itsestäsi"
+    ],
+    "Asunto ei mielestäsi olekaan niin hyvässä kunnossa kuin luulit, joten et aiokaan pyrkiä saamaan sitä asuntoa": "uusiYritys",
+    "Tarkastat asunnon kunnon ja kerrot asuntonäytön pitäjälle itsestäsi ja miksi olisit hyvä vuokralainen": "asunnonSaanti",
+    "Et tarkasta asunnon kuntoa ollenkaan, mutta kerrot kuitenkin asuntonäytön pitäjälle itsestäsi": "asunnonSaanti",
+    "Asunto ei mielestäsi olekaan niin hyvässä kunnossa kuin luulit, joten et aiokaan pyrkiä saamaan sitä asuntoaColor": "green",
+    "Tarkastat asunnon kunnon ja kerrot asuntonäytön pitäjälle itsestäsi ja miksi olisit hyvä vuokralainenColor": "green",
+    "Et tarkasta asunnon kuntoa ollenkaan, mutta kerrot kuitenkin asuntonäytön pitäjälle itsestäsiColor": "red"
+  },
+  "uusiYritys": {
+    "question": "Asunto ei ollut hyväkuntoinen, joten etsit toisen asunnon, jonka asuntonäyttöön menet.",
+    "background": "background_1",
+    "person": "character_1",
+    "face": "face_happy",
+    "fore": "fore_1",
+    "answers": [
+      "Tarkastat asunnon kunnon ja kerrot asuntonäytön pitäjälle itsestäsi ja miksi olisit hyvä vuokralainen",
+      "Et tarkasta asunnon kuntoa ollenkaan, mutta kerrot kuitenkin asuntonäytön pitäjälle itsestäsi"
+    ],
+    "Tarkastat asunnon kunnon ja kerrot asuntonäytön pitäjälle itsestäsi ja miksi olisit hyvä vuokralainen": "asunnonSaanti",
+    "Et tarkasta asunnon kuntoa ollenkaan, mutta kerrot kuitenkin asuntonäytön pitäjälle itsestäsi": "asunnonSaanti",
+    "Tarkastat asunnon kunnon ja kerrot asuntonäytön pitäjälle itsestäsi ja miksi olisit hyvä vuokralainenColor": "green",
+    "Et tarkasta asunnon kuntoa ollenkaan, mutta kerrot kuitenkin asuntonäytön pitäjälle itsestäsiColor": "red"
+  },
+  "asunnonSaanti": {
+    "question": "Vuokranantaja on vakuuttunut, että olisit hyvä vuokralainen ja tarjoaa vuokrasopimusta allekirjoitettavaksi.",
+    "background": "background_1",
+    "person": "character_1",
+    "face": "face_happy",
+    "fore": "fore_1",
+    "answers": [
+      "Tarkastat vuokrasopimuksen tarkkaan ennen allekirjoittamista",
+      "Vuokranantaja vaikuttaa luotettavalta, joten allekirjoitat sopimuksen lukematta sitä"
+    ],
+    "Tarkastat vuokrasopimuksen tarkkaan ennen allekirjoittamista": "ennenMuuttoa",
+    "Vuokranantaja vaikuttaa luotettavalta, joten allekirjoitat sopimuksen lukematta sitä": "ennenMuuttoa",
+    "Tarkastat vuokrasopimuksen tarkkaan ennen allekirjoittamistaColor": "green",
+    "Vuokranantaja vaikuttaa luotettavalta, joten allekirjoitat sopimuksen lukematta sitäColor": "red"
+  },
+  "ennenMuuttoa": {
+    "question": "Mitä teet vielä ennen muuttoa uuteen asuntoon?",
+    "background": "background_1",
+    "person": "character_1",
+    "face": "face_happy",
+    "fore": "fore_1",
+    "answers": [
+      "Hoidat kuntoon muuttoon liittyvät käytännön asiat, kuten esimerkiksi sähkösopimuksen ja vakuutusasiat",
+      "Pyydät perheenjäseniltäsi apua muuttoon liittyvissä käytännön asioissa",
+      "Et tee mitään, pelkkä muutto riittää"
+    ],
+    "Hoidat kuntoon muuttoon liittyvät käytännön asiat, kuten esimerkiksi sähkösopimuksen ja vakuutusasiat": "muuttoAlku",
+    "Pyydät perheenjäseniltäsi apua muuttoon liittyvissä käytännön asioissa": "muuttoAlku",
+    "Et tee mitään, pelkkä muutto riittää": "muuttoAlku",
+    "Hoidat kuntoon muuttoon liittyvät käytännön asiat, kuten esimerkiksi sähkösopimuksen ja vakuutusasiatColor": "green",
+    "Pyydät perheenjäseniltäsi apua muuttoon liittyvissä käytännön asioissaColor": "green",
+    "Et tee mitään, pelkkä muutto riittääColor": "red"
+  },
+  "muuttoAlku": {
+    "question": "Muuttopäivä uuteen asuntoon lähestyy.",
+    "background": "background_1",
+    "person": "character_1",
+    "face": "face_happy",
+    "fore": "fore_1",
+    "answers": [
+      "Pyydät perheenjäseniäsi ja tuttaviasi hyvissä ajoin auttamaan muutossa",
+      "Palkkaat muuttofirman hoitamaan muuton puolestasi"
+    ],
+    "Pyydät perheenjäseniäsi ja tuttaviasi hyvissä ajoin auttamaan muutossa": "perheMuutto",
+    "Palkkaat muuttofirman hoitamaan muuton puolestasi": "firmaMuutto",
+    "Pyydät perheenjäseniäsi ja tuttaviasi hyvissä ajoin auttamaan muutossaColor": "green",
+    "Palkkaat muuttofirman hoitamaan muuton puolestasiColor": "green"
+  },
+  "perheMuutto": {
+    "question": "Muuttopäivä on huomenna, ja olet hommannut tyhjiä laatikoita, joihin voit kerätä tavaroitasi.",
+    "background": "background_1",
+    "person": "character_1",
+    "face": "face_happy",
+    "fore": "fore_1",
+    "answers": [
+      "Pakkaat pienet tavarat ja vaatteet valmiiksi laatikoihin, jotta ne olisi helpompi kantaa",
+      "Odotat huomiseen, jotta perheenjäsenesi voivat laittaa tavarasi laatikoihin puolestasi"
+    ],
+    "Pakkaat pienet tavarat ja vaatteet valmiiksi laatikoihin, jotta ne olisi helpompi kantaa": "perheMuuttoKaks",
+    "Odotat huomiseen, jotta perheenjäsenesi voivat laittaa tavarasi laatikoihin puolestasi": "perheMuuttoKaks",
+    "Pakkaat pienet tavarat ja vaatteet valmiiksi laatikoihin, jotta ne olisi helpompi kantaaColor": "green",
+    "Odotat huomiseen, jotta perheenjäsenesi voivat laittaa tavarasi laatikoihin puolestasiColor": "red"
+  },
+  "perheMuuttoKaks": {
+    "question": "On muuttopäivä ja perheenjäsenesi ja tuttavasi ovat tulleet auttamaan muutossa.",
+    "background": "background_1",
+    "person": "character_1",
+    "face": "face_happy",
+    "fore": "fore_1",
+    "answers": [
+      "Katselet, kun perheenjäsenesi ja tuttavasi kantavat tavaroitasi autoon",
+      "Autat perheenjäseniäsi ja tuttaviasi kantamaan tavaroitasi autoon",
+      "Menet lähimpään kahvilaan odottelemaan, kun perheenjäsenesi ja tuttavasti kantavat tavaroitasi autoon"
+    ],
+    "Katselet, kun perheenjäsenesi ja tuttavasi kantavat tavaroitasi autoon": "perheMuuttoLoppu",
+    "Autat perheenjäseniäsi ja tuttaviasi kantamaan tavaroitasi autoon": "perheMuuttoLoppu",
+    "Menet lähimpään kahvilaan odottelemaan, kun perheenjäsenesi ja tuttavasti kantavat tavaroitasi autoon": "perheMuuttoLoppu",
+    "Katselet, kun perheenjäsenesi ja tuttavasi kantavat tavaroitasi autoonColor": "red",
+    "Autat perheenjäseniäsi ja tuttaviasi kantamaan tavaroitasi autoonColor": "green",
+    "Menet lähimpään kahvilaan odottelemaan, kun perheenjäsenesi ja tuttavasti kantavat tavaroitasi autoonColor": "red"
+  },
+  "perheMuuttoLoppu": {
+    "question": "Olette saaneet lastattua tavarasi uuteen asutoon.",
+    "background": "background_1",
+    "person": "character_1",
+    "face": "face_happy",
+    "fore": "fore_1",
+    "answers": [
+      "Järjestät tavarat asunnossasi ja laitat vuokran menemään maksuun tililtäsi automaattisesti kuukausittain",
+      "Jätät tavarat laatikoihin ja laitat vuokran menemään maksuun tililtäsi automaattisesti kuukausittain",
+      "Järjestät tavarat asunnossasi ja yrität muistaa maksaa vuokran joka kuukausi"
+    ],
+    "Järjestät tavarat asunnossasi ja laitat vuokran menemään maksuun tililtäsi automaattisesti kuukausittain": "null",
+    "Jätät tavarat laatikoihin ja laitat vuokran menemään maksuun tililtäsi automaattisesti kuukausittain": "null",
+    "Järjestät tavarat asunnossasi ja yrität muistaa maksaa vuokran joka kuukausi": "null",
+    "Järjestät tavarat asunnossasi ja laitat vuokran menemään maksuun tililtäsi automaattisesti kuukausittainColor": "green",
+    "Jätät tavarat laatikoihin ja laitat vuokran menemään maksuun tililtäsi automaattisesti kuukausittainColor": "red",
+    "Järjestät tavarat asunnossasi ja yrität muistaa maksaa vuokran joka kuukausiColor": "yellow"
+  },
+  "firmaMuutto": {
+    "question": "Muuttopäivä on huomenna, ja olet hommannut tyhjiä laatikoita, joihin voit kerätä tavaroitasi.",
+    "background": "background_1",
+    "person": "character_1",
+    "face": "face_happy",
+    "fore": "fore_1",
+    "answers": [
+      "Pakkaat pienet tavarat ja vaatteet valmiiksi laatikoihin, jotta ne olisi helpompi kantaa",
+      "Odotat huomiseen, jotta muuttofirman työntekijät voivat laittaa tavarasi laatikoihin puolestasi"
+    ],
+    "Pakkaat pienet tavarat ja vaatteet valmiiksi laatikoihin, jotta ne olisi helpompi kantaa": "firmaMuuttoKaks",
+    "Odotat huomiseen, jotta muuttofirman työntekijät voivat laittaa tavarasi laatikoihin puolestasi": "firmaMuuttoKaks",
+    "Pakkaat pienet tavarat ja vaatteet valmiiksi laatikoihin, jotta ne olisi helpompi kantaaColor": "green",
+    "Odotat huomiseen, jotta muuttofirman työntekijät voivat laittaa tavarasi laatikoihin puolestasiColor": "red"
+  },
+  "firmaMuuttoKaks": {
+    "question": "On muuttopäivä, ja muuttofirman työntekijät saavat rivakasti lastattua tavarasi uuteen asuntoosi.",
+    "background": "background_1",
+    "person": "character_1",
+    "face": "face_happy",
+    "fore": "fore_1",
+    "answers": [
+      "Järjestät tavarat asunnossasi ja laitat vuokran menemään maksuun tililtäsi automaattisesti kuukausittain",
+      "Jätät tavarat laatikoihin ja laitat vuokran menemään maksuun tililtäsi automaattisesti kuukausittain",
+      "Järjestät tavarat asunnossasi ja yrität muistaa maksaa vuokran joka kuukausi"
+    ],
+    "Järjestät tavarat asunnossasi ja laitat vuokran menemään maksuun tililtäsi automaattisesti kuukausittain": "null",
+    "Jätät tavarat laatikoihin ja laitat vuokran menemään maksuun tililtäsi automaattisesti kuukausittain": "null",
+    "Järjestät tavarat asunnossasi ja yrität muistaa maksaa vuokran joka kuukausi": "null",
+    "Järjestät tavarat asunnossasi ja laitat vuokran menemään maksuun tililtäsi automaattisesti kuukausittainColor": "green",
+    "Jätät tavarat laatikoihin ja laitat vuokran menemään maksuun tililtäsi automaattisesti kuukausittainColor": "red",
+    "Järjestät tavarat asunnossasi ja yrität muistaa maksaa vuokran joka kuukausiColor": "yellow"
+  }
+}
