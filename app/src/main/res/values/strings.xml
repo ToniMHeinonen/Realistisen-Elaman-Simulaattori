@@ -179,12 +179,17 @@
     &lt;p&gt;3. When scenario is ready press the \"&add;\" button&lt;/p&gt;
     &lt;h2&gt;&export_file;&lt;/h2&gt;
     &lt;p&gt;You can export your created scenario as a json file by pressing the \"&export_file;\" button and by selecting
-        where to export your scenario.&lt;/p&gt;
+        where to export your scenario. This way you can easily save your scenarios to wherever you want
+        and share them with for example your friends.&lt;/p&gt;
     &lt;h2&gt;&import_file;&lt;/h2&gt;
     &lt;p&gt;It is also possible to import json scenario files in to your
         app, just press the \"&import_file;\" button and select the file to import.&lt;/p&gt;
     &lt;h2&gt;Deleting, moving and duplicating scenes&lt;/h2&gt;
-    &lt;p&gt;If you want to delete, move or duplicate created scenes, just hold the created scene button.&lt;/p&gt;</string>
+    &lt;p&gt;If you want to delete, move or duplicate created scenes, just hold the created scene button.&lt;/p&gt;
+    &lt;p&gt;&lt;b&gt;Note:&lt;/b&gt; You should always export your created scenarios to some external place.
+    If you delete and reinstall this app, all of your created scenarios will otherwise be lost.
+    It\'s very advisable to keep a backup of your scenarios in your phone\'s memory or in some cloud
+    service.&lt;/p&gt;</string>
     <string name="tutorial_scene">
     &lt;h1&gt;Creating a scene&lt;/h1&gt;
     &lt;p&gt;1. Select your desired image for the scene&lt;/p&gt;

@@ -177,12 +177,17 @@
     &lt;p&gt;3. Kun skenaario on valmis paina \"&add;\" nappia&lt;/p&gt;
     &lt;h2&gt;&export_file;&lt;/h2&gt;
     &lt;p&gt;Pystyt viemään luodut skenaariosi json tiedostona painamalla \"&export_file;\" nappia ja valitsemalla
-    mihin haluat skenaariosi viedä talteen.&lt;/p&gt;
+    mihin haluat skenaariosi viedä talteen. Tämän avulla pystyt helposti tallentamaan skenaariosi mihin haluat
+        ja jakamaan niitä vaikka ystävillesi.&lt;/p&gt;
     &lt;h2&gt;&import_file;&lt;/h2&gt;
     &lt;p&gt;On myös mahdollista tuoda json skenaario tiedostoja sovellukseesi,
     paina vain \"&import_file;\" nappia ja valitse tiedosto minkä haluat tuoda.&lt;/p&gt;
     &lt;h2&gt;Kohtauksien poistaminen, liikuttaminen ja kopioiminen&lt;/h2&gt;
-    &lt;p&gt;Voit myös poistaa, liikuttaa ja kopioida luotuja kohtauksia pitämällä luodun kohtauksen nappia pohjassa.&lt;/p&gt;</string>
+    &lt;p&gt;Voit myös poistaa, liikuttaa ja kopioida luotuja kohtauksia pitämällä luodun kohtauksen nappia pohjassa.&lt;/p&gt;
+    &lt;p&gt;&lt;b&gt;Huom:&lt;/b&gt; Sinun kannattaa aina tallentaa luomasi skenaariot johonkin ulkoiseen paikkaan.
+    Jos poistat ja uudelleenasennat tämän sovelluksen, kaikki sinun luomasi skenaariot katoavat muuten.
+    On erittäin suositeltavaa pitää varmuuskopiota luomistasi skenaarioista puhelimesi muistissa tai jossain
+    pilvipalvelussa.&lt;/p&gt;</string>
     <string name="tutorial_scene">
     &lt;h1&gt;Kohtauksen luominen&lt;/h1&gt;
     &lt;p&gt;1. Valitse haluamasi kuva kohtaukselle&lt;/p&gt;
