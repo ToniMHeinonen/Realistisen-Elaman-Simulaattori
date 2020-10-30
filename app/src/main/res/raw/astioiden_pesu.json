@@ -1,197 +1,197 @@
 {
   "first": {
-    "question": "Likaisia astioita on alkanut kertymään ympäri asuntoasi.",
-    "background": "background_1",
-    "person": "character_1",
-    "fore": "fore_1",
-    "face": "face_happy",
+    "question": "You have dirty dishes all over your apartment.",
+    "background": "background_5",
+    "person": "null",
+    "fore": "fore_16",
+    "face": "null",
     "answers": [
-      "Ei haittaa, kaapissa on vielä puhtaita astioita muutama jäljellä",
-      "Huuhtelet pelkällä vedellä pari astiaa ja pistät ne kaappiin",
-      "Päätät kerätä astiat ja tiskata ne"
+      "No problem, there are still a few clean dishes left in the cupboard",
+      "You rinse a couple of dishes with plain water and put them in the cupboard",
+      "You decide to do the dishes"
     ],
-    "Ei haittaa, kaapissa on vielä puhtaita astioita muutama jäljellä": "uusiAlku",
-    "Huuhtelet pelkällä vedellä pari astiaa ja pistät ne kaappiin": "uusiAlku",
-    "Päätät kerätä astiat ja tiskata ne": "koneVaiEi",
-    "Ei haittaa, kaapissa on vielä puhtaita astioita muutama jäljelläColor": "red",
-    "Huuhtelet pelkällä vedellä pari astiaa ja pistät ne kaappiinColor": "red",
-    "Päätät kerätä astiat ja tiskata neColor": "green"
+    "No problem, there are still a few clean dishes left in the cupboard": "uusiAlku",
+    "You rinse a couple of dishes with plain water and put them in the cupboard": "uusiAlku",
+    "You decide to do the dishes": "koneVaiEi",
+    "No problem, there are still a few clean dishes left in the cupboardColor": "red",
+    "You rinse a couple of dishes with plain water and put them in the cupboardColor": "red",
+    "You decide to do the dishesColor": "green"
   },
   "uusiAlku": {
-    "question": "Likaisia astioita on yhä enemmän ja kaapistakin on puhtaat astiat loppu.",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
-    "fore": "fore_1",
+    "question": "There are more and more dirty dishes and even the cupboards run out of clean dishes.",
+    "background": "background_5",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_16",
     "answers": [
-      "Päätät kerätä astiat ja tiskata ne",
-      "Sinua ei huvita tiskata ja syöt tästä lähtien likaisista astioista"
+      "You decide to do the dishes",
+      "You are not in the mood of doing dishes and from now on you will eat from dirty dishes"
     ],
-    "Päätät kerätä astiat ja tiskata ne": "koneVaiEi",
-    "Sinua ei huvita tiskata ja syöt tästä lähtien likaisista astioista": "null",
-    "Päätät kerätä astiat ja tiskata neColor": "green",
-    "Sinua ei huvita tiskata ja syöt tästä lähtien likaisista astioistaColor": "red"
+    "You decide to do the dishes": "koneVaiEi",
+    "You are not in the mood of doing dishes and from now on you will eat from dirty dishes": "null",
+    "You decide to do the dishesColor": "green",
+    "You are not in the mood of doing dishes and from now on you will eat from dirty dishesColor": "red"
   },
   "koneVaiEi": {
-    "question": "Omistatko astianpesukonetta?",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
-    "fore": "fore_1",
+    "question": "Do you own a dishwasher?",
+    "background": "background_5",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_16",
     "answers": [
-      "Kyllä",
-      "Ei"
+      "Yes",
+      "No"
     ],
-    "Kyllä": "koneAlku",
-    "Ei": "kasinAlku",
-    "KylläColor": "green",
-    "EiColor": "green"
+    "Yes": "koneAlku",
+    "No": "kasinAlku",
+    "YesColor": "green",
+    "NoColor": "green"
   },
   "koneAlku": {
-    "question": "Olet kerännyt likaiset astiat astianpesukoneen lähettyville.",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
-    "fore": "fore_1",
+    "question": "You have gathered dirty dishes near the dishwasher.",
+    "background": "background_5",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_16",
     "answers": [
-      "Pistät likaiset astiat suoraan astianpesukoneeseen huuhtelematta niitä",
-      "Pistät astiat astianpesukoneeseen huuhdeltuasi ensin likaisimmat astiat kädenlämpöisellä vedellä"
+      "You put dirty dishes directly into the dishwasher without rinsing them",
+      "You put the dishes in the dishwasher after first rinsing the dirtiest dishes with hand-warm water"
     ],
-    "Pistät likaiset astiat suoraan astianpesukoneeseen huuhtelematta niitä": "koneKaksi",
-    "Pistät astiat astianpesukoneeseen huuhdeltuasi ensin likaisimmat astiat kädenlämpöisellä vedellä": "koneKaksi",
-    "Pistät likaiset astiat suoraan astianpesukoneeseen huuhtelematta niitäColor": "yellow",
-    "Pistät astiat astianpesukoneeseen huuhdeltuasi ensin likaisimmat astiat kädenlämpöisellä vedelläColor": "green"
+    "You put dirty dishes directly into the dishwasher without rinsing them": "koneKaksi",
+    "You put the dishes in the dishwasher after first rinsing the dirtiest dishes with hand-warm water": "koneKaksi",
+    "You put dirty dishes directly into the dishwasher without rinsing themColor": "yellow",
+    "You put the dishes in the dishwasher after first rinsing the dirtiest dishes with hand-warm waterColor": "green"
   },
   "koneKaksi": {
-    "question": "Olet laittanut kaikki likaiset astiat astianpesukoneeseen.",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
-    "fore": "fore_1",
+    "question": "You have put all the dirty dishes in the dishwasher.",
+    "background": "background_5",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_16",
     "answers": [
-      "Jätät astiat astianpesukoneeseen laittamatta sitä päälle",
-      "Avaat vesihanan, laitat pesuaineen tai pesuainetabletin koneeseen, valitset sopivan ohjelman ja käynnistät koneen"
+      "You leave the dishes in the dishwasher without putting it on",
+      "You open the water tap, put the detergent or detergent tablet in the dishwasher, select the appropriate program and start the dishwasher"
     ],
-    "Jätät astiat astianpesukoneeseen laittamatta sitä päälle": "likaisetKoneessa",
-    "Avaat vesihanan, laitat pesuaineen tai pesuainetabletin koneeseen, valitset sopivan ohjelman ja käynnistät koneen": "koneKolme",
-    "Jätät astiat astianpesukoneeseen laittamatta sitä päälleColor": "red",
-    "Avaat vesihanan, laitat pesuaineen tai pesuainetabletin koneeseen, valitset sopivan ohjelman ja käynnistät koneenColor": "green"
+    "You leave the dishes in the dishwasher without putting it on": "likaisetKoneessa",
+    "You open the water tap, put the detergent or detergent tablet in the dishwasher, select the appropriate program and start the dishwasher": "koneKolme",
+    "You leave the dishes in the dishwasher without putting it onColor": "red",
+    "You open the water tap, put the detergent or detergent tablet in the dishwasher, select the appropriate program and start the dishwasherColor": "green"
   },
   "likaisetKoneessa": {
-    "question": "Likaiset astiat lojuvat edelleen astianpesukoneessa.",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
-    "fore": "fore_1",
+    "question": "Dirty dishes are still in the dishwasher.",
+    "background": "background_5",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_16",
     "answers": [
-      "Antaa olla, et tarvitse astioita tästä lähtien ollenkaan",
-      "Avaat vesihanan, laitat pesuaineen tai pesuainetabletin koneeseen, valitset sopivan ohjelman ja käynnistät koneen"
+      "Lets have it, you don’t need dishes from now on at all",
+      "You open the water tap, put the detergent or detergent tablet in the dishwasher, select the appropriate program and start the dishwasher"
     ],
-    "Antaa olla, et tarvitse astioita tästä lähtien ollenkaan": "null",
-    "Avaat vesihanan, laitat pesuaineen tai pesuainetabletin koneeseen, valitset sopivan ohjelman ja käynnistät koneen": "koneKolme",
-    "Antaa olla, et tarvitse astioita tästä lähtien ollenkaanColor": "red",
-    "Avaat vesihanan, laitat pesuaineen tai pesuainetabletin koneeseen, valitset sopivan ohjelman ja käynnistät koneenColor": "green"
+    "Lets have it, you don’t need dishes from now on at all": "null",
+    "You open the water tap, put the detergent or detergent tablet in the dishwasher, select the appropriate program and start the dishwasher": "koneKolme",
+    "Lets have it, you don’t need dishes from now on at allColor": "red",
+    "You open the water tap, put the detergent or detergent tablet in the dishwasher, select the appropriate program and start the dishwasherColor": "green"
   },
   "koneKolme": {
-    "question": "Astianpesukone on puhdistanut astiat.",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
-    "fore": "fore_1",
+    "question": "The dishes have been cleaned by the dishwasher.",
+    "background": "background_5",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_16",
     "answers": [
-      "Suljet vesihanan, sammutat astianpesukoneen ja laitat puhtaat astiat kaappiin, kunhan ne ovat ensin hieman kuivuneet",
-      "Suljet vesihanan, sammutat astianpesukoneen ja jätät astiat lojumaan koneeseen pitkäksi aikaa",
-      "Jätät vesihanan auki ja astianpesukoneen päälle"
+      "You turn off the water tap and the dishwasher and put clean dishes in the cupboard after they have slightly dried first",
+      "You turn off the water tap and the dishwasher and leave the dishes to in the dishwasher for a long time",
+      "You leave the water tap open and won't shut down the dishwasher"
     ],
-    "Suljet vesihanan, sammutat astianpesukoneen ja laitat puhtaat astiat kaappiin, kunhan ne ovat ensin hieman kuivuneet": "null",
-    "Suljet vesihanan, sammutat astianpesukoneen ja jätät astiat lojumaan koneeseen pitkäksi aikaa": "null",
-    "Jätät vesihanan auki ja astianpesukoneen päälle": "null",
-    "Suljet vesihanan, sammutat astianpesukoneen ja laitat puhtaat astiat kaappiin, kunhan ne ovat ensin hieman kuivuneetColor": "green",
-    "Suljet vesihanan, sammutat astianpesukoneen ja jätät astiat lojumaan koneeseen pitkäksi aikaaColor": "yellow",
-    "Jätät vesihanan auki ja astianpesukoneen päälleColor": "red"
+    "You turn off the water tap and the dishwasher and put clean dishes in the cupboard after they have slightly dried first": "null",
+    "You turn off the water tap and the dishwasher and leave the dishes to in the dishwasher for a long time": "null",
+    "You leave the water tap open and won't shut down the dishwasher": "null",
+    "You turn off the water tap and the dishwasher and put clean dishes in the cupboard after they have slightly dried firstColor": "green",
+    "You turn off the water tap and the dishwasher and leave the dishes to in the dishwasher for a long timeColor": "yellow",
+    "You leave the water tap open and won't shut down the dishwasherColor": "red"
   },
   "kasinAlku": {
-    "question": "Olet kerännyt likaiset astiat tiskialtaan lähettyville.",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
-    "fore": "fore_1",
+    "question": "You have gathered the dirty dishes near your sink.",
+    "background": "background_5",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_16",
     "answers": [
-      "Huuhtelet ensin likaisimmat astiat kädenlämpöisellä vedellä",
-      "Et huuhtele astioita ollenkaan",
-      "Sinua ei huvitakaan tiskata, joten jätät astiat lojumaan tiskipöydälle"
+      "You rinse the dirtiest dishes with hand-warm water first",
+      "You do not rinse the dishes at all",
+      "You don’t like to do the dishes right now, so you leave the dishes near the sink"
     ],
-    "Huuhtelet ensin likaisimmat astiat kädenlämpöisellä vedellä": "kasinKaksi",
-    "Et huuhtele astioita ollenkaan": "kasinKaksi",
-    "Sinua ei huvitakaan tiskata, joten jätät astiat lojumaan tiskipöydälle": "null",
-    "Huuhtelet ensin likaisimmat astiat kädenlämpöisellä vedelläColor": "green",
-    "Et huuhtele astioita ollenkaanColor": "yellow",
-    "Sinua ei huvitakaan tiskata, joten jätät astiat lojumaan tiskipöydälleColor": "red"
+    "You rinse the dirtiest dishes with hand-warm water first": "kasinKaksi",
+    "You do not rinse the dishes at all": "kasinKaksi",
+    "You don’t like to do the dishes right now, so you leave the dishes near the sink": "null",
+    "You rinse the dirtiest dishes with hand-warm water firstColor": "green",
+    "You do not rinse the dishes at allColor": "yellow",
+    "You don’t like to do the dishes right now, so you leave the dishes near the sinkColor": "red"
   },
   "kasinKaksi": {
-    "question": "Seuraavaksi pitäisi täyttää tiskiallas vedellä.",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
-    "fore": "fore_1",
+    "question": "Next, you should fill the sink with water.",
+    "background": "background_5",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_16",
     "answers": [
-      "Täytät sen niin kuumalla vedellä kuin kätesi kestävät",
-      "Täytät sen kylmällä vedellä",
-      "Täytät sen niin kuumalla vedellä, että se polttelee käsiäsi"
+      "You fill it with as hot water as your hands can withstand",
+      "You fill it with cold water",
+      "You fill it with so hot water that it burns your hands"
     ],
-    "Täytät sen niin kuumalla vedellä kuin kätesi kestävät": "kasinKolme",
-    "Täytät sen kylmällä vedellä": "kasinKolme",
-    "Täytät sen niin kuumalla vedellä, että se polttelee käsiäsi": "kasinKolme",
-    "Täytät sen niin kuumalla vedellä kuin kätesi kestävätColor": "green",
-    "Täytät sen kylmällä vedelläColor": "red",
-    "Täytät sen niin kuumalla vedellä, että se polttelee käsiäsiColor": "red"
+    "You fill it with as hot water as your hands can withstand": "kasinKolme",
+    "You fill it with cold water": "kasinKolme",
+    "You fill it with so hot water that it burns your hands": "kasinKolme",
+    "You fill it with as hot water as your hands can withstandColor": "green",
+    "You fill it with cold waterColor": "red",
+    "You fill it with so hot water that it burns your handsColor": "red"
   },
   "kasinKolme": {
-    "question": "Mitä teet seuraavaksi?",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
-    "fore": "fore_1",
+    "question": "What do you do next?",
+    "background": "background_5",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_16",
     "answers": [
-      "Peset ensin puhtaimmat astiat tiskiharjalla, jonka jälkeen siirryt likaisiin astioihin",
-      "Peset ensin likaisimmat astiat tiskiharjalla, jonka jälkeen siirryt puhtaisiin astioihin",
-      "Peset astiat tiskiharjalla sattumanvaraisessa järjestyksessä"
+      "First wash the cleanest dishes with a dish brush, after which you move to dirtier dishes",
+      "First wash the dirty dishes with a dish brush, then move on to cleaner dishes",
+      "Wash dishes with a dish brush in random order"
     ],
-    "Peset ensin puhtaimmat astiat tiskiharjalla, jonka jälkeen siirryt likaisiin astioihin": "kasinNelja",
-    "Peset ensin likaisimmat astiat tiskiharjalla, jonka jälkeen siirryt puhtaisiin astioihin": "kasinNelja",
-    "Peset astiat tiskiharjalla sattumanvaraisessa järjestyksessä": "kasinNelja",
-    "Peset ensin puhtaimmat astiat tiskiharjalla, jonka jälkeen siirryt likaisiin astioihinColor": "green",
-    "Peset ensin likaisimmat astiat tiskiharjalla, jonka jälkeen siirryt puhtaisiin astioihinColor": "yellow",
-    "Peset astiat tiskiharjalla sattumanvaraisessa järjestyksessäColor": "yellow"
+    "First wash the cleanest dishes with a dish brush, after which you move to dirtier dishes": "kasinNelja",
+    "First wash the dirty dishes with a dish brush, then move on to cleaner dishes": "kasinNelja",
+    "Wash dishes with a dish brush in random order": "kasinNelja",
+    "First wash the cleanest dishes with a dish brush, after which you move to dirtier dishesColor": "green",
+    "First wash the dirty dishes with a dish brush, then move on to cleaner dishesColor": "yellow",
+    "Wash dishes with a dish brush in random orderColor": "yellow"
   },
   "kasinNelja": {
-    "question": "Mitä teet seuraavaksi?",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
-    "fore": "fore_1",
+    "question": "What do you do next?",
+    "background": "background_5",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_16",
     "answers": [
-      "Huuhtelet astiat ja laitat ne kuivumaan heti pesun jälkeen",
-      "Laitat astiat suoraan kaappiin huuhtelematta niitä"
+      "You rinse the dishes and let them dry after rinsing",
+      "You put the dishes directly in the cupboard without rinsing them"
     ],
-    "Huuhtelet astiat ja laitat ne kuivumaan heti pesun jälkeen": "kasinLoppu",
-    "Laitat astiat suoraan kaappiin huuhtelematta niitä": "kasinLoppu",
-    "Huuhtelet astiat ja laitat ne kuivumaan heti pesun jälkeenColor": "green",
-    "Laitat astiat suoraan kaappiin huuhtelematta niitäColor": "red"
+    "You rinse the dishes and let them dry after rinsing": "kasinLoppu",
+    "You put the dishes directly in the cupboard without rinsing them": "kasinLoppu",
+    "You rinse the dishes and let them dry after rinsingColor": "green",
+    "You put the dishes directly in the cupboard without rinsing themColor": "red"
   },
   "kasinLoppu": {
-    "question": "Mitä teet vielä lopuksi?",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
-    "fore": "fore_1",
+    "question": "What do you do in the end?",
+    "background": "background_5",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_16",
     "answers": [
-      "Jätät veden lojumaan tiskialtaaseen seuraavaa kertaa varten",
-      "Tyhjennät tiskialtaan ja pyyhit tiskipöydän"
+      "You leave the water in the sink",
+      "You empty and wipe the sink"
     ],
-    "Jätät veden lojumaan tiskialtaaseen seuraavaa kertaa varten": "null",
-    "Tyhjennät tiskialtaan ja pyyhit tiskipöydän": "null",
-    "Jätät veden lojumaan tiskialtaaseen seuraavaa kertaa vartenColor": "red",
-    "Tyhjennät tiskialtaan ja pyyhit tiskipöydänColor": "green"
+    "You leave the water in the sink": "null",
+    "You empty and wipe the sink": "null",
+    "You leave the water in the sinkColor": "red",
+    "You empty and wipe the sinkColor": "green"
   }
 }
