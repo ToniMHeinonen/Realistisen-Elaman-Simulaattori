@@ -1,10 +1,10 @@
 {
   "first": {
     "question": "Likaisia astioita on alkanut kertymään ympäri asuntoasi.",
-    "background": "background_1",
-    "person": "character_1",
-    "fore": "fore_1",
-    "face": "face_happy",
+    "background": "background_5",
+    "person": "null",
+    "fore": "fore_16",
+    "face": "null",
     "answers": [
       "Ei haittaa, kaapissa on vielä puhtaita astioita muutama jäljellä",
       "Huuhtelet pelkällä vedellä pari astiaa ja pistät ne kaappiin",
@@ -19,10 +19,10 @@
   },
   "uusiAlku": {
     "question": "Likaisia astioita on yhä enemmän ja kaapistakin on puhtaat astiat loppu.",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
-    "fore": "fore_1",
+    "background": "background_5",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_16",
     "answers": [
       "Päätät kerätä astiat ja tiskata ne",
       "Sinua ei huvita tiskata ja syöt tästä lähtien likaisista astioista"
@@ -34,10 +34,10 @@
   },
   "koneVaiEi": {
     "question": "Omistatko astianpesukonetta?",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
-    "fore": "fore_1",
+    "background": "background_5",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_16",
     "answers": [
       "Kyllä",
       "Ei"
@@ -49,10 +49,10 @@
   },
   "koneAlku": {
     "question": "Olet kerännyt likaiset astiat astianpesukoneen lähettyville.",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
-    "fore": "fore_1",
+    "background": "background_5",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_16",
     "answers": [
       "Pistät likaiset astiat suoraan astianpesukoneeseen huuhtelematta niitä",
       "Pistät astiat astianpesukoneeseen huuhdeltuasi ensin likaisimmat astiat kädenlämpöisellä vedellä"
@@ -64,10 +64,10 @@
   },
   "koneKaksi": {
     "question": "Olet laittanut kaikki likaiset astiat astianpesukoneeseen.",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
-    "fore": "fore_1",
+    "background": "background_5",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_16",
     "answers": [
       "Jätät astiat astianpesukoneeseen laittamatta sitä päälle",
       "Avaat vesihanan, laitat pesuaineen tai pesuainetabletin koneeseen, valitset sopivan ohjelman ja käynnistät koneen"
@@ -79,10 +79,10 @@
   },
   "likaisetKoneessa": {
     "question": "Likaiset astiat lojuvat edelleen astianpesukoneessa.",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
-    "fore": "fore_1",
+    "background": "background_5",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_16",
     "answers": [
       "Antaa olla, et tarvitse astioita tästä lähtien ollenkaan",
       "Avaat vesihanan, laitat pesuaineen tai pesuainetabletin koneeseen, valitset sopivan ohjelman ja käynnistät koneen"
@@ -94,10 +94,10 @@
   },
   "koneKolme": {
     "question": "Astianpesukone on puhdistanut astiat.",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
-    "fore": "fore_1",
+    "background": "background_5",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_16",
     "answers": [
       "Suljet vesihanan, sammutat astianpesukoneen ja laitat puhtaat astiat kaappiin, kunhan ne ovat ensin hieman kuivuneet",
       "Suljet vesihanan, sammutat astianpesukoneen ja jätät astiat lojumaan koneeseen pitkäksi aikaa",
@@ -112,10 +112,10 @@
   },
   "kasinAlku": {
     "question": "Olet kerännyt likaiset astiat tiskialtaan lähettyville.",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
-    "fore": "fore_1",
+    "background": "background_5",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_16",
     "answers": [
       "Huuhtelet ensin likaisimmat astiat kädenlämpöisellä vedellä",
       "Et huuhtele astioita ollenkaan",
@@ -130,10 +130,10 @@
   },
   "kasinKaksi": {
     "question": "Seuraavaksi pitäisi täyttää tiskiallas vedellä.",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
-    "fore": "fore_1",
+    "background": "background_5",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_16",
     "answers": [
       "Täytät sen niin kuumalla vedellä kuin kätesi kestävät",
       "Täytät sen kylmällä vedellä",
@@ -148,10 +148,10 @@
   },
   "kasinKolme": {
     "question": "Mitä teet seuraavaksi?",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
-    "fore": "fore_1",
+    "background": "background_5",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_16",
     "answers": [
       "Peset ensin puhtaimmat astiat tiskiharjalla, jonka jälkeen siirryt likaisiin astioihin",
       "Peset ensin likaisimmat astiat tiskiharjalla, jonka jälkeen siirryt puhtaisiin astioihin",
@@ -166,10 +166,10 @@
   },
   "kasinNelja": {
     "question": "Mitä teet seuraavaksi?",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
-    "fore": "fore_1",
+    "background": "background_5",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_16",
     "answers": [
       "Huuhtelet astiat ja laitat ne kuivumaan heti pesun jälkeen",
       "Laitat astiat suoraan kaappiin huuhtelematta niitä"
@@ -181,10 +181,10 @@
   },
   "kasinLoppu": {
     "question": "Mitä teet vielä lopuksi?",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
-    "fore": "fore_1",
+    "background": "background_5",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_16",
     "answers": [
       "Jätät veden lojumaan tiskialtaaseen seuraavaa kertaa varten",
       "Tyhjennät tiskialtaan ja pyyhit tiskipöydän"
