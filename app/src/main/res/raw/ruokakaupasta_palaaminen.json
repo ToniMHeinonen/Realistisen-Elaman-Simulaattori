@@ -1,10 +1,10 @@
 {
   "first": {
     "question": "Poistuit ruokakaupasta ostostesi kanssa. Mitä teet seuraavaksi?",
-    "background": "background_1",
-    "person": "character_1",
-    "fore": "fore_1",
-    "face": "face_happy",
+    "background": "background_16",
+    "person": "null",
+    "fore": "fore_14",
+    "face": "null",
     "answers": [
       "Lähdet kyläilemään kaverin luokse",
       "Menet suorinta tietä kotiin",
@@ -19,10 +19,10 @@
   },
   "kaveri": {
     "question": "Pääset kaverisi luokse, ja hän ihmettelee, miksi sinulla on ruokaostokset mukana.",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
-    "fore": "fore_1",
+    "background": "background_16",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_19",
     "answers": [
       "Menet sittenkin viemään ostokset kotiin",
       "Kysyt kaveriltasi, voisitko jättää ostokset hänen luokseen"
@@ -34,10 +34,10 @@
   },
   "kaveriKaks": {
     "question": "Kaverisi kieltäytyy ja sanoo, että sinun pitäisi viedä ostokset kotiisi.",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
-    "fore": "fore_1",
+    "background": "background_16",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_19",
     "answers": [
       "Suutut hänelle ja menet sitten kotiisi",
       "Ymmärrät, ettet saa jättää ostoksia hänen luokseen ja menet sitten kotiisi"
@@ -49,10 +49,10 @@
   },
   "koti": {
     "question": "Astut sisään asuntoosi. Mitä teet seuraavaksi?",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
-    "fore": "fore_1",
+    "background": "background_16",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_14",
     "answers": [
       "Jätät ostokset eteiseen ja menet pelaamaan tietokoneella",
       "Menet keittiöön tyhjentääksesi ostokset ruokakassistasi",
@@ -67,10 +67,10 @@
   },
   "tietokone": {
     "question": "Pelattuasi hetken tietokoneella huomaat, että ostokset lojuvat yhä eteisessä.",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
-    "fore": "fore_1",
+    "background": "background_16",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_14",
     "answers": [
       "Jatkat pelaamista",
       "Lopetat pelaamisen hetkeksi ja viet ostokset keittiöön"
@@ -82,10 +82,10 @@
   },
   "tietokoneKaks": {
     "question": "Ostokset ovat edelleen eteisessä.",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
-    "fore": "fore_1",
+    "background": "background_16",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_14",
     "answers": [
       "Lopetat pelaamisen hetkeksi ja viet ostokset keittiöön",
       "Jätät ostokset lopullisesti eteiseen"
@@ -97,10 +97,10 @@
   },
   "televisio": {
     "question": "Katseltuasi hetken televisiota huomaat, että ostokset lojuvat yhä eteisessä.",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
-    "fore": "fore_1",
+    "background": "background_16",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_14",
     "answers": [
       "Jatkat television katsomista, koska ohjelma on juuri jännittävässä kohdassa",
       "Lopetat television katselemisen hetkeksi ja viet ostokset keittiöön"
@@ -112,10 +112,10 @@
   },
   "televisioKaks": {
     "question": "Ostokset ovat edelleen eteisessä.",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
-    "fore": "fore_1",
+    "background": "background_16",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_14",
     "answers": [
       "Lopetat television katselemisen hetkeksi ja viet ostokset keittiöön",
       "Jätät ostokset lopullisesti eteiseen"
@@ -127,10 +127,10 @@
   },
   "keittio": {
     "question": "Menet keittiöön ja alat tyhjentämään ruokakassia. Otat ensimmäisenä kassista voin ja maidon. Mihin laitat ne?",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
-    "fore": "fore_1",
+    "background": "background_16",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_14",
     "answers": [
       "Jääkaappiin",
       "Pakastimeen",
@@ -145,10 +145,10 @@
   },
   "keittioKaks": {
     "question": "Seuraavaksi otat ruokakassista jäätelön ja ranskanperunat. Mihin laitat ne?",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
-    "fore": "fore_1",
+    "background": "background_16",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_14",
     "answers": [
       "Jääkaappiin",
       "Pakastimeen",
@@ -163,10 +163,10 @@
   },
   "keittioEpavarma": {
     "question": "Seuraavaksi otat ruokakassista ostoksen, josta et ole varma, missä sitä kuuluisi säilyttää.",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
-    "fore": "fore_1",
+    "background": "background_16",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_14",
     "answers": [
       "Katsot tarkkaan ostoksesta tekstit, jos siinä kerrottaisiin, missä sitä kuuluu säilyttää",
       "Soitat tuttavallesi, jos hän sattuisi tietämään",
@@ -181,10 +181,10 @@
   },
   "ostosTeksti": {
     "question": "Ostoksen tiedoissa lukee, että sitä kuuluisi säilyttää pakastelämpötilassa. Mihin laitat sen?",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
-    "fore": "fore_1",
+    "background": "background_16",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_14",
     "answers": [
       "Jääkaappiin",
       "Pakastimeen",
@@ -199,10 +199,10 @@
   },
   "tuttava": {
     "question": "Tuttavasi tietää, että kyseistä ostosta tulee säilyttää pakastimessa. Mihin laitat sen?",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
-    "fore": "fore_1",
+    "background": "background_16",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_19",
     "answers": [
       "Jääkaappiin",
       "Pakastimeen",
@@ -217,10 +217,10 @@
   },
   "keittioKysymys": {
     "question": "Onko ruokakassissa vielä ostoksia jäljellä?",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
-    "fore": "fore_1",
+    "background": "background_16",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_14",
     "answers": [
       "Kyllä",
       "Ei"
@@ -232,10 +232,10 @@
   },
   "keittioKolme": {
     "question": "Seuraavaksi otat ruokakassista makaronipussin ja kahvipaketin. Mihin laitat ne?",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
-    "fore": "fore_1",
+    "background": "background_16",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_14",
     "answers": [
       "Jääkaappiin",
       "Pakastimeen",
@@ -250,10 +250,10 @@
   },
   "keittioNelja": {
     "question": "Viimeisenä otat ruokakassista shampoon ja suihkusaippuan. Mihin laitat ne?",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
-    "fore": "fore_1",
+    "background": "background_16",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_14",
     "answers": [
       "Jääkaappiin",
       "Pakastimeen",
@@ -271,10 +271,10 @@
   },
   "loppu": {
     "question": "Olet saanut tyhjennettyä ruokakassisi. Mitä teet vielä lopuksi?",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
-    "fore": "fore_1",
+    "background": "background_16",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_14",
     "answers": [
       "Pistät ruokakassin siististi kaappiin",
       "Jätät ruokakassin lojumaan lattialle"

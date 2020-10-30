@@ -58,7 +58,7 @@
     "background": "background_5",
     "person": "character_5",
     "fore": "fore_5",
-    "face": "face_uncomfortable",
+    "face": "face_happy",
     "answers": [
       "Olet hiljaa ja odotat, että virkailija kyselisi sinun vointia",
       "Kerrot virkailijalle nimesi ja syyn, miksi tulit"
@@ -73,7 +73,7 @@
     "background": "background_5",
     "person": "character_5",
     "fore": "fore_5",
-    "face": "face_uncomfortable",
+    "face": "face_happy",
     "answers": [
       "Kerrot virkailijalle nimesi ja syyn, miksi tulit",
       "Poistut terveyskeskuksesta"
@@ -88,7 +88,7 @@
     "background": "background_5",
     "person": "character_5",
     "fore": "fore_5",
-    "face": "face_uncomfortable",
+    "face": "face_happy",
     "answers": [
       "Odotat vuoroasi seisten",
       "Istut penkeille odottamaan vuoroasi",
@@ -106,7 +106,7 @@
     "background": "background_5",
     "person": "character_5",
     "fore": "fore_5",
-    "face": "face_uncomfortable",
+    "face": "face_happy",
     "answers": [
       "Olet hiljaa ja odotat, että virkailija kyselisi sinun vointia",
       "Kerrot virkailijalle nimesi ja syyn, miksi soitit"
@@ -121,7 +121,7 @@
     "background": "background_5",
     "person": "character_5",
     "fore": "fore_5",
-    "face": "face_uncomfortable",
+    "face": "face_happy",
     "answers": [
       "Kiität virkailijaa ja lopetat puhelun",
       "Lopetat puhelun sanomatta sanaakaan"
@@ -136,7 +136,7 @@
     "background": "background_5",
     "person": "character_5",
     "fore": "fore_5",
-    "face": "face_uncomfortable",
+    "face": "face_happy",
     "answers": [
       "Kerrot virkailijalle nimesi ja syyn, miksi soitit",
       "Lopetat puhelun"
@@ -151,7 +151,7 @@
     "background": "background_5",
     "person": "character_5",
     "fore": "fore_5",
-    "face": "face_uncomfortable",
+    "face": "face_happy",
     "answers": [
       "Ilmoittaudut vastaanottovirkailijalle",
       "Menet suoraan penkille odottamaan vuoroasi"
@@ -166,7 +166,7 @@
     "background": "background_5",
     "person": "character_5",
     "fore": "fore_5",
-    "face": "face_uncomfortable",
+    "face": "face_happy",
     "answers": [
       "Kerrot lääkärille, missä olet tuntenut kipua",
       "Valehtelet lääkärille, missä olet tuntenut kipua"
@@ -181,7 +181,7 @@
     "background": "background_5",
     "person": "character_5",
     "fore": "fore_5",
-    "face": "face_uncomfortable",
+    "face": "face_happy",
     "answers": [
       "Kiität lääkäriä ja poistut terveyskeskuksesta",
       "Poistut terveyskeskuksesta sanomatta sanaakaan"
@@ -196,7 +196,7 @@
     "background": "background_5",
     "person": "character_5",
     "fore": "fore_5",
-    "face": "face_uncomfortable",
+    "face": "face_happy",
     "answers": [
       "Menet suoraan kotiin ja haet lääkärin antaman reseptin apteekista myöhemmin",
       "Ennen kuin menet kotiin, haet lääkärin antaman reseptin apteekista",
@@ -214,7 +214,7 @@
     "background": "background_5",
     "person": "character_5",
     "fore": "fore_5",
-    "face": "face_uncomfortable",
+    "face": "face_happy",
     "answers": [
       "Odotat, kyllä se kipu menee vielä ohi",
       "Soitat hammaslääkäriin varataksesi ajan",
@@ -249,7 +249,7 @@
     "question": "Revit hampaan irti, mutta kipu jatkuu yhä. Mitä teet?",
     "background": "background_5",
     "person": "character_5",
-    "face": "face_uncomfortable",
+    "face": "face_happy",
     "fore": "fore_5",
     "answers": [
       "Soitat hammaslääkäriin varataksesi ajan",
@@ -264,7 +264,7 @@
     "question": "Hammassärky ei helpota. Mitä teet?",
     "background": "background_5",
     "person": "character_5",
-    "face": "face_uncomfortable",
+    "face": "face_happy",
     "fore": "fore_5",
     "answers": [
       "Soitat hammaslääkäriin varataksesi ajan",
