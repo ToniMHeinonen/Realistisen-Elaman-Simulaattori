@@ -1,116 +1,116 @@
 {
   "first": {
-    "question": "Vaatteitasi on kertynyt hujan hajan ympäri asuntoasi.",
+    "question": "Your clothes are all over the apartment.",
     "background": "background_9",
     "person": "character_8",
     "fore": "null",
     "face": "face_happy",
     "answers": [
-      "Päätät kerätä ja lajitella vaatteet",
-      "Vaatteita on helpompi ottaa, kun ne lojuvat ympäri asuntoa, joten annat niiden olla"
+      "You decide to pick and sort the clothes",
+      "It's easier to choose clothes when they are around the apartment, so you let them be"
     ],
-    "Päätät kerätä ja lajitella vaatteet": "kysely",
-    "Vaatteita on helpompi ottaa, kun ne lojuvat ympäri asuntoa, joten annat niiden olla": "uusiAlku",
-    "Päätät kerätä ja lajitella vaatteetColor": "green",
-    "Vaatteita on helpompi ottaa, kun ne lojuvat ympäri asuntoa, joten annat niiden ollaColor": "red"
+    "You decide to pick and sort the clothes": "kysely",
+    "It's easier to choose clothes when they are around the apartment, so you let them be": "uusiAlku",
+    "You decide to pick and sort the clothesColor": "green",
+    "It's easier to choose clothes when they are around the apartment, so you let them beColor": "red"
   },
   "uusiAlku": {
-    "question": "Vaatteita on yhä enemmän ympäri asuntoasi.",
+    "question": "There are more and more clothes all over your apartment.",
     "background": "background_9",
     "person": "character_8",
     "face": "face_confused",
     "fore": "null",
     "answers": [
-      "Sekainen asunto on ilo silmälle, joten annat vaatteiden olla, etkä käytä vaatekaappia ollenkaan tästä lähtien",
-      "Päätät kerätä ja lajitella vaatteet"
+      "A cluttered apartment is a delight to the eye, so you let your clothes be, and you don’t use your wardrobe at all from now on",
+      "You decide to pick and sort the clothes"
     ],
-    "Sekainen asunto on ilo silmälle, joten annat vaatteiden olla, etkä käytä vaatekaappia ollenkaan tästä lähtien": "null",
-    "Päätät kerätä ja lajitella vaatteet": "kysely",
-    "Sekainen asunto on ilo silmälle, joten annat vaatteiden olla, etkä käytä vaatekaappia ollenkaan tästä lähtienColor": "red",
-    "Päätät kerätä ja lajitella vaatteetColor": "green"
+    "A cluttered apartment is a delight to the eye, so you let your clothes be, and you don’t use your wardrobe at all from now on": "null",
+    "You decide to pick and sort the clothes": "kysely",
+    "A cluttered apartment is a delight to the eye, so you let your clothes be, and you don’t use your wardrobe at all from now onColor": "red",
+    "You decide to pick and sort the clothesColor": "green"
   },
   "kysely": {
-    "question": "Päätät kerätä ja lajitella vaatteet.",
+    "question": "You decide to pick and sort the clothes.",
     "background": "background_9",
     "person": "character_8",
     "face": "face_happy",
     "fore": "null",
     "answers": [
-      "Keräät vaatteet yhteen kasaan, mutta jätät ne siihen",
-      "Keräät vaatteet aluksi yhteen, josta ne on helpompi lajitella",
-      "Viet suoraan likaisia vaatteita pyykkikoriin ja puhtaita vaatteita vaatekaappiin"
+      "You gather the clothes in one pile, but leave them in it",
+      "You first gather the clothes together, so they are easier to sort",
+      "You take dirty clothes straight to the laundry basket and clean clothes to the wardrobe"
     ],
-    "Keräät vaatteet yhteen kasaan, mutta jätät ne siihen": "uusiKysely",
-    "Keräät vaatteet aluksi yhteen, josta ne on helpompi lajitella": "lajittelu",
-    "Viet suoraan likaisia vaatteita pyykkikoriin ja puhtaita vaatteita vaatekaappiin": "kolmas",
-    "Keräät vaatteet yhteen kasaan, mutta jätät ne siihenColor": "red",
-    "Keräät vaatteet aluksi yhteen, josta ne on helpompi lajitellaColor": "green",
-    "Viet suoraan likaisia vaatteita pyykkikoriin ja puhtaita vaatteita vaatekaappiinColor": "green"
+    "You gather the clothes in one pile, but leave them in it": "uusiKysely",
+    "You first gather the clothes together, so they are easier to sort": "lajittelu",
+    "You take dirty clothes straight to the laundry basket and clean clothes to the wardrobe": "kolmas",
+    "You gather the clothes in one pile, but leave them in itColor": "red",
+    "You first gather the clothes together, so they are easier to sortColor": "green",
+    "You take dirty clothes straight to the laundry basket and clean clothes to the wardrobeColor": "green"
   },
   "uusiKysely": {
-    "question": "Aikaa on kulunut, ja vaatekasa lojuu yhä asunnossa.",
+    "question": "Time has passed and the pile of clothes is still in the apartment.",
     "background": "background_9",
     "person": "character_8",
     "face": "face_confused",
     "fore": "null",
     "answers": [
-      "Päätät lajitella vaatteet",
-      "Viet kasasta suoraan likaisia vaatteita pyykkikoriin ja puhtaita vaatteita vaatekaappiin",
-      "Vaatekasasta on helppo ottaa aina vaatteita käyttöön, joten annat sen olla, etkä käytä vaatekaappia enää mihinkään"
+      "You decide to sort the clothes",
+      "You take dirty clothes straight to the laundry basket and clean clothes to the wardrobe",
+      "It’s easy to always pick clothes from the pile, so you let it be and you no longer use the wardrobe for anything"
     ],
-    "Päätät lajitella vaatteet": "lajittelu",
-    "Viet kasasta suoraan likaisia vaatteita pyykkikoriin ja puhtaita vaatteita vaatekaappiin": "kolmas",
-    "Vaatekasasta on helppo ottaa aina vaatteita käyttöön, joten annat sen olla, etkä käytä vaatekaappia enää mihinkään": "null",
-    "Päätät lajitella vaatteetColor": "green",
-    "Viet kasasta suoraan likaisia vaatteita pyykkikoriin ja puhtaita vaatteita vaatekaappiinColor": "green",
-    "Vaatekasasta on helppo ottaa aina vaatteita käyttöön, joten annat sen olla, etkä käytä vaatekaappia enää mihinkäänColor": "red"
+    "You decide to sort the clothes": "lajittelu",
+    "You take dirty clothes straight to the laundry basket and clean clothes to the wardrobe": "kolmas",
+    "It’s easy to always pick clothes from the pile, so you let it be and you no longer use the wardrobe for anything": "null",
+    "You decide to sort the clothesColor": "green",
+    "You take dirty clothes straight to the laundry basket and clean clothes to the wardrobeColor": "green",
+    "It’s easy to always pick clothes from the pile, so you let it be and you no longer use the wardrobe for anythingColor": "red"
   },
   "lajittelu": {
-    "question": "Miten lajittelet vaatteet?",
+    "question": "How do you sort the clothes?",
     "background": "background_9",
     "person": "character_8",
     "face": "face_happy",
     "fore": "null",
     "answers": [
-      "Laitat likaiset vaatteet pyykkikoriin ja puhtaat vaatekaappiin",
-      "Laitat kaikki vaatteet vaatekaappiin, vaikka osa niistä onkin hieman likaisia"
+      "You put dirty clothes in the laundry basket and clean clothes in the wardrobe",
+      "You put all your clothes in the wardrobe, even if some of them are a little dirty"
     ],
-    "Laitat likaiset vaatteet pyykkikoriin ja puhtaat vaatekaappiin": "kolmas",
-    "Laitat kaikki vaatteet vaatekaappiin, vaikka osa niistä onkin hieman likaisia": "kolmas",
-    "Laitat likaiset vaatteet pyykkikoriin ja puhtaat vaatekaappiinColor": "green",
-    "Laitat kaikki vaatteet vaatekaappiin, vaikka osa niistä onkin hieman likaisiaColor": "yellow"
+    "You put dirty clothes in the laundry basket and clean clothes in the wardrobe": "kolmas",
+    "You put all your clothes in the wardrobe, even if some of them are a little dirty": "kolmas",
+    "You put dirty clothes in the laundry basket and clean clothes in the wardrobeColor": "green",
+    "You put all your clothes in the wardrobe, even if some of them are a little dirtyColor": "yellow"
   },
   "kolmas": {
-    "question": "Vaatekaappisikin on päässyt sekoittumaan niin, että eri tyyppisiä vaatteita on samassa lokerossa.",
+    "question": "The wardrobe has also gotten mixed up so that different types of clothes are in the same compartment.",
     "background": "background_9",
     "person": "character_8",
     "face": "face_happy",
     "fore": "null",
     "answers": [
-      "Järjestelet vaatekaapin niin, että samantyyppiset vaatteet ovat samassa lokerossa, kuten esimerkiksi t-paidat omaan lokeroonsa ja alusvaatteet omaansa",
-      "Vaatekaappi ei ole mielestäsi tarpeeksi sekaisin, joten sekoitat sitä lisää",
-      "Tärkeintä on, että vaatteet ovat vaatekaapissa, joten annat niiden olla sekaisin"
+      "Sort your wardrobe so that the same type of clothes are in the same compartment, such as t-shirts in their own compartment and underwear in their own",
+      "You don’t think the wardrobe is mixed up enough, so you mix it up more",
+      "The most important thing is that the clothes are in the wardrobe, so you let them be"
     ],
-    "Järjestelet vaatekaapin niin, että samantyyppiset vaatteet ovat samassa lokerossa, kuten esimerkiksi t-paidat omaan lokeroonsa ja alusvaatteet omaansa": "loppu",
-    "Vaatekaappi ei ole mielestäsi tarpeeksi sekaisin, joten sekoitat sitä lisää": "null",
-    "Tärkeintä on, että vaatteet ovat vaatekaapissa, joten annat niiden olla sekaisin": "null",
-    "Järjestelet vaatekaapin niin, että samantyyppiset vaatteet ovat samassa lokerossa, kuten esimerkiksi t-paidat omaan lokeroonsa ja alusvaatteet omaansaColor": "green",
-    "Vaatekaappi ei ole mielestäsi tarpeeksi sekaisin, joten sekoitat sitä lisääColor": "red",
-    "Tärkeintä on, että vaatteet ovat vaatekaapissa, joten annat niiden olla sekaisinColor": "red"
+    "Sort your wardrobe so that the same type of clothes are in the same compartment, such as t-shirts in their own compartment and underwear in their own": "loppu",
+    "You don’t think the wardrobe is mixed up enough, so you mix it up more": "null",
+    "The most important thing is that the clothes are in the wardrobe, so you let them be": "null",
+    "Sort your wardrobe so that the same type of clothes are in the same compartment, such as t-shirts in their own compartment and underwear in their ownColor": "green",
+    "You don’t think the wardrobe is mixed up enough, so you mix it up moreColor": "red",
+    "The most important thing is that the clothes are in the wardrobe, so you let them beColor": "red"
   },
   "loppu": {
-    "question": "Olet järjestellyt vaatekaappisi mielestäsi nyt hyvin.",
+    "question": "You have sorted your wardrobe.",
     "background": "background_9",
     "person": "character_8",
     "face": "face_happy",
     "fore": "null",
     "answers": [
-      "Pidät vastaisuudessakin vaatekaappisi järjestyksessä ja yrität välttää vaatteiden kerääntymisen ympäri asuntoa",
-      "Annat vaatteiden kertyä taas ympäri asuntoa, ennen kuin siirrät ne vaatekaappiin"
+      "You will continue to keep your wardrobe in order and try to avoid having clothes around the apartment",
+      "You let the clothes accumulate again around the apartment before moving them into the wardrobe"
     ],
-    "Pidät vastaisuudessakin vaatekaappisi järjestyksessä ja yrität välttää vaatteiden kerääntymisen ympäri asuntoa": "null",
-    "Annat vaatteiden kertyä taas ympäri asuntoa, ennen kuin siirrät ne vaatekaappiin": "null",
-    "Pidät vastaisuudessakin vaatekaappisi järjestyksessä ja yrität välttää vaatteiden kerääntymisen ympäri asuntoaColor": "green",
-    "Annat vaatteiden kertyä taas ympäri asuntoa, ennen kuin siirrät ne vaatekaappiinColor": "red"
+    "You will continue to keep your wardrobe in order and try to avoid having clothes around the apartment": "null",
+    "You let the clothes accumulate again around the apartment before moving them into the wardrobe": "null",
+    "You will continue to keep your wardrobe in order and try to avoid having clothes around the apartmentColor": "green",
+    "You let the clothes accumulate again around the apartment before moving them into the wardrobeColor": "red"
   }
 }

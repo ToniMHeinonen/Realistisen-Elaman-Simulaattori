@@ -23,7 +23,7 @@
     "Ruokakaupassa asioiminen",
     "Ruokakaupasta palaaminen",
     "Tuttavan tapaaminen",
-    "Vaatteiden järjestely",
+    "Sorting the clothes",
     "Vuodevaatteiden puhtaanapito"],
   "scenarioslist": [
     {"name":  "Traveling by bus", "file":  "bussimatka.json", "category": "Traveling"},
@@ -43,7 +43,7 @@
     {"name": "Pölyjen pyyhkiminen", "file": "polyjen_pyyhkiminen.json", "category": "Kodista huolehtiminen"},
     {"name": "Pyykkien peseminen", "file": "pyykkien_peseminen.json", "category": "Kodista huolehtiminen"},
     {"name": "Emptying trash bins", "file": "roskakorien_tyhjentaminen.json", "category": "Kodista huolehtiminen"},
-    {"name": "Vaatteiden järjestely", "file": "vaatteiden_jarjestely.json", "category": "Kodista huolehtiminen"},
+    {"name": "Sorting the clothes", "file": "vaatteiden_jarjestely.json", "category": "Kodista huolehtiminen"},
     {"name": "Vuodevaatteiden puhtaanapito", "file": "vuodevaatteiden_puhtaanapito.json", "category": "Kodista huolehtiminen"},
     {"name": "Ruokakauppaan lähteminen", "file": "ruokakauppaan_lahteminen.json", "category": "Kaupassa käynti"},
     {"name": "Ruokakaupassa asioiminen", "file": "ruokakaupassa_asioiminen.json", "category": "Kaupassa käynti"},
