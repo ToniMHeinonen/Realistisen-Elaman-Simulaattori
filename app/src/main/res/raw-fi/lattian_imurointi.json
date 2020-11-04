@@ -184,12 +184,30 @@
       "Siirrät imurin suihkutilaan, haet siivouskäsineet ja roskapussin ja tyhjennät pölypussin liat roskikseen",
       "Heität imurin roskikseen ja hankit uuden imurin, jossa on tyhjä pölypussi"
     ],
-    "Otat vanhan pölypussin pois ja laitat uuden tilalle": "pölypussi tyhjä",
+    "Otat vanhan pölypussin pois ja laitat uuden tilalle": "pölypussi merkki",
     "Siirrät imurin suihkutilaan, haet siivouskäsineet ja roskapussin ja tyhjennät pölypussin liat roskikseen": "pölypussi tyhjä",
     "Heität imurin roskikseen ja hankit uuden imurin, jossa on tyhjä pölypussi": "null",
     "Otat vanhan pölypussin pois ja laitat uuden tilalleColor": "green",
     "Siirrät imurin suihkutilaan, haet siivouskäsineet ja roskapussin ja tyhjennät pölypussin liat roskikseenColor": "green",
     "Heität imurin roskikseen ja hankit uuden imurin, jossa on tyhjä pölypussiColor": "red"
+  },
+  "pölypussi merkki": {
+    "question": "Mistä hankit uuden pölypussin?",
+    "background": "background_13",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_16",
+    "answers": [
+      "Kirjoitat imurin merkin muistiin ja ostat uuden pölypussin elektroniikkaliikkeestä",
+      "Otat siivouskaapista löytyvän pölypussin ja laitat sen imuriin, vaikkei se ohjekirjan mukaan ole yhteensopiva imurisi kanssa",
+      "Otat siivouskaapista löytyvän pölypussin ja tarkistat ohjekirjasta tai pakkauksesta, että se sopii imuriisi"
+    ],
+    "Kirjoitat imurin merkin muistiin ja ostat uuden pölypussin elektroniikkaliikkeestä": "pölypussi tyhjä",
+    "Otat siivouskaapista löytyvän pölypussin ja laitat sen imuriin, vaikkei se ohjekirjan mukaan ole yhteensopiva imurisi kanssa": "null",
+    "Otat siivouskaapista löytyvän pölypussin ja tarkistat ohjekirjasta tai pakkauksesta, että se sopii imuriisi": "pölypussi tyhjä",
+    "Kirjoitat imurin merkin muistiin ja ostat uuden pölypussin elektroniikkaliikkeestäColor": "green",
+    "Otat siivouskaapista löytyvän pölypussin ja laitat sen imuriin, vaikkei se ohjekirjan mukaan ole yhteensopiva imurisi kanssaColor": "red",
+    "Otat siivouskaapista löytyvän pölypussin ja tarkistat ohjekirjasta tai pakkauksesta, että se sopii imuriisiColor": "green"
   },
   "pölypussi tyhjä": {
     "question": "Saat pölypussin tyhjennettyä. Laitat imurin pölypussin luukun kiinni.",
