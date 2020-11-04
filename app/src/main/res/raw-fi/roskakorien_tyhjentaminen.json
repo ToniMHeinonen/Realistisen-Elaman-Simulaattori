@@ -93,7 +93,7 @@
     "SekajätteeseenColor": "green"
   },
   "takaisinAsunnossa": {
-    "question": "Heitettyäsi roskapussin jäteastiaan palaat asuntoosi.",
+    "question": "Laitettuasi roskapussin jäteastiaan palaat asuntoosi.",
     "background": "background_5",
     "person": "null",
     "face": "null",

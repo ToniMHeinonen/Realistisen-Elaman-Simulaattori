@@ -1,386 +1,386 @@
 {
   "first": {
-    "question": "Et ole hetkeen nähnyt tuttavaasi ja haluaisit viettää aikaa hänen kanssaan.",
+    "question": "You haven’t seen your acquaintance for a while and would like to spend time with him.",
     "background": "background_10",
     "person": "character_8",
     "fore": "null",
     "face": "face_happy",
     "answers": [
-      "Soitat hänelle",
-      "Pistät hänelle viestiä",
-      "Odotat, että hän soittaisi sinulle"
+      "You call him",
+      "You send him a message",
+      "You wait for him to call you"
     ],
-    "Soitat hänelle": "soitto",
-    "Pistät hänelle viestiä": "viesti",
-    "Odotat, että hän soittaisi sinulle": "odotus",
-    "Soitat hänelleColor": "green",
-    "Pistät hänelle viestiäColor": "green",
-    "Odotat, että hän soittaisi sinulleColor": "red"
+    "You call him": "soitto",
+    "You send him a message": "viesti",
+    "You wait for him to call you": "odotus",
+    "You call himColor": "green",
+    "You send him a messageColor": "green",
+    "You wait for him to call youColor": "red"
   },
   "odotus": {
-    "question": "On kulunut jonkin aikaa, eikä tuttavasi ole soittanut sinulle.",
+    "question": "It's been a while and your acquaintance hasn't called you.",
     "background": "background_10",
     "person": "character_8",
     "face": "face_confused",
     "fore": "null",
     "answers": [
-      "Soitat hänelle",
-      "Pistät hänelle viestiä",
-      "Suutut, koska hän ei soita sinulle, etkä aio tavata häntä enää ikinä"
+      "You call him",
+      "You send him a message",
+      "You get angry because he's not calling you and you're never going to meet him again"
     ],
-    "Soitat hänelle": "soitto",
-    "Pistät hänelle viestiä": "viesti",
-    "Suutut, koska hän ei soita sinulle, etkä aio tavata häntä enää ikinä": "null",
-    "Soitat hänelleColor": "green",
-    "Pistät hänelle viestiäColor": "green",
-    "Suutut, koska hän ei soita sinulle, etkä aio tavata häntä enää ikinäColor": "red"
+    "You call him": "soitto",
+    "You send him a message": "viesti",
+    "You get angry because he's not calling you and you're never going to meet him again": "null",
+    "You call himColor": "green",
+    "You send him a messageColor": "green",
+    "You get angry because he's not calling you and you're never going to meet him againColor": "red"
   },
   "soitto": {
-    "question": "Tuttavasi vastaa puhelimeen.",
+    "question": "Your acquaintance answers the phone.",
     "background": "background_10",
     "person": "null",
     "face": "null",
     "fore": "fore_19",
     "answers": [
-      "Tervehdit häntä ja kysyt, haluaisiko hän tehdä jotain kanssasi",
-      "Olet hiljaa ja odotat, että hän ehdottaisi jotain tekemistä",
-      "Lopetat puhelun"
+      "You greet him and ask if he would like to do something with you",
+      "You are silent and wait for him to suggest something to do",
+      "You end the call"
     ],
-    "Tervehdit häntä ja kysyt, haluaisiko hän tehdä jotain kanssasi": "soittoItse",
-    "Olet hiljaa ja odotat, että hän ehdottaisi jotain tekemistä": "soittoTuttava",
-    "Lopetat puhelun": "soittoTakaisin",
-    "Tervehdit häntä ja kysyt, haluaisiko hän tehdä jotain kanssasiColor": "green",
-    "Olet hiljaa ja odotat, että hän ehdottaisi jotain tekemistäColor": "red",
-    "Lopetat puhelunColor": "red"
+    "You greet him and ask if he would like to do something with you": "soittoItse",
+    "You are silent and wait for him to suggest something to do": "soittoTuttava",
+    "You end the call": "soittoTakaisin",
+    "You greet him and ask if he would like to do something with youColor": "green",
+    "You are silent and wait for him to suggest something to doColor": "red",
+    "You end the callColor": "red"
   },
   "soittoTakaisin": {
-    "question": "Lopetit puhelun, mutta tuttavasi soittaa sinulle takaisin.",
+    "question": "You ended the call, but your acquaintance calls you back.",
     "background": "background_10",
     "person": "null",
     "face": "null",
     "fore": "fore_19",
     "answers": [
-      "Pahoittelet, että lopetit puhelun ja kysyt, haluaisiko hän tehdä jotain kanssasi",
-      "Et vastaa puhelimeen"
+      "You say you’re sorry you ended the call and ask if he would like to do something with you",
+      "You won't answer the phone"
     ],
-    "Pahoittelet, että lopetit puhelun ja kysyt, haluaisiko hän tehdä jotain kanssasi": "soittoItse",
-    "Et vastaa puhelimeen": "hataKylaily",
-    "Pahoittelet, että lopetit puhelun ja kysyt, haluaisiko hän tehdä jotain kanssasiColor": "green",
-    "Et vastaa puhelimeenColor": "red"
+    "You say you’re sorry you ended the call and ask if he would like to do something with you": "soittoItse",
+    "You won't answer the phone": "hataKylaily",
+    "You say you’re sorry you ended the call and ask if he would like to do something with youColor": "green",
+    "You won't answer the phoneColor": "red"
   },
   "soittoItse": {
-    "question": "Tuttavasi kuulostaa iloiselta soitostasi ja ehdottaa, voisiko hän tulla kyläilemään luoksesi.",
+    "question": "Your acquaintance sounds happy with your call and suggests if he could come visit you.",
     "background": "background_10",
     "person": "null",
     "face": "null",
     "fore": "fore_19",
     "answers": [
-      "Ehdotat, että voisitko mielummin mennä kyläilemään hänen luokseen",
-      "Suostut tuttavasi ehdotukseen, ja hän lupaa tulla pian"
+      "You suggest that you would rather go visit him",
+      "You agree with your acquaintance’s suggestion, and he promises to come soon"
     ],
-    "Ehdotat, että voisitko mielummin mennä kyläilemään hänen luokseen": "soittoEhdotus",
-    "Suostut tuttavasi ehdotukseen, ja hän lupaa tulla pian": "kylaAlku",
-    "Ehdotat, että voisitko mielummin mennä kyläilemään hänen luokseenColor": "green",
-    "Suostut tuttavasi ehdotukseen, ja hän lupaa tulla pianColor": "green"
+    "You suggest that you would rather go visit him": "soittoEhdotus",
+    "You agree with your acquaintance’s suggestion, and he promises to come soon": "kylaAlku",
+    "You suggest that you would rather go visit himColor": "green",
+    "You agree with your acquaintance’s suggestion, and he promises to come soonColor": "green"
   },
   "soittoEhdotus": {
-    "question": "Tuttavasi kertoo, että hänen asunnollaan on meneillään remontti ja ehdottaa uudestaan kyläilyä luoksesi.",
+    "question": "Your acquaintance tells you that his apartment is undergoing renovations and is suggesting to visit you again.",
     "background": "background_10",
     "person": "null",
     "face": "null",
     "fore": "fore_19",
     "answers": [
-      "Suutut, koska hän ei suostunut ehdotukseesi ja lopetat puhelun",
-      "Suostut tuttavasi ehdotukseen, ja hän lupaa tulla pian"
+      "You get angry because he didn’t agree with your suggestion and you end the call",
+      "You agree with your acquaintance’s suggestion, and he promises to come soon"
     ],
-    "Suutut, koska hän ei suostunut ehdotukseesi ja lopetat puhelun": "null",
-    "Suostut tuttavasi ehdotukseen, ja hän lupaa tulla pian": "kylaAlku",
-    "Suutut, koska hän ei suostunut ehdotukseesi ja lopetat puhelunColor": "red",
-    "Suostut tuttavasi ehdotukseen, ja hän lupaa tulla pianColor": "green"
+    "You get angry because he didn’t agree with your suggestion and you end the call": "null",
+    "You agree with your acquaintance’s suggestion, and he promises to come soon": "kylaAlku",
+    "You get angry because he didn’t agree with your suggestion and you end the callColor": "red",
+    "You agree with your acquaintance’s suggestion, and he promises to come soonColor": "green"
   },
   "soittoTuttava": {
-    "question": "Hetken hiljaisuuden jälkeen tuttavasi kysyy, voisiko hän tulla kyläilemään luoksesi.",
+    "question": "After a moment of silence, your acquaintance asks if he could come to visit you.",
     "background": "background_10",
     "person": "null",
     "face": "null",
     "fore": "fore_19",
     "answers": [
-      "Ehdotat, että voisitko mielummin mennä kyläilemään hänen luokseen",
-      "Suostut tuttavasi ehdotukseen, ja hän lupaa tulla pian"
+      "You suggest that you would rather go visit him",
+      "You agree with your acquaintance’s suggestion, and he promises to come soon"
     ],
-    "Ehdotat, että voisitko mielummin mennä kyläilemään hänen luokseen": "soittoEhdotus",
-    "Suostut tuttavasi ehdotukseen, ja hän lupaa tulla pian": "kylaAlku",
-    "Ehdotat, että voisitko mielummin mennä kyläilemään hänen luokseenColor": "green",
-    "Suostut tuttavasi ehdotukseen, ja hän lupaa tulla pianColor": "green"
+    "You suggest that you would rather go visit him": "soittoEhdotus",
+    "You agree with your acquaintance’s suggestion, and he promises to come soon": "kylaAlku",
+    "You suggest that you would rather go visit himColor": "green",
+    "You agree with your acquaintance’s suggestion, and he promises to come soonColor": "green"
   },
   "viesti": {
-    "question": "Pistät tuttavallesi viestiä, haluaisiko hän tehdä jotain kanssasi. Hän ehdottaa, että voisi tulla kyläilemään luoksesi.",
+    "question": "You send a message to your acquaintance if he would like to do something with you. He suggests he could come visit you.",
     "background": "background_10",
     "person": "null",
     "face": "null",
     "fore": "fore_19",
     "answers": [
-      "Ehdotat, että voisitko mielummin mennä kyläilemään hänen luokseen",
-      "Suostut tuttavasi ehdotukseen, ja hän lupaa tulla pian"
+      "You suggest that you would rather go visit him",
+      "You agree with your acquaintance’s suggestion, and he promises to come soon"
     ],
-    "Ehdotat, että voisitko mielummin mennä kyläilemään hänen luokseen": "viestiEhdotus",
-    "Suostut tuttavasi ehdotukseen, ja hän lupaa tulla pian": "kylaAlku",
-    "Ehdotat, että voisitko mielummin mennä kyläilemään hänen luokseenColor": "green",
-    "Suostut tuttavasi ehdotukseen, ja hän lupaa tulla pianColor": "green"
+    "You suggest that you would rather go visit him": "viestiEhdotus",
+    "You agree with your acquaintance’s suggestion, and he promises to come soon": "kylaAlku",
+    "You suggest that you would rather go visit himColor": "green",
+    "You agree with your acquaintance’s suggestion, and he promises to come soonColor": "green"
   },
   "viestiEhdotus": {
-    "question": "Tuttavasi kertoo, että hänen asunnollaan on meneillään remontti ja ehdottaa uudestaan kyläilyä luoksesi.",
+    "question": "Your acquaintance tells you that his apartment is undergoing renovations and is suggesting to visit you again.",
     "background": "background_10",
     "person": "null",
     "face": "null",
     "fore": "fore_19",
     "answers": [
-      "Suutut, koska hän ei suostunut ehdotukseesi, etkä vastaa enää viesteihin",
-      "Suostut tuttavasi ehdotukseen, ja hän lupaa tulla pian"
+      "You are angry because he did not agree with your suggestion and you will no longer reply to messages",
+      "You agree with your acquaintance’s suggestion, and he promises to come soon"
     ],
-    "Suutut, koska hän ei suostunut ehdotukseesi, etkä vastaa enää viesteihin": "null",
-    "Suostut tuttavasi ehdotukseen, ja hän lupaa tulla pian": "kylaAlku",
-    "Suutut, koska hän ei suostunut ehdotukseesi, etkä vastaa enää viesteihinColor": "red",
-    "Suostut tuttavasi ehdotukseen, ja hän lupaa tulla pianColor": "green"
+    "You are angry because he did not agree with your suggestion and you will no longer reply to messages": "null",
+    "You agree with your acquaintance’s suggestion, and he promises to come soon": "kylaAlku",
+    "You are angry because he did not agree with your suggestion and you will no longer reply to messagesColor": "red",
+    "You agree with your acquaintance’s suggestion, and he promises to come soonColor": "green"
   },
   "hataKylaily": {
-    "question": "Tuttavasi tulee luoksesi huolestuneena, koska et vastannut enää puhelimeen.",
+    "question": "Your acquaintance comes to you worried because you no longer answered the phone.",
     "background": "background_10",
     "person": "null",
     "face": "null",
     "fore": "fore_19",
     "answers": [
-      "Pahoittelet, kun et vastannut puhelimeen ja pyydät hänet sisään",
-      "Sanot, ettet huomannut hänen soittoaan ja pyydät hänet sisään",
-      "Sanot, ettei sinua huvittanutkaan jutella hänen kanssaan ja pyydät häntä poistumaan"
+      "You apologize for not answering the phone and ask him in",
+      "You say you didn’t notice him calling and you ask him in",
+      "You say you didn’t have fun chatting with him and you ask him to leave"
     ],
-    "Pahoittelet, kun et vastannut puhelimeen ja pyydät hänet sisään": "kylaSisalla",
-    "Sanot, ettet huomannut hänen soittoaan ja pyydät hänet sisään": "kylaSisalla",
-    "Sanot, ettei sinua huvittanutkaan jutella hänen kanssaan ja pyydät häntä poistumaan": "null",
-    "Pahoittelet, kun et vastannut puhelimeen ja pyydät hänet sisäänColor": "green",
-    "Sanot, ettet huomannut hänen soittoaan ja pyydät hänet sisäänColor": "yellow",
-    "Sanot, ettei sinua huvittanutkaan jutella hänen kanssaan ja pyydät häntä poistumaanColor": "red"
+    "You apologize for not answering the phone and ask him in": "kylaSisalla",
+    "You say you didn’t notice him calling and you ask him in": "kylaSisalla",
+    "You say you didn’t have fun chatting with him and you ask him to leave": "null",
+    "You apologize for not answering the phone and ask him inColor": "green",
+    "You say you didn’t notice him calling and you ask him inColor": "yellow",
+    "You say you didn’t have fun chatting with him and you ask him to leaveColor": "red"
   },
   "kylaAlku": {
-    "question": "Ovikello soi, ja tuttavasi odottelee oven takana.",
+    "question": "The doorbell rings, and your acquaintance waits behind the door.",
     "background": "background_10",
     "person": "null",
     "face": "null",
     "fore": "fore_8",
     "answers": [
-      "Teeskentelet, ettet ole kotona, etkä avaa ovea",
-      "Avaat oven, tervehdit häntä ja pyydät peremmälle",
-      "Avaat oven ja käsket hänet peremmälle"
+      "You pretend you’re not home and don’t open the door",
+      "You open the door, greet him, and ask him in",
+      "You open the door and order him to come in"
     ],
-    "Teeskentelet, ettet ole kotona, etkä avaa ovea": "kylaUusi",
-    "Avaat oven, tervehdit häntä ja pyydät peremmälle": "kylaSisalla",
-    "Avaat oven ja käsket hänet peremmälle": "kylaSisalla",
-    "Teeskentelet, ettet ole kotona, etkä avaa oveaColor": "red",
-    "Avaat oven, tervehdit häntä ja pyydät peremmälleColor": "green",
-    "Avaat oven ja käsket hänet peremmälleColor": "red"
+    "You pretend you’re not home and don’t open the door": "kylaUusi",
+    "You open the door, greet him, and ask him in": "kylaSisalla",
+    "You open the door and order him to come in": "kylaSisalla",
+    "You pretend you’re not home and don’t open the doorColor": "red",
+    "You open the door, greet him, and ask him inColor": "green",
+    "You open the door and order him to come inColor": "red"
   },
   "kylaUusi": {
-    "question": "Tuttavasi soittaa ovikelloasi vielä muutaman kerran ja on sitten poistumassa.",
+    "question": "Your acquaintance will ring your doorbell a few more times and is about to leave.",
     "background": "background_10",
     "person": "null",
     "face": "null",
     "fore": "fore_8",
     "answers": [
-      "Et vieläkään avaa ovea ja annat hänen lähteä",
-      "Avaat lopulta oven, tervehdit häntä ja pyydät peremmälle",
-      "Avaat lopulta oven ja käsket hänet peremmälle"
+      "You still don’t open the door and let him leave",
+      "You finally open the door, greet him, and ask him in",
+      "You finally open the door and order him to come in"
     ],
-    "Et vieläkään avaa ovea ja annat hänen lähteä": "null",
-    "Avaat lopulta oven, tervehdit häntä ja pyydät peremmälle": "kylaSisalla",
-    "Avaat lopulta oven ja käsket hänet peremmälle": "kylaSisalla",
-    "Et vieläkään avaa ovea ja annat hänen lähteäColor": "red",
-    "Avaat lopulta oven, tervehdit häntä ja pyydät peremmälleColor": "green",
-    "Avaat lopulta oven ja käsket hänet peremmälleColor": "red"
+    "You still don’t open the door and let him leave": "null",
+    "You finally open the door, greet him, and ask him in": "kylaSisalla",
+    "You finally open the door and order him to come in": "kylaSisalla",
+    "You still don’t open the door and let him leaveColor": "red",
+    "You finally open the door, greet him, and ask him inColor": "green",
+    "You finally open the door and order him to come inColor": "red"
   },
   "kylaSisalla": {
-    "question": "Tuttavasi tulee sisään asuntoosi.",
+    "question": "Your acquaintance comes into your apartment.",
     "background": "background_10",
     "person": "null",
     "face": "null",
     "fore": "fore_19",
     "answers": [
-      "Kysyt häneltä, haluaisiko hän kahvia tai jotain pientä purtavaa",
-      "Pahoittelet, ettei sinulla ole kahvia tai mitään muutakaan pientä tarjottavaa",
-      "Sinulla olisi kahvia ja keksejä, mutta et halua tarjota hänelle niitä"
+      "You ask him if he would like coffee or something to snack on",
+      "You say you're sorry you don't have coffee or anything else to offer",
+      "You would have coffee and biscuits, but you don’t want to offer him them"
     ],
-    "Kysyt häneltä, haluaisiko hän kahvia tai jotain pientä purtavaa": "tarjoilu",
-    "Pahoittelet, ettei sinulla ole kahvia tai mitään muutakaan pientä tarjottavaa": "kuulumiset",
-    "Sinulla olisi kahvia ja keksejä, mutta et halua tarjota hänelle niitä": "kuulumiset",
-    "Kysyt häneltä, haluaisiko hän kahvia tai jotain pientä purtavaaColor": "green",
-    "Pahoittelet, ettei sinulla ole kahvia tai mitään muutakaan pientä tarjottavaaColor": "green",
-    "Sinulla olisi kahvia ja keksejä, mutta et halua tarjota hänelle niitäColor": "red"
+    "You ask him if he would like coffee or something to snack on": "tarjoilu",
+    "You say you're sorry you don't have coffee or anything else to offer": "kuulumiset",
+    "You would have coffee and biscuits, but you don’t want to offer him them": "kuulumiset",
+    "You ask him if he would like coffee or something to snack onColor": "green",
+    "You say you're sorry you don't have coffee or anything else to offerColor": "green",
+    "You would have coffee and biscuits, but you don’t want to offer him themColor": "red"
   },
   "tarjoilu": {
-    "question": "Tuttavasi ilahtuu ja ilmoittaa, että kahvi maistuisi.",
+    "question": "Your acquaintance seems to be happy and says that he would like some coffee.",
     "background": "background_10",
     "person": "null",
     "face": "null",
     "fore": "fore_19",
     "answers": [
-      "Et halua tarjota omaa kahviasi, joten lähetät hänet kauppaan ostamaan kahvia",
-      "Keität ja tarjoat hänelle kahvit"
+      "You don’t want to offer your own coffee, so you send him to the store to buy coffee",
+      "You make and serve him coffee"
     ],
-    "Et halua tarjota omaa kahviasi, joten lähetät hänet kauppaan ostamaan kahvia": "kauppaKuulumiset",
-    "Keität ja tarjoat hänelle kahvit": "kuulumiset",
-    "Et halua tarjota omaa kahviasi, joten lähetät hänet kauppaan ostamaan kahviaColor": "red",
-    "Keität ja tarjoat hänelle kahvitColor": "green"
+    "You don’t want to offer your own coffee, so you send him to the store to buy coffee": "kauppaKuulumiset",
+    "You make and serve him coffee": "kuulumiset",
+    "You don’t want to offer your own coffee, so you send him to the store to buy coffeeColor": "red",
+    "You make and serve him coffeeColor": "green"
   },
   "kauppaKuulumiset": {
-    "question": "Tuttavasi hämmentyy, mutta käy kuitenkin kaupassa, jonka jälkeen tarjoat hänelle kahvit.",
+    "question": "Your acquaintance is confused, but still goes to the store, after which you offer him coffee.",
     "background": "background_10",
     "person": "null",
     "face": "null",
     "fore": "fore_19",
     "answers": [
-      "Kysyt, mitä hänelle kuuluu",
-      "Kerrot, mitä sinulle kuuluu",
-      "Sinua ei huvita enää viettää aikaa hänen kanssaan, joten pyydät häntä ystävällisesti poistumaan"
+      "You ask him how is he doing",
+      "You tell him how you are doing",
+      "You no longer have fun spending time with him, so you ask him kindly to leave"
     ],
-    "Kysyt, mitä hänelle kuuluu": "tuttavaKuulumiset",
-    "Kerrot, mitä sinulle kuuluu": "omatKuulumiset",
-    "Sinua ei huvita enää viettää aikaa hänen kanssaan, joten pyydät häntä ystävällisesti poistumaan": "alkuPoistuminen",
-    "Kysyt, mitä hänelle kuuluuColor": "green",
-    "Kerrot, mitä sinulle kuuluuColor": "green",
-    "Sinua ei huvita enää viettää aikaa hänen kanssaan, joten pyydät häntä ystävällisesti poistumaanColor": "yellow"
+    "You ask him how is he doing": "tuttavaKuulumiset",
+    "You tell him how you are doing": "omatKuulumiset",
+    "You no longer have fun spending time with him, so you ask him kindly to leave": "alkuPoistuminen",
+    "You ask him how is he doingColor": "green",
+    "You tell him how you are doingColor": "green",
+    "You no longer have fun spending time with him, so you ask him kindly to leaveColor": "yellow"
   },
   "kuulumiset": {
-    "question": "Istutte pöydän ääreen juttelemaan.",
+    "question": "You sit down and start to talk.",
     "background": "background_10",
     "person": "null",
     "face": "null",
     "fore": "fore_19",
     "answers": [
-      "Kysyt, mitä hänelle kuuluu",
-      "Kerrot, mitä sinulle kuuluu",
-      "Sinua ei huvita enää viettää aikaa hänen kanssaan, joten pyydät häntä ystävällisesti poistumaan"
+      "You ask him how is he doing",
+      "You tell him how you are doing",
+      "You no longer have fun spending time with him, so you ask him kindly to leave"
     ],
-    "Kysyt, mitä hänelle kuuluu": "tuttavaKuulumiset",
-    "Kerrot, mitä sinulle kuuluu": "omatKuulumiset",
-    "Sinua ei huvita enää viettää aikaa hänen kanssaan, joten pyydät häntä ystävällisesti poistumaan": "alkuPoistuminen",
-    "Kysyt, mitä hänelle kuuluuColor": "green",
-    "Kerrot, mitä sinulle kuuluuColor": "green",
-    "Sinua ei huvita enää viettää aikaa hänen kanssaan, joten pyydät häntä ystävällisesti poistumaanColor": "yellow"
+    "You ask him how is he doing": "tuttavaKuulumiset",
+    "You tell him how you are doing": "omatKuulumiset",
+    "You no longer have fun spending time with him, so you ask him kindly to leave": "alkuPoistuminen",
+    "You ask him how is he doingColor": "green",
+    "You tell him how you are doingColor": "green",
+    "You no longer have fun spending time with him, so you ask him kindly to leaveColor": "yellow"
   },
   "alkuPoistuminen": {
-    "question": "Tuttavasi ymmärtää ja on lähtemässä.",
+    "question": "Your acquaintance understands and is about to leave.",
     "background": "background_10",
     "person": "null",
     "face": "null",
     "fore": "fore_19",
     "answers": [
-      "Hoputat häntä lähtemään, koska haluat olla nyt yksin",
-      "Kiität seurasta ja hyvästelet hänet",
-      "Kiität seurasta, sovit tapaavasi hänet myöhemmin ja hyvästelet hänet"
+      "You rush him out because you want to be alone now",
+      "You thank him for coming to your home and say goodbye to him",
+      "You thank him for coming to your home, agree to meet him later and say goodbye to him"
     ],
-    "Hoputat häntä lähtemään, koska haluat olla nyt yksin": "null",
-    "Kiität seurasta ja hyvästelet hänet": "null",
-    "Kiität seurasta, sovit tapaavasi hänet myöhemmin ja hyvästelet hänet": "null",
-    "Hoputat häntä lähtemään, koska haluat olla nyt yksinColor": "red",
-    "Kiität seurasta ja hyvästelet hänetColor": "green",
-    "Kiität seurasta, sovit tapaavasi hänet myöhemmin ja hyvästelet hänetColor": "green"
+    "You rush him out because you want to be alone now": "null",
+    "You thank him for coming to your home and say goodbye to him": "null",
+    "You thank him for coming to your home, agree to meet him later and say goodbye to him": "null",
+    "You rush him out because you want to be alone nowColor": "red",
+    "You thank him for coming to your home and say goodbye to himColor": "green",
+    "You thank him for coming to your home, agree to meet him later and say goodbye to himColor": "green"
   },
   "tuttavaKuulumiset": {
-    "question": "Tuttavasi näyttää ilahtuvan kysymyksestäsi ja alkaa kertoa kuulumisiaan.",
+    "question": "Your acquaintance seems to be happy with your question and starts telling how is he doing.",
     "background": "background_10",
     "person": "null",
     "face": "null",
     "fore": "fore_19",
     "answers": [
-      "Keskeytät hänet ja alat kertoa omia kuulumisiasi, koska sinun juttusi ovat mielenkiintoisempia",
-      "Kuuntelet hänen kuulumisiaan"
+      "You interrupt him and start telling him how you are doing because you are more interesting than him",
+      "You listen him"
     ],
-    "Keskeytät hänet ja alat kertoa omia kuulumisiasi, koska sinun juttusi ovat mielenkiintoisempia": "keskeytys",
-    "Kuuntelet hänen kuulumisiaan": "tuttavaKuulumisetJatko",
-    "Keskeytät hänet ja alat kertoa omia kuulumisiasi, koska sinun juttusi ovat mielenkiintoisempiaColor": "red",
-    "Kuuntelet hänen kuulumisiaanColor": "green"
+    "You interrupt him and start telling him how you are doing because you are more interesting than him": "keskeytys",
+    "You listen him": "tuttavaKuulumisetJatko",
+    "You interrupt him and start telling him how you are doing because you are more interesting than himColor": "red",
+    "You listen himColor": "green"
   },
   "keskeytys": {
-    "question": "Tuttavasi hieman loukkantuu, koska et halunnut kuunnella hänen kuulumisiaan.",
+    "question": "Your acquaintance is a little offended because you didn’t let him talk.",
     "background": "background_10",
     "person": "null",
     "face": "null",
     "fore": "fore_19",
     "answers": [
-      "Pahoittelet ja annat hänen kertoa juttunsa loppuun",
-      "Jatkat omien juttujesi kertomista"
+      "You apologize and let him talk",
+      "You keep talking"
     ],
-    "Pahoittelet ja annat hänen kertoa juttunsa loppuun": "tuttavaKuulumisetJatko",
-    "Jatkat omien juttujesi kertomista": "tuttavaKuulumisetJatko",
-    "Pahoittelet ja annat hänen kertoa juttunsa loppuunColor": "green",
-    "Jatkat omien juttujesi kertomistaColor": "red"
+    "You apologize and let him talk": "tuttavaKuulumisetJatko",
+    "You keep talking": "tuttavaKuulumisetJatko",
+    "You apologize and let him talkColor": "green",
+    "You keep talkingColor": "red"
   },
   "omatKuulumiset": {
-    "question": "Tuttavasi kuuntelee, kun kerrot mitä sinulle kuuluu.",
+    "question": "Your acquaintance listens as you tell him how you are doing.",
     "background": "background_10",
     "person": "null",
     "face": "null",
     "fore": "fore_19",
     "answers": [
-      "Kerrottuasi juttusi loppuun kysyt tuttavaltasi, mitä hänelle kuuluu",
-      "Kerrottuasi juttusi loppuun pyydät tuttavaa poistumaan"
+      "After telling him how you are doing, you ask him how is he doing",
+      "After telling him how you are doing, you ask him to leave"
     ],
-    "Kerrottuasi juttusi loppuun kysyt tuttavaltasi, mitä hänelle kuuluu": "tuttavaKuulumisetJatko",
-    "Kerrottuasi juttusi loppuun pyydät tuttavaa poistumaan": "alkuPoistuminen",
-    "Kerrottuasi juttusi loppuun kysyt tuttavaltasi, mitä hänelle kuuluuColor": "green",
-    "Kerrottuasi juttusi loppuun pyydät tuttavaa poistumaanColor": "red"
+    "After telling him how you are doing, you ask him how is he doing": "tuttavaKuulumisetJatko",
+    "After telling him how you are doing, you ask him to leave": "alkuPoistuminen",
+    "After telling him how you are doing, you ask him how is he doingColor": "green",
+    "After telling him how you are doing, you ask him to leaveColor": "red"
   },
   "tuttavaKuulumisetJatko": {
-    "question": "Juteltuanne hetken tuttavasi kysyy, haluaisitko lähteä hänen kanssaan elokuviin.",
+    "question": "After talking for a while, your acquaintance asks if you would like to go to the movies with him.",
     "background": "background_10",
     "person": "null",
     "face": "null",
     "fore": "fore_19",
     "answers": [
-      "Sinua ei yhtään huvittaisi, joten kieltäydyt kohteliaasti",
-      "Suutut kysymyksestä ja pyydät häntä poistumaan",
-      "Suostut lähtemään hänen kanssaan elokuviin"
+      "You are in no mood to go to the movies, so you politely refuse",
+      "You get angry about the question and ask him to leave",
+      "You agree to go to the movies with him"
     ],
-    "Sinua ei yhtään huvittaisi, joten kieltäydyt kohteliaasti": "asuntoLopetus",
-    "Suutut kysymyksestä ja pyydät häntä poistumaan": "alkuPoistuminen",
-    "Suostut lähtemään hänen kanssaan elokuviin": "elokuva",
-    "Sinua ei yhtään huvittaisi, joten kieltäydyt kohteliaastiColor": "green",
-    "Suutut kysymyksestä ja pyydät häntä poistumaanColor": "red",
-    "Suostut lähtemään hänen kanssaan elokuviinColor": "green"
+    "You are in no mood to go to the movies, so you politely refuse": "asuntoLopetus",
+    "You get angry about the question and ask him to leave": "alkuPoistuminen",
+    "You agree to go to the movies with him": "elokuva",
+    "You are in no mood to go to the movies, so you politely refuseColor": "green",
+    "You get angry about the question and ask him to leaveColor": "red",
+    "You agree to go to the movies with himColor": "green"
   },
   "asuntoLopetus": {
-    "question": "Vietettyänne vielä hetken aikaa asunnossasi tuttavasi ilmoittaa lähtevänsä.",
+    "question": "After spending some more time in your apartment, your acquaintance says he has to leave.",
     "background": "background_10",
     "person": "null",
     "face": "null",
     "fore": "fore_19",
     "answers": [
-      "Hoputat häntä lähtemään, koska haluat olla nyt yksin",
-      "Kiität seurasta ja hyvästelet hänet",
-      "Kiität seurasta, sovit tapaavasi hänet myöhemmin ja hyvästelet hänet"
+      "You rush him out because you want to be alone now",
+      "You thank him for coming to your home and say goodbye to him",
+      "You thank him for coming to your home, agree to meet him later and say goodbye to him"
     ],
-    "Hoputat häntä lähtemään, koska haluat olla nyt yksin": "null",
-    "Kiität seurasta ja hyvästelet hänet": "null",
-    "Kiität seurasta, sovit tapaavasi hänet myöhemmin ja hyvästelet hänet": "null",
-    "Hoputat häntä lähtemään, koska haluat olla nyt yksinColor": "red",
-    "Kiität seurasta ja hyvästelet hänetColor": "green",
-    "Kiität seurasta, sovit tapaavasi hänet myöhemmin ja hyvästelet hänetColor": "green"
+    "You rush him out because you want to be alone now": "null",
+    "You thank him for coming to your home and say goodbye to him": "null",
+    "You thank him for coming to your home, agree to meet him later and say goodbye to him": "null",
+    "You rush him out because you want to be alone nowColor": "red",
+    "You thank him for coming to your home and say goodbye to himColor": "green",
+    "You thank him for coming to your home, agree to meet him later and say goodbye to himColor": "green"
   },
   "elokuva": {
-    "question": "Käytte katsomassa elokuvan, jonka jälkeen tuttavasi ilmoittaa lähtevänsä kotiin.",
+    "question": "After watching the movie your acquaintance says he has to go home.",
     "background": "background_10",
     "person": "null",
     "face": "null",
     "fore": "fore_19",
     "answers": [
-      "Suutut ja lähdet kotiin sanomatta sanaakaan",
-      "Kiität seurasta ja hyvästelet hänet",
-      "Kiität seurasta, sovit tapaavasi hänet myöhemmin ja hyvästelet hänet"
+      "You get angry and go home without saying a word",
+      "You thank him for spending time with you and say goodbye to him",
+      "You thank him for spending time with you, agree to meet him later and say goodbye to him"
     ],
-    "Suutut ja lähdet kotiin sanomatta sanaakaan": "null",
-    "Kiität seurasta ja hyvästelet hänet": "null",
-    "Kiität seurasta, sovit tapaavasi hänet myöhemmin ja hyvästelet hänet": "null",
-    "Suutut ja lähdet kotiin sanomatta sanaakaanColor": "red",
-    "Kiität seurasta ja hyvästelet hänetColor": "green",
-    "Kiität seurasta, sovit tapaavasi hänet myöhemmin ja hyvästelet hänetColor": "green"
+    "You get angry and go home without saying a word": "null",
+    "You thank him for spending time with you and say goodbye to him": "null",
+    "You thank him for spending time with you, agree to meet him later and say goodbye to him": "null",
+    "You get angry and go home without saying a wordColor": "red",
+    "You thank him for spending time with you and say goodbye to himColor": "green",
+    "You thank him for spending time with you, agree to meet him later and say goodbye to himColor": "green"
   }
 }
