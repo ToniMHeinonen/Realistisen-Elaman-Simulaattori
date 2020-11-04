@@ -1,110 +1,110 @@
 {
   "first": {
-    "question": "Lajitteletko jätteet vai käytätkö vain yhtä roskakoria, johon laitat kaikki jätteet?",
-    "background": "background_1",
-    "person": "character_1",
-    "fore": "fore_1",
-    "face": "face_happy",
+    "question": "Do you sort waste or do you only use one trash can to put all your waste in?",
+    "background": "background_5",
+    "person": "null",
+    "fore": "fore_16",
+    "face": "null",
     "answers": [
-      "Lajittelet jätteet",
-      "Käytät vain yhtä roskakoria"
+      "You sort waste",
+      "You are only using one trash can"
     ],
-    "Lajittelet jätteet": "toinen",
-    "Käytät vain yhtä roskakoria": "kysely",
-    "Lajittelet jätteetColor": "green",
-    "Käytät vain yhtä roskakoriaColor": "red"
+    "You sort waste": "toinen",
+    "You are only using one trash can": "kysely",
+    "You sort wasteColor": "green",
+    "You are only using one trash canColor": "red"
   },
   "kysely": {
-    "question": "Roskien lajittelu olisi tärkeää ympäristön kannalta.",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
-    "fore": "fore_1",
+    "question": "Waste sorting would be important for the environment.",
+    "background": "background_5",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_16",
     "answers": [
-      "Harkitset ottavasi sekajätteen lisäksi käyttöösi muita roskakoreja, joihin voisit kerätä esimerkiksi bio- tai muovijätteen",
-      "Pääset helpommalla, kun et lajittele roskia ja käytät vain yhtä roskakoria"
+      "In addition to mixed waste, you are considering using other bins where you could collect, for example, bio or plastic waste",
+      "You get it easier when you don't sort waste and use only one trash can"
     ],
-    "Harkitset ottavasi sekajätteen lisäksi käyttöösi muita roskakoreja, joihin voisit kerätä esimerkiksi bio- tai muovijätteen": "toinen",
-    "Pääset helpommalla, kun et lajittele roskia ja käytät vain yhtä roskakoria": "toinen",
-    "Harkitset ottavasi sekajätteen lisäksi käyttöösi muita roskakoreja, joihin voisit kerätä esimerkiksi bio- tai muovijätteenColor": "green",
-    "Pääset helpommalla, kun et lajittele roskia ja käytät vain yhtä roskakoriaColor": "red"
+    "In addition to mixed waste, you are considering using other bins where you could collect, for example, bio or plastic waste": "toinen",
+    "You get it easier when you don't sort waste and use only one trash can": "toinen",
+    "In addition to mixed waste, you are considering using other bins where you could collect, for example, bio or plastic wasteColor": "green",
+    "You get it easier when you don't sort waste and use only one trash canColor": "red"
   },
   "toinen": {
-    "question": "Roskakori, johon laitat sekajätteet, alkaa olemaan täynnä.",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
-    "fore": "fore_1",
+    "question": "The trash can you put mixed waste in is starting to fill up.",
+    "background": "background_5",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_16",
     "answers": [
-      "Otat roskakorista pussin, jossa roskat ovat, suljet sen ja valmistaudut viemään sen ulkona olevaan jäteastiaan",
-      "Otat roskakorista pussin, jossa roskat ovat, suljet sen ja jätät sen lojumaan eteiseen"
+      "You take the bag containing the rubbish out of the trashcan, close it and prepare to take it to the outside waste bin",
+      "You take the bag containing the rubbish out of the trashcan, close it and leave it in the hallway"
     ],
-    "Otat roskakorista pussin, jossa roskat ovat, suljet sen ja valmistaudut viemään sen ulkona olevaan jäteastiaan": "ulkona",
-    "Otat roskakorista pussin, jossa roskat ovat, suljet sen ja jätät sen lojumaan eteiseen": "toinenUusi",
-    "Otat roskakorista pussin, jossa roskat ovat, suljet sen ja valmistaudut viemään sen ulkona olevaan jäteastiaanColor": "green",
-    "Otat roskakorista pussin, jossa roskat ovat, suljet sen ja jätät sen lojumaan eteiseenColor": "red"
+    "You take the bag containing the rubbish out of the trashcan, close it and prepare to take it to the outside waste bin": "ulkona",
+    "You take the bag containing the rubbish out of the trashcan, close it and leave it in the hallway": "toinenUusi",
+    "You take the bag containing the rubbish out of the trashcan, close it and prepare to take it to the outside waste binColor": "green",
+    "You take the bag containing the rubbish out of the trashcan, close it and leave it in the hallwayColor": "red"
   },
   "toinenUusi": {
-    "question": "Roskapussi alkaa haisemaan eteisessä.",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
-    "fore": "fore_1",
+    "question": "The garbage bag starts to stink in the hallway.",
+    "background": "background_5",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_16",
     "answers": [
-      "Jotta haju ei häiritsisi, suljet pyykkipojalla sieraimesi ja odotat, että joku muu veisi roskasi",
-      "Valmistaudut viemään roskapussin ulkona olevaan jäteastiaan"
+      "To keep the smell from bothering you, you use clothespin to close your nostrils and wait for someone else to take your rubbish",
+      "You are preparing to take the garbage bag to the outside waste bin"
     ],
-    "Jotta haju ei häiritsisi, suljet pyykkipojalla sieraimesi ja odotat, että joku muu veisi roskasi": "viimMahdollisuus",
-    "Valmistaudut viemään roskapussin ulkona olevaan jäteastiaan": "ulkona",
-    "Jotta haju ei häiritsisi, suljet pyykkipojalla sieraimesi ja odotat, että joku muu veisi roskasiColor": "red",
-    "Valmistaudut viemään roskapussin ulkona olevaan jäteastiaanColor": "green"
+    "To keep the smell from bothering you, you use clothespin to close your nostrils and wait for someone else to take your rubbish": "viimMahdollisuus",
+    "You are preparing to take the garbage bag to the outside waste bin": "ulkona",
+    "To keep the smell from bothering you, you use clothespin to close your nostrils and wait for someone else to take your rubbishColor": "red",
+    "You are preparing to take the garbage bag to the outside waste binColor": "green"
   },
   "viimMahdollisuus": {
-    "question": "On kulunut jo useampi päivä, eikä kukaan ole vienyt eteisessä olevaa roskapussia.",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
-    "fore": "fore_1",
+    "question": "Several days have passed and no one has taken the garbage bag in the hallway.",
+    "background": "background_5",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_16",
     "answers": [
-      "Et vieläkään vie roskapussia mihinkään, vaan elät tästä lähtien pyykkipoika nenässäsi",
-      "Valmistaudut viemään roskapussin ulkona olevaan jäteastiaan"
+      "You still don’t take the garbage bag anywhere, but from now on you live with a clothespin in your nose",
+      "You are preparing to take the garbage bag to the outside waste bin"
     ],
-    "Et vieläkään vie roskapussia mihinkään, vaan elät tästä lähtien pyykkipoika nenässäsi": "null",
-    "Valmistaudut viemään roskapussin ulkona olevaan jäteastiaan": "ulkona",
-    "Et vieläkään vie roskapussia mihinkään, vaan elät tästä lähtien pyykkipoika nenässäsiColor": "red",
-    "Valmistaudut viemään roskapussin ulkona olevaan jäteastiaanColor": "green"
+    "You still don’t take the garbage bag anywhere, but from now on you live with a clothespin in your nose": "null",
+    "You are preparing to take the garbage bag to the outside waste bin": "ulkona",
+    "You still don’t take the garbage bag anywhere, but from now on you live with a clothespin in your noseColor": "red",
+    "You are preparing to take the garbage bag to the outside waste binColor": "green"
   },
   "ulkona": {
-    "question": "Olet roskakatoksessa ja kädessäsi on roskapussi, johon olet kerännyt sekäjätteet. Mihin jäteastiaan pistät sen?",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
-    "fore": "fore_1",
+    "question": "You are in a trash shed and you have in your hand a trash bag that you have collected mixed waste. In which waste bin do you put it?",
+    "background": "background_5",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_16",
     "answers": [
-      "Biojätteeseen",
-      "Paperinkeräykseen",
-      "Sekajätteeseen"
+      "Biowaste",
+      "Paper waste",
+      "Mixed waste"
     ],
-    "Biojätteeseen": "takaisinAsunnossa",
-    "Paperinkeräykseen": "takaisinAsunnossa",
-    "Sekajätteeseen": "takaisinAsunnossa",
-    "BiojätteeseenColor": "red",
-    "PaperinkeräykseenColor": "red",
-    "SekajätteeseenColor": "green"
+    "Biowaste": "takaisinAsunnossa",
+    "Paper waste": "takaisinAsunnossa",
+    "Mixed waste": "takaisinAsunnossa",
+    "BiowasteColor": "red",
+    "Paper wasteColor": "red",
+    "Mixed wasteColor": "green"
   },
   "takaisinAsunnossa": {
-    "question": "Heitettyäsi roskapussin jäteastiaan palaat asuntoosi.",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
-    "fore": "fore_1",
+    "question": "After throwing the garbage bag in the trash, you will return to your apartment.",
+    "background": "background_5",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_16",
     "answers": [
-      "Pistät uuden tyhjän pussin roskakoriin",
-      "Et pistä uutta pussia roskakoriin"
+      "You put a new empty bag in the trashcan",
+      "You do not put a new bag in the trashcan"
     ],
-    "Pistät uuden tyhjän pussin roskakoriin": "null",
-    "Et pistä uutta pussia roskakoriin": "null",
-    "Pistät uuden tyhjän pussin roskakoriinColor": "green",
-    "Et pistä uutta pussia roskakoriinColor": "red"
+    "You put a new empty bag in the trashcan": "null",
+    "You do not put a new bag in the trashcan": "null",
+    "You put a new empty bag in the trashcanColor": "green",
+    "You do not put a new bag in the trashcanColor": "red"
   }
 }

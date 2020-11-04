@@ -1,10 +1,10 @@
 {
   "first": {
     "question": "Sinulla alkaa olemaan nälkä, mutta jääkaappisi, pakastimesi ja kuivakaappisi ovat melko tyhjiä.",
-    "background": "background_1",
-    "person": "character_1",
-    "fore": "fore_1",
-    "face": "face_happy",
+    "background": "background_15",
+    "person": "character_6",
+    "fore": "null",
+    "face": "face_uncomfortable",
     "answers": [
       "Sinnittelet vielä muutaman päivän kaapissa olevilla nuudeleilla",
       "Alat suunnittelemaan kauppaan lähtöä",
@@ -19,10 +19,10 @@
   },
   "uusiAlku": {
     "question": "Syötyäsi nuudeleita pari päivää ruokavarastosi on täysin tyhjillään.",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
-    "fore": "fore_1",
+    "background": "background_15",
+    "person": "character_6",
+    "face": "face_uncomfortable",
+    "fore": "null",
     "answers": [
       "Alat suunnittelemaan kauppaan lähtöä",
       "Tilaat lähipizzeriasta pizzan kotiinkuljetuksella"
@@ -34,10 +34,10 @@
   },
   "suunnittelu": {
     "question": "Alat suunnittelemaan kauppareissua. Mitä teet ensimmäisenä?",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
-    "fore": "fore_1",
+    "background": "background_15",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_13",
     "answers": [
       "Tarkastat, mitä kaikkea tarvitset lisää keittiöösi",
       "Tarkastat, mitä kaikkea tarvitset lisää wc- ja kylpytiloihisi",
@@ -52,10 +52,10 @@
   },
   "pizza": {
     "question": "Syötyäsi maittavan pizzan alat suunnittelemaan kauppareissua. Mitä teet ensimmäisenä?",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
-    "fore": "fore_1",
+    "background": "background_15",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_13",
     "answers": [
       "Tarkastat, mitä kaikkea tarvitset lisää keittiöösi",
       "Tarkastat, mitä kaikkea tarvitset lisää wc- ja kylpytiloihisi",
@@ -70,10 +70,10 @@
   },
   "keittio": {
     "question": "Tarkistat ensimmäisenä keittiön.",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
-    "fore": "fore_1",
+    "background": "background_15",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_13",
     "answers": [
       "Lisäät kauppalistaan kaiken, mitä mielestäsi tarvitset lisää keittiöösi, kuten esimerkiksi makaronia tai juustoa",
       "Et käytä kauppalistaa, koska ajattelet muistavasi kaiken, mitä tarvitset"
@@ -85,10 +85,10 @@
   },
   "wc": {
     "question": "Tarkistat ensimmäisenä wc- ja kylpytilasi.",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
-    "fore": "fore_1",
+    "background": "background_15",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_13",
     "answers": [
       "Lisäät kauppalistaan kaiken, mitä mielestäsi tarvitset lisää wc- ja kylpytiloihisi, kuten wc-paperin tai shampoon",
       "Et käytä kauppalistaa, koska ajattelet muistavasi kaiken, mitä tarvitset"
@@ -100,10 +100,10 @@
   },
   "keittioValmis": {
     "question": "Seuraavaksi tarkistat wc- ja kylpytilasi.",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
-    "fore": "fore_1",
+    "background": "background_15",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_13",
     "answers": [
       "Lisäät kauppalistaan kaiken, mitä mielestäsi tarvitset lisää wc- ja kylpytiloihisi, kuten wc-paperin tai shampoon",
       "Et käytä kauppalistaa, koska ajattelet muistavasi kaiken, mitä tarvitset"
@@ -115,10 +115,10 @@
   },
   "wcValmis": {
     "question": "Seuraavaksi tarkistat keittiösi.",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
-    "fore": "fore_1",
+    "background": "background_15",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_13",
     "answers": [
       "Lisäät kauppalistaan kaiken, mitä mielestäsi tarvitset lisää keittiöösi, kuten esimerkiksi makaronia tai juustoa",
       "Et käytä kauppalistaa, koska ajattelet muistavasi kaiken, mitä tarvitset"
@@ -130,10 +130,10 @@
   },
   "valmis": {
     "question": "Tarkastat vielä, puuttuuko asunnostasi muitakin ruokakaupasta saatavia tavaroita, jotka sitten lisäät kauppalistaan.",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
-    "fore": "fore_1",
+    "background": "background_15",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_13",
     "answers": [
       "Järjestät kauppalistan vielä siten, että ne ovat suurin piirtein siinä järjestyksessä, kuin mitä kaupassa kuljet",
       "Ruokakauppa on sen verran pieni, ettei listaa tarvitse järjestellä uudestaan"
@@ -145,10 +145,10 @@
   },
   "ennenLahtoa": {
     "question": "Omistatko ruokakassia tai -pussia, mihin olet yleensä pakannut ostoksesi kaupassa?",
-    "background": "background_1",
-    "person": "character_1",
+    "background": "background_15",
+    "person": "character_6",
     "face": "face_happy",
-    "fore": "fore_1",
+    "fore": "null",
     "answers": [
       "Kyllä",
       "Ei"
@@ -160,10 +160,10 @@
   },
   "kyllaPussi": {
     "question": "Otatko ruokakassia tai -pussia mukaan kauppaan?",
-    "background": "background_1",
-    "person": "character_1",
+    "background": "background_15",
+    "person": "character_6",
     "face": "face_happy",
-    "fore": "fore_1",
+    "fore": "null",
     "answers": [
       "Et",
       "Otat"
@@ -175,10 +175,10 @@
   },
   "lahto": {
     "question": "Olet valmiina lähtemään kauppaan.",
-    "background": "background_1",
-    "person": "character_1",
+    "background": "background_15",
+    "person": "character_6",
     "face": "face_happy",
-    "fore": "fore_1",
+    "fore": "null",
     "answers": [
       "Päätätkin perua kauppareissusi viime hetkellä",
       "Otat lompakon, avaimet ja kauppalistan ja poistut asunnostasi"
@@ -190,10 +190,10 @@
   },
   "toinenLahto": {
     "question": "Olet valmiina lähtemään kauppaan.",
-    "background": "background_1",
-    "person": "character_1",
+    "background": "background_15",
+    "person": "character_6",
     "face": "face_happy",
-    "fore": "fore_1",
+    "fore": "null",
     "answers": [
       "Päätätkin perua kauppareissusi viime hetkellä",
       "Otat lompakon ja avaimet ja poistut asunnostasi"
@@ -205,10 +205,10 @@
   },
   "varma": {
     "question": "Oletko aivan varma?",
-    "background": "background_1",
-    "person": "character_1",
+    "background": "background_15",
+    "person": "character_6",
     "face": "face_happy",
-    "fore": "fore_1",
+    "fore": "null",
     "answers": [
       "Kyllä",
       "Ei"
@@ -220,10 +220,10 @@
   },
   "ulkona": {
     "question": "Ruokakauppa on noin 200 metrin päässä vasemmalla asunnostasi, mihin suuntaan menet?",
-    "background": "background_1",
-    "person": "character_1",
+    "background": "background_15",
+    "person": "character_6",
     "face": "face_happy",
-    "fore": "fore_1",
+    "fore": "null",
     "answers": [
       "Oikealle, koska haluat käydä kahvilassa ennen kauppaan menoa",
       "Suoraan, koska haluat tehdä pienen kävelyretken ennen kauppaan menoa",

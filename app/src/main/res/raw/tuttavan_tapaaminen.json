@@ -1,9 +1,9 @@
 {
   "first": {
     "question": "Et ole hetkeen nähnyt tuttavaasi ja haluaisit viettää aikaa hänen kanssaan.",
-    "background": "background_1",
-    "person": "character_1",
-    "fore": "fore_1",
+    "background": "background_10",
+    "person": "character_8",
+    "fore": "null",
     "face": "face_happy",
     "answers": [
       "Soitat hänelle",
@@ -19,10 +19,10 @@
   },
   "odotus": {
     "question": "On kulunut jonkin aikaa, eikä tuttavasi ole soittanut sinulle.",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
-    "fore": "fore_1",
+    "background": "background_10",
+    "person": "character_8",
+    "face": "face_confused",
+    "fore": "null",
     "answers": [
       "Soitat hänelle",
       "Pistät hänelle viestiä",
@@ -37,10 +37,10 @@
   },
   "soitto": {
     "question": "Tuttavasi vastaa puhelimeen.",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
-    "fore": "fore_1",
+    "background": "background_10",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_19",
     "answers": [
       "Tervehdit häntä ja kysyt, haluaisiko hän tehdä jotain kanssasi",
       "Olet hiljaa ja odotat, että hän ehdottaisi jotain tekemistä",
@@ -55,10 +55,10 @@
   },
   "soittoTakaisin": {
     "question": "Lopetit puhelun, mutta tuttavasi soittaa sinulle takaisin.",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
-    "fore": "fore_1",
+    "background": "background_10",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_19",
     "answers": [
       "Pahoittelet, että lopetit puhelun ja kysyt, haluaisiko hän tehdä jotain kanssasi",
       "Et vastaa puhelimeen"
@@ -70,10 +70,10 @@
   },
   "soittoItse": {
     "question": "Tuttavasi kuulostaa iloiselta soitostasi ja ehdottaa, voisiko hän tulla kyläilemään luoksesi.",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
-    "fore": "fore_1",
+    "background": "background_10",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_19",
     "answers": [
       "Ehdotat, että voisitko mielummin mennä kyläilemään hänen luokseen",
       "Suostut tuttavasi ehdotukseen, ja hän lupaa tulla pian"
@@ -85,10 +85,10 @@
   },
   "soittoEhdotus": {
     "question": "Tuttavasi kertoo, että hänen asunnollaan on meneillään remontti ja ehdottaa uudestaan kyläilyä luoksesi.",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
-    "fore": "fore_1",
+    "background": "background_10",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_19",
     "answers": [
       "Suutut, koska hän ei suostunut ehdotukseesi ja lopetat puhelun",
       "Suostut tuttavasi ehdotukseen, ja hän lupaa tulla pian"
@@ -100,10 +100,10 @@
   },
   "soittoTuttava": {
     "question": "Hetken hiljaisuuden jälkeen tuttavasi kysyy, voisiko hän tulla kyläilemään luoksesi.",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
-    "fore": "fore_1",
+    "background": "background_10",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_19",
     "answers": [
       "Ehdotat, että voisitko mielummin mennä kyläilemään hänen luokseen",
       "Suostut tuttavasi ehdotukseen, ja hän lupaa tulla pian"
@@ -115,10 +115,10 @@
   },
   "viesti": {
     "question": "Pistät tuttavallesi viestiä, haluaisiko hän tehdä jotain kanssasi. Hän ehdottaa, että voisi tulla kyläilemään luoksesi.",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
-    "fore": "fore_1",
+    "background": "background_10",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_19",
     "answers": [
       "Ehdotat, että voisitko mielummin mennä kyläilemään hänen luokseen",
       "Suostut tuttavasi ehdotukseen, ja hän lupaa tulla pian"
@@ -130,10 +130,10 @@
   },
   "viestiEhdotus": {
     "question": "Tuttavasi kertoo, että hänen asunnollaan on meneillään remontti ja ehdottaa uudestaan kyläilyä luoksesi.",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
-    "fore": "fore_1",
+    "background": "background_10",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_19",
     "answers": [
       "Suutut, koska hän ei suostunut ehdotukseesi, etkä vastaa enää viesteihin",
       "Suostut tuttavasi ehdotukseen, ja hän lupaa tulla pian"
@@ -145,10 +145,10 @@
   },
   "hataKylaily": {
     "question": "Tuttavasi tulee luoksesi huolestuneena, koska et vastannut enää puhelimeen.",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
-    "fore": "fore_1",
+    "background": "background_10",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_19",
     "answers": [
       "Pahoittelet, kun et vastannut puhelimeen ja pyydät hänet sisään",
       "Sanot, ettet huomannut hänen soittoaan ja pyydät hänet sisään",
@@ -163,10 +163,10 @@
   },
   "kylaAlku": {
     "question": "Ovikello soi, ja tuttavasi odottelee oven takana.",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
-    "fore": "fore_1",
+    "background": "background_10",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_8",
     "answers": [
       "Teeskentelet, ettet ole kotona, etkä avaa ovea",
       "Avaat oven, tervehdit häntä ja pyydät peremmälle",
@@ -181,10 +181,10 @@
   },
   "kylaUusi": {
     "question": "Tuttavasi soittaa ovikelloasi vielä muutaman kerran ja on sitten poistumassa.",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
-    "fore": "fore_1",
+    "background": "background_10",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_8",
     "answers": [
       "Et vieläkään avaa ovea ja annat hänen lähteä",
       "Avaat lopulta oven, tervehdit häntä ja pyydät peremmälle",
@@ -199,10 +199,10 @@
   },
   "kylaSisalla": {
     "question": "Tuttavasi tulee sisään asuntoosi.",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
-    "fore": "fore_1",
+    "background": "background_10",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_19",
     "answers": [
       "Kysyt häneltä, haluaisiko hän kahvia tai jotain pientä purtavaa",
       "Pahoittelet, ettei sinulla ole kahvia tai mitään muutakaan pientä tarjottavaa",
@@ -217,10 +217,10 @@
   },
   "tarjoilu": {
     "question": "Tuttavasi ilahtuu ja ilmoittaa, että kahvi maistuisi.",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
-    "fore": "fore_1",
+    "background": "background_10",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_19",
     "answers": [
       "Et halua tarjota omaa kahviasi, joten lähetät hänet kauppaan ostamaan kahvia",
       "Keität ja tarjoat hänelle kahvit"
@@ -232,10 +232,10 @@
   },
   "kauppaKuulumiset": {
     "question": "Tuttavasi hämmentyy, mutta käy kuitenkin kaupassa, jonka jälkeen tarjoat hänelle kahvit.",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
-    "fore": "fore_1",
+    "background": "background_10",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_19",
     "answers": [
       "Kysyt, mitä hänelle kuuluu",
       "Kerrot, mitä sinulle kuuluu",
@@ -250,10 +250,10 @@
   },
   "kuulumiset": {
     "question": "Istutte pöydän ääreen juttelemaan.",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
-    "fore": "fore_1",
+    "background": "background_10",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_19",
     "answers": [
       "Kysyt, mitä hänelle kuuluu",
       "Kerrot, mitä sinulle kuuluu",
@@ -268,10 +268,10 @@
   },
   "alkuPoistuminen": {
     "question": "Tuttavasi ymmärtää ja on lähtemässä.",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
-    "fore": "fore_1",
+    "background": "background_10",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_19",
     "answers": [
       "Hoputat häntä lähtemään, koska haluat olla nyt yksin",
       "Kiität seurasta ja hyvästelet hänet",
@@ -286,10 +286,10 @@
   },
   "tuttavaKuulumiset": {
     "question": "Tuttavasi näyttää ilahtuvan kysymyksestäsi ja alkaa kertoa kuulumisiaan.",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
-    "fore": "fore_1",
+    "background": "background_10",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_19",
     "answers": [
       "Keskeytät hänet ja alat kertoa omia kuulumisiasi, koska sinun juttusi ovat mielenkiintoisempia",
       "Kuuntelet hänen kuulumisiaan"
@@ -301,10 +301,10 @@
   },
   "keskeytys": {
     "question": "Tuttavasi hieman loukkantuu, koska et halunnut kuunnella hänen kuulumisiaan.",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
-    "fore": "fore_1",
+    "background": "background_10",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_19",
     "answers": [
       "Pahoittelet ja annat hänen kertoa juttunsa loppuun",
       "Jatkat omien juttujesi kertomista"
@@ -316,10 +316,10 @@
   },
   "omatKuulumiset": {
     "question": "Tuttavasi kuuntelee, kun kerrot mitä sinulle kuuluu.",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
-    "fore": "fore_1",
+    "background": "background_10",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_19",
     "answers": [
       "Kerrottuasi juttusi loppuun kysyt tuttavaltasi, mitä hänelle kuuluu",
       "Kerrottuasi juttusi loppuun pyydät tuttavaa poistumaan"
@@ -331,10 +331,10 @@
   },
   "tuttavaKuulumisetJatko": {
     "question": "Juteltuanne hetken tuttavasi kysyy, haluaisitko lähteä hänen kanssaan elokuviin.",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
-    "fore": "fore_1",
+    "background": "background_10",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_19",
     "answers": [
       "Sinua ei yhtään huvittaisi, joten kieltäydyt kohteliaasti",
       "Suutut kysymyksestä ja pyydät häntä poistumaan",
@@ -349,10 +349,10 @@
   },
   "asuntoLopetus": {
     "question": "Vietettyänne vielä hetken aikaa asunnossasi tuttavasi ilmoittaa lähtevänsä.",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
-    "fore": "fore_1",
+    "background": "background_10",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_19",
     "answers": [
       "Hoputat häntä lähtemään, koska haluat olla nyt yksin",
       "Kiität seurasta ja hyvästelet hänet",
@@ -367,10 +367,10 @@
   },
   "elokuva": {
     "question": "Käytte katsomassa elokuvan, jonka jälkeen tuttavasi ilmoittaa lähtevänsä kotiin.",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
-    "fore": "fore_1",
+    "background": "background_10",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_19",
     "answers": [
       "Suutut ja lähdet kotiin sanomatta sanaakaan",
       "Kiität seurasta ja hyvästelet hänet",

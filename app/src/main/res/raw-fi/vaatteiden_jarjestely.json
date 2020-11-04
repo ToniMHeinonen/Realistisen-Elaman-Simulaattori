@@ -1,9 +1,9 @@
 {
   "first": {
     "question": "Vaatteitasi on kertynyt hujan hajan ympäri asuntoasi.",
-    "background": "background_1",
-    "person": "character_1",
-    "fore": "fore_1",
+    "background": "background_9",
+    "person": "character_8",
+    "fore": "null",
     "face": "face_happy",
     "answers": [
       "Päätät kerätä ja lajitella vaatteet",
@@ -16,10 +16,10 @@
   },
   "uusiAlku": {
     "question": "Vaatteita on yhä enemmän ympäri asuntoasi.",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
-    "fore": "fore_1",
+    "background": "background_9",
+    "person": "character_8",
+    "face": "face_confused",
+    "fore": "null",
     "answers": [
       "Sekainen asunto on ilo silmälle, joten annat vaatteiden olla, etkä käytä vaatekaappia ollenkaan tästä lähtien",
       "Päätät kerätä ja lajitella vaatteet"
@@ -31,10 +31,10 @@
   },
   "kysely": {
     "question": "Päätät kerätä ja lajitella vaatteet.",
-    "background": "background_1",
-    "person": "character_1",
+    "background": "background_9",
+    "person": "character_8",
     "face": "face_happy",
-    "fore": "fore_1",
+    "fore": "null",
     "answers": [
       "Keräät vaatteet yhteen kasaan, mutta jätät ne siihen",
       "Keräät vaatteet aluksi yhteen, josta ne on helpompi lajitella",
@@ -49,10 +49,10 @@
   },
   "uusiKysely": {
     "question": "Aikaa on kulunut, ja vaatekasa lojuu yhä asunnossa.",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
-    "fore": "fore_1",
+    "background": "background_9",
+    "person": "character_8",
+    "face": "face_confused",
+    "fore": "null",
     "answers": [
       "Päätät lajitella vaatteet",
       "Viet kasasta suoraan likaisia vaatteita pyykkikoriin ja puhtaita vaatteita vaatekaappiin",
@@ -67,10 +67,10 @@
   },
   "lajittelu": {
     "question": "Miten lajittelet vaatteet?",
-    "background": "background_1",
-    "person": "character_1",
+    "background": "background_9",
+    "person": "character_8",
     "face": "face_happy",
-    "fore": "fore_1",
+    "fore": "null",
     "answers": [
       "Laitat likaiset vaatteet pyykkikoriin ja puhtaat vaatekaappiin",
       "Laitat kaikki vaatteet vaatekaappiin, vaikka osa niistä onkin hieman likaisia"
@@ -82,10 +82,10 @@
   },
   "kolmas": {
     "question": "Vaatekaappisikin on päässyt sekoittumaan niin, että eri tyyppisiä vaatteita on samassa lokerossa.",
-    "background": "background_1",
-    "person": "character_1",
+    "background": "background_9",
+    "person": "character_8",
     "face": "face_happy",
-    "fore": "fore_1",
+    "fore": "null",
     "answers": [
       "Järjestelet vaatekaapin niin, että samantyyppiset vaatteet ovat samassa lokerossa, kuten esimerkiksi t-paidat omaan lokeroonsa ja alusvaatteet omaansa",
       "Vaatekaappi ei ole mielestäsi tarpeeksi sekaisin, joten sekoitat sitä lisää",
@@ -100,10 +100,10 @@
   },
   "loppu": {
     "question": "Olet järjestellyt vaatekaappisi mielestäsi nyt hyvin.",
-    "background": "background_1",
-    "person": "character_1",
+    "background": "background_9",
+    "person": "character_8",
     "face": "face_happy",
-    "fore": "fore_1",
+    "fore": "null",
     "answers": [
       "Pidät vastaisuudessakin vaatekaappisi järjestyksessä ja yrität välttää vaatteiden kerääntymisen ympäri asuntoa",
       "Annat vaatteiden kertyä taas ympäri asuntoa, ennen kuin siirrät ne vaatekaappiin"

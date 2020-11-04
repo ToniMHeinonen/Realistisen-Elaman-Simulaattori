@@ -1,10 +1,10 @@
 {
   "first": {
     "question": "Lajitteletko jätteet vai käytätkö vain yhtä roskakoria, johon laitat kaikki jätteet?",
-    "background": "background_1",
-    "person": "character_1",
-    "fore": "fore_1",
-    "face": "face_happy",
+    "background": "background_5",
+    "person": "null",
+    "fore": "fore_16",
+    "face": "null",
     "answers": [
       "Lajittelet jätteet",
       "Käytät vain yhtä roskakoria"
@@ -16,10 +16,10 @@
   },
   "kysely": {
     "question": "Roskien lajittelu olisi tärkeää ympäristön kannalta.",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
-    "fore": "fore_1",
+    "background": "background_5",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_16",
     "answers": [
       "Harkitset ottavasi sekajätteen lisäksi käyttöösi muita roskakoreja, joihin voisit kerätä esimerkiksi bio- tai muovijätteen",
       "Pääset helpommalla, kun et lajittele roskia ja käytät vain yhtä roskakoria"
@@ -31,10 +31,10 @@
   },
   "toinen": {
     "question": "Roskakori, johon laitat sekajätteet, alkaa olemaan täynnä.",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
-    "fore": "fore_1",
+    "background": "background_5",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_16",
     "answers": [
       "Otat roskakorista pussin, jossa roskat ovat, suljet sen ja valmistaudut viemään sen ulkona olevaan jäteastiaan",
       "Otat roskakorista pussin, jossa roskat ovat, suljet sen ja jätät sen lojumaan eteiseen"
@@ -46,10 +46,10 @@
   },
   "toinenUusi": {
     "question": "Roskapussi alkaa haisemaan eteisessä.",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
-    "fore": "fore_1",
+    "background": "background_5",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_16",
     "answers": [
       "Jotta haju ei häiritsisi, suljet pyykkipojalla sieraimesi ja odotat, että joku muu veisi roskasi",
       "Valmistaudut viemään roskapussin ulkona olevaan jäteastiaan"
@@ -61,10 +61,10 @@
   },
   "viimMahdollisuus": {
     "question": "On kulunut jo useampi päivä, eikä kukaan ole vienyt eteisessä olevaa roskapussia.",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
-    "fore": "fore_1",
+    "background": "background_5",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_16",
     "answers": [
       "Et vieläkään vie roskapussia mihinkään, vaan elät tästä lähtien pyykkipoika nenässäsi",
       "Valmistaudut viemään roskapussin ulkona olevaan jäteastiaan"
@@ -76,10 +76,10 @@
   },
   "ulkona": {
     "question": "Olet roskakatoksessa ja kädessäsi on roskapussi, johon olet kerännyt sekäjätteet. Mihin jäteastiaan pistät sen?",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
-    "fore": "fore_1",
+    "background": "background_5",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_16",
     "answers": [
       "Biojätteeseen",
       "Paperinkeräykseen",
@@ -94,10 +94,10 @@
   },
   "takaisinAsunnossa": {
     "question": "Heitettyäsi roskapussin jäteastiaan palaat asuntoosi.",
-    "background": "background_1",
-    "person": "character_1",
-    "face": "face_happy",
-    "fore": "fore_1",
+    "background": "background_5",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_16",
     "answers": [
       "Pistät uuden tyhjän pussin roskakoriin",
       "Et pistä uutta pussia roskakoriin"
