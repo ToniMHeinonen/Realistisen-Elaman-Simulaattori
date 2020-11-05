@@ -139,12 +139,30 @@
       "You fill it with cold water",
       "You fill it with so hot water that it burns your hands"
     ],
-    "You fill it with as hot water as your hands can withstand": "kasinKolme",
-    "You fill it with cold water": "kasinKolme",
-    "You fill it with so hot water that it burns your hands": "kasinKolme",
+    "You fill it with as hot water as your hands can withstand": "kasinAine",
+    "You fill it with cold water": "kasinAine",
+    "You fill it with so hot water that it burns your hands": "kasinAine",
     "You fill it with as hot water as your hands can withstandColor": "green",
     "You fill it with cold waterColor": "red",
     "You fill it with so hot water that it burns your handsColor": "red"
+  },
+  "kasinAine": {
+    "question": "What do you do next?",
+    "background": "background_5",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_16",
+    "answers": [
+      "You add a full bottle of dishwashing liquid to the water",
+      "You add a few drops of dishwashing liquid to the water",
+      "You do not add diswashing liquid at all"
+    ],
+    "You add a full bottle of dishwashing liquid to the water": "kasinKolme",
+    "You add a few drops of dishwashing liquid to the water": "kasinKolme",
+    "You do not add diswashing liquid at all": "kasinKolme",
+    "You add a full bottle of dishwashing liquid to the waterColor": "red",
+    "You add a few drops of dishwashing liquid to the waterColor": "green",
+    "You do not add diswashing liquid at allColor": "red"
   },
   "kasinKolme": {
     "question": "What do you do next?",

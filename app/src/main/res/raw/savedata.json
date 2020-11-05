@@ -22,7 +22,7 @@
     "Ruokakauppaan lähteminen",
     "Ruokakaupassa asioiminen",
     "Returning from grocery store",
-    "Tuttavan tapaaminen",
+    "Meeting an acquaintance",
     "Sorting the clothes",
     "Vuodevaatteiden puhtaanapito"],
   "scenarioslist": [
@@ -52,7 +52,7 @@
     {"name": "Kirjastossa käyminen", "file": "kirjastokaynti_skenaario.json", "category": "Vapaa-ajan toiminta"},
     {"name": "Harrastukseen meneminen", "file": "harrastukseenmeno.json", "category": "Vapaa-ajan toiminta"},
     {"name": "Ravintolassa käyminen", "file": "ravintola.json", "category": "Vapaa-ajan toiminta"},
-    {"name": "Tuttavan tapaaminen", "file": "tuttavan_tapaaminen.json", "category": "Vapaa-ajan toiminta"},
+    {"name": "Meeting an acquaintance", "file": "tuttavan_tapaaminen.json", "category": "Vapaa-ajan toiminta"},
     {"name": "Kissasta huolehtiminen", "file": "kissasta_huolehtiminen.json", "category": "Taking care of pets"},
     {"name": "Ratikalla matkustaminen", "file": "ratikka.json", "category": "Matkustaminen"},
     {"name": "Bussilla matkustaminen", "file":  "bussimatka.json", "category": "Matkustaminen"},

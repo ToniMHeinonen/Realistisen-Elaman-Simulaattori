@@ -139,12 +139,30 @@
       "Täytät sen kylmällä vedellä",
       "Täytät sen niin kuumalla vedellä, että se polttelee käsiäsi"
     ],
-    "Täytät sen niin kuumalla vedellä kuin kätesi kestävät": "kasinKolme",
-    "Täytät sen kylmällä vedellä": "kasinKolme",
-    "Täytät sen niin kuumalla vedellä, että se polttelee käsiäsi": "kasinKolme",
+    "Täytät sen niin kuumalla vedellä kuin kätesi kestävät": "kasinAine",
+    "Täytät sen kylmällä vedellä": "kasinAine",
+    "Täytät sen niin kuumalla vedellä, että se polttelee käsiäsi": "kasinAine",
     "Täytät sen niin kuumalla vedellä kuin kätesi kestävätColor": "green",
     "Täytät sen kylmällä vedelläColor": "red",
     "Täytät sen niin kuumalla vedellä, että se polttelee käsiäsiColor": "red"
+  },
+  "kasinAine": {
+    "question": "Mitä teet seuraavaksi?",
+    "background": "background_5",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_16",
+    "answers": [
+      "Lisäät veteen täyden pullollisen tiskiainetta",
+      "Lisäät veteen muutaman tipan tiskiainetta",
+      "Et lisää tiskiainetta ollenkaan"
+    ],
+    "Lisäät veteen täyden pullollisen tiskiainetta": "kasinKolme",
+    "Lisäät veteen muutaman tipan tiskiainetta": "kasinKolme",
+    "Et lisää tiskiainetta ollenkaan": "kasinKolme",
+    "Lisäät veteen täyden pullollisen tiskiainettaColor": "red",
+    "Lisäät veteen muutaman tipan tiskiainettaColor": "green",
+    "Et lisää tiskiainetta ollenkaanColor": "red"
   },
   "kasinKolme": {
     "question": "Mitä teet seuraavaksi?",

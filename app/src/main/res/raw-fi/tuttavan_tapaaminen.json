@@ -7,14 +7,14 @@
     "face": "face_happy",
     "answers": [
       "Soitat hänelle",
-      "Pistät hänelle viestiä",
+      "Laitat hänelle viestiä",
       "Odotat, että hän soittaisi sinulle"
     ],
     "Soitat hänelle": "soitto",
-    "Pistät hänelle viestiä": "viesti",
+    "Laitat hänelle viestiä": "viesti",
     "Odotat, että hän soittaisi sinulle": "odotus",
     "Soitat hänelleColor": "green",
-    "Pistät hänelle viestiäColor": "green",
+    "Laitat hänelle viestiäColor": "green",
     "Odotat, että hän soittaisi sinulleColor": "red"
   },
   "odotus": {
@@ -25,14 +25,14 @@
     "fore": "null",
     "answers": [
       "Soitat hänelle",
-      "Pistät hänelle viestiä",
+      "Laitat hänelle viestiä",
       "Suutut, koska hän ei soita sinulle, etkä aio tavata häntä enää ikinä"
     ],
     "Soitat hänelle": "soitto",
-    "Pistät hänelle viestiä": "viesti",
+    "Laitat hänelle viestiä": "viesti",
     "Suutut, koska hän ei soita sinulle, etkä aio tavata häntä enää ikinä": "null",
     "Soitat hänelleColor": "green",
-    "Pistät hänelle viestiäColor": "green",
+    "Laitat hänelle viestiäColor": "green",
     "Suutut, koska hän ei soita sinulle, etkä aio tavata häntä enää ikinäColor": "red"
   },
   "soitto": {
@@ -114,7 +114,7 @@
     "Suostut tuttavasi ehdotukseen, ja hän lupaa tulla pianColor": "green"
   },
   "viesti": {
-    "question": "Pistät tuttavallesi viestiä, haluaisiko hän tehdä jotain kanssasi. Hän ehdottaa, että voisi tulla kyläilemään luoksesi.",
+    "question": "Laitat tuttavallesi viestiä, haluaisiko hän tehdä jotain kanssasi. Hän ehdottaa, että voisi tulla kyläilemään luoksesi.",
     "background": "background_10",
     "person": "null",
     "face": "null",
