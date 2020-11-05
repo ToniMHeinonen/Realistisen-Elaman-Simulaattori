@@ -68,13 +68,19 @@ public class GameOverActivity extends ParentActivity {
     private String giveFeedback(int completedPercentage) {
         String result = "";
         if (completedPercentage < 50) {
-            result = getString(R.string.completed_bad);
+            result = getString(R.string.completed_50);
             percentageBg.setImageResource(R.drawable.red);
-        } else if (completedPercentage < 100) {
-            result = getString(R.string.completed_mediocre);
+        } else if (completedPercentage <= 75) {
+            result = getString(R.string.completed_75);
+            percentageBg.setImageResource(R.drawable.yellow);
+        } else if (completedPercentage <= 90) {
+            result = getString(R.string.completed_90);
+            percentageBg.setImageResource(R.drawable.yellow);
+        } else if (completedPercentage <= 99) {
+            result = getString(R.string.completed_99);
             percentageBg.setImageResource(R.drawable.yellow);
         } else {
-            result = getString(R.string.completed_perfect);
+            result = getString(R.string.completed_100);
             percentageBg.setImageResource(R.drawable.green);
         }
         return result;
