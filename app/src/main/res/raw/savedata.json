@@ -14,7 +14,6 @@
     "Washing dishes",
     "Kissasta huolehtiminen",
     "Kukkien kastelu ja hoito",
-    "Lääkärissä käynti",
     "Lattian imurointi",
     "Pölyjen pyyhkiminen",
     "Doing laundry",
@@ -35,7 +34,7 @@
     {"name":  "Traveling by tram", "file": "ratikka.json", "category": "Traveling"},
     {"name":  "Applying to higher education", "file":  "opiskelu.json", "category": "Education"},
     {"name": "Ruokakaupassa asioiminen", "file": "ruokakaupassa_asioiminen.json", "category": "Kaupassa käynti"},
-    {"name":  "Lääkärissä käynti", "file": "laakarissa_kaynti.json", "category": "Lääkärissä käyminen"},
+    {"name":  "Going to a doctor", "file": "laakarissa_kaynti.json", "category": "Lääkärissä käyminen"},
     {"name":  "Vuokra-asunnon hankinta", "file": "vuokra_asunnon_hankinta.json", "category": "Vuokra-asunto"},
     {"name": "Washing dishes", "file": "astioiden_pesu.json", "category": "Kodista huolehtiminen"},
     {"name": "Kukkien kastelu ja hoito", "file": "kukkien_kastelu_ja_hoito.json", "category": "Kodista huolehtiminen"},
@@ -56,7 +55,6 @@
     {"name": "Kissasta huolehtiminen", "file": "kissasta_huolehtiminen.json", "category": "Taking care of pets"},
     {"name": "Ratikalla matkustaminen", "file": "ratikka.json", "category": "Matkustaminen"},
     {"name": "Bussilla matkustaminen", "file":  "bussimatka.json", "category": "Matkustaminen"},
-    {"name": "Lääkärissä käynti", "file": "laakarissa_kaynti.json", "category": "Lääkärissä käyminen"},
     {"name": "Opiskelemaan hakeutuminen", "file": "opiskelu.json", "category": "Opiskelu"},
     {"name": "Vuokra-asunnon hankinta", "file": "vuokra_asunnon_hankinta.json", "category": "Vuokra-asunto"}
   ]

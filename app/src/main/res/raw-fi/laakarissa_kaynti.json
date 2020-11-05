@@ -31,7 +31,7 @@
       "Menet paikan päälle terveyskeskukseen varataksesi ajan",
       "Odotat, että kipu loppuisi"
     ],
-    "Soitat paikalliseen terveyskeskukseen varataksesi ajan": "uusiSoitto",
+    "Soitat paikalliseen terveyskeskukseen varataksesi ajan": "uusiSoittoOdotus",
     "Menet paikan päälle terveyskeskukseen varataksesi ajan": "uusiPaikanPaalle",
     "Odotat, että kipu loppuisi": "uusiOdotus",
     "Soitat paikalliseen terveyskeskukseen varataksesi ajanColor": "green",
@@ -48,10 +48,28 @@
       "Soitat paikalliseen terveyskeskukseen varataksesi ajan",
       "Menet paikan päälle terveyskeskukseen varataksesi ajan"
     ],
-    "Soitat paikalliseen terveyskeskukseen varataksesi ajan": "uusiSoitto",
+    "Soitat paikalliseen terveyskeskukseen varataksesi ajan": "uusiSoittoOdotus",
     "Menet paikan päälle terveyskeskukseen varataksesi ajan": "uusiPaikanPaalle",
     "Soitat paikalliseen terveyskeskukseen varataksesi ajanColor": "green",
     "Menet paikan päälle terveyskeskukseen varataksesi ajanColor": "green"
+  },
+  "uusiSoittoOdotus": {
+    "question": "Soitit terveyskeskukseen, mutta on kulunut jo useampi minuutti, eikä sieltä ole vieläkään vastattu.",
+    "background": "background_5",
+    "person": "character_5",
+    "fore": "fore_5",
+    "face": "face_uncomfortable",
+    "answers": [
+      "Lopetat puhelun ja menet paikan päälle terveyskeskukseen varataksesi ajan",
+      "Lopetat puhelun, etkä aio yrittää enää varata aikaa terveyskeskuksesta",
+      "Odotat kärsivällisesti, että puheluun vastattaisiin"
+    ],
+    "Lopetat puhelun ja menet paikan päälle terveyskeskukseen varataksesi ajan": "uusiPaikanPaalle",
+    "Lopetat puhelun, etkä aio yrittää enää varata aikaa terveyskeskuksesta": "null",
+    "Odotat kärsivällisesti, että puheluun vastattaisiin": "uusiSoitto",
+    "Lopetat puhelun ja menet paikan päälle terveyskeskukseen varataksesi ajanColor": "green",
+    "Lopetat puhelun, etkä aio yrittää enää varata aikaa terveyskeskuksestaColor": "red",
+    "Odotat kärsivällisesti, että puheluun vastattaisiinColor": "green"
   },
   "uusiPaikanPaalle": {
     "question": "Saavut terveyskeskukseen ja menet vastaanottovirkailijan luokse.",
@@ -102,7 +120,7 @@
     "Menet pihalle odottamaan vuoroasiColor": "red"
   },
   "uusiSoitto": {
-    "question": "Terveyskeskuksessa vastataan nopeasti puheluusi.",
+    "question": "Terveyskeskuksessa vastataan lopulta puheluusi.",
     "background": "background_5",
     "person": "character_5",
     "fore": "fore_5",
