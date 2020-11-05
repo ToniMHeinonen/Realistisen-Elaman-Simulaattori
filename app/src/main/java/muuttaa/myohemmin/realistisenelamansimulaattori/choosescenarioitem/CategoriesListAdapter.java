@@ -11,6 +11,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
@@ -269,8 +270,10 @@ public class CategoriesListAdapter extends BaseExpandableListAdapter {
         LinkedHashMap<String, List<ScenarioItem>> ParentItem = new LinkedHashMap<>();
 
         // Add categories from resources and user created to same list
-        ArrayList<String> allCategories = new ArrayList<>(resourcesCategories); // Resources
-        allCategories.addAll(GlobalPrefs.loadCategories()); // User created
+        ArrayList<String> resCategories = new ArrayList<>(resourcesCategories); // Resources
+        Collections.sort(resCategories); // Sort resources alphabetically
+        ArrayList<String> allCategories = new ArrayList<>(GlobalPrefs.loadCategories()); // User created
+        allCategories.addAll(resCategories); // Add resources categories after user created
         LinkedHashMap<String, List<ScenarioItem>> categoryData = new LinkedHashMap<>();
 
         // Add all categories to hash map which hold category name and array list
