@@ -1,1 +1,353 @@
-{"first":{"question":"You reach the checkout. There is no queue in front of you. Your shopping cart is half full. The cashier greets you.\nWhat do you do?","background":"background_3","person":"character_3","face":"face_happy","fore":"fore_3","answers":["You greet back and put your groceries on the conveyor belt","You say nothing and stand still","You put your groceries on the conveyor belt"],"You greet back and put your groceries on the conveyor belt":"ostokset_hihnalla","You say nothing and stand still":"odotus_jonossa","You put your groceries on the conveyor belt":"ostokset_hihnalla","You greet back and put your groceries on the conveyor beltColor":"green","You say nothing and stand stillColor":"red","You put your groceries on the conveyor beltColor":"yellow"},"ostokset_hihnalla":{"question":"The cashier starts scanning the groceries.\nWhat do you do?","background":"background_3","person":"character_3","face":"face_happy","fore":"fore_3","answers":["You go to pack the groceries","You wait that all the groceries are scanned","You start chatting with the cashier"],"You go to pack the groceries":"ostosten_hinta","You wait that all the groceries are scanned":"ostosten_hinta","You start chatting with the cashier":"juttelu_myyjalle","You go to pack the groceriesColor":"green","You wait that all the groceries are scannedColor":"green","You start chatting with the cashierColor":"green"},"odotus_jonossa":{"question":"The cashier asks: \"Can I help you?\"\nWhat do you do?","background":"background_3","person":"character_3","face":"face_surprised","fore":"fore_3","answers":["You run away","You ask: \"What am I supposed to do?\"","You let the person behind you go first"],"You run away":"null","You ask: \"What am I supposed to do?\"":"myyja_neuvoo","You let the person behind you go first":"asiakas_edessa","You run awayColor":"red","You ask: \"What am I supposed to do?\"Color":"green","You let the person behind you go firstColor":"yellow"},"ostosten_hinta":{"question":"The cashier finishes scanning the groceries. Then he tells the total price of the groceries. \nWhat do you do?","background":"background_3","person":"character_3","face":"face_happy","fore":"fore_3","answers":["You pay the cashier the price of the groceries in cash","You pay the cashier the price of the groceries with a debit card","You start to bargain for a cheaper price"],"You pay the cashier the price of the groceries in cash":"maksu_kateisella","You pay the cashier the price of the groceries with a debit card":"maksu_kortilla","You start to bargain for a cheaper price":"hinnan_tinkiminen","You pay the cashier the price of the groceries in cashColor":"green","You pay the cashier the price of the groceries with a debit cardColor":"green","You start to bargain for a cheaper priceColor":"red"},"juttelu_myyjalle":{"question":"The cashier smiles and talks with you. \nWhat do you do?","background":"background_3","person":"character_3","face":"face_happy","fore":"fore_3","answers":["You wait that the cashier gets all the groceries scanned","You get angry at the cashier and start yelling","You smile back and talk until the cashier gets all the groceries scanned"],"You wait that the cashier gets all the groceries scanned":"ostosten_hinta","You get angry at the cashier and start yelling":"vartijan_kutsuminen","You smile back and talk until the cashier gets all the groceries scanned":"ostosten_hinta","You wait that the cashier gets all the groceries scannedColor":"green","You get angry at the cashier and start yellingColor":"red","You smile back and talk until the cashier gets all the groceries scannedColor":"green"},"myyja_neuvoo":{"question":"The cashier says: \"Put the groceries from your basket to the conveyor belt so I can scan them. Then you can pay for your groceries.\"\nWhat do you do?","background":"background_3","person":"character_3","face":"face_happy","fore":"fore_3","answers":["You run away","You put your groceries on the conveyour belt"],"You run away":"null","You put your groceries on the conveyour belt":"ostokset_hihnalla","You run awayColor":"red","You put your groceries on the conveyour beltColor":"green"},"asiakas_edessa":{"question":"You look at how the customer in front of you is behaving at the checkout.\nWhat do you do?","background":"background_3","person":"character_3","face":"face_happy","fore":"fore_3","answers":["You wait until the other customer is ready and then put your groceries on the conveyor belt","You get angry because the customer did not pay for your groceries too and start yelling at her","You are afraid to follow the customer's behaviour so you leave the store"],"You wait until the other customer is ready and then put your groceries on the conveyor belt":"ostokset_hihnalla","You get angry because the customer did not pay for your groceries too and start yelling at her":"vartijan_kutsuminen","You are afraid to follow the customer's behaviour so you leave the store":"null","You wait until the other customer is ready and then put your groceries on the conveyor beltColor":"green","You get angry because the customer did not pay for your groceries too and start yelling at herColor":"red","You are afraid to follow the customer's behaviour so you leave the storeColor":"red"},"maksu_kateisella":{"question":"You give the cashier the required amount of money in cash. The cashier thanks you and wishes you a good day. \nWhat do you do?","background":"background_3","person":"character_3","face":"face_happy","fore":"fore_3","answers":["You say: \"Thank you!\" and go to pack up your groceries","You go to pack up your groceries","You stand still","You start chatting with the cashier"],"You say: \"Thank you!\" and go to pack up your groceries":"pakkaaminen","You go to pack up your groceries":"pakkaaminen","You stand still":"odotus_kassalla","You start chatting with the cashier":"keskustelu_maksun_jalkeen","You say: \"Thank you!\" and go to pack up your groceriesColor":"green","You go to pack up your groceriesColor":"yellow","You stand stillColor":"red","You start chatting with the cashierColor":"red"},"maksu_kortilla":{"question":"You put your debit card in the payment device and enter your pin code. You wait that the payment is ready and pull your card. The cashier thanks you and wishes you a good day. \nWhat do you do?","background":"background_3","person":"character_3","face":"face_happy","fore":"fore_3","answers":["You say: \"Thank you!\" and you go to pack up your groceries","You go to pack up your groceries","You stand still","You start chatting with the cashier"],"You say: \"Thank you!\" and you go to pack up your groceries":"pakkaaminen","You go to pack up your groceries":"pakkaaminen","You stand still":"odotus_kassalla","You start chatting with the cashier":"keskustelu_maksun_jalkeen","You say: \"Thank you!\" and you go to pack up your groceriesColor":"green","You go to pack up your groceriesColor":"yellow","You stand stillColor":"red","You start chatting with the cashierColor":"red"},"hinnan_tinkiminen":{"question":"The cashier tells you that you can't bargain in grocery stores, but the groceries must be paid in full price. \nWhat do you do?","background":"background_3","person":"character_3","face":"face_confused","fore":"fore_3","answers":["You get angry when the cashier refuses to lower the price and start yelling","You pay the cashier the price of the groceries in cash","You pay the cashier the price of the groceries with a debit card","You get angry and leave the store"],"You get angry when the cashier refuses to lower the price and start yelling":"vartijan_kutsuminen","You pay the cashier the price of the groceries in cash":"maksu_kateisella","You pay the cashier the price of the groceries with a debit card":"maksu_kortilla","You get angry and leave the store":"null","You get angry when the cashier refuses to lower the price and start yellingColor":"red","You pay the cashier the price of the groceries in cashColor":"green","You pay the cashier the price of the groceries with a debit cardColor":"green","You get angry and leave the storeColor":"red"},"vartijan_kutsuminen":{"question":"The cashier calls the guard to the scene. \nWhat do you do?","background":"background_3","person":"character_3","face":"face_uncomfortable","fore":"fore_3","answers":["You leave the store infuriated","You apologize for your behavior, promise that it won't happen again and leave the store","You quickly grab your unpaid groceries and run away"],"You leave the store infuriated":"null","You apologize for your behavior, promise that it won't happen again and leave the store":"null","You quickly grab your unpaid groceries and run away":"varastaminen","You leave the store infuriatedColor":"red","You apologize for your behavior, promise that it won't happen again and leave the storeColor":"green","You quickly grab your unpaid groceries and run awayColor":"red"},"pakkaaminen":{"question":"You go to pack your groceries in the bag that you have with you. You get your groceries packed. \nWhat do you do?","background":"background_3","person":"null","face":"null","fore":"null","answers":["You leave the store walking calmly","You run fast out of the store"],"You leave the store walking calmly":"null","You run fast out of the store":"tormaaminen","You leave the store walking calmlyColor":"green","You run fast out of the storeColor":"red"},"keskustelu_maksun_jalkeen":{"question":"The queue behind you seems angry and the cashier looks uncomfortable.\nWhat do you do?","background":"background_3","person":"character_3","face":"face_uncomfortable","fore":"fore_3","answers":["You keep chatting with the cashier","You go to pack your groceries"],"You keep chatting with the cashier":"myyja_pyytaa_pakkaamaan","You go to pack your groceries":"pakkaaminen","You keep chatting with the cashierColor":"red","You go to pack your groceriesColor":"green"},"odotus_kassalla":{"question":"The cashier asks: \"Is everything alright?\"\nWhat do you do?","background":"background_3","person":"character_3","face":"face_surprised","fore":"fore_3","answers":["You say that everything is alright and go to pack up your groceries","You ask: \"What am I supposed to do next?\"","You look at the cashier for a long time silently and go to pack up your groceries"],"You say that everything is alright and go to pack up your groceries":"pakkaaminen","You ask: \"What am I supposed to do next?\"":"myyja_neuvoo_pakkaamaan","You look at the cashier for a long time silently and go to pack up your groceries":"pakkaaminen","You say that everything is alright and go to pack up your groceriesColor":"green","You ask: \"What am I supposed to do next?\"Color":"green","You look at the cashier for a long time silently and go to pack up your groceriesColor":"yellow"},"varastaminen":{"question":"You run away as fast as you can, but the guard catches you. \nWhat do you do?","background":"background_3","person":"character_1","face":"face_confused","fore":"null","answers":["You kick and rage","You give back your groceries and apologize for what happened"],"You kick and rage":"vartija_soittaa_poliisin","You give back your groceries and apologize for what happened":"vartija_tekee_ilmoituksen","You kick and rageColor":"red","You give back your groceries and apologize for what happenedColor":"green"},"tormaaminen":{"question":"When you run fast to exit the store, you run into another person.\nWhat do you do?","background":"background_3","person":"character_6","face":"face_sad","fore":"null","answers":["You apologize and walk the rest of the way calmly","You keep running and exit the store"],"You apologize and walk the rest of the way calmly":"null","You keep running and exit the store":"null","You apologize and walk the rest of the way calmlyColor":"green","You keep running and exit the storeColor":"red"},"myyja_pyytaa_pakkaamaan":{"question":"The cashier asks you to go packing, because there is a queue of people behind you.\nWhat do you do?","background":"background_3","person":"character_3","face":"face_confused","fore":"fore_3","answers":["You apologize and go to pack up your groceries","You look at the cashier angrily and go to pack up your groceries","You get angry at the cashier because he doesn't want to talk with you and start yelling"],"You apologize and go to pack up your groceries":"pakkaaminen","You look at the cashier angrily and go to pack up your groceries":"pakkaaminen","You get angry at the cashier because he doesn't want to talk with you and start yelling":"vartijan_kutsuminen","You apologize and go to pack up your groceriesColor":"green","You look at the cashier angrily and go to pack up your groceriesColor":"yellow","You get angry at the cashier because he doesn't want to talk with you and start yellingColor":"red"},"myyja_neuvoo_pakkaamaan":{"question":"The cashier says: \"Your groceries are now paid for, so you can go to pack up your groceries.\"\nWhat do you do?","background":"background_3","person":"character_3","face":"face_happy","fore":"fore_3","answers":["You go to pack up your groceries","You are too afraid to pack up your groceries so you leave the store"],"You go to pack up your groceries":"pakkaaminen","You are too afraid to pack up your groceries so you leave the store":"null","You go to pack up your groceriesColor":"green","You are too afraid to pack up your groceries so you leave the storeColor":"red"},"vartija_soittaa_poliisin":{"question":"The guard holds you firmly and calls the police.\nWhat do you think?","background":"background_3","person":"character_1","face":"face_confused","fore":"null","answers":["I made a huge mistake","If I had been a little faster, I would have escaped","I will never go to the grocery store again"],"I made a huge mistake":"null","If I had been a little faster, I would have escaped":"null","I will never go to the grocery store again":"null","I made a huge mistakeColor":"green","If I had been a little faster, I would have escapedColor":"red","I will never go to the grocery store againColor":"red"},"vartija_tekee_ilmoituksen":{"question":"The guard says that this will be reported as a crime.\nWhat do you do?","background":"background_3","person":"character_1","face":"face_confused","fore":"null","answers":["You get immensely angry because of what the guard said and start raging","You realize that you have made some really bad decisions","You think that you will run faster next time"],"You get immensely angry because of what the guard said and start raging":"vartija_soittaa_poliisin","You realize that you have made some really bad decisions":"null","You think that you will run faster next time":"null","You get immensely angry because of what the guard said and start ragingColor":"red","You realize that you have made some really bad decisionsColor":"green","You think that you will run faster next timeColor":"red"}}
+{
+  "first": {
+    "question": "You reach the checkout. There is no queue in front of you. Your shopping cart is half full. The cashier greets you.\nWhat do you do?",
+    "background": "background_3",
+    "person": "character_3",
+    "face": "face_happy",
+    "fore": "fore_3",
+    "answers": [
+      "You greet back and put your groceries on the conveyor belt",
+      "You say nothing and stand still",
+      "You put your groceries on the conveyor belt"
+    ],
+    "You greet back and put your groceries on the conveyor belt": "ostokset_hihnalla",
+    "You say nothing and stand still": "odotus_jonossa",
+    "You put your groceries on the conveyor belt": "ostokset_hihnalla",
+    "You greet back and put your groceries on the conveyor beltColor": "green",
+    "You say nothing and stand stillColor": "red",
+    "You put your groceries on the conveyor beltColor": "yellow"
+  },
+  "ostokset_hihnalla": {
+    "question": "The cashier starts scanning the groceries.\nWhat do you do?",
+    "background": "background_3",
+    "person": "character_3",
+    "face": "face_happy",
+    "fore": "fore_3",
+    "answers": [
+      "You go to pack the groceries",
+      "You wait that all the groceries are scanned",
+      "You start chatting with the cashier"
+    ],
+    "You go to pack the groceries": "ostosten_hinta",
+    "You wait that all the groceries are scanned": "ostosten_hinta",
+    "You start chatting with the cashier": "juttelu_myyjalle",
+    "You go to pack the groceriesColor": "green",
+    "You wait that all the groceries are scannedColor": "green",
+    "You start chatting with the cashierColor": "green"
+  },
+  "odotus_jonossa": {
+    "question": "The cashier asks: \"Can I help you?\"\nWhat do you do?",
+    "background": "background_3",
+    "person": "character_3",
+    "face": "face_surprised",
+    "fore": "fore_3",
+    "answers": [
+      "You run away",
+      "You ask: \"What am I supposed to do?\"",
+      "You let the person behind you go first"
+    ],
+    "You run away": "null",
+    "You ask: \"What am I supposed to do?\"": "myyja_neuvoo",
+    "You let the person behind you go first": "asiakas_edessa",
+    "You run awayColor": "red",
+    "You ask: \"What am I supposed to do?\"Color": "green",
+    "You let the person behind you go firstColor": "yellow"
+  },
+  "ostosten_hinta": {
+    "question": "The cashier finishes scanning the groceries. Then he tells the total price of the groceries. \nWhat do you do?",
+    "background": "background_3",
+    "person": "character_3",
+    "face": "face_happy",
+    "fore": "fore_3",
+    "answers": [
+      "You pay the cashier the price of the groceries in cash",
+      "You pay the cashier the price of the groceries with a debit card",
+      "You start to bargain for a cheaper price"
+    ],
+    "You pay the cashier the price of the groceries in cash": "maksu_kateisella",
+    "You pay the cashier the price of the groceries with a debit card": "maksu_kortilla",
+    "You start to bargain for a cheaper price": "hinnan_tinkiminen",
+    "You pay the cashier the price of the groceries in cashColor": "green",
+    "You pay the cashier the price of the groceries with a debit cardColor": "green",
+    "You start to bargain for a cheaper priceColor": "red"
+  },
+  "juttelu_myyjalle": {
+    "question": "The cashier smiles and talks with you. \nWhat do you do?",
+    "background": "background_3",
+    "person": "character_3",
+    "face": "face_happy",
+    "fore": "fore_3",
+    "answers": [
+      "You wait that the cashier gets all the groceries scanned",
+      "You get angry at the cashier and start yelling",
+      "You smile back and talk until the cashier gets all the groceries scanned"
+    ],
+    "You wait that the cashier gets all the groceries scanned": "ostosten_hinta",
+    "You get angry at the cashier and start yelling": "vartijan_kutsuminen",
+    "You smile back and talk until the cashier gets all the groceries scanned": "ostosten_hinta",
+    "You wait that the cashier gets all the groceries scannedColor": "green",
+    "You get angry at the cashier and start yellingColor": "red",
+    "You smile back and talk until the cashier gets all the groceries scannedColor": "green"
+  },
+  "myyja_neuvoo": {
+    "question": "The cashier says: \"Put the groceries from your basket to the conveyor belt so I can scan them. Then you can pay for your groceries.\"\nWhat do you do?",
+    "background": "background_3",
+    "person": "character_3",
+    "face": "face_happy",
+    "fore": "fore_3",
+    "answers": [
+      "You run away",
+      "You put your groceries on the conveyour belt"
+    ],
+    "You run away": "null",
+    "You put your groceries on the conveyour belt": "ostokset_hihnalla",
+    "You run awayColor": "red",
+    "You put your groceries on the conveyour beltColor": "green"
+  },
+  "asiakas_edessa": {
+    "question": "You look at how the customer in front of you is behaving at the checkout.\nWhat do you do?",
+    "background": "background_3",
+    "person": "character_3",
+    "face": "face_happy",
+    "fore": "fore_3",
+    "answers": [
+      "You wait until the other customer is ready and then put your groceries on the conveyor belt",
+      "You get angry because the customer did not pay for your groceries too and start yelling at him",
+      "You are afraid to follow the customer's behaviour so you leave the store"
+    ],
+    "You wait until the other customer is ready and then put your groceries on the conveyor belt": "ostokset_hihnalla",
+    "You get angry because the customer did not pay for your groceries too and start yelling at her": "vartijan_kutsuminen",
+    "You are afraid to follow the customer's behaviour so you leave the store": "null",
+    "You wait until the other customer is ready and then put your groceries on the conveyor beltColor": "green",
+    "You get angry because the customer did not pay for your groceries too and start yelling at herColor": "red",
+    "You are afraid to follow the customer's behaviour so you leave the storeColor": "red"
+  },
+  "maksu_kateisella": {
+    "question": "You give the cashier the required amount of money in cash. The cashier thanks you and wishes you a good day. \nWhat do you do?",
+    "background": "background_3",
+    "person": "character_3",
+    "face": "face_happy",
+    "fore": "fore_3",
+    "answers": [
+      "You say: \"Thank you!\" and go to pack up your groceries",
+      "You go to pack up your groceries",
+      "You stand still",
+      "You start chatting with the cashier"
+    ],
+    "You say: \"Thank you!\" and go to pack up your groceries": "pakkaaminen",
+    "You go to pack up your groceries": "pakkaaminen",
+    "You stand still": "odotus_kassalla",
+    "You start chatting with the cashier": "keskustelu_maksun_jalkeen",
+    "You say: \"Thank you!\" and go to pack up your groceriesColor": "green",
+    "You go to pack up your groceriesColor": "yellow",
+    "You stand stillColor": "red",
+    "You start chatting with the cashierColor": "red"
+  },
+  "maksu_kortilla": {
+    "question": "You put your debit card in the payment device and enter your pin code. You wait that the payment is ready and pull your card. The cashier thanks you and wishes you a good day. \nWhat do you do?",
+    "background": "background_3",
+    "person": "character_3",
+    "face": "face_happy",
+    "fore": "fore_3",
+    "answers": [
+      "You say: \"Thank you!\" and you go to pack up your groceries",
+      "You go to pack up your groceries",
+      "You stand still",
+      "You start chatting with the cashier"
+    ],
+    "You say: \"Thank you!\" and you go to pack up your groceries": "pakkaaminen",
+    "You go to pack up your groceries": "pakkaaminen",
+    "You stand still": "odotus_kassalla",
+    "You start chatting with the cashier": "keskustelu_maksun_jalkeen",
+    "You say: \"Thank you!\" and you go to pack up your groceriesColor": "green",
+    "You go to pack up your groceriesColor": "yellow",
+    "You stand stillColor": "red",
+    "You start chatting with the cashierColor": "red"
+  },
+  "hinnan_tinkiminen": {
+    "question": "The cashier tells you that you can't bargain in grocery stores, but the groceries must be paid in full price. \nWhat do you do?",
+    "background": "background_3",
+    "person": "character_3",
+    "face": "face_confused",
+    "fore": "fore_3",
+    "answers": [
+      "You get angry when the cashier refuses to lower the price and start yelling",
+      "You pay the cashier the price of the groceries in cash",
+      "You pay the cashier the price of the groceries with a debit card",
+      "You get angry and leave the store"
+    ],
+    "You get angry when the cashier refuses to lower the price and start yelling": "vartijan_kutsuminen",
+    "You pay the cashier the price of the groceries in cash": "maksu_kateisella",
+    "You pay the cashier the price of the groceries with a debit card": "maksu_kortilla",
+    "You get angry and leave the store": "null",
+    "You get angry when the cashier refuses to lower the price and start yellingColor": "red",
+    "You pay the cashier the price of the groceries in cashColor": "green",
+    "You pay the cashier the price of the groceries with a debit cardColor": "green",
+    "You get angry and leave the storeColor": "red"
+  },
+  "vartijan_kutsuminen": {
+    "question": "The cashier calls the guard to the scene. \nWhat do you do?",
+    "background": "background_3",
+    "person": "character_3",
+    "face": "face_uncomfortable",
+    "fore": "fore_3",
+    "answers": [
+      "You leave the store infuriated",
+      "You apologize for your behavior, promise that it won't happen again and leave the store",
+      "You quickly grab your unpaid groceries and run away"
+    ],
+    "You leave the store infuriated": "null",
+    "You apologize for your behavior, promise that it won't happen again and leave the store": "null",
+    "You quickly grab your unpaid groceries and run away": "varastaminen",
+    "You leave the store infuriatedColor": "red",
+    "You apologize for your behavior, promise that it won't happen again and leave the storeColor": "green",
+    "You quickly grab your unpaid groceries and run awayColor": "red"
+  },
+  "pakkaaminen": {
+    "question": "You go to pack your groceries in the bag that you have with you. You get your groceries packed. \nWhat do you do?",
+    "background": "background_3",
+    "person": "null",
+    "face": "null",
+    "fore": "null",
+    "answers": [
+      "You leave the store walking calmly",
+      "You run fast out of the store"
+    ],
+    "You leave the store walking calmly": "null",
+    "You run fast out of the store": "tormaaminen",
+    "You leave the store walking calmlyColor": "green",
+    "You run fast out of the storeColor": "red"
+  },
+  "keskustelu_maksun_jalkeen": {
+    "question": "The queue behind you seems angry and the cashier looks uncomfortable.\nWhat do you do?",
+    "background": "background_3",
+    "person": "character_3",
+    "face": "face_uncomfortable",
+    "fore": "fore_3",
+    "answers": [
+      "You keep chatting with the cashier",
+      "You go to pack your groceries"
+    ],
+    "You keep chatting with the cashier": "myyja_pyytaa_pakkaamaan",
+    "You go to pack your groceries": "pakkaaminen",
+    "You keep chatting with the cashierColor": "red",
+    "You go to pack your groceriesColor": "green"
+  },
+  "odotus_kassalla": {
+    "question": "The cashier asks: \"Is everything alright?\"\nWhat do you do?",
+    "background": "background_3",
+    "person": "character_3",
+    "face": "face_surprised",
+    "fore": "fore_3",
+    "answers": [
+      "You say that everything is alright and go to pack up your groceries",
+      "You ask: \"What am I supposed to do next?\"",
+      "You look at the cashier for a long time silently and go to pack up your groceries"
+    ],
+    "You say that everything is alright and go to pack up your groceries": "pakkaaminen",
+    "You ask: \"What am I supposed to do next?\"": "myyja_neuvoo_pakkaamaan",
+    "You look at the cashier for a long time silently and go to pack up your groceries": "pakkaaminen",
+    "You say that everything is alright and go to pack up your groceriesColor": "green",
+    "You ask: \"What am I supposed to do next?\"Color": "green",
+    "You look at the cashier for a long time silently and go to pack up your groceriesColor": "yellow"
+  },
+  "varastaminen": {
+    "question": "You run away as fast as you can, but the guard catches you. \nWhat do you do?",
+    "background": "background_3",
+    "person": "character_1",
+    "face": "face_confused",
+    "fore": "null",
+    "answers": [
+      "You kick and rage",
+      "You give back your groceries and apologize for what happened"
+    ],
+    "You kick and rage": "vartija_soittaa_poliisin",
+    "You give back your groceries and apologize for what happened": "vartija_tekee_ilmoituksen",
+    "You kick and rageColor": "red",
+    "You give back your groceries and apologize for what happenedColor": "green"
+  },
+  "tormaaminen": {
+    "question": "When you run fast to exit the store, you run into another person.\nWhat do you do?",
+    "background": "background_3",
+    "person": "character_6",
+    "face": "face_sad",
+    "fore": "null",
+    "answers": [
+      "You apologize and walk the rest of the way calmly",
+      "You keep running and exit the store"
+    ],
+    "You apologize and walk the rest of the way calmly": "null",
+    "You keep running and exit the store": "null",
+    "You apologize and walk the rest of the way calmlyColor": "green",
+    "You keep running and exit the storeColor": "red"
+  },
+  "myyja_pyytaa_pakkaamaan": {
+    "question": "The cashier asks you to go packing, because there is a queue of people behind you.\nWhat do you do?",
+    "background": "background_3",
+    "person": "character_3",
+    "face": "face_confused",
+    "fore": "fore_3",
+    "answers": [
+      "You apologize and go to pack up your groceries",
+      "You look at the cashier angrily and go to pack up your groceries",
+      "You get angry at the cashier because he doesn't want to talk with you and start yelling"
+    ],
+    "You apologize and go to pack up your groceries": "pakkaaminen",
+    "You look at the cashier angrily and go to pack up your groceries": "pakkaaminen",
+    "You get angry at the cashier because he doesn't want to talk with you and start yelling": "vartijan_kutsuminen",
+    "You apologize and go to pack up your groceriesColor": "green",
+    "You look at the cashier angrily and go to pack up your groceriesColor": "yellow",
+    "You get angry at the cashier because he doesn't want to talk with you and start yellingColor": "red"
+  },
+  "myyja_neuvoo_pakkaamaan": {
+    "question": "The cashier says: \"Your groceries are now paid for, so you can go to pack up your groceries.\"\nWhat do you do?",
+    "background": "background_3",
+    "person": "character_3",
+    "face": "face_happy",
+    "fore": "fore_3",
+    "answers": [
+      "You go to pack up your groceries",
+      "You are too afraid to pack up your groceries so you leave the store"
+    ],
+    "You go to pack up your groceries": "pakkaaminen",
+    "You are too afraid to pack up your groceries so you leave the store": "null",
+    "You go to pack up your groceriesColor": "green",
+    "You are too afraid to pack up your groceries so you leave the storeColor": "red"
+  },
+  "vartija_soittaa_poliisin": {
+    "question": "The guard holds you firmly and calls the police.\nWhat do you think?",
+    "background": "background_3",
+    "person": "character_1",
+    "face": "face_confused",
+    "fore": "null",
+    "answers": [
+      "I made a huge mistake",
+      "If I had been a little faster, I would have escaped",
+      "I will never go to the grocery store again"
+    ],
+    "I made a huge mistake": "null",
+    "If I had been a little faster, I would have escaped": "null",
+    "I will never go to the grocery store again": "null",
+    "I made a huge mistakeColor": "green",
+    "If I had been a little faster, I would have escapedColor": "red",
+    "I will never go to the grocery store againColor": "red"
+  },
+  "vartija_tekee_ilmoituksen": {
+    "question": "The guard says that this will be reported as a crime.\nWhat do you do?",
+    "background": "background_3",
+    "person": "character_1",
+    "face": "face_confused",
+    "fore": "null",
+    "answers": [
+      "You get immensely angry because of what the guard said and start raging",
+      "You realize that you have made some really bad decisions",
+      "You think that you will run faster next time"
+    ],
+    "You get immensely angry because of what the guard said and start raging": "vartija_soittaa_poliisin",
+    "You realize that you have made some really bad decisions": "null",
+    "You think that you will run faster next time": "null",
+    "You get immensely angry because of what the guard said and start ragingColor": "red",
+    "You realize that you have made some really bad decisionsColor": "green",
+    "You think that you will run faster next timeColor": "red"
+  }
+}

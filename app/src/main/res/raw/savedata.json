@@ -18,7 +18,7 @@
     "Doing laundry",
     "Emptying trash bins",
     "Ruokakauppaan lähteminen",
-    "Ruokakaupassa asioiminen",
+    "Behaving at grocery store",
     "Returning from grocery store",
     "Meeting an acquaintance",
     "Sorting the clothes",
@@ -45,7 +45,7 @@
     {"name":  "Traveling by bus", "file":  "bussimatka.json", "category": "Traveling"},
     {"name":  "Traveling by tram", "file": "ratikka.json", "category": "Traveling"},
     {"name": "Ruokakauppaan lähteminen", "file": "ruokakauppaan_lahteminen.json", "category": "Visiting a store"},
-    {"name": "Ruokakaupassa asioiminen", "file": "ruokakaupassa_asioiminen.json", "category": "Visiting a store"},
+    {"name": "Behaving at grocery store", "file": "ruokakaupassa_asioiminen.json", "category": "Visiting a store"},
     {"name": "Returning from grocery store", "file": "ruokakaupasta_palaaminen.json", "category": "Visiting a store"}
   ]
 }

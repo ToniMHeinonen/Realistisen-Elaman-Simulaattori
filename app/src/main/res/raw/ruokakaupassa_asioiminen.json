@@ -1,545 +1,545 @@
 {
   "first": {
-    "question": "Saavut kaupan sisäänkäynnille. Mitä teet?",
+    "question": "You arrive at the store entrance. What do you do?",
     "background": "background_12",
     "person": "null",
     "face": "null",
     "fore": "fore_8",
     "answers": [
-      "Menet ovesta sisään",
-      "Huomaat, että ostoslista unohtui kotiin, joten lähdet hakemaan sen ja menet sitten ovesta sisään",
-      "Et uskallakaan käydä kaupassa, joten lähdet pois"
+      "You go in through the door",
+      "You notice, that you forgot the shopping list at home, so you go to get it and then go through the door",
+      "You are afraid to go to store, so you leave"
     ],
-    "Menet ovesta sisään": "kauppaan sisälle",
-    "Huomaat, että ostoslista unohtui kotiin, joten lähdet hakemaan sen ja menet sitten ovesta sisään": "kauppaan sisälle",
-    "Et uskallakaan käydä kaupassa, joten lähdet pois": "null",
-    "Menet ovesta sisäänColor": "green",
-    "Huomaat, että ostoslista unohtui kotiin, joten lähdet hakemaan sen ja menet sitten ovesta sisäänColor": "green",
-    "Et uskallakaan käydä kaupassa, joten lähdet poisColor": "red"
+    "You go in through the door": "kauppaan sisälle",
+    "You notice, that you forgot the shopping list at home, so you go to get it and then go through the door": "kauppaan sisälle",
+    "You are afraid to go to store, so you leave": "null",
+    "You go in through the doorColor": "green",
+    "You notice, that you forgot the shopping list at home, so you go to get it and then go through the doorColor": "green",
+    "You are afraid to go to store, so you leaveColor": "red"
   },
   "kauppaan sisälle": {
-    "question": "Astut sisään kauppaan. Näet kassan, pelikoneita, ostoskärryjä, sisäänkäyntiportin ja myymäläkoreja portin toisella puolella.",
+    "question": "You enter the store. You see the checkout, slot machines, shopping carts, entrance gate and shopping baskets on the other side of the gate.",
     "background": "background_3",
     "person": "null",
     "face": "null",
     "fore": "fore_3",
     "answers": [
-      "Kävelet sisään kauppaan kassan kautta ja otat myymäläkorin mukaasi",
-      "Menet sisään portista ja otat telineestä myymäläkorin mukaasi",
-      "Sinulla on iso ostoslista, joten otat sisäänkäyntiportin vierestä kärryn asettamalla siihen kolikon ja menet portista sisään",
-      "Menet pelaamaan pelikoneilla",
-      "Sinulla on niin pieni ostoslista, ettet ota koria etkä kärryä, vaan menet vain portista sisään"
+      "You walk into the store through the checkout and take the shopping basket with you",
+      "You go in through the gate and take the shopping basket with you from the rack",
+      "You have a huge shopping list, so you take a cart next to the entrance gate by placing a coin in it and go in through the gate",
+      "You go to play on slot machines",
+      "You have such a small shopping list that you don’t take a basket or a cart, you just go in through the gate"
     ],
-    "Kävelet sisään kauppaan kassan kautta ja otat myymäläkorin mukaasi": "ostospuolella",
-    "Menet sisään portista ja otat telineestä myymäläkorin mukaasi": "ostospuolella",
-    "Sinulla on iso ostoslista, joten otat sisäänkäyntiportin vierestä kärryn asettamalla siihen kolikon ja menet portista sisään": "ostospuolella",
-    "Menet pelaamaan pelikoneilla": "pelikoneet 1",
-    "Sinulla on niin pieni ostoslista, ettet ota koria etkä kärryä, vaan menet vain portista sisään": "ostospuolella",
-    "Kävelet sisään kauppaan kassan kautta ja otat myymäläkorin mukaasiColor": "red",
-    "Menet sisään portista ja otat telineestä myymäläkorin mukaasiColor": "green",
-    "Sinulla on iso ostoslista, joten otat sisäänkäyntiportin vierestä kärryn asettamalla siihen kolikon ja menet portista sisäänColor": "green",
-    "Menet pelaamaan pelikoneillaColor": "yellow",
-    "Sinulla on niin pieni ostoslista, ettet ota koria etkä kärryä, vaan menet vain portista sisäänColor": "green"
+    "You walk into the store through the checkout and take the shopping basket with you": "ostospuolella",
+    "You go in through the gate and take the shopping basket with you from the rack": "ostospuolella",
+    "You have a huge shopping list, so you take a cart next to the entrance gate by placing a coin in it and go in through the gate": "ostospuolella",
+    "You go to play on slot machines": "pelikoneet 1",
+    "You have such a small shopping list that you don’t take a basket or a cart, you just go in through the gate": "ostospuolella",
+    "You walk into the store through the checkout and take the shopping basket with youColor": "red",
+    "You go in through the gate and take the shopping basket with you from the rackColor": "green",
+    "You have a huge shopping list, so you take a cart next to the entrance gate by placing a coin in it and go in through the gateColor": "green",
+    "You go to play on slot machinesColor": "yellow",
+    "You have such a small shopping list that you don’t take a basket or a cart, you just go in through the gateColor": "green"
   },
   "ostospuolella": {
-    "question": "Kiertelet eri osastoja etsien ostoslistallasi olevia tuotteita. Aina kun löydät oikean tuotteen, laitat sen koriisi \/ kärryysi. Et kuitenkaan löydä yhtä haluamaasi tuotetta, vaikka etsit sitä pitkään.",
+    "question": "You tour different departments looking for products on your shopping list. Whenever you find the right product, you put it in your basket \/ cart. However, you can not find one of the products you want, even though you have searched for it for a long time.",
     "background": "background_3",
     "person": "null",
     "face": "null",
     "fore": "fore_14",
     "answers": [
-      "Lopetat tuotteen etsinnän kokonaan",
-      "Etsit myyjän ja kysyt häneltä, missä haluamasi tuote sijaitsee",
-      "Otat jonkun vastaavan tuotteen haluamasi tilalle",
-      "Palautat kaikki poimimasi tuotteet paikoilleen ja poistut kaupasta"
+      "You stop searching for the product completely",
+      "You look for a shop assistant and ask him where the product you want is located",
+      "You replace the product with something similar as the one you want",
+      "You return all the products you have picked up and leave the store"
     ],
-    "Lopetat tuotteen etsinnän kokonaan": "ostokset valittu",
-    "Etsit myyjän ja kysyt häneltä, missä haluamasi tuote sijaitsee": "myyjä auttaa etsimään",
-    "Otat jonkun vastaavan tuotteen haluamasi tilalle": "ostokset valittu",
-    "Palautat kaikki poimimasi tuotteet paikoilleen ja poistut kaupasta": "null",
-    "Lopetat tuotteen etsinnän kokonaanColor": "yellow",
-    "Etsit myyjän ja kysyt häneltä, missä haluamasi tuote sijaitseeColor": "green",
-    "Otat jonkun vastaavan tuotteen haluamasi tilalleColor": "green",
-    "Palautat kaikki poimimasi tuotteet paikoilleen ja poistut kaupastaColor": "red"
+    "You stop searching for the product completely": "ostokset valittu",
+    "You look for a shop assistant and ask him where the product you want is located": "myyjä auttaa etsimään",
+    "You replace the product with something similar as the one you want": "ostokset valittu",
+    "You return all the products you have picked up and leave the store": "null",
+    "You stop searching for the product completelyColor": "yellow",
+    "You look for a shop assistant and ask him where the product you want is locatedColor": "green",
+    "You replace the product with something similar as the one you wantColor": "green",
+    "You return all the products you have picked up and leave the storeColor": "red"
   },
   "myyjä auttaa etsimään": {
-    "question": "Myyjä kertoo, mistä haluamasi tuote löytyy.",
+    "question": "The shop assistant tells you where to find the product you want.",
     "background": "background_3",
     "person": "character_2",
     "face": "face_happy",
     "fore": "null",
     "answers": [
-      "Noudat tuotteen",
-      "Kiität myyjää ja noudat sitten tuotteen",
-      "Käsket myyjää noutamaan tuotteen puolestasi",
-      "Pyydät myyjää tulemaan mukaan, jotta varmasti löydät tuotteen, ja kiität häntä lopuksi"
+      "You go pick up the product",
+      "You thank the shop assistant and then go pick up the product",
+      "You command the shop assistant to pick up the product for you",
+      "You ask the shop assistant to come along to make sure you find the product, and you thank him after that"
     ],
-    "Noudat tuotteen": "ostokset valittu",
-    "Kiität myyjää ja noudat sitten tuotteen": "ostokset valittu",
-    "Käsket myyjää noutamaan tuotteen puolestasi": "ostokset valittu",
-    "Pyydät myyjää tulemaan mukaan, jotta varmasti löydät tuotteen, ja kiität häntä lopuksi": "ostokset valittu",
-    "Noudat tuotteenColor": "yellow",
-    "Kiität myyjää ja noudat sitten tuotteenColor": "green",
-    "Käsket myyjää noutamaan tuotteen puolestasiColor": "red",
-    "Pyydät myyjää tulemaan mukaan, jotta varmasti löydät tuotteen, ja kiität häntä lopuksiColor": "green"
+    "You go pick up the product": "ostokset valittu",
+    "You thank the shop assistant and then go pick up the product": "ostokset valittu",
+    "You command the shop assistant to pick up the product for you": "ostokset valittu",
+    "You ask the shop assistant to come along to make sure you find the product, and you thank him after that": "ostokset valittu",
+    "You go pick up the productColor": "yellow",
+    "You thank the shop assistant and then go pick up the productColor": "green",
+    "You command the shop assistant to pick up the product for youColor": "red",
+    "You ask the shop assistant to come along to make sure you find the product, and you thank him after thatColor": "green"
   },
   "ostokset valittu": {
-    "question": "Olet nyt käynyt läpi koko ostoslistasi. Mitä teet seuraavaksi?",
+    "question": "You have now gone through your entire shopping list. What do you do next?",
     "background": "background_3",
     "person": "null",
     "face": "null",
     "fore": "fore_14",
     "answers": [
-      "Poistut kaupasta sisäänkäyntiportin kautta ostostesi kanssa",
-      "Siirryt kassalle ostostesi kanssa",
-      "Laitat ostokset laukkuusi ja kävelet kassan ohi pois"
+      "You exit the store through the entrance gate with your groceries",
+      "You go to checkout with your groceries",
+      "You put your groceries in your bag and walk past the checkout"
     ],
-    "Poistut kaupasta sisäänkäyntiportin kautta ostostesi kanssa": "portti poistuminen",
-    "Siirryt kassalle ostostesi kanssa": "kassalle saapuminen",
-    "Laitat ostokset laukkuusi ja kävelet kassan ohi pois": "kassa poistuminen",
-    "Poistut kaupasta sisäänkäyntiportin kautta ostostesi kanssaColor": "red",
-    "Siirryt kassalle ostostesi kanssaColor": "green",
-    "Laitat ostokset laukkuusi ja kävelet kassan ohi poisColor": "red"
+    "You exit the store through the entrance gate with your groceries": "portti poistuminen",
+    "You go to checkout with your groceries": "kassalle saapuminen",
+    "You put your groceries in your bag and walk past the checkout": "kassa poistuminen",
+    "You exit the store through the entrance gate with your groceriesColor": "red",
+    "You go to checkout with your groceriesColor": "green",
+    "You put your groceries in your bag and walk past the checkoutColor": "red"
   },
   "pelikoneet 1": {
-    "question": "Pelaat muutaman kolikon pelikoneisiin. Häviät kaikki pelaamasi kolikot. Mitä teet?",
+    "question": "You play a few coins on slot machines. You lose all the coins you play. What do you do?",
     "background": "background_3",
     "person": "null",
     "face": "null",
     "fore": "null",
     "answers": [
-      "Yrität saada rahat tippumaan luukusta potkimalla pelikonetta",
-      "Jatkat pelaamista isommilla panoksilla",
-      "Siirryt portista sisään ostostentekopuolelle ja otat korin mukaasi",
-      "Otat itsellesi kärryn asettamalla siihen kolikon ja siirryt portista sisään",
-      "Siirryt portista sisään"
+      "You try to make money drop out of the slot machine by kicking it",
+      "You continue playing with bigger bets",
+      "You go in through the gate to the shopping side and take a shopping basket with you",
+      "You take a cart for yourself by placing a coin in it and you walk in through the gate",
+      "You go in through the gate"
     ],
-    "Yrität saada rahat tippumaan luukusta potkimalla pelikonetta": "pelikoneet vartija",
-    "Jatkat pelaamista isommilla panoksilla": "pelikoneet 2",
-    "Siirryt portista sisään ostostentekopuolelle ja otat korin mukaasi": "ostospuolella",
-    "Otat itsellesi kärryn asettamalla siihen kolikon ja siirryt portista sisään": "ostospuolella",
-    "Siirryt portista sisään": "ostospuolella",
-    "Yrität saada rahat tippumaan luukusta potkimalla pelikonettaColor": "red",
-    "Jatkat pelaamista isommilla panoksillaColor": "yellow",
-    "Siirryt portista sisään ostostentekopuolelle ja otat korin mukaasiColor": "green",
-    "Otat itsellesi kärryn asettamalla siihen kolikon ja siirryt portista sisäänColor": "green",
-    "Siirryt portista sisäänColor": "green"
+    "You try to make money drop out of the slot machine by kicking it": "pelikoneet vartija",
+    "You continue playing with bigger bets": "pelikoneet 2",
+    "You go in through the gate to the shopping side and take a shopping basket with you": "ostospuolella",
+    "You take a cart for yourself by placing a coin in it and you walk in through the gate": "ostospuolella",
+    "You go in through the gate": "ostospuolella",
+    "You try to make money drop out of the slot machine by kicking itColor": "red",
+    "You continue playing with bigger betsColor": "yellow",
+    "You go in through the gate to the shopping side and take a shopping basket with youColor": "green",
+    "You take a cart for yourself by placing a coin in it and you walk in through the gateColor": "green",
+    "You go in through the gateColor": "green"
   },
   "pelikoneet 2": {
-    "question": "Laitat kaikki rahasi pelikoneeseen. Häviät jälleen kerran kaiken. Mitä teet?",
+    "question": "You put all of your money into the slot machine. You lose everything once again. What do you do?",
     "background": "background_3",
     "person": "null",
     "face": "null",
     "fore": "null",
     "answers": [
-      "Poistut kaupasta, etkä enää tänään jaksa mennä uudestaan ostoksille",
-      "Yrität saada rahat tippumaan luukusta potkimalla pelikonetta",
-      "Lähdet hakemaan kotoa lisää rahaa ja palaat takaisin kauppaan käyttääksesi rahat tällä kertaa ostoksiin"
+      "You leave the store, and you don't have enough strength to go back to the store today",
+      "You try to make money drop out of the slot machine by kicking it",
+      "You go to pick up more money from home and go back to the store to spend the money this time on shopping"
     ],
-    "Poistut kaupasta, etkä enää tänään jaksa mennä uudestaan ostoksille": "null",
-    "Yrität saada rahat tippumaan luukusta potkimalla pelikonetta": "pelikoneet vartija",
-    "Lähdet hakemaan kotoa lisää rahaa ja palaat takaisin kauppaan käyttääksesi rahat tällä kertaa ostoksiin": "kauppaan sisälle",
-    "Poistut kaupasta, etkä enää tänään jaksa mennä uudestaan ostoksilleColor": "yellow",
-    "Yrität saada rahat tippumaan luukusta potkimalla pelikonettaColor": "red",
-    "Lähdet hakemaan kotoa lisää rahaa ja palaat takaisin kauppaan käyttääksesi rahat tällä kertaa ostoksiinColor": "green"
+    "You leave the store, and you don't have enough strength to go back to the store today": "null",
+    "You try to make money drop out of the slot machine by kicking it": "pelikoneet vartija",
+    "You go to pick up more money from home and go back to the store to spend the money this time on shopping": "kauppaan sisälle",
+    "You leave the store, and you don't have enough strength to go back to the store todayColor": "yellow",
+    "You try to make money drop out of the slot machine by kicking itColor": "red",
+    "You go to pick up more money from home and go back to the store to spend the money this time on shoppingColor": "green"
   },
   "pelikoneet vartija": {
-    "question": "Vartija tulee paikalle ja käskee sinua lopettamaan välittömästi.",
+    "question": "The guard arrives and tells you to stop immediately.",
     "background": "background_3",
     "person": "character_1",
     "face": "face_confused",
     "fore": "null",
     "answers": [
-      "Jatkat potkimista, jolloin pelikoneeseen tulee vaurio",
-      "Pahoittelet ja poistut kaupasta"
+      "You continue kicking, causing damage to the slot machine",
+      "You apologize and leave the store"
     ],
-    "Jatkat potkimista, jolloin pelikoneeseen tulee vaurio": "vartija_soittaa_poliisin",
-    "Pahoittelet ja poistut kaupasta": "null",
-    "Jatkat potkimista, jolloin pelikoneeseen tulee vaurioColor": "red",
-    "Pahoittelet ja poistut kaupastaColor": "green"
+    "You continue kicking, causing damage to the slot machine": "vartija_soittaa_poliisin",
+    "You apologize and leave the store": "null",
+    "You continue kicking, causing damage to the slot machineColor": "red",
+    "You apologize and leave the storeColor": "green"
   },
   "portti poistuminen": {
-    "question": "Vartija tulee äkkiä paikalle. Hän neuvoo, että ostokset pitää ensin maksaa kassalla, ennen kuin vie ne pois kaupasta. Hän myös sanoo, ettei sisäänkäyntiportin kautta saa poistua.",
+    "question": "The guard quickly arrives. He advises that groceries must first be paid for at checkout before taking them out of the store. He also says you are not allowed to leave through the entrance gate.",
     "background": "background_3",
     "person": "character_1",
     "face": "face_surprised",
     "fore": "null",
     "answers": [
-      "Juokset ostostesi kanssa pakoon",
-      "Pahoittelet, palaat takaisin kaupan puolelle ja menet kassalle"
+      "You run away with your groceries",
+      "You apologize, you return to the shopping side and go to the checkout"
     ],
-    "Juokset ostostesi kanssa pakoon": "vartija_soittaa_poliisin",
-    "Pahoittelet, palaat takaisin kaupan puolelle ja menet kassalle": "kassalle saapuminen",
-    "Juokset ostostesi kanssa pakoonColor": "red",
-    "Pahoittelet, palaat takaisin kaupan puolelle ja menet kassalleColor": "green"
+    "You run away with your groceries": "vartija_soittaa_poliisin",
+    "You apologize, you return to the shopping side and go to the checkout": "kassalle saapuminen",
+    "You run away with your groceriesColor": "red",
+    "You apologize, you return to the shopping side and go to the checkoutColor": "green"
   },
   "kassa poistuminen": {
-    "question": "Vartija tulee äkkiä paikalle. Hän neuvoo, että ostokset pitää ensin maksaa kassalla, ennen kuin vie ne pois kaupasta.",
+    "question": "The guard quickly arrives. He advises that groceries must first be paid for at checkout before taking them out of the store.",
     "background": "background_3",
     "person": "character_1",
     "face": "face_surprised",
     "fore": "null",
     "answers": [
-      "Juokset ostostesi kanssa pakoon",
-      "Pahoittelet, palaat takaisin kaupan puolelle ja menet kassalle"
+      "You run away with your groceries",
+      "You apologize, you return to the shopping side and go to the checkout"
     ],
-    "Juokset ostostesi kanssa pakoon": "vartija_soittaa_poliisin",
-    "Pahoittelet, palaat takaisin kaupan puolelle ja menet kassalle": "kassalle saapuminen",
-    "Juokset ostostesi kanssa pakoonColor": "red",
-    "Pahoittelet, palaat takaisin kaupan puolelle ja menet kassalleColor": "green"
+    "You run away with your groceries": "vartija_soittaa_poliisin",
+    "You apologize, you return to the shopping side and go to the checkout": "kassalle saapuminen",
+    "You run away with your groceriesColor": "red",
+    "You apologize, you return to the shopping side and go to the checkoutColor": "green"
   },
   "kassalle saapuminen": {
-    "question": "Saavut kassalle. Edelläsi ei ole jonoa. Kassahenkilö tervehtii sinua. Mitä teet?",
+    "question": "You reach the checkout. There is no queue in front of you. Your shopping cart is half full. The cashier greets you.\nWhat do you do?",
     "background": "background_3",
     "person": "character_3",
     "face": "face_happy",
     "fore": "fore_3",
     "answers": [
-      "Tervehdit takaisin ja laitat ostoksesi hihnalle",
-      "Et sano mitään ja jäät seisomaan paikallesi",
-      "Laitat ostoksesi hihnalle"
+      "You greet back and put your groceries on the conveyor belt",
+      "You say nothing and stand still",
+      "You put your groceries on the conveyor belt"
     ],
-    "Tervehdit takaisin ja laitat ostoksesi hihnalle": "ostokset_hihnalla",
-    "Et sano mitään ja jäät seisomaan paikallesi": "odotus_jonossa",
-    "Laitat ostoksesi hihnalle": "ostokset_hihnalla",
-    "Tervehdit takaisin ja laitat ostoksesi hihnalleColor": "green",
-    "Et sano mitään ja jäät seisomaan paikallesiColor": "red",
-    "Laitat ostoksesi hihnalleColor": "yellow"
+    "You greet back and put your groceries on the conveyor belt": "ostokset_hihnalla",
+    "You say nothing and stand still": "odotus_jonossa",
+    "You put your groceries on the conveyor belt": "ostokset_hihnalla",
+    "You greet back and put your groceries on the conveyor beltColor": "green",
+    "You say nothing and stand stillColor": "red",
+    "You put your groceries on the conveyor beltColor": "yellow"
   },
   "ostokset_hihnalla": {
-    "question": "Myyjä ryhtyy skannaamaan tuotteita. Jos sinulla on kori mukanasi, laitat sen kassan viereen muiden korien sisään.\nMitä teet seuraavaksi?",
+    "question": "The cashier starts scanning the groceries. If you have a basket with you, you put it next to the checkout inside the other baskets.\nWhat do you do?",
     "background": "background_3",
     "person": "character_3",
     "face": "face_happy",
     "fore": "fore_3",
     "answers": [
-      "Menet pakkaamaan tuotteita",
-      "Odotat, että kaikki tuotteet on skannattu, sillä sinulla on vain vähän ostoksia",
-      "Alat jutella myyjälle",
-      "Otat maksullisen muovipussin kassan alta, laitat sen hihnalle ja odotat, että myyjä saa skannattua kaikki tuotteet"
+      "You go to pack the groceries",
+      "You wait that all the groceries are scanned, since you only have a small amount of groceries",
+      "You start chatting with the cashier",
+      "You take a chargeable plastic bag under the checkout, put it on the conveyor belt and wait for the cashier to scan all the products"
     ],
-    "Menet pakkaamaan tuotteita": "ostosten_hinta",
-    "Odotat, että kaikki tuotteet on skannattu, sillä sinulla on vain vähän ostoksia": "ostosten_hinta",
-    "Alat jutella myyjälle": "juttelu_myyjalle",
-    "Otat maksullisen muovipussin kassan alta, laitat sen hihnalle ja odotat, että myyjä saa skannattua kaikki tuotteet": "ostosten_hinta",
-    "Menet pakkaamaan tuotteitaColor": "green",
-    "Odotat, että kaikki tuotteet on skannattu, sillä sinulla on vain vähän ostoksiaColor": "green",
-    "Alat jutella myyjälleColor": "green",
-    "Otat maksullisen muovipussin kassan alta, laitat sen hihnalle ja odotat, että myyjä saa skannattua kaikki tuotteetColor": "green"
+    "You go to pack the groceries": "ostosten_hinta",
+    "You wait that all the groceries are scanned, since you only have a small amount of groceries": "ostosten_hinta",
+    "You start chatting with the cashier": "juttelu_myyjalle",
+    "You take a chargeable plastic bag under the checkout, put it on the conveyor belt and wait for the cashier to scan all the products": "ostosten_hinta",
+    "You go to pack the groceriesColor": "green",
+    "You wait that all the groceries are scanned, since you only have a small amount of groceriesColor": "green",
+    "You start chatting with the cashierColor": "green",
+    "You take a chargeable plastic bag under the checkout, put it on the conveyor belt and wait for the cashier to scan all the productsColor": "green"
   },
   "odotus_jonossa": {
-    "question": "Myyjä kysyy: \"Voinko auttaa jotenkin?\" \nMitä teet?",
+    "question": "The cashier asks: \"Can I help you?\"\nWhat do you do?",
     "background": "background_3",
     "person": "character_3",
     "face": "face_surprised",
     "fore": "fore_3",
     "answers": [
-      "Lähdet karkuun",
-      "Kysyt: \"Mitä minun kuuluisi tehdä?\"",
-      "Päästät takana olevan henkilön edellesi"
+      "You run away",
+      "You ask: \"What am I supposed to do?\"",
+      "You let the person behind you go first"
     ],
-    "Lähdet karkuun": "null",
-    "Kysyt: \"Mitä minun kuuluisi tehdä?\"": "myyja_neuvoo",
-    "Päästät takana olevan henkilön edellesi": "asiakas_edessa",
-    "Lähdet karkuunColor": "red",
-    "Kysyt: \"Mitä minun kuuluisi tehdä?\"Color": "green",
-    "Päästät takana olevan henkilön edellesiColor": "yellow"
+    "You run away": "null",
+    "You ask: \"What am I supposed to do?\"": "myyja_neuvoo",
+    "You let the person behind you go first": "asiakas_edessa",
+    "You run awayColor": "red",
+    "You ask: \"What am I supposed to do?\"Color": "green",
+    "You let the person behind you go firstColor": "yellow"
   },
   "ostosten_hinta": {
-    "question": "Myyjä saa kaikki tuotteet skannattua. Sitten hän kertoo tuotteiden kokonaishinnan. Mitä teet?",
+    "question": "The cashier finishes scanning the groceries. Then he tells the total price of the groceries. \nWhat do you do?",
     "background": "background_3",
     "person": "character_3",
     "face": "face_happy",
     "fore": "fore_3",
     "answers": [
-      "Maksat myyjälle tuotteiden hinnan käteisellä",
-      "Maksat myyjälle tuotteiden hinnan kortilla",
-      "Ryhdyt tinkimään hintaa halvemmaksi"
+      "You pay the cashier the price of the groceries in cash",
+      "You pay the cashier the price of the groceries with a debit card",
+      "You start to bargain for a cheaper price"
     ],
-    "Maksat myyjälle tuotteiden hinnan käteisellä": "maksu_kateisella",
-    "Maksat myyjälle tuotteiden hinnan kortilla": "maksu_kortilla",
-    "Ryhdyt tinkimään hintaa halvemmaksi": "hinnan_tinkiminen",
-    "Maksat myyjälle tuotteiden hinnan käteiselläColor": "green",
-    "Maksat myyjälle tuotteiden hinnan kortillaColor": "green",
-    "Ryhdyt tinkimään hintaa halvemmaksiColor": "red"
+    "You pay the cashier the price of the groceries in cash": "maksu_kateisella",
+    "You pay the cashier the price of the groceries with a debit card": "maksu_kortilla",
+    "You start to bargain for a cheaper price": "hinnan_tinkiminen",
+    "You pay the cashier the price of the groceries in cashColor": "green",
+    "You pay the cashier the price of the groceries with a debit cardColor": "green",
+    "You start to bargain for a cheaper priceColor": "red"
   },
   "juttelu_myyjalle": {
-    "question": "Myyjä hymyilee ja keskustelee kanssasi. \nMitä teet?",
+    "question": "The cashier smiles and talks with you. \nWhat do you do?",
     "background": "background_3",
     "person": "character_3",
     "face": "face_happy",
     "fore": "fore_3",
     "answers": [
-      "Odotat, että myyjä saa tuotteet skannattua",
-      "Suutut myyjän puheista ja alat huutaa",
-      "Hymyilet takaisin ja keskustelet niin pitkään, että myyjä saa tuotteet skannattua"
+      "You wait that the cashier gets all the groceries scanned",
+      "You get angry at the cashier and start yelling",
+      "You smile back and talk until the cashier gets all the groceries scanned"
     ],
-    "Odotat, että myyjä saa tuotteet skannattua": "ostosten_hinta",
-    "Suutut myyjän puheista ja alat huutaa": "vartijan_kutsuminen",
-    "Hymyilet takaisin ja keskustelet niin pitkään, että myyjä saa tuotteet skannattua": "ostosten_hinta",
-    "Odotat, että myyjä saa tuotteet skannattuaColor": "green",
-    "Suutut myyjän puheista ja alat huutaaColor": "red",
-    "Hymyilet takaisin ja keskustelet niin pitkään, että myyjä saa tuotteet skannattuaColor": "green"
+    "You wait that the cashier gets all the groceries scanned": "ostosten_hinta",
+    "You get angry at the cashier and start yelling": "vartijan_kutsuminen",
+    "You smile back and talk until the cashier gets all the groceries scanned": "ostosten_hinta",
+    "You wait that the cashier gets all the groceries scannedColor": "green",
+    "You get angry at the cashier and start yellingColor": "red",
+    "You smile back and talk until the cashier gets all the groceries scannedColor": "green"
   },
   "myyja_neuvoo": {
-    "question": "Myyjä sanoo: \"Laita ostoksesi hihnalle, niin skannaan ne ja voit maksaa ostoksesi.\" Mitä teet?",
+    "question": "The cashier says: \"Put the groceries from your basket to the conveyor belt so I can scan them. Then you can pay for your groceries.\"\nWhat do you do?",
     "background": "background_3",
     "person": "character_3",
     "face": "face_happy",
     "fore": "fore_3",
     "answers": [
-      "Lähdet karkuun ilman ostoksiasi",
-      "Laitat ostoksesi hihnalle"
+      "You run away without your groceries",
+      "You put your groceries on the conveyour belt"
     ],
-    "Lähdet karkuun ilman ostoksiasi": "null",
-    "Laitat ostoksesi hihnalle": "ostokset_hihnalla",
-    "Lähdet karkuun ilman ostoksiasiColor": "red",
-    "Laitat ostoksesi hihnalleColor": "green"
+    "You run away without your groceries": "null",
+    "You put your groceries on the conveyour belt": "ostokset_hihnalla",
+    "You run away without your groceriesColor": "red",
+    "You put your groceries on the conveyour beltColor": "green"
   },
   "asiakas_edessa": {
-    "question": "Katsot, miten edelläsi oleva asiakas käyttäytyy kassalla. Mitä teet?",
+    "question": "You look at how the customer in front of you is behaving at the checkout.\nWhat do you do?",
     "background": "background_3",
     "person": "character_3",
     "face": "face_happy",
     "fore": "fore_3",
     "answers": [
-      "Odotat, että toinen asiakas on valmis ja laitat sitten ostoksesi hihnalle",
-      "Suutut, kun toinen asiakas ei maksanut sinunkin ostoksiasi ja huudat hänelle",
-      "Et uskalla ottaa asiakkaasta mallia vaan lähdet pois kaupasta"
+      "You wait until the other customer is ready and then put your groceries on the conveyor belt",
+      "You get angry because the customer did not pay for your groceries too and start yelling at him",
+      "You are afraid to follow the customer's behaviour so you leave the store"
     ],
-    "Odotat, että toinen asiakas on valmis ja laitat sitten ostoksesi hihnalle": "ostokset_hihnalla",
-    "Suutut, kun toinen asiakas ei maksanut sinunkin ostoksiasi ja huudat hänelle": "vartijan_kutsuminen",
-    "Et uskalla ottaa asiakkaasta mallia vaan lähdet pois kaupasta": "null",
-    "Odotat, että toinen asiakas on valmis ja laitat sitten ostoksesi hihnalleColor": "green",
-    "Suutut, kun toinen asiakas ei maksanut sinunkin ostoksiasi ja huudat hänelleColor": "red",
-    "Et uskalla ottaa asiakkaasta mallia vaan lähdet pois kaupastaColor": "red"
+    "You wait until the other customer is ready and then put your groceries on the conveyor belt": "ostokset_hihnalla",
+    "You get angry because the customer did not pay for your groceries too and start yelling at him": "vartijan_kutsuminen",
+    "You are afraid to follow the customer's behaviour so you leave the store": "null",
+    "You wait until the other customer is ready and then put your groceries on the conveyor beltColor": "green",
+    "You get angry because the customer did not pay for your groceries too and start yelling at himColor": "red",
+    "You are afraid to follow the customer's behaviour so you leave the storeColor": "red"
   },
   "maksu_kateisella": {
-    "question": "Annat myyjälle tarvittavan rahasumman käteisellä. Myyjä kiittää ja toivottaa hyvää päivänjatkoa. Mitä teet?",
+    "question": "You give the cashier the required amount of money in cash. The cashier thanks you and wishes you a good day. \nWhat do you do?",
     "background": "background_3",
     "person": "character_3",
     "face": "face_happy",
     "fore": "fore_3",
     "answers": [
-      "Sanot: \"Kiitos samoin!\" ja menet pakkaamaan ostoksesi",
-      "Menet pakkaamaan ostoksesi",
-      "Jäät seisomaan paikoillesi",
-      "Alat keskustella myyjän kanssa"
+      "You say: \"Thank you!\" and go to pack up your groceries",
+      "You go to pack up your groceries",
+      "You stand still",
+      "You start chatting with the cashier"
     ],
-    "Sanot: \"Kiitos samoin!\" ja menet pakkaamaan ostoksesi": "pakkaaminen",
-    "Menet pakkaamaan ostoksesi": "pakkaaminen",
-    "Jäät seisomaan paikoillesi": "odotus_kassalla",
-    "Alat keskustella myyjän kanssa": "keskustelu_maksun_jalkeen",
-    "Sanot: \"Kiitos samoin!\" ja menet pakkaamaan ostoksesiColor": "green",
-    "Menet pakkaamaan ostoksesiColor": "yellow",
-    "Jäät seisomaan paikoillesiColor": "red",
-    "Alat keskustella myyjän kanssaColor": "red"
+    "You say: \"Thank you!\" and go to pack up your groceries": "pakkaaminen",
+    "You go to pack up your groceries": "pakkaaminen",
+    "You stand still": "odotus_kassalla",
+    "You start chatting with the cashier": "keskustelu_maksun_jalkeen",
+    "You say: \"Thank you!\" and go to pack up your groceriesColor": "green",
+    "You go to pack up your groceriesColor": "yellow",
+    "You stand stillColor": "red",
+    "You start chatting with the cashierColor": "red"
   },
   "maksu_kortilla": {
-    "question": "Laitat pankkikorttisi maksulaitteeseen ja näppäilet pin-koodisi. Odotat, että maksu on valmis ja otat korttisi pois. Myyjä kiittää ja toivottaa hyvää päivänjatkoa. Mitä teet?",
+    "question": "You put your debit card in the payment device and enter your pin code. You wait that the payment is ready and pull your card. The cashier thanks you and wishes you a good day. \nWhat do you do?",
     "background": "background_3",
     "person": "character_3",
     "face": "face_happy",
     "fore": "fore_3",
     "answers": [
-      "Sanot: \"Kiitos samoin!\" ja menet pakkaamaan ostoksesi",
-      "Menet pakkaamaan ostoksesi",
-      "Jäät seisomaan paikoillesi",
-      "Alat keskustella myyjän kanssa"
+      "You say: \"Thank you!\" and you go to pack up your groceries",
+      "You go to pack up your groceries",
+      "You stand still",
+      "You start chatting with the cashier"
     ],
-    "Sanot: \"Kiitos samoin!\" ja menet pakkaamaan ostoksesi": "pakkaaminen",
-    "Menet pakkaamaan ostoksesi": "pakkaaminen",
-    "Jäät seisomaan paikoillesi": "odotus_kassalla",
-    "Alat keskustella myyjän kanssa": "keskustelu_maksun_jalkeen",
-    "Sanot: \"Kiitos samoin!\" ja menet pakkaamaan ostoksesiColor": "green",
-    "Menet pakkaamaan ostoksesiColor": "yellow",
-    "Jäät seisomaan paikoillesiColor": "red",
-    "Alat keskustella myyjän kanssaColor": "red"
+    "You say: \"Thank you!\" and you go to pack up your groceries": "pakkaaminen",
+    "You go to pack up your groceries": "pakkaaminen",
+    "You stand still": "odotus_kassalla",
+    "You start chatting with the cashier": "keskustelu_maksun_jalkeen",
+    "You say: \"Thank you!\" and you go to pack up your groceriesColor": "green",
+    "You go to pack up your groceriesColor": "yellow",
+    "You stand stillColor": "red",
+    "You start chatting with the cashierColor": "red"
   },
   "hinnan_tinkiminen": {
-    "question": "Myyjä kertoo, että ruokakaupoissa ei voi tinkiä, vaan tuotteista kuuluu maksaa koko hinta. Mitä teet?",
+    "question": "The cashier tells you that you can't bargain in grocery stores, but the groceries must be paid in full price. \nWhat do you do?",
     "background": "background_3",
     "person": "character_3",
     "face": "face_confused",
     "fore": "fore_3",
     "answers": [
-      "Suutut, kun myyjä ei suostu laskemaan hintaa ja alat huutaa",
-      "Maksat myyjälle tuotteiden hinnan käteisellä",
-      "Maksat myyjälle tuotteiden hinnan kortilla",
-      "Suutut ja lähdet ulos kaupasta"
+      "You get angry when the cashier refuses to lower the price and start yelling",
+      "You pay the cashier the price of the groceries in cash",
+      "You pay the cashier the price of the groceries with a debit card",
+      "You get angry and leave the store"
     ],
-    "Suutut, kun myyjä ei suostu laskemaan hintaa ja alat huutaa": "vartijan_kutsuminen",
-    "Maksat myyjälle tuotteiden hinnan käteisellä": "maksu_kateisella",
-    "Maksat myyjälle tuotteiden hinnan kortilla": "maksu_kortilla",
-    "Suutut ja lähdet ulos kaupasta": "null",
-    "Suutut, kun myyjä ei suostu laskemaan hintaa ja alat huutaaColor": "red",
-    "Maksat myyjälle tuotteiden hinnan käteiselläColor": "green",
-    "Maksat myyjälle tuotteiden hinnan kortillaColor": "green",
-    "Suutut ja lähdet ulos kaupastaColor": "red"
+    "You get angry when the cashier refuses to lower the price and start yelling": "vartijan_kutsuminen",
+    "You pay the cashier the price of the groceries in cash": "maksu_kateisella",
+    "You pay the cashier the price of the groceries with a debit card": "maksu_kortilla",
+    "You get angry and leave the store": "null",
+    "You get angry when the cashier refuses to lower the price and start yellingColor": "red",
+    "You pay the cashier the price of the groceries in cashColor": "green",
+    "You pay the cashier the price of the groceries with a debit cardColor": "green",
+    "You get angry and leave the storeColor": "red"
   },
   "vartijan_kutsuminen": {
-    "question": "Myyjä kutsuu vartijan paikalle. Mitä teet?",
+    "question": "The cashier calls the guard to the scene. \nWhat do you do?",
     "background": "background_3",
     "person": "character_3",
     "face": "face_uncomfortable",
     "fore": "fore_3",
     "answers": [
-      "Lähdet ulos kaupasta raivoissasi",
-      "Pahoittelet käytöstäsi, lupaat ettei se enää toistu ja poistut kaupasta",
-      "Nappaat nopeasti maksamattomat ostoksesi ja lähdet karkuun"
+      "You leave the store infuriated",
+      "You apologize for your behavior, promise that it won't happen again and leave the store",
+      "You quickly grab your unpaid groceries and run away"
     ],
-    "Lähdet ulos kaupasta raivoissasi": "null",
-    "Pahoittelet käytöstäsi, lupaat ettei se enää toistu ja poistut kaupasta": "null",
-    "Nappaat nopeasti maksamattomat ostoksesi ja lähdet karkuun": "varastaminen",
-    "Lähdet ulos kaupasta raivoissasiColor": "red",
-    "Pahoittelet käytöstäsi, lupaat ettei se enää toistu ja poistut kaupastaColor": "green",
-    "Nappaat nopeasti maksamattomat ostoksesi ja lähdet karkuunColor": "red"
+    "You leave the store infuriated": "null",
+    "You apologize for your behavior, promise that it won't happen again and leave the store": "null",
+    "You quickly grab your unpaid groceries and run away": "varastaminen",
+    "You leave the store infuriatedColor": "red",
+    "You apologize for your behavior, promise that it won't happen again and leave the storeColor": "green",
+    "You quickly grab your unpaid groceries and run awayColor": "red"
   },
   "pakkaaminen": {
-    "question": "Menet pakkaamaan ostoksesi mukanasi olevaan laukkuun tai muovipussiin, jos laitoit sellaisen hihnalle. Saat ostoksesi pakattua. Jos sinulla oli kärry mukanasi, viet sen takaisin paikoilleen. Mitä teet seuraavaksi?",
+    "question": "You go to pack your groceries in the bag that you have with you or to the plastic bag, if you put one on the conveyor belt. You get your groceries packed. If you had a cart with you, take it back to where it belongs. What do you do?",
     "background": "background_3",
     "person": "null",
     "face": "null",
     "fore": "null",
     "answers": [
-      "Poistut kaupasta rauhallisesti kävellen",
-      "Juokset äkkiä ulos kaupasta"
+      "You leave the store walking calmly",
+      "You run fast out of the store"
     ],
-    "Poistut kaupasta rauhallisesti kävellen": "null",
-    "Juokset äkkiä ulos kaupasta": "tormaaminen",
-    "Poistut kaupasta rauhallisesti kävellenColor": "green",
-    "Juokset äkkiä ulos kaupastaColor": "red"
+    "You leave the store walking calmly": "null",
+    "You run fast out of the store": "tormaaminen",
+    "You leave the store walking calmlyColor": "green",
+    "You run fast out of the storeColor": "red"
   },
   "keskustelu_maksun_jalkeen": {
-    "question": "Takanasi oleva jono vaikuttaa vihaiselta ja kassahenkilö on vaivaantunut. Mitä teet?",
+    "question": "The queue behind you seems angry and the cashier looks uncomfortable.\nWhat do you do?",
     "background": "background_3",
     "person": "character_3",
     "face": "face_uncomfortable",
     "fore": "fore_3",
     "answers": [
-      "Jatkat keskustelua",
-      "Menet pakkaamaan ostoksesi"
+      "You keep chatting with the cashier",
+      "You go to pack your groceries"
     ],
-    "Jatkat keskustelua": "myyja_pyytaa_pakkaamaan",
-    "Menet pakkaamaan ostoksesi": "pakkaaminen",
-    "Jatkat keskusteluaColor": "red",
-    "Menet pakkaamaan ostoksesiColor": "green"
+    "You keep chatting with the cashier": "myyja_pyytaa_pakkaamaan",
+    "You go to pack your groceries": "pakkaaminen",
+    "You keep chatting with the cashierColor": "red",
+    "You go to pack your groceriesColor": "green"
   },
   "odotus_kassalla": {
-    "question": "Myyjä kysyy, onko sinulla jokin hätänä. Mitä teet?",
+    "question": "The cashier asks: \"Is everything alright?\"\nWhat do you do?",
     "background": "background_3",
     "person": "character_3",
     "face": "face_surprised",
     "fore": "fore_3",
     "answers": [
-      "Sanot, ettei ole mitään hätää ja menet pakkaamaan ostoksesi",
-      "Kysyt: \"Mitä minun kuuluisi tehdä seuraavaksi?\"",
-      "Katsot myyjää pitkään hiljaa ja menet sitten pakkaamaan ostoksesi"
+      "You say that everything is alright and go to pack up your groceries",
+      "You ask: \"What am I supposed to do next?\"",
+      "You look at the cashier for a long time silently and go to pack up your groceries"
     ],
-    "Sanot, ettei ole mitään hätää ja menet pakkaamaan ostoksesi": "pakkaaminen",
-    "Kysyt: \"Mitä minun kuuluisi tehdä seuraavaksi?\"": "myyja_neuvoo_pakkaamaan",
-    "Katsot myyjää pitkään hiljaa ja menet sitten pakkaamaan ostoksesi": "pakkaaminen",
-    "Sanot, ettei ole mitään hätää ja menet pakkaamaan ostoksesiColor": "green",
-    "Kysyt: \"Mitä minun kuuluisi tehdä seuraavaksi?\"Color": "green",
-    "Katsot myyjää pitkään hiljaa ja menet sitten pakkaamaan ostoksesiColor": "yellow"
+    "You say that everything is alright and go to pack up your groceries": "pakkaaminen",
+    "You ask: \"What am I supposed to do next?\"": "myyja_neuvoo_pakkaamaan",
+    "You look at the cashier for a long time silently and go to pack up your groceries": "pakkaaminen",
+    "You say that everything is alright and go to pack up your groceriesColor": "green",
+    "You ask: \"What am I supposed to do next?\"Color": "green",
+    "You look at the cashier for a long time silently and go to pack up your groceriesColor": "yellow"
   },
   "varastaminen": {
-    "question": "Juokset karkuun niin nopeasti kuin pääset, mutta vartija nappaa sinut kiinni. \nMitä teet?",
+    "question": "You run away as fast as you can, but the guard catches you. \nWhat do you do?",
     "background": "background_3",
     "person": "character_1",
     "face": "face_confused",
     "fore": "null",
     "answers": [
-      "Potkit ja raivoat",
-      "Annat ostokset takaisin ja pahoittelet tapahtunutta"
+      "You kick and rage",
+      "You give back your groceries and apologize for what happened"
     ],
-    "Potkit ja raivoat": "vartija_soittaa_poliisin",
-    "Annat ostokset takaisin ja pahoittelet tapahtunutta": "vartija_tekee_ilmoituksen",
-    "Potkit ja raivoatColor": "red",
-    "Annat ostokset takaisin ja pahoittelet tapahtunuttaColor": "green"
+    "You kick and rage": "vartija_soittaa_poliisin",
+    "You give back your groceries and apologize for what happened": "vartija_tekee_ilmoituksen",
+    "You kick and rageColor": "red",
+    "You give back your groceries and apologize for what happenedColor": "green"
   },
   "tormaaminen": {
-    "question": "Törmäät toiseen henkilöön juostessasi pois kaupasta. Mitä teet?",
+    "question": "When you run fast to exit the store, you run into another person.\nWhat do you do?",
     "background": "background_3",
     "person": "character_6",
     "face": "face_sad",
     "fore": "null",
     "answers": [
-      "Pyydät anteeksi ja kävelet loppumatkan rauhallisesti",
-      "Jatkat juoksemista ja poistut kaupasta"
+      "You apologize and walk the rest of the way calmly",
+      "You keep running and exit the store"
     ],
-    "Pyydät anteeksi ja kävelet loppumatkan rauhallisesti": "null",
-    "Jatkat juoksemista ja poistut kaupasta": "null",
-    "Pyydät anteeksi ja kävelet loppumatkan rauhallisestiColor": "green",
-    "Jatkat juoksemista ja poistut kaupastaColor": "red"
+    "You apologize and walk the rest of the way calmly": "null",
+    "You keep running and exit the store": "null",
+    "You apologize and walk the rest of the way calmlyColor": "green",
+    "You keep running and exit the storeColor": "red"
   },
   "myyja_pyytaa_pakkaamaan": {
-    "question": "Myyjä pyytää, että menisit pakkaamaan, sillä takanasi on ihmisiä jonossa. Mitä teet?",
+    "question": "The cashier asks you to go packing, because there is a queue of people behind you.\nWhat do you do?",
     "background": "background_3",
     "person": "character_3",
     "face": "face_confused",
     "fore": "fore_3",
     "answers": [
-      "Pahoittelet ja menet pakkaamaan",
-      "Katsot myyjää vihaisesti ja menet pakkaamaan",
-      "Suutut myyjälle, kun hän ei halua keskustella ja alat huutaa"
+      "You apologize and go to pack up your groceries",
+      "You look at the cashier angrily and go to pack up your groceries",
+      "You get angry at the cashier because he doesn't want to talk with you and start yelling"
     ],
-    "Pahoittelet ja menet pakkaamaan": "pakkaaminen",
-    "Katsot myyjää vihaisesti ja menet pakkaamaan": "pakkaaminen",
-    "Suutut myyjälle, kun hän ei halua keskustella ja alat huutaa": "vartijan_kutsuminen",
-    "Pahoittelet ja menet pakkaamaanColor": "green",
-    "Katsot myyjää vihaisesti ja menet pakkaamaanColor": "yellow",
-    "Suutut myyjälle, kun hän ei halua keskustella ja alat huutaaColor": "red"
+    "You apologize and go to pack up your groceries": "pakkaaminen",
+    "You look at the cashier angrily and go to pack up your groceries": "pakkaaminen",
+    "You get angry at the cashier because he doesn't want to talk with you and start yelling": "vartijan_kutsuminen",
+    "You apologize and go to pack up your groceriesColor": "green",
+    "You look at the cashier angrily and go to pack up your groceriesColor": "yellow",
+    "You get angry at the cashier because he doesn't want to talk with you and start yellingColor": "red"
   },
   "myyja_neuvoo_pakkaamaan": {
-    "question": "Myyjä sanoo: \"Ostoksesi on nyt maksettu, joten voit mennä pakkaamaan ne.\" Mitä teet?",
+    "question": "The cashier says: \"Your groceries are now paid for, so you can go to pack up your groceries.\"\nWhat do you do?",
     "background": "background_3",
     "person": "character_3",
     "face": "face_happy",
     "fore": "fore_3",
     "answers": [
-      "Menet pakkaamaan ostoksesi",
-      "Et uskalla pakata ostoksiasi vaan lähdet ulos kaupasta"
+      "You go to pack up your groceries",
+      "You are too afraid to pack up your groceries so you leave the store"
     ],
-    "Menet pakkaamaan ostoksesi": "pakkaaminen",
-    "Et uskalla pakata ostoksiasi vaan lähdet ulos kaupasta": "null",
-    "Menet pakkaamaan ostoksesiColor": "green",
-    "Et uskalla pakata ostoksiasi vaan lähdet ulos kaupastaColor": "red"
+    "You go to pack up your groceries": "pakkaaminen",
+    "You are too afraid to pack up your groceries so you leave the store": "null",
+    "You go to pack up your groceriesColor": "green",
+    "You are too afraid to pack up your groceries so you leave the storeColor": "red"
   },
   "vartija_soittaa_poliisin": {
-    "question": "Vartija pitää sinusta tiukasti kiinni ja soittaa poliisin paikalle. Mitä mietit?",
+    "question": "The guard holds you firmly and calls the police.\nWhat do you think?",
     "background": "background_3",
     "person": "character_1",
     "face": "face_angry",
     "fore": "null",
     "answers": [
-      "Jos olisin ollut vähän nopeampi, olisin päässyt pakoon",
-      "Nyt tein suuren virheen",
-      "En mene enää koskaan kauppaan"
+      "I made a huge mistake",
+      "If I had been a little faster, I would have escaped",
+      "I will never go to the grocery store again"
     ],
-    "Jos olisin ollut vähän nopeampi, olisin päässyt pakoon": "null",
-    "Nyt tein suuren virheen": "null",
-    "En mene enää koskaan kauppaan": "null",
-    "Jos olisin ollut vähän nopeampi, olisin päässyt pakoonColor": "red",
-    "Nyt tein suuren virheenColor": "green",
-    "En mene enää koskaan kauppaanColor": "red"
+    "I made a huge mistake": "null",
+    "If I had been a little faster, I would have escaped": "null",
+    "I will never go to the grocery store again": "null",
+    "I made a huge mistakeColor": "green",
+    "If I had been a little faster, I would have escapedColor": "red",
+    "I will never go to the grocery store againColor": "red"
   },
   "vartija_tekee_ilmoituksen": {
-    "question": "Vartija kertoo, että tästä tehdään rikosilmoitus. Mitä teet?",
+    "question": "The guard says that this will be reported as a crime.\nWhat do you do?",
     "background": "background_3",
     "person": "character_1",
     "face": "face_confused",
     "fore": "null",
     "answers": [
-      "Suutut suunnattomasti ja alat raivota",
-      "Tiedostat, että nyt tuli tehtyä huonoja päätöksiä",
-      "Mietit, että ensi kerralla juokset nopeammin"
+      "You get immensely angry because of what the guard said and start raging",
+      "You realize that you have made some really bad decisions",
+      "You think that you will run faster next time"
     ],
-    "Suutut suunnattomasti ja alat raivota": "vartija_soittaa_poliisin",
-    "Tiedostat, että nyt tuli tehtyä huonoja päätöksiä": "null",
-    "Mietit, että ensi kerralla juokset nopeammin": "null",
-    "Suutut suunnattomasti ja alat raivotaColor": "red",
-    "Tiedostat, että nyt tuli tehtyä huonoja päätöksiäColor": "green",
-    "Mietit, että ensi kerralla juokset nopeamminColor": "red"
+    "You get immensely angry because of what the guard said and start raging": "vartija_soittaa_poliisin",
+    "You realize that you have made some really bad decisions": "null",
+    "You think that you will run faster next time": "null",
+    "You get immensely angry because of what the guard said and start ragingColor": "red",
+    "You realize that you have made some really bad decisionsColor": "green",
+    "You think that you will run faster next timeColor": "red"
   }
 }
