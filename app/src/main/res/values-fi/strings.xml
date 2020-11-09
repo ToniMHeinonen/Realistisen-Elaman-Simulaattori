@@ -65,10 +65,12 @@
         skenaarion?</string>
     <string name="modifiableDeleteText">Haluatko varmasti poistaa tämän lopullisesti?</string>
 
-    <string name="duplicateScenarioWarning">Kaksi saman nimistä skenaariota!</string>
+    <string name="duplicateScenarioWarning">Kaksi samannimistä skenaariota!</string>
     <string name="duplicateScenarioWarningText">Päivitys lisäsi uusia skenaarioita, joista yhdellä on
     sama nimi kuin luodullasi skenaariolla \"%1$s\". Nimeä luomasi skenaario uudestaan, muuten se
     ei toimi oikein.</string>
+    <string name="duplicateScenarioRename">Vaihda nimi</string>
+    <string name="duplicateScenarioLater">Myöhemmin</string>
 
     <!-- CUSTOM ALERT DIALOG -->
     <string name="alertTopic">Huomio!</string>

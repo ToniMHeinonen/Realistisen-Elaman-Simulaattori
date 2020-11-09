@@ -69,6 +69,8 @@
     <string name="duplicateScenarioWarningText">Update added new scenarios and one of the scenarios
     has the same name as your own created scenario \"%1$s\". Rename your created scenario to something
     else, otherwise it will not work correctly.</string>
+    <string name="duplicateScenarioRename">Rename</string>
+    <string name="duplicateScenarioLater">Later</string>
 
     <!-- CUSTOM ALERT DIALOG -->
     <string name="alertTopic">Alert!</string>

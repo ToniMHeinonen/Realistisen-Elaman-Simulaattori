@@ -100,8 +100,10 @@ public class ChooseScenarioActivity extends ParentActivity {
             List<String>  duplicates = jsonPrefs.getSameScenariosInResourceAndUser();
             for (String name : duplicates) {
                 Helper.showAlert(this, getString(R.string.duplicateScenarioWarning),
-                        getString(R.string.duplicateScenarioWarningText, name), null,
-                        Helper.HIDE_NEGATIVE_BUTTON, null, null);
+                        getString(R.string.duplicateScenarioWarningText, name),
+                        getString(R.string.duplicateScenarioRename),
+                        getString(R.string.duplicateScenarioLater),
+                () -> Helper.modifyScenario(this, name), null);
             }
         }
     }

@@ -86,10 +86,7 @@ public class ScenarioDialog extends Dialog implements
                         (() -> resetScenario()), null);
                 break;
             case R.id.modifyButton:
-                Intent i = new Intent(activity, CreateScenario.class);
-                i.putExtra("edit", true);
-                i.putExtra("name", scenario.getName());
-                activity.startActivity(i);
+                Helper.modifyScenario(activity, scenario.getName());
                 dismiss();
                 break;
             case R.id.deleteButton:

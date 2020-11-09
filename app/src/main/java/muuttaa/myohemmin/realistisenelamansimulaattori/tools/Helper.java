@@ -1,6 +1,8 @@
 package muuttaa.myohemmin.realistisenelamansimulaattori.tools;
 
+import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.content.res.Configuration;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,6 +14,7 @@ import java.util.List;
 import java.util.Locale;
 
 import androidx.appcompat.app.AlertDialog;
+import muuttaa.myohemmin.realistisenelamansimulaattori.CreateScenario;
 import muuttaa.myohemmin.realistisenelamansimulaattori.InitializeActivity;
 import muuttaa.myohemmin.realistisenelamansimulaattori.JsonInterface;
 import muuttaa.myohemmin.realistisenelamansimulaattori.R;
@@ -137,5 +140,17 @@ public abstract class Helper {
         alertD.show();
 
         return alertD;
+    }
+
+    /**
+     * Moves to CreateScenario activity to modify the proviced scenario.
+     * @param activity current activity
+     * @param scenario scenario to modify
+     */
+    public static void modifyScenario(Activity activity, String scenario) {
+        Intent i = new Intent(activity, CreateScenario.class);
+        i.putExtra("edit", true);
+        i.putExtra("name", scenario);
+        activity.startActivity(i);
     }
 }
