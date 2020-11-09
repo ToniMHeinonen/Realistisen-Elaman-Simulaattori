@@ -17,6 +17,7 @@
         <item>background_14</item>
         <item>background_15</item>
         <item>background_16</item>
+        <item>background_17</item>
     </string-array>
     <string-array name="taustatName">
         <item>Blue</item>
@@ -35,6 +36,7 @@
         <item>Lime</item>
         <item>Light Yellow</item>
         <item>Light Blue 2</item>
+        <item>Blue 3</item>
     </string-array>
     <string-array name="henkilot">
         <item>character_1</item> <!-- Vartija -->
