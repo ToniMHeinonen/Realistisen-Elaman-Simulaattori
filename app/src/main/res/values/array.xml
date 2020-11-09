@@ -37,26 +37,28 @@
         <item>Light Blue 2</item>
     </string-array>
     <string-array name="henkilot">
-        <item>character_1</item>
-        <item>character_2</item>
-        <item>character_3</item>
-        <item>character_4</item>
-        <item>character_5</item>
-        <item>character_6</item>
-        <item>character_7</item>
-        <item>character_8</item>
-        <item>character_9</item>
-        <item>character_10</item>
+        <item>character_1</item> <!-- Vartija -->
+        <item>character_2</item> <!-- Kassahenkilö -->
+        <item>character_3</item> <!-- Siivooja -->
+        <item>character_5</item> <!-- Lääkäri -->
+        <item>character_7</item> <!-- Juristi -->
+        <item>character_6</item> <!-- Tyttö -->
+        <item>character_11</item> <!-- Nainen -->
+        <item>character_4</item> <!-- Mummo -->
+        <item>character_8</item> <!-- Poika -->
+        <item>character_9</item> <!-- Mies -->
+        <item>character_10</item> <!-- Vaari -->
         <item>empty</item>
     </string-array>
     <string-array name="henkilotName">
         <item>Guard</item>
         <item>Clerk</item>
         <item>Cleaner</item>
-        <item>Grandma</item>
         <item>Doctor</item>
-        <item>Girl</item>
         <item>Lawyer</item>
+        <item>Girl</item>
+        <item>Woman</item>
+        <item>Grandma</item>
         <item>Boy</item>
         <item>Man</item>
         <item>Grandpa</item>
@@ -102,6 +104,7 @@
         <item>fore_17</item>
         <item>fore_18</item>
         <item>fore_19</item>
+        <item>fore_20</item>
         <item>empty</item>
     </string-array>
     <string-array name="kolmasKuvaName">
@@ -124,6 +127,7 @@
         <item>Plants</item>
         <item>Cat</item>
         <item>Friend</item>
+        <item>Computer</item>
         <item>empty</item>
     </string-array>
     <string-array name="varit">
