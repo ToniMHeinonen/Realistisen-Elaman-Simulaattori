@@ -6,19 +6,19 @@
     "fore": "null",
     "face": "face_uncomfortable",
     "answers": [
-      "Sinnittelet vielä muutaman päivän kaapissa olevilla nuudeleilla",
+      "Sinnittelet vielä muutaman päivän niillä, mitä kaapissa on jäljellä",
       "Alat suunnittelemaan kauppaan lähtöä",
       "Tilaat lähipizzeriasta pizzan kotiinkuljetuksella"
     ],
-    "Sinnittelet vielä muutaman päivän kaapissa olevilla nuudeleilla": "uusiAlku",
+    "Sinnittelet vielä muutaman päivän niillä, mitä kaapissa on jäljellä": "uusiAlku",
     "Alat suunnittelemaan kauppaan lähtöä": "suunnittelu",
     "Tilaat lähipizzeriasta pizzan kotiinkuljetuksella": "pizza",
-    "Sinnittelet vielä muutaman päivän kaapissa olevilla nuudeleillaColor": "green",
+    "Sinnittelet vielä muutaman päivän niillä, mitä kaapissa on jäljelläColor": "green",
     "Alat suunnittelemaan kauppaan lähtöäColor": "green",
     "Tilaat lähipizzeriasta pizzan kotiinkuljetuksellaColor": "green"
   },
   "uusiAlku": {
-    "question": "Syötyäsi nuudeleita pari päivää ruokavarastosi on täysin tyhjillään.",
+    "question": "Ruokavarastosi on täysin loppu.",
     "background": "background_15",
     "person": "character_6",
     "face": "face_uncomfortable",

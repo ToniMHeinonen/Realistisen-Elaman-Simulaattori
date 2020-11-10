@@ -17,7 +17,7 @@
     "Pölyjen pyyhkiminen",
     "Doing laundry",
     "Emptying trash bins",
-    "Ruokakauppaan lähteminen",
+    "Going to grocery store",
     "Behaving at grocery store",
     "Returning from grocery store",
     "Meeting an acquaintance",
@@ -44,7 +44,7 @@
     {"name": "Vuodevaatteiden puhtaanapito", "file": "vuodevaatteiden_puhtaanapito.json", "category": "Taking care of your home"},
     {"name":  "Traveling by bus", "file":  "bussimatka.json", "category": "Traveling"},
     {"name":  "Traveling by tram", "file": "ratikka.json", "category": "Traveling"},
-    {"name": "Ruokakauppaan lähteminen", "file": "ruokakauppaan_lahteminen.json", "category": "Visiting a store"},
+    {"name": "Going to grocery store", "file": "ruokakauppaan_lahteminen.json", "category": "Visiting a store"},
     {"name": "Behaving at grocery store", "file": "ruokakaupassa_asioiminen.json", "category": "Visiting a store"},
     {"name": "Returning from grocery store", "file": "ruokakaupasta_palaaminen.json", "category": "Visiting a store"}
   ]
