@@ -1,150 +1,150 @@
 {
   "first": {
-    "question": "Sinun olisi tarkoitus hankkia vuokra-asunto, johon pääsisit muuttamaan parin kuukauden sisällä.",
+    "question": "You plan to acquire a rental apartment that you can move into within a couple of months.",
     "background": "background_10",
     "person": "character_8",
     "fore": "null",
     "face": "face_happy",
     "answers": [
-      "Aloitat saman tien uuden vuokra-asunnon etsinnän netistä",
-      "Mahdolliseen muuttoon on vielä aikaa, joten hoidat vuokra-asunnon etsinnän myöhemmin"
+      "You will immediately start searching for a new rental apartment online",
+      "You will search for a rental apartment later"
     ],
-    "Aloitat saman tien uuden vuokra-asunnon etsinnän netistä": "etsinta",
-    "Mahdolliseen muuttoon on vielä aikaa, joten hoidat vuokra-asunnon etsinnän myöhemmin": "uusiAlku",
-    "Aloitat saman tien uuden vuokra-asunnon etsinnän netistäColor": "green",
-    "Mahdolliseen muuttoon on vielä aikaa, joten hoidat vuokra-asunnon etsinnän myöhemminColor": "red"
+    "You will immediately start searching for a new rental apartment online": "etsinta",
+    "You will search for a rental apartment later": "uusiAlku",
+    "You will immediately start searching for a new rental apartment onlineColor": "green",
+    "You will search for a rental apartment laterColor": "red"
   },
   "uusiAlku": {
-    "question": "Sinun pitäisi päästä muuttamaan mahdollisimman pian, etkä ole vielä edes aloittanut vuokra-asunnon etsintää.",
+    "question": "You should move in as soon as possible and you haven’t even started looking for a rental apartment yet.",
     "background": "background_10",
     "person": "character_8",
     "fore": "null",
     "face": "face_confused",
     "answers": [
-      "Aloitat saman tien uuden vuokra-asunnon etsinnän netistä",
-      "Et aio sittenkään muuttaa"
+      "You will immediately start searching for a new rental apartment online",
+      "You are not going to search for a rental apartment"
     ],
-    "Aloitat saman tien uuden vuokra-asunnon etsinnän netistä": "etsinta",
-    "Et aio sittenkään muuttaa": "null",
-    "Aloitat saman tien uuden vuokra-asunnon etsinnän netistäColor": "green",
-    "Et aio sittenkään muuttaaColor": "red"
+    "You will immediately start searching for a new rental apartment online": "etsinta",
+    "You are not going to search for a rental apartment": "null",
+    "You will immediately start searching for a new rental apartment onlineColor": "green",
+    "You are not going to search for a rental apartmentColor": "red"
   },
   "etsinta": {
-    "question": "Olet löytänyt netistä verkkosivuja, joissa on mahdollisuus selata vapaana olevia vuokra-asuntoja.",
+    "question": "You have found websites where you can browse vacant rental apartments.",
     "background": "background_10",
     "person": "character_8",
     "fore": "fore_7",
     "face": "face_happy",
     "answers": [
-      "Asunnon etsintä vaikuttaa liian työläältä, joten hoidat sen myöhemmin",
-      "Etsit asuntoja, jotka näyttävät hyväkuntoisilta ja joihin sinulla on varaa",
-      "Etsit asuntoja, jotka näyttävät hyväkuntoisilta, mutta niiden vuokra on paljon suurempi, mihin sinulla on varaa"
+      "Finding an apartment seems too troublesome, so you will take care of it later",
+      "You are looking for apartments that are in good condition and that you can afford",
+      "You are looking for apartments that are in good condition, but their rent is much higher than you can afford"
     ],
-    "Asunnon etsintä vaikuttaa liian työläältä, joten hoidat sen myöhemmin": "uusiEtsinta",
-    "Etsit asuntoja, jotka näyttävät hyväkuntoisilta ja joihin sinulla on varaa": "selaus",
-    "Etsit asuntoja, jotka näyttävät hyväkuntoisilta, mutta niiden vuokra on paljon suurempi, mihin sinulla on varaa": "selaus",
-    "Asunnon etsintä vaikuttaa liian työläältä, joten hoidat sen myöhemminColor": "red",
-    "Etsit asuntoja, jotka näyttävät hyväkuntoisilta ja joihin sinulla on varaaColor": "green",
-    "Etsit asuntoja, jotka näyttävät hyväkuntoisilta, mutta niiden vuokra on paljon suurempi, mihin sinulla on varaaColor": "red"
+    "Finding an apartment seems too troublesome, so you will take care of it later": "uusiEtsinta",
+    "You are looking for apartments that are in good condition and that you can afford": "selaus",
+    "You are looking for apartments that are in good condition, but their rent is much higher than you can afford": "selaus",
+    "Finding an apartment seems too troublesome, so you will take care of it laterColor": "red",
+    "You are looking for apartments that are in good condition and that you can affordColor": "green",
+    "You are looking for apartments that are in good condition, but their rent is much higher than you can affordColor": "red"
   },
   "uusiEtsinta": {
-    "question": "Aikaa on kulunut, etkä ole vieläkään aloittanut vuokra-asunnon etsintää.",
+    "question": "Time has passed and you have still not started looking for a rental apartment.",
     "background": "background_10",
     "person": "character_8",
     "fore": "null",
     "face": "face_happy",
     "answers": [
-      "Et aio sittenkään muuttaa, joten et etsi uutta asuntoa",
-      "Etsit asuntoja, jotka näyttävät hyväkuntoisilta ja joihin sinulla on varaa",
-      "Etsit asuntoja, jotka näyttävät hyväkuntoisilta, mutta niiden vuokra on paljon suurempi, mihin sinulla on varaa"
+      "You are not going to search for a rental apartment",
+      "You are looking for apartments that are in good condition and that you can afford",
+      "You are looking for apartments that are in good condition, but their rent is much higher than you can afford"
     ],
-    "Et aio sittenkään muuttaa, joten et etsi uutta asuntoa": "null",
-    "Etsit asuntoja, jotka näyttävät hyväkuntoisilta ja joihin sinulla on varaa": "selaus",
-    "Etsit asuntoja, jotka näyttävät hyväkuntoisilta, mutta niiden vuokra on paljon suurempi, mihin sinulla on varaa": "selaus",
-    "Et aio sittenkään muuttaa, joten et etsi uutta asuntoaColor": "red",
-    "Etsit asuntoja, jotka näyttävät hyväkuntoisilta ja joihin sinulla on varaaColor": "green",
-    "Etsit asuntoja, jotka näyttävät hyväkuntoisilta, mutta niiden vuokra on paljon suurempi, mihin sinulla on varaaColor": "red"
+    "You are not going to search for a rental apartment": "null",
+    "You are looking for apartments that are in good condition and that you can afford": "selaus",
+    "You are looking for apartments that are in good condition, but their rent is much higher than you can afford": "selaus",
+    "You are not going to search for a rental apartmentColor": "red",
+    "You are looking for apartments that are in good condition and that you can affordColor": "green",
+    "You are looking for apartments that are in good condition, but their rent is much higher than you can affordColor": "red"
   },
   "selaus": {
-    "question": "Olet mielestäsi löytänyt useamman sopivan asunnon.",
+    "question": "You have found several suitable apartments.",
     "background": "background_10",
     "person": "character_8",
     "fore": "fore_7",
     "face": "face_happy",
     "answers": [
-      "Otat yhteyttä vain yhden asunnon vuokraajaan",
-      "Otat yhteyttä useampaan asunnon vuokraajaan, jotta mahdollisuutesi saada asunto on isompi"
+      "You only contact the landlord of one apartment",
+      "You will contact several landlords to increase your chances of getting an apartment"
     ],
-    "Otat yhteyttä vain yhden asunnon vuokraajaan": "valmistautuminen",
-    "Otat yhteyttä useampaan asunnon vuokraajaan, jotta mahdollisuutesi saada asunto on isompi": "valmistautuminen",
-    "Otat yhteyttä vain yhden asunnon vuokraajaanColor": "yellow",
-    "Otat yhteyttä useampaan asunnon vuokraajaan, jotta mahdollisuutesi saada asunto on isompiColor": "green"
+    "You only contact the landlord of one apartment": "valmistautuminen",
+    "You will contact several landlords to increase your chances of getting an apartment": "valmistautuminen",
+    "You only contact the landlord of one apartmentColor": "yellow",
+    "You will contact several landlords to increase your chances of getting an apartmentColor": "green"
   },
   "valmistautuminen": {
-    "question": "Sait sovittua asuntonäytön yhden asunnon vuokraajan kanssa.",
+    "question": "There is an open house for one of the apartments.",
     "background": "background_10",
     "person": "character_8",
     "fore": "null",
     "face": "face_happy",
     "answers": [
-      "Mietit etukäteen jo valmiiksi kysymyksiä asunnosta ja menet ajoissa paikalle asuntonäyttöön",
-      "Menet ajoissa paikalle asuntonäyttöön",
-      "Menet tyylikkäästi myöhässä asuntonäyttöön"
+      "You think about questions of the apartment in advance and go to the open house in time",
+      "You go to the open house in time",
+      "You go to the open house late"
     ],
-    "Mietit etukäteen jo valmiiksi kysymyksiä asunnosta ja menet ajoissa paikalle asuntonäyttöön": "naytto",
-    "Menet ajoissa paikalle asuntonäyttöön": "naytto",
-    "Menet tyylikkäästi myöhässä asuntonäyttöön": "naytto",
-    "Mietit etukäteen jo valmiiksi kysymyksiä asunnosta ja menet ajoissa paikalle asuntonäyttöönColor": "green",
-    "Menet ajoissa paikalle asuntonäyttöönColor": "yellow",
-    "Menet tyylikkäästi myöhässä asuntonäyttöönColor": "red"
+    "You think about questions of the apartment in advance and go to the open house in time": "naytto",
+    "You go to the open house in time": "naytto",
+    "You go to the open house late": "naytto",
+    "You think about questions of the apartment in advance and go to the open house in timeColor": "green",
+    "You go to the open house in timeColor": "yellow",
+    "You go to the open house lateColor": "red"
   },
   "naytto": {
-    "question": "Saavuit asuntonäyttöön.",
+    "question": "You arrived at the open house.",
     "background": "background_10",
     "person": "character_8",
     "fore": "null",
     "face": "face_happy",
     "answers": [
-      "Asunto ei mielestäsi olekaan niin hyvässä kunnossa kuin luulit, joten et aiokaan pyrkiä saamaan sitä asuntoa",
-      "Tarkastat asunnon kunnon ja kerrot asuntonäytön pitäjälle itsestäsi ja miksi olisit hyvä vuokralainen",
-      "Et tarkasta asunnon kuntoa ollenkaan, mutta kerrot kuitenkin asuntonäytön pitäjälle itsestäsi"
+      "You don't think the apartment is in as good a condition as you thought, so you're not going to try to get that apartment",
+      "You check the condition of the apartment and tell the landlord about yourself and why you would be a good tenant",
+      "You do not check the condition of the apartment at all, but you do tell the landlord about yourself"
     ],
-    "Asunto ei mielestäsi olekaan niin hyvässä kunnossa kuin luulit, joten et aiokaan pyrkiä saamaan sitä asuntoa": "uusiYritys",
-    "Tarkastat asunnon kunnon ja kerrot asuntonäytön pitäjälle itsestäsi ja miksi olisit hyvä vuokralainen": "asunnonSaanti",
-    "Et tarkasta asunnon kuntoa ollenkaan, mutta kerrot kuitenkin asuntonäytön pitäjälle itsestäsi": "asunnonSaanti",
-    "Asunto ei mielestäsi olekaan niin hyvässä kunnossa kuin luulit, joten et aiokaan pyrkiä saamaan sitä asuntoaColor": "green",
-    "Tarkastat asunnon kunnon ja kerrot asuntonäytön pitäjälle itsestäsi ja miksi olisit hyvä vuokralainenColor": "green",
-    "Et tarkasta asunnon kuntoa ollenkaan, mutta kerrot kuitenkin asuntonäytön pitäjälle itsestäsiColor": "red"
+    "You don't think the apartment is in as good a condition as you thought, so you're not going to try to get that apartment": "uusiYritys",
+    "You check the condition of the apartment and tell the landlord about yourself and why you would be a good tenant": "asunnonSaanti",
+    "You do not check the condition of the apartment at all, but you do tell the landlord about yourself": "asunnonSaanti",
+    "You don't think the apartment is in as good a condition as you thought, so you're not going to try to get that apartmentColor": "green",
+    "You check the condition of the apartment and tell the landlord about yourself and why you would be a good tenantColor": "green",
+    "You do not check the condition of the apartment at all, but you do tell the landlord about yourselfColor": "red"
   },
   "uusiYritys": {
-    "question": "Asunto ei ollut hyväkuntoinen, joten etsit toisen asunnon, jonka asuntonäyttöön menet.",
+    "question": "The apartment was not in good condition, so you looked for another apartment and went to the open house.",
     "background": "background_10",
     "person": "character_8",
     "fore": "null",
     "face": "face_happy",
     "answers": [
-      "Tarkastat asunnon kunnon ja kerrot asuntonäytön pitäjälle itsestäsi ja miksi olisit hyvä vuokralainen",
-      "Et tarkasta asunnon kuntoa ollenkaan, mutta kerrot kuitenkin asuntonäytön pitäjälle itsestäsi"
+      "You check the condition of the apartment and tell the landlord about yourself and why you would be a good tenant",
+      "You do not check the condition of the apartment at all, but you do tell the landlord about yourself"
     ],
-    "Tarkastat asunnon kunnon ja kerrot asuntonäytön pitäjälle itsestäsi ja miksi olisit hyvä vuokralainen": "asunnonSaanti",
-    "Et tarkasta asunnon kuntoa ollenkaan, mutta kerrot kuitenkin asuntonäytön pitäjälle itsestäsi": "asunnonSaanti",
-    "Tarkastat asunnon kunnon ja kerrot asuntonäytön pitäjälle itsestäsi ja miksi olisit hyvä vuokralainenColor": "green",
-    "Et tarkasta asunnon kuntoa ollenkaan, mutta kerrot kuitenkin asuntonäytön pitäjälle itsestäsiColor": "red"
+    "You check the condition of the apartment and tell the landlord about yourself and why you would be a good tenant": "asunnonSaanti",
+    "You do not check the condition of the apartment at all, but you do tell the landlord about yourself": "asunnonSaanti",
+    "You check the condition of the apartment and tell the landlord about yourself and why you would be a good tenantColor": "green",
+    "You do not check the condition of the apartment at all, but you do tell the landlord about yourselfColor": "red"
   },
   "asunnonSaanti": {
-    "question": "Vuokranantaja on vakuuttunut, että olisit hyvä vuokralainen ja tarjoaa vuokrasopimusta allekirjoitettavaksi.",
+    "question": "The landlord is convinced that you would be a good tenant and will offer a rental contract to sign.",
     "background": "background_10",
     "person": "null",
     "fore": "fore_13",
     "face": "null",
     "answers": [
-      "Tarkastat vuokrasopimuksen tarkkaan ennen allekirjoittamista",
-      "Vuokranantaja vaikuttaa luotettavalta, joten allekirjoitat sopimuksen lukematta sitä"
+      "You check the rental contract carefully before signing",
+      "The landlord seems trustworthy, so you sign the contract without reading it"
     ],
-    "Tarkastat vuokrasopimuksen tarkkaan ennen allekirjoittamista": "sopimusLoppu",
-    "Vuokranantaja vaikuttaa luotettavalta, joten allekirjoitat sopimuksen lukematta sitä": "sopimusLoppu",
-    "Tarkastat vuokrasopimuksen tarkkaan ennen allekirjoittamistaColor": "green",
-    "Vuokranantaja vaikuttaa luotettavalta, joten allekirjoitat sopimuksen lukematta sitäColor": "red"
+    "You check the rental contract carefully before signing": "sopimusLoppu",
+    "The landlord seems trustworthy, so you sign the contract without reading it": "sopimusLoppu",
+    "You check the rental contract carefully before signingColor": "green",
+    "The landlord seems trustworthy, so you sign the contract without reading itColor": "red"
   },
   "sopimusLoppu": {
     "question": "You have found yourself a new apartment and written a rental agreement for it. What do you do next?",
