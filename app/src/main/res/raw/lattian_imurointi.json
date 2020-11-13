@@ -1,230 +1,230 @@
 {
   "first": {
-    "question": "On kulunut viikko siitä, kun viimeksi imuroit lattiat. Lattioille on kertynyt pölyä ja likaa. Mitä teet?",
+    "question": "It's been a week since you last vacuumed the floors. Dust and dirt have accumulated on the floors. What do you do?",
     "background": "background_15",
     "person": "null",
     "face": "null",
     "fore": "fore_16",
     "answers": [
-      "Haet imurin",
-      "Siivoat lattioilta tavarat paikoilleen ja haet imurin",
-      "Haet pölyrätin ja ryhdyt pyyhkimään lattioita"
+      "You go get the vacuum cleaner",
+      "You clean stuff from the floor to their correct places and then go get the vacuum cleaner",
+      "You go get a dust cloth and start wiping the floors"
     ],
-    "Haet imurin": "imuri ja tavarat",
-    "Siivoat lattioilta tavarat paikoilleen ja haet imurin": "imurin haku",
-    "Haet pölyrätin ja ryhdyt pyyhkimään lattioita": "pölyrätti",
-    "Haet imurinColor": "green",
-    "Siivoat lattioilta tavarat paikoilleen ja haet imurinColor": "green",
-    "Haet pölyrätin ja ryhdyt pyyhkimään lattioitaColor": "red"
+    "You go get the vacuum cleaner": "imuri ja tavarat",
+    "You clean stuff from the floor to their correct places and then go get the vacuum cleaner": "imurin haku",
+    "You go get a dust cloth and start wiping the floors": "pölyrätti",
+    "You go get the vacuum cleanerColor": "green",
+    "You clean stuff from the floor to their correct places and then go get the vacuum cleanerColor": "green",
+    "You go get a dust cloth and start wiping the floorsColor": "red"
   },
   "imuri ja tavarat": {
-    "question": "Haet imurin sieltä, missä sitä säilytetään. Lattioilla on paljon tavaroita.",
+    "question": "You pick up the vacuum cleaner from where it is stored. There is a lot of stuff on the floors.",
     "background": "background_15",
     "person": "null",
     "face": "null",
     "fore": "fore_16",
     "answers": [
-      "Laitat imurin virtajohdon pistorasiaan",
-      "Siivoat tavarat lattioilta omille paikoilleen ja laitat imurin virtajohdon pistorasiaan"
+      "You put the power cord of the vacuum cleaner in to the wall socket",
+      "You clean the stuff from the floors to their correct places and put the power cord of the vacuum cleaner in to the socket"
     ],
-    "Laitat imurin virtajohdon pistorasiaan": "tavarat lattioilla",
-    "Siivoat tavarat lattioilta omille paikoilleen ja laitat imurin virtajohdon pistorasiaan": "imurointi",
-    "Laitat imurin virtajohdon pistorasiaanColor": "yellow",
-    "Siivoat tavarat lattioilta omille paikoilleen ja laitat imurin virtajohdon pistorasiaanColor": "green"
+    "You put the power cord of the vacuum cleaner in to the wall socket": "tavarat lattioilla",
+    "You clean the stuff from the floors to their correct places and put the power cord of the vacuum cleaner in to the socket": "imurointi",
+    "You put the power cord of the vacuum cleaner in to the wall socketColor": "yellow",
+    "You clean the stuff from the floors to their correct places and put the power cord of the vacuum cleaner in to the socketColor": "green"
   },
   "imurin haku": {
-    "question": "Haet imurin sieltä missä sitä säilytetään. ",
+    "question": "You pick up the vacuum cleaner from where it is stored.",
     "background": "background_15",
     "person": "null",
     "face": "null",
     "fore": "fore_16",
     "answers": [
-      "Laitat imurin virtajohdon kiinni seinään",
-      "Viet imurin pois ja toteat, ettet jaksakaan siivota"
+      "You put the power cord of the vacuum cleaner in to the wall socket",
+      "You return the vacuum cleaner and find, that you don't have enough strength to clean the floor right now"
     ],
-    "Laitat imurin virtajohdon kiinni seinään": "imurointi",
-    "Viet imurin pois ja toteat, ettet jaksakaan siivota": "null",
-    "Laitat imurin virtajohdon kiinni seinäänColor": "green",
-    "Viet imurin pois ja toteat, ettet jaksakaan siivotaColor": "red"
+    "You put the power cord of the vacuum cleaner in to the wall socket": "imurointi",
+    "You return the vacuum cleaner and find, that you don't have enough strength to clean the floor right now": "null",
+    "You put the power cord of the vacuum cleaner in to the wall socketColor": "green",
+    "You return the vacuum cleaner and find, that you don't have enough strength to clean the floor right nowColor": "red"
   },
   "pölyrätti": {
-    "question": "Pölyrätti tulee hetkessä todella likaiseksi ja levittää likaa ympäri asuntoa.",
+    "question": "The dust cloth instantly becomes really dirty and spreads the dirt all over the apartment.",
     "background": "background_2",
     "person": "null",
     "face": "null",
     "fore": "fore_16",
     "answers": [
-      "Peset rätin, viet sen pois ja haet imurin",
-      "Peset rätin ja jatkat sillä siivoamista",
-      "Peset rätin ja lopetat siivoamisen",
-      "Et pese rättiä ja lopetat siivoamisen"
+      "You wash the rag, put it to dry and go pick up the vacuum cleaner",
+      "You wash the rag and keep cleaning with it",
+      "You wash the rag and you stop cleaning",
+      "You do not wash the rag and you stop cleaning"
     ],
-    "Peset rätin, viet sen pois ja haet imurin": "tavarat lattioilla",
-    "Peset rätin ja jatkat sillä siivoamista": "pölyrätti",
-    "Peset rätin ja lopetat siivoamisen": "null",
-    "Et pese rättiä ja lopetat siivoamisen": "null",
-    "Peset rätin, viet sen pois ja haet imurinColor": "green",
-    "Peset rätin ja jatkat sillä siivoamistaColor": "yellow",
-    "Peset rätin ja lopetat siivoamisenColor": "red",
-    "Et pese rättiä ja lopetat siivoamisenColor": "red"
+    "You wash the rag, put it to dry and go pick up the vacuum cleaner": "tavarat lattioilla",
+    "You wash the rag and keep cleaning with it": "pölyrätti",
+    "You wash the rag and you stop cleaning": "null",
+    "You do not wash the rag and you stop cleaning": "null",
+    "You wash the rag, put it to dry and go pick up the vacuum cleanerColor": "green",
+    "You wash the rag and keep cleaning with itColor": "yellow",
+    "You wash the rag and you stop cleaningColor": "red",
+    "You do not wash the rag and you stop cleaningColor": "red"
   },
   "tavarat lattioilla": {
-    "question": "Käynnistät imurin virtanapista. Imuri imaisee tarpeellisen tavaran lattialta sisäänsä. Sammutat imurin.",
+    "question": "You start the vacuum cleaner by pressing the power button. The vacuum cleaner sucks a valuable item from the floor inside. You switch off the vacuum cleaner.",
     "background": "background_2",
     "person": "null",
     "face": "null",
     "fore": "fore_16",
     "answers": [
-      "Avaat imurin, otat tarpeellisen tavaran pois ja siivoat lattioilta tavarat paikalleen",
-      "Jatkat imurointia",
-      "Avaat imurin ja otat tarpeellisen tavaran pois"
+      "You open the vacuum cleaner, take out the valuable item and clean the stuff from the floors to their correct places",
+      "You continue to vacuum",
+      "You open the vacuum cleaner and take out the valuable item"
     ],
-    "Avaat imurin, otat tarpeellisen tavaran pois ja siivoat lattioilta tavarat paikalleen": "imurointi",
-    "Jatkat imurointia": "tavarat lattioilla",
-    "Avaat imurin ja otat tarpeellisen tavaran pois": "tavarat lattioilla",
-    "Avaat imurin, otat tarpeellisen tavaran pois ja siivoat lattioilta tavarat paikalleenColor": "green",
-    "Jatkat imurointiaColor": "red",
-    "Avaat imurin ja otat tarpeellisen tavaran poisColor": "yellow"
+    "You open the vacuum cleaner, take out the valuable item and clean the stuff from the floors to their correct places": "imurointi",
+    "You continue to vacuum": "tavarat lattioilla",
+    "You open the vacuum cleaner and take out the valuable item": "tavarat lattioilla",
+    "You open the vacuum cleaner, take out the valuable item and clean the stuff from the floors to their correct placesColor": "green",
+    "You continue to vacuumColor": "red",
+    "You open the vacuum cleaner and take out the valuable itemColor": "yellow"
   },
   "imurointi": {
-    "question": "Laitat imurista harjasosat näkyviin lattioita varten. Imuroit huolellisesti jokaisen kohdan lattiasta. Lattialla on myös mattoja.",
+    "question": "You put forward the brush parts from the vacuum cleaner for the floors. You carefully vacuum each part of the floor. There are also carpets on the floor.",
     "background": "background_3",
     "person": "null",
     "face": "null",
     "fore": "fore_16",
     "answers": [
-      "Et imuroi mattoja lainkaan ja lopetat imuroinnin",
-      "Laitat imurista harjasosat piiloon ja imuroit huolellisesti matot joka kohdasta",
-      "Imuroit matot samalla tavoin kuin lattiat"
+      "You do not vacuum the carpets at all and you stop vacuuming",
+      "You hide the brush parts from the vacuum cleaner and carefully vacuum the carpets from every point",
+      "You vacuum carpets in the same way as floors"
     ],
-    "Et imuroi mattoja lainkaan ja lopetat imuroinnin": "null",
-    "Laitat imurista harjasosat piiloon ja imuroit huolellisesti matot joka kohdasta": "kaappi ja pöytä pölyä",
-    "Imuroit matot samalla tavoin kuin lattiat": "maton väärä imurointi",
-    "Et imuroi mattoja lainkaan ja lopetat imuroinninColor": "red",
-    "Laitat imurista harjasosat piiloon ja imuroit huolellisesti matot joka kohdastaColor": "green",
-    "Imuroit matot samalla tavoin kuin lattiatColor": "yellow"
+    "You do not vacuum the carpets at all and you stop vacuuming": "null",
+    "You hide the brush parts from the vacuum cleaner and carefully vacuum the carpets from every point": "kaappi ja pöytä pölyä",
+    "You vacuum carpets in the same way as floors": "maton väärä imurointi",
+    "You do not vacuum the carpets at all and you stop vacuumingColor": "red",
+    "You hide the brush parts from the vacuum cleaner and carefully vacuum the carpets from every pointColor": "green",
+    "You vacuum carpets in the same way as floorsColor": "yellow"
   },
   "kaappi ja pöytä pölyä": {
-    "question": "Huomaat, että kaapin päällä ja pöydillä on pölyä.",
+    "question": "You notice that there is dust on top of the cabinet and on the table.",
     "background": "background_3",
     "person": "null",
     "face": "null",
     "fore": "fore_16",
     "answers": [
-      "Imuroit kaapin ja pöydän päältä",
-      "Siivoat myöhemmin pölyrätillä kaapin ja pöydän päältä",
-      "Puhallat pölyt lattialle ja imuroit ne pois"
+      "You vacuum the cabinet and table",
+      "You will later clean the cabinet and table with a dusting cloth",
+      "You blow the dust to the floor and vacuum it away"
     ],
-    "Imuroit kaapin ja pöydän päältä": "kaappi imurointi",
-    "Siivoat myöhemmin pölyrätillä kaapin ja pöydän päältä": "imurointi valmis",
-    "Puhallat pölyt lattialle ja imuroit ne pois": "imurointi valmis",
-    "Imuroit kaapin ja pöydän päältäColor": "red",
-    "Siivoat myöhemmin pölyrätillä kaapin ja pöydän päältäColor": "green",
-    "Puhallat pölyt lattialle ja imuroit ne poisColor": "yellow"
+    "You vacuum the cabinet and table": "kaappi imurointi",
+    "You will later clean the cabinet and table with a dusting cloth": "imurointi valmis",
+    "You blow the dust to the floor and vacuum it away": "imurointi valmis",
+    "You vacuum the cabinet and tableColor": "red",
+    "You will later clean the cabinet and table with a dusting clothColor": "green",
+    "You blow the dust to the floor and vacuum it awayColor": "yellow"
   },
   "imurointi valmis": {
-    "question": "Sait koko asunnon imuroitua. Sammutat imurin, irrotat virtajohdon pistorasiasta ja painat imurin nappia, jolloin imuri vetää virtajohdon takaisin sisälleen.",
+    "question": "You got the whole apartment vacuumed. You turn off the vacuum cleaner, unplug the power cord, and press the cord button on the vacuum cleaner, and the vacuum cleaner pulls the power cord back inside.",
     "background": "background_13",
     "person": "null",
     "face": "null",
     "fore": "fore_16",
     "answers": [
-      "Tarkistat, onko imurin pölypussi täynnä likaa ja pölyä",
-      "Viet imurin takaisin paikoilleen ja lopetat siivoamisen",
-      "Viet imurin takaisin paikoilleen ja jatkat siivoamista pyyhkimällä pölyjä",
-      "Jätät imurin keskelle lattiaa"
+      "You check if the vacuum cleaner dust bag is full of dirt and dust",
+      "You return the vacuum cleaner back to where it belongs and you stop cleaning",
+      "You return the vacuum cleaner back to where it belongs and start wiping the dust with a dusting cloth",
+      "You leave the vacuum cleaner in the middle of the floor"
     ],
-    "Tarkistat, onko imurin pölypussi täynnä likaa ja pölyä": "pölypussi",
-    "Viet imurin takaisin paikoilleen ja lopetat siivoamisen": "null",
-    "Viet imurin takaisin paikoilleen ja jatkat siivoamista pyyhkimällä pölyjä": "null",
-    "Jätät imurin keskelle lattiaa": "null",
-    "Tarkistat, onko imurin pölypussi täynnä likaa ja pölyäColor": "green",
-    "Viet imurin takaisin paikoilleen ja lopetat siivoamisenColor": "green",
-    "Viet imurin takaisin paikoilleen ja jatkat siivoamista pyyhkimällä pölyjäColor": "green",
-    "Jätät imurin keskelle lattiaaColor": "red"
+    "You check if the vacuum cleaner dust bag is full of dirt and dust": "pölypussi",
+    "You return the vacuum cleaner back to where it belongs and you stop cleaning": "null",
+    "You return the vacuum cleaner back to where it belongs and start wiping the dust with a dusting cloth": "null",
+    "You leave the vacuum cleaner in the middle of the floor": "null",
+    "You check if the vacuum cleaner dust bag is full of dirt and dustColor": "green",
+    "You return the vacuum cleaner back to where it belongs and you stop cleaningColor": "green",
+    "You return the vacuum cleaner back to where it belongs and start wiping the dust with a dusting clothColor": "green",
+    "You leave the vacuum cleaner in the middle of the floorColor": "red"
   },
   "maton väärä imurointi": {
-    "question": "Yrität imuroida mattoa imurin harjasosat näkyvillä, mutta imuri ei liiku maton päällä hyvin. Imuri tuntuu paljon raskaammalta ja imurointi on kaksi kertaa hitaampaa kuin lattian imurointi.",
+    "question": "You try to vacuum the carpet with the brush parts of the vacuum cleaner visible, but the vacuum cleaner does not move well on the carpet. The vacuum cleaner feels much heavier and vacuuming is twice as slow as vacuuming the floor.",
     "background": "background_2",
     "person": "null",
     "face": "null",
     "fore": "fore_16",
     "answers": [
-      "Laitat imurin harjasosat piiloon ja imuroit matot huolellisesti joka kohdasta",
-      "Jatkat imurointia siitä huolimatta"
+      "You hide the brush parts of the vacuum cleaner and vacuum the carpets carefully from every point",
+      "You continue to vacuum nonetheless"
     ],
-    "Laitat imurin harjasosat piiloon ja imuroit matot huolellisesti joka kohdasta": "imurointi valmis",
-    "Jatkat imurointia siitä huolimatta": "imurointi valmis",
-    "Laitat imurin harjasosat piiloon ja imuroit matot huolellisesti joka kohdastaColor": "green",
-    "Jatkat imurointia siitä huolimattaColor": "red"
+    "You hide the brush parts of the vacuum cleaner and vacuum the carpets carefully from every point": "imurointi valmis",
+    "You continue to vacuum nonetheless": "imurointi valmis",
+    "You hide the brush parts of the vacuum cleaner and vacuum the carpets carefully from every pointColor": "green",
+    "You continue to vacuum nonethelessColor": "red"
   },
   "kaappi imurointi": {
-    "question": "Imuroit pölyä pöydän ja kaapin päältä. Pöly lähtee hienosti pois, mutta imuri levittää lattialla olevia bakteereja tasojen päälle. Imuroit vahingossa pöydällä olleen tärkeän tavaran imurin sisään. Tavara menee rikki. Sammutat imurin, avaat sen ja siirrät rikkinäisen tavaran roskiin. ",
+    "question": "You vacuum the dust from the table and cabinet. The dust leaves nicely, but the vacuum cleaner spreads bacteria from the floor to the levels. You accidentally vacuum an important item on the table inside the vacuum cleaner. The item gets broken. You switch off the vacuum cleaner, open it and move the broken item to the trash.",
     "background": "background_2",
     "person": "null",
     "face": "null",
     "fore": "fore_16",
     "answers": [
-      "Käynnistät imurin ja imuroit jatkossa vain lattiat ja matot",
-      "Lopetat imuroinnin kokonaan"
+      "You start the vacuum cleaner and only vacuum floors and carpets in the future",
+      "You stop vacuuming entirely"
     ],
-    "Käynnistät imurin ja imuroit jatkossa vain lattiat ja matot": "imurointi valmis",
-    "Lopetat imuroinnin kokonaan": "null",
-    "Käynnistät imurin ja imuroit jatkossa vain lattiat ja matotColor": "green",
-    "Lopetat imuroinnin kokonaanColor": "red"
+    "You start the vacuum cleaner and only vacuum floors and carpets in the future": "imurointi valmis",
+    "You stop vacuuming entirely": "null",
+    "You start the vacuum cleaner and only vacuum floors and carpets in the futureColor": "green",
+    "You stop vacuuming entirelyColor": "red"
   },
   "pölypussi": {
-    "question": "Avaat imurin ja huomaat, että pölypussi on täynnä likaa.",
+    "question": "You open the vacuum cleaner and you notice that the dust bag is full of dirt.",
     "background": "background_13",
     "person": "null",
     "face": "null",
     "fore": "fore_16",
     "answers": [
-      "Otat vanhan pölypussin pois ja laitat uuden tilalle",
-      "Siirrät imurin suihkutilaan, haet siivouskäsineet ja roskapussin ja tyhjennät pölypussin liat roskikseen",
-      "Heität imurin roskikseen ja hankit uuden imurin, jossa on tyhjä pölypussi"
+      "You take out the old dust bag and replace it with a new one",
+      "You move the vacuum cleaner to the shower room, pick up the cleaning gloves and garbage bag and empty the dust bag of dirt into the trash",
+      "You throw the vacuum cleaner in the trash and get a new vacuum cleaner with an empty dust bag"
     ],
-    "Otat vanhan pölypussin pois ja laitat uuden tilalle": "pölypussi merkki",
-    "Siirrät imurin suihkutilaan, haet siivouskäsineet ja roskapussin ja tyhjennät pölypussin liat roskikseen": "pölypussi tyhjä",
-    "Heität imurin roskikseen ja hankit uuden imurin, jossa on tyhjä pölypussi": "null",
-    "Otat vanhan pölypussin pois ja laitat uuden tilalleColor": "green",
-    "Siirrät imurin suihkutilaan, haet siivouskäsineet ja roskapussin ja tyhjennät pölypussin liat roskikseenColor": "green",
-    "Heität imurin roskikseen ja hankit uuden imurin, jossa on tyhjä pölypussiColor": "red"
+    "You take out the old dust bag and replace it with a new one": "pölypussi merkki",
+    "You move the vacuum cleaner to the shower room, pick up the cleaning gloves and garbage bag and empty the dust bag of dirt into the trash": "pölypussi tyhjä",
+    "You throw the vacuum cleaner in the trash and get a new vacuum cleaner with an empty dust bag": "null",
+    "You take out the old dust bag and replace it with a new oneColor": "green",
+    "You move the vacuum cleaner to the shower room, pick up the cleaning gloves and garbage bag and empty the dust bag of dirt into the trashColor": "green",
+    "You throw the vacuum cleaner in the trash and get a new vacuum cleaner with an empty dust bagColor": "red"
   },
   "pölypussi merkki": {
-    "question": "Mistä hankit uuden pölypussin?",
+    "question": "Where do you get a new dust bag?",
     "background": "background_13",
     "person": "null",
     "face": "null",
     "fore": "fore_16",
     "answers": [
-      "Kirjoitat imurin merkin muistiin ja ostat uuden pölypussin elektroniikkaliikkeestä",
-      "Otat siivouskaapista löytyvän pölypussin ja laitat sen imuriin, vaikkei se ohjekirjan mukaan ole yhteensopiva imurisi kanssa",
-      "Otat siivouskaapista löytyvän pölypussin ja tarkistat ohjekirjasta tai pakkauksesta, että se sopii imuriisi"
+      "You write down the brand of the vacuum cleaner and buy a new dust bag from an electronics store",
+      "You take the dust bag found in the cleaning cabinet and put it in the vacuum cleaner, even though it is not compatible with your vacuum cleaner according to the manual",
+      "You take the dust bag found in the cleaning cabinet and check in the instruction manual or packaging that it fits your vacuum cleaner"
     ],
-    "Kirjoitat imurin merkin muistiin ja ostat uuden pölypussin elektroniikkaliikkeestä": "pölypussi tyhjä",
-    "Otat siivouskaapista löytyvän pölypussin ja laitat sen imuriin, vaikkei se ohjekirjan mukaan ole yhteensopiva imurisi kanssa": "null",
-    "Otat siivouskaapista löytyvän pölypussin ja tarkistat ohjekirjasta tai pakkauksesta, että se sopii imuriisi": "pölypussi tyhjä",
-    "Kirjoitat imurin merkin muistiin ja ostat uuden pölypussin elektroniikkaliikkeestäColor": "green",
-    "Otat siivouskaapista löytyvän pölypussin ja laitat sen imuriin, vaikkei se ohjekirjan mukaan ole yhteensopiva imurisi kanssaColor": "red",
-    "Otat siivouskaapista löytyvän pölypussin ja tarkistat ohjekirjasta tai pakkauksesta, että se sopii imuriisiColor": "green"
+    "You write down the brand of the vacuum cleaner and buy a new dust bag from an electronics store": "pölypussi tyhjä",
+    "You take the dust bag found in the cleaning cabinet and put it in the vacuum cleaner, even though it is not compatible with your vacuum cleaner according to the manual": "null",
+    "You take the dust bag found in the cleaning cabinet and check in the instruction manual or packaging that it fits your vacuum cleaner": "pölypussi tyhjä",
+    "You write down the brand of the vacuum cleaner and buy a new dust bag from an electronics storeColor": "green",
+    "You take the dust bag found in the cleaning cabinet and put it in the vacuum cleaner, even though it is not compatible with your vacuum cleaner according to the manualColor": "red",
+    "You take the dust bag found in the cleaning cabinet and check in the instruction manual or packaging that it fits your vacuum cleanerColor": "green"
   },
   "pölypussi tyhjä": {
-    "question": "Saat pölypussin tyhjennettyä. Laitat imurin pölypussin luukun kiinni.",
+    "question": "You empty the dust bag. You close the vacuum cleaner dust bag door",
     "background": "background_13",
     "person": "null",
     "face": "null",
     "fore": "fore_16",
     "answers": [
-      "Viet imurin takaisin paikalleen",
-      "Siivoat vielä pölypussin vaihdosta pudonneet liat ja viet imurin paikalleen",
-      "Jätät imurin siihen ja lopetat imuroimisen"
+      "You return the vacuum cleaner back to where it belongs",
+      "You clean the dirt that has fallen from the dust bag replacement and return the vacuum cleaner back to where it belongs",
+      "You leave the vacuum cleaner to where it is and stop vacuuming"
     ],
-    "Viet imurin takaisin paikalleen": "null",
-    "Siivoat vielä pölypussin vaihdosta pudonneet liat ja viet imurin paikalleen": "null",
-    "Jätät imurin siihen ja lopetat imuroimisen": "null",
-    "Viet imurin takaisin paikalleenColor": "yellow",
-    "Siivoat vielä pölypussin vaihdosta pudonneet liat ja viet imurin paikalleenColor": "green",
-    "Jätät imurin siihen ja lopetat imuroimisenColor": "red"
+    "You return the vacuum cleaner back to where it belongs": "null",
+    "You clean the dirt that has fallen from the dust bag replacement and return the vacuum cleaner back to where it belongs": "null",
+    "You leave the vacuum cleaner to where it is and stop vacuuming": "null",
+    "You return the vacuum cleaner back to where it belongsColor": "yellow",
+    "You clean the dirt that has fallen from the dust bag replacement and return the vacuum cleaner back to where it belongsColor": "green",
+    "You leave the vacuum cleaner to where it is and stop vacuumingColor": "red"
   }
 }
