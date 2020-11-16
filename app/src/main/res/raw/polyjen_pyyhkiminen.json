@@ -1,278 +1,278 @@
 {
   "first": {
-    "question": "Pölyt on pyyhitty viimeksi viikko sitten. Huomaat, että huonekalujen päälle on kertynyt pölyä.",
+    "question": "Dust was last wiped off a week ago. You notice that dust has accumulated on the furnitures.",
     "background": "background_15",
     "person": "null",
     "face": "null",
     "fore": "fore_16",
     "answers": [
-      "Haet pölyhuiskan",
-      "Haet imurin",
-      "Haet kuivan rätin",
-      "Haet rätin, kastelet sen ja puristat siitä liiat kosteudet pois",
-      "Haet kuivan mikrokuituliinan",
-      "Haet mikrokuituliinan, kastelet sen ja puristat siitä liiat kosteudet pois",
-      "Puhallat pölyt pois tasojen päältä"
+      "You go get a dust whisk",
+      "You go get a vacuum cleaner",
+      "You go get a dry rag",
+      "You go get a rag, water it and squeeze out any excess moisture",
+      "You go get a dry microfiber cloth",
+      "You go get a microfiber cloth, water it and squeeze out any excess moisture",
+      "You blow the dust off the levels"
     ],
-    "Haet pölyhuiskan": "pölyhuiskalla pyyhkiminen",
-    "Haet imurin": "null",
-    "Haet kuivan rätin": "pölyjen pyyhkiminen ",
-    "Haet rätin, kastelet sen ja puristat siitä liiat kosteudet pois": "pölyjen pyyhkiminen ",
-    "Haet kuivan mikrokuituliinan": "pölyjen pyyhkiminen ",
-    "Haet mikrokuituliinan, kastelet sen ja puristat siitä liiat kosteudet pois": "pölyjen pyyhkiminen ",
-    "Puhallat pölyt pois tasojen päältä": "null",
-    "Haet pölyhuiskanColor": "green",
-    "Haet imurinColor": "red",
-    "Haet kuivan rätinColor": "yellow",
-    "Haet rätin, kastelet sen ja puristat siitä liiat kosteudet poisColor": "green",
-    "Haet kuivan mikrokuituliinanColor": "green",
-    "Haet mikrokuituliinan, kastelet sen ja puristat siitä liiat kosteudet poisColor": "green",
-    "Puhallat pölyt pois tasojen päältäColor": "red"
+    "You go get a dust whisk": "pölyhuiskalla pyyhkiminen",
+    "You go get a vacuum cleaner": "null",
+    "You go get a dry rag": "pölyjen pyyhkiminen ",
+    "You go get a rag, water it and squeeze out any excess moisture": "pölyjen pyyhkiminen ",
+    "You go get a dry microfiber cloth": "pölyjen pyyhkiminen ",
+    "You go get a microfiber cloth, water it and squeeze out any excess moisture": "pölyjen pyyhkiminen ",
+    "You blow the dust off the levels": "null",
+    "You go get a dust whiskColor": "green",
+    "You go get a vacuum cleanerColor": "red",
+    "You go get a dry ragColor": "yellow",
+    "You go get a rag, water it and squeeze out any excess moistureColor": "green",
+    "You go get a dry microfiber clothColor": "green",
+    "You go get a microfiber cloth, water it and squeeze out any excess moistureColor": "green",
+    "You blow the dust off the levelsColor": "red"
   },
   "pölyjen pyyhkiminen ": {
-    "question": "Menet ensimmäisen pölyisen tason luo valitsemasi siivoamiseen tarkoitetun työvälineen eli liinan kanssa.",
+    "question": "You go to the first dusty level with the cleaning tool of your choice, i.e. the cloth.",
     "background": "background_15",
     "person": "null",
     "face": "null",
     "fore": "fore_16",
     "answers": [
-      "Piirrät hienoja kuvioita pölyyn etkä pyyhi niitä pois",
-      "Pyyhit pölyt pois huolellisesti joka kohdasta",
-      "Pyyhit muutaman kerran edestakaisin pintaa ja toivot, että se tuli tarpeeksi puhtaaksi",
-      "Piirrät hienoja kuvioita pölyyn ja pyyhit sitten kaikki pölyt pois huolellisesti"
+      "You draw nice patterns on the dust and you don’t wipe them off",
+      "You carefully wipe the dust off every point",
+      "You wipe the surface back and forth a few times and hope it became clean enough",
+      "You draw nice patterns on the dust and then wipe off all the dust carefully"
     ],
-    "Piirrät hienoja kuvioita pölyyn etkä pyyhi niitä pois": "null",
-    "Pyyhit pölyt pois huolellisesti joka kohdasta": "pölyjen pyyhkiminen ",
-    "Pyyhit muutaman kerran edestakaisin pintaa ja toivot, että se tuli tarpeeksi puhtaaksi": "likainen liina",
-    "Piirrät hienoja kuvioita pölyyn ja pyyhit sitten kaikki pölyt pois huolellisesti": "likainen liina",
-    "Piirrät hienoja kuvioita pölyyn etkä pyyhi niitä poisColor": "red",
-    "Pyyhit pölyt pois huolellisesti joka kohdastaColor": "green",
-    "Pyyhit muutaman kerran edestakaisin pintaa ja toivot, että se tuli tarpeeksi puhtaaksiColor": "yellow",
-    "Piirrät hienoja kuvioita pölyyn ja pyyhit sitten kaikki pölyt pois huolellisestiColor": "green"
+    "You draw nice patterns on the dust and you don’t wipe them off": "null",
+    "You carefully wipe the dust off every point": "pölyjen pyyhkiminen ",
+    "You wipe the surface back and forth a few times and hope it became clean enough": "likainen liina",
+    "You draw nice patterns on the dust and then wipe off all the dust carefully": "likainen liina",
+    "You draw nice patterns on the dust and you don’t wipe them offColor": "red",
+    "You carefully wipe the dust off every pointColor": "green",
+    "You wipe the surface back and forth a few times and hope it became clean enoughColor": "yellow",
+    "You draw nice patterns on the dust and then wipe off all the dust carefullyColor": "green"
   },
   "likainen liina": {
-    "question": "Siivoat useamman tason samalla tyylillä. Huomaat, että liina alkaa olla pölyinen.",
+    "question": "You clean multiple levels in the same style. You notice that the cloth starts to get dusty.",
     "background": "background_3",
     "person": "null",
     "face": "null",
     "fore": "fore_16",
     "answers": [
-      "Heilutat pölyistä liinaa muutaman kerran ja katsot, kun pöly lentää lattialle",
-      "Käyt huuhtelemassa liinan vedellä ja puristat sitä muutaman kerran, jotta vedet valuvat siitä pois",
-      "Jatkat pölyjen pyyhkimistä"
+      "You swing the dusty cloth a few times and watch as the dust flies to the floor",
+      "You rinse the cloth with water and squeeze it a few times to let the water drain out of it",
+      "You continue to wipe the dust"
     ],
-    "Heilutat pölyistä liinaa muutaman kerran ja katsot, kun pöly lentää lattialle": "pölyjen toinen pyyhkiminen",
-    "Käyt huuhtelemassa liinan vedellä ja puristat sitä muutaman kerran, jotta vedet valuvat siitä pois": "pölyjen toinen pyyhkiminen",
-    "Jatkat pölyjen pyyhkimistä": "null",
-    "Heilutat pölyistä liinaa muutaman kerran ja katsot, kun pöly lentää lattialleColor": "red",
-    "Käyt huuhtelemassa liinan vedellä ja puristat sitä muutaman kerran, jotta vedet valuvat siitä poisColor": "green",
-    "Jatkat pölyjen pyyhkimistäColor": "red"
+    "You swing the dusty cloth a few times and watch as the dust flies to the floor": "pölyjen toinen pyyhkiminen",
+    "You rinse the cloth with water and squeeze it a few times to let the water drain out of it": "pölyjen toinen pyyhkiminen",
+    "You continue to wipe the dust": "null",
+    "You swing the dusty cloth a few times and watch as the dust flies to the floorColor": "red",
+    "You rinse the cloth with water and squeeze it a few times to let the water drain out of itColor": "green",
+    "You continue to wipe the dustColor": "red"
   },
   "pölyjen toinen pyyhkiminen": {
-    "question": "Jatkat pölyjen pyyhkimistä tasoilta. Huomaat, että television ruutu on pölyinen.",
+    "question": "You continue to wipe dust off the levels. You notice that the TV screen is dusty.",
     "background": "background_3",
     "person": "null",
     "face": "null",
     "fore": "fore_16",
     "answers": [
-      "Pyyhit television joskus toiste",
-      "Haet kuivan ja puhtaan mikrokuituliinan ja pyyhit ruudun varovasti joka kohdasta",
-      "Pyyhit ruudun kostealla liinallasi"
+      "You wipe the screen sometime later",
+      "You go get a dry and clean microfiber cloth and gently wipe the screen from every point",
+      "You wipe the screen with your moist cloth"
     ],
-    "Pyyhit television joskus toiste": "tasot puhdistettu",
-    "Haet kuivan ja puhtaan mikrokuituliinan ja pyyhit ruudun varovasti joka kohdasta": "televisio puhdas",
-    "Pyyhit ruudun kostealla liinallasi": "televisio naarmuilla",
-    "Pyyhit television joskus toisteColor": "yellow",
-    "Haet kuivan ja puhtaan mikrokuituliinan ja pyyhit ruudun varovasti joka kohdastaColor": "green",
-    "Pyyhit ruudun kostealla liinallasiColor": "red"
+    "You wipe the screen sometime later": "tasot puhdistettu",
+    "You go get a dry and clean microfiber cloth and gently wipe the screen from every point": "televisio puhdas",
+    "You wipe the screen with your moist cloth": "televisio naarmuilla",
+    "You wipe the screen sometime laterColor": "yellow",
+    "You go get a dry and clean microfiber cloth and gently wipe the screen from every pointColor": "green",
+    "You wipe the screen with your moist clothColor": "red"
   },
   "televisio puhdas": {
-    "question": "Saat television puhdistettua pölystä.",
+    "question": "You finish cleaning the TV screen.",
     "background": "background_3",
     "person": "null",
     "face": "null",
     "fore": "fore_16",
     "answers": [
-      "Peset mikrokuituliinan, puristat siitä liiat vedet pois ja ripustat sen kuivumaan",
-      "Jätät mikrokuituliinan television eteen"
+      "You wash the microfiber cloth, squeeze out any excess water, and hang it to dry",
+      "You leave the microfiber cloth in front of the TV"
     ],
-    "Peset mikrokuituliinan, puristat siitä liiat vedet pois ja ripustat sen kuivumaan": "tasot puhdistettu",
-    "Jätät mikrokuituliinan television eteen": "tasot puhdistettu",
-    "Peset mikrokuituliinan, puristat siitä liiat vedet pois ja ripustat sen kuivumaanColor": "green",
-    "Jätät mikrokuituliinan television eteenColor": "red"
+    "You wash the microfiber cloth, squeeze out any excess water, and hang it to dry": "tasot puhdistettu",
+    "You leave the microfiber cloth in front of the TV": "tasot puhdistettu",
+    "You wash the microfiber cloth, squeeze out any excess water, and hang it to dryColor": "green",
+    "You leave the microfiber cloth in front of the TVColor": "red"
   },
   "tasot puhdistettu": {
-    "question": "Olet saanut kaikki tasot puhdistettua.",
+    "question": "You have cleaned all the levels.",
     "background": "background_2",
     "person": "null",
     "face": "null",
     "fore": "fore_16",
     "answers": [
-      "Viet liinan siivouskaappiin",
-      "Peset liinan, puristat siitä liiat vedet pois ja ripustat sen kuivumaan",
-      "Pyyhit jokaisen tason vielä uudestaan märällä liinalla"
+      "You take the cloth to the cleaning cabinet",
+      "You wash the cloth, squeeze out any excess water, and hang it to dry",
+      "You wipe each level again with a wet cloth"
     ],
-    "Viet liinan siivouskaappiin": "null",
-    "Peset liinan, puristat siitä liiat vedet pois ja ripustat sen kuivumaan": "null",
-    "Pyyhit jokaisen tason vielä uudestaan märällä liinalla": "null",
-    "Viet liinan siivouskaappiinColor": "red",
-    "Peset liinan, puristat siitä liiat vedet pois ja ripustat sen kuivumaanColor": "green",
-    "Pyyhit jokaisen tason vielä uudestaan märällä liinallaColor": "yellow"
+    "You take the cloth to the cleaning cabinet": "null",
+    "You wash the cloth, squeeze out any excess water, and hang it to dry": "null",
+    "You wipe each level again with a wet cloth": "null",
+    "You take the cloth to the cleaning cabinetColor": "red",
+    "You wash the cloth, squeeze out any excess water, and hang it to dryColor": "green",
+    "You wipe each level again with a wet clothColor": "yellow"
   },
   "pölyhuiskalla pyyhkiminen": {
-    "question": "Menet ensimmäisen pölyisen tason luo.",
+    "question": "You go to the first dusty level.",
     "background": "background_14",
     "person": "null",
     "face": "null",
     "fore": "fore_16",
     "answers": [
-      "Pyyhit joka kohdan huolellisesti pölyhuiskalla",
-      "Puhallat pölyt pois tasolta ja yrität saada ne kiinni pölyhuiskalla",
-      "Heilutat pölyhuiskaa tason edessä ja toivot, että pölyt lentävät pölyhuiskaan"
+      "You wipe each area thoroughly with the dust whisk",
+      "You blow the dust off the level and try to catch them with the dust whisk",
+      "You swing the dust whisk in front of the level and hope that the dust flies to the dust whisk"
     ],
-    "Pyyhit joka kohdan huolellisesti pölyhuiskalla": "pölyhuiskalla pyyhitty",
-    "Puhallat pölyt pois tasolta ja yrität saada ne kiinni pölyhuiskalla": "pölyhuiska puhallus",
-    "Heilutat pölyhuiskaa tason edessä ja toivot, että pölyt lentävät pölyhuiskaan": "pölyhuiska heilutus",
-    "Pyyhit joka kohdan huolellisesti pölyhuiskallaColor": "green",
-    "Puhallat pölyt pois tasolta ja yrität saada ne kiinni pölyhuiskallaColor": "red",
-    "Heilutat pölyhuiskaa tason edessä ja toivot, että pölyt lentävät pölyhuiskaanColor": "red"
+    "You wipe each area thoroughly with the dust whisk": "pölyhuiskalla pyyhitty",
+    "You blow the dust off the level and try to catch them with the dust whisk": "pölyhuiska puhallus",
+    "You swing the dust whisk in front of the level and hope that the dust flies to the dust whisk": "pölyhuiska heilutus",
+    "You wipe each area thoroughly with the dust whiskColor": "green",
+    "You blow the dust off the level and try to catch them with the dust whiskColor": "red",
+    "You swing the dust whisk in front of the level and hope that the dust flies to the dust whiskColor": "red"
   },
   "pölyhuiskalla pyyhitty": {
-    "question": "Puhdistat joka tason samalla tavalla. Huomaat, että television ruutu on pölyinen.",
+    "question": "You clean each level in the same way. You notice that the TV screen is dusty.",
     "background": "background_14",
     "person": "null",
     "face": "null",
     "fore": "fore_16",
     "answers": [
-      "Pyyhit ruudun pölyhuiskalla",
-      "Pyyhit ruudun myöhemmin puhtaalla ja kuivalla mikrokuituliinalla"
+      "You wipe the screen with the dust whisk",
+      "You wipe the screen later with a clean, dry microfiber cloth"
     ],
-    "Pyyhit ruudun pölyhuiskalla": "pölyhuiska ja televisio",
-    "Pyyhit ruudun myöhemmin puhtaalla ja kuivalla mikrokuituliinalla": "pölyhuiska valmis",
-    "Pyyhit ruudun pölyhuiskallaColor": "red",
-    "Pyyhit ruudun myöhemmin puhtaalla ja kuivalla mikrokuituliinallaColor": "green"
+    "You wipe the screen with the dust whisk": "pölyhuiska ja televisio",
+    "You wipe the screen later with a clean, dry microfiber cloth": "pölyhuiska valmis",
+    "You wipe the screen with the dust whiskColor": "red",
+    "You wipe the screen later with a clean, dry microfiber clothColor": "green"
   },
   "pölyhuiska valmis": {
-    "question": "Kaikki pölyt on pyyhitty tasoilta.",
+    "question": "All dust has been wiped off the levels.",
     "background": "background_14",
     "person": "null",
     "face": "null",
     "fore": "fore_16",
     "answers": [
-      "Heilutat pölyhuiskaa muutaman kerran ulkona",
-      "Jätät pölyhuiskan ulos tuulettumaan",
-      "Peset pölyhuiskan lämpimällä vedellä ja jätät sen kuivumaan",
-      "Puhdistat pölyhuiskan imurilla"
+      "You swing the dust whisk a few times outside",
+      "You leave the dust whisk out to ventilate",
+      "You wash the dust whisk with warm water and leave it to dry",
+      "You clean the dust whisk with a vacuum cleaner"
     ],
-    "Heilutat pölyhuiskaa muutaman kerran ulkona": "pölyhuiska lopetus",
-    "Jätät pölyhuiskan ulos tuulettumaan": "null",
-    "Peset pölyhuiskan lämpimällä vedellä ja jätät sen kuivumaan": "null",
-    "Puhdistat pölyhuiskan imurilla": "pölyhuiska lopetus",
-    "Heilutat pölyhuiskaa muutaman kerran ulkonaColor": "green",
-    "Jätät pölyhuiskan ulos tuulettumaanColor": "yellow",
-    "Peset pölyhuiskan lämpimällä vedellä ja jätät sen kuivumaanColor": "red",
-    "Puhdistat pölyhuiskan imurillaColor": "green"
+    "You swing the dust whisk a few times outside": "pölyhuiska lopetus",
+    "You leave the dust whisk out to ventilate": "null",
+    "You wash the dust whisk with warm water and leave it to dry": "null",
+    "You clean the dust whisk with a vacuum cleaner": "pölyhuiska lopetus",
+    "You swing the dust whisk a few times outsideColor": "green",
+    "You leave the dust whisk out to ventilateColor": "yellow",
+    "You wash the dust whisk with warm water and leave it to dryColor": "red",
+    "You clean the dust whisk with a vacuum cleanerColor": "green"
   },
   "pölyhuiska lopetus": {
-    "question": "Pölyhuiska on nyt puhdas.",
+    "question": "The dust whisk is now clean.",
     "background": "background_14",
     "person": "null",
     "face": "null",
     "fore": "fore_16",
     "answers": [
-      "Viet pölyhuiskan takaisin sinne mistä otit sen",
-      "Ripustat pölyhuiskan ulos tuulettumaan",
-      "Laitat pölyhuiskan pesukoneeseen"
+      "You return the dust whisk back to where you took it",
+      "You hang the dust whisk out to ventilate",
+      "You put the dust whisk in the washing machine"
     ],
-    "Viet pölyhuiskan takaisin sinne mistä otit sen": "null",
-    "Ripustat pölyhuiskan ulos tuulettumaan": "null",
-    "Laitat pölyhuiskan pesukoneeseen": "null",
-    "Viet pölyhuiskan takaisin sinne mistä otit senColor": "green",
-    "Ripustat pölyhuiskan ulos tuulettumaanColor": "yellow",
-    "Laitat pölyhuiskan pesukoneeseenColor": "red"
+    "You return the dust whisk back to where you took it": "null",
+    "You hang the dust whisk out to ventilate": "null",
+    "You put the dust whisk in the washing machine": "null",
+    "You return the dust whisk back to where you took itColor": "green",
+    "You hang the dust whisk out to ventilateColor": "yellow",
+    "You put the dust whisk in the washing machineColor": "red"
   },
   "pölyn levitys": {
-    "question": "Liina on niin pölyinen, että se levittää kaiken pölyn eikä pysty enää keräämään uutta pölyä.",
+    "question": "The cloth is so dusty that it spreads all the dust and can no longer collect new dust.",
     "background": "background_3",
     "person": "null",
     "face": "null",
     "fore": "fore_16",
     "answers": [
-      "Jatkat pölyjen pyyhkimistä",
-      "Käyt huuhtelemassa liinan vedellä ja puristat sitä muutaman kerran, jotta vedet valuvat siitä pois",
-      "Lopetat pölyjen pyyhkimisen",
-      "Menet ostamaan uuden puhtaan liinan"
+      "You continue to wipe the dust",
+      "You rinse the cloth with water and squeeze it a few times to let the water drain out of it",
+      "You stop wiping the dust",
+      "You go to buy a new clean cloth"
     ],
-    "Jatkat pölyjen pyyhkimistä": "pölyn levitys",
-    "Käyt huuhtelemassa liinan vedellä ja puristat sitä muutaman kerran, jotta vedet valuvat siitä pois": "pölyjen toinen pyyhkiminen",
-    "Lopetat pölyjen pyyhkimisen": "null",
-    "Menet ostamaan uuden puhtaan liinan": "null",
-    "Jatkat pölyjen pyyhkimistäColor": "red",
-    "Käyt huuhtelemassa liinan vedellä ja puristat sitä muutaman kerran, jotta vedet valuvat siitä poisColor": "green",
-    "Lopetat pölyjen pyyhkimisenColor": "red",
-    "Menet ostamaan uuden puhtaan liinanColor": "red"
+    "You continue to wipe the dust": "pölyn levitys",
+    "You rinse the cloth with water and squeeze it a few times to let the water drain out of it": "pölyjen toinen pyyhkiminen",
+    "You stop wiping the dust": "null",
+    "You go to buy a new clean cloth": "null",
+    "You continue to wipe the dustColor": "red",
+    "You rinse the cloth with water and squeeze it a few times to let the water drain out of itColor": "green",
+    "You stop wiping the dustColor": "red",
+    "You go to buy a new clean clothColor": "red"
   },
   "televisio naarmuilla": {
-    "question": "Pyyhit television ruutua liinallasi. Huomaat, että ruutu tulee naarmuiseksi.",
+    "question": "You wipe the TV screen with your cloth. You notice that the screen becomes scratched.",
     "background": "background_3",
     "person": "null",
     "face": "null",
     "fore": "fore_16",
     "answers": [
-      "Lopetat ruudun pyyhkimisen ja jätät sen pölyiseksi",
-      "Haet kuivan ja puhtaan mikrokuituliinan ja pyyhit ruudun varovasti joka kohdasta",
-      "Jatkat ruudun pyyhkimistä"
+      "You stop wiping the screen and leave it dusty",
+      "You go get a dry and clean microfiber cloth and gently wipe the screen from every point",
+      "You continue to wipe the screen"
     ],
-    "Lopetat ruudun pyyhkimisen ja jätät sen pölyiseksi": "tasot puhdistettu",
-    "Haet kuivan ja puhtaan mikrokuituliinan ja pyyhit ruudun varovasti joka kohdasta": "televisio puhdas",
-    "Jatkat ruudun pyyhkimistä": "televisio naarmuilla",
-    "Lopetat ruudun pyyhkimisen ja jätät sen pölyiseksiColor": "yellow",
-    "Haet kuivan ja puhtaan mikrokuituliinan ja pyyhit ruudun varovasti joka kohdastaColor": "green",
-    "Jatkat ruudun pyyhkimistäColor": "red"
+    "You stop wiping the screen and leave it dusty": "tasot puhdistettu",
+    "You go get a dry and clean microfiber cloth and gently wipe the screen from every point": "televisio puhdas",
+    "You continue to wipe the screen": "televisio naarmuilla",
+    "You stop wiping the screen and leave it dustyColor": "yellow",
+    "You go get a dry and clean microfiber cloth and gently wipe the screen from every pointColor": "green",
+    "You continue to wipe the screenColor": "red"
   },
   "pölyhuiska puhallus": {
-    "question": "Pölyt lentävät viereiselle tasolle ja lattialle. Saat muutaman pölyhuikkasen kiinni pölyhuiskalla.",
+    "question": "Dusts fly to the adjacent level and floor. You are able to catch a few dust particles with the dust whisk.",
     "background": "background_14",
     "person": "null",
     "face": "null",
     "fore": "fore_16",
     "answers": [
-      "Puhallat viereisen tason pölyjä ja yrität saada ne kiinni pölyhuiskalla",
-      "Pyyhit joka kohdan huolellisesti pölyhuiskalla"
+      "You blow the dust on the adjacent level and try to catch them with the dust whisk",
+      "You wipe each area thoroughly with the dust whisk"
     ],
-    "Puhallat viereisen tason pölyjä ja yrität saada ne kiinni pölyhuiskalla": "pölyhuiska puhallus",
-    "Pyyhit joka kohdan huolellisesti pölyhuiskalla": "pölyhuiskalla pyyhitty",
-    "Puhallat viereisen tason pölyjä ja yrität saada ne kiinni pölyhuiskallaColor": "red",
-    "Pyyhit joka kohdan huolellisesti pölyhuiskallaColor": "green"
+    "You blow the dust on the adjacent level and try to catch them with the dust whisk": "pölyhuiska puhallus",
+    "You wipe each area thoroughly with the dust whisk": "pölyhuiskalla pyyhitty",
+    "You blow the dust on the adjacent level and try to catch them with the dust whiskColor": "red",
+    "You wipe each area thoroughly with the dust whiskColor": "green"
   },
   "pölyhuiska heilutus": {
-    "question": "Pölyt eivät liiku minnekään.",
+    "question": "Dust does not move anywhere.",
     "background": "background_14",
     "person": "null",
     "face": "null",
     "fore": "fore_16",
     "answers": [
-      "Pyyhit joka kohdan huolellisesti pölyhuiskalla",
-      "Heilutat pölyhuiskaa kaksi kertaa nopeammin"
+      "You wipe each area thoroughly with the dust whisk",
+      "You swing the dust whisk twice as fast"
     ],
-    "Pyyhit joka kohdan huolellisesti pölyhuiskalla": "pölyhuiskalla pyyhitty",
-    "Heilutat pölyhuiskaa kaksi kertaa nopeammin": "pölyhuiska heilutus",
-    "Pyyhit joka kohdan huolellisesti pölyhuiskallaColor": "green",
-    "Heilutat pölyhuiskaa kaksi kertaa nopeamminColor": "red"
+    "You wipe each area thoroughly with the dust whisk": "pölyhuiskalla pyyhitty",
+    "You swing the dust whisk twice as fast": "pölyhuiska heilutus",
+    "You wipe each area thoroughly with the dust whiskColor": "green",
+    "You swing the dust whisk twice as fastColor": "red"
   },
   "pölyhuiska ja televisio": {
-    "question": "Pyyhit television ruutua pölyhuiskalla. Huomaat, että ruutu tulee naarmuiseksi.",
+    "question": "You wipe the TV screen with the dust whisk. You notice that the screen becomes scratched.",
     "background": "background_14",
     "person": "null",
     "face": "null",
     "fore": "fore_16",
     "answers": [
-      "Jatkat ruudun pyyhkimistä",
-      "Pyyhit ruudun myöhemmin puhtaalla ja kuivalla mikrokuituliinalla"
+      "You continue to wipe the screen",
+      "You wipe the screen later with a clean, dry microfiber cloth"
     ],
-    "Jatkat ruudun pyyhkimistä": "pölyhuiska ja televisio",
-    "Pyyhit ruudun myöhemmin puhtaalla ja kuivalla mikrokuituliinalla": "pölyhuiska valmis",
-    "Jatkat ruudun pyyhkimistäColor": "red",
-    "Pyyhit ruudun myöhemmin puhtaalla ja kuivalla mikrokuituliinallaColor": "green"
+    "You continue to wipe the screen": "pölyhuiska ja televisio",
+    "You wipe the screen later with a clean, dry microfiber cloth": "pölyhuiska valmis",
+    "You continue to wipe the screenColor": "red",
+    "You wipe the screen later with a clean, dry microfiber clothColor": "green"
   }
 }
