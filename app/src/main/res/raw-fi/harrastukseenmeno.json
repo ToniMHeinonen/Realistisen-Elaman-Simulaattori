@@ -1,1 +1,260 @@
-{"first":{"question":"Harrastuksesi harjoitukset lähestyvät. Miten valmistaudut?","background":"background_1","person":"null","face":"null","fore":"null","answers":["Tiedustelet tuttavilta, voisiko joku viedä sinut harjoituksiin","Et mieti ollenkaan tulevia harjoituksia","Merkitset harjoitukset kalenteriin ja menet niihin itse"],"Tiedustelet tuttavilta, voisiko joku viedä sinut harjoituksiin":"tiedustelu","Et mieti ollenkaan tulevia harjoituksia":"paniikki","Merkitset harjoitukset kalenteriin ja menet niihin itse":"yksin","Tiedustelet tuttavilta, voisiko joku viedä sinut harjoituksiinColor":"green","Et mieti ollenkaan tulevia harjoituksiaColor":"red","Merkitset harjoitukset kalenteriin ja menet niihin itseColor":"green"},"tiedustelu":{"question":"Saat tuttavasi kiinni ja hän ehdottaa aikataulua, jolla olisit etuajassa paikalla. Mitä teet?","background":"background_6","person":"null","face":"null","fore":"fore_7","answers":["Sanot, että se ei käy","Sanot, että se sopii","Jätät harjoitukset väliin"],"Sanot, että se ei käy":"first","Sanot, että se sopii":"yhdessa","Jätät harjoitukset väliin":"null","Sanot, että se ei käyColor":"red","Sanot, että se sopiiColor":"green","Jätät harjoitukset väliinColor":"yellow"},"paniikki":{"question":"Sinun pitäisi lähteä harjoituksiin, eikä sinulla ole vielä mitään valmiina.","background":"background_2","person":"character_6","face":"face_uncomfortable","fore":"null","answers":["Keräät kaikki tarvittavat tavarat kokoon ja lähdet.","Jätät harjoitukset väliin.","Alat soitella tuttaville kyselläksesi, kuka voisi viedä sinut harjoituksiin."],"Keräät kaikki tarvittavat tavarat kokoon ja lähdet.":"yksin","Jätät harjoitukset väliin.":"null","Alat soitella tuttaville kyselläksesi, kuka voisi viedä sinut harjoituksiin.":"yhdessa","Keräät kaikki tarvittavat tavarat kokoon ja lähdet.Color":"green","Jätät harjoitukset väliin.Color":"yellow","Alat soitella tuttaville kyselläksesi, kuka voisi viedä sinut harjoituksiin.Color":"yellow"},"yksin":{"question":"Millä kulkuneuvolla menet?","background":"background_5","person":"character_6","face":"face_confused","fore":"null","answers":["Omalla autolla","Bussilla","Lapiolla"],"Omalla autolla":"auto","Bussilla":"bussi","Lapiolla":"yksin","Omalla autollaColor":"green","BussillaColor":"green","LapiollaColor":"red"},"yhdessa":{"question":"Menet harjoituspäivänä odottamaan kyytiäsi ja tuttavasi ilmoittaa, että on hieman myöhässä. Miten toimit?","background":"background_5","person":"character_6","face":"face_confused","fore":"null","answers":["Murehdit, kuinka koko suunnitelma menee pilalle","Lasket uuden aikataulun päässäsi","Odottelet rauhassa"],"Murehdit, kuinka koko suunnitelma menee pilalle":"kaveri","Lasket uuden aikataulun päässäsi":"kaveri","Odottelet rauhassa":"kaveri","Murehdit, kuinka koko suunnitelma menee pilalleColor":"red","Lasket uuden aikataulun päässäsiColor":"yellow","Odottelet rauhassaColor":"green"},"auto":{"question":"Miten ajat perille?","background":"background_3","person":"character_6","face":"face_surprised","fore":"null","answers":["Valitset nopeimman reitin, jotta ehdit valmistautua rauhassa","Valitset rauhallisimman reitin, sillä sinulla ei ole kiire","Et lähde ollenkaan, sillä unohdit harrastusvälineesi","Ajat ylinopeutta mahdollisimman nopeasti"],"Valitset nopeimman reitin, jotta ehdit valmistautua rauhassa":"paikalla","Valitset rauhallisimman reitin, sillä sinulla ei ole kiire":"paikalla","Et lähde ollenkaan, sillä unohdit harrastusvälineesi":"auto","Ajat ylinopeutta mahdollisimman nopeasti":"paikalla","Valitset nopeimman reitin, jotta ehdit valmistautua rauhassaColor":"green","Valitset rauhallisimman reitin, sillä sinulla ei ole kiireColor":"green","Et lähde ollenkaan, sillä unohdit harrastusvälineesiColor":"yellow","Ajat ylinopeutta mahdollisimman nopeastiColor":"red"},"bussi":{"question":"Jäät pois kyydistä harjoittelupaikan bussipysäkillä. Mitä teet?","background":"background_1","person":"character_6","face":"face_uncomfortable","fore":"null","answers":["Lähdet heti takaisin","Menet harjoittelupaikalle","Menet harjoittelupaikalle niin hitaasti kuin vain voit"],"Lähdet heti takaisin":"null","Menet harjoittelupaikalle":"paikalla","Menet harjoittelupaikalle niin hitaasti kuin vain voit":"paikalla","Lähdet heti takaisinColor":"red","Menet harjoittelupaikalleColor":"green","Menet harjoittelupaikalle niin hitaasti kuin vain voitColor":"yellow"},"kaveri":{"question":"Tuttavasi saapuu hakemaan sinua.","background":"background_3","person":"character_6","face":"face_uncomfortable","fore":"null","answers":["Valitat koko matkan, että myöhästyt","Olet hiljaa koko matkan","Vaadit tuttuasi ajamaan ylinopeutta","Keskustelet tuttusi kanssa normaalisti"],"Valitat koko matkan, että myöhästyt":"paikalla","Olet hiljaa koko matkan":"paikalla","Vaadit tuttuasi ajamaan ylinopeutta":"paikalla","Keskustelet tuttusi kanssa normaalisti":"paikalla","Valitat koko matkan, että myöhästytColor":"red","Olet hiljaa koko matkanColor":"green","Vaadit tuttuasi ajamaan ylinopeuttaColor":"red","Keskustelet tuttusi kanssa normaalistiColor":"green"},"paikalla":{"question":"Saavut harjoittelupaikalle. Mitä teet?","background":"background_5","person":"character_6","face":"face_happy","fore":"null","answers":["Puet harjoitteluvarusteet","Odotat viime hetkille asti ja vaihdat vasta sitten harjoitteluvarusteet päällesi","Käyt vessassa"],"Puet harjoitteluvarusteet":"alkaa","Odotat viime hetkille asti ja vaihdat vasta sitten harjoitteluvarusteet päällesi":"alkaa","Käyt vessassa":"tokana","Puet harjoitteluvarusteetColor":"green","Odotat viime hetkille asti ja vaihdat vasta sitten harjoitteluvarusteet päällesiColor":"yellow","Käyt vessassaColor":"green"},"tokana":{"question":"Menet vessaan. Mitä teet?","background":"background_3","person":"character_6","face":"face_confused","fore":"null","answers":["Hoidat asiasi ja täytät tarvittaessa vesipullon","Hoidat asiasi","Lukittaudut vessaan etkä mene harjoituksiin"],"Hoidat asiasi ja täytät tarvittaessa vesipullon":"vaihto","Hoidat asiasi":"vaihto","Lukittaudut vessaan etkä mene harjoituksiin":"null","Hoidat asiasi ja täytät tarvittaessa vesipullonColor":"green","Hoidat asiasiColor":"green","Lukittaudut vessaan etkä mene harjoituksiinColor":"red"},"vaihto":{"question":"Tulet vessasta. Mitä teet seuraavaksi?","background":"background_3","person":"null","face":"null","fore":"null","answers":["Puet itsellesi harjoitteluvarusteet","Odotat aivan viime hetkille ja vaihdat vasta sitten harjoitteluvarusteet päällesi","Lähdet kotiin","Lähdet kotiin, sillä olet kipeä"],"Puet itsellesi harjoitteluvarusteet":"alkaa","Odotat aivan viime hetkille ja vaihdat vasta sitten harjoitteluvarusteet päällesi":"alkaa","Lähdet kotiin":"null","Lähdet kotiin, sillä olet kipeä":"ilmoitus","Puet itsellesi harjoitteluvarusteetColor":"green","Odotat aivan viime hetkille ja vaihdat vasta sitten harjoitteluvarusteet päällesiColor":"yellow","Lähdet kotiinColor":"red","Lähdet kotiin, sillä olet kipeäColor":"green"},"alkaa":{"question":"Menet harjoittelualueelle. Miten toimit?","background":"background_1","person":"character_6","face":"face_happy","fore":"null","answers":["Harjoittelet","Leikit puhelimella"],"Harjoittelet":"harjoitusloppu","Leikit puhelimella":"harjoitusloppu","HarjoitteletColor":"green","Leikit puhelimellaColor":"red"},"ilmoitus":{"question":"Miten lähdet?","background":"background_1","person":"character_6","face":"face_sad","fore":"null","answers":["Ilmoitat valmentajalle\/ohjaajalle olevasi kipeä","Et ilmoita kenellekään mitään","Soitat tutullesi ja selität tilanteen"],"Ilmoitat valmentajalle\/ohjaajalle olevasi kipeä":"harjoitusloppu","Et ilmoita kenellekään mitään":"harjoitusloppu","Soitat tutullesi ja selität tilanteen":"harjoitusloppu","Ilmoitat valmentajalle\/ohjaajalle olevasi kipeäColor":"green","Et ilmoita kenellekään mitäänColor":"yellow","Soitat tutullesi ja selität tilanteenColor":"green"},"harjoitusloppu":{"question":"Harjoituksesi päättyvät. Miten toimit?","background":"background_5","person":"character_6","face":"face_confused","fore":"null","answers":["Soitat tutullesi ja pyydät häntä viemään sinut kotiin","Menet bussilla kotiin","Menen jollain muulla tavalla kotiin","Jäät seisomaan paikoillesi etkä tee mitään"],"Soitat tutullesi ja pyydät häntä viemään sinut kotiin":"null","Menet bussilla kotiin":"null","Menen jollain muulla tavalla kotiin":"null","Jäät seisomaan paikoillesi etkä tee mitään":"null","Soitat tutullesi ja pyydät häntä viemään sinut kotiinColor":"green","Menet bussilla kotiinColor":"green","Menen jollain muulla tavalla kotiinColor":"green","Jäät seisomaan paikoillesi etkä tee mitäänColor":"red"}}
+{
+  "first": {
+    "question": "Harrastuksesi harjoitukset lähestyvät. Miten valmistaudut?",
+    "background": "background_1",
+    "person": "null",
+    "face": "null",
+    "fore": "null",
+    "answers": [
+      "Tiedustelet tuttavilta, voisiko joku viedä sinut harjoituksiin",
+      "Et mieti ollenkaan tulevia harjoituksia",
+      "Merkitset harjoitukset kalenteriin ja menet niihin itse"
+    ],
+    "Tiedustelet tuttavilta, voisiko joku viedä sinut harjoituksiin": "tiedustelu",
+    "Et mieti ollenkaan tulevia harjoituksia": "paniikki",
+    "Merkitset harjoitukset kalenteriin ja menet niihin itse": "yksin",
+    "Tiedustelet tuttavilta, voisiko joku viedä sinut harjoituksiinColor": "green",
+    "Et mieti ollenkaan tulevia harjoituksiaColor": "red",
+    "Merkitset harjoitukset kalenteriin ja menet niihin itseColor": "green"
+  },
+  "tiedustelu": {
+    "question": "Saat tuttavasi kiinni ja hän ehdottaa aikataulua, jolla olisit etuajassa paikalla. Mitä teet?",
+    "background": "background_6",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_7",
+    "answers": [
+      "Sanot, että se ei käy",
+      "Sanot, että se sopii",
+      "Jätät harjoitukset väliin"
+    ],
+    "Sanot, että se ei käy": "first",
+    "Sanot, että se sopii": "yhdessa",
+    "Jätät harjoitukset väliin": "null",
+    "Sanot, että se ei käyColor": "red",
+    "Sanot, että se sopiiColor": "green",
+    "Jätät harjoitukset väliinColor": "yellow"
+  },
+  "paniikki": {
+    "question": "Sinun pitäisi lähteä harjoituksiin, eikä sinulla ole vielä mitään valmiina.",
+    "background": "background_2",
+    "person": "character_6",
+    "face": "face_uncomfortable",
+    "fore": "null",
+    "answers": [
+      "Keräät kaikki tarvittavat tavarat kokoon ja lähdet.",
+      "Jätät harjoitukset väliin.",
+      "Alat soitella tuttaville kyselläksesi, kuka voisi viedä sinut harjoituksiin."
+    ],
+    "Keräät kaikki tarvittavat tavarat kokoon ja lähdet.": "yksin",
+    "Jätät harjoitukset väliin.": "null",
+    "Alat soitella tuttaville kyselläksesi, kuka voisi viedä sinut harjoituksiin.": "yhdessa",
+    "Keräät kaikki tarvittavat tavarat kokoon ja lähdet.Color": "green",
+    "Jätät harjoitukset väliin.Color": "yellow",
+    "Alat soitella tuttaville kyselläksesi, kuka voisi viedä sinut harjoituksiin.Color": "yellow"
+  },
+  "yksin": {
+    "question": "Millä kulkuneuvolla menet?",
+    "background": "background_5",
+    "person": "character_6",
+    "face": "face_confused",
+    "fore": "null",
+    "answers": [
+      "Omalla autolla",
+      "Bussilla",
+      "Lapiolla"
+    ],
+    "Omalla autolla": "auto",
+    "Bussilla": "bussi",
+    "Lapiolla": "yksin",
+    "Omalla autollaColor": "green",
+    "BussillaColor": "green",
+    "LapiollaColor": "red"
+  },
+  "yhdessa": {
+    "question": "Menet harjoituspäivänä odottamaan kyytiäsi ja tuttavasi ilmoittaa, että on hieman myöhässä. Miten toimit?",
+    "background": "background_5",
+    "person": "character_6",
+    "face": "face_confused",
+    "fore": "null",
+    "answers": [
+      "Murehdit, kuinka koko suunnitelma menee pilalle",
+      "Lasket uuden aikataulun päässäsi",
+      "Odottelet rauhassa"
+    ],
+    "Murehdit, kuinka koko suunnitelma menee pilalle": "kaveri",
+    "Lasket uuden aikataulun päässäsi": "kaveri",
+    "Odottelet rauhassa": "kaveri",
+    "Murehdit, kuinka koko suunnitelma menee pilalleColor": "red",
+    "Lasket uuden aikataulun päässäsiColor": "yellow",
+    "Odottelet rauhassaColor": "green"
+  },
+  "auto": {
+    "question": "Miten ajat perille?",
+    "background": "background_3",
+    "person": "character_6",
+    "face": "face_surprised",
+    "fore": "null",
+    "answers": [
+      "Valitset nopeimman reitin, jotta ehdit valmistautua rauhassa",
+      "Valitset rauhallisimman reitin, sillä sinulla ei ole kiire",
+      "Et lähde ollenkaan, sillä unohdit harrastusvälineesi",
+      "Ajat ylinopeutta mahdollisimman nopeasti"
+    ],
+    "Valitset nopeimman reitin, jotta ehdit valmistautua rauhassa": "paikalla",
+    "Valitset rauhallisimman reitin, sillä sinulla ei ole kiire": "paikalla",
+    "Et lähde ollenkaan, sillä unohdit harrastusvälineesi": "auto",
+    "Ajat ylinopeutta mahdollisimman nopeasti": "paikalla",
+    "Valitset nopeimman reitin, jotta ehdit valmistautua rauhassaColor": "green",
+    "Valitset rauhallisimman reitin, sillä sinulla ei ole kiireColor": "green",
+    "Et lähde ollenkaan, sillä unohdit harrastusvälineesiColor": "yellow",
+    "Ajat ylinopeutta mahdollisimman nopeastiColor": "red"
+  },
+  "bussi": {
+    "question": "Jäät pois kyydistä harjoittelupaikan bussipysäkillä. Mitä teet?",
+    "background": "background_1",
+    "person": "character_6",
+    "face": "face_uncomfortable",
+    "fore": "null",
+    "answers": [
+      "Lähdet heti takaisin",
+      "Menet harjoittelupaikalle",
+      "Menet harjoittelupaikalle niin hitaasti kuin vain voit"
+    ],
+    "Lähdet heti takaisin": "null",
+    "Menet harjoittelupaikalle": "paikalla",
+    "Menet harjoittelupaikalle niin hitaasti kuin vain voit": "paikalla",
+    "Lähdet heti takaisinColor": "red",
+    "Menet harjoittelupaikalleColor": "green",
+    "Menet harjoittelupaikalle niin hitaasti kuin vain voitColor": "yellow"
+  },
+  "kaveri": {
+    "question": "Tuttavasi saapuu hakemaan sinua.",
+    "background": "background_3",
+    "person": "character_6",
+    "face": "face_uncomfortable",
+    "fore": "null",
+    "answers": [
+      "Valitat koko matkan, että myöhästyt",
+      "Olet hiljaa koko matkan",
+      "Vaadit tuttuasi ajamaan ylinopeutta",
+      "Keskustelet tuttusi kanssa normaalisti"
+    ],
+    "Valitat koko matkan, että myöhästyt": "paikalla",
+    "Olet hiljaa koko matkan": "paikalla",
+    "Vaadit tuttuasi ajamaan ylinopeutta": "paikalla",
+    "Keskustelet tuttusi kanssa normaalisti": "paikalla",
+    "Valitat koko matkan, että myöhästytColor": "red",
+    "Olet hiljaa koko matkanColor": "green",
+    "Vaadit tuttuasi ajamaan ylinopeuttaColor": "red",
+    "Keskustelet tuttusi kanssa normaalistiColor": "green"
+  },
+  "paikalla": {
+    "question": "Saavut harjoittelupaikalle. Mitä teet?",
+    "background": "background_5",
+    "person": "character_6",
+    "face": "face_happy",
+    "fore": "null",
+    "answers": [
+      "Puet harjoitteluvarusteet",
+      "Odotat viime hetkille asti ja vaihdat vasta sitten harjoitteluvarusteet päällesi",
+      "Käyt vessassa"
+    ],
+    "Puet harjoitteluvarusteet": "alkaa",
+    "Odotat viime hetkille asti ja vaihdat vasta sitten harjoitteluvarusteet päällesi": "alkaa",
+    "Käyt vessassa": "tokana",
+    "Puet harjoitteluvarusteetColor": "green",
+    "Odotat viime hetkille asti ja vaihdat vasta sitten harjoitteluvarusteet päällesiColor": "yellow",
+    "Käyt vessassaColor": "green"
+  },
+  "tokana": {
+    "question": "Menet vessaan. Mitä teet?",
+    "background": "background_3",
+    "person": "character_6",
+    "face": "face_confused",
+    "fore": "null",
+    "answers": [
+      "Hoidat asiasi ja täytät tarvittaessa vesipullon",
+      "Hoidat asiasi",
+      "Lukittaudut vessaan etkä mene harjoituksiin"
+    ],
+    "Hoidat asiasi ja täytät tarvittaessa vesipullon": "vaihto",
+    "Hoidat asiasi": "vaihto",
+    "Lukittaudut vessaan etkä mene harjoituksiin": "null",
+    "Hoidat asiasi ja täytät tarvittaessa vesipullonColor": "green",
+    "Hoidat asiasiColor": "green",
+    "Lukittaudut vessaan etkä mene harjoituksiinColor": "red"
+  },
+  "vaihto": {
+    "question": "Tulet vessasta. Mitä teet seuraavaksi?",
+    "background": "background_3",
+    "person": "null",
+    "face": "null",
+    "fore": "null",
+    "answers": [
+      "Puet itsellesi harjoitteluvarusteet",
+      "Odotat aivan viime hetkille ja vaihdat vasta sitten harjoitteluvarusteet päällesi",
+      "Lähdet kotiin",
+      "Lähdet kotiin, sillä olet kipeä"
+    ],
+    "Puet itsellesi harjoitteluvarusteet": "alkaa",
+    "Odotat aivan viime hetkille ja vaihdat vasta sitten harjoitteluvarusteet päällesi": "alkaa",
+    "Lähdet kotiin": "null",
+    "Lähdet kotiin, sillä olet kipeä": "ilmoitus",
+    "Puet itsellesi harjoitteluvarusteetColor": "green",
+    "Odotat aivan viime hetkille ja vaihdat vasta sitten harjoitteluvarusteet päällesiColor": "yellow",
+    "Lähdet kotiinColor": "red",
+    "Lähdet kotiin, sillä olet kipeäColor": "green"
+  },
+  "alkaa": {
+    "question": "Menet harjoittelualueelle. Miten toimit?",
+    "background": "background_1",
+    "person": "character_6",
+    "face": "face_happy",
+    "fore": "null",
+    "answers": [
+      "Harjoittelet",
+      "Leikit puhelimella"
+    ],
+    "Harjoittelet": "harjoitusloppu",
+    "Leikit puhelimella": "harjoitusloppu",
+    "HarjoitteletColor": "green",
+    "Leikit puhelimellaColor": "red"
+  },
+  "ilmoitus": {
+    "question": "Miten lähdet?",
+    "background": "background_1",
+    "person": "character_6",
+    "face": "face_sad",
+    "fore": "null",
+    "answers": [
+      "Ilmoitat valmentajalle\/ohjaajalle olevasi kipeä",
+      "Et ilmoita kenellekään mitään",
+      "Soitat tutullesi ja selität tilanteen"
+    ],
+    "Ilmoitat valmentajalle\/ohjaajalle olevasi kipeä": "harjoitusloppu",
+    "Et ilmoita kenellekään mitään": "harjoitusloppu",
+    "Soitat tutullesi ja selität tilanteen": "harjoitusloppu",
+    "Ilmoitat valmentajalle\/ohjaajalle olevasi kipeäColor": "green",
+    "Et ilmoita kenellekään mitäänColor": "yellow",
+    "Soitat tutullesi ja selität tilanteenColor": "green"
+  },
+  "harjoitusloppu": {
+    "question": "Harjoituksesi päättyvät. Miten toimit?",
+    "background": "background_5",
+    "person": "character_6",
+    "face": "face_confused",
+    "fore": "null",
+    "answers": [
+      "Et käy suihkussa etkä vaihda vaatteita, mutta keräät tavarasi ennen kotiin lähtöä",
+      "Menet suoraan kotiin",
+      "Käyt suihkussa, vaihdat vaatteet ja keräät tavarasi ennen kotiin lähtöä"
+    ],
+    "Et käy suihkussa etkä vaihda vaatteita, mutta keräät tavarasi ennen kotiin lähtöä": "null",
+    "Menet suoraan kotiin": "null",
+    "Käyt suihkussa, vaihdat vaatteet ja keräät tavarasi ennen kotiin lähtöä": "null",
+    "Et käy suihkussa etkä vaihda vaatteita, mutta keräät tavarasi ennen kotiin lähtöäColor": "yellow",
+    "Menet suoraan kotiinColor": "red",
+    "Käyt suihkussa, vaihdat vaatteet ja keräät tavarasi ennen kotiin lähtöäColor": "green"
+  }
+}

@@ -1,1 +1,260 @@
-{"first":{"question":"Exercises for your hobby are coming soon. How do you prepare?","background":"background_1","person":"null","face":"null","fore":"null","answers":["You ask your acquaintances if someone could take you to the exercises","You don't think about the future exercises at all","You mark the exercises on your calendar and go there by yourself"],"You ask your acquaintances if someone could take you to the exercises":"tiedustelu","You don't think about the future exercises at all":"paniikki","You mark the exercises on your calendar and go there by yourself":"yksin","You ask your acquaintances if someone could take you to the exercisesColor":"green","You don't think about the future exercises at allColor":"red","You mark the exercises on your calendar and go there by yourselfColor":"green"},"tiedustelu":{"question":"Your acquaintance answers and  suggests a schedule in which you would be in the rehearsals quite early. What do you say?","background":"background_6","person":"null","face":"null","fore":"fore_7","answers":["\"No way!\"","\"Ok\"","You skip the rehearsals"],"\"No way!\"":"first","\"Ok\"":"yhdessa","You skip the rehearsals":"null","\"No way!\"Color":"red","\"Ok\"Color":"green","You skip the rehearsalsColor":"yellow"},"paniikki":{"question":"You should go to the rehearsals, but you have nothing prepared.","background":"background_2","person":"character_6","face":"face_uncomfortable","fore":"null","answers":["You gather all the equipment you need and leave","You skip the rehearsals","You start calling your acquaintances and asking who could take you to the rehearsals"],"You gather all the equipment you need and leave":"yksin","You skip the rehearsals":"null","You start calling your acquaintances and asking who could take you to the rehearsals":"yhdessa","You gather all the equipment you need and leaveColor":"green","You skip the rehearsalsColor":"yellow","You start calling your acquaintances and asking who could take you to the rehearsalsColor":"yellow"},"yksin":{"question":"Which vehicle do you choose?","background":"background_5","person":"character_6","face":"face_confused","fore":"null","answers":["Your car","A bus","A shovel"],"Your car":"auto","A bus":"bussi","A shovel":"yksin","Your carColor":"green","A busColor":"green","A shovelColor":"red"},"yhdessa":{"question":"On the day of the rehearsals you wait for your ride. Your acquaintance calls and tells that he is a little bit late. What do you do?","background":"background_5","person":"character_6","face":"face_confused","fore":"null","answers":["You worry about how your whole plan is now ruined","You count a new schedule in your head","You wait peacefully"],"You worry about how your whole plan is now ruined":"kaveri","You count a new schedule in your head":"kaveri","You wait peacefully":"kaveri","You worry about how your whole plan is now ruinedColor":"red","You count a new schedule in your headColor":"yellow","You wait peacefullyColor":"green"},"auto":{"question":"How do you drive to the rehearsals?","background":"background_3","person":"character_6","face":"face_surprised","fore":"null","answers":["You choose the fastest route, so you can prepare peacefully","You choose the calmest route, for you are in no hurry","You don't go at all because you forgot your equipment","You speed to the training site as fast as you can and exceed the speed limit"],"You choose the fastest route, so you can prepare peacefully":"paikalla","You choose the calmest route, for you are in no hurry":"paikalla","You don't go at all because you forgot your equipment":"auto","You speed to the training site as fast as you can and exceed the speed limit":"paikalla","You choose the fastest route, so you can prepare peacefullyColor":"green","You choose the calmest route, for you are in no hurryColor":"green","You don't go at all because you forgot your equipmentColor":"yellow","You speed to the training site as fast as you can and exceed the speed limitColor":"red"},"bussi":{"question":"You step out of the bus at the right bus stop. What do you do?","background":"background_1","person":"character_6","face":"face_uncomfortable","fore":"null","answers":["You go right back to home","You go to the training site","You go to the training site as slowly as you can"],"You go right back to home":"null","You go to the training site":"paikalla","You go to the training site as slowly as you can":"paikalla","You go right back to homeColor":"red","You go to the training siteColor":"green","You go to the training site as slowly as you canColor":"yellow"},"kaveri":{"question":"Your acquaintance comes to pick you up.","background":"background_3","person":"character_6","face":"face_uncomfortable","fore":"null","answers":["You complain the whole ride that you will be late","You sit silently the whole ride","You demand that he exceeds the speed limit","You talk to your acquaintance casually"],"You complain the whole ride that you will be late":"paikalla","You sit silently the whole ride":"paikalla","You demand that he exceeds the speed limit":"paikalla","You talk to your acquaintance casually":"paikalla","You complain the whole ride that you will be lateColor":"red","You sit silently the whole rideColor":"green","You demand that he exceeds the speed limitColor":"red","You talk to your acquaintance casuallyColor":"green"},"paikalla":{"question":"You arrive at the training site. What do you do?","background":"background_5","person":"character_6","face":"face_happy","fore":"null","answers":["You put on the training equipment","You wait until the last minute and then put on the training equipment","You go to the toilet"],"You put on the training equipment":"alkaa","You wait until the last minute and then put on the training equipment":"alkaa","You go to the toilet":"tokana","You put on the training equipmentColor":"green","You wait until the last minute and then put on the training equipmentColor":"yellow","You go to the toiletColor":"green"},"tokana":{"question":"You go to the bathroom. What do you do?","background":"background_3","person":"character_6","face":"face_confused","fore":"null","answers":["You take care of your business and fill the water bottle if necessary","You take care of your business","You lock yourself in the bathroom and do not go to the rehearsals"],"You take care of your business and fill the water bottle if necessary":"vaihto","You take care of your business":"vaihto","You lock yourself in the bathroom and do not go to the rehearsals":"null","You take care of your business and fill the water bottle if necessaryColor":"green","You take care of your businessColor":"green","You lock yourself in the bathroom and do not go to the rehearsalsColor":"red"},"vaihto":{"question":"You come out of the bathroom. What do you do next?","background":"background_3","person":"null","face":"null","fore":"null","answers":["You put on your training equipment","You wait until the last minute before changing to your training equipment","You go home","You go home because you are feeling sick"],"You put on your training equipment":"alkaa","You wait until the last minute before changing to your training equipment":"alkaa","You go home":"null","You go home because you are feeling sick":"ilmoitus","You put on your training equipmentColor":"green","You wait until the last minute before changing to your training equipmentColor":"yellow","You go homeColor":"red","You go home because you are feeling sickColor":"green"},"alkaa":{"question":"You go to the training area. What do you do?","background":"background_1","person":"character_6","face":"face_happy","fore":"null","answers":["You practice","You play with your phone"],"You practice":"harjoitusloppu","You play with your phone":"harjoitusloppu","You practiceColor":"green","You play with your phoneColor":"red"},"ilmoitus":{"question":"What do you do before leaving?","background":"background_1","person":"character_6","face":"face_sad","fore":"null","answers":["You inform the coach \/ instructor that you are sick","You don't tell anyone","You call your acquaintance and explain the situation"],"You inform the coach \/ instructor that you are sick":"harjoitusloppu","You don't tell anyone":"harjoitusloppu","You call your acquaintance and explain the situation":"harjoitusloppu","You inform the coach \/ instructor that you are sickColor":"green","You don't tell anyoneColor":"yellow","You call your acquaintance and explain the situationColor":"green"},"harjoitusloppu":{"question":"Your rehearsals are over.","background":"background_5","person":"character_6","face":"face_confused","fore":"null","answers":["You call your acquaintance and ask him to take you home","You take the bus and go home","You go home some other way","You stand still and do nothing"],"You call your acquaintance and ask him to take you home":"null","You take the bus and go home":"null","You go home some other way":"null","You stand still and do nothing":"null","You call your acquaintance and ask him to take you homeColor":"green","You take the bus and go homeColor":"green","You go home some other wayColor":"green","You stand still and do nothingColor":"red"}}
+{
+  "first": {
+    "question": "Exercises for your hobby are coming soon. How do you prepare?",
+    "background": "background_1",
+    "person": "null",
+    "face": "null",
+    "fore": "null",
+    "answers": [
+      "You ask your acquaintances if someone could take you to the exercises",
+      "You don't think about the future exercises at all",
+      "You mark the exercises on your calendar and go there by yourself"
+    ],
+    "You ask your acquaintances if someone could take you to the exercises": "tiedustelu",
+    "You don't think about the future exercises at all": "paniikki",
+    "You mark the exercises on your calendar and go there by yourself": "yksin",
+    "You ask your acquaintances if someone could take you to the exercisesColor": "green",
+    "You don't think about the future exercises at allColor": "red",
+    "You mark the exercises on your calendar and go there by yourselfColor": "green"
+  },
+  "tiedustelu": {
+    "question": "Your acquaintance answers and  suggests a schedule in which you would be in the rehearsals quite early. What do you say?",
+    "background": "background_6",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_7",
+    "answers": [
+      "\"No way!\"",
+      "\"Ok\"",
+      "You skip the rehearsals"
+    ],
+    "\"No way!\"": "first",
+    "\"Ok\"": "yhdessa",
+    "You skip the rehearsals": "null",
+    "\"No way!\"Color": "red",
+    "\"Ok\"Color": "green",
+    "You skip the rehearsalsColor": "yellow"
+  },
+  "paniikki": {
+    "question": "You should go to the rehearsals, but you have nothing prepared.",
+    "background": "background_2",
+    "person": "character_6",
+    "face": "face_uncomfortable",
+    "fore": "null",
+    "answers": [
+      "You gather all the equipment you need and leave",
+      "You skip the rehearsals",
+      "You start calling your acquaintances and asking who could take you to the rehearsals"
+    ],
+    "You gather all the equipment you need and leave": "yksin",
+    "You skip the rehearsals": "null",
+    "You start calling your acquaintances and asking who could take you to the rehearsals": "yhdessa",
+    "You gather all the equipment you need and leaveColor": "green",
+    "You skip the rehearsalsColor": "yellow",
+    "You start calling your acquaintances and asking who could take you to the rehearsalsColor": "yellow"
+  },
+  "yksin": {
+    "question": "Which vehicle do you choose?",
+    "background": "background_5",
+    "person": "character_6",
+    "face": "face_confused",
+    "fore": "null",
+    "answers": [
+      "Your car",
+      "A bus",
+      "A shovel"
+    ],
+    "Your car": "auto",
+    "A bus": "bussi",
+    "A shovel": "yksin",
+    "Your carColor": "green",
+    "A busColor": "green",
+    "A shovelColor": "red"
+  },
+  "yhdessa": {
+    "question": "On the day of the rehearsals you wait for your ride. Your acquaintance calls and tells that he is a little bit late. What do you do?",
+    "background": "background_5",
+    "person": "character_6",
+    "face": "face_confused",
+    "fore": "null",
+    "answers": [
+      "You worry about how your whole plan is now ruined",
+      "You count a new schedule in your head",
+      "You wait peacefully"
+    ],
+    "You worry about how your whole plan is now ruined": "kaveri",
+    "You count a new schedule in your head": "kaveri",
+    "You wait peacefully": "kaveri",
+    "You worry about how your whole plan is now ruinedColor": "red",
+    "You count a new schedule in your headColor": "yellow",
+    "You wait peacefullyColor": "green"
+  },
+  "auto": {
+    "question": "How do you drive to the rehearsals?",
+    "background": "background_3",
+    "person": "character_6",
+    "face": "face_surprised",
+    "fore": "null",
+    "answers": [
+      "You choose the fastest route, so you can prepare peacefully",
+      "You choose the calmest route, for you are in no hurry",
+      "You don't go at all because you forgot your equipment",
+      "You speed to the training site as fast as you can and exceed the speed limit"
+    ],
+    "You choose the fastest route, so you can prepare peacefully": "paikalla",
+    "You choose the calmest route, for you are in no hurry": "paikalla",
+    "You don't go at all because you forgot your equipment": "auto",
+    "You speed to the training site as fast as you can and exceed the speed limit": "paikalla",
+    "You choose the fastest route, so you can prepare peacefullyColor": "green",
+    "You choose the calmest route, for you are in no hurryColor": "green",
+    "You don't go at all because you forgot your equipmentColor": "yellow",
+    "You speed to the training site as fast as you can and exceed the speed limitColor": "red"
+  },
+  "bussi": {
+    "question": "You step out of the bus at the right bus stop. What do you do?",
+    "background": "background_1",
+    "person": "character_6",
+    "face": "face_uncomfortable",
+    "fore": "null",
+    "answers": [
+      "You go right back to home",
+      "You go to the training site",
+      "You go to the training site as slowly as you can"
+    ],
+    "You go right back to home": "null",
+    "You go to the training site": "paikalla",
+    "You go to the training site as slowly as you can": "paikalla",
+    "You go right back to homeColor": "red",
+    "You go to the training siteColor": "green",
+    "You go to the training site as slowly as you canColor": "yellow"
+  },
+  "kaveri": {
+    "question": "Your acquaintance comes to pick you up.",
+    "background": "background_3",
+    "person": "character_6",
+    "face": "face_uncomfortable",
+    "fore": "null",
+    "answers": [
+      "You complain the whole ride that you will be late",
+      "You sit silently the whole ride",
+      "You demand that he exceeds the speed limit",
+      "You talk to your acquaintance casually"
+    ],
+    "You complain the whole ride that you will be late": "paikalla",
+    "You sit silently the whole ride": "paikalla",
+    "You demand that he exceeds the speed limit": "paikalla",
+    "You talk to your acquaintance casually": "paikalla",
+    "You complain the whole ride that you will be lateColor": "red",
+    "You sit silently the whole rideColor": "green",
+    "You demand that he exceeds the speed limitColor": "red",
+    "You talk to your acquaintance casuallyColor": "green"
+  },
+  "paikalla": {
+    "question": "You arrive at the training site. What do you do?",
+    "background": "background_5",
+    "person": "character_6",
+    "face": "face_happy",
+    "fore": "null",
+    "answers": [
+      "You put on the training equipment",
+      "You wait until the last minute and then put on the training equipment",
+      "You go to the toilet"
+    ],
+    "You put on the training equipment": "alkaa",
+    "You wait until the last minute and then put on the training equipment": "alkaa",
+    "You go to the toilet": "tokana",
+    "You put on the training equipmentColor": "green",
+    "You wait until the last minute and then put on the training equipmentColor": "yellow",
+    "You go to the toiletColor": "green"
+  },
+  "tokana": {
+    "question": "You go to the bathroom. What do you do?",
+    "background": "background_3",
+    "person": "character_6",
+    "face": "face_confused",
+    "fore": "null",
+    "answers": [
+      "You take care of your business and fill the water bottle if necessary",
+      "You take care of your business",
+      "You lock yourself in the bathroom and do not go to the rehearsals"
+    ],
+    "You take care of your business and fill the water bottle if necessary": "vaihto",
+    "You take care of your business": "vaihto",
+    "You lock yourself in the bathroom and do not go to the rehearsals": "null",
+    "You take care of your business and fill the water bottle if necessaryColor": "green",
+    "You take care of your businessColor": "green",
+    "You lock yourself in the bathroom and do not go to the rehearsalsColor": "red"
+  },
+  "vaihto": {
+    "question": "You come out of the bathroom. What do you do next?",
+    "background": "background_3",
+    "person": "null",
+    "face": "null",
+    "fore": "null",
+    "answers": [
+      "You put on your training equipment",
+      "You wait until the last minute before changing to your training equipment",
+      "You go home",
+      "You go home because you are feeling sick"
+    ],
+    "You put on your training equipment": "alkaa",
+    "You wait until the last minute before changing to your training equipment": "alkaa",
+    "You go home": "null",
+    "You go home because you are feeling sick": "ilmoitus",
+    "You put on your training equipmentColor": "green",
+    "You wait until the last minute before changing to your training equipmentColor": "yellow",
+    "You go homeColor": "red",
+    "You go home because you are feeling sickColor": "green"
+  },
+  "alkaa": {
+    "question": "You go to the training area. What do you do?",
+    "background": "background_1",
+    "person": "character_6",
+    "face": "face_happy",
+    "fore": "null",
+    "answers": [
+      "You practice",
+      "You play with your phone"
+    ],
+    "You practice": "harjoitusloppu",
+    "You play with your phone": "harjoitusloppu",
+    "You practiceColor": "green",
+    "You play with your phoneColor": "red"
+  },
+  "ilmoitus": {
+    "question": "What do you do before leaving?",
+    "background": "background_1",
+    "person": "character_6",
+    "face": "face_sad",
+    "fore": "null",
+    "answers": [
+      "You inform the coach \/ instructor that you are sick",
+      "You don't tell anyone",
+      "You call your acquaintance and explain the situation"
+    ],
+    "You inform the coach \/ instructor that you are sick": "harjoitusloppu",
+    "You don't tell anyone": "harjoitusloppu",
+    "You call your acquaintance and explain the situation": "harjoitusloppu",
+    "You inform the coach \/ instructor that you are sickColor": "green",
+    "You don't tell anyoneColor": "yellow",
+    "You call your acquaintance and explain the situationColor": "green"
+  },
+  "harjoitusloppu": {
+    "question": "Your rehearsals are over.",
+    "background": "background_5",
+    "person": "character_6",
+    "face": "face_confused",
+    "fore": "null",
+    "answers": [
+      "You don’t take a shower or change clothes, but you pick up your stuff before you go home",
+      "You go straight home",
+      "You take a shower, change your clothes and pick up your stuff before going home"
+    ],
+    "You don’t take a shower or change clothes, but you pick up your stuff before you go home": "null",
+    "You go straight home": "null",
+    "You take a shower, change your clothes and pick up your stuff before going home": "null",
+    "You don’t take a shower or change clothes, but you pick up your stuff before you go homeColor": "yellow",
+    "You go straight homeColor": "red",
+    "You take a shower, change your clothes and pick up your stuff before going homeColor": "green"
+  }
+}
