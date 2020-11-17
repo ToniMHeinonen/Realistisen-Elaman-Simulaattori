@@ -1,191 +1,191 @@
 {
   "first": {
-    "question": "Olet vaihtanut puhtaat vuodevaatteet sänkyysi reilu viikko sitten.",
+    "question": "You changed the clean bedding for your bed just over a week ago.",
     "background": "background_2",
     "person": "null",
     "face": "null",
     "fore": "fore_16",
     "answers": [
-      "Vaihdat tyynyysi uuden puhtaan tyynyliinan",
-      "Vaihdat kaikki vuodevaatteet puhtaisiin, koska olet hikoillut viime aikoina niin paljon",
-      "Vaihdat varmuuden vuoksi kaikki vuodevaatteet, tyynyn ja peiton",
-      "Et tee mitään"
+      "You change your pillowcase with a new clean pillowcase",
+      "You change all your bedding to clean ones because you’ve been sweating so much lately",
+      "For safety, you will change all bedding, pillows and blankets",
+      "You do nothing"
     ],
-    "Vaihdat tyynyysi uuden puhtaan tyynyliinan": "kaksiviikkoa",
-    "Vaihdat kaikki vuodevaatteet puhtaisiin, koska olet hikoillut viime aikoina niin paljon": "vanhatpois",
-    "Vaihdat varmuuden vuoksi kaikki vuodevaatteet, tyynyn ja peiton": "vanhatpois",
-    "Et tee mitään": "kaksiviikkoa",
-    "Vaihdat tyynyysi uuden puhtaan tyynyliinanColor": "green",
-    "Vaihdat kaikki vuodevaatteet puhtaisiin, koska olet hikoillut viime aikoina niin paljonColor": "green",
-    "Vaihdat varmuuden vuoksi kaikki vuodevaatteet, tyynyn ja peitonColor": "yellow",
-    "Et tee mitäänColor": "green"
+    "You change your pillowcase with a new clean pillowcase": "kaksiviikkoa",
+    "You change all your bedding to clean ones because you’ve been sweating so much lately": "vanhatpois",
+    "For safety, you will change all bedding, pillows and blankets": "vanhatpois",
+    "You do nothing": "kaksiviikkoa",
+    "You change your pillowcase with a new clean pillowcaseColor": "green",
+    "You change all your bedding to clean ones because you’ve been sweating so much latelyColor": "green",
+    "For safety, you will change all bedding, pillows and blanketsColor": "yellow",
+    "You do nothingColor": "green"
   },
   "kaksiviikkoa": {
-    "question": "Nyt edellisestä kerrasta, kun vaihdoit kaikki vuodevaatteet, on kulunut yli kaksi viikkoa. Mitä teet?",
+    "question": "Now, more than two weeks have passed since the last time you changed all your bedding. What do you do?",
     "background": "background_2",
     "person": "null",
     "face": "null",
     "fore": "fore_16",
     "answers": [
-      "Vaihdat sänkyyn puhtaat vuodevaatteet",
-      "Vaihdat tyynyliinan, mutta et muita petivaatteita",
-      "Et tee mitään"
+      "You change your bedding with clean ones",
+      "You change the pillowcase, but not other bedding",
+      "You do nothing"
     ],
-    "Vaihdat sänkyyn puhtaat vuodevaatteet": "vanhatpois",
-    "Vaihdat tyynyliinan, mutta et muita petivaatteita": "tosikauan",
-    "Et tee mitään": "tosikauan",
-    "Vaihdat sänkyyn puhtaat vuodevaatteetColor": "green",
-    "Vaihdat tyynyliinan, mutta et muita petivaatteitaColor": "yellow",
-    "Et tee mitäänColor": "red"
+    "You change your bedding with clean ones": "vanhatpois",
+    "You change the pillowcase, but not other bedding": "tosikauan",
+    "You do nothing": "tosikauan",
+    "You change your bedding with clean onesColor": "green",
+    "You change the pillowcase, but not other beddingColor": "yellow",
+    "You do nothingColor": "red"
   },
   "vanhatpois": {
-    "question": "Mitä teet vanhoille vuodevaatteille?",
+    "question": "What do you do with old bedding?",
     "background": "background_2",
     "person": "null",
     "face": "null",
     "fore": "fore_16",
     "answers": [
-      "Irrotat tyynyliinan tyynystä, pussilakanan peitosta ja aluslakanan sängystä ja viet ne kaikki pyykkikoriin",
-      "Jätät vanhat vuodevaatteet sänkyyn ja laitat uudet niiden päälle",
-      "Heität vanhat vuodevaatteet roskiin"
+      "You remove the pillowcase, the duvet cover and the bed sheet and take them all to the laundry basket",
+      "You leave the old bedding on the bed and put the new ones on top of them",
+      "You throw old bedding in the trash"
     ],
-    "Irrotat tyynyliinan tyynystä, pussilakanan peitosta ja aluslakanan sängystä ja viet ne kaikki pyykkikoriin": "uudettilalle",
-    "Jätät vanhat vuodevaatteet sänkyyn ja laitat uudet niiden päälle": "makuuhuoneensiivous",
-    "Heität vanhat vuodevaatteet roskiin": "uudettilalle",
-    "Irrotat tyynyliinan tyynystä, pussilakanan peitosta ja aluslakanan sängystä ja viet ne kaikki pyykkikoriinColor": "green",
-    "Jätät vanhat vuodevaatteet sänkyyn ja laitat uudet niiden päälleColor": "red",
-    "Heität vanhat vuodevaatteet roskiinColor": "red"
+    "You remove the pillowcase, the duvet cover and the bed sheet and take them all to the laundry basket": "uudettilalle",
+    "You leave the old bedding on the bed and put the new ones on top of them": "makuuhuoneensiivous",
+    "You throw old bedding in the trash": "uudettilalle",
+    "You remove the pillowcase, the duvet cover and the bed sheet and take them all to the laundry basketColor": "green",
+    "You leave the old bedding on the bed and put the new ones on top of themColor": "red",
+    "You throw old bedding in the trashColor": "red"
   },
   "tosikauan": {
-    "question": "Edellisestä vuodevaatteiden vaihdosta on kulunut kaksi kuukautta. Huomaat, että pussilakanan päällä on pölyä ja hiekkaa, ja vuodevaatteet haisevat ummehtuneelta. Mitä teet?",
+    "question": "Two months have passed since the previous bedding change. You will notice that there is dust and sand on top of the duvet cover, and the bedding smells stuffy. What do you do?",
     "background": "background_2",
     "person": "null",
     "face": "null",
     "fore": "fore_16",
     "answers": [
-      "Et mitään",
-      "Vaihdat puhtaat vuodevaatteet ja laitat itsellesi muistutuksen, jotta muistat ensi kerralla vaihtaa vuodevaatteet aikaisemmin",
-      "Heität likaiset vuodevaatteet roskiin ja käyt ostamassa uudet kaupasta"
+      "Nothing",
+      "You change the clean bedding and put yourself a reminder to remember to change the bedding earlier next time",
+      "You throw dirty bedding in the trash and go buy new ones from the store"
     ],
-    "Et mitään": "null",
-    "Vaihdat puhtaat vuodevaatteet ja laitat itsellesi muistutuksen, jotta muistat ensi kerralla vaihtaa vuodevaatteet aikaisemmin": "vanhatpois",
-    "Heität likaiset vuodevaatteet roskiin ja käyt ostamassa uudet kaupasta": "null",
-    "Et mitäänColor": "red",
-    "Vaihdat puhtaat vuodevaatteet ja laitat itsellesi muistutuksen, jotta muistat ensi kerralla vaihtaa vuodevaatteet aikaisemminColor": "green",
-    "Heität likaiset vuodevaatteet roskiin ja käyt ostamassa uudet kaupastaColor": "red"
+    "Nothing": "null",
+    "You change the clean bedding and put yourself a reminder to remember to change the bedding earlier next time": "vanhatpois",
+    "You throw dirty bedding in the trash and go buy new ones from the store": "null",
+    "NothingColor": "red",
+    "You change the clean bedding and put yourself a reminder to remember to change the bedding earlier next timeColor": "green",
+    "You throw dirty bedding in the trash and go buy new ones from the storeColor": "red"
   },
   "peittotyyny": {
-    "question": "Kuinka usein peset tyynyn ja peiton?",
+    "question": "How often do you wash the pillow and blanket?",
     "background": "background_2",
     "person": "null",
     "face": "null",
     "fore": "fore_16",
     "answers": [
-      "Peiton kahden kuukauden välein, tyynyn kerran kuussa",
-      "Peiton kerran vuodessa, tyynyn neljän kuukauden välein",
-      "Peiton kaksi kertaa vuodessa, tyynyn kolmen kuukauden välein",
-      "Peiton kerran kolmessa vuodessa, tyynyn kerran vuodessa",
-      "Et koskaan"
+      "Blanket every two months, pillow once a month",
+      "Blanket once a year, pillow every four months",
+      "Blanket twice a year, pillow every three months",
+      "Blanket once every three years, pillow once a year",
+      "Never"
     ],
-    "Peiton kahden kuukauden välein, tyynyn kerran kuussa": "null",
-    "Peiton kerran vuodessa, tyynyn neljän kuukauden välein": "null",
-    "Peiton kaksi kertaa vuodessa, tyynyn kolmen kuukauden välein": "null",
-    "Peiton kerran kolmessa vuodessa, tyynyn kerran vuodessa": "null",
-    "Et koskaan": "null",
-    "Peiton kahden kuukauden välein, tyynyn kerran kuussaColor": "yellow",
-    "Peiton kerran vuodessa, tyynyn neljän kuukauden väleinColor": "green",
-    "Peiton kaksi kertaa vuodessa, tyynyn kolmen kuukauden väleinColor": "green",
-    "Peiton kerran kolmessa vuodessa, tyynyn kerran vuodessaColor": "red",
-    "Et koskaanColor": "red"
+    "Blanket every two months, pillow once a month": "null",
+    "Blanket once a year, pillow every four months": "null",
+    "Blanket twice a year, pillow every three months": "null",
+    "Blanket once every three years, pillow once a year": "null",
+    "Never": "null",
+    "Blanket every two months, pillow once a monthColor": "yellow",
+    "Blanket once a year, pillow every four monthsColor": "green",
+    "Blanket twice a year, pillow every three monthsColor": "green",
+    "Blanket once every three years, pillow once a yearColor": "red",
+    "NeverColor": "red"
   },
   "uudettilalle": {
-    "question": "Miten vaihdat uudet vuodevaatteet?",
+    "question": "How do you change new bedding?",
     "background": "background_2",
     "person": "null",
     "face": "null",
     "fore": "fore_16",
     "answers": [
-      "Heität ne lattialle odottamaan siksi aikaa, että viet vanhat vuodevaatteet pyykkiin",
-      "Nostat tyynyn hyllylle odottamaan, jotta saat levitettyä puhtaan lakanan sänkyyn",
-      "Et jaksa laittaa puhtaita lakanoita paikoilleen, vaan päätät nukkua ilman vuodevaatteita",
-      "Tuuletat ensin makuuhuoneen ja imuroit sängyn, ennen kuin laitat puhtaat petivaatteet paikoilleen"
+      "You throw them on the floor to wait for time to take your old bedding to the laundry",
+      "You lift the pillow onto the shelf to wait to get a clean sheet spread on the bed",
+      "You are not in the mood of putting clean sheets in place, so you decide to sleep without bedding",
+      "You first ventilate the bedroom and vacuum the bed before putting clean bedding in place"
     ],
-    "Heität ne lattialle odottamaan siksi aikaa, että viet vanhat vuodevaatteet pyykkiin": "pölylakana",
-    "Nostat tyynyn hyllylle odottamaan, jotta saat levitettyä puhtaan lakanan sänkyyn": "makuuhuoneensiivous",
-    "Et jaksa laittaa puhtaita lakanoita paikoilleen, vaan päätät nukkua ilman vuodevaatteita": "null",
-    "Tuuletat ensin makuuhuoneen ja imuroit sängyn, ennen kuin laitat puhtaat petivaatteet paikoilleen": "makuuhuoneensiivous",
-    "Heität ne lattialle odottamaan siksi aikaa, että viet vanhat vuodevaatteet pyykkiinColor": "red",
-    "Nostat tyynyn hyllylle odottamaan, jotta saat levitettyä puhtaan lakanan sänkyynColor": "green",
-    "Et jaksa laittaa puhtaita lakanoita paikoilleen, vaan päätät nukkua ilman vuodevaatteitaColor": "red",
-    "Tuuletat ensin makuuhuoneen ja imuroit sängyn, ennen kuin laitat puhtaat petivaatteet paikoilleenColor": "green"
+    "You throw them on the floor to wait for time to take your old bedding to the laundry": "pölylakana",
+    "You lift the pillow onto the shelf to wait to get a clean sheet spread on the bed": "makuuhuoneensiivous",
+    "You are not in the mood of putting clean sheets in place, so you decide to sleep without bedding": "null",
+    "You first ventilate the bedroom and vacuum the bed before putting clean bedding in place": "makuuhuoneensiivous",
+    "You throw them on the floor to wait for time to take your old bedding to the laundryColor": "red",
+    "You lift the pillow onto the shelf to wait to get a clean sheet spread on the bedColor": "green",
+    "You are not in the mood of putting clean sheets in place, so you decide to sleep without beddingColor": "red",
+    "You first ventilate the bedroom and vacuum the bed before putting clean bedding in placeColor": "green"
   },
   "pölylakana": {
-    "question": "Uuteen puhtaaseen lakanaasi tarttuu pölyä lattialta.",
+    "question": "The new clean bed sheet will pick up dust from the floor.",
     "background": "background_2",
     "person": "null",
     "face": "null",
     "fore": "fore_16",
     "answers": [
-      "Laitat sen sänkyysi siitä huolimatta",
-      "Käyt ravistelemassa lakanan parvekkeella ja laitat sen sitten sänkyysi. Päätät, että ensi kerralla et laske puhtaita vuodevaatteita likaiselle lattialle.",
-      "Joudut laittamaan pölyyntyneen lakanan pyykkiin ja ottamaan tilalle uuden"
+      "You put it on your bed nonetheless",
+      "You go to shake the sheet on the balcony and then put it on your bed. You decide not to put clean bedding on a dirty floor next time.",
+      "You will need to put a dusty sheet in the laundry and replace it with a new one"
     ],
-    "Laitat sen sänkyysi siitä huolimatta": "makuuhuoneensiivous",
-    "Käyt ravistelemassa lakanan parvekkeella ja laitat sen sitten sänkyysi. Päätät, että ensi kerralla et laske puhtaita vuodevaatteita likaiselle lattialle.": "makuuhuoneensiivous",
-    "Joudut laittamaan pölyyntyneen lakanan pyykkiin ja ottamaan tilalle uuden": "makuuhuoneensiivous",
-    "Laitat sen sänkyysi siitä huolimattaColor": "yellow",
-    "Käyt ravistelemassa lakanan parvekkeella ja laitat sen sitten sänkyysi. Päätät, että ensi kerralla et laske puhtaita vuodevaatteita likaiselle lattialle.Color": "green",
-    "Joudut laittamaan pölyyntyneen lakanan pyykkiin ja ottamaan tilalle uudenColor": "green"
+    "You put it on your bed nonetheless": "makuuhuoneensiivous",
+    "You go to shake the sheet on the balcony and then put it on your bed. You decide not to put clean bedding on a dirty floor next time.": "makuuhuoneensiivous",
+    "You will need to put a dusty sheet in the laundry and replace it with a new one": "makuuhuoneensiivous",
+    "You put it on your bed nonethelessColor": "yellow",
+    "You go to shake the sheet on the balcony and then put it on your bed. You decide not to put clean bedding on a dirty floor next time.Color": "green",
+    "You will need to put a dusty sheet in the laundry and replace it with a new oneColor": "green"
   },
   "makuuhuoneensiivous": {
-    "question": "Siivoat muutaman päivän kuluttua makuuhuonettasi ja haluaisit samalla raikastaa petivaatteitasi. Miten toimit?",
+    "question": "After a few days, you will clean your bedroom and at the same time would like to freshen up your bedding. What do you do?",
     "background": "background_12",
     "person": "null",
     "face": "null",
     "fore": "fore_16",
     "answers": [
-      "Viet peiton hetkeksi parvekkeelle tuulettumaan",
-      "Viet peiton ulos tuulettumaan",
-      "Suihkutat peittoon reilusti hajuvettä"
+      "Take the blanket to the balcony for a moment to ventilate",
+      "Take the blanket out to ventilate",
+      "You spray a lot of perfume on the blanket"
     ],
-    "Viet peiton hetkeksi parvekkeelle tuulettumaan": "peittotyyny",
-    "Viet peiton ulos tuulettumaan": "sadesää",
-    "Suihkutat peittoon reilusti hajuvettä": "peittotyyny",
-    "Viet peiton hetkeksi parvekkeelle tuulettumaanColor": "green",
-    "Viet peiton ulos tuulettumaanColor": "green",
-    "Suihkutat peittoon reilusti hajuvettäColor": "red"
+    "Take the blanket to the balcony for a moment to ventilate": "peittotyyny",
+    "Take the blanket out to ventilate": "sadesää",
+    "You spray a lot of perfume on the blanket": "peittotyyny",
+    "Take the blanket to the balcony for a moment to ventilateColor": "green",
+    "Take the blanket out to ventilateColor": "green",
+    "You spray a lot of perfume on the blanketColor": "red"
   },
   "sadesää": {
-    "question": "Huomaat, että ulkona alkaa näyttää sateiselta.",
+    "question": "You notice that it's starting to rain.",
     "background": "background_1",
     "person": "null",
     "face": "null",
     "fore": "fore_16",
     "answers": [
-      "Haet peiton takaisin sisälle, jotta se ei kastu",
-      "Annat peiton jäädä ulos"
+      "You get the blanket back inside so that it does not get wet",
+      "You leave the blanket outside"
     ],
-    "Haet peiton takaisin sisälle, jotta se ei kastu": "null",
-    "Annat peiton jäädä ulos": "märkäpeitto",
-    "Haet peiton takaisin sisälle, jotta se ei kastuColor": "green",
-    "Annat peiton jäädä ulosColor": "red"
+    "You get the blanket back inside so that it does not get wet": "null",
+    "You leave the blanket outside": "märkäpeitto",
+    "You get the blanket back inside so that it does not get wetColor": "green",
+    "You leave the blanket outsideColor": "red"
   },
   "märkäpeitto": {
-    "question": "Peittosi kastuu sateessa ja on nyt aivan märkä.",
+    "question": "Your blanket gets wet in the rain and is now quite wet.",
     "background": "background_5",
     "person": "null",
     "face": "null",
     "fore": "fore_16",
     "answers": [
-      "Jätät peiton ulos loppuviikoksi ja toivot, että sää muuttuu aurinkoisemmaksi ja peitto kuivuu itsestään",
-      "Haet peiton sisälle ja ripustat sen kuivumaan",
-      "Heität peiton roskiin ja ostat uuden tilalle"
+      "You leave the blanket out for the rest of the week and hope the weather gets sunnier and the blanket dries on its own",
+      "You get the blanket inside and hang it to dry",
+      "You throw the blanket in the trash and buy a new one to replace it"
     ],
-    "Jätät peiton ulos loppuviikoksi ja toivot, että sää muuttuu aurinkoisemmaksi ja peitto kuivuu itsestään": "peittotyyny",
-    "Haet peiton sisälle ja ripustat sen kuivumaan": "peittotyyny",
-    "Heität peiton roskiin ja ostat uuden tilalle": "null",
-    "Jätät peiton ulos loppuviikoksi ja toivot, että sää muuttuu aurinkoisemmaksi ja peitto kuivuu itsestäänColor": "yellow",
-    "Haet peiton sisälle ja ripustat sen kuivumaanColor": "green",
-    "Heität peiton roskiin ja ostat uuden tilalleColor": "red"
+    "You leave the blanket out for the rest of the week and hope the weather gets sunnier and the blanket dries on its own": "peittotyyny",
+    "You get the blanket inside and hang it to dry": "peittotyyny",
+    "You throw the blanket in the trash and buy a new one to replace it": "null",
+    "You leave the blanket out for the rest of the week and hope the weather gets sunnier and the blanket dries on its ownColor": "yellow",
+    "You get the blanket inside and hang it to dryColor": "green",
+    "You throw the blanket in the trash and buy a new one to replace itColor": "red"
   }
 }

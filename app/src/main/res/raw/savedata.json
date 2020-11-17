@@ -22,7 +22,7 @@
     "Returning from grocery store",
     "Meeting an acquaintance",
     "Sorting the clothes",
-    "Vuodevaatteiden puhtaanapito"],
+    "Keeping the bedding clean"],
   "scenarioslist": [
     {"name":  "Applying to higher education", "file":  "opiskelu.json", "category": "Education"},
     {"name":  "Going to a doctor", "file": "laakarissa_kaynti.json", "category": "Going to a doctor"},
@@ -41,7 +41,7 @@
     {"name": "Doing laundry", "file": "pyykkien_peseminen.json", "category": "Taking care of your home"},
     {"name": "Emptying trash bins", "file": "roskakorien_tyhjentaminen.json", "category": "Taking care of your home"},
     {"name": "Sorting the clothes", "file": "vaatteiden_jarjestely.json", "category": "Taking care of your home"},
-    {"name": "Vuodevaatteiden puhtaanapito", "file": "vuodevaatteiden_puhtaanapito.json", "category": "Taking care of your home"},
+    {"name": "Keeping the bedding clean", "file": "vuodevaatteiden_puhtaanapito.json", "category": "Taking care of your home"},
     {"name":  "Traveling by bus", "file":  "bussimatka.json", "category": "Traveling"},
     {"name":  "Traveling by tram", "file": "ratikka.json", "category": "Traveling"},
     {"name": "Going to grocery store", "file": "ruokakauppaan_lahteminen.json", "category": "Visiting a store"},
