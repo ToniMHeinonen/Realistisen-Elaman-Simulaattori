@@ -1,524 +1,524 @@
 {
   "first": {
-    "question": "Millaisia kasveja olet ostanut?",
+    "question": "What kind of plants have you bought?",
     "background": "background_14",
     "person": "null",
     "face": "null",
     "fore": "fore_17",
     "answers": [
-      "Leikkokukkia",
-      "Kukkien siemeniä",
-      "Huonekasveja"
+      "Cut flowers",
+      "Flower seeds",
+      "Houseplants"
     ],
-    "Leikkokukkia": "leikkomaljakko",
-    "Kukkien siemeniä": "istukoska",
-    "Huonekasveja": "mihinkasvi",
-    "LeikkokukkiaColor": "green",
-    "Kukkien siemeniäColor": "green",
-    "HuonekasvejaColor": "green"
+    "Cut flowers": "leikkomaljakko",
+    "Flower seeds": "istukoska",
+    "Houseplants": "mihinkasvi",
+    "Cut flowersColor": "green",
+    "Flower seedsColor": "green",
+    "HouseplantsColor": "green"
   },
   "mihinkasvi": {
-    "question": "Olet juuri ostanut uusia huonekasveja. Tulet kotiin. Mitä teet?",
+    "question": "You just bought new houseplants. You come home. What do you do?",
     "background": "background_14",
     "person": "null",
     "face": "null",
     "fore": "null",
     "answers": [
-      "Laitat kasvit kaappiin ja kaapin oven kiinni",
-      "Luet kasvien kyljessä olevista hoito-ohjeista, millaiseen paikkaan ne on hyvä sijoittaa, ja valitset niille paikat ohjeiden mukaan",
-      "Laitat kasvit ikkunalaudalle",
-      "Laitat kasvit ulos viileälle parvekkeelle, vaikka et tiedä, soveltuvatko ne ulos"
+      "You put the plants in the closet and close the closet door",
+      "You read the instructions on the side of the plants where to place them and choose the places for them according to the instructions",
+      "You put the plants on the windowsill",
+      "You put the plants out on a cool balcony, even if you don’t know if they can survive there"
     ],
-    "Laitat kasvit kaappiin ja kaapin oven kiinni": "kaappikuihtuminen",
-    "Luet kasvien kyljessä olevista hoito-ohjeista, millaiseen paikkaan ne on hyvä sijoittaa, ja valitset niille paikat ohjeiden mukaan": "kuivamulta",
-    "Laitat kasvit ikkunalaudalle": "kuivamulta",
-    "Laitat kasvit ulos viileälle parvekkeelle, vaikka et tiedä, soveltuvatko ne ulos": "ulkokuihtuminen",
-    "Laitat kasvit kaappiin ja kaapin oven kiinniColor": "red",
-    "Luet kasvien kyljessä olevista hoito-ohjeista, millaiseen paikkaan ne on hyvä sijoittaa, ja valitset niille paikat ohjeiden mukaanColor": "green",
-    "Laitat kasvit ikkunalaudalleColor": "yellow",
-    "Laitat kasvit ulos viileälle parvekkeelle, vaikka et tiedä, soveltuvatko ne ulosColor": "red"
+    "You put the plants in the closet and close the closet door": "kaappikuihtuminen",
+    "You read the instructions on the side of the plants where to place them and choose the places for them according to the instructions": "kuivamulta",
+    "You put the plants on the windowsill": "kuivamulta",
+    "You put the plants out on a cool balcony, even if you don’t know if they can survive there": "ulkokuihtuminen",
+    "You put the plants in the closet and close the closet doorColor": "red",
+    "You read the instructions on the side of the plants where to place them and choose the places for them according to the instructionsColor": "green",
+    "You put the plants on the windowsillColor": "yellow",
+    "You put the plants out on a cool balcony, even if you don’t know if they can survive thereColor": "red"
   },
   "kaappikuihtuminen": {
-    "question": "Kasvit eivät saa kaapissa ollenkaan valoa, joten ne alkavat pian näyttää kuihtuneilta. Mitä teet?",
+    "question": "The plants don’t get any light in the closet at all, so they soon start to look withered. What do you do?",
     "background": "background_2",
     "person": "null",
     "face": "null",
     "fore": "fore_17",
     "answers": [
-      "Otat kasvit pois kaapista ja siirrät ne sopivampaan paikkaan ikkunalaudalle",
-      "Et tee mitään",
-      "Heität ne roskiin ja päätät, ettet enää ikinä osta kasveja"
+      "You take the plants out of the closet and move them to a more suitable place on the windowsill",
+      "You do nothing",
+      "You throw them in the trash and decide you never buy plants again"
     ],
-    "Otat kasvit pois kaapista ja siirrät ne sopivampaan paikkaan ikkunalaudalle": "kuivamulta",
-    "Et tee mitään": "kasvikuolema",
-    "Heität ne roskiin ja päätät, ettet enää ikinä osta kasveja": "null",
-    "Otat kasvit pois kaapista ja siirrät ne sopivampaan paikkaan ikkunalaudalleColor": "green",
-    "Et tee mitäänColor": "red",
-    "Heität ne roskiin ja päätät, ettet enää ikinä osta kasvejaColor": "red"
+    "You take the plants out of the closet and move them to a more suitable place on the windowsill": "kuivamulta",
+    "You do nothing": "kasvikuolema",
+    "You throw them in the trash and decide you never buy plants again": "null",
+    "You take the plants out of the closet and move them to a more suitable place on the windowsillColor": "green",
+    "You do nothingColor": "red",
+    "You throw them in the trash and decide you never buy plants againColor": "red"
   },
   "ulkokuihtuminen": {
-    "question": "Kasvit on tarkoitettu sisätiloihin, joten ne kylmettyvät parvekkeella ja kuolevat.",
+    "question": "The plants are meant to be stored indoors, so they get cold on the balcony and die.",
     "background": "background_12",
     "person": "null",
     "face": "null",
     "fore": "fore_17",
     "answers": [
-      "Heität kasvit roskiin ja päätät, ettet enää ikinä osta kasveja",
-      "Heität kasvit roskiin ja päätät, että jatkossa selvität kasvin hoito-ohjeista, millaiseen paikkaan ne soveltuvat",
-      "Heität kasvit roskiin ja päätät jatkossa kysyä myyjältä, millaiset kasvit soveltuvat parvekkeelle",
-      "Et tee mitään"
+      "You throw them in the trash and decide you never buy plants again",
+      "You throw the plants in the trash and you decide that in the future you will find out from instructions what place they are suitable for",
+      "You throw the plants in the trash and in the future you decide to ask the seller which plants are suitable for the balcony",
+      "You do nothing"
     ],
-    "Heität kasvit roskiin ja päätät, ettet enää ikinä osta kasveja": "null",
-    "Heität kasvit roskiin ja päätät, että jatkossa selvität kasvin hoito-ohjeista, millaiseen paikkaan ne soveltuvat": "null",
-    "Heität kasvit roskiin ja päätät jatkossa kysyä myyjältä, millaiset kasvit soveltuvat parvekkeelle": "null",
+    "You throw them in the trash and decide you never buy plants again": "null",
+    "You throw the plants in the trash and you decide that in the future you will find out from instructions what place they are suitable for": "null",
+    "You throw the plants in the trash and in the future you decide to ask the seller which plants are suitable for the balcony": "null",
     "Et tee mitään": "kasvikuolema",
-    "Heität kasvit roskiin ja päätät, ettet enää ikinä osta kasvejaColor": "yellow",
-    "Heität kasvit roskiin ja päätät, että jatkossa selvität kasvin hoito-ohjeista, millaiseen paikkaan ne soveltuvatColor": "green",
-    "Heität kasvit roskiin ja päätät jatkossa kysyä myyjältä, millaiset kasvit soveltuvat parvekkeelleColor": "green",
-    "Et tee mitäänColor": "red"
+    "You throw them in the trash and decide you never buy plants againColor": "yellow",
+    "You throw the plants in the trash and you decide that in the future you will find out from instructions what place they are suitable forColor": "green",
+    "You throw the plants in the trash and in the future you decide to ask the seller which plants are suitable for the balconyColor": "green",
+    "You do nothingColor": "red"
   },
   "kuivamulta": {
-    "question": "Muutaman päivän kuluttua huomaat, että kasvien multa vaikuttaa kuivalta.",
+    "question": "After a few days, you notice that the plant soil appears dry.",
     "background": "background_6",
     "person": "null",
     "face": "null",
     "fore": "fore_17",
     "answers": [
-      "Katsot hoito-ohjeesta, kuinka usein ja minkä verran kasveja pitäisi kastella. Haet kastelukannun ja kastelet niitä ohjeiden mukaan.",
-      "Haet kastelukannun ja kastelet kasveja hieman",
-      "Haet ison kulhon ja kaadat koko kulhollisen vettä kasvin ruukkuun",
-      "Et tee mitään"
+      "You check in the instructions how often and how much the plants should be watered. You will pick up the watering can and water them according to the instructions.",
+      "You get a watering can and water the plants a little",
+      "You get a large bowl and pour the entire bowl of water into the plant pot",
+      "You do nothing"
     ],
-    "Katsot hoito-ohjeesta, kuinka usein ja minkä verran kasveja pitäisi kastella. Haet kastelukannun ja kastelet niitä ohjeiden mukaan.": "kastelumuistaminen",
-    "Haet kastelukannun ja kastelet kasveja hieman": "kastelumuistaminen",
-    "Haet ison kulhon ja kaadat koko kulhollisen vettä kasvin ruukkuun": "kasvitulva",
-    "Et tee mitään": "kastelumuistaminen",
-    "Katsot hoito-ohjeesta, kuinka usein ja minkä verran kasveja pitäisi kastella. Haet kastelukannun ja kastelet niitä ohjeiden mukaan.Color": "green",
-    "Haet kastelukannun ja kastelet kasveja hiemanColor": "yellow",
-    "Haet ison kulhon ja kaadat koko kulhollisen vettä kasvin ruukkuunColor": "red",
-    "Et tee mitäänColor": "red"
+    "You check in the instructions how often and how much the plants should be watered. You will pick up the watering can and water them according to the instructions.": "kastelumuistaminen",
+    "You get a watering can and water the plants a little": "kastelumuistaminen",
+    "You get a large bowl and pour the entire bowl of water into the plant pot": "kasvitulva",
+    "You do nothing": "kastelumuistaminen",
+    "You check in the instructions how often and how much the plants should be watered. You will pick up the watering can and water them according to the instructions.Color": "green",
+    "You get a watering can and water the plants a littleColor": "yellow",
+    "You get a large bowl and pour the entire bowl of water into the plant potColor": "red",
+    "You do nothingColor": "red"
   },
   "lomamatka": {
-    "question": "Olet lähdössä kahdeksi viikoksi reissuun toiseen kaupunkiin. Mitä teet?",
+    "question": "You are leaving for a two week trip to another city. What do you do?",
     "background": "background_3",
     "person": "null",
     "face": "null",
     "fore": "fore_17",
     "answers": [
-      "Pyydät, että tuttavasi käy matkan aikana kotonasi kastelemassa kasveja",
-      "Et mitään",
-      "Pakkaat kasvit mukaan reissuun"
+      "You ask an acquaintance to visit your home during the trip to water the plants",
+      "You do nothing",
+      "You pack the plants with you on the trip"
     ],
-    "Pyydät, että tuttavasi käy matkan aikana kotonasi kastelemassa kasveja": "kevät",
-    "Et mitään": "kasvikuolema",
-    "Pakkaat kasvit mukaan reissuun": "kevät",
-    "Pyydät, että tuttavasi käy matkan aikana kotonasi kastelemassa kasvejaColor": "green",
-    "Et mitäänColor": "red",
-    "Pakkaat kasvit mukaan reissuunColor": "yellow"
+    "You ask an acquaintance to visit your home during the trip to water the plants": "kevät",
+    "You do nothing": "kasvikuolema",
+    "You pack the plants with you on the trip": "kevät",
+    "You ask an acquaintance to visit your home during the trip to water the plantsColor": "green",
+    "You do nothingColor": "red",
+    "You pack the plants with you on the tripColor": "yellow"
   },
   "kastelumuistaminen": {
-    "question": "Huomaat, että sinun on vaikea muistaa kastella kasvejasi säännöllisesti. Mitä teet?",
+    "question": "You will find that it is difficult for you to remember to water your plants regularly. What do you do?",
     "background": "background_14",
     "person": "null",
     "face": "null",
     "fore": "fore_17",
     "answers": [
-      "Toteat, ettet ole hyvä kasvien hoidossa ja annat kasvit tuttavallesi",
-      "Laitat itsellesi puhelimeen muistutuksen, joka muistuttaa säännöllisesti kasvien kastelusta",
-      "Toteat, ettet ole hyvä kasvien hoidossa ja heität kasvit roskiin"
+      "You realize that you are not good at plant care and give the plants to your acquaintance",
+      "You put a reminder on your phone that reminds you to water your plants regularly",
+      "You realize that you are not good at plant care and throw the plants in the trash"
     ],
-    "Toteat, ettet ole hyvä kasvien hoidossa ja annat kasvit tuttavallesi": "null",
-    "Laitat itsellesi puhelimeen muistutuksen, joka muistuttaa säännöllisesti kasvien kastelusta": "lomamatka",
-    "Toteat, ettet ole hyvä kasvien hoidossa ja heität kasvit roskiin": "null",
-    "Toteat, ettet ole hyvä kasvien hoidossa ja annat kasvit tuttavallesiColor": "yellow",
-    "Laitat itsellesi puhelimeen muistutuksen, joka muistuttaa säännöllisesti kasvien kastelustaColor": "green",
-    "Toteat, ettet ole hyvä kasvien hoidossa ja heität kasvit roskiinColor": "red"
+    "You realize that you are not good at plant care and give the plants to your acquaintance": "null",
+    "You put a reminder on your phone that reminds you to water your plants regularly": "lomamatka",
+    "You realize that you are not good at plant care and throw the plants in the trash": "null",
+    "You realize that you are not good at plant care and give the plants to your acquaintanceColor": "yellow",
+    "You put a reminder on your phone that reminds you to water your plants regularlyColor": "green",
+    "You realize that you are not good at plant care and throw the plants in the trashColor": "red"
   },
   "kevät": {
-    "question": "Kesä lähestyy ja olet saanut pidettyä kasvisi hyvässä kunnossa jo pidemmän aikaa. Mitä teet?",
+    "question": "Summer is coming and you have been keeping your plants in good condition for a long time. What do you do?",
     "background": "background_15",
     "person": "null",
     "face": "null",
     "fore": "fore_17",
     "answers": [
-      "Jatkat kasvien hoitoa entiseen tapaan",
-      "Ostat lisää kasveja",
-      "Päätät tehdä kasveille perusteellisen keväthuollon",
-      "Toteat, että kasvien hoitaminen kyllästyttää ja annat kasvit tuttavallesi",
-      "Heität kasvit roskiin"
+      "You will continue as before",
+      "You buy more plants",
+      "You decide to do a thorough spring care for your plants",
+      "You realize that caring for plants is boring and give the plants to your acquaintance",
+      "You throw the plants in the trash"
     ],
-    "Jatkat kasvien hoitoa entiseen tapaan": "null",
-    "Ostat lisää kasveja": "null",
-    "Päätät tehdä kasveille perusteellisen keväthuollon": "keväthuolto",
-    "Toteat, että kasvien hoitaminen kyllästyttää ja annat kasvit tuttavallesi": "null",
-    "Heität kasvit roskiin": "null",
-    "Jatkat kasvien hoitoa entiseen tapaanColor": "green",
-    "Ostat lisää kasvejaColor": "green",
-    "Päätät tehdä kasveille perusteellisen keväthuollonColor": "green",
-    "Toteat, että kasvien hoitaminen kyllästyttää ja annat kasvit tuttavallesiColor": "yellow",
-    "Heität kasvit roskiinColor": "red"
+    "You will continue as before": "null",
+    "You buy more plants": "null",
+    "You decide to do a thorough spring care for your plants": "keväthuolto",
+    "You realize that caring for plants is boring and give the plants to your acquaintance": "null",
+    "You throw the plants in the trash": "null",
+    "You will continue as beforeColor": "green",
+    "You buy more plantsColor": "green",
+    "You decide to do a thorough spring care for your plantsColor": "green",
+    "You realize that caring for plants is boring and give the plants to your acquaintanceColor": "yellow",
+    "You throw the plants in the trashColor": "red"
   },
   "keväthuolto": {
-    "question": "Haluat tehdä kasveillesi perusteellisemman keväthuollon. Miten toimit?",
+    "question": "You want to do a more thorough spring care for your plants. What do you do?",
     "background": "background_2",
     "person": "null",
     "face": "null",
     "fore": "null",
     "answers": [
-      "Kannat kasvit suihkutilaan ja laitat kumihanskat käteen. Olet jo edellisenä päivänä kastellut kasvit hyvin, jotta ne irtoaisivat helpommin ruukuista. Irrotat kasvit varovasti ruukuistaan, vaihdat ruukkuihin uutta multaa ja istutat kasvit takaisin ruukkuihinsa",
-      "Katsot netistä ohjeen, kuinka kasvien multa kannattaa vaihtaa, ja toimit ohjeen mukaan",
-      "Vaihdat kasvien mullat olohuoneen maton päällä",
-      "Revit kasvit pois ruukuistaan niin, että niiden lehdet ja juuret katkeilevat, lisäät multaa ja työnnät kasvit huolimattomasti takaisin ruukkuihinsa",
-      "Päätät, ettet jaksakaan vaihtaa kasvien multia"
+      "You put the plants in the shower and put rubber gloves in your hand. You have already watered the plants well the day before to make them come off the pots more easily. Carefully remove the plants from their pots, change the soil in the pots and plant the plants back in their pots",
+      "You will look online for instructions on how to change plant soil and follow the instructions",
+      "You change the soil for the plants on the carpet in the living room",
+      "You tear the plants out of their pots so that their leaves and roots break, add soil and carelessly push the plants back into their pots",
+      "You are in no mood to change soil of the plants"
     ],
-    "Kannat kasvit suihkutilaan ja laitat kumihanskat käteen. Olet jo edellisenä päivänä kastellut kasvit hyvin, jotta ne irtoaisivat helpommin ruukuista. Irrotat kasvit varovasti ruukuistaan, vaihdat ruukkuihin uutta multaa ja istutat kasvit takaisin ruukkuihinsa": "null",
-    "Katsot netistä ohjeen, kuinka kasvien multa kannattaa vaihtaa, ja toimit ohjeen mukaan": "null",
-    "Vaihdat kasvien mullat olohuoneen maton päällä": "sotkumulta",
-    "Revit kasvit pois ruukuistaan niin, että niiden lehdet ja juuret katkeilevat, lisäät multaa ja työnnät kasvit huolimattomasti takaisin ruukkuihinsa": "kasvikuolema",
-    "Päätät, ettet jaksakaan vaihtaa kasvien multia": "null",
-    "Kannat kasvit suihkutilaan ja laitat kumihanskat käteen. Olet jo edellisenä päivänä kastellut kasvit hyvin, jotta ne irtoaisivat helpommin ruukuista. Irrotat kasvit varovasti ruukuistaan, vaihdat ruukkuihin uutta multaa ja istutat kasvit takaisin ruukkuihinsaColor": "green",
-    "Katsot netistä ohjeen, kuinka kasvien multa kannattaa vaihtaa, ja toimit ohjeen mukaanColor": "green",
-    "Vaihdat kasvien mullat olohuoneen maton päälläColor": "yellow",
-    "Revit kasvit pois ruukuistaan niin, että niiden lehdet ja juuret katkeilevat, lisäät multaa ja työnnät kasvit huolimattomasti takaisin ruukkuihinsaColor": "red",
-    "Päätät, ettet jaksakaan vaihtaa kasvien multiaColor": "green"
+    "You put the plants in the shower and put rubber gloves in your hand. You have already watered the plants well the day before to make them come off the pots more easily. Carefully remove the plants from their pots, change the soil in the pots and plant the plants back in their pots": "null",
+    "You will look online for instructions on how to change plant soil and follow the instructions": "null",
+    "You change the soil for the plants on the carpet in the living room": "sotkumulta",
+    "You tear the plants out of their pots so that their leaves and roots break, add soil and carelessly push the plants back into their pots": "kasvikuolema",
+    "You are in no mood to change soil of the plants": "null",
+    "You put the plants in the shower and put rubber gloves in your hand. You have already watered the plants well the day before to make them come off the pots more easily. Carefully remove the plants from their pots, change the soil in the pots and plant the plants back in their potsColor": "green",
+    "You will look online for instructions on how to change plant soil and follow the instructionsColor": "green",
+    "You change the soil for the plants on the carpet in the living roomColor": "yellow",
+    "You tear the plants out of their pots so that their leaves and roots break, add soil and carelessly push the plants back into their potsColor": "red",
+    "You are in no mood to change soil of the plantsColor": "green"
   },
   "kasvikuolema": {
-    "question": "Kasvisi ovat nyt todella huonossa kunnossa.",
+    "question": "Your plants are now in really bad shape.",
     "background": "background_6",
     "person": "null",
     "face": "null",
     "fore": "fore_17",
     "answers": [
-      "Heität kasvit vihaisena roskiin ja päätät, ettet hanki kasveja enää ikinä",
-      "Toteat, että ensi kerralla sinun täytyy perehtyä tarkemmin kasvien hoito-ohjeisiin",
-      "Et jaksa perehtyä kasvien hoitoon vaan päätät ostaa aina uudet kasvit, kun edelliset kuolevat"
+      "You angrily throw the plants in the trash and decide you never get the plants again",
+      "You realize that next time you need to read more about plant care instructions",
+      "You are in no mood to get acquainted with plant care but you will always decide to buy new plants when the previous ones die"
     ],
-    "Heität kasvit vihaisena roskiin ja päätät, ettet hanki kasveja enää ikinä": "null",
-    "Toteat, että ensi kerralla sinun täytyy perehtyä tarkemmin kasvien hoito-ohjeisiin": "null",
-    "Et jaksa perehtyä kasvien hoitoon vaan päätät ostaa aina uudet kasvit, kun edelliset kuolevat": "null",
-    "Heität kasvit vihaisena roskiin ja päätät, ettet hanki kasveja enää ikinäColor": "red",
-    "Toteat, että ensi kerralla sinun täytyy perehtyä tarkemmin kasvien hoito-ohjeisiinColor": "green",
-    "Et jaksa perehtyä kasvien hoitoon vaan päätät ostaa aina uudet kasvit, kun edelliset kuolevatColor": "red"
+    "You angrily throw the plants in the trash and decide you never get the plants again": "null",
+    "You realize that next time you need to read more about plant care instructions": "null",
+    "You are in no mood to get acquainted with plant care but you will always decide to buy new plants when the previous ones die": "null",
+    "You angrily throw the plants in the trash and decide you never get the plants againColor": "red",
+    "You realize that next time you need to read more about plant care instructionsColor": "green",
+    "You are in no mood to get acquainted with plant care but you will always decide to buy new plants when the previous ones dieColor": "red"
   },
   "kasvitulva": {
-    "question": "Kasvien ruukut tulvivat vettä. Parin päivän päästä huomaat, että kasvit näyttävät nuupahtaneilta. Mitä teet?",
+    "question": "Plant pots flooded with water. After a couple of days, you will notice that the plants look snuffy. What do you do?",
     "background": "background_16",
     "person": "null",
     "face": "null",
     "fore": "fore_17",
     "answers": [
-      "Heität kasvit roskiin",
-      "Pyyhit yli valuneet vedet rätillä ja päätät jatkossa lukea hoito-ohjeesta, paljonko kasveja pitäisi kastella",
-      "Kastelet kasvit seuraavan kerran vasta, kun multa on taas kuivahtanut ja toivot, että ne virkoavat vielä"
+      "You throw the plants in the trash",
+      "You wipe over spilled water with a rag and decide in the future to read in the care instructions how much plants should be watered",
+      "The next time you water the plants only when the soil has dried again and you hope that they will still be alive"
     ],
-    "Heität kasvit roskiin": "null",
-    "Pyyhit yli valuneet vedet rätillä ja päätät jatkossa lukea hoito-ohjeesta, paljonko kasveja pitäisi kastella": "kastelumuistaminen",
-    "Kastelet kasvit seuraavan kerran vasta, kun multa on taas kuivahtanut ja toivot, että ne virkoavat vielä": "kastelumuistaminen",
-    "Heität kasvit roskiinColor": "red",
-    "Pyyhit yli valuneet vedet rätillä ja päätät jatkossa lukea hoito-ohjeesta, paljonko kasveja pitäisi kastellaColor": "green",
-    "Kastelet kasvit seuraavan kerran vasta, kun multa on taas kuivahtanut ja toivot, että ne virkoavat vieläColor": "yellow"
+    "You throw the plants in the trash": "null",
+    "You wipe over spilled water with a rag and decide in the future to read in the care instructions how much plants should be watered": "kastelumuistaminen",
+    "The next time you water the plants only when the soil has dried again and you hope that they will still be alive": "kastelumuistaminen",
+    "You throw the plants in the trashColor": "red",
+    "You wipe over spilled water with a rag and decide in the future to read in the care instructions how much plants should be wateredColor": "green",
+    "The next time you water the plants only when the soil has dried again and you hope that they will still be aliveColor": "yellow"
   },
   "sotkumulta": {
-    "question": "Mattosi on nyt aivan mullassa. Mitä teet?",
+    "question": "Your carpet is now completely covered with soil. What do you do?",
     "background": "background_2",
     "person": "null",
     "face": "null",
     "fore": "fore_17",
     "answers": [
-      "Tulet vihaiseksi ja heität kaikki kasvisi roskiin",
-      "Siivoat maton ja viet kasvit paikoilleen",
-      "Siivoat maton, viet kasvit paikoilleen ja päätät ensi kerralla vaihtaa mullat kylpyhuoneessa"
+      "You get angry and throw all your plants in the trash",
+      "You clean the carpet and take the plants into place",
+      "You clean the carpet, take the plants into place and decide next time to change the soils in the bathroom"
     ],
-    "Tulet vihaiseksi ja heität kaikki kasvisi roskiin": "null",
-    "Siivoat maton ja viet kasvit paikoilleen": "null",
-    "Siivoat maton, viet kasvit paikoilleen ja päätät ensi kerralla vaihtaa mullat kylpyhuoneessa": "null",
-    "Tulet vihaiseksi ja heität kaikki kasvisi roskiinColor": "red",
-    "Siivoat maton ja viet kasvit paikoilleenColor": "yellow",
-    "Siivoat maton, viet kasvit paikoilleen ja päätät ensi kerralla vaihtaa mullat kylpyhuoneessaColor": "green"
+    "You get angry and throw all your plants in the trash": "null",
+    "You clean the carpet and take the plants into place": "null",
+    "You clean the carpet, take the plants into place and decide next time to change the soils in the bathroom": "null",
+    "You get angry and throw all your plants in the trashColor": "red",
+    "You clean the carpet and take the plants into placeColor": "yellow",
+    "You clean the carpet, take the plants into place and decide next time to change the soils in the bathroomColor": "green"
   },
   "leikkomaljakko": {
-    "question": "Olet juuri ostanut kimpun leikkokukkia kaupasta. Mitä teet kimpulle kotiin tultuasi?",
+    "question": "You just bought a bouquet of cut flowers from a store. What do you do to the bouquet when you get home?",
     "background": "background_14",
     "person": "null",
     "face": "null",
     "fore": "fore_17",
     "answers": [
-      "Irrotat kukkakimpun kääreistä ja laitat sen ruukkuun, jossa on multaa",
-      "Irrotat kukkakimpun varovasti kääreistään, leikkaat varsien päätyihin terävällä veitsellä uudet imupinnat, etsit kimpulle sopivan kokoisen maljakon ja laitat maljakkoon vettä",
-      "Avaat kääreet ja laitat kukat maljakkoon, jossa on vettä",
-      "Laitat kimpun pieneen vesikippoon, vaikka se ei meinaa mahtua siihen",
-      "Et uskalla irrottaa kimppua kääreistä, jottei se vahingoitu, joten laitat kukat kääreineen päivineen maljakkoon"
+      "You remove the bouquet from the wrappers and put it in a pot with soil",
+      "Carefully remove the bouquet from the wrappers, cut new suction surfaces at the ends of the stems with a sharp knife, look for a vase of suitable size for the bouquet and put water in the vase",
+      "You open the wrappers and put the flowers in a vase with water",
+      "You put the bouquet in a small water tip, even if it doesn’t fit to fit in it",
+      "You dare not remove the bouquet from the wrappers so that it is not damaged, so you put the flowers with their wrappers in a vase"
     ],
-    "Irrotat kukkakimpun kääreistä ja laitat sen ruukkuun, jossa on multaa": "leikkomullassa",
-    "Irrotat kukkakimpun varovasti kääreistään, leikkaat varsien päätyihin terävällä veitsellä uudet imupinnat, etsit kimpulle sopivan kokoisen maljakon ja laitat maljakkoon vettä": "leikkosijoitus",
-    "Avaat kääreet ja laitat kukat maljakkoon, jossa on vettä": "leikkosijoitus",
-    "Laitat kimpun pieneen vesikippoon, vaikka se ei meinaa mahtua siihen": "leikkolysähdys",
-    "Et uskalla irrottaa kimppua kääreistä, jottei se vahingoitu, joten laitat kukat kääreineen päivineen maljakkoon": "leikkosijoitus",
-    "Irrotat kukkakimpun kääreistä ja laitat sen ruukkuun, jossa on multaaColor": "red",
-    "Irrotat kukkakimpun varovasti kääreistään, leikkaat varsien päätyihin terävällä veitsellä uudet imupinnat, etsit kimpulle sopivan kokoisen maljakon ja laitat maljakkoon vettäColor": "green",
-    "Avaat kääreet ja laitat kukat maljakkoon, jossa on vettäColor": "yellow",
-    "Laitat kimpun pieneen vesikippoon, vaikka se ei meinaa mahtua siihenColor": "red",
-    "Et uskalla irrottaa kimppua kääreistä, jottei se vahingoitu, joten laitat kukat kääreineen päivineen maljakkoonColor": "red"
+    "You remove the bouquet from the wrappers and put it in a pot with soil": "leikkomullassa",
+    "Carefully remove the bouquet from the wrappers, cut new suction surfaces at the ends of the stems with a sharp knife, look for a vase of suitable size for the bouquet and put water in the vase": "leikkosijoitus",
+    "You open the wrappers and put the flowers in a vase with water": "leikkosijoitus",
+    "You put the bouquet in a small water tip, even if it doesn’t fit to fit in it": "leikkolysähdys",
+    "You dare not remove the bouquet from the wrappers so that it is not damaged, so you put the flowers with their wrappers in a vase": "leikkosijoitus",
+    "You remove the bouquet from the wrappers and put it in a pot with soilColor": "red",
+    "Carefully remove the bouquet from the wrappers, cut new suction surfaces at the ends of the stems with a sharp knife, look for a vase of suitable size for the bouquet and put water in the vaseColor": "green",
+    "You open the wrappers and put the flowers in a vase with waterColor": "yellow",
+    "You put the bouquet in a small water tip, even if it doesn’t fit to fit in itColor": "red",
+    "You dare not remove the bouquet from the wrappers so that it is not damaged, so you put the flowers with their wrappers in a vaseColor": "red"
   },
   "leikkoravinne": {
-    "question": "Kukkakimpun mukana tuli pieni pussi jotakin ainetta. Pussin kyljessä lukee \"kukkavirkiste\". Mitä teet sille?",
+    "question": "The bouquet came with a small bag of some substance. The side of the bag reads \"flower refreshment\". What are you doing about it?",
     "background": "background_14",
     "person": "null",
     "face": "null",
     "fore": "fore_17",
     "answers": [
-      "Heität sen kääreiden mukana roskiin",
-      "Maistat, miltä se maistuu",
-      "Kaadat aineen kukkien maljakkoon veden joukkoon"
+      "You throw it in the trash with the wrappers",
+      "You taste what it tastes like",
+      "You pour the substance into a vase of flowers among the water"
     ],
-    "Heität sen kääreiden mukana roskiin": "leikkohoito",
-    "Maistat, miltä se maistuu": "leikkohoito",
-    "Kaadat aineen kukkien maljakkoon veden joukkoon": "leikkoravinnehoito",
-    "Heität sen kääreiden mukana roskiinColor": "red",
-    "Maistat, miltä se maistuuColor": "red",
-    "Kaadat aineen kukkien maljakkoon veden joukkoonColor": "green"
+    "You throw it in the trash with the wrappers": "leikkohoito",
+    "You taste what it tastes like": "leikkohoito",
+    "You pour the substance into a vase of flowers among the water": "leikkoravinnehoito",
+    "You throw it in the trash with the wrappersColor": "red",
+    "You taste what it tastes likeColor": "red",
+    "You pour the substance into a vase of flowers among the waterColor": "green"
   },
   "leikkosijoitus": {
-    "question": "Mihin laitat kukkamaljakon?",
+    "question": "Where do you put the flower vase?",
     "background": "background_14",
     "person": "null",
     "face": "null",
     "fore": "fore_17",
     "answers": [
-      "Olohuoneen hyllylle, jotta näet kimpun sohvalla istuessasi",
-      "Keittiöön hedelmäkorin viereen, koska hedelmien väri sopii kauniisti kukkakimpun väriin",
-      "Ikkunalaudalle, vaikka se on vetoisa paikka"
+      "On the living room shelf so you can see the bouquet while sitting on the couch",
+      "In the kitchen next to the fruit basket, because the color of the fruit matches the color of the bouquet beautifully",
+      "On the windowsill, even though it is windy sometimes there"
     ],
-    "Olohuoneen hyllylle, jotta näet kimpun sohvalla istuessasi": "leikkoravinne",
-    "Keittiöön hedelmäkorin viereen, koska hedelmien väri sopii kauniisti kukkakimpun väriin": "leikkoravinne",
-    "Ikkunalaudalle, vaikka se on vetoisa paikka": "leikkoravinne",
-    "Olohuoneen hyllylle, jotta näet kimpun sohvalla istuessasiColor": "green",
-    "Keittiöön hedelmäkorin viereen, koska hedelmien väri sopii kauniisti kukkakimpun väriinColor": "red",
-    "Ikkunalaudalle, vaikka se on vetoisa paikkaColor": "red"
+    "On the living room shelf so you can see the bouquet while sitting on the couch": "leikkoravinne",
+    "In the kitchen next to the fruit basket, because the color of the fruit matches the color of the bouquet beautifully": "leikkoravinne",
+    "On the windowsill, even though it is windy sometimes there": "leikkoravinne",
+    "On the living room shelf so you can see the bouquet while sitting on the couchColor": "green",
+    "In the kitchen next to the fruit basket, because the color of the fruit matches the color of the bouquet beautifullyColor": "red",
+    "On the windowsill, even though it is windy sometimes thereColor": "red"
   },
   "leikkolysähdys": {
-    "question": "Kippo on niin matala, että kukkien varret eivät pysy pystyssä ja kimppu meinaa kaatua.",
+    "question": "The tip is so low that the stems of the flowers do not stay upright and the bouquet tends to fall.",
     "background": "background_14",
     "person": "null",
     "face": "null",
     "fore": "fore_17",
     "answers": [
-      "Vaihdat kimpun korkeampaan ja tilavampaan maljakkoon",
-      "Sinulla ei ole suurempaa maljakkoa, joten laitat kimpun kapeaan ja korkeaan muoviastiaan",
-      "Hermostut ja heität kukat roskiin"
+      "You change the bouquet into a taller and more spacious vase",
+      "You don’t have a larger vase, so you put the bouquet in a narrow and tall plastic container",
+      "You get nervous and throw flowers in the trash"
     ],
-    "Vaihdat kimpun korkeampaan ja tilavampaan maljakkoon": "leikkosijoitus",
-    "Sinulla ei ole suurempaa maljakkoa, joten laitat kimpun kapeaan ja korkeaan muoviastiaan": "leikkosijoitus",
-    "Hermostut ja heität kukat roskiin": "null",
-    "Vaihdat kimpun korkeampaan ja tilavampaan maljakkoonColor": "green",
-    "Sinulla ei ole suurempaa maljakkoa, joten laitat kimpun kapeaan ja korkeaan muoviastiaanColor": "yellow",
-    "Hermostut ja heität kukat roskiinColor": "red"
+    "You change the bouquet into a taller and more spacious vase": "leikkosijoitus",
+    "You don’t have a larger vase, so you put the bouquet in a narrow and tall plastic container": "leikkosijoitus",
+    "You get nervous and throw flowers in the trash": "null",
+    "You change the bouquet into a taller and more spacious vaseColor": "green",
+    "You don’t have a larger vase, so you put the bouquet in a narrow and tall plastic containerColor": "yellow",
+    "You get nervous and throw flowers in the trashColor": "red"
   },
   "leikkomullassa": {
-    "question": "Huomaat parin päivän päästä, että kukat näyttävät kuivettuneilta.",
+    "question": "After a couple of days, you will notice that the flowers look withered.",
     "background": "background_14",
     "person": "null",
     "face": "null",
     "fore": "fore_17",
     "answers": [
-      "Kastelet multaa reilusti",
-      "Luet netistä, että leikkokukat kuuluu laittaa veteen eikä multaan, ja siirrät kimpun maljakkoon",
-      "Arvelet, että ruukku on liian varjoisassa paikassa, ja siirrät sen aurinkoon"
+      "You water the soil well",
+      "You read online that cut flowers should be put in water and not in the soil, and you move the bouquet to a vase",
+      "You think the pot is in too shady a place and move it to the sunnier place"
     ],
-    "Kastelet multaa reilusti": "leikkokuolema",
-    "Luet netistä, että leikkokukat kuuluu laittaa veteen eikä multaan, ja siirrät kimpun maljakkoon": "leikkosijoitus",
-    "Arvelet, että ruukku on liian varjoisassa paikassa, ja siirrät sen aurinkoon": "leikkokuolema",
-    "Kastelet multaa reilustiColor": "red",
-    "Luet netistä, että leikkokukat kuuluu laittaa veteen eikä multaan, ja siirrät kimpun maljakkoonColor": "green",
-    "Arvelet, että ruukku on liian varjoisassa paikassa, ja siirrät sen aurinkoonColor": "red"
+    "You water the soil well": "leikkokuolema",
+    "You read online that cut flowers should be put in water and not in the soil, and you move the bouquet to a vase": "leikkosijoitus",
+    "You think the pot is in too shady a place and move it to the sunnier place": "leikkokuolema",
+    "You water the soil wellColor": "red",
+    "You read online that cut flowers should be put in water and not in the soil, and you move the bouquet to a vaseColor": "green",
+    "You think the pot is in too shady a place and move it to the sunnier placeColor": "red"
   },
   "leikkokuolema": {
-    "question": "Kukkakimppu on aivan nuupahtanut ja kukat kuolleet.",
+    "question": "The bouquet is sniffed and the flowers are dead.",
     "background": "background_14",
     "person": "null",
     "face": "null",
     "fore": "fore_17",
     "answers": [
-      "Heität kimpun vihaisena roskiin",
-      "Laitat kimpun varastoon talteen siltä varalta, että se kevään tullen virkistyy ja kasvattaa uusia kukkia",
-      "Laitat kimpun biojätteeseen ja mietit, että ensi kerralla otat paremmin selvää leikkokukkien hoidosta"
+      "You throw the bouquet angrily in the trash",
+      "You put the bouquet in storage in case it grows new flowers in the spring",
+      "You put the bouquet in the biowaste and think that next time you will become more aware of caring for cut flowers"
     ],
-    "Heität kimpun vihaisena roskiin": "null",
-    "Laitat kimpun varastoon talteen siltä varalta, että se kevään tullen virkistyy ja kasvattaa uusia kukkia": "null",
-    "Laitat kimpun biojätteeseen ja mietit, että ensi kerralla otat paremmin selvää leikkokukkien hoidosta": "null",
-    "Heität kimpun vihaisena roskiinColor": "red",
-    "Laitat kimpun varastoon talteen siltä varalta, että se kevään tullen virkistyy ja kasvattaa uusia kukkiaColor": "red",
-    "Laitat kimpun biojätteeseen ja mietit, että ensi kerralla otat paremmin selvää leikkokukkien hoidostaColor": "green"
+    "You throw the bouquet angrily in the trash": "null",
+    "You put the bouquet in storage in case it grows new flowers in the spring": "null",
+    "You put the bouquet in the biowaste and think that next time you will become more aware of caring for cut flowers": "null",
+    "You throw the bouquet angrily in the trashColor": "red",
+    "You put the bouquet in storage in case it grows new flowers in the springColor": "red",
+    "You put the bouquet in the biowaste and think that next time you will become more aware of caring for cut flowersColor": "green"
   },
   "leikkovalmis": {
-    "question": "Reilun viikon kuluttua kukkakimppu alkaa selvästi nuupahtaa.",
+    "question": "After just over a week, the bouquet clearly begins to sniff.",
     "background": "background_14",
     "person": "null",
     "face": "null",
     "fore": "null",
     "answers": [
-      "Heität kimpun vihaisena roskiin, koska kukat eivät kestäneet kauempaa",
-      "Laitat kimpun varastoon talteen siltä varalta, että se kevään tullen virkistyy ja kasvattaa uusia kukkia",
-      "Laitat kimpun biojätteeseen ja mietit, että leikkokukat ovat kauniita, vaikka ne eivät kestäkään kovin pitkään"
+      "You throw the bouquet angrily in the trash because the flowers didn’t last any longer",
+      "You put the bouquet in storage in case it grows new flowers in the spring",
+      "You put the bouquet in biowaste and think that the cut flowers are beautiful, even if they don’t last very long"
     ],
-    "Heität kimpun vihaisena roskiin, koska kukat eivät kestäneet kauempaa": "null",
-    "Laitat kimpun varastoon talteen siltä varalta, että se kevään tullen virkistyy ja kasvattaa uusia kukkia": "null",
-    "Laitat kimpun biojätteeseen ja mietit, että leikkokukat ovat kauniita, vaikka ne eivät kestäkään kovin pitkään": "null",
-    "Heität kimpun vihaisena roskiin, koska kukat eivät kestäneet kauempaaColor": "yellow",
-    "Laitat kimpun varastoon talteen siltä varalta, että se kevään tullen virkistyy ja kasvattaa uusia kukkiaColor": "red",
-    "Laitat kimpun biojätteeseen ja mietit, että leikkokukat ovat kauniita, vaikka ne eivät kestäkään kovin pitkäänColor": "green"
+    "You throw the bouquet angrily in the trash because the flowers didn’t last any longer": "null",
+    "You put the bouquet in storage in case it grows new flowers in the spring": "null",
+    "You put the bouquet in biowaste and think that the cut flowers are beautiful, even if they don’t last very long": "null",
+    "You throw the bouquet angrily in the trash because the flowers didn’t last any longerColor": "yellow",
+    "You put the bouquet in storage in case it grows new flowers in the springColor": "red",
+    "You put the bouquet in biowaste and think that the cut flowers are beautiful, even if they don’t last very longColor": "green"
   },
   "leikkoravinnehoito": {
-    "question": "Muutaman päivän päästä huomaat, että osa kukkien lehdistä on kuivahtanut ja maljakon vesimäärä on huvennut.",
+    "question": "After a few days, you will notice that some of the flower leaves have dried out and the amount of water in the vase has faded.",
     "background": "background_14",
     "person": "null",
     "face": "null",
     "fore": "fore_17",
     "answers": [
-      "Nypit kuivuneet lehdet pois ja lisäät maljakkoon hieman uutta vettä",
-      "Heität kukat roskiin",
-      "Vaihdat kaikki vedet uusiin"
+      "You pluck the dried leaves out and add a little new water to the vase",
+      "You throw the flowers in the trash",
+      "You change all the waters to new ones"
     ],
-    "Nypit kuivuneet lehdet pois ja lisäät maljakkoon hieman uutta vettä": "leikkovalmis",
-    "Heität kukat roskiin": "leikkovalmis",
-    "Vaihdat kaikki vedet uusiin": "leikkovalmis",
-    "Nypit kuivuneet lehdet pois ja lisäät maljakkoon hieman uutta vettäColor": "green",
-    "Heität kukat roskiinColor": "red",
-    "Vaihdat kaikki vedet uusiinColor": "yellow"
+    "You pluck the dried leaves out and add a little new water to the vase": "leikkovalmis",
+    "You throw the flowers in the trash": "leikkovalmis",
+    "You change all the waters to new ones": "leikkovalmis",
+    "You pluck the dried leaves out and add a little new water to the vaseColor": "green",
+    "You throw the flowers in the trashColor": "red",
+    "You change all the waters to new onesColor": "yellow"
   },
   "leikkohoito": {
-    "question": "Muutaman päivän päästä huomaat, että osa kukkien lehdistä on kuivahtanut ja maljakon vesimäärä on huvennut.",
+    "question": "After a few days, you will notice that some of the flower leaves have dried out and the amount of water in the vase has faded.",
     "background": "background_14",
     "person": "null",
     "face": "null",
     "fore": "fore_17",
     "answers": [
-      "Nypit kuivuneet lehdet pois ja vaihdat maljakkoon uutta raikasta vettä",
-      "Heität kimpun roskiin",
-      "Kaadat maljakkoon hieman lisää vettä"
+      "You pluck the dried leaves out and add a little new water to the vase",
+      "You throw the bouquet in the trash",
+      "You pour a little more water into the vase"
     ],
-    "Nypit kuivuneet lehdet pois ja vaihdat maljakkoon uutta raikasta vettä": "leikkovalmis",
-    "Heität kimpun roskiin": "leikkovalmis",
-    "Kaadat maljakkoon hieman lisää vettä": "leikkovalmis",
-    "Nypit kuivuneet lehdet pois ja vaihdat maljakkoon uutta raikasta vettäColor": "green",
-    "Heität kimpun roskiinColor": "red",
-    "Kaadat maljakkoon hieman lisää vettäColor": "yellow"
+    "You pluck the dried leaves out and add a little new water to the vase": "leikkovalmis",
+    "You throw the bouquet in the trash": "leikkovalmis",
+    "You pour a little more water into the vase": "leikkovalmis",
+    "You pluck the dried leaves out and add a little new water to the vaseColor": "green",
+    "You throw the bouquet in the trashColor": "red",
+    "You pour a little more water into the vaseColor": "yellow"
   },
   "istumulta": {
-    "question": "Mihin istutat siemenet?",
+    "question": "Where do you plant the seeds?",
     "background": "background_14",
     "person": "null",
     "face": "null",
     "fore": "fore_17",
     "answers": [
-      "Muoviastiaan, jossa on tavallista perusmultaa",
-      "Puutarhamyymälästä ostettuun taimipurkkiin, jossa on uutta ja puhdasta kylvö- tai taimimultaa",
-      "Kippoon, jossa on ulkoa keräämääsi soraa"
+      "In a plastic container with regular base mold",
+      "To a seedling jar purchased from a garden store with new and clean seed or seedling soil",
+      "To cup with gravel you have collected from the outside"
     ],
-    "Muoviastiaan, jossa on tavallista perusmultaa": "istusyvyys",
-    "Puutarhamyymälästä ostettuun taimipurkkiin, jossa on uutta ja puhdasta kylvö- tai taimimultaa": "istusyvyys",
-    "Kippoon, jossa on ulkoa keräämääsi soraa": "istusyvyys",
-    "Muoviastiaan, jossa on tavallista perusmultaaColor": "yellow",
-    "Puutarhamyymälästä ostettuun taimipurkkiin, jossa on uutta ja puhdasta kylvö- tai taimimultaaColor": "green",
-    "Kippoon, jossa on ulkoa keräämääsi soraaColor": "red"
+    "In a plastic container with regular base mold": "istusyvyys",
+    "To a seedling jar purchased from a garden store with new and clean seed or seedling soil": "istusyvyys",
+    "To cup with gravel you have collected from the outside": "istusyvyys",
+    "In a plastic container with regular base moldColor": "yellow",
+    "To a seedling jar purchased from a garden store with new and clean seed or seedling soilColor": "green",
+    "To cup with gravel you have collected from the outsideColor": "red"
   },
   "istusyvyys": {
-    "question": "Kuinka syvälle multaan istutat siemenet?",
+    "question": "How deep into the soil do you plant the seeds?",
     "background": "background_14",
     "person": "null",
     "face": "null",
     "fore": "fore_17",
     "answers": [
-      "Noudatat siemenpussin kyljessä olevaa ohjetta",
-      "Peität siemenet multakerroksella, joka on noin kaksi-kolme kertaa siemenen paksuinen",
-      "Kylvät siemenet mullan pinnalle, jotta ne saavat valoa",
-      "Laitat siemenet aivan kylvöastian pohjalle paksun multakerroksen alle"
+      "You follow the instructions on the side of the seed bag",
+      "You cover the seeds with a layer of soil that is about two to three times the thickness of the seed",
+      "You sow the seeds on the surface of the soil so they get light",
+      "You put the seeds right at the bottom of the seed hopper under a thick layer of soil"
     ],
-    "Noudatat siemenpussin kyljessä olevaa ohjetta": "istusumutus",
-    "Peität siemenet multakerroksella, joka on noin kaksi-kolme kertaa siemenen paksuinen": "istusumutus",
-    "Kylvät siemenet mullan pinnalle, jotta ne saavat valoa": "istusumutus",
-    "Laitat siemenet aivan kylvöastian pohjalle paksun multakerroksen alle": "istusumutus",
-    "Noudatat siemenpussin kyljessä olevaa ohjettaColor": "green",
-    "Peität siemenet multakerroksella, joka on noin kaksi-kolme kertaa siemenen paksuinenColor": "yellow",
-    "Kylvät siemenet mullan pinnalle, jotta ne saavat valoaColor": "yellow",
-    "Laitat siemenet aivan kylvöastian pohjalle paksun multakerroksen alleColor": "red"
+    "You follow the instructions on the side of the seed bag": "istusumutus",
+    "You cover the seeds with a layer of soil that is about two to three times the thickness of the seed": "istusumutus",
+    "You sow the seeds on the surface of the soil so they get light": "istusumutus",
+    "You put the seeds right at the bottom of the seed hopper under a thick layer of soil": "istusumutus",
+    "You follow the instructions on the side of the seed bagColor": "green",
+    "You cover the seeds with a layer of soil that is about two to three times the thickness of the seedColor": "yellow",
+    "You sow the seeds on the surface of the soil so they get lightColor": "yellow",
+    "You put the seeds right at the bottom of the seed hopper under a thick layer of soilColor": "red"
   },
   "istumihin": {
-    "question": "Mihin sijoitat astian, johon kylvit siemenet?",
+    "question": "Where do you place the container in which you sowed the seeds?",
     "background": "background_14",
     "person": "null",
     "face": "null",
     "fore": "fore_17",
     "answers": [
-      "Laitat sen valoisaan paikkaan ikkunalaudalle",
-      "Laitat sen parvekkeelle, koska kasvatat kukkia nimenomaan parvekkeesi kaunistukseksi",
-      "Laitat sen pimeään kaappiin, koska multapurkki, josta ei vielä kasva mitään, ei mielestäsi näytä tyylikkäältä"
+      "You put it in a bright place on the windowsill",
+      "You put it on your balcony because you grow flowers specifically to beautify your balcony",
+      "You put it in a dark closet because you don’t think the soil jar, which doesn’t grow anything yet, looks stylish"
     ],
-    "Laitat sen valoisaan paikkaan ikkunalaudalle": "istuhoito",
-    "Laitat sen parvekkeelle, koska kasvatat kukkia nimenomaan parvekkeesi kaunistukseksi": "istuhoito",
-    "Laitat sen pimeään kaappiin, koska multapurkki, josta ei vielä kasva mitään, ei mielestäsi näytä tyylikkäältä": "istuhoito",
-    "Laitat sen valoisaan paikkaan ikkunalaudalleColor": "green",
-    "Laitat sen parvekkeelle, koska kasvatat kukkia nimenomaan parvekkeesi kaunistukseksiColor": "red",
-    "Laitat sen pimeään kaappiin, koska multapurkki, josta ei vielä kasva mitään, ei mielestäsi näytä tyylikkäältäColor": "red"
+    "You put it in a bright place on the windowsill": "istuhoito",
+    "You put it on your balcony because you grow flowers specifically to beautify your balcony": "istuhoito",
+    "You put it in a dark closet because you don’t think the soil jar, which doesn’t grow anything yet, looks stylish": "istuhoito",
+    "You put it in a bright place on the windowsillColor": "green",
+    "You put it on your balcony because you grow flowers specifically to beautify your balconyColor": "red",
+    "You put it in a dark closet because you don’t think the soil jar, which doesn’t grow anything yet, looks stylishColor": "red"
   },
   "istuhoito": {
-    "question": "Miten hoidat kylvämiäsi siemeniä?",
+    "question": "How do you care for the seeds you sow?",
     "background": "background_14",
     "person": "null",
     "face": "null",
     "fore": "fore_17",
     "answers": [
-      "Et mitenkään",
-      "Kastelet multaa aina, kun se vaikuttaa kuivahtaneelta",
-      "Noudatat juuri tämän kukkalajin hoitoon netistä lukemiasi ohjeita"
+      "Not in any way",
+      "You water the soil whenever it appears dry",
+      "You follow the instructions you have read online to treat this type of flower"
     ],
-    "Et mitenkään": "null",
-    "Kastelet multaa aina, kun se vaikuttaa kuivahtaneelta": "null",
-    "Noudatat juuri tämän kukkalajin hoitoon netistä lukemiasi ohjeita": "null",
-    "Et mitenkäänColor": "red",
-    "Kastelet multaa aina, kun se vaikuttaa kuivahtaneeltaColor": "yellow",
-    "Noudatat juuri tämän kukkalajin hoitoon netistä lukemiasi ohjeitaColor": "green"
+    "Not in any way": "null",
+    "You water the soil whenever it appears dry": "null",
+    "You follow the instructions you have read online to treat this type of flower": "null",
+    "Not in any wayColor": "red",
+    "You water the soil whenever it appears dryColor": "yellow",
+    "You follow the instructions you have read online to treat this type of flowerColor": "green"
   },
   "istusumutus": {
-    "question": "Mitä teet seuraavaksi?",
+    "question": "What do you do next?",
     "background": "background_14",
     "person": "null",
     "face": "null",
     "fore": "fore_17",
     "answers": [
-      "Sumutat mullan kosteaksi suihkepullolla ja peität kylvöksen rei'itetyllä kelmulla tai hedelmäpussilla",
-      "Kastelet mullan kastelukannulla",
-      "Et mitään"
+      "Spray the soil moist with a spray bottle and cover the seed with a perforated wrap or fruit bag",
+      "You water the soil with a watering can",
+      "Nothing"
     ],
-    "Sumutat mullan kosteaksi suihkepullolla ja peität kylvöksen rei'itetyllä kelmulla tai hedelmäpussilla": "istumihin",
-    "Kastelet mullan kastelukannulla": "istumihin",
-    "Et mitään": "istumihin",
-    "Sumutat mullan kosteaksi suihkepullolla ja peität kylvöksen rei'itetyllä kelmulla tai hedelmäpussillaColor": "green",
-    "Kastelet mullan kastelukannullaColor": "yellow",
-    "Et mitäänColor": "red"
+    "Spray the soil moist with a spray bottle and cover the seed with a perforated wrap or fruit bag": "istumihin",
+    "You water the soil with a watering can": "istumihin",
+    "Nothing": "istumihin",
+    "Spray the soil moist with a spray bottle and cover the seed with a perforated wrap or fruit bagColor": "green",
+    "You water the soil with a watering canColor": "yellow",
+    "NothingColor": "red"
   },
   "istukoska": {
-    "question": "Haluat kasvattaa parvekkeellesi kauniita kesäkukkia. Milloin kylvät siemenet?",
+    "question": "You want to grow beautiful summer flowers on your balcony. When do you sow the seeds?",
     "background": "background_14",
     "person": "null",
     "face": "null",
     "fore": "fore_17",
     "answers": [
-      "Joulukuussa, jotta ne ehtivät varmasti kasvaa ennen kesää",
-      "Helmi-maaliskuussa, jotta ne saavat riittävästi valoa ja ehtivät kasvaa",
-      "Huhtikuussa, koska siemenpakkauksessa suositellaan niin",
-      "Heinäkuussa, koska aurinkoinen sää saa sinut kaipaamaan kukkia parvekkeellesi",
-      "Tarkistat parhaan kylvöajankohdan netistä"
+      "In December, so they have time to grow before the summer",
+      "In February-March, so that they get enough light and have time to grow",
+      "In April, as the seed pack is recommended so",
+      "In July, because the sunny weather makes you miss the flowers on your balcony",
+      "You check the best sowing time online"
     ],
-    "Joulukuussa, jotta ne ehtivät varmasti kasvaa ennen kesää": "istumulta",
-    "Helmi-maaliskuussa, jotta ne saavat riittävästi valoa ja ehtivät kasvaa": "istumulta",
-    "Huhtikuussa, koska siemenpakkauksessa suositellaan niin": "istumulta",
-    "Heinäkuussa, koska aurinkoinen sää saa sinut kaipaamaan kukkia parvekkeellesi": "istumulta",
-    "Tarkistat parhaan kylvöajankohdan netistä": "istumulta",
-    "Joulukuussa, jotta ne ehtivät varmasti kasvaa ennen kesääColor": "red",
-    "Helmi-maaliskuussa, jotta ne saavat riittävästi valoa ja ehtivät kasvaaColor": "yellow",
-    "Huhtikuussa, koska siemenpakkauksessa suositellaan niinColor": "green",
-    "Heinäkuussa, koska aurinkoinen sää saa sinut kaipaamaan kukkia parvekkeellesiColor": "red",
-    "Tarkistat parhaan kylvöajankohdan netistäColor": "green"
+    "In December, so they have time to grow before the summer": "istumulta",
+    "In February-March, so that they get enough light and have time to grow": "istumulta",
+    "In April, as the seed pack is recommended so": "istumulta",
+    "In July, because the sunny weather makes you miss the flowers on your balcony": "istumulta",
+    "You check the best sowing time online": "istumulta",
+    "In December, so they have time to grow before the summerColor": "red",
+    "In February-March, so that they get enough light and have time to growColor": "yellow",
+    "In April, as the seed pack is recommended soColor": "green",
+    "In July, because the sunny weather makes you miss the flowers on your balconyColor": "red",
+    "You check the best sowing time onlineColor": "green"
   }
 }
