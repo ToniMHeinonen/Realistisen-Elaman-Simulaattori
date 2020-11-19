@@ -6,16 +6,16 @@
     "face": "null",
     "fore": "null",
     "answers": [
-      "Tiedustelet tuttavilta, voisiko joku viedä sinut harjoituksiin",
+      "Pakkaat tarvittavat vaatteet ja varusteet, jonka jälkeen tiedustelet tuttavilta, voisiko joku viedä sinut harjoituksiin",
       "Et mieti ollenkaan tulevia harjoituksia",
-      "Merkitset harjoitukset kalenteriin ja menet niihin itse"
+      "Pakkaat tarvittavat vaatteet ja varusteet, jonka jälkeen suunnittelet harjoituksiin lähtöä"
     ],
-    "Tiedustelet tuttavilta, voisiko joku viedä sinut harjoituksiin": "tiedustelu",
+    "Pakkaat tarvittavat vaatteet ja varusteet, jonka jälkeen tiedustelet tuttavilta, voisiko joku viedä sinut harjoituksiin": "tiedustelu",
     "Et mieti ollenkaan tulevia harjoituksia": "paniikki",
-    "Merkitset harjoitukset kalenteriin ja menet niihin itse": "yksin",
-    "Tiedustelet tuttavilta, voisiko joku viedä sinut harjoituksiinColor": "green",
+    "Pakkaat tarvittavat vaatteet ja varusteet, jonka jälkeen suunnittelet harjoituksiin lähtöä": "yksin",
+    "Pakkaat tarvittavat vaatteet ja varusteet, jonka jälkeen tiedustelet tuttavilta, voisiko joku viedä sinut harjoituksiinColor": "green",
     "Et mieti ollenkaan tulevia harjoituksiaColor": "red",
-    "Merkitset harjoitukset kalenteriin ja menet niihin itseColor": "green"
+    "Pakkaat tarvittavat vaatteet ja varusteet, jonka jälkeen suunnittelet harjoituksiin lähtöäColor": "green"
   },
   "tiedustelu": {
     "question": "Saat tuttavasi kiinni ja hän ehdottaa aikataulua, jolla olisit etuajassa paikalla. Mitä teet?",
@@ -42,16 +42,16 @@
     "face": "face_uncomfortable",
     "fore": "null",
     "answers": [
-      "Keräät kaikki tarvittavat tavarat kokoon ja lähdet.",
-      "Jätät harjoitukset väliin.",
-      "Alat soitella tuttaville kyselläksesi, kuka voisi viedä sinut harjoituksiin."
+      "Keräät kaikki tarvittavat tavarat kokoon ja lähdet",
+      "Jätät harjoitukset väliin",
+      "Alat soitella tuttaville kyselläksesi, kuka voisi viedä sinut harjoituksiin"
     ],
-    "Keräät kaikki tarvittavat tavarat kokoon ja lähdet.": "yksin",
-    "Jätät harjoitukset väliin.": "null",
-    "Alat soitella tuttaville kyselläksesi, kuka voisi viedä sinut harjoituksiin.": "yhdessa",
-    "Keräät kaikki tarvittavat tavarat kokoon ja lähdet.Color": "green",
-    "Jätät harjoitukset väliin.Color": "yellow",
-    "Alat soitella tuttaville kyselläksesi, kuka voisi viedä sinut harjoituksiin.Color": "yellow"
+    "Keräät kaikki tarvittavat tavarat kokoon ja lähdet": "yksin",
+    "Jätät harjoitukset väliin": "null",
+    "Alat soitella tuttaville kyselläksesi, kuka voisi viedä sinut harjoituksiin": "yhdessa",
+    "Keräät kaikki tarvittavat tavarat kokoon ja lähdetColor": "green",
+    "Jätät harjoitukset väliinColor": "yellow",
+    "Alat soitella tuttaville kyselläksesi, kuka voisi viedä sinut harjoituksiinColor": "yellow"
   },
   "yksin": {
     "question": "Millä kulkuneuvolla menet?",
