@@ -322,14 +322,14 @@
     "fore": "fore_5",
     "answers": [
       "You go to the requested room",
-      "You do a somersault, after which you go to the requested room",
+      "You will finish reading the news on your phone before going to the room",
       "You leave the dentist"
     ],
     "You go to the requested room": "huoneessa",
-    "You do a somersault, after which you go to the requested room": "huoneessa",
+    "You will finish reading the news on your phone before going to the room": "huoneessa",
     "You leave the dentist": "null",
     "You go to the requested roomColor": "green",
-    "You do a somersault, after which you go to the requested roomColor": "yellow",
+    "You will finish reading the news on your phone before going to the roomColor": "red",
     "You leave the dentistColor": "red"
   },
   "huoneessa": {
