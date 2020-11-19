@@ -1,1 +1,191 @@
-{"first":{"question":"You are on your way home. You are waiting for the bus at the bus stop. It arrives.","background":"background_5","person":"null","face":"null","fore":"fore_1","answers":["You let the others standing at the stop go before you and then you get on the bus","You push in front of the other people to get on the bus first"],"You let the others standing at the stop go before you and then you get on the bus":"Käytäväpaikka","You push in front of the other people to get on the bus first":"Ikkunapaikka","You let the others standing at the stop go before you and then you get on the busColor":"green","You push in front of the other people to get on the bus firstColor":"red"},"Käytäväpaikka":{"question":"There are a lot of people on the bus. All window seats are reserved.","background":"background_5","person":"character_6","face":"face_happy","fore":"null","answers":["You sit down to a hallway seat next to an unknown person","You go to stand next to the center doors of the bus"],"You sit down to a hallway seat next to an unknown person":"Käytäväpaikka 2","You go to stand next to the center doors of the bus":"Keskiosa","You sit down to a hallway seat next to an unknown personColor":"green","You go to stand next to the center doors of the busColor":"green"},"Ikkunapaikka":{"question":"You get to sit by the window. The bus fills up pretty quickly and an unknown person sits next to you.","background":"background_5","person":"character_6","face":"face_happy","fore":"null","answers":["You ask her when she has to get off the bus","You sit quietly and look outside","You lie that you have to get out at the next stop and ask her to move out of the way"],"You ask her when she has to get off the bus":"Ikkunapaikka keskustelu","You sit quietly and look outside":"Ikkunapaikka oma pysäkki","You lie that you have to get out at the next stop and ask her to move out of the way":"Aikainen poistuminen","You ask her when she has to get off the busColor":"green","You sit quietly and look outsideColor":"green","You lie that you have to get out at the next stop and ask her to move out of the wayColor":"red"},"Käytäväpaikka 2":{"question":"More people get on the bus. The bus is now completely full.","background":"background_5","person":"character_6","face":"face_happy","fore":"null","answers":["You sit peacefully on your seat until it is time for you to leave","You get up from the bench and let someone else sit on your seat"],"You sit peacefully on your seat until it is time for you to leave":"Poistuminen","You get up from the bench and let someone else sit on your seat":"Poistuminen","You sit peacefully on your seat until it is time for you to leaveColor":"green","You get up from the bench and let someone else sit on your seatColor":"green"},"Poistuminen":{"question":"The bus arrives at your stop. There are a lot of people standing in the hallway.","background":"background_5","person":"character_6","face":"face_happy","fore":"null","answers":["You push people, force yourself to the doors and step out of the bus","You push people lightly, apologize and get off the bus"],"You push people, force yourself to the doors and step out of the bus":"null","You push people lightly, apologize and get off the bus":"null","You push people, force yourself to the doors and step out of the busColor":"yellow","You push people lightly, apologize and get off the busColor":"green"},"Aikainen poistuminen":{"question":"You step to the doors.","background":"background_5","person":"character_6","face":"face_happy","fore":"null","answers":["You get off the bus even though it is not your stop","You wait at the doors for your own stop"],"You get off the bus even though it is not your stop":"null","You wait at the doors for your own stop":"Keskiosa","You get off the bus even though it is not your stopColor":"red","You wait at the doors for your own stopColor":"green"},"Keskiosa":{"question":"A woman with a stroller tries to get on the bus, but you are standing in the way.","background":"background_5","person":"character_6","face":"face_happy","fore":"null","answers":["You go past the stroller and get off the bus, even though it is not your stop","You stand still","You step out of the way and go stand in the hallway"],"You go past the stroller and get off the bus, even though it is not your stop":"null","You stand still":"Rattaat","You step out of the way and go stand in the hallway":"Poistuminen","You go past the stroller and get off the bus, even though it is not your stopColor":"red","You stand stillColor":"red","You step out of the way and go stand in the hallwayColor":"green"},"Rattaat":{"question":"The woman looks at you and asks rudely: \"Can you move?\"","background":"background_5","person":"character_6","face":"face_confused","fore":"null","answers":["\"Yeah, sorry\", you say and move to the hallway","You shout: \"What are you yelling, I was here first!\"","You say nothing and go to the hallway"],"\"Yeah, sorry\", you say and move to the hallway":"Poistuminen","You shout: \"What are you yelling, I was here first!\"":"Rattaat eskalointi","You say nothing and go to the hallway":"Poistuminen","\"Yeah, sorry\", you say and move to the hallwayColor":"green","You shout: \"What are you yelling, I was here first!\"Color":"red","You say nothing and go to the hallwayColor":"yellow"},"Rattaat eskalointi":{"question":"The man nearby pushes you lightly and says: \"Let the lady come in.\" ","background":"background_5","person":"character_6","face":"face_surprised","fore":"null","answers":["You get angry and get off the bus","You reluctantly go to the hallway"],"You get angry and get off the bus":"null","You reluctantly go to the hallway":"Poistuminen","You get angry and get off the busColor":"red","You reluctantly go to the hallwayColor":"green"},"Ikkunapaikka keskustelu":{"question":"It seems that you will be the first one who has to get out of the bus.","background":"background_5","person":"character_6","face":"face_happy","fore":"null","answers":["You wait for your own stop","You lie that you have to get out at the next stop and ask her to move out of the way"],"You wait for your own stop":"Ikkunapaikka oma pysäkki","You lie that you have to get out at the next stop and ask her to move out of the way":"Aikainen poistuminen","You wait for your own stopColor":"green","You lie that you have to get out at the next stop and ask her to move out of the wayColor":"yellow"},"Ikkunapaikka oma pysäkki":{"question":"The bus will soon arrive at your stop.","background":"background_5","person":"character_6","face":"face_happy","fore":"null","answers":["You move a little to make the person next to you feel like you are about to leave","You tell the person sitting next to you that you have to get out at the next stop","You sit still and let the bus go past your stop"],"You move a little to make the person next to you feel like you are about to leave":"Poistuminen","You tell the person sitting next to you that you have to get out at the next stop":"Poistuminen","You sit still and let the bus go past your stop":"Ohi","You move a little to make the person next to you feel like you are about to leaveColor":"yellow","You tell the person sitting next to you that you have to get out at the next stopColor":"green","You sit still and let the bus go past your stopColor":"red"},"Ohi":{"question":"The person sitting next to you gets off the bus. Now you can exit the bus aswell.","background":"background_5","person":"null","face":"null","fore":"fore_1","answers":["Leave the bus"],"Leave the bus":"null","Leave the busColor":"green"}}
+{
+  "first": {
+    "question": "You are on your way home. You are waiting for the bus at the bus stop. It arrives.",
+    "background": "background_5",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_1",
+    "answers": [
+      "You let the others standing at the stop go before you and then you get on the bus",
+      "You push in front of the other people to get on the bus first"
+    ],
+    "You let the others standing at the stop go before you and then you get on the bus": "Käytäväpaikka",
+    "You push in front of the other people to get on the bus first": "Ikkunapaikka",
+    "You let the others standing at the stop go before you and then you get on the busColor": "green",
+    "You push in front of the other people to get on the bus firstColor": "red"
+  },
+  "Käytäväpaikka": {
+    "question": "There are a lot of people on the bus. All window seats are reserved.",
+    "background": "background_5",
+    "person": "character_6",
+    "face": "face_happy",
+    "fore": "null",
+    "answers": [
+      "You sit down to a hallway seat next to an unknown person",
+      "You go to stand next to the center doors of the bus"
+    ],
+    "You sit down to a hallway seat next to an unknown person": "Käytäväpaikka 2",
+    "You go to stand next to the center doors of the bus": "Keskiosa",
+    "You sit down to a hallway seat next to an unknown personColor": "green",
+    "You go to stand next to the center doors of the busColor": "green"
+  },
+  "Ikkunapaikka": {
+    "question": "You get to sit by the window. The bus fills up pretty quickly and an unknown person sits next to you.",
+    "background": "background_5",
+    "person": "character_6",
+    "face": "face_happy",
+    "fore": "null",
+    "answers": [
+      "You ask her when she has to get off the bus",
+      "You sit quietly and look outside",
+      "You lie that you have to get out at the next stop and ask her to move out of the way"
+    ],
+    "You ask her when she has to get off the bus": "Ikkunapaikka keskustelu",
+    "You sit quietly and look outside": "Ikkunapaikka oma pysäkki",
+    "You lie that you have to get out at the next stop and ask her to move out of the way": "Aikainen poistuminen",
+    "You ask her when she has to get off the busColor": "green",
+    "You sit quietly and look outsideColor": "green",
+    "You lie that you have to get out at the next stop and ask her to move out of the wayColor": "red"
+  },
+  "Käytäväpaikka 2": {
+    "question": "More people get on the bus. The bus is now completely full.",
+    "background": "background_5",
+    "person": "character_6",
+    "face": "face_happy",
+    "fore": "null",
+    "answers": [
+      "You sit peacefully on your seat until it is time for you to leave",
+      "You get up from the bench and let someone else sit on your seat"
+    ],
+    "You sit peacefully on your seat until it is time for you to leave": "Poistuminen",
+    "You get up from the bench and let someone else sit on your seat": "Poistuminen",
+    "You sit peacefully on your seat until it is time for you to leaveColor": "green",
+    "You get up from the bench and let someone else sit on your seatColor": "green"
+  },
+  "Poistuminen": {
+    "question": "The bus arrives at your stop. There are a lot of people standing in the hallway.",
+    "background": "background_5",
+    "person": "character_6",
+    "face": "face_happy",
+    "fore": "null",
+    "answers": [
+      "You push people, force yourself to the doors and step out of the bus",
+      "You push people lightly, apologize and get off the bus"
+    ],
+    "You push people, force yourself to the doors and step out of the bus": "null",
+    "You push people lightly, apologize and get off the bus": "null",
+    "You push people, force yourself to the doors and step out of the busColor": "yellow",
+    "You push people lightly, apologize and get off the busColor": "green"
+  },
+  "Aikainen poistuminen": {
+    "question": "You step to the doors.",
+    "background": "background_5",
+    "person": "character_6",
+    "face": "face_happy",
+    "fore": "null",
+    "answers": [
+      "You get off the bus even though it is not your stop",
+      "You wait at the doors for your own stop"
+    ],
+    "You get off the bus even though it is not your stop": "null",
+    "You wait at the doors for your own stop": "Keskiosa",
+    "You get off the bus even though it is not your stopColor": "red",
+    "You wait at the doors for your own stopColor": "green"
+  },
+  "Keskiosa": {
+    "question": "A woman with a stroller tries to get on the bus, but you are standing in the way.",
+    "background": "background_5",
+    "person": "character_6",
+    "face": "face_happy",
+    "fore": "null",
+    "answers": [
+      "You go past the stroller and get off the bus, even though it is not your stop",
+      "You stand still",
+      "You step out of the way and go stand in the hallway"
+    ],
+    "You go past the stroller and get off the bus, even though it is not your stop": "null",
+    "You stand still": "Rattaat",
+    "You step out of the way and go stand in the hallway": "Poistuminen",
+    "You go past the stroller and get off the bus, even though it is not your stopColor": "red",
+    "You stand stillColor": "red",
+    "You step out of the way and go stand in the hallwayColor": "green"
+  },
+  "Rattaat": {
+    "question": "The woman looks at you and asks rudely: \"Can you move?\"",
+    "background": "background_5",
+    "person": "character_6",
+    "face": "face_confused",
+    "fore": "null",
+    "answers": [
+      "\"Yeah, sorry\", you say and move to the hallway",
+      "You shout: \"What are you yelling, I was here first!\"",
+      "You say nothing and go to the hallway"
+    ],
+    "\"Yeah, sorry\", you say and move to the hallway": "Poistuminen",
+    "You shout: \"What are you yelling, I was here first!\"": "Rattaat eskalointi",
+    "You say nothing and go to the hallway": "Poistuminen",
+    "\"Yeah, sorry\", you say and move to the hallwayColor": "green",
+    "You shout: \"What are you yelling, I was here first!\"Color": "red",
+    "You say nothing and go to the hallwayColor": "yellow"
+  },
+  "Rattaat eskalointi": {
+    "question": "The man nearby pushes you lightly and says: \"Let the lady come in.\" ",
+    "background": "background_5",
+    "person": "character_6",
+    "face": "face_surprised",
+    "fore": "null",
+    "answers": [
+      "You get angry and get off the bus",
+      "You reluctantly go to the hallway"
+    ],
+    "You get angry and get off the bus": "null",
+    "You reluctantly go to the hallway": "Poistuminen",
+    "You get angry and get off the busColor": "red",
+    "You reluctantly go to the hallwayColor": "green"
+  },
+  "Ikkunapaikka keskustelu": {
+    "question": "After talking to the person next to you, you conclude that you will get off the bus before him. What do you do?",
+    "background": "background_5",
+    "person": "character_6",
+    "face": "face_happy",
+    "fore": "null",
+    "answers": [
+      "You sit patiently in your seat and wait for your own stop",
+      "You lie that you have to get out at the next stop and ask her to move out of the way"
+    ],
+    "You sit patiently in your seat and wait for your own stop": "Ikkunapaikka oma pysäkki",
+    "You lie that you have to get out at the next stop and ask her to move out of the way": "Aikainen poistuminen",
+    "You sit patiently in your seat and wait for your own stopColor": "green",
+    "You lie that you have to get out at the next stop and ask her to move out of the wayColor": "yellow"
+  },
+  "Ikkunapaikka oma pysäkki": {
+    "question": "The bus will soon arrive at your stop.",
+    "background": "background_5",
+    "person": "character_6",
+    "face": "face_happy",
+    "fore": "null",
+    "answers": [
+      "You move a little to make the person next to you feel like you are about to leave",
+      "You tell the person sitting next to you that you have to get out at the next stop",
+      "You sit still and let the bus go past your stop"
+    ],
+    "You move a little to make the person next to you feel like you are about to leave": "Poistuminen",
+    "You tell the person sitting next to you that you have to get out at the next stop": "Poistuminen",
+    "You sit still and let the bus go past your stop": "Ohi",
+    "You move a little to make the person next to you feel like you are about to leaveColor": "yellow",
+    "You tell the person sitting next to you that you have to get out at the next stopColor": "green",
+    "You sit still and let the bus go past your stopColor": "red"
+  },
+  "Ohi": {
+    "question": "The person sitting next to you gets off the bus. Now you can exit the bus aswell.",
+    "background": "background_5",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_1",
+    "answers": [
+      "Leave the bus"
+    ],
+    "Leave the bus": "null",
+    "Leave the busColor": "green"
+  }
+}

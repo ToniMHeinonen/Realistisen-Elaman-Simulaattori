@@ -1,1 +1,191 @@
-{"first":{"question":"Olet matkalla kotiin. Odotat bussipysäkillä linja-autoa. Se saapuu pysäkille.","background":"background_5","person":"null","face":"null","fore":"fore_1","answers":["Annat muiden pysäkillä seisovien mennä edellesi ja nouset heidän jälkeensä bussiin","Änget muiden ihmisten eteen, jotta pääset bussiin ensimmäisenä"],"Annat muiden pysäkillä seisovien mennä edellesi ja nouset heidän jälkeensä bussiin":"Käytäväpaikka","Änget muiden ihmisten eteen, jotta pääset bussiin ensimmäisenä":"Ikkunapaikka","Annat muiden pysäkillä seisovien mennä edellesi ja nouset heidän jälkeensä bussiinColor":"green","Änget muiden ihmisten eteen, jotta pääset bussiin ensimmäisenäColor":"red"},"Käytäväpaikka":{"question":"Bussissa on paljon ihmisiä. Kaikki ikkunapaikat ovat varattuja.","background":"background_5","person":"character_6","face":"face_happy","fore":"null","answers":["Menet istumaan käytäväpaikalle tuntemattoman henkilön viereen","Jäät seisomaan bussin keskioven läheisyyteen"],"Menet istumaan käytäväpaikalle tuntemattoman henkilön viereen":"Käytäväpaikka 2","Jäät seisomaan bussin keskioven läheisyyteen":"Keskiosa","Menet istumaan käytäväpaikalle tuntemattoman henkilön viereenColor":"green","Jäät seisomaan bussin keskioven läheisyyteenColor":"green"},"Ikkunapaikka":{"question":"Pääset istumaan ikkunapaikalle. Bussi täyttyy aika nopeasti ja tuntematon henkilö istuu viereesi.","background":"background_5","person":"character_6","face":"face_happy","fore":"null","answers":["Kysyt häneltä, milloin hän aikoo jäädä pois bussista","Olet hiljaa ja katselet ulos","Valehtelet, että jäät seuraavalla pysäkillä, ja pyydät häntä väistymään"],"Kysyt häneltä, milloin hän aikoo jäädä pois bussista":"Ikkunapaikka keskustelu","Olet hiljaa ja katselet ulos":"Ikkunapaikka oma pysäkki","Valehtelet, että jäät seuraavalla pysäkillä, ja pyydät häntä väistymään":"Aikainen poistuminen","Kysyt häneltä, milloin hän aikoo jäädä pois bussistaColor":"green","Olet hiljaa ja katselet ulosColor":"green","Valehtelet, että jäät seuraavalla pysäkillä, ja pyydät häntä väistymäänColor":"red"},"Käytäväpaikka 2":{"question":"Lisää ihmisiä astuu bussiin. Bussi tulee aivan täyteen.","background":"background_5","person":"character_6","face":"face_happy","fore":"null","answers":["Istut rauhassa paikoillasi siihen asti, kunnes sinun täytyy jäädä pois","Nouset penkistä ja annat jonkun muun istua paikallesi"],"Istut rauhassa paikoillasi siihen asti, kunnes sinun täytyy jäädä pois":"Poistuminen","Nouset penkistä ja annat jonkun muun istua paikallesi":"Poistuminen","Istut rauhassa paikoillasi siihen asti, kunnes sinun täytyy jäädä poisColor":"green","Nouset penkistä ja annat jonkun muun istua paikallesiColor":"green"},"Poistuminen":{"question":"Bussi saapuu pysäkillesi. Käytävällä on paljon ihmisiä.","background":"background_5","person":"character_6","face":"face_happy","fore":"null","answers":["Tönit ihmisiä, änget itsesi ovelle ja astut ulos bussista","Tönit ihmisiä kevyesti, pyytelet anteeksi mennessäsi heidän ohitseen ja poistut bussista"],"Tönit ihmisiä, änget itsesi ovelle ja astut ulos bussista":"null","Tönit ihmisiä kevyesti, pyytelet anteeksi mennessäsi heidän ohitseen ja poistut bussista":"null","Tönit ihmisiä, änget itsesi ovelle ja astut ulos bussistaColor":"yellow","Tönit ihmisiä kevyesti, pyytelet anteeksi mennessäsi heidän ohitseen ja poistut bussistaColor":"green"},"Aikainen poistuminen":{"question":"Kävelet ovien luokse.","background":"background_5","person":"character_6","face":"face_happy","fore":"null","answers":["Poistut bussista, vaikka ei ole sinun pysäkkisi","Jäät odottamaan omaa pysäkkiäsi ovien luokse"],"Poistut bussista, vaikka ei ole sinun pysäkkisi":"null","Jäät odottamaan omaa pysäkkiäsi ovien luokse":"Keskiosa","Poistut bussista, vaikka ei ole sinun pysäkkisiColor":"red","Jäät odottamaan omaa pysäkkiäsi ovien luokseColor":"green"},"Keskiosa":{"question":"Bussiin on nousemassa nainen rattaiden kanssa. Seisot rattaiden tiellä.","background":"background_5","person":"character_6","face":"face_happy","fore":"null","answers":["Menet rattaiden ohitse ja astut ulos bussista, vaikka ei ole sinun pysäkkisi","Jäät seisomaan paikoillesi","Väistät rattaita ja menet seisomaan käytävälle"],"Menet rattaiden ohitse ja astut ulos bussista, vaikka ei ole sinun pysäkkisi":"null","Jäät seisomaan paikoillesi":"Rattaat","Väistät rattaita ja menet seisomaan käytävälle":"Poistuminen","Menet rattaiden ohitse ja astut ulos bussista, vaikka ei ole sinun pysäkkisiColor":"red","Jäät seisomaan paikoillesiColor":"red","Väistät rattaita ja menet seisomaan käytävälleColor":"green"},"Rattaat":{"question":"Nainen katsoo sinua ja kysyy töykeästi: \"Voitko siirtyä?\"","background":"background_5","person":"character_6","face":"face_confused","fore":"null","answers":["\"Joo, anteeksi\", sanot ja siirryt käytäväpaikalle","Huudat: \"Mitä oikein raivoat, minä olin tässä ensin!\"","Et sano mitään ja siirryt käytäväpaikalle"],"\"Joo, anteeksi\", sanot ja siirryt käytäväpaikalle":"Poistuminen","Huudat: \"Mitä oikein raivoat, minä olin tässä ensin!\"":"Rattaat eskalointi","Et sano mitään ja siirryt käytäväpaikalle":"Poistuminen","\"Joo, anteeksi\", sanot ja siirryt käytäväpaikalleColor":"green","Huudat: \"Mitä oikein raivoat, minä olin tässä ensin!\"Color":"red","Et sano mitään ja siirryt käytäväpaikalleColor":"yellow"},"Rattaat eskalointi":{"question":"Lähellä seisova mies tönäisee sinua kevyesti ja sanoo: \"Väistä vain, antaa rouvan tulla sisälle\".","background":"background_5","person":"character_6","face":"face_surprised","fore":"null","answers":["Suutut ja astut pois bussista","Menet vastahakoisesti käytäväpaikalle"],"Suutut ja astut pois bussista":"null","Menet vastahakoisesti käytäväpaikalle":"Poistuminen","Suutut ja astut pois bussistaColor":"red","Menet vastahakoisesti käytäväpaikalleColor":"green"},"Ikkunapaikka keskustelu":{"question":"Päättelet hänen vastauksestaan, että sinä jäät bussista pois ensimmäisenä. Miten toimit?","background":"background_5","person":"character_6","face":"face_happy","fore":"null","answers":["Jäät odottamaan omaa pysäkkiäsi","Valehtelet, että jäät seuraavalla pysäkillä, ja pyydät häntä väistämään "],"Jäät odottamaan omaa pysäkkiäsi":"Ikkunapaikka oma pysäkki","Valehtelet, että jäät seuraavalla pysäkillä, ja pyydät häntä väistämään ":"Aikainen poistuminen","Jäät odottamaan omaa pysäkkiäsiColor":"green","Valehtelet, että jäät seuraavalla pysäkillä, ja pyydät häntä väistämään Color":"yellow"},"Ikkunapaikka oma pysäkki":{"question":"Bussi saapuu kohta pysäkillesi.","background":"background_5","person":"character_6","face":"face_happy","fore":"null","answers":["Liikehdit hieman, jotta vierustoveri ymmärtäisi, että tahdot jäädä pois bussista","Sanot vieressä istuvalle, että jäät seuraavalla pysäkillä pois","Istut paikoillasi ja annat bussin ajaa oman pysäkkisi ohi"],"Liikehdit hieman, jotta vierustoveri ymmärtäisi, että tahdot jäädä pois bussista":"Poistuminen","Sanot vieressä istuvalle, että jäät seuraavalla pysäkillä pois":"Poistuminen","Istut paikoillasi ja annat bussin ajaa oman pysäkkisi ohi":"Ohi","Liikehdit hieman, jotta vierustoveri ymmärtäisi, että tahdot jäädä pois bussistaColor":"yellow","Sanot vieressä istuvalle, että jäät seuraavalla pysäkillä poisColor":"green","Istut paikoillasi ja annat bussin ajaa oman pysäkkisi ohiColor":"red"},"Ohi":{"question":"Vieressä istuva henkilö jää pois bussista, joten pääset itsekin poistumaan kyydistä.","background":"background_5","person":"null","face":"null","fore":"fore_1","answers":["Poistut bussista"],"Poistut bussista":"null","Poistut bussistaColor":"green"}}
+{
+  "first": {
+    "question": "Olet matkalla kotiin. Odotat bussipysäkillä linja-autoa. Se saapuu pysäkille.",
+    "background": "background_5",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_1",
+    "answers": [
+      "Annat muiden pysäkillä seisovien mennä edellesi ja nouset heidän jälkeensä bussiin",
+      "Änget muiden ihmisten eteen, jotta pääset bussiin ensimmäisenä"
+    ],
+    "Annat muiden pysäkillä seisovien mennä edellesi ja nouset heidän jälkeensä bussiin": "Käytäväpaikka",
+    "Änget muiden ihmisten eteen, jotta pääset bussiin ensimmäisenä": "Ikkunapaikka",
+    "Annat muiden pysäkillä seisovien mennä edellesi ja nouset heidän jälkeensä bussiinColor": "green",
+    "Änget muiden ihmisten eteen, jotta pääset bussiin ensimmäisenäColor": "red"
+  },
+  "Käytäväpaikka": {
+    "question": "Bussissa on paljon ihmisiä. Kaikki ikkunapaikat ovat varattuja.",
+    "background": "background_5",
+    "person": "character_6",
+    "face": "face_happy",
+    "fore": "null",
+    "answers": [
+      "Menet istumaan käytäväpaikalle tuntemattoman henkilön viereen",
+      "Jäät seisomaan bussin keskioven läheisyyteen"
+    ],
+    "Menet istumaan käytäväpaikalle tuntemattoman henkilön viereen": "Käytäväpaikka 2",
+    "Jäät seisomaan bussin keskioven läheisyyteen": "Keskiosa",
+    "Menet istumaan käytäväpaikalle tuntemattoman henkilön viereenColor": "green",
+    "Jäät seisomaan bussin keskioven läheisyyteenColor": "green"
+  },
+  "Ikkunapaikka": {
+    "question": "Pääset istumaan ikkunapaikalle. Bussi täyttyy aika nopeasti ja tuntematon henkilö istuu viereesi.",
+    "background": "background_5",
+    "person": "character_6",
+    "face": "face_happy",
+    "fore": "null",
+    "answers": [
+      "Kysyt häneltä, milloin hän aikoo jäädä pois bussista",
+      "Olet hiljaa ja katselet ulos",
+      "Valehtelet, että jäät seuraavalla pysäkillä, ja pyydät häntä väistymään"
+    ],
+    "Kysyt häneltä, milloin hän aikoo jäädä pois bussista": "Ikkunapaikka keskustelu",
+    "Olet hiljaa ja katselet ulos": "Ikkunapaikka oma pysäkki",
+    "Valehtelet, että jäät seuraavalla pysäkillä, ja pyydät häntä väistymään": "Aikainen poistuminen",
+    "Kysyt häneltä, milloin hän aikoo jäädä pois bussistaColor": "green",
+    "Olet hiljaa ja katselet ulosColor": "green",
+    "Valehtelet, että jäät seuraavalla pysäkillä, ja pyydät häntä väistymäänColor": "red"
+  },
+  "Käytäväpaikka 2": {
+    "question": "Lisää ihmisiä astuu bussiin. Bussi tulee aivan täyteen.",
+    "background": "background_5",
+    "person": "character_6",
+    "face": "face_happy",
+    "fore": "null",
+    "answers": [
+      "Istut rauhassa paikoillasi siihen asti, kunnes sinun täytyy jäädä pois",
+      "Nouset penkistä ja annat jonkun muun istua paikallesi"
+    ],
+    "Istut rauhassa paikoillasi siihen asti, kunnes sinun täytyy jäädä pois": "Poistuminen",
+    "Nouset penkistä ja annat jonkun muun istua paikallesi": "Poistuminen",
+    "Istut rauhassa paikoillasi siihen asti, kunnes sinun täytyy jäädä poisColor": "green",
+    "Nouset penkistä ja annat jonkun muun istua paikallesiColor": "green"
+  },
+  "Poistuminen": {
+    "question": "Bussi saapuu pysäkillesi. Käytävällä on paljon ihmisiä.",
+    "background": "background_5",
+    "person": "character_6",
+    "face": "face_happy",
+    "fore": "null",
+    "answers": [
+      "Tönit ihmisiä, änget itsesi ovelle ja astut ulos bussista",
+      "Tönit ihmisiä kevyesti, pyytelet anteeksi mennessäsi heidän ohitseen ja poistut bussista"
+    ],
+    "Tönit ihmisiä, änget itsesi ovelle ja astut ulos bussista": "null",
+    "Tönit ihmisiä kevyesti, pyytelet anteeksi mennessäsi heidän ohitseen ja poistut bussista": "null",
+    "Tönit ihmisiä, änget itsesi ovelle ja astut ulos bussistaColor": "yellow",
+    "Tönit ihmisiä kevyesti, pyytelet anteeksi mennessäsi heidän ohitseen ja poistut bussistaColor": "green"
+  },
+  "Aikainen poistuminen": {
+    "question": "Kävelet ovien luokse.",
+    "background": "background_5",
+    "person": "character_6",
+    "face": "face_happy",
+    "fore": "null",
+    "answers": [
+      "Poistut bussista, vaikka ei ole sinun pysäkkisi",
+      "Jäät odottamaan omaa pysäkkiäsi ovien luokse"
+    ],
+    "Poistut bussista, vaikka ei ole sinun pysäkkisi": "null",
+    "Jäät odottamaan omaa pysäkkiäsi ovien luokse": "Keskiosa",
+    "Poistut bussista, vaikka ei ole sinun pysäkkisiColor": "red",
+    "Jäät odottamaan omaa pysäkkiäsi ovien luokseColor": "green"
+  },
+  "Keskiosa": {
+    "question": "Bussiin on nousemassa nainen rattaiden kanssa. Seisot rattaiden tiellä.",
+    "background": "background_5",
+    "person": "character_6",
+    "face": "face_happy",
+    "fore": "null",
+    "answers": [
+      "Menet rattaiden ohitse ja astut ulos bussista, vaikka ei ole sinun pysäkkisi",
+      "Jäät seisomaan paikoillesi",
+      "Väistät rattaita ja menet seisomaan käytävälle"
+    ],
+    "Menet rattaiden ohitse ja astut ulos bussista, vaikka ei ole sinun pysäkkisi": "null",
+    "Jäät seisomaan paikoillesi": "Rattaat",
+    "Väistät rattaita ja menet seisomaan käytävälle": "Poistuminen",
+    "Menet rattaiden ohitse ja astut ulos bussista, vaikka ei ole sinun pysäkkisiColor": "red",
+    "Jäät seisomaan paikoillesiColor": "red",
+    "Väistät rattaita ja menet seisomaan käytävälleColor": "green"
+  },
+  "Rattaat": {
+    "question": "Nainen katsoo sinua ja kysyy töykeästi: \"Voitko siirtyä?\"",
+    "background": "background_5",
+    "person": "character_6",
+    "face": "face_confused",
+    "fore": "null",
+    "answers": [
+      "\"Joo, anteeksi\", sanot ja siirryt käytäväpaikalle",
+      "Huudat: \"Mitä oikein raivoat, minä olin tässä ensin!\"",
+      "Et sano mitään ja siirryt käytäväpaikalle"
+    ],
+    "\"Joo, anteeksi\", sanot ja siirryt käytäväpaikalle": "Poistuminen",
+    "Huudat: \"Mitä oikein raivoat, minä olin tässä ensin!\"": "Rattaat eskalointi",
+    "Et sano mitään ja siirryt käytäväpaikalle": "Poistuminen",
+    "\"Joo, anteeksi\", sanot ja siirryt käytäväpaikalleColor": "green",
+    "Huudat: \"Mitä oikein raivoat, minä olin tässä ensin!\"Color": "red",
+    "Et sano mitään ja siirryt käytäväpaikalleColor": "yellow"
+  },
+  "Rattaat eskalointi": {
+    "question": "Lähellä seisova mies tönäisee sinua kevyesti ja sanoo: \"Väistä vain, antaa rouvan tulla sisälle\".",
+    "background": "background_5",
+    "person": "character_6",
+    "face": "face_surprised",
+    "fore": "null",
+    "answers": [
+      "Suutut ja astut pois bussista",
+      "Menet vastahakoisesti käytäväpaikalle"
+    ],
+    "Suutut ja astut pois bussista": "null",
+    "Menet vastahakoisesti käytäväpaikalle": "Poistuminen",
+    "Suutut ja astut pois bussistaColor": "red",
+    "Menet vastahakoisesti käytäväpaikalleColor": "green"
+  },
+  "Ikkunapaikka keskustelu": {
+    "question": "Bussissa vierustoverin kanssa keskusteltuasi päättelet, että sinä jäät bussista pois ennen häntä. Miten toimit?",
+    "background": "background_5",
+    "person": "character_6",
+    "face": "face_happy",
+    "fore": "null",
+    "answers": [
+      "Istut kärsivällisesti paikallasi ja odotat omaa pysäkkiäsi",
+      "Valehtelet, että jäät seuraavalla pysäkillä, ja pyydät häntä väistämään "
+    ],
+    "Istut kärsivällisesti paikallasi ja odotat omaa pysäkkiäsi": "Ikkunapaikka oma pysäkki",
+    "Valehtelet, että jäät seuraavalla pysäkillä, ja pyydät häntä väistämään ": "Aikainen poistuminen",
+    "Istut kärsivällisesti paikallasi ja odotat omaa pysäkkiäsiColor": "green",
+    "Valehtelet, että jäät seuraavalla pysäkillä, ja pyydät häntä väistämään Color": "yellow"
+  },
+  "Ikkunapaikka oma pysäkki": {
+    "question": "Bussi saapuu kohta pysäkillesi.",
+    "background": "background_5",
+    "person": "character_6",
+    "face": "face_happy",
+    "fore": "null",
+    "answers": [
+      "Liikehdit hieman, jotta vierustoveri ymmärtäisi, että tahdot jäädä pois bussista",
+      "Sanot vieressä istuvalle, että jäät seuraavalla pysäkillä pois",
+      "Istut paikoillasi ja annat bussin ajaa oman pysäkkisi ohi"
+    ],
+    "Liikehdit hieman, jotta vierustoveri ymmärtäisi, että tahdot jäädä pois bussista": "Poistuminen",
+    "Sanot vieressä istuvalle, että jäät seuraavalla pysäkillä pois": "Poistuminen",
+    "Istut paikoillasi ja annat bussin ajaa oman pysäkkisi ohi": "Ohi",
+    "Liikehdit hieman, jotta vierustoveri ymmärtäisi, että tahdot jäädä pois bussistaColor": "yellow",
+    "Sanot vieressä istuvalle, että jäät seuraavalla pysäkillä poisColor": "green",
+    "Istut paikoillasi ja annat bussin ajaa oman pysäkkisi ohiColor": "red"
+  },
+  "Ohi": {
+    "question": "Vieressä istuva henkilö jää pois bussista, joten pääset itsekin poistumaan kyydistä.",
+    "background": "background_5",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_1",
+    "answers": [
+      "Poistut bussista"
+    ],
+    "Poistut bussista": "null",
+    "Poistut bussistaColor": "green"
+  }
+}
