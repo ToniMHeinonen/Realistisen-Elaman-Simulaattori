@@ -18,7 +18,7 @@
     "Haet pölyrätin ja ryhdyt pyyhkimään lattioitaColor": "red"
   },
   "imuri ja tavarat": {
-    "question": "Haet imurin sieltä, missä sitä säilytetään. Lattioilla on paljon tavaroita.",
+    "question": "Haet imurin sieltä, missä sitä säilytetään. Tarkistat pölypussin tilanteen ja huomaat siinä olevan vielä tilaa. Lattioilla on paljon tavaroita.",
     "background": "background_15",
     "person": "null",
     "face": "null",
@@ -33,18 +33,18 @@
     "Siivoat tavarat lattioilta omille paikoilleen ja laitat imurin virtajohdon pistorasiaanColor": "green"
   },
   "imurin haku": {
-    "question": "Haet imurin sieltä missä sitä säilytetään. ",
+    "question": "Haet imurin sieltä missä sitä säilytetään. Tarkistat pölypussin tilanteen ja huomaat siinä olevan vielä tilaa.",
     "background": "background_15",
     "person": "null",
     "face": "null",
     "fore": "fore_16",
     "answers": [
-      "Laitat imurin virtajohdon kiinni seinään",
+      "Laitat imurin virtajohdon pistorasiaan",
       "Viet imurin pois ja toteat, ettet jaksakaan siivota"
     ],
-    "Laitat imurin virtajohdon kiinni seinään": "imurointi",
+    "Laitat imurin virtajohdon pistorasiaan": "imurointi",
     "Viet imurin pois ja toteat, ettet jaksakaan siivota": "null",
-    "Laitat imurin virtajohdon kiinni seinäänColor": "green",
+    "Laitat imurin virtajohdon pistorasiaanColor": "green",
     "Viet imurin pois ja toteat, ettet jaksakaan siivotaColor": "red"
   },
   "pölyrätti": {
