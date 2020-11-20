@@ -6,16 +6,16 @@
     "face": "null",
     "fore": "null",
     "answers": [
-      "You ask your acquaintances if someone could take you to the exercises",
+      "You pack the necessary clothes and equipment, after which you ask your acquaintances if someone could take you to the exercises",
       "You don't think about the future exercises at all",
-      "You mark the exercises on your calendar and go there by yourself"
+      "You pack the necessary clothes and equipment, after which you plan to go to the exercises"
     ],
-    "You ask your acquaintances if someone could take you to the exercises": "tiedustelu",
+    "You pack the necessary clothes and equipment, after which you ask your acquaintances if someone could take you to the exercises": "tiedustelu",
     "You don't think about the future exercises at all": "paniikki",
-    "You mark the exercises on your calendar and go there by yourself": "yksin",
-    "You ask your acquaintances if someone could take you to the exercisesColor": "green",
+    "You pack the necessary clothes and equipment, after which you plan to go to the exercises": "yksin",
+    "You pack the necessary clothes and equipment, after which you ask your acquaintances if someone could take you to the exercisesColor": "green",
     "You don't think about the future exercises at allColor": "red",
-    "You mark the exercises on your calendar and go there by yourselfColor": "green"
+    "You pack the necessary clothes and equipment, after which you plan to go to the exercisesColor": "green"
   },
   "tiedustelu": {
     "question": "Your acquaintance answers and  suggests a schedule in which you would be in the rehearsals quite early. What do you say?",

@@ -1,1 +1,347 @@
-{"first":{"question":"Olet juuri hankkinut itsellesi kissan. Mitkä tarvikkeet olet varannut valmiiksi kotiisi?","background":"background_5","person":"null","face":"null","fore":"fore_18","answers":["Kissanruokaa, ruoka- ja juoma-astiat, kissanhiekkaa sekä hiekkalaatikon","Valtavan raapimispuun ja monta hienoa lelua","Kissanpedin, kuljetuslaatikon, harjan ja kaulapannan"],"Kissanruokaa, ruoka- ja juoma-astiat, kissanhiekkaa sekä hiekkalaatikon":"ruoka","Valtavan raapimispuun ja monta hienoa lelua":"ruoka","Kissanpedin, kuljetuslaatikon, harjan ja kaulapannan":"ruoka","Kissanruokaa, ruoka- ja juoma-astiat, kissanhiekkaa sekä hiekkalaatikonColor":"green","Valtavan raapimispuun ja monta hienoa leluaColor":"red","Kissanpedin, kuljetuslaatikon, harjan ja kaulapannanColor":"red"},"ruoka":{"question":"Kissasi tulee maukumaan jalkojesi juureen. Epäilet, että sillä on nälkä. Mitä ruokaa tarjoat sille?","background":"background_10","person":"null","face":"null","fore":"fore_18","answers":["Eläinlääkärin tai kasvattajan suosittelemaa kuivaruokaa, joka sopii juuri sinun kissasi tarpeisiin","Omat ruoantähteesi","Kissanruokaa, jonka ostit marketista perehtymättä aiheeseen sen enempää","Kupillisen maitoa","Kissan märkäruokaa, koska kissasi pitää siitä enemmän kuin kuivaruoasta"],"Eläinlääkärin tai kasvattajan suosittelemaa kuivaruokaa, joka sopii juuri sinun kissasi tarpeisiin":"ruokatiheys","Omat ruoantähteesi":"epäluuloruoka","Kissanruokaa, jonka ostit marketista perehtymättä aiheeseen sen enempää":"ruokatiheys","Kupillisen maitoa":"epäluuloruoka","Kissan märkäruokaa, koska kissasi pitää siitä enemmän kuin kuivaruoasta":"märkäruoka","Eläinlääkärin tai kasvattajan suosittelemaa kuivaruokaa, joka sopii juuri sinun kissasi tarpeisiinColor":"green","Omat ruoantähteesiColor":"red","Kissanruokaa, jonka ostit marketista perehtymättä aiheeseen sen enempääColor":"yellow","Kupillisen maitoaColor":"red","Kissan märkäruokaa, koska kissasi pitää siitä enemmän kuin kuivaruoastaColor":"green"},"epäluuloruoka":{"question":"Kissasi nuuhkaisee tarjoamaasi ruokaa, muttei ala syödä sitä.","background":"background_10","person":"null","face":"null","fore":"fore_18","answers":["Päätät mennä heti kauppaan ostamaan oikeaa kissan kuivaruokaa","Arvelet, että kissasi vain nirsoilee, ja jätät kupin lattialle","Etsit netistä tietoa kissan oikeaoppisesta ruokinnasta"],"Päätät mennä heti kauppaan ostamaan oikeaa kissan kuivaruokaa":"ruokatiheys","Arvelet, että kissasi vain nirsoilee, ja jätät kupin lattialle":"vesi","Etsit netistä tietoa kissan oikeaoppisesta ruokinnasta":"vesi","Päätät mennä heti kauppaan ostamaan oikeaa kissan kuivaruokaaColor":"green","Arvelet, että kissasi vain nirsoilee, ja jätät kupin lattialleColor":"red","Etsit netistä tietoa kissan oikeaoppisesta ruokinnastaColor":"green"},"ruokatiheys":{"question":"Kissasi syö tyytyväisenä kuivaruokansa.","background":"background_10","person":"null","face":"null","fore":"fore_18","answers":["Kaadat kuppiin lisää ruokaa ja jätät sen näkösälle, jotta kissasi voi käydä syömässä omaan tahtiinsa koska haluaa","Nostat kupin pois ja tarjoat ruokaa seuraavan kerran huomisiltana","Nostat kupin pois ja päätät jatkossa tarjota ruokaa 2-3 kertaa päivässä"],"Kaadat kuppiin lisää ruokaa ja jätät sen näkösälle, jotta kissasi voi käydä syömässä omaan tahtiinsa koska haluaa":"vesi","Nostat kupin pois ja tarjoat ruokaa seuraavan kerran huomisiltana":"vesi","Nostat kupin pois ja päätät jatkossa tarjota ruokaa 2-3 kertaa päivässä":"vesi","Kaadat kuppiin lisää ruokaa ja jätät sen näkösälle, jotta kissasi voi käydä syömässä omaan tahtiinsa koska haluaaColor":"green","Nostat kupin pois ja tarjoat ruokaa seuraavan kerran huomisiltanaColor":"red","Nostat kupin pois ja päätät jatkossa tarjota ruokaa 2-3 kertaa päivässäColor":"green"},"märkäruoka":{"question":"Kissasi syö tyytyväisenä ruokansa.","background":"background_10","person":"null","face":"null","fore":"fore_18","answers":["Nostat kupin pois ja tarjoat kissalle seuraavan kerran ruokaa huomisiltana","Laitat kuppiin lisää märkäruokaa ja jätät sen lattialle, jotta kissasi voi käydä syömässä siitä omaan tahtiinsa koska haluaa","Huuhtelet ruokakipon puhtaaksi, laitat sen kuivumaan ja päätät tarjota kissallesi jatkossa ruokaa 2-3 kertaa päivässä"],"Nostat kupin pois ja tarjoat kissalle seuraavan kerran ruokaa huomisiltana":"vesi","Laitat kuppiin lisää märkäruokaa ja jätät sen lattialle, jotta kissasi voi käydä syömässä siitä omaan tahtiinsa koska haluaa":"märkäruokalattialla","Huuhtelet ruokakipon puhtaaksi, laitat sen kuivumaan ja päätät tarjota kissallesi jatkossa ruokaa 2-3 kertaa päivässä":"vesi","Nostat kupin pois ja tarjoat kissalle seuraavan kerran ruokaa huomisiltanaColor":"red","Laitat kuppiin lisää märkäruokaa ja jätät sen lattialle, jotta kissasi voi käydä syömässä siitä omaan tahtiinsa koska haluaaColor":"red","Huuhtelet ruokakipon puhtaaksi, laitat sen kuivumaan ja päätät tarjota kissallesi jatkossa ruokaa 2-3 kertaa päivässäColor":"green"},"märkäruokalattialla":{"question":"Huomaat, että pakkauksessa sanotaan, että avattu märkäruokapakkaus pitäisi säilyttää jääkaapissa.","background":"background_10","person":"null","face":"null","fore":"fore_18","answers":["Päätät jatkossa tarjota märkäruokaa 2-3 kertaa päivässä ja tyhjentää syömättä jääneet ruoat roskiin, jottei ruoka pilaantuisi","Päätät ostaa jatkossa pelkästään kuivaruokaa","Ajattelet, ettei se ole niin tarkkaa"],"Päätät jatkossa tarjota märkäruokaa 2-3 kertaa päivässä ja tyhjentää syömättä jääneet ruoat roskiin, jottei ruoka pilaantuisi":"vesi","Päätät ostaa jatkossa pelkästään kuivaruokaa":"vesi","Ajattelet, ettei se ole niin tarkkaa":"vesi","Päätät jatkossa tarjota märkäruokaa 2-3 kertaa päivässä ja tyhjentää syömättä jääneet ruoat roskiin, jottei ruoka pilaantuisiColor":"green","Päätät ostaa jatkossa pelkästään kuivaruokaaColor":"green","Ajattelet, ettei se ole niin tarkkaaColor":"red"},"leluvalinta":{"question":"Kissasi tulee läpsäisemään sinua leikkisästi tassullaan ja kiepsahtelee ympäri huonetta. Miten toimit?","background":"background_3","person":"null","face":"null","fore":"fore_18","answers":["Torut kissaa riehumisesta ja viet sen vessaan jäähylle","Otat esiin pari eläinkaupasta ostamaasi leluhiirtä ja palloa ja jätät ne lattialle kissasi eteen","Leikität kissaasi kissanlelulla","Annat kissalle leluksi lasisen koristehiiren"],"Torut kissaa riehumisesta ja viet sen vessaan jäähylle":"jätöslaatikko","Otat esiin pari eläinkaupasta ostamaasi leluhiirtä ja palloa ja jätät ne lattialle kissasi eteen":"jätöslaatikko","Leikität kissaasi kissanlelulla":"jätöslaatikko","Annat kissalle leluksi lasisen koristehiiren":"lasihiiri","Torut kissaa riehumisesta ja viet sen vessaan jäähylleColor":"red","Otat esiin pari eläinkaupasta ostamaasi leluhiirtä ja palloa ja jätät ne lattialle kissasi eteenColor":"yellow","Leikität kissaasi kissanlelullaColor":"green","Annat kissalle leluksi lasisen koristehiirenColor":"red"},"lasihiiri":{"question":"Lasinen hiiri menee rikki, kun kissasi tönäisee sitä. Lasinsiruja leviää lattialle.","background":"background_3","person":"null","face":"null","fore":"fore_18","answers":["Nostat kissan äkkiä syliisi, jotta se ei astu lasiin, ja viet sen toiseen huoneeseen. Siivoat lasinsirut huolellisesti pois ja päätät antaa kissallesi jatkossa vain kissanleluiksi tarkoitettuja tavaroita","Huudat kissallesi vihaisena"],"Nostat kissan äkkiä syliisi, jotta se ei astu lasiin, ja viet sen toiseen huoneeseen. Siivoat lasinsirut huolellisesti pois ja päätät antaa kissallesi jatkossa vain kissanleluiksi tarkoitettuja tavaroita":"jätöslaatikko","Huudat kissallesi vihaisena":"jätöslaatikko","Nostat kissan äkkiä syliisi, jotta se ei astu lasiin, ja viet sen toiseen huoneeseen. Siivoat lasinsirut huolellisesti pois ja päätät antaa kissallesi jatkossa vain kissanleluiksi tarkoitettuja tavaroitaColor":"green","Huudat kissallesi vihaisenaColor":"red"},"vesi":{"question":"Kissasi tarvitsee ruoan lisäksi myös vettä. Miten tarjoat sitä sille?","background":"background_9","person":"null","face":"null","fore":"fore_18","answers":["Ostat kalliin juoma-automaatin eläinkaupasta","Ostat tavallisen kissanruokakipon marketista","Valitset kissallesi oman muovikipon kaapistasi","Tarjoat kissallesi vettä mukista aina, kun muistat"],"Ostat kalliin juoma-automaatin eläinkaupasta":"leluvalinta","Ostat tavallisen kissanruokakipon marketista":"leluvalinta","Valitset kissallesi oman muovikipon kaapistasi":"leluvalinta","Tarjoat kissallesi vettä mukista aina, kun muistat":"leluvalinta","Ostat kalliin juoma-automaatin eläinkaupastaColor":"green","Ostat tavallisen kissanruokakipon marketistaColor":"green","Valitset kissallesi oman muovikipon kaapistasiColor":"green","Tarjoat kissallesi vettä mukista aina, kun muistatColor":"red"},"jätöslaatikko":{"question":"Huomaat illalla, että kissan hiekkalaatikossa on jätöksiä. Mitä teet?","background":"background_7","person":"null","face":"null","fore":"fore_18","answers":["Annat niiden olla, koska jätösten siivoaminen kerran viikossa kyllä riittää","Vaihdat kaikki kissanhiekat uuteen ja peset laatikon perusteellisesti niin kuin joka ilta","Siivoat jätökset pois päivittäin ja päätät pestä hiekkalaatikon sekä vaihtaa kaikki kissanhiekat uusiin ensi viikolla"],"Annat niiden olla, koska jätösten siivoaminen kerran viikossa kyllä riittää":"sohvavessa","Vaihdat kaikki kissanhiekat uuteen ja peset laatikon perusteellisesti niin kuin joka ilta":"raapimiskissa","Siivoat jätökset pois päivittäin ja päätät pestä hiekkalaatikon sekä vaihtaa kaikki kissanhiekat uusiin ensi viikolla":"raapimiskissa","Annat niiden olla, koska jätösten siivoaminen kerran viikossa kyllä riittääColor":"red","Vaihdat kaikki kissanhiekat uuteen ja peset laatikon perusteellisesti niin kuin joka iltaColor":"yellow","Siivoat jätökset pois päivittäin ja päätät pestä hiekkalaatikon sekä vaihtaa kaikki kissanhiekat uusiin ensi viikollaColor":"green"},"lomalle":{"question":"Olet lähdössä viikoksi lomamatkalle. Mitä teet kissallesi?","background":"background_8","person":"null","face":"null","fore":"fore_18","answers":["Laitat ruokakuppiin paljon kuivaruokaa, täytät pari vesiastiaa ja jätät kissan yksin kotiin","Laitat esille ruokaa ja vettä ja pyydät tuttavaasi käymään päivittäin katsomassa, että kissalla on kaikki kunnossa","Viet kissan hoitoon tuttavallesi","Päästät kissan vapaaksi ulos, jotta se voi metsästää itselleen ruokaa poissa ollessasi"],"Laitat ruokakuppiin paljon kuivaruokaa, täytät pari vesiastiaa ja jätät kissan yksin kotiin":"väsykissa","Laitat esille ruokaa ja vettä ja pyydät tuttavaasi käymään päivittäin katsomassa, että kissalla on kaikki kunnossa":"väsykissa","Viet kissan hoitoon tuttavallesi":"väsykissa","Päästät kissan vapaaksi ulos, jotta se voi metsästää itselleen ruokaa poissa ollessasi":"null","Laitat ruokakuppiin paljon kuivaruokaa, täytät pari vesiastiaa ja jätät kissan yksin kotiinColor":"red","Laitat esille ruokaa ja vettä ja pyydät tuttavaasi käymään päivittäin katsomassa, että kissalla on kaikki kunnossaColor":"yellow","Viet kissan hoitoon tuttavallesiColor":"green","Päästät kissan vapaaksi ulos, jotta se voi metsästää itselleen ruokaa poissa ollessasiColor":"red"},"sohvavessa":{"question":"Kissasi ei enää suostu tekemään tarpeitaan hiekkalaatikolle, vaan alkaa käyttää sohvaasi vessanaan.","background":"background_7","person":"null","face":"null","fore":"fore_18","answers":["Annat kissan pois, koska se on niin hankala","Siivoat hiekkalaatikon perusteellisesti ja päätät alkaa pitää sen puhtaudesta parempaa huolta","Siivoat hiekkalaatikon tästedes useammin ja jos se ei auta, testaat erilaista kissanhiekkaa tai erimallista hiekkalaatikkoa","Soitat eläinlääkärille ja kysyt neuvoa"],"Annat kissan pois, koska se on niin hankala":"null","Siivoat hiekkalaatikon perusteellisesti ja päätät alkaa pitää sen puhtaudesta parempaa huolta":"raapimiskissa","Siivoat hiekkalaatikon tästedes useammin ja jos se ei auta, testaat erilaista kissanhiekkaa tai erimallista hiekkalaatikkoa":"raapimiskissa","Soitat eläinlääkärille ja kysyt neuvoa":"raapimiskissa","Annat kissan pois, koska se on niin hankalaColor":"red","Siivoat hiekkalaatikon perusteellisesti ja päätät alkaa pitää sen puhtaudesta parempaa huoltaColor":"green","Siivoat hiekkalaatikon tästedes useammin ja jos se ei auta, testaat erilaista kissanhiekkaa tai erimallista hiekkalaatikkoaColor":"green","Soitat eläinlääkärille ja kysyt neuvoaColor":"green"},"raapimiskissa":{"question":"Kun tulet seuraavana päivänä kotiin asioiltasi, huomaat kissasi on raapineen nojatuoliasi.","background":"background_16","person":"null","face":"null","fore":"fore_18","answers":["Huudat kissalle ja viet sen ulos häpeämään","Ostat kissalle raapimispuun, johon se voi teroittaa kynsiään","Annat kissan pois, koska se on niin hankala"],"Huudat kissalle ja viet sen ulos häpeämään":"lomalle","Ostat kissalle raapimispuun, johon se voi teroittaa kynsiään":"lomalle","Annat kissan pois, koska se on niin hankala":"null","Huudat kissalle ja viet sen ulos häpeämäänColor":"red","Ostat kissalle raapimispuun, johon se voi teroittaa kynsiäänColor":"green","Annat kissan pois, koska se on niin hankalaColor":"red"},"väsykissa":{"question":"Palattuasi lomalta huomaat yhtenä päivänä, että kissasi vaikuttaa tavallista väsyneemmältä eikä suostu syömään ruokaansa.","background":"background_14","person":"null","face":"null","fore":"fore_18","answers":["Yrität piristää kissaasi ostamalla sille hienon uuden lelun","Viet kissan eläinlääkäriin","Tarkkailet kissaa pari päivää ja jos sen vointi ei kohene, viet sen eläinlääkäriin","Päättelet, että kissasi haluaa laihduttaa ja ostat sille vähärasvaisempaa ruokaa","Kysyt tuttavaltasi, mitä sinun kannattaisi tehdä"],"Yrität piristää kissaasi ostamalla sille hienon uuden lelun":"huonovointi","Viet kissan eläinlääkäriin":"eläinlääkärillä","Tarkkailet kissaa pari päivää ja jos sen vointi ei kohene, viet sen eläinlääkäriin":"eläinlääkärillä","Päättelet, että kissasi haluaa laihduttaa ja ostat sille vähärasvaisempaa ruokaa":"huonovointi","Kysyt tuttavaltasi, mitä sinun kannattaisi tehdä":"tuttavaneuvo","Yrität piristää kissaasi ostamalla sille hienon uuden lelunColor":"red","Viet kissan eläinlääkäriinColor":"green","Tarkkailet kissaa pari päivää ja jos sen vointi ei kohene, viet sen eläinlääkäriinColor":"green","Päättelet, että kissasi haluaa laihduttaa ja ostat sille vähärasvaisempaa ruokaaColor":"red","Kysyt tuttavaltasi, mitä sinun kannattaisi tehdäColor":"green"},"tuttavaneuvo":{"question":"Tuttavasi neuvoo sinua viemään kissan eläinlääkäriin.","background":"background_14","person":"null","face":"null","fore":"fore_18","answers":["Et suostu, koska se on liian kallista, vaan päätät etsiä itse netistä diagnoosin kissallesi","Etsit netistä sopivan eläinlääkärin ja varaat ajan","Käsket tuttavaasi viemään kissasi eläinlääkäriin"],"Et suostu, koska se on liian kallista, vaan päätät etsiä itse netistä diagnoosin kissallesi":"huonovointi","Etsit netistä sopivan eläinlääkärin ja varaat ajan":"eläinlääkärillä","Käsket tuttavaasi viemään kissasi eläinlääkäriin":"tuttavalääkäriin","Et suostu, koska se on liian kallista, vaan päätät etsiä itse netistä diagnoosin kissallesiColor":"red","Etsit netistä sopivan eläinlääkärin ja varaat ajanColor":"green","Käsket tuttavaasi viemään kissasi eläinlääkäriinColor":"yellow"},"eläinlääkärillä":{"question":"Eläinlääkäri tutkii kissan ja antaa hoito-ohjeet.","background":"background_14","person":"null","face":"null","fore":"fore_18","answers":["Käyt ostamassa eläinlääkärin määräämää lääkettä ja noudatat hoito-ohjeita tarkasti","Viet varmuuden vuoksi kissasi vielä toiselle eläinlääkärille","Mielestäsi eläinlääkäri ei vaikuta pätevältä, joten heität hoito-ohjeen roskiin ja päätät valmistaa kissallesi lääkettä itse"],"Käyt ostamassa eläinlääkärin määräämää lääkettä ja noudatat hoito-ohjeita tarkasti":"null","Viet varmuuden vuoksi kissasi vielä toiselle eläinlääkärille":"null","Mielestäsi eläinlääkäri ei vaikuta pätevältä, joten heität hoito-ohjeen roskiin ja päätät valmistaa kissallesi lääkettä itse":"null","Käyt ostamassa eläinlääkärin määräämää lääkettä ja noudatat hoito-ohjeita tarkastiColor":"green","Viet varmuuden vuoksi kissasi vielä toiselle eläinlääkärilleColor":"yellow","Mielestäsi eläinlääkäri ei vaikuta pätevältä, joten heität hoito-ohjeen roskiin ja päätät valmistaa kissallesi lääkettä itseColor":"red"},"tuttavalääkäriin":{"question":"Tuttavasi ei halua viedä sinun kissaasi eläinlääkäriin.","background":"background_14","person":"null","face":"null","fore":"fore_18","answers":["Raivostut tuttavallesi ja viet kissan lääkäriin itse","Raivostut tuttavallesi etkä vie kissaa eläinlääkäriin","Lupaat maksaa tuttavallesi niin paljon, että hän suostuu lopulta viemään kissasi lääkäriin","Sanot ymmärtäväsi tuttavaasi ja viet kissan eläinlääkäriin itse"],"Raivostut tuttavallesi ja viet kissan lääkäriin itse":"eläinlääkärillä","Raivostut tuttavallesi etkä vie kissaa eläinlääkäriin":"huonovointi","Lupaat maksaa tuttavallesi niin paljon, että hän suostuu lopulta viemään kissasi lääkäriin":"eläinlääkärillä","Sanot ymmärtäväsi tuttavaasi ja viet kissan eläinlääkäriin itse":"eläinlääkärillä","Raivostut tuttavallesi ja viet kissan lääkäriin itseColor":"yellow","Raivostut tuttavallesi etkä vie kissaa eläinlääkäriinColor":"red","Lupaat maksaa tuttavallesi niin paljon, että hän suostuu lopulta viemään kissasi lääkäriinColor":"green","Sanot ymmärtäväsi tuttavaasi ja viet kissan eläinlääkäriin itseColor":"green"},"huonovointi":{"question":"Kissasi kunto tuntuu vain huononevan.","background":"background_14","person":"null","face":"null","fore":"fore_18","answers":["Raivoat kissallesi, miksi sen täytyy olla niin hankala","Viet kissan pikaisesti eläinlääkäriin"],"Raivoat kissallesi, miksi sen täytyy olla niin hankala":"null","Viet kissan pikaisesti eläinlääkäriin":"eläinlääkärillä","Raivoat kissallesi, miksi sen täytyy olla niin hankalaColor":"red","Viet kissan pikaisesti eläinlääkäriinColor":"green"}}
+{
+  "first": {
+    "question": "You just got yourself a cat. What accessories have you got for your home?",
+    "background": "background_5",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_18",
+    "answers": [
+      "Cat food, food and drink utensils, cat litter and a sandbox",
+      "Huge scratching post and many great toys",
+      "Cat bed, transport box, brush and collar"
+    ],
+    "Cat food, food and drink utensils, cat litter and a sandbox": "ruoka",
+    "Huge scratching post and many great toys": "ruoka",
+    "Cat bed, transport box, brush and collar": "ruoka",
+    "Cat food, food and drink utensils, cat litter and a sandboxColor": "green",
+    "Huge scratching post and many great toysColor": "red",
+    "Cat bed, transport box, brush and collarColor": "red"
+  },
+  "ruoka": {
+    "question": "Your cat comes to beg at your feet. You suspect it is hungry. What food do you offer it?",
+    "background": "background_10",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_18",
+    "answers": [
+      "Dry food recommended by a veterinarian or breeder that fits your cat’s needs exactly",
+      "Your own leftovers",
+      "The cat food you bought from the market without getting to know the subject any more",
+      "A cup of milk",
+      "Wet food for your cat because your cat likes it more than dry food"
+    ],
+    "Dry food recommended by a veterinarian or breeder that fits your cat’s needs exactly": "ruokatiheys",
+    "Your own leftovers": "epäluuloruoka",
+    "The cat food you bought from the market without getting to know the subject any more": "ruokatiheys",
+    "A cup of milk": "epäluuloruoka",
+    "Wet food for your cat because your cat likes it more than dry food": "märkäruoka",
+    "Dry food recommended by a veterinarian or breeder that fits your cat’s needs exactlyColor": "green",
+    "Your own leftoversColor": "red",
+    "The cat food you bought from the market without getting to know the subject any moreColor": "yellow",
+    "A cup of milkColor": "red",
+    "Wet food for your cat because your cat likes it more than dry foodColor": "green"
+  },
+  "epäluuloruoka": {
+    "question": "Your cat will sniff the food you provide, but doesn’t start to eat it.",
+    "background": "background_10",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_18",
+    "answers": [
+      "You decide to go to the store right away to buy the right dry cat food",
+      "You think your cat is just picky, and you leave the cup on the floor",
+      "You look online for information on properly feeding your cat"
+    ],
+    "You decide to go to the store right away to buy the right dry cat food": "ruokatiheys",
+    "You think your cat is just picky, and you leave the cup on the floor": "vesi",
+    "You look online for information on properly feeding your cat": "vesi",
+    "You decide to go to the store right away to buy the right dry cat foodColor": "green",
+    "You think your cat is just picky, and you leave the cup on the floorColor": "red",
+    "You look online for information on properly feeding your catColor": "green"
+  },
+  "ruokatiheys": {
+    "question": "Your cat will be happy to eat its dry food.",
+    "background": "background_10",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_18",
+    "answers": [
+      "You pour more food into the cup and leave it in sight so your cat can go eating at its own pace whenever it wants to",
+      "You take the cup away and offer food next time tomorrow night",
+      "You take the cup away and decide to offer food 2-3 times a day in the future"
+    ],
+    "You pour more food into the cup and leave it in sight so your cat can go eating at its own pace whenever it wants to": "vesi",
+    "You take the cup away and offer food next time tomorrow night": "vesi",
+    "You take the cup away and decide to offer food 2-3 times a day in the future": "vesi",
+    "You pour more food into the cup and leave it in sight so your cat can go eating at its own pace whenever it wants toColor": "green",
+    "You take the cup away and offer food next time tomorrow nightColor": "red",
+    "You take the cup away and decide to offer food 2-3 times a day in the futureColor": "green"
+  },
+  "märkäruoka": {
+    "question": "Your cat will be happy to eat its food.",
+    "background": "background_10",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_18",
+    "answers": [
+      "You take the cup away and offer food next time tomorrow night",
+      "You pour more food into the cup and leave it in sight so your cat can go eating at its own pace whenever it wants to",
+      "You wash the cup clean, put it to dry and decide to offer your cat food 2-3 times a day in the future"
+    ],
+    "You take the cup away and offer food next time tomorrow night": "vesi",
+    "You pour more food into the cup and leave it in sight so your cat can go eating at its own pace whenever it wants to": "märkäruokalattialla",
+    "You wash the cup clean, put it to dry and decide to offer your cat food 2-3 times a day in the future": "vesi",
+    "You take the cup away and offer food next time tomorrow nightColor": "red",
+    "You pour more food into the cup and leave it in sight so your cat can go eating at its own pace whenever it wants toColor": "red",
+    "You wash the cup clean, put it to dry and decide to offer your cat food 2-3 times a day in the futureColor": "green"
+  },
+  "märkäruokalattialla": {
+    "question": "You notice that the package says that the opened wet food package should be stored in the refrigerator.",
+    "background": "background_10",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_18",
+    "answers": [
+      "In the future, you decide to serve wet food 2-3 times a day and empty uneaten food into the trash to prevent food spoilage.",
+      "You decide to buy only dry food in the future",
+      "You think it's not that important"
+    ],
+    "In the future, you decide to serve wet food 2-3 times a day and empty uneaten food into the trash to prevent food spoilage.": "vesi",
+    "You decide to buy only dry food in the future": "vesi",
+    "You think it's not that important": "vesi",
+    "In the future, you decide to serve wet food 2-3 times a day and empty uneaten food into the trash to prevent food spoilage.Color": "green",
+    "You decide to buy only dry food in the futureColor": "green",
+    "You think it's not that importantColor": "red"
+  },
+  "leluvalinta": {
+    "question": "Your cat will slap you playfully with his paw and swirl around the room. What do you do?",
+    "background": "background_3",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_18",
+    "answers": [
+      "You scold the cat and take the cat to the toilet",
+      "You put a toy mouse and ball in front of your cat on the floor",
+      "You play with your cat with a cat toy",
+      "You give your cat a glass decorative mouse as a toy"
+    ],
+    "You scold the cat and take the cat to the toilet": "jätöslaatikko",
+    "You put a toy mouse and ball in front of your cat on the floor": "jätöslaatikko",
+    "You play with your cat with a cat toy": "jätöslaatikko",
+    "You give your cat a glass decorative mouse as a toy": "lasihiiri",
+    "You scold the cat and take the cat to the toiletColor": "red",
+    "You put a toy mouse and ball in front of your cat on the floorColor": "yellow",
+    "You play with your cat with a cat toyColor": "green",
+    "You give your cat a glass decorative mouse as a toyColor": "red"
+  },
+  "lasihiiri": {
+    "question": "The glass mouse breaks when your cat pushes it. Glass shards spread on the floor.",
+    "background": "background_3",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_18",
+    "answers": [
+      "You lift the cat into your arms so that it does not step into the glass and take it to another room. You will carefully clean the broken glass and decide to give your cat only items intended for cat toys in the future.",
+      "You shout at your cat angrily"
+    ],
+    "You lift the cat into your arms so that it does not step into the glass and take it to another room. You will carefully clean the broken glass and decide to give your cat only items intended for cat toys in the future.": "jätöslaatikko",
+    "You shout at your cat angrily": "jätöslaatikko",
+    "You lift the cat into your arms so that it does not step into the glass and take it to another room. You will carefully clean the broken glass and decide to give your cat only items intended for cat toys in the future.Color": "green",
+    "You shout at your cat angrilyColor": "red"
+  },
+  "vesi": {
+    "question": "In addition to food, your cat also needs water. How do you offer it to it?",
+    "background": "background_9",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_18",
+    "answers": [
+      "You buy an expensive drinking machine from a pet store",
+      "You buy regular cup from the market",
+      "You give your own plastic cup for your cat",
+      "You provide your cat with water from a mug whenever you remember"
+    ],
+    "You buy an expensive drinking machine from a pet store": "leluvalinta",
+    "You buy regular cup from the market": "leluvalinta",
+    "You give your own plastic cup for your cat": "leluvalinta",
+    "You provide your cat with water from a mug whenever you remember": "leluvalinta",
+    "You buy an expensive drinking machine from a pet storeColor": "green",
+    "You buy regular cup from the marketColor": "green",
+    "You give your own plastic cup for your catColor": "green",
+    "You provide your cat with water from a mug whenever you rememberColor": "red"
+  },
+  "jätöslaatikko": {
+    "question": "In the evening, you notice that there are droppings in the cat’s sandbox. What do you do?",
+    "background": "background_7",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_18",
+    "answers": [
+      "You let them be, because cleaning up the droppings once a week is enough",
+      "You change all the cat litter to a new one and wash the box thoroughly as you would every night",
+      "You clean up the droppings every day and decide to wash the litter box and replace all the cat litter with new ones next week"
+    ],
+    "You let them be, because cleaning up the droppings once a week is enough": "sohvavessa",
+    "You change all the cat litter to a new one and wash the box thoroughly as you would every night": "raapimiskissa",
+    "You clean up the droppings every day and decide to wash the litter box and replace all the cat litter with new ones next week": "raapimiskissa",
+    "You let them be, because cleaning up the droppings once a week is enoughColor": "red",
+    "You change all the cat litter to a new one and wash the box thoroughly as you would every nightColor": "yellow",
+    "You clean up the droppings every day and decide to wash the litter box and replace all the cat litter with new ones next weekColor": "green"
+  },
+  "lomalle": {
+    "question": "You are leaving for a vacation for a week. What are you doing to do with your cat?",
+    "background": "background_8",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_18",
+    "answers": [
+      "You put a lot of dry food in the food cup, fill a couple of water containers and leave the cat alone at home",
+      "You put food and water in cup and ask your acquaintance to visit every day to see that the cat is all right",
+      "You take the cat to your acquaintance",
+      "You leave the cat outside freely so it can hunt for food for itself when you are away"
+    ],
+    "You put a lot of dry food in the food cup, fill a couple of water containers and leave the cat alone at home": "väsykissa",
+    "You put food and water in cup and ask your acquaintance to visit every day to see that the cat is all right": "väsykissa",
+    "You take the cat to your acquaintance": "väsykissa",
+    "You leave the cat outside freely so it can hunt for food for itself when you are away": "null",
+    "You put a lot of dry food in the food cup, fill a couple of water containers and leave the cat alone at homeColor": "red",
+    "You put food and water in cup and ask your acquaintance to visit every day to see that the cat is all rightColor": "yellow",
+    "You take the cat to your acquaintanceColor": "green",
+    "You leave the cat outside freely so it can hunt for food for itself when you are awayColor": "red"
+  },
+  "sohvavessa": {
+    "question": "Your cat will no longer agree to make its needs in the sandbox, but will start using your couch as its toilet.",
+    "background": "background_7",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_18",
+    "answers": [
+      "You give the cat away because it’s so difficult",
+      "You clean the sandbox thoroughly and you decide to start taking better care of its cleanliness",
+      "From now on, you will clean the litter box more often and if that doesn't help, you will test a different cat litter or a different type of litter box",
+      "You call the vet and ask for advice"
+    ],
+    "You give the cat away because it’s so difficult": "null",
+    "You clean the sandbox thoroughly and you decide to start taking better care of its cleanliness": "raapimiskissa",
+    "From now on, you will clean the litter box more often and if that doesn't help, you will test a different cat litter or a different type of litter box": "raapimiskissa",
+    "You call the vet and ask for advice": "raapimiskissa",
+    "You give the cat away because it’s so difficultColor": "red",
+    "You clean the sandbox thoroughly and you decide to start taking better care of its cleanlinessColor": "green",
+    "From now on, you will clean the litter box more often and if that doesn't help, you will test a different cat litter or a different type of litter boxColor": "green",
+    "You call the vet and ask for adviceColor": "green"
+  },
+  "raapimiskissa": {
+    "question": "When you come home the next day from your affairs, you will find your cat has scratched your armchair.",
+    "background": "background_16",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_18",
+    "answers": [
+      "You yell at the cat and take it outside",
+      "You buy a scratching post where it can sharpen its claws",
+      "You give the cat away because it’s so difficult"
+    ],
+    "You yell at the cat and take it outside": "lomalle",
+    "You buy a scratching post where it can sharpen its claws": "lomalle",
+    "You give the cat away because it’s so difficult": "null",
+    "You yell at the cat and take it outsideColor": "red",
+    "You buy a scratching post where it can sharpen its clawsColor": "green",
+    "You give the cat away because it’s so difficultColor": "red"
+  },
+  "väsykissa": {
+    "question": "When you return from vacation, you find that your cat seems more tired than usual and refuses to eat her food.",
+    "background": "background_14",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_18",
+    "answers": [
+      "You try to cheer up your cat by buying a nice new toy for it",
+      "You take your cat to the vet",
+      "You observe the cat for a couple of days and if it doesn’t feel better, you take it to the vet",
+      "You conclude that your cat wants to lose weight and you buy less greasy food for it",
+      "You ask your acquaintance what you should do"
+    ],
+    "You try to cheer up your cat by buying a nice new toy for it": "huonovointi",
+    "You take your cat to the vet": "eläinlääkärillä",
+    "You observe the cat for a couple of days and if it doesn’t feel better, you take it to the vet": "eläinlääkärillä",
+    "You conclude that your cat wants to lose weight and you buy less greasy food for it": "huonovointi",
+    "You ask your acquaintance what you should do": "tuttavaneuvo",
+    "You try to cheer up your cat by buying a nice new toy for itColor": "red",
+    "You take your cat to the vetColor": "green",
+    "You observe the cat for a couple of days and if it doesn’t feel better, you take it to the vetColor": "green",
+    "You conclude that your cat wants to lose weight and you buy less greasy food for itColor": "red",
+    "You ask your acquaintance what you should doColor": "green"
+  },
+  "tuttavaneuvo": {
+    "question": "Your acquaintance advises you to take your cat to the vet.",
+    "background": "background_14",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_18",
+    "answers": [
+      "You will not agree because it is too expensive, but you decide to search the internet yourself for a diagnosis for your cat",
+      "You look for a suitable veterinarian online and book an appointment",
+      "You tell your acquaintance to take your cat to the vet"
+    ],
+    "You will not agree because it is too expensive, but you decide to search the internet yourself for a diagnosis for your cat": "huonovointi",
+    "You look for a suitable veterinarian online and book an appointment": "eläinlääkärillä",
+    "You tell your acquaintance to take your cat to the vet": "tuttavalääkäriin",
+    "You will not agree because it is too expensive, but you decide to search the internet yourself for a diagnosis for your catColor": "red",
+    "You look for a suitable veterinarian online and book an appointmentColor": "green",
+    "You tell your acquaintance to take your cat to the vetColor": "yellow"
+  },
+  "eläinlääkärillä": {
+    "question": "The veterinarian will examine the cat and give care instructions.",
+    "background": "background_14",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_18",
+    "answers": [
+      "You buy the medicine prescribed by your veterinarian and follow the treatment instructions carefully",
+      "For safety, you will take your cat to another vet",
+      "You don’t think your vet seems qualified, so you throw the treatment instructions in the trash and decide to make the medicine for your cat yourself"
+    ],
+    "You buy the medicine prescribed by your veterinarian and follow the treatment instructions carefully": "null",
+    "For safety, you will take your cat to another vet": "null",
+    "You don’t think your vet seems qualified, so you throw the treatment instructions in the trash and decide to make the medicine for your cat yourself": "null",
+    "You buy the medicine prescribed by your veterinarian and follow the treatment instructions carefullyColor": "green",
+    "For safety, you will take your cat to another vetColor": "yellow",
+    "You don’t think your vet seems qualified, so you throw the treatment instructions in the trash and decide to make the medicine for your cat yourselfColor": "red"
+  },
+  "tuttavalääkäriin": {
+    "question": "Your acquaintance doesn’t want to take your cat to the vet.",
+    "background": "background_14",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_18",
+    "answers": [
+      "You get mad at your acquaintance and take the cat to the doctor yourself",
+      "You get mad at your acquaintance and you don’t take the cat to the vet",
+      "You promise to pay your acquaintance so much that he will eventually agree to take your cat to the doctor",
+      "You say you understand and take the cat to the vet yourself"
+    ],
+    "You get mad at your acquaintance and take the cat to the doctor yourself": "eläinlääkärillä",
+    "You get mad at your acquaintance and you don’t take the cat to the vet": "huonovointi",
+    "You promise to pay your acquaintance so much that he will eventually agree to take your cat to the doctor": "eläinlääkärillä",
+    "You say you understand and take the cat to the vet yourself": "eläinlääkärillä",
+    "You get mad at your acquaintance and take the cat to the doctor yourselfColor": "yellow",
+    "You get mad at your acquaintance and you don’t take the cat to the vetColor": "red",
+    "You promise to pay your acquaintance so much that he will eventually agree to take your cat to the doctorColor": "green",
+    "You say you understand and take the cat to the vet yourselfColor": "green"
+  },
+  "huonovointi": {
+    "question": "Your cat's condition just seems to get worse.",
+    "background": "background_14",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_18",
+    "answers": [
+      "You rage your cat why it has to be so difficult",
+      "You take your cat to the vet immediately"
+    ],
+    "You rage your cat why it has to be so difficult": "null",
+    "You take your cat to the vet immediately": "eläinlääkärillä",
+    "You rage your cat why it has to be so difficultColor": "red",
+    "You take your cat to the vet immediatelyColor": "green"
+  }
+}

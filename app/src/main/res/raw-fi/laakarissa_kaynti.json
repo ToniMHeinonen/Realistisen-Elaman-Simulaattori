@@ -322,14 +322,14 @@
     "fore": "fore_5",
     "answers": [
       "Menet pyydettyyn huoneeseen",
-      "Teet kuperkeikan, jonka jälkeen menet pyydettyyn huoneeseen",
+      "Luet puhelimestasi uutiset loppuun ennen huoneeseen menoa",
       "Poistut hammaslääkäristä"
     ],
     "Menet pyydettyyn huoneeseen": "huoneessa",
-    "Teet kuperkeikan, jonka jälkeen menet pyydettyyn huoneeseen": "huoneessa",
+    "Luet puhelimestasi uutiset loppuun ennen huoneeseen menoa": "huoneessa",
     "Poistut hammaslääkäristä": "null",
     "Menet pyydettyyn huoneeseenColor": "green",
-    "Teet kuperkeikan, jonka jälkeen menet pyydettyyn huoneeseenColor": "yellow",
+    "Luet puhelimestasi uutiset loppuun ennen huoneeseen menoaColor": "red",
     "Poistut hammaslääkäristäColor": "red"
   },
   "huoneessa": {
