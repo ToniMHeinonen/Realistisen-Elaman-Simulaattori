@@ -1,1 +1,347 @@
-{"first":{"question":"Olet juuri hankkinut itsellesi kissan. Mitkä tarvikkeet olet varannut valmiiksi kotiisi?","background":"background_5","person":"null","face":"null","fore":"fore_18","answers":["Kissanruokaa, ruoka- ja juoma-astiat, kissanhiekkaa sekä hiekkalaatikon","Valtavan raapimispuun ja monta hienoa lelua","Kissanpedin, kuljetuslaatikon, harjan ja kaulapannan"],"Kissanruokaa, ruoka- ja juoma-astiat, kissanhiekkaa sekä hiekkalaatikon":"ruoka","Valtavan raapimispuun ja monta hienoa lelua":"ruoka","Kissanpedin, kuljetuslaatikon, harjan ja kaulapannan":"ruoka","Kissanruokaa, ruoka- ja juoma-astiat, kissanhiekkaa sekä hiekkalaatikonColor":"green","Valtavan raapimispuun ja monta hienoa leluaColor":"red","Kissanpedin, kuljetuslaatikon, harjan ja kaulapannanColor":"red"},"ruoka":{"question":"Kissasi tulee maukumaan jalkojesi juureen. Epäilet, että sillä on nälkä. Mitä ruokaa tarjoat sille?","background":"background_10","person":"null","face":"null","fore":"fore_18","answers":["Eläinlääkärin tai kasvattajan suosittelemaa kuivaruokaa, joka sopii juuri sinun kissasi tarpeisiin","Omat ruoantähteesi","Kissanruokaa, jonka ostit marketista perehtymättä aiheeseen sen enempää","Kupillisen maitoa","Kissan märkäruokaa, koska kissasi pitää siitä enemmän kuin kuivaruoasta"],"Eläinlääkärin tai kasvattajan suosittelemaa kuivaruokaa, joka sopii juuri sinun kissasi tarpeisiin":"ruokatiheys","Omat ruoantähteesi":"epäluuloruoka","Kissanruokaa, jonka ostit marketista perehtymättä aiheeseen sen enempää":"ruokatiheys","Kupillisen maitoa":"epäluuloruoka","Kissan märkäruokaa, koska kissasi pitää siitä enemmän kuin kuivaruoasta":"märkäruoka","Eläinlääkärin tai kasvattajan suosittelemaa kuivaruokaa, joka sopii juuri sinun kissasi tarpeisiinColor":"green","Omat ruoantähteesiColor":"red","Kissanruokaa, jonka ostit marketista perehtymättä aiheeseen sen enempääColor":"yellow","Kupillisen maitoaColor":"red","Kissan märkäruokaa, koska kissasi pitää siitä enemmän kuin kuivaruoastaColor":"green"},"epäluuloruoka":{"question":"Kissasi nuuhkaisee tarjoamaasi ruokaa, muttei ala syödä sitä.","background":"background_10","person":"null","face":"null","fore":"fore_18","answers":["Päätät mennä heti kauppaan ostamaan oikeaa kissan kuivaruokaa","Arvelet, että kissasi vain nirsoilee, ja jätät kupin lattialle","Etsit netistä tietoa kissan oikeaoppisesta ruokinnasta"],"Päätät mennä heti kauppaan ostamaan oikeaa kissan kuivaruokaa":"ruokatiheys","Arvelet, että kissasi vain nirsoilee, ja jätät kupin lattialle":"vesi","Etsit netistä tietoa kissan oikeaoppisesta ruokinnasta":"vesi","Päätät mennä heti kauppaan ostamaan oikeaa kissan kuivaruokaaColor":"green","Arvelet, että kissasi vain nirsoilee, ja jätät kupin lattialleColor":"red","Etsit netistä tietoa kissan oikeaoppisesta ruokinnastaColor":"green"},"ruokatiheys":{"question":"Kissasi syö tyytyväisenä kuivaruokansa.","background":"background_10","person":"null","face":"null","fore":"fore_18","answers":["Kaadat kuppiin lisää ruokaa ja jätät sen näkösälle, jotta kissasi voi käydä syömässä omaan tahtiinsa koska haluaa","Nostat kupin pois ja tarjoat ruokaa seuraavan kerran huomisiltana","Nostat kupin pois ja päätät jatkossa tarjota ruokaa 2-3 kertaa päivässä"],"Kaadat kuppiin lisää ruokaa ja jätät sen näkösälle, jotta kissasi voi käydä syömässä omaan tahtiinsa koska haluaa":"vesi","Nostat kupin pois ja tarjoat ruokaa seuraavan kerran huomisiltana":"vesi","Nostat kupin pois ja päätät jatkossa tarjota ruokaa 2-3 kertaa päivässä":"vesi","Kaadat kuppiin lisää ruokaa ja jätät sen näkösälle, jotta kissasi voi käydä syömässä omaan tahtiinsa koska haluaaColor":"green","Nostat kupin pois ja tarjoat ruokaa seuraavan kerran huomisiltanaColor":"red","Nostat kupin pois ja päätät jatkossa tarjota ruokaa 2-3 kertaa päivässäColor":"green"},"märkäruoka":{"question":"Kissasi syö tyytyväisenä ruokansa.","background":"background_10","person":"null","face":"null","fore":"fore_18","answers":["Nostat kupin pois ja tarjoat kissalle seuraavan kerran ruokaa huomisiltana","Laitat kuppiin lisää märkäruokaa ja jätät sen lattialle, jotta kissasi voi käydä syömässä siitä omaan tahtiinsa koska haluaa","Huuhtelet ruokakipon puhtaaksi, laitat sen kuivumaan ja päätät tarjota kissallesi jatkossa ruokaa 2-3 kertaa päivässä"],"Nostat kupin pois ja tarjoat kissalle seuraavan kerran ruokaa huomisiltana":"vesi","Laitat kuppiin lisää märkäruokaa ja jätät sen lattialle, jotta kissasi voi käydä syömässä siitä omaan tahtiinsa koska haluaa":"märkäruokalattialla","Huuhtelet ruokakipon puhtaaksi, laitat sen kuivumaan ja päätät tarjota kissallesi jatkossa ruokaa 2-3 kertaa päivässä":"vesi","Nostat kupin pois ja tarjoat kissalle seuraavan kerran ruokaa huomisiltanaColor":"red","Laitat kuppiin lisää märkäruokaa ja jätät sen lattialle, jotta kissasi voi käydä syömässä siitä omaan tahtiinsa koska haluaaColor":"red","Huuhtelet ruokakipon puhtaaksi, laitat sen kuivumaan ja päätät tarjota kissallesi jatkossa ruokaa 2-3 kertaa päivässäColor":"green"},"märkäruokalattialla":{"question":"Huomaat, että pakkauksessa sanotaan, että avattu märkäruokapakkaus pitäisi säilyttää jääkaapissa.","background":"background_10","person":"null","face":"null","fore":"fore_18","answers":["Päätät jatkossa tarjota märkäruokaa 2-3 kertaa päivässä ja tyhjentää syömättä jääneet ruoat roskiin, jottei ruoka pilaantuisi","Päätät ostaa jatkossa pelkästään kuivaruokaa","Ajattelet, ettei se ole niin tarkkaa"],"Päätät jatkossa tarjota märkäruokaa 2-3 kertaa päivässä ja tyhjentää syömättä jääneet ruoat roskiin, jottei ruoka pilaantuisi":"vesi","Päätät ostaa jatkossa pelkästään kuivaruokaa":"vesi","Ajattelet, ettei se ole niin tarkkaa":"vesi","Päätät jatkossa tarjota märkäruokaa 2-3 kertaa päivässä ja tyhjentää syömättä jääneet ruoat roskiin, jottei ruoka pilaantuisiColor":"green","Päätät ostaa jatkossa pelkästään kuivaruokaaColor":"green","Ajattelet, ettei se ole niin tarkkaaColor":"red"},"leluvalinta":{"question":"Kissasi tulee läpsäisemään sinua leikkisästi tassullaan ja kiepsahtelee ympäri huonetta. Miten toimit?","background":"background_3","person":"null","face":"null","fore":"fore_18","answers":["Torut kissaa riehumisesta ja viet sen vessaan jäähylle","Otat esiin pari eläinkaupasta ostamaasi leluhiirtä ja palloa ja jätät ne lattialle kissasi eteen","Leikität kissaasi kissanlelulla","Annat kissalle leluksi lasisen koristehiiren"],"Torut kissaa riehumisesta ja viet sen vessaan jäähylle":"jätöslaatikko","Otat esiin pari eläinkaupasta ostamaasi leluhiirtä ja palloa ja jätät ne lattialle kissasi eteen":"jätöslaatikko","Leikität kissaasi kissanlelulla":"jätöslaatikko","Annat kissalle leluksi lasisen koristehiiren":"lasihiiri","Torut kissaa riehumisesta ja viet sen vessaan jäähylleColor":"red","Otat esiin pari eläinkaupasta ostamaasi leluhiirtä ja palloa ja jätät ne lattialle kissasi eteenColor":"yellow","Leikität kissaasi kissanlelullaColor":"green","Annat kissalle leluksi lasisen koristehiirenColor":"red"},"lasihiiri":{"question":"Lasinen hiiri menee rikki, kun kissasi tönäisee sitä. Lasinsiruja leviää lattialle.","background":"background_3","person":"null","face":"null","fore":"fore_18","answers":["Nostat kissan äkkiä syliisi, jotta se ei astu lasiin, ja viet sen toiseen huoneeseen. Siivoat lasinsirut huolellisesti pois ja päätät antaa kissallesi jatkossa vain kissanleluiksi tarkoitettuja tavaroita","Huudat kissallesi vihaisena"],"Nostat kissan äkkiä syliisi, jotta se ei astu lasiin, ja viet sen toiseen huoneeseen. Siivoat lasinsirut huolellisesti pois ja päätät antaa kissallesi jatkossa vain kissanleluiksi tarkoitettuja tavaroita":"jätöslaatikko","Huudat kissallesi vihaisena":"jätöslaatikko","Nostat kissan äkkiä syliisi, jotta se ei astu lasiin, ja viet sen toiseen huoneeseen. Siivoat lasinsirut huolellisesti pois ja päätät antaa kissallesi jatkossa vain kissanleluiksi tarkoitettuja tavaroitaColor":"green","Huudat kissallesi vihaisenaColor":"red"},"vesi":{"question":"Kissasi tarvitsee ruoan lisäksi myös vettä. Miten tarjoat sitä sille?","background":"background_9","person":"null","face":"null","fore":"fore_18","answers":["Ostat kalliin juoma-automaatin eläinkaupasta","Ostat tavallisen kissanruokakipon marketista","Valitset kissallesi oman muovikipon kaapistasi","Tarjoat kissallesi vettä mukista aina, kun muistat"],"Ostat kalliin juoma-automaatin eläinkaupasta":"leluvalinta","Ostat tavallisen kissanruokakipon marketista":"leluvalinta","Valitset kissallesi oman muovikipon kaapistasi":"leluvalinta","Tarjoat kissallesi vettä mukista aina, kun muistat":"leluvalinta","Ostat kalliin juoma-automaatin eläinkaupastaColor":"green","Ostat tavallisen kissanruokakipon marketistaColor":"green","Valitset kissallesi oman muovikipon kaapistasiColor":"green","Tarjoat kissallesi vettä mukista aina, kun muistatColor":"red"},"jätöslaatikko":{"question":"Huomaat illalla, että kissan hiekkalaatikossa on jätöksiä. Mitä teet?","background":"background_7","person":"null","face":"null","fore":"fore_18","answers":["Annat niiden olla, koska jätösten siivoaminen kerran viikossa kyllä riittää","Vaihdat kaikki kissanhiekat uuteen ja peset laatikon perusteellisesti niin kuin joka ilta","Siivoat jätökset pois päivittäin ja päätät pestä hiekkalaatikon sekä vaihtaa kaikki kissanhiekat uusiin ensi viikolla"],"Annat niiden olla, koska jätösten siivoaminen kerran viikossa kyllä riittää":"sohvavessa","Vaihdat kaikki kissanhiekat uuteen ja peset laatikon perusteellisesti niin kuin joka ilta":"raapimiskissa","Siivoat jätökset pois päivittäin ja päätät pestä hiekkalaatikon sekä vaihtaa kaikki kissanhiekat uusiin ensi viikolla":"raapimiskissa","Annat niiden olla, koska jätösten siivoaminen kerran viikossa kyllä riittääColor":"red","Vaihdat kaikki kissanhiekat uuteen ja peset laatikon perusteellisesti niin kuin joka iltaColor":"yellow","Siivoat jätökset pois päivittäin ja päätät pestä hiekkalaatikon sekä vaihtaa kaikki kissanhiekat uusiin ensi viikollaColor":"green"},"lomalle":{"question":"Olet lähdössä viikoksi lomamatkalle. Mitä teet kissallesi?","background":"background_8","person":"null","face":"null","fore":"fore_18","answers":["Laitat ruokakuppiin paljon kuivaruokaa, täytät pari vesiastiaa ja jätät kissan yksin kotiin","Laitat esille ruokaa ja vettä ja pyydät tuttavaasi käymään päivittäin katsomassa, että kissalla on kaikki kunnossa","Viet kissan hoitoon tuttavallesi","Päästät kissan vapaaksi ulos, jotta se voi metsästää itselleen ruokaa poissa ollessasi"],"Laitat ruokakuppiin paljon kuivaruokaa, täytät pari vesiastiaa ja jätät kissan yksin kotiin":"väsykissa","Laitat esille ruokaa ja vettä ja pyydät tuttavaasi käymään päivittäin katsomassa, että kissalla on kaikki kunnossa":"väsykissa","Viet kissan hoitoon tuttavallesi":"väsykissa","Päästät kissan vapaaksi ulos, jotta se voi metsästää itselleen ruokaa poissa ollessasi":"null","Laitat ruokakuppiin paljon kuivaruokaa, täytät pari vesiastiaa ja jätät kissan yksin kotiinColor":"red","Laitat esille ruokaa ja vettä ja pyydät tuttavaasi käymään päivittäin katsomassa, että kissalla on kaikki kunnossaColor":"yellow","Viet kissan hoitoon tuttavallesiColor":"green","Päästät kissan vapaaksi ulos, jotta se voi metsästää itselleen ruokaa poissa ollessasiColor":"red"},"sohvavessa":{"question":"Kissasi ei enää suostu tekemään tarpeitaan hiekkalaatikolle, vaan alkaa käyttää sohvaasi vessanaan.","background":"background_7","person":"null","face":"null","fore":"fore_18","answers":["Annat kissan pois, koska se on niin hankala","Siivoat hiekkalaatikon perusteellisesti ja päätät alkaa pitää sen puhtaudesta parempaa huolta","Siivoat hiekkalaatikon tästedes useammin ja jos se ei auta, testaat erilaista kissanhiekkaa tai erimallista hiekkalaatikkoa","Soitat eläinlääkärille ja kysyt neuvoa"],"Annat kissan pois, koska se on niin hankala":"null","Siivoat hiekkalaatikon perusteellisesti ja päätät alkaa pitää sen puhtaudesta parempaa huolta":"raapimiskissa","Siivoat hiekkalaatikon tästedes useammin ja jos se ei auta, testaat erilaista kissanhiekkaa tai erimallista hiekkalaatikkoa":"raapimiskissa","Soitat eläinlääkärille ja kysyt neuvoa":"raapimiskissa","Annat kissan pois, koska se on niin hankalaColor":"red","Siivoat hiekkalaatikon perusteellisesti ja päätät alkaa pitää sen puhtaudesta parempaa huoltaColor":"green","Siivoat hiekkalaatikon tästedes useammin ja jos se ei auta, testaat erilaista kissanhiekkaa tai erimallista hiekkalaatikkoaColor":"green","Soitat eläinlääkärille ja kysyt neuvoaColor":"green"},"raapimiskissa":{"question":"Kun tulet seuraavana päivänä kotiin asioiltasi, huomaat kissasi on raapineen nojatuoliasi.","background":"background_16","person":"null","face":"null","fore":"fore_18","answers":["Huudat kissalle ja viet sen ulos häpeämään","Ostat kissalle raapimispuun, johon se voi teroittaa kynsiään","Annat kissan pois, koska se on niin hankala"],"Huudat kissalle ja viet sen ulos häpeämään":"lomalle","Ostat kissalle raapimispuun, johon se voi teroittaa kynsiään":"lomalle","Annat kissan pois, koska se on niin hankala":"null","Huudat kissalle ja viet sen ulos häpeämäänColor":"red","Ostat kissalle raapimispuun, johon se voi teroittaa kynsiäänColor":"green","Annat kissan pois, koska se on niin hankalaColor":"red"},"väsykissa":{"question":"Palattuasi lomalta huomaat yhtenä päivänä, että kissasi vaikuttaa tavallista väsyneemmältä eikä suostu syömään ruokaansa.","background":"background_14","person":"null","face":"null","fore":"fore_18","answers":["Yrität piristää kissaasi ostamalla sille hienon uuden lelun","Viet kissan eläinlääkäriin","Tarkkailet kissaa pari päivää ja jos sen vointi ei kohene, viet sen eläinlääkäriin","Päättelet, että kissasi haluaa laihduttaa ja ostat sille vähärasvaisempaa ruokaa","Kysyt tuttavaltasi, mitä sinun kannattaisi tehdä"],"Yrität piristää kissaasi ostamalla sille hienon uuden lelun":"huonovointi","Viet kissan eläinlääkäriin":"eläinlääkärillä","Tarkkailet kissaa pari päivää ja jos sen vointi ei kohene, viet sen eläinlääkäriin":"eläinlääkärillä","Päättelet, että kissasi haluaa laihduttaa ja ostat sille vähärasvaisempaa ruokaa":"huonovointi","Kysyt tuttavaltasi, mitä sinun kannattaisi tehdä":"tuttavaneuvo","Yrität piristää kissaasi ostamalla sille hienon uuden lelunColor":"red","Viet kissan eläinlääkäriinColor":"green","Tarkkailet kissaa pari päivää ja jos sen vointi ei kohene, viet sen eläinlääkäriinColor":"green","Päättelet, että kissasi haluaa laihduttaa ja ostat sille vähärasvaisempaa ruokaaColor":"red","Kysyt tuttavaltasi, mitä sinun kannattaisi tehdäColor":"green"},"tuttavaneuvo":{"question":"Tuttavasi neuvoo sinua viemään kissan eläinlääkäriin.","background":"background_14","person":"null","face":"null","fore":"fore_18","answers":["Et suostu, koska se on liian kallista, vaan päätät etsiä itse netistä diagnoosin kissallesi","Etsit netistä sopivan eläinlääkärin ja varaat ajan","Käsket tuttavaasi viemään kissasi eläinlääkäriin"],"Et suostu, koska se on liian kallista, vaan päätät etsiä itse netistä diagnoosin kissallesi":"huonovointi","Etsit netistä sopivan eläinlääkärin ja varaat ajan":"eläinlääkärillä","Käsket tuttavaasi viemään kissasi eläinlääkäriin":"tuttavalääkäriin","Et suostu, koska se on liian kallista, vaan päätät etsiä itse netistä diagnoosin kissallesiColor":"red","Etsit netistä sopivan eläinlääkärin ja varaat ajanColor":"green","Käsket tuttavaasi viemään kissasi eläinlääkäriinColor":"yellow"},"eläinlääkärillä":{"question":"Eläinlääkäri tutkii kissan ja antaa hoito-ohjeet.","background":"background_14","person":"null","face":"null","fore":"fore_18","answers":["Käyt ostamassa eläinlääkärin määräämää lääkettä ja noudatat hoito-ohjeita tarkasti","Viet varmuuden vuoksi kissasi vielä toiselle eläinlääkärille","Mielestäsi eläinlääkäri ei vaikuta pätevältä, joten heität hoito-ohjeen roskiin ja päätät valmistaa kissallesi lääkettä itse"],"Käyt ostamassa eläinlääkärin määräämää lääkettä ja noudatat hoito-ohjeita tarkasti":"null","Viet varmuuden vuoksi kissasi vielä toiselle eläinlääkärille":"null","Mielestäsi eläinlääkäri ei vaikuta pätevältä, joten heität hoito-ohjeen roskiin ja päätät valmistaa kissallesi lääkettä itse":"null","Käyt ostamassa eläinlääkärin määräämää lääkettä ja noudatat hoito-ohjeita tarkastiColor":"green","Viet varmuuden vuoksi kissasi vielä toiselle eläinlääkärilleColor":"yellow","Mielestäsi eläinlääkäri ei vaikuta pätevältä, joten heität hoito-ohjeen roskiin ja päätät valmistaa kissallesi lääkettä itseColor":"red"},"tuttavalääkäriin":{"question":"Tuttavasi ei halua viedä sinun kissaasi eläinlääkäriin.","background":"background_14","person":"null","face":"null","fore":"fore_18","answers":["Raivostut tuttavallesi ja viet kissan lääkäriin itse","Raivostut tuttavallesi etkä vie kissaa eläinlääkäriin","Lupaat maksaa tuttavallesi niin paljon, että hän suostuu lopulta viemään kissasi lääkäriin","Sanot ymmärtäväsi tuttavaasi ja viet kissan eläinlääkäriin itse"],"Raivostut tuttavallesi ja viet kissan lääkäriin itse":"eläinlääkärillä","Raivostut tuttavallesi etkä vie kissaa eläinlääkäriin":"huonovointi","Lupaat maksaa tuttavallesi niin paljon, että hän suostuu lopulta viemään kissasi lääkäriin":"eläinlääkärillä","Sanot ymmärtäväsi tuttavaasi ja viet kissan eläinlääkäriin itse":"eläinlääkärillä","Raivostut tuttavallesi ja viet kissan lääkäriin itseColor":"yellow","Raivostut tuttavallesi etkä vie kissaa eläinlääkäriinColor":"red","Lupaat maksaa tuttavallesi niin paljon, että hän suostuu lopulta viemään kissasi lääkäriinColor":"green","Sanot ymmärtäväsi tuttavaasi ja viet kissan eläinlääkäriin itseColor":"green"},"huonovointi":{"question":"Kissasi kunto tuntuu vain huononevan.","background":"background_14","person":"null","face":"null","fore":"fore_18","answers":["Raivoat kissallesi, miksi sen täytyy olla niin hankala","Viet kissan pikaisesti eläinlääkäriin"],"Raivoat kissallesi, miksi sen täytyy olla niin hankala":"null","Viet kissan pikaisesti eläinlääkäriin":"eläinlääkärillä","Raivoat kissallesi, miksi sen täytyy olla niin hankalaColor":"red","Viet kissan pikaisesti eläinlääkäriinColor":"green"}}
+{
+  "first": {
+    "question": "Olet juuri hankkinut itsellesi kissan. Mitkä tarvikkeet olet varannut valmiiksi kotiisi?",
+    "background": "background_5",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_18",
+    "answers": [
+      "Kissanruokaa, ruoka- ja juoma-astiat, kissanhiekkaa sekä hiekkalaatikon",
+      "Valtavan raapimispuun ja monta hienoa lelua",
+      "Kissanpedin, kuljetuslaatikon, harjan ja kaulapannan"
+    ],
+    "Kissanruokaa, ruoka- ja juoma-astiat, kissanhiekkaa sekä hiekkalaatikon": "ruoka",
+    "Valtavan raapimispuun ja monta hienoa lelua": "ruoka",
+    "Kissanpedin, kuljetuslaatikon, harjan ja kaulapannan": "ruoka",
+    "Kissanruokaa, ruoka- ja juoma-astiat, kissanhiekkaa sekä hiekkalaatikonColor": "green",
+    "Valtavan raapimispuun ja monta hienoa leluaColor": "red",
+    "Kissanpedin, kuljetuslaatikon, harjan ja kaulapannanColor": "red"
+  },
+  "ruoka": {
+    "question": "Kissasi tulee maukumaan jalkojesi juureen. Epäilet, että sillä on nälkä. Mitä ruokaa tarjoat sille?",
+    "background": "background_10",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_18",
+    "answers": [
+      "Eläinlääkärin tai kasvattajan suosittelemaa kuivaruokaa, joka sopii juuri sinun kissasi tarpeisiin",
+      "Omat ruoantähteesi",
+      "Kissanruokaa, jonka ostit marketista perehtymättä aiheeseen sen enempää",
+      "Kupillisen maitoa",
+      "Kissan märkäruokaa, koska kissasi pitää siitä enemmän kuin kuivaruoasta"
+    ],
+    "Eläinlääkärin tai kasvattajan suosittelemaa kuivaruokaa, joka sopii juuri sinun kissasi tarpeisiin": "ruokatiheys",
+    "Omat ruoantähteesi": "epäluuloruoka",
+    "Kissanruokaa, jonka ostit marketista perehtymättä aiheeseen sen enempää": "ruokatiheys",
+    "Kupillisen maitoa": "epäluuloruoka",
+    "Kissan märkäruokaa, koska kissasi pitää siitä enemmän kuin kuivaruoasta": "märkäruoka",
+    "Eläinlääkärin tai kasvattajan suosittelemaa kuivaruokaa, joka sopii juuri sinun kissasi tarpeisiinColor": "green",
+    "Omat ruoantähteesiColor": "red",
+    "Kissanruokaa, jonka ostit marketista perehtymättä aiheeseen sen enempääColor": "yellow",
+    "Kupillisen maitoaColor": "red",
+    "Kissan märkäruokaa, koska kissasi pitää siitä enemmän kuin kuivaruoastaColor": "green"
+  },
+  "epäluuloruoka": {
+    "question": "Kissasi nuuhkaisee tarjoamaasi ruokaa, muttei ala syödä sitä.",
+    "background": "background_10",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_18",
+    "answers": [
+      "Päätät mennä heti kauppaan ostamaan oikeaa kissan kuivaruokaa",
+      "Arvelet, että kissasi vain nirsoilee, ja jätät kupin lattialle",
+      "Etsit netistä tietoa kissan oikeaoppisesta ruokinnasta"
+    ],
+    "Päätät mennä heti kauppaan ostamaan oikeaa kissan kuivaruokaa": "ruokatiheys",
+    "Arvelet, että kissasi vain nirsoilee, ja jätät kupin lattialle": "vesi",
+    "Etsit netistä tietoa kissan oikeaoppisesta ruokinnasta": "vesi",
+    "Päätät mennä heti kauppaan ostamaan oikeaa kissan kuivaruokaaColor": "green",
+    "Arvelet, että kissasi vain nirsoilee, ja jätät kupin lattialleColor": "red",
+    "Etsit netistä tietoa kissan oikeaoppisesta ruokinnastaColor": "green"
+  },
+  "ruokatiheys": {
+    "question": "Kissasi syö tyytyväisenä kuivaruokansa.",
+    "background": "background_10",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_18",
+    "answers": [
+      "Kaadat kuppiin lisää ruokaa ja jätät sen näkösälle, jotta kissasi voi käydä syömässä omaan tahtiinsa koska haluaa",
+      "Nostat kupin pois ja tarjoat ruokaa seuraavan kerran huomisiltana",
+      "Nostat kupin pois ja päätät jatkossa tarjota ruokaa 2-3 kertaa päivässä"
+    ],
+    "Kaadat kuppiin lisää ruokaa ja jätät sen näkösälle, jotta kissasi voi käydä syömässä omaan tahtiinsa koska haluaa": "vesi",
+    "Nostat kupin pois ja tarjoat ruokaa seuraavan kerran huomisiltana": "vesi",
+    "Nostat kupin pois ja päätät jatkossa tarjota ruokaa 2-3 kertaa päivässä": "vesi",
+    "Kaadat kuppiin lisää ruokaa ja jätät sen näkösälle, jotta kissasi voi käydä syömässä omaan tahtiinsa koska haluaaColor": "green",
+    "Nostat kupin pois ja tarjoat ruokaa seuraavan kerran huomisiltanaColor": "red",
+    "Nostat kupin pois ja päätät jatkossa tarjota ruokaa 2-3 kertaa päivässäColor": "green"
+  },
+  "märkäruoka": {
+    "question": "Kissasi syö tyytyväisenä ruokansa.",
+    "background": "background_10",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_18",
+    "answers": [
+      "Nostat kupin pois ja tarjoat kissalle seuraavan kerran ruokaa huomisiltana",
+      "Laitat kuppiin lisää märkäruokaa ja jätät sen lattialle, jotta kissasi voi käydä syömässä siitä omaan tahtiinsa koska haluaa",
+      "Huuhtelet ruokakipon puhtaaksi, laitat sen kuivumaan ja päätät tarjota kissallesi jatkossa ruokaa 2-3 kertaa päivässä"
+    ],
+    "Nostat kupin pois ja tarjoat kissalle seuraavan kerran ruokaa huomisiltana": "vesi",
+    "Laitat kuppiin lisää märkäruokaa ja jätät sen lattialle, jotta kissasi voi käydä syömässä siitä omaan tahtiinsa koska haluaa": "märkäruokalattialla",
+    "Huuhtelet ruokakipon puhtaaksi, laitat sen kuivumaan ja päätät tarjota kissallesi jatkossa ruokaa 2-3 kertaa päivässä": "vesi",
+    "Nostat kupin pois ja tarjoat kissalle seuraavan kerran ruokaa huomisiltanaColor": "red",
+    "Laitat kuppiin lisää märkäruokaa ja jätät sen lattialle, jotta kissasi voi käydä syömässä siitä omaan tahtiinsa koska haluaaColor": "red",
+    "Huuhtelet ruokakipon puhtaaksi, laitat sen kuivumaan ja päätät tarjota kissallesi jatkossa ruokaa 2-3 kertaa päivässäColor": "green"
+  },
+  "märkäruokalattialla": {
+    "question": "Huomaat, että pakkauksessa sanotaan, että avattu märkäruokapakkaus pitäisi säilyttää jääkaapissa.",
+    "background": "background_10",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_18",
+    "answers": [
+      "Päätät jatkossa tarjota märkäruokaa 2-3 kertaa päivässä ja tyhjentää syömättä jääneet ruoat roskiin, jottei ruoka pilaantuisi",
+      "Päätät ostaa jatkossa pelkästään kuivaruokaa",
+      "Ajattelet, ettei se ole niin tarkkaa"
+    ],
+    "Päätät jatkossa tarjota märkäruokaa 2-3 kertaa päivässä ja tyhjentää syömättä jääneet ruoat roskiin, jottei ruoka pilaantuisi": "vesi",
+    "Päätät ostaa jatkossa pelkästään kuivaruokaa": "vesi",
+    "Ajattelet, ettei se ole niin tarkkaa": "vesi",
+    "Päätät jatkossa tarjota märkäruokaa 2-3 kertaa päivässä ja tyhjentää syömättä jääneet ruoat roskiin, jottei ruoka pilaantuisiColor": "green",
+    "Päätät ostaa jatkossa pelkästään kuivaruokaaColor": "green",
+    "Ajattelet, ettei se ole niin tarkkaaColor": "red"
+  },
+  "leluvalinta": {
+    "question": "Kissasi tulee läpsäisemään sinua leikkisästi tassullaan ja kiepsahtelee ympäri huonetta. Miten toimit?",
+    "background": "background_3",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_18",
+    "answers": [
+      "Torut kissaa riehumisesta ja viet sen vessaan jäähylle",
+      "Otat esiin pari eläinkaupasta ostamaasi leluhiirtä ja palloa ja jätät ne lattialle kissasi eteen",
+      "Leikität kissaasi kissanlelulla",
+      "Annat kissalle leluksi lasisen koristehiiren"
+    ],
+    "Torut kissaa riehumisesta ja viet sen vessaan jäähylle": "jätöslaatikko",
+    "Otat esiin pari eläinkaupasta ostamaasi leluhiirtä ja palloa ja jätät ne lattialle kissasi eteen": "jätöslaatikko",
+    "Leikität kissaasi kissanlelulla": "jätöslaatikko",
+    "Annat kissalle leluksi lasisen koristehiiren": "lasihiiri",
+    "Torut kissaa riehumisesta ja viet sen vessaan jäähylleColor": "red",
+    "Otat esiin pari eläinkaupasta ostamaasi leluhiirtä ja palloa ja jätät ne lattialle kissasi eteenColor": "yellow",
+    "Leikität kissaasi kissanlelullaColor": "green",
+    "Annat kissalle leluksi lasisen koristehiirenColor": "red"
+  },
+  "lasihiiri": {
+    "question": "Lasinen hiiri menee rikki, kun kissasi tönäisee sitä. Lasinsiruja leviää lattialle.",
+    "background": "background_3",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_18",
+    "answers": [
+      "Nostat kissan äkkiä syliisi, jotta se ei astu lasiin, ja viet sen toiseen huoneeseen. Siivoat lasinsirut huolellisesti pois ja päätät antaa kissallesi jatkossa vain kissanleluiksi tarkoitettuja tavaroita",
+      "Huudat kissallesi vihaisena"
+    ],
+    "Nostat kissan äkkiä syliisi, jotta se ei astu lasiin, ja viet sen toiseen huoneeseen. Siivoat lasinsirut huolellisesti pois ja päätät antaa kissallesi jatkossa vain kissanleluiksi tarkoitettuja tavaroita": "jätöslaatikko",
+    "Huudat kissallesi vihaisena": "jätöslaatikko",
+    "Nostat kissan äkkiä syliisi, jotta se ei astu lasiin, ja viet sen toiseen huoneeseen. Siivoat lasinsirut huolellisesti pois ja päätät antaa kissallesi jatkossa vain kissanleluiksi tarkoitettuja tavaroitaColor": "green",
+    "Huudat kissallesi vihaisenaColor": "red"
+  },
+  "vesi": {
+    "question": "Kissasi tarvitsee ruoan lisäksi myös vettä. Miten tarjoat sitä sille?",
+    "background": "background_9",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_18",
+    "answers": [
+      "Ostat kalliin juoma-automaatin eläinkaupasta",
+      "Ostat tavallisen kissanruokakipon marketista",
+      "Valitset kissallesi oman muovikipon kaapistasi",
+      "Tarjoat kissallesi vettä omasta vesilasistasi aina, kun muistat"
+    ],
+    "Ostat kalliin juoma-automaatin eläinkaupasta": "leluvalinta",
+    "Ostat tavallisen kissanruokakipon marketista": "leluvalinta",
+    "Valitset kissallesi oman muovikipon kaapistasi": "leluvalinta",
+    "Tarjoat kissallesi vettä omasta vesilasistasi aina, kun muistat": "leluvalinta",
+    "Ostat kalliin juoma-automaatin eläinkaupastaColor": "green",
+    "Ostat tavallisen kissanruokakipon marketistaColor": "green",
+    "Valitset kissallesi oman muovikipon kaapistasiColor": "green",
+    "Tarjoat kissallesi vettä omasta vesilasistasi aina, kun muistatColor": "red"
+  },
+  "jätöslaatikko": {
+    "question": "Huomaat illalla, että kissan hiekkalaatikossa on jätöksiä. Mitä teet?",
+    "background": "background_7",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_18",
+    "answers": [
+      "Annat niiden olla, koska jätösten siivoaminen kerran viikossa kyllä riittää",
+      "Vaihdat kaikki kissanhiekat uuteen ja peset laatikon perusteellisesti niin kuin joka ilta",
+      "Siivoat jätökset pois päivittäin ja päätät pestä hiekkalaatikon sekä vaihtaa kaikki kissanhiekat uusiin ensi viikolla"
+    ],
+    "Annat niiden olla, koska jätösten siivoaminen kerran viikossa kyllä riittää": "sohvavessa",
+    "Vaihdat kaikki kissanhiekat uuteen ja peset laatikon perusteellisesti niin kuin joka ilta": "raapimiskissa",
+    "Siivoat jätökset pois päivittäin ja päätät pestä hiekkalaatikon sekä vaihtaa kaikki kissanhiekat uusiin ensi viikolla": "raapimiskissa",
+    "Annat niiden olla, koska jätösten siivoaminen kerran viikossa kyllä riittääColor": "red",
+    "Vaihdat kaikki kissanhiekat uuteen ja peset laatikon perusteellisesti niin kuin joka iltaColor": "yellow",
+    "Siivoat jätökset pois päivittäin ja päätät pestä hiekkalaatikon sekä vaihtaa kaikki kissanhiekat uusiin ensi viikollaColor": "green"
+  },
+  "lomalle": {
+    "question": "Olet lähdössä viikoksi lomamatkalle. Mitä teet kissallesi?",
+    "background": "background_8",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_18",
+    "answers": [
+      "Laitat ruokakuppiin paljon kuivaruokaa, täytät pari vesiastiaa ja jätät kissan yksin kotiin",
+      "Laitat esille ruokaa ja vettä ja pyydät tuttavaasi käymään päivittäin katsomassa, että kissalla on kaikki kunnossa",
+      "Viet kissan hoitoon tuttavallesi",
+      "Päästät kissan vapaaksi ulos, jotta se voi metsästää itselleen ruokaa poissa ollessasi"
+    ],
+    "Laitat ruokakuppiin paljon kuivaruokaa, täytät pari vesiastiaa ja jätät kissan yksin kotiin": "väsykissa",
+    "Laitat esille ruokaa ja vettä ja pyydät tuttavaasi käymään päivittäin katsomassa, että kissalla on kaikki kunnossa": "väsykissa",
+    "Viet kissan hoitoon tuttavallesi": "väsykissa",
+    "Päästät kissan vapaaksi ulos, jotta se voi metsästää itselleen ruokaa poissa ollessasi": "null",
+    "Laitat ruokakuppiin paljon kuivaruokaa, täytät pari vesiastiaa ja jätät kissan yksin kotiinColor": "red",
+    "Laitat esille ruokaa ja vettä ja pyydät tuttavaasi käymään päivittäin katsomassa, että kissalla on kaikki kunnossaColor": "yellow",
+    "Viet kissan hoitoon tuttavallesiColor": "green",
+    "Päästät kissan vapaaksi ulos, jotta se voi metsästää itselleen ruokaa poissa ollessasiColor": "red"
+  },
+  "sohvavessa": {
+    "question": "Kissasi ei enää suostu tekemään tarpeitaan hiekkalaatikolle, vaan alkaa käyttää sohvaasi vessanaan.",
+    "background": "background_7",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_18",
+    "answers": [
+      "Annat kissan pois, koska se on niin hankala",
+      "Siivoat hiekkalaatikon perusteellisesti ja päätät alkaa pitää sen puhtaudesta parempaa huolta",
+      "Siivoat hiekkalaatikon tästedes useammin ja jos se ei auta, testaat erilaista kissanhiekkaa tai erimallista hiekkalaatikkoa",
+      "Soitat eläinlääkärille ja kysyt neuvoa"
+    ],
+    "Annat kissan pois, koska se on niin hankala": "null",
+    "Siivoat hiekkalaatikon perusteellisesti ja päätät alkaa pitää sen puhtaudesta parempaa huolta": "raapimiskissa",
+    "Siivoat hiekkalaatikon tästedes useammin ja jos se ei auta, testaat erilaista kissanhiekkaa tai erimallista hiekkalaatikkoa": "raapimiskissa",
+    "Soitat eläinlääkärille ja kysyt neuvoa": "raapimiskissa",
+    "Annat kissan pois, koska se on niin hankalaColor": "red",
+    "Siivoat hiekkalaatikon perusteellisesti ja päätät alkaa pitää sen puhtaudesta parempaa huoltaColor": "green",
+    "Siivoat hiekkalaatikon tästedes useammin ja jos se ei auta, testaat erilaista kissanhiekkaa tai erimallista hiekkalaatikkoaColor": "green",
+    "Soitat eläinlääkärille ja kysyt neuvoaColor": "green"
+  },
+  "raapimiskissa": {
+    "question": "Kun tulet seuraavana päivänä kotiin asioiltasi, huomaat kissasi on raapineen nojatuoliasi.",
+    "background": "background_16",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_18",
+    "answers": [
+      "Huudat kissalle ja viet sen ulos häpeämään",
+      "Ostat kissalle raapimispuun, johon se voi teroittaa kynsiään",
+      "Annat kissan pois, koska se on niin hankala"
+    ],
+    "Huudat kissalle ja viet sen ulos häpeämään": "lomalle",
+    "Ostat kissalle raapimispuun, johon se voi teroittaa kynsiään": "lomalle",
+    "Annat kissan pois, koska se on niin hankala": "null",
+    "Huudat kissalle ja viet sen ulos häpeämäänColor": "red",
+    "Ostat kissalle raapimispuun, johon se voi teroittaa kynsiäänColor": "green",
+    "Annat kissan pois, koska se on niin hankalaColor": "red"
+  },
+  "väsykissa": {
+    "question": "Palattuasi lomalta huomaat yhtenä päivänä, että kissasi vaikuttaa tavallista väsyneemmältä eikä suostu syömään ruokaansa.",
+    "background": "background_14",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_18",
+    "answers": [
+      "Yrität piristää kissaasi ostamalla sille hienon uuden lelun",
+      "Viet kissan eläinlääkäriin",
+      "Tarkkailet kissaa pari päivää ja jos sen vointi ei kohene, viet sen eläinlääkäriin",
+      "Päättelet, että kissasi haluaa laihduttaa ja ostat sille vähärasvaisempaa ruokaa",
+      "Kysyt tuttavaltasi, mitä sinun kannattaisi tehdä"
+    ],
+    "Yrität piristää kissaasi ostamalla sille hienon uuden lelun": "huonovointi",
+    "Viet kissan eläinlääkäriin": "eläinlääkärillä",
+    "Tarkkailet kissaa pari päivää ja jos sen vointi ei kohene, viet sen eläinlääkäriin": "eläinlääkärillä",
+    "Päättelet, että kissasi haluaa laihduttaa ja ostat sille vähärasvaisempaa ruokaa": "huonovointi",
+    "Kysyt tuttavaltasi, mitä sinun kannattaisi tehdä": "tuttavaneuvo",
+    "Yrität piristää kissaasi ostamalla sille hienon uuden lelunColor": "red",
+    "Viet kissan eläinlääkäriinColor": "green",
+    "Tarkkailet kissaa pari päivää ja jos sen vointi ei kohene, viet sen eläinlääkäriinColor": "green",
+    "Päättelet, että kissasi haluaa laihduttaa ja ostat sille vähärasvaisempaa ruokaaColor": "red",
+    "Kysyt tuttavaltasi, mitä sinun kannattaisi tehdäColor": "green"
+  },
+  "tuttavaneuvo": {
+    "question": "Tuttavasi neuvoo sinua viemään kissan eläinlääkäriin.",
+    "background": "background_14",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_18",
+    "answers": [
+      "Et suostu, koska se on liian kallista, vaan päätät etsiä itse netistä diagnoosin kissallesi",
+      "Etsit netistä sopivan eläinlääkärin ja varaat ajan",
+      "Käsket tuttavaasi viemään kissasi eläinlääkäriin"
+    ],
+    "Et suostu, koska se on liian kallista, vaan päätät etsiä itse netistä diagnoosin kissallesi": "huonovointi",
+    "Etsit netistä sopivan eläinlääkärin ja varaat ajan": "eläinlääkärillä",
+    "Käsket tuttavaasi viemään kissasi eläinlääkäriin": "tuttavalääkäriin",
+    "Et suostu, koska se on liian kallista, vaan päätät etsiä itse netistä diagnoosin kissallesiColor": "red",
+    "Etsit netistä sopivan eläinlääkärin ja varaat ajanColor": "green",
+    "Käsket tuttavaasi viemään kissasi eläinlääkäriinColor": "yellow"
+  },
+  "eläinlääkärillä": {
+    "question": "Eläinlääkäri tutkii kissan ja antaa hoito-ohjeet.",
+    "background": "background_14",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_18",
+    "answers": [
+      "Käyt ostamassa eläinlääkärin määräämää lääkettä ja noudatat hoito-ohjeita tarkasti",
+      "Viet varmuuden vuoksi kissasi vielä toiselle eläinlääkärille",
+      "Mielestäsi eläinlääkäri ei vaikuta pätevältä, joten heität hoito-ohjeen roskiin ja päätät valmistaa kissallesi lääkettä itse"
+    ],
+    "Käyt ostamassa eläinlääkärin määräämää lääkettä ja noudatat hoito-ohjeita tarkasti": "null",
+    "Viet varmuuden vuoksi kissasi vielä toiselle eläinlääkärille": "null",
+    "Mielestäsi eläinlääkäri ei vaikuta pätevältä, joten heität hoito-ohjeen roskiin ja päätät valmistaa kissallesi lääkettä itse": "null",
+    "Käyt ostamassa eläinlääkärin määräämää lääkettä ja noudatat hoito-ohjeita tarkastiColor": "green",
+    "Viet varmuuden vuoksi kissasi vielä toiselle eläinlääkärilleColor": "yellow",
+    "Mielestäsi eläinlääkäri ei vaikuta pätevältä, joten heität hoito-ohjeen roskiin ja päätät valmistaa kissallesi lääkettä itseColor": "red"
+  },
+  "tuttavalääkäriin": {
+    "question": "Tuttavasi ei halua viedä sinun kissaasi eläinlääkäriin.",
+    "background": "background_14",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_18",
+    "answers": [
+      "Raivostut tuttavallesi ja viet kissan lääkäriin itse",
+      "Raivostut tuttavallesi etkä vie kissaa eläinlääkäriin",
+      "Lupaat maksaa tuttavallesi niin paljon, että hän suostuu lopulta viemään kissasi lääkäriin",
+      "Sanot ymmärtäväsi tuttavaasi ja viet kissan eläinlääkäriin itse"
+    ],
+    "Raivostut tuttavallesi ja viet kissan lääkäriin itse": "eläinlääkärillä",
+    "Raivostut tuttavallesi etkä vie kissaa eläinlääkäriin": "huonovointi",
+    "Lupaat maksaa tuttavallesi niin paljon, että hän suostuu lopulta viemään kissasi lääkäriin": "eläinlääkärillä",
+    "Sanot ymmärtäväsi tuttavaasi ja viet kissan eläinlääkäriin itse": "eläinlääkärillä",
+    "Raivostut tuttavallesi ja viet kissan lääkäriin itseColor": "yellow",
+    "Raivostut tuttavallesi etkä vie kissaa eläinlääkäriinColor": "red",
+    "Lupaat maksaa tuttavallesi niin paljon, että hän suostuu lopulta viemään kissasi lääkäriinColor": "green",
+    "Sanot ymmärtäväsi tuttavaasi ja viet kissan eläinlääkäriin itseColor": "green"
+  },
+  "huonovointi": {
+    "question": "Kissasi kunto tuntuu vain huononevan.",
+    "background": "background_14",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_18",
+    "answers": [
+      "Raivoat kissallesi, miksi sen täytyy olla niin hankala",
+      "Viet kissan pikaisesti eläinlääkäriin"
+    ],
+    "Raivoat kissallesi, miksi sen täytyy olla niin hankala": "null",
+    "Viet kissan pikaisesti eläinlääkäriin": "eläinlääkärillä",
+    "Raivoat kissallesi, miksi sen täytyy olla niin hankalaColor": "red",
+    "Viet kissan pikaisesti eläinlääkäriinColor": "green"
+  }
+}
