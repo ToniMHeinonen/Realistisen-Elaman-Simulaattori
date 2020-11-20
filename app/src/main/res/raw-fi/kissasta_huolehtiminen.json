@@ -86,14 +86,14 @@
     "answers": [
       "Nostat kupin pois ja tarjoat kissalle seuraavan kerran ruokaa huomisiltana",
       "Laitat kuppiin lisää märkäruokaa ja jätät sen lattialle, jotta kissasi voi käydä syömässä siitä omaan tahtiinsa koska haluaa",
-      "Huuhtelet ruokakipon puhtaaksi, laitat sen kuivumaan ja päätät tarjota kissallesi jatkossa ruokaa 2-3 kertaa päivässä"
+      "Huuhtelet ruokakupin puhtaaksi, laitat sen kuivumaan ja päätät tarjota kissallesi jatkossa ruokaa 2-3 kertaa päivässä"
     ],
     "Nostat kupin pois ja tarjoat kissalle seuraavan kerran ruokaa huomisiltana": "vesi",
     "Laitat kuppiin lisää märkäruokaa ja jätät sen lattialle, jotta kissasi voi käydä syömässä siitä omaan tahtiinsa koska haluaa": "märkäruokalattialla",
-    "Huuhtelet ruokakipon puhtaaksi, laitat sen kuivumaan ja päätät tarjota kissallesi jatkossa ruokaa 2-3 kertaa päivässä": "vesi",
+    "Huuhtelet ruokakupin puhtaaksi, laitat sen kuivumaan ja päätät tarjota kissallesi jatkossa ruokaa 2-3 kertaa päivässä": "vesi",
     "Nostat kupin pois ja tarjoat kissalle seuraavan kerran ruokaa huomisiltanaColor": "red",
     "Laitat kuppiin lisää märkäruokaa ja jätät sen lattialle, jotta kissasi voi käydä syömässä siitä omaan tahtiinsa koska haluaaColor": "red",
-    "Huuhtelet ruokakipon puhtaaksi, laitat sen kuivumaan ja päätät tarjota kissallesi jatkossa ruokaa 2-3 kertaa päivässäColor": "green"
+    "Huuhtelet ruokakupin puhtaaksi, laitat sen kuivumaan ja päätät tarjota kissallesi jatkossa ruokaa 2-3 kertaa päivässäColor": "green"
   },
   "märkäruokalattialla": {
     "question": "Huomaat, että pakkauksessa sanotaan, että avattu märkäruokapakkaus pitäisi säilyttää jääkaapissa.",
@@ -157,17 +157,17 @@
     "fore": "fore_18",
     "answers": [
       "Ostat kalliin juoma-automaatin eläinkaupasta",
-      "Ostat tavallisen kissanruokakipon marketista",
-      "Valitset kissallesi oman muovikipon kaapistasi",
+      "Ostat tavallisen kissanruokakupin marketista",
+      "Valitset kissallesi oman muovikupin kaapistasi",
       "Tarjoat kissallesi vettä omasta vesilasistasi aina, kun muistat"
     ],
     "Ostat kalliin juoma-automaatin eläinkaupasta": "leluvalinta",
-    "Ostat tavallisen kissanruokakipon marketista": "leluvalinta",
-    "Valitset kissallesi oman muovikipon kaapistasi": "leluvalinta",
+    "Ostat tavallisen kissanruokakupin marketista": "leluvalinta",
+    "Valitset kissallesi oman muovikupin kaapistasi": "leluvalinta",
     "Tarjoat kissallesi vettä omasta vesilasistasi aina, kun muistat": "leluvalinta",
     "Ostat kalliin juoma-automaatin eläinkaupastaColor": "green",
-    "Ostat tavallisen kissanruokakipon marketistaColor": "green",
-    "Valitset kissallesi oman muovikipon kaapistasiColor": "green",
+    "Ostat tavallisen kissanruokakupin marketistaColor": "green",
+    "Valitset kissallesi oman muovikupin kaapistasiColor": "green",
     "Tarjoat kissallesi vettä omasta vesilasistasi aina, kun muistatColor": "red"
   },
   "jätöslaatikko": {
