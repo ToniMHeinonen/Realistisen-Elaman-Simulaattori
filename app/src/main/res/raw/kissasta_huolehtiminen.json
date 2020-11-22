@@ -159,16 +159,16 @@
       "You buy an expensive drinking machine from a pet store",
       "You buy regular cup from the market",
       "You give your own plastic cup for your cat",
-      "You provide your cat with water from a mug whenever you remember"
+      "You provide your cat with water from your own glass of water whenever you remember"
     ],
     "You buy an expensive drinking machine from a pet store": "leluvalinta",
     "You buy regular cup from the market": "leluvalinta",
     "You give your own plastic cup for your cat": "leluvalinta",
-    "You provide your cat with water from a mug whenever you remember": "leluvalinta",
+    "You provide your cat with water from your own glass of water whenever you remember": "leluvalinta",
     "You buy an expensive drinking machine from a pet storeColor": "green",
     "You buy regular cup from the marketColor": "green",
     "You give your own plastic cup for your catColor": "green",
-    "You provide your cat with water from a mug whenever you rememberColor": "red"
+    "You provide your cat with water from your own glass of water whenever you rememberColor": "red"
   },
   "jätöslaatikko": {
     "question": "In the evening, you notice that there are droppings in the cat’s sandbox. What do you do?",

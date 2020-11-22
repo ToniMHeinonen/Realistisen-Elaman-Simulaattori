@@ -18,7 +18,7 @@
     "You go get a dust cloth and start wiping the floorsColor": "red"
   },
   "imuri ja tavarat": {
-    "question": "You pick up the vacuum cleaner from where it is stored. There is a lot of stuff on the floors.",
+    "question": "You pick up the vacuum cleaner from where it is stored. You check the condition of the dust bag and find that there is still room in it. There is a lot of stuff on the floors.",
     "background": "background_15",
     "person": "null",
     "face": "null",
@@ -33,7 +33,7 @@
     "You clean the stuff from the floors to their correct places and put the power cord of the vacuum cleaner in to the socketColor": "green"
   },
   "imurin haku": {
-    "question": "You pick up the vacuum cleaner from where it is stored.",
+    "question": "You pick up the vacuum cleaner from where it is stored. You check the condition of the dust bag and find that there is still room in it.",
     "background": "background_15",
     "person": "null",
     "face": "null",
