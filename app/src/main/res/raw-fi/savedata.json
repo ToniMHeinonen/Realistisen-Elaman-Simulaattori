@@ -14,6 +14,7 @@
     "Kukkien kastelu ja hoito",
     "Lääkärissä käynti",
     "Lattian imurointi",
+    "Postin avaaminen ja lukeminen",
     "Pölyjen pyyhkiminen",
     "Pyykkien peseminen",
     "Roskakorien tyhjentäminen",
@@ -46,6 +47,7 @@
     {"name": "Harrastukseen meneminen", "file": "harrastukseenmeno.json", "category": "Vapaa-ajan toiminta"},
     {"name": "Ravintolassa käyminen", "file": "ravintola.json", "category": "Vapaa-ajan toiminta"},
     {"name": "Tuttavan tapaaminen", "file": "tuttavan_tapaaminen.json", "category": "Vapaa-ajan toiminta"},
-    {"name": "Vuokra-asunnon hankinta", "file": "vuokra_asunnon_hankinta.json", "category": "Vuokra-asunto"}
+    {"name": "Vuokra-asunnon hankinta", "file": "vuokra_asunnon_hankinta.json", "category": "Vuokra-asunto"},
+    {"name": "Postin avaaminen ja lukeminen", "file": "posti.json", "category": "Posti"}
   ]
 }

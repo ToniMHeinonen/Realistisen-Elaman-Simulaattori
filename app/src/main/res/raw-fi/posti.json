@@ -1,0 +1,209 @@
+{
+  "first": {
+    "question": "Onko sinulla postilaatikko vai tuleeko posti suoraan asuntoosi postiluukusta?",
+    "background": "background_17",
+    "person": "character_8",
+    "fore": "null",
+    "face": "face_happy",
+    "answers": [
+      "Postilaatikko",
+      "Postiluukku"
+    ],
+    "Postilaatikko": "postilaatikkoAlku",
+    "Postiluukku": "postiluukkuAlku",
+    "PostilaatikkoColor": "green",
+    "PostiluukkuColor": "green"
+  },
+  "postiluukkuAlku": {
+    "question": "Tulet sisään asuntoosi ja huomaat, että eteiseen on tullut muutama kirje postiluukusta.",
+    "background": "background_17",
+    "person": "null",
+    "fore": "fore_8",
+    "face": "null",
+    "answers": [
+      "Otat kirjeet lattialta ja viet ne pöydälle",
+      "Jätät kirjeet lattialle",
+      "Otat kirjeet lattialta ja avaat ne saman tien"
+    ],
+    "Otat kirjeet lattialta ja viet ne pöydälle": "postiluukkuPöytä",
+    "Jätät kirjeet lattialle": "postiluukkuLattia",
+    "Otat kirjeet lattialta ja avaat ne saman tien": "kirjeetAvattu",
+    "Otat kirjeet lattialta ja viet ne pöydälleColor": "green",
+    "Jätät kirjeet lattialleColor": "red",
+    "Otat kirjeet lattialta ja avaat ne saman tienColor": "green"
+  },
+  "postiluukkuLattia": {
+    "question": "Kirjeet ovat edelleen lattialla.",
+    "background": "background_17",
+    "person": "null",
+    "fore": "fore_8",
+    "face": "null",
+    "answers": [
+      "Jätät kirjeet lopullisesti lattialle",
+      "Otat kirjeet lattialta ja viet ne pöydälle",
+      "Otat kirjeet lattialta ja avaat ne saman tien"
+    ],
+    "Jätät kirjeet lopullisesti lattialle": "null",
+    "Otat kirjeet lattialta ja viet ne pöydälle": "postiluukkuPöytä",
+    "Otat kirjeet lattialta ja avaat ne saman tien": "kirjeetAvattu",
+    "Jätät kirjeet lopullisesti lattialleColor": "red",
+    "Otat kirjeet lattialta ja viet ne pöydälleColor": "green",
+    "Otat kirjeet lattialta ja avaat ne saman tienColor": "green"
+  },
+  "postiluukkuPöytä": {
+    "question": "Veit kirjeet pöydälle.",
+    "background": "background_17",
+    "person": "character_8",
+    "fore": "null",
+    "face": "face_happy",
+    "answers": [
+      "Jätät kirjeet vielä toistaiseksi pöydälle",
+      "Avaat kirjeet"
+    ],
+    "Jätät kirjeet vielä toistaiseksi pöydälle": "kirjeetPöydällä",
+    "Avaat kirjeet": "kirjeetAvattu",
+    "Jätät kirjeet vielä toistaiseksi pöydälleColor": "yellow",
+    "Avaat kirjeetColor": "green"
+  },
+  "postilaatikkoAlku": {
+    "question": "Et ole muutamaan päivään käynyt tarkastamassa, onko postilaatikkoosi tullut postia.",
+    "background": "background_17",
+    "person": "character_8",
+    "fore": "null",
+    "face": "face_happy",
+    "answers": [
+      "Käyt tarkastamassa, onko postilaatikkoon tullut postia",
+      "Sinua ei nyt huvita, joten aiot käydä tarkastamassa sen myöhemmin"
+    ],
+    "Käyt tarkastamassa, onko postilaatikkoon tullut postia": "postilaatikkoHaku",
+    "Sinua ei nyt huvita, joten aiot käydä tarkastamassa sen myöhemmin": "postilaatikkoUusi",
+    "Käyt tarkastamassa, onko postilaatikkoon tullut postiaColor": "green",
+    "Sinua ei nyt huvita, joten aiot käydä tarkastamassa sen myöhemminColor": "yellow"
+  },
+  "postilaatikkoUusi": {
+    "question": "On kulunut jo pari viikkoa siitä, kun viimeksi tarkastit postilaatikkosi tilanteen.",
+    "background": "background_17",
+    "person": "character_8",
+    "fore": "null",
+    "face": "face_happy",
+    "answers": [
+      "Käyt tarkastamassa, onko postilaatikkoon tullut postia",
+      "Et aio käydä tarkastamassa postilaatikkoasi"
+    ],
+    "Käyt tarkastamassa, onko postilaatikkoon tullut postia": "postilaatikkoHaku",
+    "Et aio käydä tarkastamassa postilaatikkoasi": "null",
+    "Käyt tarkastamassa, onko postilaatikkoon tullut postiaColor": "green",
+    "Et aio käydä tarkastamassa postilaatikkoasiColor": "red"
+  },
+  "postilaatikkoHaku": {
+    "question": "Postilaatikkoosi on tullut muutama kirje.",
+    "background": "background_17",
+    "person": "character_8",
+    "fore": "null",
+    "face": "face_happy",
+    "answers": [
+      "Yrität tarkastaa vielä naapuriesi postilaatikot, ennen kuin viet kirjeesi sisälle",
+      "Viet kirjeet sisälle",
+      "Jätät kirjeet postilaatikkoon"
+    ],
+    "Yrität tarkastaa vielä naapuriesi postilaatikot, ennen kuin viet kirjeesi sisälle": "postilaatikkoHaettu",
+    "Viet kirjeet sisälle": "postilaatikkoHaettu",
+    "Jätät kirjeet postilaatikkoon": "postilaatikkoVirhe",
+    "Yrität tarkastaa vielä naapuriesi postilaatikot, ennen kuin viet kirjeesi sisälleColor": "red",
+    "Viet kirjeet sisälleColor": "green",
+    "Jätät kirjeet postilaatikkoonColor": "red"
+  },
+  "postilaatikkoVirhe": {
+    "question": "Jätit kirjeet postilaatikkoon. Mitä teet?",
+    "background": "background_17",
+    "person": "character_8",
+    "fore": "null",
+    "face": "face_happy",
+    "answers": [
+      "Käyt hakemassa kirjeet sisälle",
+      "Jätät kirjeet postilaatikkoon lopullisesti"
+    ],
+    "Käyt hakemassa kirjeet sisälle": "postilaatikkoHaettu",
+    "Jätät kirjeet postilaatikkoon lopullisesti": "null",
+    "Käyt hakemassa kirjeet sisälleColor": "green",
+    "Jätät kirjeet postilaatikkoon lopullisestiColor": "red"
+  },
+  "postilaatikkoHaettu": {
+    "question": "Hait kirjeet asuntoosi ja pistät ne pöydälle.",
+    "background": "background_17",
+    "person": "character_8",
+    "fore": "null",
+    "face": "face_happy",
+    "answers": [
+      "Avaat kirjeet",
+      "Jätät kirjeet pöydälle ja menet katsomaan televisiota"
+    ],
+    "Avaat kirjeet": "kirjeetAvattu",
+    "Jätät kirjeet pöydälle ja menet katsomaan televisiota": "kirjeetPöydällä",
+    "Avaat kirjeetColor": "green",
+    "Jätät kirjeet pöydälle ja menet katsomaan televisiotaColor": "red"
+  },
+  "kirjeetPöydällä": {
+    "question": "Kirjeet ovat edelleen pöydällä.",
+    "background": "background_17",
+    "person": "character_8",
+    "fore": "null",
+    "face": "face_happy",
+    "answers": [
+      "Avaat kirjeet",
+      "Jätät kirjeet pöydälle lopullisesti"
+    ],
+    "Avaat kirjeet": "kirjeetAvattu",
+    "Jätät kirjeet pöydälle lopullisesti": "null",
+    "Avaat kirjeetColor": "green",
+    "Jätät kirjeet pöydälle lopullisestiColor": "red"
+  },
+  "kirjeetAvattu": {
+    "question": "Avasit kirjeet ja huomaat, että ne olivat kaikki laskuja.",
+    "background": "background_17",
+    "person": "character_8",
+    "fore": "null",
+    "face": "face_happy",
+    "answers": [
+      "Avaat verkkopankin puhelimellasi tai tietokoneellasi",
+      "Laskujen eräpäivä ei ole vielä vähään aikaan, joten avaat verkkopankin myöhemmin",
+      "Et maksa laskuja"
+    ],
+    "Avaat verkkopankin puhelimellasi tai tietokoneellasi": "verkkopankki",
+    "Laskujen eräpäivä ei ole vielä vähään aikaan, joten avaat verkkopankin myöhemmin": "verkkopankki",
+    "Et maksa laskuja": "null",
+    "Avaat verkkopankin puhelimellasi tai tietokoneellasiColor": "green",
+    "Laskujen eräpäivä ei ole vielä vähään aikaan, joten avaat verkkopankin myöhemminColor": "green",
+    "Et maksa laskujaColor": "red"
+  },
+  "verkkopankki": {
+    "question": "Avasit verkkopankin.",
+    "background": "background_17",
+    "person": "null",
+    "fore": "fore_20",
+    "face": "null",
+    "answers": [
+      "Katsot tarkkaan laskusta muun muuassa viitenumeron, eräpäivän ja laskun määrän ja täytät ne huolellisesti verkkopankissa",
+      "Täytät laskun tiedot hutiloiden verkkopankissa"
+    ],
+    "Katsot tarkkaan laskusta muun muuassa viitenumeron, eräpäivän ja laskun määrän ja täytät ne huolellisesti verkkopankissa": "loppu",
+    "Täytät laskun tiedot hutiloiden verkkopankissa": "loppu",
+    "Katsot tarkkaan laskusta muun muuassa viitenumeron, eräpäivän ja laskun määrän ja täytät ne huolellisesti verkkopankissaColor": "green",
+    "Täytät laskun tiedot hutiloiden verkkopankissaColor": "red"
+  },
+  "loppu": {
+    "question": "Sait maksettua laskut verkkopankissa. Miten toimit postien kanssa vastaisuudessa?",
+    "background": "background_17",
+    "person": "null",
+    "fore": "fore_20",
+    "face": "null",
+    "answers": [
+      "Tarkastat postin mahdollisimman usein ja maksat laskut ajoissa",
+      "Tarkastat postin silloin kun huvittaa ja maksat laskut, jos muistat"
+    ],
+    "Tarkastat postin mahdollisimman usein ja maksat laskut ajoissa": "null",
+    "Tarkastat postin silloin kun huvittaa ja maksat laskut, jos muistat": "null",
+    "Tarkastat postin mahdollisimman usein ja maksat laskut ajoissaColor": "green",
+    "Tarkastat postin silloin kun huvittaa ja maksat laskut, jos muistatColor": "red"
+  }
+}

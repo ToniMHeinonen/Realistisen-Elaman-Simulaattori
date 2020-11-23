@@ -22,7 +22,9 @@
     "Returning from grocery store",
     "Meeting an acquaintance",
     "Sorting the clothes",
-    "Keeping the bedding clean"],
+    "Keeping the bedding clean",
+    "Opening and reading mail"
+  ],
   "scenarioslist": [
     {"name":  "Applying to higher education", "file":  "opiskelu.json", "category": "Education"},
     {"name":  "Going to a doctor", "file": "laakarissa_kaynti.json", "category": "Going to a doctor"},
@@ -46,6 +48,7 @@
     {"name":  "Traveling by tram", "file": "ratikka.json", "category": "Traveling"},
     {"name": "Going to grocery store", "file": "ruokakauppaan_lahteminen.json", "category": "Visiting a store"},
     {"name": "Behaving at grocery store", "file": "ruokakaupassa_asioiminen.json", "category": "Visiting a store"},
-    {"name": "Returning from grocery store", "file": "ruokakaupasta_palaaminen.json", "category": "Visiting a store"}
+    {"name": "Returning from grocery store", "file": "ruokakaupasta_palaaminen.json", "category": "Visiting a store"},
+    {"name": "Opening and reading mail", "file": "posti.json", "category": "Mail"}
   ]
 }
