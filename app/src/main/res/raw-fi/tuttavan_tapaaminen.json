@@ -169,15 +169,12 @@
     "fore": "fore_8",
     "answers": [
       "Teeskentelet, ettet ole kotona, etkä avaa ovea",
-      "Avaat oven, tervehdit häntä ja pyydät peremmälle",
-      "Avaat oven ja käsket hänet peremmälle"
+      "Avaat oven, tervehdit häntä ja pyydät peremmälle"
     ],
     "Teeskentelet, ettet ole kotona, etkä avaa ovea": "kylaUusi",
     "Avaat oven, tervehdit häntä ja pyydät peremmälle": "kylaSisalla",
-    "Avaat oven ja käsket hänet peremmälle": "kylaSisalla",
     "Teeskentelet, ettet ole kotona, etkä avaa oveaColor": "red",
-    "Avaat oven, tervehdit häntä ja pyydät peremmälleColor": "green",
-    "Avaat oven ja käsket hänet peremmälleColor": "red"
+    "Avaat oven, tervehdit häntä ja pyydät peremmälleColor": "green"
   },
   "kylaUusi": {
     "question": "Tuttavasi soittaa ovikelloasi vielä muutaman kerran ja on sitten poistumassa.",
@@ -187,15 +184,12 @@
     "fore": "fore_8",
     "answers": [
       "Et vieläkään avaa ovea ja annat hänen lähteä",
-      "Avaat lopulta oven, tervehdit häntä ja pyydät peremmälle",
-      "Avaat lopulta oven ja käsket hänet peremmälle"
+      "Avaat lopulta oven, tervehdit häntä ja pyydät peremmälle"
     ],
     "Et vieläkään avaa ovea ja annat hänen lähteä": "null",
     "Avaat lopulta oven, tervehdit häntä ja pyydät peremmälle": "kylaSisalla",
-    "Avaat lopulta oven ja käsket hänet peremmälle": "kylaSisalla",
     "Et vieläkään avaa ovea ja annat hänen lähteäColor": "red",
-    "Avaat lopulta oven, tervehdit häntä ja pyydät peremmälleColor": "green",
-    "Avaat lopulta oven ja käsket hänet peremmälleColor": "red"
+    "Avaat lopulta oven, tervehdit häntä ja pyydät peremmälleColor": "green"
   },
   "kylaSisalla": {
     "question": "Tuttavasi tulee sisään asuntoosi.",
@@ -216,22 +210,31 @@
     "Sinulla olisi kahvia ja keksejä, mutta et halua tarjota hänelle niitäColor": "red"
   },
   "tarjoilu": {
-    "question": "Tuttavasi ilahtuu ja ilmoittaa, että kahvi maistuisi.",
+    "question": "Tuttavasi ilahtuu ja ilmoittaa, että hänelle maistuisi joko kahvi, tee, kaakao tai mehu.",
     "background": "background_10",
     "person": "null",
     "face": "null",
     "fore": "fore_19",
     "answers": [
-      "Et halua tarjota omaa kahviasi, joten lähetät hänet kauppaan ostamaan kahvia",
-      "Keität ja tarjoat hänelle kahvit"
+      "Et halua tarjota omia tarjottaviasi, joten lähetät hänet kauppaan ostamaan tarvikkeita",
+      "Keität ja tarjoat hänelle kahvia",
+      "Tarjoat hänelle teetä",
+      "Tarjoat hänelle kaakaota",
+      "Tarjoat hänelle mehua"
     ],
-    "Et halua tarjota omaa kahviasi, joten lähetät hänet kauppaan ostamaan kahvia": "kauppaKuulumiset",
-    "Keität ja tarjoat hänelle kahvit": "kuulumiset",
-    "Et halua tarjota omaa kahviasi, joten lähetät hänet kauppaan ostamaan kahviaColor": "red",
-    "Keität ja tarjoat hänelle kahvitColor": "green"
+    "Et halua tarjota omia tarjottaviasi, joten lähetät hänet kauppaan ostamaan tarvikkeita": "kauppaKuulumiset",
+    "Keität ja tarjoat hänelle kahvia": "kuulumiset",
+    "Tarjoat hänelle teetä": "kuulumiset",
+    "Tarjoat hänelle kaakaota": "kuulumiset",
+    "Tarjoat hänelle mehua": "kuulumiset",
+    "Et halua tarjota omia tarjottaviasi, joten lähetät hänet kauppaan ostamaan tarvikkeitaColor": "red",
+    "Keität ja tarjoat hänelle kahviaColor": "green",
+    "Tarjoat hänelle teetäColor": "green",
+    "Tarjoat hänelle kaakaotaColor": "green",
+    "Tarjoat hänelle mehuaColor": "green"
   },
   "kauppaKuulumiset": {
-    "question": "Tuttavasi hämmentyy, mutta käy kuitenkin kaupassa, jonka jälkeen tarjoat hänelle kahvit.",
+    "question": "Tuttavasi hämmentyy, mutta käy kuitenkin kaupassa, jonka jälkeen tarjoat hänelle hänen haluamaansa tarjottavaa.",
     "background": "background_10",
     "person": "null",
     "face": "null",
@@ -322,12 +325,12 @@
     "fore": "fore_19",
     "answers": [
       "Kerrottuasi juttusi loppuun kysyt tuttavaltasi, mitä hänelle kuuluu",
-      "Kerrottuasi juttusi loppuun pyydät tuttavaa poistumaan"
+      "Kerrottuasi juttusi loppuun et kuuntele, mitä tuttavallesi kuuluu, vaan pyydät häntä poistumaan"
     ],
     "Kerrottuasi juttusi loppuun kysyt tuttavaltasi, mitä hänelle kuuluu": "tuttavaKuulumisetJatko",
-    "Kerrottuasi juttusi loppuun pyydät tuttavaa poistumaan": "alkuPoistuminen",
+    "Kerrottuasi juttusi loppuun et kuuntele, mitä tuttavallesi kuuluu, vaan pyydät häntä poistumaan": "alkuPoistuminen",
     "Kerrottuasi juttusi loppuun kysyt tuttavaltasi, mitä hänelle kuuluuColor": "green",
-    "Kerrottuasi juttusi loppuun pyydät tuttavaa poistumaanColor": "red"
+    "Kerrottuasi juttusi loppuun et kuuntele, mitä tuttavallesi kuuluu, vaan pyydät häntä poistumaanColor": "red"
   },
   "tuttavaKuulumisetJatko": {
     "question": "Juteltuanne hetken tuttavasi kysyy, haluaisitko lähteä hänen kanssaan elokuviin.",

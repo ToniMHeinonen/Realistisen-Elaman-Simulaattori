@@ -169,15 +169,12 @@
     "fore": "fore_8",
     "answers": [
       "You pretend you’re not home and don’t open the door",
-      "You open the door, greet him, and ask him in",
-      "You open the door and order him to come in"
+      "You open the door, greet him, and ask him in"
     ],
     "You pretend you’re not home and don’t open the door": "kylaUusi",
     "You open the door, greet him, and ask him in": "kylaSisalla",
-    "You open the door and order him to come in": "kylaSisalla",
     "You pretend you’re not home and don’t open the doorColor": "red",
-    "You open the door, greet him, and ask him inColor": "green",
-    "You open the door and order him to come inColor": "red"
+    "You open the door, greet him, and ask him inColor": "green"
   },
   "kylaUusi": {
     "question": "Your acquaintance will ring your doorbell a few more times and is about to leave.",
@@ -187,15 +184,12 @@
     "fore": "fore_8",
     "answers": [
       "You still don’t open the door and let him leave",
-      "You finally open the door, greet him, and ask him in",
-      "You finally open the door and order him to come in"
+      "You finally open the door, greet him, and ask him in"
     ],
     "You still don’t open the door and let him leave": "null",
     "You finally open the door, greet him, and ask him in": "kylaSisalla",
-    "You finally open the door and order him to come in": "kylaSisalla",
     "You still don’t open the door and let him leaveColor": "red",
-    "You finally open the door, greet him, and ask him inColor": "green",
-    "You finally open the door and order him to come inColor": "red"
+    "You finally open the door, greet him, and ask him inColor": "green"
   },
   "kylaSisalla": {
     "question": "Your acquaintance comes into your apartment.",
@@ -216,22 +210,31 @@
     "You would have coffee and biscuits, but you don’t want to offer him themColor": "red"
   },
   "tarjoilu": {
-    "question": "Your acquaintance seems to be happy and says that he would like some coffee.",
+    "question": "Your acquaintance seems to be happy and inform you that he would like either coffee, tea, cocoa or juice.",
     "background": "background_10",
     "person": "null",
     "face": "null",
     "fore": "fore_19",
     "answers": [
-      "You don’t want to offer your own coffee, so you send him to the store to buy coffee",
-      "You make and serve him coffee"
+      "You don’t want to offer him your own supplies, so you send him to the store to buy supplies",
+      "You offer him coffee",
+      "You offer him tea",
+      "You offer him cocoa",
+      "You offer him juice"
     ],
-    "You don’t want to offer your own coffee, so you send him to the store to buy coffee": "kauppaKuulumiset",
-    "You make and serve him coffee": "kuulumiset",
-    "You don’t want to offer your own coffee, so you send him to the store to buy coffeeColor": "red",
-    "You make and serve him coffeeColor": "green"
+    "You don’t want to offer him your own supplies, so you send him to the store to buy supplies": "kauppaKuulumiset",
+    "You offer him coffee": "kuulumiset",
+    "You offer him tea": "kuulumiset",
+    "You offer him cocoa": "kuulumiset",
+    "You offer him juice": "kuulumiset",
+    "You don’t want to offer him your own supplies, so you send him to the store to buy suppliesColor": "red",
+    "You offer him coffeeColor": "green",
+    "You offer him teaColor": "green",
+    "You offer him cocoaColor": "green",
+    "You offer him juiceColor": "green"
   },
   "kauppaKuulumiset": {
-    "question": "Your acquaintance is confused, but still goes to the store, after which you offer him coffee.",
+    "question": "Your acquaintance is confused, but still goes to the store, after which you offer him what he wants.",
     "background": "background_10",
     "person": "null",
     "face": "null",
@@ -322,12 +325,12 @@
     "fore": "fore_19",
     "answers": [
       "After telling him how you are doing, you ask him how is he doing",
-      "After telling him how you are doing, you ask him to leave"
+      "After telling him how you are doing, you don't ask how he is doing, but you ask him to leave"
     ],
     "After telling him how you are doing, you ask him how is he doing": "tuttavaKuulumisetJatko",
-    "After telling him how you are doing, you ask him to leave": "alkuPoistuminen",
+    "After telling him how you are doing, you don't ask how he is doing, but you ask him to leave": "alkuPoistuminen",
     "After telling him how you are doing, you ask him how is he doingColor": "green",
-    "After telling him how you are doing, you ask him to leaveColor": "red"
+    "After telling him how you are doing, you don't ask how he is doing, but you ask him to leaveColor": "red"
   },
   "tuttavaKuulumisetJatko": {
     "question": "After talking for a while, your acquaintance asks if you would like to go to the movies with him.",
