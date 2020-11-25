@@ -144,7 +144,7 @@
     "Menet vastahakoisesti käytäväpaikalleColor": "green"
   },
   "Ikkunapaikka keskustelu": {
-    "question": "Bussissa vierustoverin kanssa keskusteltuasi päättelet, että sinä jäät bussista pois ennen häntä. Miten toimit?",
+    "question": "Keskusteltuasi vierustoverisi kanssa päättelet, että sinä jäät bussista pois ennen häntä. Miten toimit?",
     "background": "background_5",
     "person": "character_6",
     "face": "face_happy",
@@ -165,27 +165,30 @@
     "face": "face_happy",
     "fore": "null",
     "answers": [
-      "Liikehdit hieman, jotta vierustoveri ymmärtäisi, että tahdot jäädä pois bussista",
-      "Sanot vieressä istuvalle, että jäät seuraavalla pysäkillä pois",
-      "Istut paikoillasi ja annat bussin ajaa oman pysäkkisi ohi"
+      "Liikehdit hieman, jotta vierustoverisi ymmärtäisi, että tahdot jäädä pois bussista",
+      "Sanot vieressäsi istuvalle henkilölle, että jäät seuraavalla pysäkillä pois",
+      "Istut paikoillasi ja annat bussin ajaa oman pysäkkisi ohitse"
     ],
-    "Liikehdit hieman, jotta vierustoveri ymmärtäisi, että tahdot jäädä pois bussista": "Poistuminen",
-    "Sanot vieressä istuvalle, että jäät seuraavalla pysäkillä pois": "Poistuminen",
-    "Istut paikoillasi ja annat bussin ajaa oman pysäkkisi ohi": "Ohi",
-    "Liikehdit hieman, jotta vierustoveri ymmärtäisi, että tahdot jäädä pois bussistaColor": "yellow",
-    "Sanot vieressä istuvalle, että jäät seuraavalla pysäkillä poisColor": "green",
-    "Istut paikoillasi ja annat bussin ajaa oman pysäkkisi ohiColor": "red"
+    "Liikehdit hieman, jotta vierustoverisi ymmärtäisi, että tahdot jäädä pois bussista": "Poistuminen",
+    "Sanot vieressäsi istuvalle henkilölle, että jäät seuraavalla pysäkillä pois": "Poistuminen",
+    "Istut paikoillasi ja annat bussin ajaa oman pysäkkisi ohitse": "Ohi",
+    "Liikehdit hieman, jotta vierustoverisi ymmärtäisi, että tahdot jäädä pois bussistaColor": "yellow",
+    "Sanot vieressäsi istuvalle henkilölle, että jäät seuraavalla pysäkillä poisColor": "green",
+    "Istut paikoillasi ja annat bussin ajaa oman pysäkkisi ohitseColor": "red"
   },
   "Ohi": {
-    "question": "Vieressä istuva henkilö jää pois bussista, joten pääset itsekin poistumaan kyydistä.",
+    "question": "Vieressäsi istuva henkilö jää pois bussista.",
     "background": "background_5",
     "person": "null",
     "face": "null",
     "fore": "fore_1",
     "answers": [
-      "Poistut bussista"
+      "Poistut itsekin kyydistä",
+      "Matkustat päätepysäkille saakka ja jäät pois kyydistä vasta, kun kuski kehottaa sinua poistumaan"
     ],
-    "Poistut bussista": "null",
-    "Poistut bussistaColor": "green"
+    "Poistut itsekin kyydistä": "null",
+    "Matkustat päätepysäkille saakka ja jäät pois kyydistä vasta, kun kuski kehottaa sinua poistumaan": "null",
+    "Poistut itsekin kyydistäColor": "green",
+    "Matkustat päätepysäkille saakka ja jäät pois kyydistä vasta, kun kuski kehottaa sinua poistumaanColor": "red"
   }
 }

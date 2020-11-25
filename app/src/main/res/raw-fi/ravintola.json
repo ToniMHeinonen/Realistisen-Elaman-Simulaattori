@@ -6,22 +6,22 @@
     "face": "face_confused",
     "fore": "null",
     "answers": [
-      "Etsin puhelimella sopivan",
-      "Menen tuttuni suosittelemaan ravintolaan",
-      "Tiedän jo, minne menen",
-      "Menen kadulle kyselemään kaikilta vastaantulevilta mielipidettä"
+      "Etsit suosituksia puhelimellasi",
+      "Menet tuttusi suosittelemaan ravintolaan",
+      "Tiedät jo, minne haluat mennä",
+      "Menet kadulle kyselemään vastaantulijoiden mielipiteitä"
     ],
-    "Etsin puhelimella sopivan": "saapuminen",
-    "Menen tuttuni suosittelemaan ravintolaan": "saapuminen",
-    "Tiedän jo, minne menen": "saapuminen",
-    "Menen kadulle kyselemään kaikilta vastaantulevilta mielipidettä": "saapuminen",
-    "Etsin puhelimella sopivanColor": "green",
-    "Menen tuttuni suosittelemaan ravintolaanColor": "green",
-    "Tiedän jo, minne menenColor": "green",
-    "Menen kadulle kyselemään kaikilta vastaantulevilta mielipidettäColor": "yellow"
+    "Etsit suosituksia puhelimellasi": "saapuminen",
+    "Menet tuttusi suosittelemaan ravintolaan": "saapuminen",
+    "Tiedät jo, minne haluat mennä": "saapuminen",
+    "Menet kadulle kyselemään vastaantulijoiden mielipiteitä": "saapuminen",
+    "Etsit suosituksia puhelimellasiColor": "green",
+    "Menet tuttusi suosittelemaan ravintolaanColor": "green",
+    "Tiedät jo, minne haluat mennäColor": "green",
+    "Menet kadulle kyselemään vastaantulijoiden mielipiteitäColor": "yellow"
   },
   "saapuminen": {
-    "question": "Onko ravintolassa pöytiintarjoilu?",
+    "question": "Onko valitsemassasi ravintolassa pöytiintarjoilu?",
     "background": "background_5",
     "person": "character_6",
     "face": "face_surprised",
@@ -29,17 +29,17 @@
     "answers": [
       "On",
       "Ei",
-      "Ihan sama, lähden pois, sillä en pidä ihmisistä",
-      "En tiedä, joten kysyn tarjoilijalta"
+      "Ihan sama, lähdet pois, koska et pidä ihmisistä",
+      "Et tiedä, joten kysyt tarjoilijalta"
     ],
     "On": "ohjaus",
     "Ei": "menen",
-    "Ihan sama, lähden pois, sillä en pidä ihmisistä": "null",
-    "En tiedä, joten kysyn tarjoilijalta": "saapuminen",
+    "Ihan sama, lähdet pois, koska et pidä ihmisistä": "null",
+    "Et tiedä, joten kysyt tarjoilijalta": "saapuminen",
     "OnColor": "green",
     "EiColor": "green",
-    "Ihan sama, lähden pois, sillä en pidä ihmisistäColor": "red",
-    "En tiedä, joten kysyn tarjoilijaltaColor": "green"
+    "Ihan sama, lähdet pois, koska et pidä ihmisistäColor": "red",
+    "Et tiedä, joten kysyt tarjoilijaltaColor": "green"
   },
   "ohjaus": {
     "question": "Odotatko, että joku ohjaa sinut pöytään?",
@@ -49,27 +49,27 @@
     "fore": "null",
     "answers": [
       "Kyllä",
-      "En, vaan menen itse pöytään"
+      "Et, vaan valitset itse pöydän ja menet istumaan"
     ],
     "Kyllä": "haku",
-    "En, vaan menen itse pöytään": "huomautus",
+    "Et, vaan valitset itse pöydän ja menet istumaan": "huomautus",
     "KylläColor": "green",
-    "En, vaan menen itse pöytäänColor": "red"
+    "Et, vaan valitset itse pöydän ja menet istumaanColor": "red"
   },
   "menen": {
-    "question": "Menet pöytään, kuinka ilmoitat tarjoilijalle haluavasi tilata?",
+    "question": "Menet pöytään istumaan. Miten ilmoitat tarjoilijalle haluavasi tilata?",
     "background": "background_5",
     "person": "character_6",
     "face": "face_uncomfortable",
     "fore": "null",
     "answers": [
-      "Katson tarjoilijaa kysyvästi",
-      "Koitan kerätä niin vähän huomiota kuin vain mahdollista"
+      "Katsot tarjoilijaa kysyvästi",
+      "Yrität herättää niin vähän huomiota kuin vain mahdollista"
     ],
-    "Katson tarjoilijaa kysyvästi": "tilaus",
-    "Koitan kerätä niin vähän huomiota kuin vain mahdollista": "odotus",
-    "Katson tarjoilijaa kysyvästiColor": "green",
-    "Koitan kerätä niin vähän huomiota kuin vain mahdollistaColor": "yellow"
+    "Katsot tarjoilijaa kysyvästi": "tilaus",
+    "Yrität herättää niin vähän huomiota kuin vain mahdollista": "odotus",
+    "Katsot tarjoilijaa kysyvästiColor": "green",
+    "Yrität herättää niin vähän huomiota kuin vain mahdollistaColor": "yellow"
   },
   "haku": {
     "question": "Tarjoilija tulee ja pyytää, että seuraat häntä pöytään.",
@@ -78,67 +78,67 @@
     "face": "face_uncomfortable",
     "fore": "null",
     "answers": [
-      "Seuraan pöytään, johon tarjoilija ohjaa minut",
-      "En seuraa"
+      "Seuraat tarjoilijaa pöytään, johon hän ohjaa sinut",
+      "Et seuraa tarjoilijaa, vaan lähdet pois"
     ],
-    "Seuraan pöytään, johon tarjoilija ohjaa minut": "tilaus",
-    "En seuraa": "null",
-    "Seuraan pöytään, johon tarjoilija ohjaa minutColor": "green",
-    "En seuraaColor": "red"
+    "Seuraat tarjoilijaa pöytään, johon hän ohjaa sinut": "tilaus",
+    "Et seuraa tarjoilijaa, vaan lähdet pois": "null",
+    "Seuraat tarjoilijaa pöytään, johon hän ohjaa sinutColor": "green",
+    "Et seuraa tarjoilijaa, vaan lähdet poisColor": "red"
   },
   "huomautus": {
-    "question": "Sinulle huomautetaan asiasta, miten toimit?",
+    "question": "Sinulle huomautetaan, että ravintolassa pitäisi odottaa pöytäänohjausta. Miten toimit?",
     "background": "background_5",
     "person": "character_6",
     "face": "face_uncomfortable",
     "fore": "null",
     "answers": [
-      "Seuraan ohjeita",
-      "Teen niin kuin itse haluan"
+      "Seuraat ohjeita",
+      "Teet niin kuin itse haluat"
     ],
-    "Seuraan ohjeita": "tilaus",
-    "Teen niin kuin itse haluan": "null",
-    "Seuraan ohjeitaColor": "green",
-    "Teen niin kuin itse haluanColor": "red"
+    "Seuraat ohjeita": "tilaus",
+    "Teet niin kuin itse haluat": "null",
+    "Seuraat ohjeitaColor": "green",
+    "Teet niin kuin itse haluatColor": "red"
   },
   "tilaus": {
-    "question": "Tarjoilija tulee tiedustelemaan, että mitä tilaat.",
+    "question": "Tarjoilija tulee tiedustelemaan, mitä haluaisit tilata.",
     "background": "background_5",
     "person": "character_6",
     "face": "face_surprised",
     "fore": "null",
     "answers": [
-      "Kerron tilauksen",
-      "Kysyn, mitä hän suosittelee, ja päätän sitten mitä tilaan",
-      "Haukun ruokalistan sisältöä"
+      "Kerrot tilauksesi",
+      "Kysyt, mitä tarjoilija suosittelee, ja päätät sitten, mitä tilaat",
+      "Haukut ruokalistan sisältöä"
     ],
-    "Kerron tilauksen": "tilattu",
-    "Kysyn, mitä hän suosittelee, ja päätän sitten mitä tilaan": "tilattu",
-    "Haukun ruokalistan sisältöä": "tilaus",
-    "Kerron tilauksenColor": "green",
-    "Kysyn, mitä hän suosittelee, ja päätän sitten mitä tilaanColor": "green",
-    "Haukun ruokalistan sisältöäColor": "red"
+    "Kerrot tilauksesi": "tilattu",
+    "Kysyt, mitä tarjoilija suosittelee, ja päätät sitten, mitä tilaat": "tilattu",
+    "Haukut ruokalistan sisältöä": "tilaus",
+    "Kerrot tilauksesiColor": "green",
+    "Kysyt, mitä tarjoilija suosittelee, ja päätät sitten, mitä tilaatColor": "green",
+    "Haukut ruokalistan sisältöäColor": "red"
   },
   "odotus": {
-    "question": "Tarjoilija huomaa sinut pitkän odottelun jälkeen ja tulee kysymään tilausta",
+    "question": "Tarjoilija huomaa sinut pitkän odottelun jälkeen ja tulee kysymään tilaustasi. Mitä teet?",
     "background": "background_5",
     "person": "character_6",
     "face": "face_surprised",
     "fore": "null",
     "answers": [
-      "Haukun tarjoilijaa ja palvelun hitautta",
-      "Kerron tilauksen",
-      "Kysyn, mitä hän suosittelee, ja päätän sitten mitä tilaan",
-      "Haukun ruokalistan sisältöä"
+      "Haukut tarjoilijaa ja palvelun hitautta",
+      "Kerrot tilauksesi",
+      "Kysyt tarjoilijalta, mitä hän suosittelee, ja päätät sitten, mitä tilaat",
+      "Haukut ruokalistan sisältöä"
     ],
-    "Haukun tarjoilijaa ja palvelun hitautta": "odotus",
-    "Kerron tilauksen": "tilattu",
-    "Kysyn, mitä hän suosittelee, ja päätän sitten mitä tilaan": "tilattu",
-    "Haukun ruokalistan sisältöä": "tilaus",
-    "Haukun tarjoilijaa ja palvelun hitauttaColor": "red",
-    "Kerron tilauksenColor": "green",
-    "Kysyn, mitä hän suosittelee, ja päätän sitten mitä tilaanColor": "green",
-    "Haukun ruokalistan sisältöäColor": "red"
+    "Haukut tarjoilijaa ja palvelun hitautta": "odotus",
+    "Kerrot tilauksesi": "tilattu",
+    "Kysyt tarjoilijalta, mitä hän suosittelee, ja päätät sitten, mitä tilaat": "tilattu",
+    "Haukut ruokalistan sisältöä": "tilaus",
+    "Haukut tarjoilijaa ja palvelun hitauttaColor": "red",
+    "Kerrot tilauksesiColor": "green",
+    "Kysyt tarjoilijalta, mitä hän suosittelee, ja päätät sitten, mitä tilaatColor": "green",
+    "Haukut ruokalistan sisältöäColor": "red"
   },
   "tilattu": {
     "question": "Ruoka tulee pöytään. Miten toimit?",
@@ -147,36 +147,36 @@
     "face": "face_happy",
     "fore": "fore_6",
     "answers": [
-      "Leikin ruoalla ja lähden pois",
-      "Syön asiallisesti ja odotan tarjoilijaa sen jälkeen",
-      "Syön asiallisesti ja lähden maksamatta",
-      "Syön, käyn maksamassa tiskille ruuan ja poistun ravintolasta"
+      "Leikit ruoalla ja lähdet pois",
+      "Syöt asiallisesti ja odotat sen jälkeen tarjoilijaa",
+      "Syöt asiallisesti ja lähdet kotiin maksamatta",
+      "Syöt, käyt maksamassa ruuan tiskille ja poistut ravintolasta"
     ],
-    "Leikin ruoalla ja lähden pois": "null",
-    "Syön asiallisesti ja odotan tarjoilijaa sen jälkeen": "syoty",
-    "Syön asiallisesti ja lähden maksamatta": "null",
-    "Syön, käyn maksamassa tiskille ruuan ja poistun ravintolasta": "null",
-    "Leikin ruoalla ja lähden poisColor": "red",
-    "Syön asiallisesti ja odotan tarjoilijaa sen jälkeenColor": "green",
-    "Syön asiallisesti ja lähden maksamattaColor": "red",
-    "Syön, käyn maksamassa tiskille ruuan ja poistun ravintolastaColor": "green"
+    "Leikit ruoalla ja lähdet pois": "null",
+    "Syöt asiallisesti ja odotat sen jälkeen tarjoilijaa": "syoty",
+    "Syöt asiallisesti ja lähdet kotiin maksamatta": "null",
+    "Syöt, käyt maksamassa ruuan tiskille ja poistut ravintolasta": "null",
+    "Leikit ruoalla ja lähdet poisColor": "red",
+    "Syöt asiallisesti ja odotat sen jälkeen tarjoilijaaColor": "green",
+    "Syöt asiallisesti ja lähdet kotiin maksamattaColor": "red",
+    "Syöt, käyt maksamassa ruuan tiskille ja poistut ravintolastaColor": "green"
   },
   "syoty": {
-    "question": "Tarjoilija tulee ja siivoaa pöytää.",
+    "question": "Tarjoilija tulee ja kerää astiasi pois.",
     "background": "background_5",
     "person": "character_6",
     "face": "face_happy",
     "fore": "fore_6",
     "answers": [
       "Tiedustelet laskua",
-      "Haukut kaikkea",
+      "Haukut ravintolaa",
       "Tilaat vielä jälkiruoan"
     ],
     "Tiedustelet laskua": "maksettu",
-    "Haukut kaikkea": "maksettu",
+    "Haukut ravintolaa": "maksettu",
     "Tilaat vielä jälkiruoan": "tilattu",
     "Tiedustelet laskuaColor": "green",
-    "Haukut kaikkeaColor": "red",
+    "Haukut ravintolaaColor": "red",
     "Tilaat vielä jälkiruoanColor": "green"
   },
   "maksettu": {
@@ -186,15 +186,18 @@
     "face": "face_happy",
     "fore": "null",
     "answers": [
-      "Kehun ruuan tasoa tarjoilijalle ja poistun ravintolasta",
-      "Haukun ruuan tasoa tarjoilijalle ja poistun ravintolasta",
-      "Poistun ravintolasta sanomatta sanaakaan"
+      "Kehut ruoan tasoa tarjoilijalle ja poistut ravintolasta",
+      "Haukut ruoan tasoa tarjoilijalle ja poistut ravintolasta",
+      "Kiität tarjoilijaa ja poistut ravintolasta",
+      "Poistut ravintolasta sanomatta sanaakaan"
     ],
-    "Kehun ruuan tasoa tarjoilijalle ja poistun ravintolasta": "null",
-    "Haukun ruuan tasoa tarjoilijalle ja poistun ravintolasta": "null",
-    "Poistun ravintolasta sanomatta sanaakaan": "null",
-    "Kehun ruuan tasoa tarjoilijalle ja poistun ravintolastaColor": "green",
-    "Haukun ruuan tasoa tarjoilijalle ja poistun ravintolastaColor": "red",
-    "Poistun ravintolasta sanomatta sanaakaanColor": "yellow"
+    "Kehut ruoan tasoa tarjoilijalle ja poistut ravintolasta": "null",
+    "Haukut ruoan tasoa tarjoilijalle ja poistut ravintolasta": "null",
+    "Kiität tarjoilijaa ja poistut ravintolasta": "null",
+    "Poistut ravintolasta sanomatta sanaakaan": "null",
+    "Kehut ruoan tasoa tarjoilijalle ja poistut ravintolastaColor": "green",
+    "Haukut ruoan tasoa tarjoilijalle ja poistut ravintolastaColor": "red",
+    "Kiität tarjoilijaa ja poistut ravintolastaColor": "green",
+    "Poistut ravintolasta sanomatta sanaakaanColor": "yellow"
   }
 }

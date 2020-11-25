@@ -1,127 +1,127 @@
 {
   "first": {
-    "question": "Mikä on alkutilanne?",
+    "question": "Mitä aiot tehdä kirjastossa?",
     "background": "background_1",
     "person": "character_1",
-    "fore": "null",
     "face": "face_happy",
+    "fore": "null",
     "answers": [
-      "Aion palauttaa kirjan",
-      "Otan kirjastokortin mukaan ja aion lainata kirjan",
-      "Otan kirjastokortin mukaan ja aion noutaa varauksen"
+      "Aiot palauttaa kirjan",
+      "Aiot lainata kirjan ja sinulla on kirjastokortti mukanasi",
+      "Aiot noutaa varauksen ja sinulla on kirjastokortti mukanasi"
     ],
-    "Aion palauttaa kirjan": "palautus",
-    "Otan kirjastokortin mukaan ja aion lainata kirjan": "etsinta",
-    "Otan kirjastokortin mukaan ja aion noutaa varauksen": "varaus",
-    "Aion palauttaa kirjanColor": "green",
-    "Otan kirjastokortin mukaan ja aion lainata kirjanColor": "green",
-    "Otan kirjastokortin mukaan ja aion noutaa varauksenColor": "green"
+    "Aiot palauttaa kirjan": "palautus",
+    "Aiot lainata kirjan ja sinulla on kirjastokortti mukanasi": "etsinta",
+    "Aiot noutaa varauksen ja sinulla on kirjastokortti mukanasi": "varaus",
+    "Aiot palauttaa kirjanColor": "green",
+    "Aiot lainata kirjan ja sinulla on kirjastokortti mukanasiColor": "green",
+    "Aiot noutaa varauksen ja sinulla on kirjastokortti mukanasiColor": "green"
   },
   "palautus": {
-    "question": "Mitä teet ensimmäisenä, kun menet sisälle?",
+    "question": "Mitä teet ensimmäisenä, kun menet sisään kirjastoon?",
     "background": "background_1",
     "person": "character_1",
-    "fore": "null",
     "face": "face_uncomfortable",
+    "fore": "null",
     "answers": [
-      "Etsin palautuspisteen ja vien lainaamani kirjat sinne",
-      "Kysyn neuvoa kirjastonhoitajalta",
-      "Lähden pois"
+      "Etsit palautuspisteen ja viet lainaamasi kirjat sinne",
+      "Kysyt neuvoa kirjastonhoitajalta",
+      "Lähdet pois"
     ],
-    "Etsin palautuspisteen ja vien lainaamani kirjat sinne": "ongelma",
-    "Kysyn neuvoa kirjastonhoitajalta": "palautettu",
-    "Lähden pois": "pois",
-    "Etsin palautuspisteen ja vien lainaamani kirjat sinneColor": "green",
-    "Kysyn neuvoa kirjastonhoitajaltaColor": "green",
-    "Lähden poisColor": "red"
+    "Etsit palautuspisteen ja viet lainaamasi kirjat sinne": "ongelma",
+    "Kysyt neuvoa kirjastonhoitajalta": "palautettu",
+    "Lähdet pois": "pois",
+    "Etsit palautuspisteen ja viet lainaamasi kirjat sinneColor": "green",
+    "Kysyt neuvoa kirjastonhoitajaltaColor": "green",
+    "Lähdet poisColor": "red"
   },
   "etsinta": {
     "question": "Miten etsit haluamasi kirjan?",
     "background": "background_6",
     "person": "character_1",
-    "fore": "null",
     "face": "face_happy",
+    "fore": "null",
     "answers": [
-      "Lähden heti pois",
-      "Kysyn kirjastonhoitajalta",
-      "Etsin alueen ja kategorian mukaan",
-      "Käytän tietokonetta"
+      "Et mitenkään, vaan lähdet heti pois",
+      "Kysyt kirjastonhoitajalta",
+      "Etsit alueen ja kategorian mukaan",
+      "Käytät tietokonetta"
     ],
-    "Lähden heti pois": "pois",
-    "Kysyn kirjastonhoitajalta": "kirja",
-    "Etsin alueen ja kategorian mukaan": "kirja",
-    "Käytän tietokonetta": "kirja",
-    "Lähden heti poisColor": "red",
-    "Kysyn kirjastonhoitajaltaColor": "green",
-    "Etsin alueen ja kategorian mukaanColor": "green",
-    "Käytän tietokonettaColor": "green"
+    "Et mitenkään, vaan lähdet heti pois": "pois",
+    "Kysyt kirjastonhoitajalta": "kirja",
+    "Etsit alueen ja kategorian mukaan": "kirja",
+    "Käytät tietokonetta": "kirja",
+    "Et mitenkään, vaan lähdet heti poisColor": "red",
+    "Kysyt kirjastonhoitajaltaColor": "green",
+    "Etsit alueen ja kategorian mukaanColor": "green",
+    "Käytät tietokonettaColor": "green"
   },
   "varaus": {
-    "question": "Olet varannut netistä etukäteen kirjan, jonka jälkeen sait tekstiviestin, jossa kerrotaan, että kirja on valmiina varaukset-hyllyllä.",
+    "question": "Olet varannut netistä etukäteen kirjan, minkä jälkeen sait tekstiviestin, jossa kerrottiin, että kirja on valmiina varaukset-hyllyssä. Mitä teet?",
     "background": "background_1",
     "person": "character_1",
-    "fore": "null",
     "face": "face_confused",
+    "fore": "null",
     "answers": [
-      "Menen kysymään kirjastonhoitajalta neuvoa",
-      "Menen varaukset-hyllylle",
-      "Lähden pois"
+      "Menet kysymään kirjastonhoitajalta neuvoa",
+      "Menet varaukset-hyllylle",
+      "Lähdet pois"
     ],
-    "Menen kysymään kirjastonhoitajalta neuvoa": "noukittu",
-    "Menen varaukset-hyllylle": "nouki",
-    "Lähden pois": "pois",
-    "Menen kysymään kirjastonhoitajalta neuvoaColor": "green",
-    "Menen varaukset-hyllylleColor": "green",
-    "Lähden poisColor": "red"
+    "Menet kysymään kirjastonhoitajalta neuvoa": "noukittu",
+    "Menet varaukset-hyllylle": "nouki",
+    "Lähdet pois": "pois",
+    "Menet kysymään kirjastonhoitajalta neuvoaColor": "green",
+    "Menet varaukset-hyllylleColor": "green",
+    "Lähdet poisColor": "red"
   },
   "pois": {
     "question": "Miten menet kotiin?",
     "background": "background_5",
     "person": "character_1",
-    "fore": "null",
     "face": "face_confused",
+    "fore": "null",
     "answers": [
       "Kävellen",
       "Autolla",
       "Bussilla",
-      "Et poistu, vaikka kirjasto on jo menemässä kiinni"
+      "Et lähde pois, vaikka kirjasto on jo menossa kiinni"
     ],
     "Kävellen": "null",
     "Autolla": "null",
     "Bussilla": "null",
-    "Et poistu, vaikka kirjasto on jo menemässä kiinni": "null",
+    "Et lähde pois, vaikka kirjasto on jo menossa kiinni": "null",
     "KävellenColor": "green",
     "AutollaColor": "green",
     "BussillaColor": "green",
-    "Et poistu, vaikka kirjasto on jo menemässä kiinniColor": "red"
+    "Et lähde pois, vaikka kirjasto on jo menossa kiinniColor": "red"
   },
   "ongelma": {
     "question": "Palautus on itsepalvelu. Miten toimit?",
     "background": "background_1",
     "person": "character_1",
-    "fore": "null",
     "face": "face_uncomfortable",
+    "fore": "null",
     "answers": [
-      "Leimaan palautuksen ja laitan sen palautushyllyyn",
-      "Lähden pois",
-      "Kysyn neuvoa joltain",
-      "Odotan, että näen miten joku muu hoitaa palautuksen"
+      "Leimaat palautuksen ja laitat sen palautushyllyyn",
+      "Lähdet pois",
+      "Kysyt neuvoa joltakulta",
+      "Odotat, että näet miten joku muu hoitaa palautuksen"
     ],
-    "Leimaan palautuksen ja laitan sen palautushyllyyn": "palautettu",
-    "Lähden pois": "pois",
-    "Kysyn neuvoa joltain": "palautettu",
-    "Odotan, että näen miten joku muu hoitaa palautuksen": "palautettu",
-    "Leimaan palautuksen ja laitan sen palautushyllyynColor": "green",
-    "Lähden poisColor": "red",
-    "Kysyn neuvoa joltainColor": "green",
-    "Odotan, että näen miten joku muu hoitaa palautuksenColor": "yellow"
+    "Leimaat palautuksen ja laitat sen palautushyllyyn": "palautettu",
+    "Lähdet pois": "pois",
+    "Kysyt neuvoa joltakulta": "palautettu",
+    "Odotat, että näet miten joku muu hoitaa palautuksen": "palautettu",
+    "Leimaat palautuksen ja laitat sen palautushyllyynColor": "green",
+    "Lähdet poisColor": "red",
+    "Kysyt neuvoa joltakultaColor": "green",
+    "Odotat, että näet miten joku muu hoitaa palautuksenColor": "yellow"
   },
   "palautettu": {
     "question": "Mitä teet sitten?",
     "background": "background_6",
     "person": "character_1",
-    "fore": "null",
     "face": "face_happy",
+    "fore": "null",
     "answers": [
       "Lainaan jotain",
       "Lähden pois"
@@ -132,98 +132,98 @@
     "Lähden poisColor": "green"
   },
   "kirja": {
-    "question": "Löysit sopivan kirjan. Miten lainaat sen?",
+    "question": "Löydät sopivan kirjan. Miten lainaat sen?",
     "background": "background_6",
     "person": "character_1",
-    "fore": "null",
     "face": "face_uncomfortable",
+    "fore": "null",
     "answers": [
-      "Käytän itsepalvelua",
-      "Pyydän kirjastonhoitajalta apua",
-      "Laitan kirjan takaisin ja lähden pois"
+      "Käytät itsepalvelua",
+      "Pyydät kirjastonhoitajalta apua",
+      "Laitat kirjan takaisin ja lähdet pois"
     ],
-    "Käytän itsepalvelua": "itse",
-    "Pyydän kirjastonhoitajalta apua": "apulaina",
-    "Laitan kirjan takaisin ja lähden pois": "pois",
-    "Käytän itsepalveluaColor": "green",
-    "Pyydän kirjastonhoitajalta apuaColor": "green",
-    "Laitan kirjan takaisin ja lähden poisColor": "yellow"
+    "Käytät itsepalvelua": "itse",
+    "Pyydät kirjastonhoitajalta apua": "apulaina",
+    "Laitat kirjan takaisin ja lähdet pois": "pois",
+    "Käytät itsepalveluaColor": "green",
+    "Pyydät kirjastonhoitajalta apuaColor": "green",
+    "Laitat kirjan takaisin ja lähdet poisColor": "yellow"
   },
   "itse": {
-    "question": "Mitä teet laina-automaatilla ensimmäisenä?",
+    "question": "Mitä teet ensimmäiseksi laina-automaatilla?",
     "background": "background_1",
     "person": "character_1",
-    "fore": "null",
     "face": "face_confused",
+    "fore": "null",
     "answers": [
-      "Annan kirjastokortin automaatille ja näpyttelen tunnusluvun",
-      "Odotan, että näen miten muut toimii",
-      "Kysyn apua"
+      "Laitat kirjastokortin automaattiin ja näpyttelet tunnusluvun",
+      "Odotat, että näet, miten muut asiakkaat toimivat",
+      "Kysyt apua"
     ],
-    "Annan kirjastokortin automaatille ja näpyttelen tunnusluvun": "tokavaihe",
-    "Odotan, että näen miten muut toimii": "hoidettu",
-    "Kysyn apua": "hoidettu",
-    "Annan kirjastokortin automaatille ja näpyttelen tunnusluvunColor": "green",
-    "Odotan, että näen miten muut toimiiColor": "yellow",
-    "Kysyn apuaColor": "green"
+    "Laitat kirjastokortin automaattiin ja näpyttelet tunnusluvun": "tokavaihe",
+    "Odotat, että näet, miten muut asiakkaat toimivat": "hoidettu",
+    "Kysyt apua": "hoidettu",
+    "Laitat kirjastokortin automaattiin ja näpyttelet tunnusluvunColor": "green",
+    "Odotat, että näet, miten muut asiakkaat toimivatColor": "yellow",
+    "Kysyt apuaColor": "green"
   },
   "apulaina": {
     "question": "Kirjastonhoitaja neuvoo käyttämään automaattia.",
     "background": "background_1",
     "person": "character_4",
-    "fore": "fore_4",
     "face": "face_happy",
+    "fore": "fore_4",
     "answers": [
-      "Pyydän apua automaatin käytössä",
-      "Kerron, etten kykene käyttämään automaattia ja tarkennan asiaa",
-      "En lainaa mitään vaan lähden pois"
+      "Pyydät apua automaatin käytössä",
+      "Selität, ettet kykene käyttämään automaattia",
+      "Et lainaa mitään vaan lähdet pois"
     ],
-    "Pyydän apua automaatin käytössä": "hoidettu",
-    "Kerron, etten kykene käyttämään automaattia ja tarkennan asiaa": "hoidettu",
-    "En lainaa mitään vaan lähden pois": "pois",
-    "Pyydän apua automaatin käytössäColor": "green",
-    "Kerron, etten kykene käyttämään automaattia ja tarkennan asiaaColor": "green",
-    "En lainaa mitään vaan lähden poisColor": "red"
+    "Pyydät apua automaatin käytössä": "hoidettu",
+    "Selität, ettet kykene käyttämään automaattia": "hoidettu",
+    "Et lainaa mitään vaan lähdet pois": "pois",
+    "Pyydät apua automaatin käytössäColor": "green",
+    "Selität, ettet kykene käyttämään automaattiaColor": "green",
+    "Et lainaa mitään vaan lähdet poisColor": "red"
   },
   "tokavaihe": {
-    "question": "Olet näpytellyt luvut. Miten etenet?",
+    "question": "Olet näpytellyt tunnusluvun. Miten etenet?",
     "background": "background_1",
     "person": "character_1",
-    "fore": "fore_4",
     "face": "face_happy",
+    "fore": "fore_4",
     "answers": [
-      "Lainaan kirjat viemällä ne yksitellen lukijasta niin, että automaatti ilmoittaa kaikkien olevan lainauslistalla",
+      "Lainaat kirjat viemällä ne yksitellen lukijasta niin, että automaatti ilmoittaa kaikkien olevan lainauslistalla",
       "Automaatti ilmoittaa ongelmasta",
-      "En lainaa mitään vaan lähden pois"
+      "Et lainaa mitään, vaan lähdet pois"
     ],
-    "Lainaan kirjat viemällä ne yksitellen lukijasta niin, että automaatti ilmoittaa kaikkien olevan lainauslistalla": "kolmas",
+    "Lainaat kirjat viemällä ne yksitellen lukijasta niin, että automaatti ilmoittaa kaikkien olevan lainauslistalla": "kolmas",
     "Automaatti ilmoittaa ongelmasta": "automaatti",
-    "En lainaa mitään vaan lähden pois": "pois",
-    "Lainaan kirjat viemällä ne yksitellen lukijasta niin, että automaatti ilmoittaa kaikkien olevan lainauslistallaColor": "green",
+    "Et lainaa mitään, vaan lähdet pois": "pois",
+    "Lainaat kirjat viemällä ne yksitellen lukijasta niin, että automaatti ilmoittaa kaikkien olevan lainauslistallaColor": "green",
     "Automaatti ilmoittaa ongelmastaColor": "green",
-    "En lainaa mitään vaan lähden poisColor": "red"
+    "Et lainaa mitään, vaan lähdet poisColor": "red"
   },
   "automaatti": {
     "question": "Automaatti ilmoittaa ongelmasta. Miten toimit?",
     "background": "background_1",
     "person": "character_1",
-    "fore": "null",
     "face": "face_sad",
+    "fore": "null",
     "answers": [
-      "Pyydän apua kirjastonhoitajalta, jonka jälkeen saan lainattua loputkin",
-      "En lainaa mitään vaan lähden pois"
+      "Pyydät apua kirjastonhoitajalta, minkä jälkeen saat lainattua loputkin kirjat",
+      "Et lainaa mitään, vaan lähdet pois"
     ],
-    "Pyydän apua kirjastonhoitajalta, jonka jälkeen saan lainattua loputkin": "hoidettu",
-    "En lainaa mitään vaan lähden pois": "pois",
-    "Pyydän apua kirjastonhoitajalta, jonka jälkeen saan lainattua loputkinColor": "green",
-    "En lainaa mitään vaan lähden poisColor": "red"
+    "Pyydät apua kirjastonhoitajalta, minkä jälkeen saat lainattua loputkin kirjat": "hoidettu",
+    "Et lainaa mitään, vaan lähdet pois": "pois",
+    "Pyydät apua kirjastonhoitajalta, minkä jälkeen saat lainattua loputkin kirjatColor": "green",
+    "Et lainaa mitään, vaan lähdet poisColor": "red"
   },
   "kolmas": {
     "question": "Tuleeko lainauksen aikana ongelmia?",
     "background": "background_1",
     "person": "character_1",
-    "fore": "null",
     "face": "face_happy",
+    "fore": "null",
     "answers": [
       "Kyllä",
       "Ei"
@@ -237,66 +237,66 @@
     "question": "Mitä teet tämän jälkeen?",
     "background": "background_1",
     "person": "character_1",
-    "fore": "null",
     "face": "face_happy",
+    "fore": "null",
     "answers": [
-      "Lähden pois",
-      "Palautan lainat heti takaisin"
+      "Lähdet pois",
+      "Palautat lainat heti takaisin"
     ],
-    "Lähden pois": "pois",
-    "Palautan lainat heti takaisin": "palautus",
-    "Lähden poisColor": "green",
-    "Palautan lainat heti takaisinColor": "yellow"
+    "Lähdet pois": "pois",
+    "Palautat lainat heti takaisin": "palautus",
+    "Lähdet poisColor": "green",
+    "Palautat lainat heti takaisinColor": "yellow"
   },
   "noukittu": {
     "question": "Mitä teet tämän jälkeen?",
     "background": "background_1",
     "person": "character_1",
-    "fore": "fore_4",
     "face": "face_happy",
+    "fore": "fore_4",
     "answers": [
-      "Etsin lisää lainattavaa",
-      "Lainaan vain varaukset"
+      "Etsit lisää lainattavaa",
+      "Lainaat vain varaamasi kirjat"
     ],
-    "Etsin lisää lainattavaa": "etsinta",
-    "Lainaan vain varaukset": "vain",
-    "Etsin lisää lainattavaaColor": "green",
-    "Lainaan vain varauksetColor": "green"
+    "Etsit lisää lainattavaa": "etsinta",
+    "Lainaat vain varaamasi kirjat": "vain",
+    "Etsit lisää lainattavaaColor": "green",
+    "Lainaat vain varaamasi kirjatColor": "green"
   },
   "vain": {
     "question": "Miten lainaat varaukset?",
     "background": "background_1",
     "person": "character_4",
-    "fore": "fore_4",
     "face": "face_confused",
+    "fore": "fore_4",
     "answers": [
-      "Käytän itsepalvelua",
-      "Pyydän kirjastonhoitajalta apua",
-      "Laitan kirjan takaisin ja lähden pois"
+      "Käytät itsepalvelua",
+      "Pyydät kirjastonhoitajalta apua",
+      "Laitat kirjan takaisin ja lähdet pois"
     ],
-    "Käytän itsepalvelua": "itse",
-    "Pyydän kirjastonhoitajalta apua": "apulaina",
-    "Laitan kirjan takaisin ja lähden pois": "pois",
-    "Käytän itsepalveluaColor": "green",
-    "Pyydän kirjastonhoitajalta apuaColor": "green",
-    "Laitan kirjan takaisin ja lähden poisColor": "yellow"
+    "Käytät itsepalvelua": "itse",
+    "Pyydät kirjastonhoitajalta apua": "apulaina",
+    "Laitat kirjan takaisin ja lähdet pois": "pois",
+    "Käytät itsepalveluaColor": "green",
+    "Pyydät kirjastonhoitajalta apuaColor": "green",
+    "Laitat kirjan takaisin ja lähdet poisColor": "yellow"
   },
   "nouki": {
     "question": "Miten toimit?",
     "background": "background_1",
     "person": "character_1",
-    "fore": "null",
     "face": "face_confused",
+    "fore": "null",
     "answers": [
-      "Etsin varauksen hyllystä ja otan sen",
-      "Pyydän apua etsinnässä",
-      "Otan kaikki itselleni"
+      "Etsit varaamasi kirjan hyllystä ja otat sen",
+      "Pyydät apua etsinnässä",
+      "Otat kaikki hyllyn kirjat itsellesi"
     ],
-    "Etsin varauksen hyllystä ja otan sen": "noukittu",
-    "Pyydän apua etsinnässä": "noukittu",
-    "Otan kaikki itselleni": "null",
-    "Etsin varauksen hyllystä ja otan senColor": "green",
-    "Pyydän apua etsinnässäColor": "green",
-    "Otan kaikki itselleniColor": "red"
+    "Etsit varaamasi kirjan hyllystä ja otat sen": "noukittu",
+    "Pyydät apua etsinnässä": "noukittu",
+    "Otat kaikki hyllyn kirjat itsellesi": "null",
+    "Etsit varaamasi kirjan hyllystä ja otat senColor": "green",
+    "Pyydät apua etsinnässäColor": "green",
+    "Otat kaikki hyllyn kirjat itsellesiColor": "red"
   }
 }
