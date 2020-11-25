@@ -3,8 +3,8 @@
     "question": "Vaatteitasi on kertynyt hujan hajan ympäri asuntoasi.",
     "background": "background_9",
     "person": "character_8",
-    "fore": "null",
     "face": "face_happy",
+    "fore": "null",
     "answers": [
       "Päätät kerätä ja lajitella vaatteet",
       "Vaatteita on helpompi ottaa, kun ne lojuvat ympäri asuntoa, joten annat niiden olla"
@@ -21,49 +21,49 @@
     "face": "face_confused",
     "fore": "null",
     "answers": [
-      "Sekainen asunto on ilo silmälle, joten annat vaatteiden olla, etkä käytä vaatekaappia ollenkaan tästä lähtien",
+      "Sekainen asunto on ilo silmälle, joten annat vaatteiden olla, etkä käytä vaatekaappia tästä lähin ollenkaan",
       "Päätät kerätä ja lajitella vaatteet"
     ],
-    "Sekainen asunto on ilo silmälle, joten annat vaatteiden olla, etkä käytä vaatekaappia ollenkaan tästä lähtien": "null",
+    "Sekainen asunto on ilo silmälle, joten annat vaatteiden olla, etkä käytä vaatekaappia tästä lähin ollenkaan": "null",
     "Päätät kerätä ja lajitella vaatteet": "kysely",
-    "Sekainen asunto on ilo silmälle, joten annat vaatteiden olla, etkä käytä vaatekaappia ollenkaan tästä lähtienColor": "red",
+    "Sekainen asunto on ilo silmälle, joten annat vaatteiden olla, etkä käytä vaatekaappia tästä lähin ollenkaanColor": "red",
     "Päätät kerätä ja lajitella vaatteetColor": "green"
   },
   "kysely": {
-    "question": "Päätät kerätä ja lajitella vaatteet.",
+    "question": "Päätät kerätä ja lajitella vaatteet. Miten toimit?",
     "background": "background_9",
     "person": "character_8",
     "face": "face_happy",
     "fore": "null",
     "answers": [
-      "Keräät vaatteet yhteen kasaan, mutta jätät ne siihen",
-      "Keräät vaatteet aluksi yhteen, josta ne on helpompi lajitella",
-      "Viet suoraan likaisia vaatteita pyykkikoriin ja puhtaita vaatteita vaatekaappiin"
+      "Keräät vaatteet yhteen kasaan ja jätät ne siihen",
+      "Keräät kaikki vaatteet aluksi yhteen paikkaan, jotta ne on helpompi lajitella",
+      "Viet likaisia vaatteita pyykkikoriin ja puhtaita vaatteita vaatekaappiin sitä mukaa, kun keräät niitä lattialta"
     ],
-    "Keräät vaatteet yhteen kasaan, mutta jätät ne siihen": "uusiKysely",
-    "Keräät vaatteet aluksi yhteen, josta ne on helpompi lajitella": "lajittelu",
-    "Viet suoraan likaisia vaatteita pyykkikoriin ja puhtaita vaatteita vaatekaappiin": "kolmas",
-    "Keräät vaatteet yhteen kasaan, mutta jätät ne siihenColor": "red",
-    "Keräät vaatteet aluksi yhteen, josta ne on helpompi lajitellaColor": "green",
-    "Viet suoraan likaisia vaatteita pyykkikoriin ja puhtaita vaatteita vaatekaappiinColor": "green"
+    "Keräät vaatteet yhteen kasaan ja jätät ne siihen": "uusiKysely",
+    "Keräät kaikki vaatteet aluksi yhteen paikkaan, jotta ne on helpompi lajitella": "lajittelu",
+    "Viet likaisia vaatteita pyykkikoriin ja puhtaita vaatteita vaatekaappiin sitä mukaa, kun keräät niitä lattialta": "kolmas",
+    "Keräät vaatteet yhteen kasaan ja jätät ne siihenColor": "red",
+    "Keräät kaikki vaatteet aluksi yhteen paikkaan, jotta ne on helpompi lajitellaColor": "green",
+    "Viet likaisia vaatteita pyykkikoriin ja puhtaita vaatteita vaatekaappiin sitä mukaa, kun keräät niitä lattialtaColor": "green"
   },
   "uusiKysely": {
-    "question": "Aikaa on kulunut, ja vaatekasa lojuu yhä asunnossa.",
+    "question": "Aikaa on kulunut, ja vaatekasa lojuu yhä asunnossasi.",
     "background": "background_9",
     "person": "character_8",
     "face": "face_confused",
     "fore": "null",
     "answers": [
       "Päätät lajitella vaatteet",
-      "Viet kasasta suoraan likaisia vaatteita pyykkikoriin ja puhtaita vaatteita vaatekaappiin",
-      "Vaatekasasta on helppo ottaa aina vaatteita käyttöön, joten annat sen olla, etkä käytä vaatekaappia enää mihinkään"
+      "Viet kasasta likaisia vaatteita pyykkikoriin ja puhtaita vaatteita vaatekaappiin",
+      "Vaatekasasta on helppo ottaa vaatteita käyttöön, joten annat sen olla, etkä käytä vaatekaappia enää mihinkään"
     ],
     "Päätät lajitella vaatteet": "lajittelu",
-    "Viet kasasta suoraan likaisia vaatteita pyykkikoriin ja puhtaita vaatteita vaatekaappiin": "kolmas",
-    "Vaatekasasta on helppo ottaa aina vaatteita käyttöön, joten annat sen olla, etkä käytä vaatekaappia enää mihinkään": "null",
+    "Viet kasasta likaisia vaatteita pyykkikoriin ja puhtaita vaatteita vaatekaappiin": "kolmas",
+    "Vaatekasasta on helppo ottaa vaatteita käyttöön, joten annat sen olla, etkä käytä vaatekaappia enää mihinkään": "null",
     "Päätät lajitella vaatteetColor": "green",
-    "Viet kasasta suoraan likaisia vaatteita pyykkikoriin ja puhtaita vaatteita vaatekaappiinColor": "green",
-    "Vaatekasasta on helppo ottaa aina vaatteita käyttöön, joten annat sen olla, etkä käytä vaatekaappia enää mihinkäänColor": "red"
+    "Viet kasasta likaisia vaatteita pyykkikoriin ja puhtaita vaatteita vaatekaappiinColor": "green",
+    "Vaatekasasta on helppo ottaa vaatteita käyttöön, joten annat sen olla, etkä käytä vaatekaappia enää mihinkäänColor": "red"
   },
   "lajittelu": {
     "question": "Miten lajittelet vaatteet?",
@@ -81,36 +81,36 @@
     "Laitat kaikki vaatteet vaatekaappiin, vaikka osa niistä onkin hieman likaisiaColor": "yellow"
   },
   "kolmas": {
-    "question": "Vaatekaappisikin on päässyt sekoittumaan niin, että eri tyyppisiä vaatteita on samassa lokerossa.",
+    "question": "Vaatekaappisikin on sekaisin niin, että eri tyyppisiä vaatteita on samassa lokerossa.",
     "background": "background_9",
     "person": "character_8",
     "face": "face_happy",
     "fore": "null",
     "answers": [
-      "Järjestelet vaatekaapin niin, että samantyyppiset vaatteet ovat samassa lokerossa, kuten esimerkiksi t-paidat omaan lokeroonsa ja alusvaatteet omaansa",
-      "Vaatekaappi ei ole mielestäsi tarpeeksi sekaisin, joten sekoitat sitä lisää",
+      "Järjestelet vaatekaapin niin, että samantyyppiset vaatteet ovat samassa lokerossa, eli esimerkiksi t-paidat omassa lokerossaan ja alusvaatteet omassaan",
+      "Vaatekaappi ei ole mielestäsi riittävän sekaisin, joten sekoitat sitä lisää",
       "Tärkeintä on, että vaatteet ovat vaatekaapissa, joten annat niiden olla sekaisin"
     ],
-    "Järjestelet vaatekaapin niin, että samantyyppiset vaatteet ovat samassa lokerossa, kuten esimerkiksi t-paidat omaan lokeroonsa ja alusvaatteet omaansa": "loppu",
-    "Vaatekaappi ei ole mielestäsi tarpeeksi sekaisin, joten sekoitat sitä lisää": "null",
+    "Järjestelet vaatekaapin niin, että samantyyppiset vaatteet ovat samassa lokerossa, eli esimerkiksi t-paidat omassa lokerossaan ja alusvaatteet omassaan": "loppu",
+    "Vaatekaappi ei ole mielestäsi riittävän sekaisin, joten sekoitat sitä lisää": "null",
     "Tärkeintä on, että vaatteet ovat vaatekaapissa, joten annat niiden olla sekaisin": "null",
-    "Järjestelet vaatekaapin niin, että samantyyppiset vaatteet ovat samassa lokerossa, kuten esimerkiksi t-paidat omaan lokeroonsa ja alusvaatteet omaansaColor": "green",
-    "Vaatekaappi ei ole mielestäsi tarpeeksi sekaisin, joten sekoitat sitä lisääColor": "red",
+    "Järjestelet vaatekaapin niin, että samantyyppiset vaatteet ovat samassa lokerossa, eli esimerkiksi t-paidat omassa lokerossaan ja alusvaatteet omassaanColor": "green",
+    "Vaatekaappi ei ole mielestäsi riittävän sekaisin, joten sekoitat sitä lisääColor": "red",
     "Tärkeintä on, että vaatteet ovat vaatekaapissa, joten annat niiden olla sekaisinColor": "red"
   },
   "loppu": {
-    "question": "Olet järjestellyt vaatekaappisi mielestäsi nyt hyvin.",
+    "question": "Olet nyt järjestellyt vaatekaappisi mielestäsi hyvin.",
     "background": "background_9",
     "person": "character_8",
     "face": "face_happy",
     "fore": "null",
     "answers": [
-      "Pidät vastaisuudessakin vaatekaappisi järjestyksessä ja yrität välttää vaatteiden kerääntymisen ympäri asuntoa",
-      "Annat vaatteiden kertyä taas ympäri asuntoa, ennen kuin siirrät ne vaatekaappiin"
+      "Pidät vastaisuudessakin vaatekaappisi järjestyksessä ja yrität välttää vaatteiden kerääntymistä ympäri asuntoa",
+      "Annat vaatteiden taas kertyä ympäri asuntoa, ennen kuin siirrät ne vaatekaappiin"
     ],
-    "Pidät vastaisuudessakin vaatekaappisi järjestyksessä ja yrität välttää vaatteiden kerääntymisen ympäri asuntoa": "null",
-    "Annat vaatteiden kertyä taas ympäri asuntoa, ennen kuin siirrät ne vaatekaappiin": "null",
-    "Pidät vastaisuudessakin vaatekaappisi järjestyksessä ja yrität välttää vaatteiden kerääntymisen ympäri asuntoaColor": "green",
-    "Annat vaatteiden kertyä taas ympäri asuntoa, ennen kuin siirrät ne vaatekaappiinColor": "red"
+    "Pidät vastaisuudessakin vaatekaappisi järjestyksessä ja yrität välttää vaatteiden kerääntymistä ympäri asuntoa": "null",
+    "Annat vaatteiden taas kertyä ympäri asuntoa, ennen kuin siirrät ne vaatekaappiin": "null",
+    "Pidät vastaisuudessakin vaatekaappisi järjestyksessä ja yrität välttää vaatteiden kerääntymistä ympäri asuntoaColor": "green",
+    "Annat vaatteiden taas kertyä ympäri asuntoa, ennen kuin siirrät ne vaatekaappiinColor": "red"
   }
 }

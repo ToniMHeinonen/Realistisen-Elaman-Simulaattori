@@ -1,10 +1,10 @@
 {
   "first": {
-    "question": "Lajitteletko jätteet vai käytätkö vain yhtä roskakoria, johon laitat kaikki jätteet?",
+    "question": "Lajitteletko jätteet vai käytätkö vain yhtä roskakoria, johon laitat kaikki jätteesi?",
     "background": "background_5",
     "person": "null",
-    "fore": "fore_16",
     "face": "null",
+    "fore": "fore_16",
     "answers": [
       "Lajittelet jätteet",
       "Käytät vain yhtä roskakoria"
@@ -21,61 +21,61 @@
     "face": "null",
     "fore": "fore_16",
     "answers": [
-      "Harkitset ottavasi sekajätteen lisäksi käyttöösi muita roskakoreja, joihin voisit kerätä esimerkiksi bio- tai muovijätteen",
-      "Pääset helpommalla, kun et lajittele roskia ja käytät vain yhtä roskakoria"
+      "Harkitset ottavasi sekajätteen lisäksi käyttöösi muitakin roska-astioita, joihin voisit kerätä esimerkiksi bio- tai muovijätteen",
+      "Pääset helpommalla, kun et lajittele roskia, joten käytät jatkossakin vain yhtä roskakoria"
     ],
-    "Harkitset ottavasi sekajätteen lisäksi käyttöösi muita roskakoreja, joihin voisit kerätä esimerkiksi bio- tai muovijätteen": "toinen",
-    "Pääset helpommalla, kun et lajittele roskia ja käytät vain yhtä roskakoria": "toinen",
-    "Harkitset ottavasi sekajätteen lisäksi käyttöösi muita roskakoreja, joihin voisit kerätä esimerkiksi bio- tai muovijätteenColor": "green",
-    "Pääset helpommalla, kun et lajittele roskia ja käytät vain yhtä roskakoriaColor": "red"
+    "Harkitset ottavasi sekajätteen lisäksi käyttöösi muitakin roska-astioita, joihin voisit kerätä esimerkiksi bio- tai muovijätteen": "toinen",
+    "Pääset helpommalla, kun et lajittele roskia, joten käytät jatkossakin vain yhtä roskakoria": "toinen",
+    "Harkitset ottavasi sekajätteen lisäksi käyttöösi muitakin roska-astioita, joihin voisit kerätä esimerkiksi bio- tai muovijätteenColor": "green",
+    "Pääset helpommalla, kun et lajittele roskia, joten käytät jatkossakin vain yhtä roskakoriaColor": "red"
   },
   "toinen": {
-    "question": "Roskakori, johon laitat sekajätteet, alkaa olemaan täynnä.",
+    "question": "Roskakori, johon laitat sekajätteet, alkaa olla täynnä.",
     "background": "background_5",
     "person": "null",
     "face": "null",
     "fore": "fore_16",
     "answers": [
-      "Otat roskakorista pussin, jossa roskat ovat, suljet sen ja valmistaudut viemään sen ulkona olevaan jäteastiaan",
-      "Otat roskakorista pussin, jossa roskat ovat, suljet sen ja jätät sen lojumaan eteiseen"
+      "Irrotat roskakorista pussin, jossa roskat ovat, suljet sen ja valmistaudut viemään sen ulkona olevaan jäteastiaan",
+      "Irrotat roskakorista pussin, jossa roskat ovat, suljet sen ja jätät sen lojumaan eteiseen"
     ],
-    "Otat roskakorista pussin, jossa roskat ovat, suljet sen ja valmistaudut viemään sen ulkona olevaan jäteastiaan": "ulkona",
-    "Otat roskakorista pussin, jossa roskat ovat, suljet sen ja jätät sen lojumaan eteiseen": "toinenUusi",
-    "Otat roskakorista pussin, jossa roskat ovat, suljet sen ja valmistaudut viemään sen ulkona olevaan jäteastiaanColor": "green",
-    "Otat roskakorista pussin, jossa roskat ovat, suljet sen ja jätät sen lojumaan eteiseenColor": "red"
+    "Irrotat roskakorista pussin, jossa roskat ovat, suljet sen ja valmistaudut viemään sen ulkona olevaan jäteastiaan": "ulkona",
+    "Irrotat roskakorista pussin, jossa roskat ovat, suljet sen ja jätät sen lojumaan eteiseen": "toinenUusi",
+    "Irrotat roskakorista pussin, jossa roskat ovat, suljet sen ja valmistaudut viemään sen ulkona olevaan jäteastiaanColor": "green",
+    "Irrotat roskakorista pussin, jossa roskat ovat, suljet sen ja jätät sen lojumaan eteiseenColor": "red"
   },
   "toinenUusi": {
-    "question": "Roskapussi alkaa haisemaan eteisessä.",
+    "question": "Roskapussi alkaa haista eteisessä.",
     "background": "background_5",
     "person": "null",
     "face": "null",
     "fore": "fore_16",
     "answers": [
-      "Jotta haju ei häiritsisi, suljet pyykkipojalla sieraimesi ja odotat, että joku muu veisi roskasi",
+      "Suljet pyykkipojalla sieraimesi, jotta haju ei häiritsisi, ja odotat, että joku muu veisi roskat",
       "Valmistaudut viemään roskapussin ulkona olevaan jäteastiaan"
     ],
-    "Jotta haju ei häiritsisi, suljet pyykkipojalla sieraimesi ja odotat, että joku muu veisi roskasi": "viimMahdollisuus",
+    "Suljet pyykkipojalla sieraimesi, jotta haju ei häiritsisi, ja odotat, että joku muu veisi roskat": "viimMahdollisuus",
     "Valmistaudut viemään roskapussin ulkona olevaan jäteastiaan": "ulkona",
-    "Jotta haju ei häiritsisi, suljet pyykkipojalla sieraimesi ja odotat, että joku muu veisi roskasiColor": "red",
+    "Suljet pyykkipojalla sieraimesi, jotta haju ei häiritsisi, ja odotat, että joku muu veisi roskatColor": "red",
     "Valmistaudut viemään roskapussin ulkona olevaan jäteastiaanColor": "green"
   },
   "viimMahdollisuus": {
-    "question": "On kulunut jo useampi päivä, eikä kukaan ole vienyt eteisessä olevaa roskapussia.",
+    "question": "On kulunut jo useampi päivä, eikä kukaan ole vieläkään vienyt eteisessä lojuvaa roskapussia jäteastiaan.",
     "background": "background_5",
     "person": "null",
     "face": "null",
     "fore": "fore_16",
     "answers": [
-      "Et vieläkään vie roskapussia mihinkään, vaan elät tästä lähtien pyykkipoika nenässäsi",
-      "Valmistaudut viemään roskapussin ulkona olevaan jäteastiaan"
+      "Valmistaudut viemään roskapussin ulkona olevaan jäteastiaan",
+      "Et vieläkään vie roskapussia pois, vaan elät tästä lähtien pyykkipoika nenässäsi"
     ],
-    "Et vieläkään vie roskapussia mihinkään, vaan elät tästä lähtien pyykkipoika nenässäsi": "null",
     "Valmistaudut viemään roskapussin ulkona olevaan jäteastiaan": "ulkona",
-    "Et vieläkään vie roskapussia mihinkään, vaan elät tästä lähtien pyykkipoika nenässäsiColor": "red",
-    "Valmistaudut viemään roskapussin ulkona olevaan jäteastiaanColor": "green"
+    "Et vieläkään vie roskapussia pois, vaan elät tästä lähtien pyykkipoika nenässäsi": "null",
+    "Valmistaudut viemään roskapussin ulkona olevaan jäteastiaanColor": "green",
+    "Et vieläkään vie roskapussia pois, vaan elät tästä lähtien pyykkipoika nenässäsiColor": "red"
   },
   "ulkona": {
-    "question": "Olet roskakatoksessa ja kädessäsi on roskapussi, johon olet kerännyt sekäjätteet. Mihin jäteastiaan pistät sen?",
+    "question": "Olet roskakatoksessa ja kädessäsi on roskapussi, johon olet kerännyt sekäjätteet. Mihin jäteastiaan laitat pussin?",
     "background": "background_5",
     "person": "null",
     "face": "null",
@@ -99,12 +99,12 @@
     "face": "null",
     "fore": "fore_16",
     "answers": [
-      "Pistät uuden tyhjän pussin roskakoriin",
-      "Et pistä uutta pussia roskakoriin"
+      "Laitat uuden tyhjän pussin roskakoriin",
+      "Et laita uutta pussia roskakoriin"
     ],
-    "Pistät uuden tyhjän pussin roskakoriin": "null",
-    "Et pistä uutta pussia roskakoriin": "null",
-    "Pistät uuden tyhjän pussin roskakoriinColor": "green",
-    "Et pistä uutta pussia roskakoriinColor": "red"
+    "Laitat uuden tyhjän pussin roskakoriin": "null",
+    "Et laita uutta pussia roskakoriin": "null",
+    "Laitat uuden tyhjän pussin roskakoriinColor": "green",
+    "Et laita uutta pussia roskakoriinColor": "red"
   }
 }

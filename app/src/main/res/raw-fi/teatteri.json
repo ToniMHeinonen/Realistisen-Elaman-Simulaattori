@@ -1,54 +1,54 @@
 {
   "first": {
-    "question": "Saavut elokuvateatteriin ja haluat mennä katsomaan uutta elokuvaa yksin. Sinulla ei ole vielä lippua. \nMitä teet ensimmäisenä?",
+    "question": "Saavut elokuvateatteriin ja haluat mennä katsomaan uutta elokuvaa yksin. Sinulla ei ole vielä lippua. Mitä teet ensimmäisenä?",
     "background": "background_1",
     "person": "null",
-    "fore": "null",
     "face": "null",
+    "fore": "null",
     "answers": [
-      "Menet ostamaan lipun ja herkut",
+      "Menet ostamaan elokuvalipun ja herkut",
       "Käyt vessassa",
       "Jäät seisomaan paikoillesi"
     ],
-    "Menet ostamaan lipun ja herkut": "liput",
+    "Menet ostamaan elokuvalipun ja herkut": "liput",
     "Käyt vessassa": "vessa",
     "Jäät seisomaan paikoillesi": "paikka",
-    "Menet ostamaan lipun ja herkutColor": "green",
+    "Menet ostamaan elokuvalipun ja herkutColor": "green",
     "Käyt vessassaColor": "green",
     "Jäät seisomaan paikoillesiColor": "red"
   },
   "liput": {
-    "question": "Saavut kassalle ja laitat tiskille lipun ja herkut, jotka aiot juuri ostaa.",
+    "question": "Saavut kassalle ja laitat tiskille elokuvalipun ja herkut, jotka haluat ostaa.",
     "background": "background_1",
     "person": "character_2",
     "face": "face_happy",
     "fore": "fore_2",
     "answers": [
-      "Kerrot, mihin leffaan aiot mennä ja sanot haluavasi ostaa lipun",
+      "Kerrot kassahenkilölle, mihin leffaan aiot mennä ja sanot haluavasi ostaa lipun",
       "Annat myyjälle vain herkut, et sano mitään ja käyt myöhemmin ostamassa lipun erikseen",
       "Varmistat, että edessäsi on joku, jotta näet, miten pitää toimia"
     ],
-    "Kerrot, mihin leffaan aiot mennä ja sanot haluavasi ostaa lipun": "odottaa",
+    "Kerrot kassahenkilölle, mihin leffaan aiot mennä ja sanot haluavasi ostaa lipun": "odottaa",
     "Annat myyjälle vain herkut, et sano mitään ja käyt myöhemmin ostamassa lipun erikseen": "odottaa",
     "Varmistat, että edessäsi on joku, jotta näet, miten pitää toimia": "odottaa",
-    "Kerrot, mihin leffaan aiot mennä ja sanot haluavasi ostaa lipunColor": "green",
+    "Kerrot kassahenkilölle, mihin leffaan aiot mennä ja sanot haluavasi ostaa lipunColor": "green",
     "Annat myyjälle vain herkut, et sano mitään ja käyt myöhemmin ostamassa lipun erikseenColor": "red",
     "Varmistat, että edessäsi on joku, jotta näet, miten pitää toimiaColor": "yellow"
   },
   "vessa": {
-    "question": "Tulet ulos vessasta ja huomaat ruuhkaa elokuvateatterissa.",
+    "question": "Tulet ulos vessasta ja huomaat, että elokuvateatterissa on ruuhkaa.",
     "background": "background_1",
     "person": "character_7",
     "face": "face_uncomfortable",
     "fore": "null",
     "answers": [
-      "Menet ostamaan herkut ja liput",
-      "Lähdet teatterista"
+      "Menet ostamaan herkut ja elokuvalipun",
+      "Lähdet pois elokuvateatterista"
     ],
-    "Menet ostamaan herkut ja liput": "liput",
-    "Lähdet teatterista": "lahteminen",
-    "Menet ostamaan herkut ja liputColor": "green",
-    "Lähdet teatteristaColor": "red"
+    "Menet ostamaan herkut ja elokuvalipun": "liput",
+    "Lähdet pois elokuvateatterista": "lahteminen",
+    "Menet ostamaan herkut ja elokuvalipunColor": "green",
+    "Lähdet pois elokuvateatteristaColor": "red"
   },
   "paikka": {
     "question": "Seisot paikallasi, etkä tiedä mitä tehdä.",
@@ -58,33 +58,33 @@
     "fore": "null",
     "answers": [
       "Kysyt teatterin henkilökunnalta, mitä sinun pitäisi tehdä",
-      "Lähdet teatterista"
+      "Lähdet pois elokuvateatterista"
     ],
     "Kysyt teatterin henkilökunnalta, mitä sinun pitäisi tehdä": "liput",
-    "Lähdet teatterista": "lahteminen",
+    "Lähdet pois elokuvateatterista": "lahteminen",
     "Kysyt teatterin henkilökunnalta, mitä sinun pitäisi tehdäColor": "green",
-    "Lähdet teatteristaColor": "red"
+    "Lähdet pois elokuvateatteristaColor": "red"
   },
   "lahteminen": {
-    "question": "Lähdet teatterista kotiin.",
+    "question": "Lähdet elokuvateatterista kotiin. Miten toimit?",
     "background": "background_1",
     "person": "character_7",
     "face": "face_happy",
     "fore": "null",
     "answers": [
       "Lähetät teatterille valituksen ilman syytä",
-      "Menet kotiin",
+      "Menet vain suorinta tietä kotiin",
       "Lähetät teatterille realistisen palautteen"
     ],
     "Lähetät teatterille valituksen ilman syytä": "null",
-    "Menet kotiin": "null",
+    "Menet vain suorinta tietä kotiin": "null",
     "Lähetät teatterille realistisen palautteen": "null",
     "Lähetät teatterille valituksen ilman syytäColor": "red",
-    "Menet kotiinColor": "green",
+    "Menet vain suorinta tietä kotiinColor": "green",
     "Lähetät teatterille realistisen palautteenColor": "green"
   },
   "odottaa": {
-    "question": "Olet saanut ostettua lipun ja huomaat vapaan istumapaikan salin ulkopuolella.",
+    "question": "Olet saanut ostettua lipun, ja huomaat vapaan istumapaikan salin ulkopuolella.",
     "background": "background_1",
     "person": "character_7",
     "face": "face_surprised",
@@ -99,22 +99,22 @@
     "Jäät seisomaanColor": "green"
   },
   "saliin": {
-    "question": "Saliin päästetään sisälle.",
+    "question": "Ihmisiä aletaan päästää sisään saliin.",
     "background": "background_1",
     "person": "character_7",
     "face": "face_confused",
     "fore": "null",
     "answers": [
       "Menet jonoon",
-      "Odotat, että jono on mennyt ja menet sitten saliin",
-      "Jäät seisomaan paikoillesi etkä mene saliin"
+      "Odotat, että jono on mennyt, ja menet sitten sisään saliin",
+      "Jäät seisomaan paikoillesi etkä mene sisään saliin"
     ],
     "Menet jonoon": "jalkeen",
-    "Odotat, että jono on mennyt ja menet sitten saliin": "jalkeen",
-    "Jäät seisomaan paikoillesi etkä mene saliin": "jalkeen",
+    "Odotat, että jono on mennyt, ja menet sitten sisään saliin": "jalkeen",
+    "Jäät seisomaan paikoillesi etkä mene sisään saliin": "jalkeen",
     "Menet jonoonColor": "green",
-    "Odotat, että jono on mennyt ja menet sitten saliinColor": "green",
-    "Jäät seisomaan paikoillesi etkä mene saliinColor": "red"
+    "Odotat, että jono on mennyt, ja menet sitten sisään saliinColor": "green",
+    "Jäät seisomaan paikoillesi etkä mene sisään saliinColor": "red"
   },
   "tilanne": {
     "question": "Huonokuntoinen ihminen tulee odottamaan saliin pääsyä, muttei pääse istumaan minnekään.",
@@ -135,24 +135,24 @@
     "Käsket jonkun muun antaa paikkansaColor": "red"
   },
   "jalkeen": {
-    "question": "Elokuva on loppunut.",
+    "question": "Elokuva on päättynyt.",
     "background": "background_1",
     "person": "character_7",
     "face": "face_happy",
     "fore": "null",
     "answers": [
-      "Laitat omat roskasi roskiin, käyt vessassa ja lähdet teatterista",
-      "Laitat omat roskasi roskiin ja lähdet kotiin",
-      "Jätät roskasi, käyt vessassa ja lähdet teatterista",
-      "Jätät roskasi ja lähdet kotiin"
+      "Laitat omat roskasi roskikseen, käyt vessassa ja lähdet teatterista",
+      "Laitat omat roskasi roskikseen ja lähdet kotiin",
+      "Jätät roskasi istumapaikallesi, käyt vessassa ja lähdet teatterista",
+      "Jätät roskasi istumapaikallesi ja lähdet kotiin"
     ],
-    "Laitat omat roskasi roskiin, käyt vessassa ja lähdet teatterista": "lahteminen",
-    "Laitat omat roskasi roskiin ja lähdet kotiin": "lahteminen",
-    "Jätät roskasi, käyt vessassa ja lähdet teatterista": "lahteminen",
-    "Jätät roskasi ja lähdet kotiin": "lahteminen",
-    "Laitat omat roskasi roskiin, käyt vessassa ja lähdet teatteristaColor": "green",
-    "Laitat omat roskasi roskiin ja lähdet kotiinColor": "green",
-    "Jätät roskasi, käyt vessassa ja lähdet teatteristaColor": "red",
-    "Jätät roskasi ja lähdet kotiinColor": "red"
+    "Laitat omat roskasi roskikseen, käyt vessassa ja lähdet teatterista": "lahteminen",
+    "Laitat omat roskasi roskikseen ja lähdet kotiin": "lahteminen",
+    "Jätät roskasi istumapaikallesi, käyt vessassa ja lähdet teatterista": "lahteminen",
+    "Jätät roskasi istumapaikallesi ja lähdet kotiin": "lahteminen",
+    "Laitat omat roskasi roskikseen, käyt vessassa ja lähdet teatteristaColor": "green",
+    "Laitat omat roskasi roskikseen ja lähdet kotiinColor": "green",
+    "Jätät roskasi istumapaikallesi, käyt vessassa ja lähdet teatteristaColor": "red",
+    "Jätät roskasi istumapaikallesi ja lähdet kotiinColor": "red"
   }
 }

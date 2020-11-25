@@ -3,8 +3,8 @@
     "question": "Päätät kulkea ratikalla. Kävellessäsi pysäkille mietit, miten aiot maksaa matkan.",
     "background": "background_1",
     "person": "character_1",
-    "fore": "fore_1",
     "face": "face_happy",
+    "fore": "fore_1",
     "answers": [
       "Tilaat lipun ratikkayhtiön mobiilisovelluksella",
       "Olet jo etukäteen ladannut matkakorttiin arvoa",
@@ -39,7 +39,7 @@
     "Näet, että toinen henkilö viittilöi kuskille, joten et tee mitäänColor": "green"
   },
   "ratikkaOhi": {
-    "question": "Ratikka jatkoi matkaa pysähtymättä pysäkille. Mitä teet?",
+    "question": "Ratikka jatkaa matkaa pysähtymättä pysäkille. Mitä teet?",
     "background": "background_1",
     "person": "character_1",
     "face": "face_confused",
@@ -72,7 +72,7 @@
     "Näet, että toinen henkilö viittilöi kuskille, joten et tee mitäänColor": "green"
   },
   "eiMaksuaRatikkaOhi": {
-    "question": "Ratikka jatkoi matkaa pysähtymättä pysäkille. Mitä teet?",
+    "question": "Ratikka jatkaa matkaa pysähtymättä pysäkille. Mitä teet?",
     "background": "background_1",
     "person": "character_1",
     "face": "face_confused",
@@ -94,12 +94,12 @@
     "fore": "fore_1",
     "answers": [
       "Otat sakot vastaan, pahoittelet, poistut ratikasta ja ensi kerralla maksat lipusta",
-      "Yrität karata paikalta ja jatkaa samalla tavalla ensi kerrallakin"
+      "Yrität karata paikalta ja aiot toimia samalla tavalla ensi kerrallakin"
     ],
     "Otat sakot vastaan, pahoittelet, poistut ratikasta ja ensi kerralla maksat lipusta": "null",
-    "Yrität karata paikalta ja jatkaa samalla tavalla ensi kerrallakin": "null",
+    "Yrität karata paikalta ja aiot toimia samalla tavalla ensi kerrallakin": "null",
     "Otat sakot vastaan, pahoittelet, poistut ratikasta ja ensi kerralla maksat lipustaColor": "green",
-    "Yrität karata paikalta ja jatkaa samalla tavalla ensi kerrallakinColor": "red"
+    "Yrität karata paikalta ja aiot toimia samalla tavalla ensi kerrallakinColor": "red"
   },
   "ratikkaSisaan": {
     "question": "Päästyäsi ratikkaan sisään näet, että siellä on runsaasti paikkoja vapaana.",
@@ -128,17 +128,17 @@
     "answers": [
       "Painat stop-painiketta aivan viime hetkellä ennen pysäkkiä",
       "Kukaan ei ole painanut stop-painiketta, joten painat sitä hyvissä ajoin ennen pysäkkiä",
-      "Huomaat, että toinen henkilö painaa stop-painiketta, mutta painat silti varmuuden vuoksi"
+      "Huomaat, että toinen henkilö painaa stop-painiketta, mutta painat sitä silti varmuuden vuoksi"
     ],
     "Painat stop-painiketta aivan viime hetkellä ennen pysäkkiä": "ulosRatikasta",
     "Kukaan ei ole painanut stop-painiketta, joten painat sitä hyvissä ajoin ennen pysäkkiä": "ulosRatikasta",
-    "Huomaat, että toinen henkilö painaa stop-painiketta, mutta painat silti varmuuden vuoksi": "ulosRatikasta",
+    "Huomaat, että toinen henkilö painaa stop-painiketta, mutta painat sitä silti varmuuden vuoksi": "ulosRatikasta",
     "Painat stop-painiketta aivan viime hetkellä ennen pysäkkiäColor": "red",
     "Kukaan ei ole painanut stop-painiketta, joten painat sitä hyvissä ajoin ennen pysäkkiäColor": "green",
-    "Huomaat, että toinen henkilö painaa stop-painiketta, mutta painat silti varmuuden vuoksiColor": "green"
+    "Huomaat, että toinen henkilö painaa stop-painiketta, mutta painat sitä silti varmuuden vuoksiColor": "green"
   },
   "ulosRatikasta": {
-    "question": "Ratikka pysähtyy pysäkilläsi, ja ovet aukeavat.",
+    "question": "Ratikka pysähtyy pysäkilläsi ja ovet aukeavat.",
     "background": "background_1",
     "person": "character_1",
     "face": "face_happy",
