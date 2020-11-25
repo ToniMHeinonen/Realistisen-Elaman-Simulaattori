@@ -204,16 +204,16 @@
       "You transfer your home insurance to the new home",
       "You make an electricity contract for your new apartment",
       "You notify your new address to the services you use",
-      "You inform the President about your new address"
+      "You do not transfer home insurance, make an electricity contract or notify new address to anyone"
     ],
     "You transfer your home insurance to the new home": "vakuutus",
     "You make an electricity contract for your new apartment": "sahko",
     "You notify your new address to the services you use": "palvelut",
-    "You inform the President about your new address": "sivusto",
+    "You do not transfer home insurance, make an electricity contract or notify new address to anyone": "sivusto",
     "You transfer your home insurance to the new homeColor": "green",
     "You make an electricity contract for your new apartmentColor": "green",
     "You notify your new address to the services you useColor": "green",
-    "You inform the President about your new addressColor": "red"
+    "You do not transfer home insurance, make an electricity contract or notify new address to anyoneColor": "red"
   },
   "postikonttori": {
     "question": "You go to the post office. What do you do?",
@@ -243,16 +243,16 @@
       "You transfer your home insurance to the new home",
       "You make an electricity contract for your new apartment",
       "You notify your new address to the services you use",
-      "You inform the President about your new address"
+      "You do not transfer home insurance, make an electricity contract or notify new address to anyone"
     ],
     "You transfer your home insurance to the new home": "vakuutus",
     "You make an electricity contract for your new apartment": "sahko",
     "You notify your new address to the services you use": "palvelut",
-    "You inform the President about your new address": "tehty",
+    "You do not transfer home insurance, make an electricity contract or notify new address to anyone": "tehty",
     "You transfer your home insurance to the new homeColor": "green",
     "You make an electricity contract for your new apartmentColor": "green",
     "You notify your new address to the services you useColor": "green",
-    "You inform the President about your new addressColor": "red"
+    "You do not transfer home insurance, make an electricity contract or notify new address to anyoneColor": "red"
   },
   "vakuutus": {
     "question": "You need to get a home insurance for your new home. How do you handle this?",
@@ -261,15 +261,15 @@
     "fore": "null",
     "face": "face_happy",
     "answers": [
-      "You physically go to visit an insurance company's office",
-      "You call an insurance company",
+      "You look the necessary papers from the apartment ready and you physically go to visit an insurance company's office",
+      "You look the necessary papers from the apartment ready and you call an insurance company",
       "You complain on the internet about how hard everything is to handle"
     ],
-    "You physically go to visit an insurance company's office": "kaynti",
-    "You call an insurance company": "soitto",
+    "You look the necessary papers from the apartment ready and you physically go to visit an insurance company's office": "kaynti",
+    "You look the necessary papers from the apartment ready and you call an insurance company": "soitto",
     "You complain on the internet about how hard everything is to handle": "vakuutus",
-    "You physically go to visit an insurance company's officeColor": "yellow",
-    "You call an insurance companyColor": "green",
+    "You look the necessary papers from the apartment ready and you physically go to visit an insurance company's officeColor": "yellow",
+    "You look the necessary papers from the apartment ready and you call an insurance companyColor": "green",
     "You complain on the internet about how hard everything is to handleColor": "red"
   },
   "kaynti": {
@@ -311,16 +311,16 @@
     "answers": [
       "You make an electricity contract for your new apartment",
       "You notify your new address to the services you use",
-      "You inform the President about your new address",
+      "You do not make an electricity contract or notify new address to anyone",
       "You move"
     ],
     "You make an electricity contract for your new apartment": "sahko",
     "You notify your new address to the services you use": "palvelut",
-    "You inform the President about your new address": "ohi",
+    "You do not make an electricity contract or notify new address to anyone": "ohi",
     "You move": "muutto",
     "You make an electricity contract for your new apartmentColor": "green",
     "You notify your new address to the services you useColor": "green",
-    "You inform the President about your new addressColor": "red",
+    "You do not make an electricity contract or notify new address to anyoneColor": "red",
     "You moveColor": "green"
   },
   "poissa": {
@@ -333,18 +333,18 @@
       "You try again to get the home insurance",
       "You make an electricity contract for your new apartment",
       "You notify your new address to the services you use",
-      "You inform the President about your new address",
+      "You do not transfer home insurance, make an electricity contract or notify new address to anyone",
       "You move"
     ],
     "You try again to get the home insurance": "vakuutus",
     "You make an electricity contract for your new apartment": "sahko",
     "You notify your new address to the services you use": "palvelut",
-    "You inform the President about your new address": "poissa",
+    "You do not transfer home insurance, make an electricity contract or notify new address to anyone": "poissa",
     "You move": "muutto",
     "You try again to get the home insuranceColor": "green",
     "You make an electricity contract for your new apartmentColor": "green",
     "You notify your new address to the services you useColor": "green",
-    "You inform the President about your new addressColor": "red",
+    "You do not transfer home insurance, make an electricity contract or notify new address to anyoneColor": "red",
     "You moveColor": "red"
   },
   "soitto": {
