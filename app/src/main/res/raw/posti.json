@@ -1,209 +1,209 @@
 {
   "first": {
-    "question": "Onko sinulla postilaatikko vai tuleeko posti suoraan asuntoosi postiluukusta?",
+    "question": "Do you retrieve your mail from your mailbox or does the mail arrive directly at your apartment?",
     "background": "background_17",
     "person": "character_8",
     "fore": "null",
     "face": "face_happy",
     "answers": [
-      "Postilaatikko",
-      "Postiluukku"
+      "Retrieve from mailbox",
+      "It arrives directly to your apartment"
     ],
-    "Postilaatikko": "postilaatikkoAlku",
-    "Postiluukku": "postiluukkuAlku",
-    "PostilaatikkoColor": "green",
-    "PostiluukkuColor": "green"
+    "Retrieve from mailbox": "postilaatikkoAlku",
+    "It arrives directly to your apartment": "postiluukkuAlku",
+    "Retrieve from mailboxColor": "green",
+    "It arrives directly to your apartmentColor": "green"
   },
   "postiluukkuAlku": {
-    "question": "Tulet sisään asuntoosi ja huomaat, että eteiseen on tullut muutama kirje postiluukusta.",
+    "question": "You come into your apartment and find that a few letters have arrived in the hallway.",
     "background": "background_17",
     "person": "null",
     "fore": "fore_8",
     "face": "null",
     "answers": [
-      "Otat kirjeet lattialta ja viet ne pöydälle",
-      "Jätät kirjeet lattialle",
-      "Otat kirjeet lattialta ja avaat ne saman tien"
+      "You take the letters off the floor and take them to the table",
+      "You leave the letters on the floor",
+      "You take the letters off the floor and open them right away"
     ],
-    "Otat kirjeet lattialta ja viet ne pöydälle": "postiluukkuPöytä",
-    "Jätät kirjeet lattialle": "postiluukkuLattia",
-    "Otat kirjeet lattialta ja avaat ne saman tien": "kirjeetAvattu",
-    "Otat kirjeet lattialta ja viet ne pöydälleColor": "green",
-    "Jätät kirjeet lattialleColor": "red",
-    "Otat kirjeet lattialta ja avaat ne saman tienColor": "green"
+    "You take the letters off the floor and take them to the table": "postiluukkuPöytä",
+    "You leave the letters on the floor": "postiluukkuLattia",
+    "You take the letters off the floor and open them right away": "kirjeetAvattu",
+    "You take the letters off the floor and take them to the tableColor": "green",
+    "You leave the letters on the floorColor": "red",
+    "You take the letters off the floor and open them right awayColor": "green"
   },
   "postiluukkuLattia": {
-    "question": "Kirjeet ovat edelleen lattialla.",
+    "question": "The letters are still on the floor.",
     "background": "background_17",
     "person": "null",
     "fore": "fore_8",
     "face": "null",
     "answers": [
-      "Jätät kirjeet lopullisesti lattialle",
-      "Otat kirjeet lattialta ja viet ne pöydälle",
-      "Otat kirjeet lattialta ja avaat ne saman tien"
+      "You leave the letters on the floor forever",
+      "You take the letters off the floor and take them to the table",
+      "You take the letters off the floor and open them right away"
     ],
-    "Jätät kirjeet lopullisesti lattialle": "null",
-    "Otat kirjeet lattialta ja viet ne pöydälle": "postiluukkuPöytä",
-    "Otat kirjeet lattialta ja avaat ne saman tien": "kirjeetAvattu",
-    "Jätät kirjeet lopullisesti lattialleColor": "red",
-    "Otat kirjeet lattialta ja viet ne pöydälleColor": "green",
-    "Otat kirjeet lattialta ja avaat ne saman tienColor": "green"
+    "You leave the letters on the floor forever": "null",
+    "You take the letters off the floor and take them to the table": "postiluukkuPöytä",
+    "You take the letters off the floor and open them right away": "kirjeetAvattu",
+    "You leave the letters on the floor foreverColor": "red",
+    "You take the letters off the floor and take them to the tableColor": "green",
+    "You take the letters off the floor and open them right awayColor": "green"
   },
   "postiluukkuPöytä": {
-    "question": "Veit kirjeet pöydälle.",
+    "question": "You put the letters on the table.",
     "background": "background_17",
     "person": "character_8",
     "fore": "null",
     "face": "face_happy",
     "answers": [
-      "Jätät kirjeet vielä toistaiseksi pöydälle",
-      "Avaat kirjeet"
+      "You leave the letters on the table for now",
+      "You open the letters"
     ],
-    "Jätät kirjeet vielä toistaiseksi pöydälle": "kirjeetPöydällä",
-    "Avaat kirjeet": "kirjeetAvattu",
-    "Jätät kirjeet vielä toistaiseksi pöydälleColor": "yellow",
-    "Avaat kirjeetColor": "green"
+    "You leave the letters on the table for now": "kirjeetPöydällä",
+    "You open the letters": "kirjeetAvattu",
+    "You leave the letters on the table for nowColor": "yellow",
+    "You open the lettersColor": "green"
   },
   "postilaatikkoAlku": {
-    "question": "Et ole muutamaan päivään käynyt tarkastamassa, onko postilaatikkoosi tullut postia.",
+    "question": "You haven't been checking your mailbox for a few days.",
     "background": "background_17",
     "person": "character_8",
     "fore": "null",
     "face": "face_happy",
     "answers": [
-      "Käyt tarkastamassa, onko postilaatikkoon tullut postia",
-      "Sinua ei nyt huvita, joten aiot käydä tarkastamassa sen myöhemmin"
+      "You go to check if there is any mail in your mailbox",
+      "You’re going to check it out later"
     ],
-    "Käyt tarkastamassa, onko postilaatikkoon tullut postia": "postilaatikkoHaku",
-    "Sinua ei nyt huvita, joten aiot käydä tarkastamassa sen myöhemmin": "postilaatikkoUusi",
-    "Käyt tarkastamassa, onko postilaatikkoon tullut postiaColor": "green",
-    "Sinua ei nyt huvita, joten aiot käydä tarkastamassa sen myöhemminColor": "yellow"
+    "You go to check if there is any mail in your mailbox": "postilaatikkoHaku",
+    "You’re going to check it out later": "postilaatikkoUusi",
+    "You go to check if there is any mail in your mailboxColor": "green",
+    "You’re going to check it out laterColor": "yellow"
   },
   "postilaatikkoUusi": {
-    "question": "On kulunut jo pari viikkoa siitä, kun viimeksi tarkastit postilaatikkosi tilanteen.",
+    "question": "It's been a couple of weeks since you last checked your mailbox.",
     "background": "background_17",
     "person": "character_8",
     "fore": "null",
     "face": "face_happy",
     "answers": [
-      "Käyt tarkastamassa, onko postilaatikkoon tullut postia",
-      "Et aio käydä tarkastamassa postilaatikkoasi"
+      "You go to check if there is any mail in your mailbox",
+      "You are not going to check your mailbox"
     ],
-    "Käyt tarkastamassa, onko postilaatikkoon tullut postia": "postilaatikkoHaku",
-    "Et aio käydä tarkastamassa postilaatikkoasi": "null",
-    "Käyt tarkastamassa, onko postilaatikkoon tullut postiaColor": "green",
-    "Et aio käydä tarkastamassa postilaatikkoasiColor": "red"
+    "You go to check if there is any mail in your mailbox": "postilaatikkoHaku",
+    "You are not going to check your mailbox": "null",
+    "You go to check if there is any mail in your mailboxColor": "green",
+    "You are not going to check your mailboxColor": "red"
   },
   "postilaatikkoHaku": {
-    "question": "Postilaatikkoosi on tullut muutama kirje.",
+    "question": "There are a few letters in your mailbox.",
     "background": "background_17",
     "person": "character_8",
     "fore": "null",
     "face": "face_happy",
     "answers": [
-      "Yrität tarkastaa vielä naapuriesi postilaatikot, ennen kuin viet kirjeesi sisälle",
-      "Viet kirjeet sisälle",
-      "Jätät kirjeet postilaatikkoon"
+      "You try to check your neighbors' mailboxes before taking your mail inside",
+      "You take the letters inside",
+      "You leave the letters in the mailbox"
     ],
-    "Yrität tarkastaa vielä naapuriesi postilaatikot, ennen kuin viet kirjeesi sisälle": "postilaatikkoHaettu",
-    "Viet kirjeet sisälle": "postilaatikkoHaettu",
-    "Jätät kirjeet postilaatikkoon": "postilaatikkoVirhe",
-    "Yrität tarkastaa vielä naapuriesi postilaatikot, ennen kuin viet kirjeesi sisälleColor": "red",
-    "Viet kirjeet sisälleColor": "green",
-    "Jätät kirjeet postilaatikkoonColor": "red"
+    "You try to check your neighbors' mailboxes before taking your mail inside": "postilaatikkoHaettu",
+    "You take the letters inside": "postilaatikkoHaettu",
+    "You leave the letters in the mailbox": "postilaatikkoVirhe",
+    "You try to check your neighbors' mailboxes before taking your mail insideColor": "red",
+    "You take the letters insideColor": "green",
+    "You leave the letters in the mailboxColor": "red"
   },
   "postilaatikkoVirhe": {
-    "question": "Jätit kirjeet postilaatikkoon. Mitä teet?",
+    "question": "You left the letters in the mailbox. What do you do?",
     "background": "background_17",
     "person": "character_8",
     "fore": "null",
     "face": "face_happy",
     "answers": [
-      "Käyt hakemassa kirjeet sisälle",
-      "Jätät kirjeet postilaatikkoon lopullisesti"
+      "You take the letters inside",
+      "You leave the letters in the mailbox permanently"
     ],
-    "Käyt hakemassa kirjeet sisälle": "postilaatikkoHaettu",
-    "Jätät kirjeet postilaatikkoon lopullisesti": "null",
-    "Käyt hakemassa kirjeet sisälleColor": "green",
-    "Jätät kirjeet postilaatikkoon lopullisestiColor": "red"
+    "You take the letters inside": "postilaatikkoHaettu",
+    "You leave the letters in the mailbox permanently": "null",
+    "You take the letters insideColor": "green",
+    "You leave the letters in the mailbox permanentlyColor": "red"
   },
   "postilaatikkoHaettu": {
-    "question": "Hait kirjeet asuntoosi ja pistät ne pöydälle.",
+    "question": "You took the letters to your apartment and put them on the table.",
     "background": "background_17",
     "person": "character_8",
     "fore": "null",
     "face": "face_happy",
     "answers": [
-      "Avaat kirjeet",
-      "Jätät kirjeet pöydälle ja menet katsomaan televisiota"
+      "You open the letters",
+      "You leave the letters on the table and you go to watch TV"
     ],
-    "Avaat kirjeet": "kirjeetAvattu",
-    "Jätät kirjeet pöydälle ja menet katsomaan televisiota": "kirjeetPöydällä",
-    "Avaat kirjeetColor": "green",
-    "Jätät kirjeet pöydälle ja menet katsomaan televisiotaColor": "red"
+    "You open the letters": "kirjeetAvattu",
+    "You leave the letters on the table and you go to watch TV": "kirjeetPöydällä",
+    "You open the lettersColor": "green",
+    "You leave the letters on the table and you go to watch TVColor": "red"
   },
   "kirjeetPöydällä": {
-    "question": "Kirjeet ovat edelleen pöydällä.",
+    "question": "The letters are still on the table.",
     "background": "background_17",
     "person": "character_8",
     "fore": "null",
     "face": "face_happy",
     "answers": [
-      "Avaat kirjeet",
-      "Jätät kirjeet pöydälle lopullisesti"
+      "You open the letters",
+      "You leave the letters on the table permanently"
     ],
-    "Avaat kirjeet": "kirjeetAvattu",
-    "Jätät kirjeet pöydälle lopullisesti": "null",
-    "Avaat kirjeetColor": "green",
-    "Jätät kirjeet pöydälle lopullisestiColor": "red"
+    "You open the letters": "kirjeetAvattu",
+    "You leave the letters on the table permanently": "null",
+    "You open the lettersColor": "green",
+    "You leave the letters on the table permanentlyColor": "red"
   },
   "kirjeetAvattu": {
-    "question": "Avasit kirjeet ja huomaat, että ne olivat kaikki laskuja.",
+    "question": "You opened the letters and you find that they were all bills.",
     "background": "background_17",
     "person": "character_8",
     "fore": "null",
     "face": "face_happy",
     "answers": [
-      "Avaat verkkopankin puhelimellasi tai tietokoneellasi",
-      "Laskujen eräpäivä ei ole vielä vähään aikaan, joten avaat verkkopankin myöhemmin",
-      "Et maksa laskuja"
+      "You open online banking on your phone or computer",
+      "The due date of the invoices is not yet a while, so you will open the online bank later",
+      "You don't pay the bills"
     ],
-    "Avaat verkkopankin puhelimellasi tai tietokoneellasi": "verkkopankki",
-    "Laskujen eräpäivä ei ole vielä vähään aikaan, joten avaat verkkopankin myöhemmin": "verkkopankki",
-    "Et maksa laskuja": "null",
-    "Avaat verkkopankin puhelimellasi tai tietokoneellasiColor": "green",
-    "Laskujen eräpäivä ei ole vielä vähään aikaan, joten avaat verkkopankin myöhemminColor": "green",
-    "Et maksa laskujaColor": "red"
+    "You open online banking on your phone or computer": "verkkopankki",
+    "The due date of the invoices is not yet a while, so you will open the online bank later": "verkkopankki",
+    "You don't pay the bills": "null",
+    "You open online banking on your phone or computerColor": "green",
+    "The due date of the invoices is not yet a while, so you will open the online bank laterColor": "green",
+    "You don't pay the billsColor": "red"
   },
   "verkkopankki": {
-    "question": "Avasit verkkopankin.",
+    "question": "You opened the online banking.",
     "background": "background_17",
     "person": "null",
     "fore": "fore_20",
     "face": "null",
     "answers": [
-      "Katsot tarkkaan laskusta muun muuassa viitenumeron, eräpäivän ja laskun määrän ja täytät ne huolellisesti verkkopankissa",
-      "Täytät laskun tiedot hutiloiden verkkopankissa"
+      "You look closely the reference number, due date and invoice amount, and fill them in carefully in online banking",
+      "You carelessly fill in the invoice information in online banking"
     ],
-    "Katsot tarkkaan laskusta muun muuassa viitenumeron, eräpäivän ja laskun määrän ja täytät ne huolellisesti verkkopankissa": "loppu",
-    "Täytät laskun tiedot hutiloiden verkkopankissa": "loppu",
-    "Katsot tarkkaan laskusta muun muuassa viitenumeron, eräpäivän ja laskun määrän ja täytät ne huolellisesti verkkopankissaColor": "green",
-    "Täytät laskun tiedot hutiloiden verkkopankissaColor": "red"
+    "You look closely the reference number, due date and invoice amount, and fill them in carefully in online banking": "loppu",
+    "You carelessly fill in the invoice information in online banking": "loppu",
+    "You look closely the reference number, due date and invoice amount, and fill them in carefully in online bankingColor": "green",
+    "You carelessly fill in the invoice information in online bankingColor": "red"
   },
   "loppu": {
-    "question": "Sait maksettua laskut verkkopankissa. Miten toimit postien kanssa vastaisuudessa?",
+    "question": "You paid your bills in online banking. How will you deal with mail in the future?",
     "background": "background_17",
     "person": "null",
     "fore": "fore_20",
     "face": "null",
     "answers": [
-      "Tarkastat postin mahdollisimman usein ja maksat laskut ajoissa",
-      "Tarkastat postin silloin kun huvittaa ja maksat laskut, jos muistat"
+      "You check your mail as often as possible and pay your bills on time",
+      "You check your mail when you are in the mood for it and pay your bills if you remember"
     ],
-    "Tarkastat postin mahdollisimman usein ja maksat laskut ajoissa": "null",
-    "Tarkastat postin silloin kun huvittaa ja maksat laskut, jos muistat": "null",
-    "Tarkastat postin mahdollisimman usein ja maksat laskut ajoissaColor": "green",
-    "Tarkastat postin silloin kun huvittaa ja maksat laskut, jos muistatColor": "red"
+    "You check your mail as often as possible and pay your bills on time": "null",
+    "You check your mail when you are in the mood for it and pay your bills if you remember": "null",
+    "You check your mail as often as possible and pay your bills on timeColor": "green",
+    "You check your mail when you are in the mood for it and pay your bills if you rememberColor": "red"
   }
 }
