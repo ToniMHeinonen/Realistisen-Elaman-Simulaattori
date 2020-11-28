@@ -3,80 +3,80 @@
     "question": "Haluaisit lähteä opiskelemaan, ja haku ammattikorkeakouluihin ja yliopistoihin on alkanut.",
     "background": "background_6",
     "person": "character_6",
-    "fore": "fore_7",
     "face": "face_happy",
+    "fore": "fore_7",
     "answers": [
-      "Etsit netistä tietoa koulutusaloista, mitkä voisivat kiinnostaa sinua",
-      "Et etsi mitään tietoa koulutusaloista, vaan täytät hakulomakkeen mielenkiintoisilta kuulostavien alojen mukaan",
-      "Et aio täyttää hakulomaketta, koska ei vaan huvita"
+      "Etsit netistä tietoa koulutusaloista, jotka voisivat kiinnostaa sinua",
+      "Et etsi mitään tietoa koulutusaloista, vaan täytät hakulomakkeen sen perusteella, mitkä alat kuulostavat mielenkiintoisilta",
+      "Et aio täyttää hakulomaketta, koska sinua ei vain huvita"
     ],
-    "Etsit netistä tietoa koulutusaloista, mitkä voisivat kiinnostaa sinua": "alaLoydetty",
-    "Et etsi mitään tietoa koulutusaloista, vaan täytät hakulomakkeen mielenkiintoisilta kuulostavien alojen mukaan": "kutsu",
-    "Et aio täyttää hakulomaketta, koska ei vaan huvita": "uusiYritys",
-    "Etsit netistä tietoa koulutusaloista, mitkä voisivat kiinnostaa sinuaColor": "green",
-    "Et etsi mitään tietoa koulutusaloista, vaan täytät hakulomakkeen mielenkiintoisilta kuulostavien alojen mukaanColor": "yellow",
-    "Et aio täyttää hakulomaketta, koska ei vaan huvitaColor": "red"
+    "Etsit netistä tietoa koulutusaloista, jotka voisivat kiinnostaa sinua": "alaLoydetty",
+    "Et etsi mitään tietoa koulutusaloista, vaan täytät hakulomakkeen sen perusteella, mitkä alat kuulostavat mielenkiintoisilta": "kutsu",
+    "Et aio täyttää hakulomaketta, koska sinua ei vain huvita": "uusiYritys",
+    "Etsit netistä tietoa koulutusaloista, jotka voisivat kiinnostaa sinuaColor": "green",
+    "Et etsi mitään tietoa koulutusaloista, vaan täytät hakulomakkeen sen perusteella, mitkä alat kuulostavat mielenkiintoisiltaColor": "yellow",
+    "Et aio täyttää hakulomaketta, koska sinua ei vain huvitaColor": "red"
   },
   "alaLoydetty": {
-    "question": "Löysit itseäsi kiinnostavia koulutusaloja.",
+    "question": "Löydät itseäsi kiinnostavia koulutusaloja.",
     "background": "background_6",
     "person": "character_6",
-    "fore": "fore_7",
     "face": "face_happy",
+    "fore": "fore_7",
     "answers": [
       "Täytät hakulomakkeen ohjeiden mukaan",
-      "Hakulomakkeen täyttäminen on liian vaikeaa, joten et aiokaan hakea",
+      "Hakulomakkeen täyttäminen on liian vaikeaa, joten päätät, ettet haekaan opiskelemaan",
       "Hakulomakkeen täyttäminen on liian vaikeaa, joten pyydät apua tuttavalta"
     ],
     "Täytät hakulomakkeen ohjeiden mukaan": "kutsu",
-    "Hakulomakkeen täyttäminen on liian vaikeaa, joten et aiokaan hakea": "null",
+    "Hakulomakkeen täyttäminen on liian vaikeaa, joten päätät, ettet haekaan opiskelemaan": "null",
     "Hakulomakkeen täyttäminen on liian vaikeaa, joten pyydät apua tuttavalta": "kutsu",
     "Täytät hakulomakkeen ohjeiden mukaanColor": "green",
-    "Hakulomakkeen täyttäminen on liian vaikeaa, joten et aiokaan hakeaColor": "red",
+    "Hakulomakkeen täyttäminen on liian vaikeaa, joten päätät, ettet haekaan opiskelemaanColor": "red",
     "Hakulomakkeen täyttäminen on liian vaikeaa, joten pyydät apua tuttavaltaColor": "green"
   },
   "uusiYritys": {
     "question": "Vuosi on kulunut, ja haku ammattikorkeakouluihin ja yliopistoihin on jälleen alkanut.",
     "background": "background_6",
     "person": "character_6",
-    "fore": "fore_7",
     "face": "face_happy",
+    "fore": "fore_7",
     "answers": [
-      "Etsit netistä tietoa koulutusaloista, mitkä voisivat kiinnostaa sinua",
-      "Et etsi mitään tietoa koulutusaloista, vaan täytät hakulomakkeen mielenkiintoisilta kuulostavien alojen mukaan",
+      "Etsit netistä tietoa koulutusaloista, jotka voisivat kiinnostaa sinua",
+      "Et etsi mitään tietoa koulutusaloista, vaan täytät hakulomakkeen sen perusteella, mitkä alat kuulostavat mielenkiintoisilta",
       "Et aio täyttää hakulomaketta tänäkään vuonna"
     ],
-    "Etsit netistä tietoa koulutusaloista, mitkä voisivat kiinnostaa sinua": "alaLoydetty",
-    "Et etsi mitään tietoa koulutusaloista, vaan täytät hakulomakkeen mielenkiintoisilta kuulostavien alojen mukaan": "kutsu",
+    "Etsit netistä tietoa koulutusaloista, jotka voisivat kiinnostaa sinua": "alaLoydetty",
+    "Et etsi mitään tietoa koulutusaloista, vaan täytät hakulomakkeen sen perusteella, mitkä alat kuulostavat mielenkiintoisilta": "kutsu",
     "Et aio täyttää hakulomaketta tänäkään vuonna": "null",
-    "Etsit netistä tietoa koulutusaloista, mitkä voisivat kiinnostaa sinuaColor": "green",
-    "Et etsi mitään tietoa koulutusaloista, vaan täytät hakulomakkeen mielenkiintoisilta kuulostavien alojen mukaanColor": "yellow",
+    "Etsit netistä tietoa koulutusaloista, jotka voisivat kiinnostaa sinuaColor": "green",
+    "Et etsi mitään tietoa koulutusaloista, vaan täytät hakulomakkeen sen perusteella, mitkä alat kuulostavat mielenkiintoisiltaColor": "yellow",
     "Et aio täyttää hakulomaketta tänäkään vuonnaColor": "red"
   },
   "kutsu": {
-    "question": "Saat myöhemmin postista/\sähköpostiisi viestin, joka sisältää tietoa ja kutsun pääsykokeeseen.",
+    "question": "Saat myöhemmin kirjeen tai sähköpostiviestin, joka sisältää tietoa ja kutsun pääsykokeeseen.",
     "background": "background_6",
     "person": "character_6",
-    "fore": "fore_7",
     "face": "face_happy",
+    "fore": "fore_7",
     "answers": [
-      "Luet ohjeet tarkasti ja aiot mennä pääsykokeeseen sovittuna ajankohtana",
-      "Ohjeita ei tarvitse lukea, koska ne ovat niin pitkiä, mutta aiot kuitenkin mennä pääsykokeeseen sovittuna ajankohtana",
-      "Roskiin vain suoraan, ei huvitakaan lähteä opiskelemaan"
+      "Luet ohjeet tarkasti ja päätät mennä pääsykokeeseen annettuna ajankohtana",
+      "Ohjeita ei tarvitse lukea, koska ne ovat niin pitkät, mutta aiot kuitenkin mennä pääsykokeeseen annettuna ajankohtana",
+      "Tuhoat viestin tai heität kirjeen roskiin, koska sinua ei huvitakaan lähteä opiskelemaan"
     ],
-    "Luet ohjeet tarkasti ja aiot mennä pääsykokeeseen sovittuna ajankohtana": "paasykoe",
-    "Ohjeita ei tarvitse lukea, koska ne ovat niin pitkiä, mutta aiot kuitenkin mennä pääsykokeeseen sovittuna ajankohtana": "paasykoe",
-    "Roskiin vain suoraan, ei huvitakaan lähteä opiskelemaan": "null",
-    "Luet ohjeet tarkasti ja aiot mennä pääsykokeeseen sovittuna ajankohtanaColor": "green",
-    "Ohjeita ei tarvitse lukea, koska ne ovat niin pitkiä, mutta aiot kuitenkin mennä pääsykokeeseen sovittuna ajankohtanaColor": "red",
-    "Roskiin vain suoraan, ei huvitakaan lähteä opiskelemaanColor": "red"
+    "Luet ohjeet tarkasti ja päätät mennä pääsykokeeseen annettuna ajankohtana": "paasykoe",
+    "Ohjeita ei tarvitse lukea, koska ne ovat niin pitkät, mutta aiot kuitenkin mennä pääsykokeeseen annettuna ajankohtana": "paasykoe",
+    "Tuhoat viestin tai heität kirjeen roskiin, koska sinua ei huvitakaan lähteä opiskelemaan": "null",
+    "Luet ohjeet tarkasti ja päätät mennä pääsykokeeseen annettuna ajankohtanaColor": "green",
+    "Ohjeita ei tarvitse lukea, koska ne ovat niin pitkät, mutta aiot kuitenkin mennä pääsykokeeseen annettuna ajankohtanaColor": "red",
+    "Tuhoat viestin tai heität kirjeen roskiin, koska sinua ei huvitakaan lähteä opiskelemaanColor": "red"
   },
   "paasykoe": {
     "question": "On pääsykoepäivä. Miten toimit?",
     "background": "background_6",
     "person": "character_6",
-    "fore": "null",
     "face": "face_happy",
+    "fore": "null",
     "answers": [
       "Menet hyvissä ajoin pääsykokeeseen ja toimit siellä ohjeiden mukaan",
       "Menet viime hetkellä pääsykokeeseen ja toimit siellä ohjeiden mukaan",
@@ -90,18 +90,18 @@
     "Nyt kyllä maistuisi pizza, joten menet syömään ja haet ensi vuonna uudestaanColor": "red"
   },
   "loppu": {
-    "question": "Myöhemmin saat tietää, että läpäisit pääsykokeen. Sinulle lähetettiin myös tietoa uudesta opiskelupaikastasi.",
+    "question": "Myöhemmin saat tietää, että läpäisit pääsykokeen. Sinulle lähetetään myös tietoa uudesta opiskelupaikastasi.",
     "background": "background_6",
     "person": "character_6",
-    "fore": "null",
     "face": "face_happy",
+    "fore": "null",
     "answers": [
       "Luet tarkasti tiedot uudesta opiskelupaikastasi, otat vastaan opiskelupaikan ja aloitat koulunkäynnin ohjeissa kerrottuna päivänä",
-      "Ei kyllä huvitakaan opiskella, joten et ota vastaan opiskelupaikkaa"
+      "Sinua ei huvitakaan opiskella, joten et ota opiskelupaikkaa vastaan"
     ],
     "Luet tarkasti tiedot uudesta opiskelupaikastasi, otat vastaan opiskelupaikan ja aloitat koulunkäynnin ohjeissa kerrottuna päivänä": "null",
-    "Ei kyllä huvitakaan opiskella, joten et ota vastaan opiskelupaikkaa": "null",
+    "Sinua ei huvitakaan opiskella, joten et ota opiskelupaikkaa vastaan": "null",
     "Luet tarkasti tiedot uudesta opiskelupaikastasi, otat vastaan opiskelupaikan ja aloitat koulunkäynnin ohjeissa kerrottuna päivänäColor": "green",
-    "Ei kyllä huvitakaan opiskella, joten et ota vastaan opiskelupaikkaaColor": "red"
+    "Sinua ei huvitakaan opiskella, joten et ota opiskelupaikkaa vastaanColor": "red"
   }
 }

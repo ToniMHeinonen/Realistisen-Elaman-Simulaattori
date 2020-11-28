@@ -24,14 +24,14 @@
     "face": "null",
     "fore": "fore_7",
     "answers": [
-      "\"No way!\"",
+      "You say \"No way!\" and decide to go to the rehearsals by some other way",
       "\"Ok\"",
       "You skip the rehearsals"
     ],
-    "\"No way!\"": "first",
+    "You say \"No way!\" and decide to go to the rehearsals by some other way": "yksin",
     "\"Ok\"": "yhdessa",
     "You skip the rehearsals": "null",
-    "\"No way!\"Color": "red",
+    "You say \"No way!\" and decide to go to the rehearsals by some other wayColor": "green",
     "\"Ok\"Color": "green",
     "You skip the rehearsalsColor": "yellow"
   },
@@ -86,7 +86,7 @@
     "You count a new schedule in your head": "kaveri",
     "You wait peacefully": "kaveri",
     "You worry about how your whole plan is now ruinedColor": "red",
-    "You count a new schedule in your headColor": "yellow",
+    "You count a new schedule in your headColor": "green",
     "You wait peacefullyColor": "green"
   },
   "auto": {
@@ -103,11 +103,11 @@
     ],
     "You choose the fastest route, so you can prepare peacefully": "paikalla",
     "You choose the calmest route, for you are in no hurry": "paikalla",
-    "You don't go at all because you forgot your equipment": "auto",
+    "You don't go at all because you forgot your equipment": "null",
     "You speed to the training site as fast as you can and exceed the speed limit": "paikalla",
     "You choose the fastest route, so you can prepare peacefullyColor": "green",
     "You choose the calmest route, for you are in no hurryColor": "green",
-    "You don't go at all because you forgot your equipmentColor": "yellow",
+    "You don't go at all because you forgot your equipmentColor": "red",
     "You speed to the training site as fast as you can and exceed the speed limitColor": "red"
   },
   "bussi": {
@@ -145,7 +145,7 @@
     "You demand that he exceeds the speed limit": "paikalla",
     "You talk to your acquaintance casually": "paikalla",
     "You complain the whole ride that you will be lateColor": "red",
-    "You sit silently the whole rideColor": "green",
+    "You sit silently the whole rideColor": "yellow",
     "You demand that he exceeds the speed limitColor": "red",
     "You talk to your acquaintance casuallyColor": "green"
   },
@@ -232,9 +232,9 @@
       "You don't tell anyone",
       "You call your acquaintance and explain the situation"
     ],
-    "You inform the coach \/ instructor that you are sick": "harjoitusloppu",
-    "You don't tell anyone": "harjoitusloppu",
-    "You call your acquaintance and explain the situation": "harjoitusloppu",
+    "You inform the coach \/ instructor that you are sick": "null",
+    "You don't tell anyone": "null",
+    "You call your acquaintance and explain the situation": "null",
     "You inform the coach \/ instructor that you are sickColor": "green",
     "You don't tell anyoneColor": "yellow",
     "You call your acquaintance and explain the situationColor": "green"

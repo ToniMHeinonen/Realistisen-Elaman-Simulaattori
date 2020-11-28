@@ -1,19 +1,19 @@
 {
   "first": {
-    "question": "Poistuit ruokakaupasta ostostesi kanssa. Mitä teet seuraavaksi?",
+    "question": "Poistut ruokakaupasta ostostesi kanssa. Mitä teet seuraavaksi?",
     "background": "background_16",
     "person": "null",
-    "fore": "fore_14",
     "face": "null",
+    "fore": "fore_14",
     "answers": [
-      "Lähdet kyläilemään kaverin luokse",
+      "Lähdet kyläilemään kaverisi luokse",
       "Menet suorinta tietä kotiin",
       "Teet pienen kävelylenkin ostosten kanssa ennen kotiin menoa"
     ],
-    "Lähdet kyläilemään kaverin luokse": "kaveri",
+    "Lähdet kyläilemään kaverisi luokse": "kaveri",
     "Menet suorinta tietä kotiin": "koti",
     "Teet pienen kävelylenkin ostosten kanssa ennen kotiin menoa": "koti",
-    "Lähdet kyläilemään kaverin luokseColor": "red",
+    "Lähdet kyläilemään kaverisi luokseColor": "red",
     "Menet suorinta tietä kotiinColor": "green",
     "Teet pienen kävelylenkin ostosten kanssa ennen kotiin menoaColor": "red"
   },
@@ -39,30 +39,30 @@
     "face": "null",
     "fore": "fore_19",
     "answers": [
-      "Suutut hänelle ja menet sitten kotiisi",
-      "Ymmärrät, ettet saa jättää ostoksia hänen luokseen ja menet sitten kotiisi"
+      "Suutut hänelle ja menet kotiisi",
+      "Ymmärrät, ettet voi jättää ostoksia hänen luokseen, ja lähdet kotiisi"
     ],
-    "Suutut hänelle ja menet sitten kotiisi": "koti",
-    "Ymmärrät, ettet saa jättää ostoksia hänen luokseen ja menet sitten kotiisi": "koti",
-    "Suutut hänelle ja menet sitten kotiisiColor": "red",
-    "Ymmärrät, ettet saa jättää ostoksia hänen luokseen ja menet sitten kotiisiColor": "green"
+    "Suutut hänelle ja menet kotiisi": "koti",
+    "Ymmärrät, ettet voi jättää ostoksia hänen luokseen, ja lähdet kotiisi": "koti",
+    "Suutut hänelle ja menet kotiisiColor": "red",
+    "Ymmärrät, ettet voi jättää ostoksia hänen luokseen, ja lähdet kotiisiColor": "green"
   },
   "koti": {
-    "question": "Astut sisään asuntoosi. Mitä teet seuraavaksi?",
+    "question": "Astut sisään asuntoosi. Mitä teet ensimmäiseksi?",
     "background": "background_16",
     "person": "null",
     "face": "null",
     "fore": "fore_14",
     "answers": [
       "Jätät ostokset eteiseen ja menet pelaamaan tietokoneella",
-      "Menet keittiöön tyhjentääksesi ostokset ruokakassistasi",
+      "Menet keittiöön tyhjentääksesi ostokset omille paikoilleen",
       "Jätät ostokset eteiseen ja menet katsomaan televisiota"
     ],
     "Jätät ostokset eteiseen ja menet pelaamaan tietokoneella": "tietokone",
-    "Menet keittiöön tyhjentääksesi ostokset ruokakassistasi": "keittio",
+    "Menet keittiöön tyhjentääksesi ostokset omille paikoilleen": "keittio",
     "Jätät ostokset eteiseen ja menet katsomaan televisiota": "televisio",
     "Jätät ostokset eteiseen ja menet pelaamaan tietokoneellaColor": "red",
-    "Menet keittiöön tyhjentääksesi ostokset ruokakassistasiColor": "green",
+    "Menet keittiöön tyhjentääksesi ostokset omille paikoilleenColor": "green",
     "Jätät ostokset eteiseen ja menet katsomaan televisiotaColor": "red"
   },
   "tietokone": {
@@ -126,7 +126,7 @@
     "Jätät ostokset lopullisesti eteiseenColor": "red"
   },
   "keittio": {
-    "question": "Menet keittiöön ja alat tyhjentämään ruokakassia. Otat ensimmäisenä kassista voin ja maidon. Mihin laitat ne?",
+    "question": "Menet keittiöön ja alat tyhjentää ostoskassiasi. Otat ensimmäisenä kassista voin ja maidon. Mihin laitat ne?",
     "background": "background_16",
     "person": "null",
     "face": "null",
@@ -144,7 +144,7 @@
     "KuivakaappiinColor": "red"
   },
   "keittioKaks": {
-    "question": "Seuraavaksi otat ruokakassista jäätelön ja ranskanperunat. Mihin laitat ne?",
+    "question": "Seuraavaksi otat ruokakassista jäätelöpaketin ja ranskanperunoita. Mihin laitat ne?",
     "background": "background_16",
     "person": "null",
     "face": "null",
@@ -162,25 +162,25 @@
     "KuivakaappiinColor": "red"
   },
   "keittioEpavarma": {
-    "question": "Seuraavaksi otat ruokakassista ostoksen, josta et ole varma, missä sitä kuuluisi säilyttää.",
+    "question": "Seuraavaksi otat ostoskassista ruokatarvikkeen, josta et ole varma, missä sitä kuuluisi säilyttää.",
     "background": "background_16",
     "person": "null",
     "face": "null",
     "fore": "fore_14",
     "answers": [
-      "Katsot tarkkaan ostoksesta tekstit, jos siinä kerrottaisiin, missä sitä kuuluu säilyttää",
+      "Luet tarkkaan pakkauksen tekstit, jos niissä kerrottaisiin, missä tuotetta kuuluu säilyttää",
       "Soitat tuttavallesi, jos hän sattuisi tietämään",
-      "Pistät sen jääkaappiin"
+      "Laitat tuotteen jääkaappiin"
     ],
-    "Katsot tarkkaan ostoksesta tekstit, jos siinä kerrottaisiin, missä sitä kuuluu säilyttää": "ostosTeksti",
+    "Luet tarkkaan pakkauksen tekstit, jos niissä kerrottaisiin, missä tuotetta kuuluu säilyttää": "ostosTeksti",
     "Soitat tuttavallesi, jos hän sattuisi tietämään": "tuttava",
-    "Pistät sen jääkaappiin": "keittioKysymys",
-    "Katsot tarkkaan ostoksesta tekstit, jos siinä kerrottaisiin, missä sitä kuuluu säilyttääColor": "green",
+    "Laitat tuotteen jääkaappiin": "keittioKysymys",
+    "Luet tarkkaan pakkauksen tekstit, jos niissä kerrottaisiin, missä tuotetta kuuluu säilyttääColor": "green",
     "Soitat tuttavallesi, jos hän sattuisi tietämäänColor": "green",
-    "Pistät sen jääkaappiinColor": "red"
+    "Laitat tuotteen jääkaappiinColor": "red"
   },
   "ostosTeksti": {
-    "question": "Ostoksen tiedoissa lukee, että sitä kuuluisi säilyttää pakastelämpötilassa. Mihin laitat sen?",
+    "question": "Tuotteen tiedoissa lukee, että sitä kuuluisi säilyttää pakastelämpötilassa. Mihin laitat sen?",
     "background": "background_16",
     "person": "null",
     "face": "null",
@@ -216,7 +216,7 @@
     "KuivakaappiinColor": "red"
   },
   "keittioKysymys": {
-    "question": "Onko ruokakassissa vielä ostoksia jäljellä?",
+    "question": "Onko ostoskassissasi vielä jäljellä tuotteita?",
     "background": "background_16",
     "person": "null",
     "face": "null",
@@ -231,7 +231,7 @@
     "EiColor": "green"
   },
   "keittioKolme": {
-    "question": "Seuraavaksi otat ruokakassista makaronipussin ja kahvipaketin. Mihin laitat ne?",
+    "question": "Seuraavaksi otat ostoskassista makaronipussin ja kahvipaketin. Mihin laitat ne?",
     "background": "background_16",
     "person": "null",
     "face": "null",
@@ -249,7 +249,7 @@
     "KuivakaappiinColor": "green"
   },
   "keittioNelja": {
-    "question": "Viimeisenä otat ruokakassista shampoon ja suihkusaippuan. Mihin laitat ne?",
+    "question": "Viimeisenä otat ostoskassista shampoon ja suihkusaippuan. Mihin laitat ne?",
     "background": "background_16",
     "person": "null",
     "face": "null",
@@ -258,30 +258,30 @@
       "Jääkaappiin",
       "Pakastimeen",
       "Kuivakaappiin",
-      "Viet ne kylpytiloihin"
+      "Viet ne kylpyhuoneeseen"
     ],
     "Jääkaappiin": "loppu",
     "Pakastimeen": "loppu",
     "Kuivakaappiin": "loppu",
-    "Viet ne kylpytiloihin": "loppu",
+    "Viet ne kylpyhuoneeseen": "loppu",
     "JääkaappiinColor": "red",
     "PakastimeenColor": "red",
     "KuivakaappiinColor": "red",
-    "Viet ne kylpytiloihinColor": "green"
+    "Viet ne kylpyhuoneeseenColor": "green"
   },
   "loppu": {
-    "question": "Olet saanut tyhjennettyä ruokakassisi. Mitä teet vielä lopuksi?",
+    "question": "Olet saanut tyhjennettyä ostoskassisi. Mitä teet lopuksi?",
     "background": "background_16",
     "person": "null",
     "face": "null",
     "fore": "fore_14",
     "answers": [
-      "Pistät ruokakassin siististi kaappiin",
-      "Jätät ruokakassin lojumaan lattialle"
+      "Laitat tyhjän kassin siististi kaappiin",
+      "Jätät kassin lojumaan lattialle"
     ],
-    "Pistät ruokakassin siististi kaappiin": "null",
-    "Jätät ruokakassin lojumaan lattialle": "null",
-    "Pistät ruokakassin siististi kaappiinColor": "green",
-    "Jätät ruokakassin lojumaan lattialleColor": "red"
+    "Laitat tyhjän kassin siististi kaappiin": "null",
+    "Jätät kassin lojumaan lattialle": "null",
+    "Laitat tyhjän kassin siististi kaappiinColor": "green",
+    "Jätät kassin lojumaan lattialleColor": "red"
   }
 }

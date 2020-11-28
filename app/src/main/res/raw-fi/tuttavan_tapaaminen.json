@@ -1,10 +1,10 @@
 {
   "first": {
-    "question": "Et ole hetkeen nähnyt tuttavaasi ja haluaisit viettää aikaa hänen kanssaan.",
+    "question": "Et ole hetkeen nähnyt tuttavaasi, ja haluaisit viettää aikaa hänen kanssaan. Miten toimit?",
     "background": "background_10",
     "person": "character_8",
-    "fore": "null",
     "face": "face_happy",
+    "fore": "null",
     "answers": [
       "Soitat hänelle",
       "Laitat hänelle viestiä",
@@ -18,7 +18,7 @@
     "Odotat, että hän soittaisi sinulleColor": "red"
   },
   "odotus": {
-    "question": "On kulunut jonkin aikaa, eikä tuttavasi ole soittanut sinulle.",
+    "question": "On kulunut jonkin aikaa, eikä tuttavasi ole vieläkään soittanut sinulle.",
     "background": "background_10",
     "person": "character_8",
     "face": "face_confused",
@@ -69,33 +69,33 @@
     "Et vastaa puhelimeenColor": "red"
   },
   "soittoItse": {
-    "question": "Tuttavasi kuulostaa iloiselta soitostasi ja ehdottaa, voisiko hän tulla kyläilemään luoksesi.",
+    "question": "Tuttavasi kuulostaa iloiselta soitostasi ja kysyy, voisiko hän tulla kyläilemään luoksesi.",
     "background": "background_10",
     "person": "null",
     "face": "null",
     "fore": "fore_19",
     "answers": [
-      "Ehdotat, että voisitko mielummin mennä kyläilemään hänen luokseen",
+      "Ehdotat, että voisit mielummin mennä kyläilemään hänen luokseen",
       "Suostut tuttavasi ehdotukseen, ja hän lupaa tulla pian"
     ],
-    "Ehdotat, että voisitko mielummin mennä kyläilemään hänen luokseen": "soittoEhdotus",
+    "Ehdotat, että voisit mielummin mennä kyläilemään hänen luokseen": "soittoEhdotus",
     "Suostut tuttavasi ehdotukseen, ja hän lupaa tulla pian": "kylaAlku",
-    "Ehdotat, että voisitko mielummin mennä kyläilemään hänen luokseenColor": "green",
+    "Ehdotat, että voisit mielummin mennä kyläilemään hänen luokseenColor": "green",
     "Suostut tuttavasi ehdotukseen, ja hän lupaa tulla pianColor": "green"
   },
   "soittoEhdotus": {
-    "question": "Tuttavasi kertoo, että hänen asunnollaan on meneillään remontti ja ehdottaa uudestaan kyläilyä luoksesi.",
+    "question": "Tuttavasi kertoo, että hänen asunnollaan on remontti, ja ehdottaa uudestaan kyläilyä luoksesi.",
     "background": "background_10",
     "person": "null",
     "face": "null",
     "fore": "fore_19",
     "answers": [
-      "Suutut, koska hän ei suostunut ehdotukseesi ja lopetat puhelun",
+      "Suutut, koska hän ei suostunut ehdotukseesi, ja lopetat puhelun",
       "Suostut tuttavasi ehdotukseen, ja hän lupaa tulla pian"
     ],
-    "Suutut, koska hän ei suostunut ehdotukseesi ja lopetat puhelun": "null",
+    "Suutut, koska hän ei suostunut ehdotukseesi, ja lopetat puhelun": "null",
     "Suostut tuttavasi ehdotukseen, ja hän lupaa tulla pian": "kylaAlku",
-    "Suutut, koska hän ei suostunut ehdotukseesi ja lopetat puhelunColor": "red",
+    "Suutut, koska hän ei suostunut ehdotukseesi, ja lopetat puhelunColor": "red",
     "Suostut tuttavasi ehdotukseen, ja hän lupaa tulla pianColor": "green"
   },
   "soittoTuttava": {
@@ -105,31 +105,31 @@
     "face": "null",
     "fore": "fore_19",
     "answers": [
-      "Ehdotat, että voisitko mielummin mennä kyläilemään hänen luokseen",
+      "Ehdotat, että voisit mielummin mennä kyläilemään hänen luokseen",
       "Suostut tuttavasi ehdotukseen, ja hän lupaa tulla pian"
     ],
-    "Ehdotat, että voisitko mielummin mennä kyläilemään hänen luokseen": "soittoEhdotus",
+    "Ehdotat, että voisit mielummin mennä kyläilemään hänen luokseen": "soittoEhdotus",
     "Suostut tuttavasi ehdotukseen, ja hän lupaa tulla pian": "kylaAlku",
-    "Ehdotat, että voisitko mielummin mennä kyläilemään hänen luokseenColor": "green",
+    "Ehdotat, että voisit mielummin mennä kyläilemään hänen luokseenColor": "green",
     "Suostut tuttavasi ehdotukseen, ja hän lupaa tulla pianColor": "green"
   },
   "viesti": {
-    "question": "Laitat tuttavallesi viestiä, haluaisiko hän tehdä jotain kanssasi. Hän ehdottaa, että voisi tulla kyläilemään luoksesi.",
+    "question": "Laitat tuttavallesi viestiä ja kysyt, haluaisiko hän tehdä jotain kanssasi. Hän ehdottaa, että voisi tulla kyläilemään luoksesi.",
     "background": "background_10",
     "person": "null",
     "face": "null",
     "fore": "fore_19",
     "answers": [
-      "Ehdotat, että voisitko mielummin mennä kyläilemään hänen luokseen",
+      "Ehdotat, että voisit mielummin mennä kyläilemään hänen luokseen",
       "Suostut tuttavasi ehdotukseen, ja hän lupaa tulla pian"
     ],
-    "Ehdotat, että voisitko mielummin mennä kyläilemään hänen luokseen": "viestiEhdotus",
+    "Ehdotat, että voisit mielummin mennä kyläilemään hänen luokseen": "viestiEhdotus",
     "Suostut tuttavasi ehdotukseen, ja hän lupaa tulla pian": "kylaAlku",
-    "Ehdotat, että voisitko mielummin mennä kyläilemään hänen luokseenColor": "green",
+    "Ehdotat, että voisit mielummin mennä kyläilemään hänen luokseenColor": "green",
     "Suostut tuttavasi ehdotukseen, ja hän lupaa tulla pianColor": "green"
   },
   "viestiEhdotus": {
-    "question": "Tuttavasi kertoo, että hänen asunnollaan on meneillään remontti ja ehdottaa uudestaan kyläilyä luoksesi.",
+    "question": "Tuttavasi kertoo, että hänen asunnollaan on remontti, ja ehdottaa uudestaan kyläilyä luoksesi.",
     "background": "background_10",
     "person": "null",
     "face": "null",
@@ -150,16 +150,16 @@
     "face": "null",
     "fore": "fore_19",
     "answers": [
-      "Pahoittelet, kun et vastannut puhelimeen ja pyydät hänet sisään",
-      "Sanot, ettet huomannut hänen soittoaan ja pyydät hänet sisään",
-      "Sanot, ettei sinua huvittanutkaan jutella hänen kanssaan ja pyydät häntä poistumaan"
+      "Pahoittelet, että et vastannut puhelimeen, ja pyydät hänet sisään",
+      "Sanot, ettet huomannut hänen soittoaan, ja pyydät hänet sisään",
+      "Sanot, ettei sinua huvittanutkaan jutella hänen kanssaan, ja pyydät häntä poistumaan"
     ],
-    "Pahoittelet, kun et vastannut puhelimeen ja pyydät hänet sisään": "kylaSisalla",
-    "Sanot, ettet huomannut hänen soittoaan ja pyydät hänet sisään": "kylaSisalla",
-    "Sanot, ettei sinua huvittanutkaan jutella hänen kanssaan ja pyydät häntä poistumaan": "null",
-    "Pahoittelet, kun et vastannut puhelimeen ja pyydät hänet sisäänColor": "green",
-    "Sanot, ettet huomannut hänen soittoaan ja pyydät hänet sisäänColor": "yellow",
-    "Sanot, ettei sinua huvittanutkaan jutella hänen kanssaan ja pyydät häntä poistumaanColor": "red"
+    "Pahoittelet, että et vastannut puhelimeen, ja pyydät hänet sisään": "kylaSisalla",
+    "Sanot, ettet huomannut hänen soittoaan, ja pyydät hänet sisään": "kylaSisalla",
+    "Sanot, ettei sinua huvittanutkaan jutella hänen kanssaan, ja pyydät häntä poistumaan": "null",
+    "Pahoittelet, että et vastannut puhelimeen, ja pyydät hänet sisäänColor": "green",
+    "Sanot, ettet huomannut hänen soittoaan, ja pyydät hänet sisäänColor": "yellow",
+    "Sanot, ettei sinua huvittanutkaan jutella hänen kanssaan, ja pyydät häntä poistumaanColor": "red"
   },
   "kylaAlku": {
     "question": "Ovikello soi, ja tuttavasi odottelee oven takana.",
@@ -177,18 +177,18 @@
     "Avaat oven, tervehdit häntä ja pyydät peremmälleColor": "green"
   },
   "kylaUusi": {
-    "question": "Tuttavasi soittaa ovikelloasi vielä muutaman kerran ja on sitten poistumassa.",
+    "question": "Tuttavasi soittaa ovikelloasi vielä muutaman kerran ja on sitten  poistumassa.",
     "background": "background_10",
     "person": "null",
     "face": "null",
     "fore": "fore_8",
     "answers": [
-      "Et vieläkään avaa ovea ja annat hänen lähteä",
+      "Et vieläkään avaa ovea, vaan annat hänen lähteä",
       "Avaat lopulta oven, tervehdit häntä ja pyydät peremmälle"
     ],
-    "Et vieläkään avaa ovea ja annat hänen lähteä": "null",
+    "Et vieläkään avaa ovea, vaan annat hänen lähteä": "null",
     "Avaat lopulta oven, tervehdit häntä ja pyydät peremmälle": "kylaSisalla",
-    "Et vieläkään avaa ovea ja annat hänen lähteäColor": "red",
+    "Et vieläkään avaa ovea, vaan annat hänen lähteäColor": "red",
     "Avaat lopulta oven, tervehdit häntä ja pyydät peremmälleColor": "green"
   },
   "kylaSisalla": {
@@ -216,25 +216,25 @@
     "face": "null",
     "fore": "fore_19",
     "answers": [
-      "Et halua tarjota omia tarjottaviasi, joten lähetät hänet kauppaan ostamaan tarvikkeita",
+      "Et halua tarjota tuttavallesi omia tarjottaviasi, joten lähetät hänet kauppaan ostamaan tarvikkeita",
       "Keität ja tarjoat hänelle kahvia",
       "Tarjoat hänelle teetä",
       "Tarjoat hänelle kaakaota",
       "Tarjoat hänelle mehua"
     ],
-    "Et halua tarjota omia tarjottaviasi, joten lähetät hänet kauppaan ostamaan tarvikkeita": "kauppaKuulumiset",
+    "Et halua tarjota tuttavallesi omia tarjottaviasi, joten lähetät hänet kauppaan ostamaan tarvikkeita": "kauppaKuulumiset",
     "Keität ja tarjoat hänelle kahvia": "kuulumiset",
     "Tarjoat hänelle teetä": "kuulumiset",
     "Tarjoat hänelle kaakaota": "kuulumiset",
     "Tarjoat hänelle mehua": "kuulumiset",
-    "Et halua tarjota omia tarjottaviasi, joten lähetät hänet kauppaan ostamaan tarvikkeitaColor": "red",
+    "Et halua tarjota tuttavallesi omia tarjottaviasi, joten lähetät hänet kauppaan ostamaan tarvikkeitaColor": "red",
     "Keität ja tarjoat hänelle kahviaColor": "green",
     "Tarjoat hänelle teetäColor": "green",
     "Tarjoat hänelle kaakaotaColor": "green",
     "Tarjoat hänelle mehuaColor": "green"
   },
   "kauppaKuulumiset": {
-    "question": "Tuttavasi hämmentyy, mutta käy kuitenkin kaupassa, jonka jälkeen tarjoat hänelle hänen haluamaansa tarjottavaa.",
+    "question": "Tuttavasi hämmentyy, mutta käy kuitenkin kaupassa, minkä jälkeen tarjoat hänelle hänen haluamaansa juotavaa.",
     "background": "background_10",
     "person": "null",
     "face": "null",

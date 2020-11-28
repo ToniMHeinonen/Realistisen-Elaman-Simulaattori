@@ -1,20 +1,20 @@
 {
   "first": {
-    "question": "Sinulla alkaa olemaan nälkä, mutta jääkaappisi, pakastimesi ja kuivakaappisi ovat melko tyhjiä.",
+    "question": "Sinulla on nälkä, mutta jääkaappisi, pakastimesi ja kuivakaappisi ovat melko tyhjiä.",
     "background": "background_15",
     "person": "character_6",
-    "fore": "null",
     "face": "face_uncomfortable",
+    "fore": "null",
     "answers": [
-      "Sinnittelet vielä muutaman päivän niillä, mitä kaapissa on jäljellä",
-      "Alat suunnittelemaan kauppaan lähtöä",
+      "Sinnittelet vielä muutaman päivän niillä ruoilla, mitä kaapeissa on jäljellä",
+      "Alat suunnitella kauppaan lähtöä",
       "Tilaat lähipizzeriasta pizzan kotiinkuljetuksella"
     ],
-    "Sinnittelet vielä muutaman päivän niillä, mitä kaapissa on jäljellä": "uusiAlku",
-    "Alat suunnittelemaan kauppaan lähtöä": "suunnittelu",
+    "Sinnittelet vielä muutaman päivän niillä ruoilla, mitä kaapeissa on jäljellä": "uusiAlku",
+    "Alat suunnitella kauppaan lähtöä": "suunnittelu",
     "Tilaat lähipizzeriasta pizzan kotiinkuljetuksella": "pizza",
-    "Sinnittelet vielä muutaman päivän niillä, mitä kaapissa on jäljelläColor": "green",
-    "Alat suunnittelemaan kauppaan lähtöäColor": "green",
+    "Sinnittelet vielä muutaman päivän niillä ruoilla, mitä kaapeissa on jäljelläColor": "green",
+    "Alat suunnitella kauppaan lähtöäColor": "green",
     "Tilaat lähipizzeriasta pizzan kotiinkuljetuksellaColor": "green"
   },
   "uusiAlku": {
@@ -24,49 +24,49 @@
     "face": "face_uncomfortable",
     "fore": "null",
     "answers": [
-      "Alat suunnittelemaan kauppaan lähtöä",
+      "Alat suunnittella kauppaan lähtöä",
       "Tilaat lähipizzeriasta pizzan kotiinkuljetuksella"
     ],
-    "Alat suunnittelemaan kauppaan lähtöä": "suunnittelu",
+    "Alat suunnittella kauppaan lähtöä": "suunnittelu",
     "Tilaat lähipizzeriasta pizzan kotiinkuljetuksella": "pizza",
-    "Alat suunnittelemaan kauppaan lähtöäColor": "green",
+    "Alat suunnittella kauppaan lähtöäColor": "green",
     "Tilaat lähipizzeriasta pizzan kotiinkuljetuksellaColor": "green"
   },
   "suunnittelu": {
-    "question": "Alat suunnittelemaan kauppareissua. Mitä teet ensimmäisenä?",
+    "question": "Alat suunnitella kauppareissua. Mitä teet ensimmäisenä?",
     "background": "background_15",
     "person": "null",
     "face": "null",
     "fore": "fore_13",
     "answers": [
-      "Tarkastat, mitä kaikkea tarvitset lisää keittiöösi",
-      "Tarkastat, mitä kaikkea tarvitset lisää wc- ja kylpytiloihisi",
-      "Lähdet heti kauppaan tarkistamatta mitä kaikkea tarvitset kaupasta"
+      "Tarkistat, mitä kaikkea tarvitset lisää keittiöösi",
+      "Tarkistat, mitä kaikkea tarvitset lisää wc- ja kylpytiloihisi",
+      "Lähdet heti kauppaan tarkistamatta, mitä kaikkea sinun tarvitsee ostaa"
     ],
-    "Tarkastat, mitä kaikkea tarvitset lisää keittiöösi": "keittio",
-    "Tarkastat, mitä kaikkea tarvitset lisää wc- ja kylpytiloihisi": "wc",
-    "Lähdet heti kauppaan tarkistamatta mitä kaikkea tarvitset kaupasta": "toinenLahto",
-    "Tarkastat, mitä kaikkea tarvitset lisää keittiöösiColor": "green",
-    "Tarkastat, mitä kaikkea tarvitset lisää wc- ja kylpytiloihisiColor": "green",
-    "Lähdet heti kauppaan tarkistamatta mitä kaikkea tarvitset kaupastaColor": "red"
+    "Tarkistat, mitä kaikkea tarvitset lisää keittiöösi": "keittio",
+    "Tarkistat, mitä kaikkea tarvitset lisää wc- ja kylpytiloihisi": "wc",
+    "Lähdet heti kauppaan tarkistamatta, mitä kaikkea sinun tarvitsee ostaa": "toinenLahto",
+    "Tarkistat, mitä kaikkea tarvitset lisää keittiöösiColor": "green",
+    "Tarkistat, mitä kaikkea tarvitset lisää wc- ja kylpytiloihisiColor": "green",
+    "Lähdet heti kauppaan tarkistamatta, mitä kaikkea sinun tarvitsee ostaaColor": "red"
   },
   "pizza": {
-    "question": "Syötyäsi maittavan pizzan alat suunnittelemaan kauppareissua. Mitä teet ensimmäisenä?",
+    "question": "Syötyäsi maittavan pizzan alat suunnitella kauppareissua. Mitä teet ensimmäisenä?",
     "background": "background_15",
     "person": "null",
     "face": "null",
     "fore": "fore_13",
     "answers": [
-      "Tarkastat, mitä kaikkea tarvitset lisää keittiöösi",
-      "Tarkastat, mitä kaikkea tarvitset lisää wc- ja kylpytiloihisi",
-      "Lähdet heti kauppaan tarkistamatta mitä kaikkea tarvitset kaupasta"
+      "Tarkistat, mitä kaikkea tarvitset lisää keittiöösi",
+      "Tarkistat, mitä kaikkea tarvitset lisää wc- ja kylpytiloihisi",
+      "Lähdet heti kauppaan tarkistamatta, mitä kaikkea sinun tarvitsee ostaa kaupasta"
     ],
-    "Tarkastat, mitä kaikkea tarvitset lisää keittiöösi": "keittio",
-    "Tarkastat, mitä kaikkea tarvitset lisää wc- ja kylpytiloihisi": "wc",
-    "Lähdet heti kauppaan tarkistamatta mitä kaikkea tarvitset kaupasta": "toinenLahto",
-    "Tarkastat, mitä kaikkea tarvitset lisää keittiöösiColor": "green",
-    "Tarkastat, mitä kaikkea tarvitset lisää wc- ja kylpytiloihisiColor": "green",
-    "Lähdet heti kauppaan tarkistamatta mitä kaikkea tarvitset kaupastaColor": "red"
+    "Tarkistat, mitä kaikkea tarvitset lisää keittiöösi": "keittio",
+    "Tarkistat, mitä kaikkea tarvitset lisää wc- ja kylpytiloihisi": "wc",
+    "Lähdet heti kauppaan tarkistamatta, mitä kaikkea sinun tarvitsee ostaa kaupasta": "toinenLahto",
+    "Tarkistat, mitä kaikkea tarvitset lisää keittiöösiColor": "green",
+    "Tarkistat, mitä kaikkea tarvitset lisää wc- ja kylpytiloihisiColor": "green",
+    "Lähdet heti kauppaan tarkistamatta, mitä kaikkea sinun tarvitsee ostaa kaupastaColor": "red"
   },
   "keittio": {
     "question": "Tarkistat ensimmäisenä keittiön.",
@@ -75,12 +75,12 @@
     "face": "null",
     "fore": "fore_13",
     "answers": [
-      "Lisäät kauppalistaan kaiken, mitä mielestäsi tarvitset lisää keittiöösi, kuten esimerkiksi makaronia tai juustoa",
+      "Lisäät kauppalistaan kaiken, mitä mielestäsi tarvitset lisää, kuten esimerkiksi makaronia tai juustoa",
       "Et käytä kauppalistaa, koska ajattelet muistavasi kaiken, mitä tarvitset"
     ],
-    "Lisäät kauppalistaan kaiken, mitä mielestäsi tarvitset lisää keittiöösi, kuten esimerkiksi makaronia tai juustoa": "keittioValmis",
+    "Lisäät kauppalistaan kaiken, mitä mielestäsi tarvitset lisää, kuten esimerkiksi makaronia tai juustoa": "keittioValmis",
     "Et käytä kauppalistaa, koska ajattelet muistavasi kaiken, mitä tarvitset": "keittioValmis",
-    "Lisäät kauppalistaan kaiken, mitä mielestäsi tarvitset lisää keittiöösi, kuten esimerkiksi makaronia tai juustoaColor": "green",
+    "Lisäät kauppalistaan kaiken, mitä mielestäsi tarvitset lisää, kuten esimerkiksi makaronia tai juustoaColor": "green",
     "Et käytä kauppalistaa, koska ajattelet muistavasi kaiken, mitä tarvitsetColor": "red"
   },
   "wc": {
@@ -90,12 +90,12 @@
     "face": "null",
     "fore": "fore_13",
     "answers": [
-      "Lisäät kauppalistaan kaiken, mitä mielestäsi tarvitset lisää wc- ja kylpytiloihisi, kuten wc-paperin tai shampoon",
+      "Lisäät kauppalistaan kaiken, mitä mielestäsi tarvitset lisää wc- ja kylpytiloihisi, kuten wc-paperia tai shampoon",
       "Et käytä kauppalistaa, koska ajattelet muistavasi kaiken, mitä tarvitset"
     ],
-    "Lisäät kauppalistaan kaiken, mitä mielestäsi tarvitset lisää wc- ja kylpytiloihisi, kuten wc-paperin tai shampoon": "wcValmis",
+    "Lisäät kauppalistaan kaiken, mitä mielestäsi tarvitset lisää wc- ja kylpytiloihisi, kuten wc-paperia tai shampoon": "wcValmis",
     "Et käytä kauppalistaa, koska ajattelet muistavasi kaiken, mitä tarvitset": "wcValmis",
-    "Lisäät kauppalistaan kaiken, mitä mielestäsi tarvitset lisää wc- ja kylpytiloihisi, kuten wc-paperin tai shampoonColor": "green",
+    "Lisäät kauppalistaan kaiken, mitä mielestäsi tarvitset lisää wc- ja kylpytiloihisi, kuten wc-paperia tai shampoonColor": "green",
     "Et käytä kauppalistaa, koska ajattelet muistavasi kaiken, mitä tarvitsetColor": "red"
   },
   "keittioValmis": {
@@ -105,12 +105,12 @@
     "face": "null",
     "fore": "fore_13",
     "answers": [
-      "Lisäät kauppalistaan kaiken, mitä mielestäsi tarvitset lisää wc- ja kylpytiloihisi, kuten wc-paperin tai shampoon",
+      "Lisäät kauppalistaan kaiken, mitä mielestäsi tarvitset lisää wc- ja kylpytiloihisi, kuten wc-paperia tai shampoon",
       "Et käytä kauppalistaa, koska ajattelet muistavasi kaiken, mitä tarvitset"
     ],
-    "Lisäät kauppalistaan kaiken, mitä mielestäsi tarvitset lisää wc- ja kylpytiloihisi, kuten wc-paperin tai shampoon": "valmis",
+    "Lisäät kauppalistaan kaiken, mitä mielestäsi tarvitset lisää wc- ja kylpytiloihisi, kuten wc-paperia tai shampoon": "valmis",
     "Et käytä kauppalistaa, koska ajattelet muistavasi kaiken, mitä tarvitset": "valmis",
-    "Lisäät kauppalistaan kaiken, mitä mielestäsi tarvitset lisää wc- ja kylpytiloihisi, kuten wc-paperin tai shampoonColor": "green",
+    "Lisäät kauppalistaan kaiken, mitä mielestäsi tarvitset lisää wc- ja kylpytiloihisi, kuten wc-paperia tai shampoonColor": "green",
     "Et käytä kauppalistaa, koska ajattelet muistavasi kaiken, mitä tarvitsetColor": "red"
   },
   "wcValmis": {
@@ -120,31 +120,34 @@
     "face": "null",
     "fore": "fore_13",
     "answers": [
-      "Lisäät kauppalistaan kaiken, mitä mielestäsi tarvitset lisää keittiöösi, kuten esimerkiksi makaronia tai juustoa",
+      "Lisäät kauppalistaan kaiken, mitä mielestäsi tarvitset lisää, kuten esimerkiksi makaronia tai juustoa",
       "Et käytä kauppalistaa, koska ajattelet muistavasi kaiken, mitä tarvitset"
     ],
-    "Lisäät kauppalistaan kaiken, mitä mielestäsi tarvitset lisää keittiöösi, kuten esimerkiksi makaronia tai juustoa": "valmis",
+    "Lisäät kauppalistaan kaiken, mitä mielestäsi tarvitset lisää, kuten esimerkiksi makaronia tai juustoa": "valmis",
     "Et käytä kauppalistaa, koska ajattelet muistavasi kaiken, mitä tarvitset": "valmis",
-    "Lisäät kauppalistaan kaiken, mitä mielestäsi tarvitset lisää keittiöösi, kuten esimerkiksi makaronia tai juustoaColor": "green",
+    "Lisäät kauppalistaan kaiken, mitä mielestäsi tarvitset lisää, kuten esimerkiksi makaronia tai juustoaColor": "green",
     "Et käytä kauppalistaa, koska ajattelet muistavasi kaiken, mitä tarvitsetColor": "red"
   },
   "valmis": {
-    "question": "Tarkastat vielä, puuttuuko asunnostasi muitakin ruokakaupasta saatavia tavaroita, jotka sitten lisäät kauppalistaan.",
+    "question": "Tarkistat vielä, puuttuuko asunnostasi muita ruokakaupasta saatavia tavaroita.",
     "background": "background_15",
     "person": "null",
     "face": "null",
     "fore": "fore_13",
     "answers": [
-      "Järjestät kauppalistan vielä siten, että ne ovat suurin piirtein siinä järjestyksessä, kuin mitä kaupassa kuljet",
-      "Ruokakauppa on sen verran pieni, ettei listaa tarvitse järjestellä uudestaan"
+      "Lisäät ne kauppalistalle ja järjestät listan siten, että ostokset ovat suurin piirtein siinä järjestyksessä, missä kuljet kaupassa",
+      "Lisäät ne kauppalistalle etkä järjestele listaa uudelleen, koska ruokakauppa on sen verran pieni, ettei se ole tarpeen",
+      "Et tee lainkaan kauppalistaa"
     ],
-    "Järjestät kauppalistan vielä siten, että ne ovat suurin piirtein siinä järjestyksessä, kuin mitä kaupassa kuljet": "ennenLahtoa",
-    "Ruokakauppa on sen verran pieni, ettei listaa tarvitse järjestellä uudestaan": "ennenLahtoa",
-    "Järjestät kauppalistan vielä siten, että ne ovat suurin piirtein siinä järjestyksessä, kuin mitä kaupassa kuljetColor": "green",
-    "Ruokakauppa on sen verran pieni, ettei listaa tarvitse järjestellä uudestaanColor": "green"
+    "Lisäät ne kauppalistalle ja järjestät listan siten, että ostokset ovat suurin piirtein siinä järjestyksessä, missä kuljet kaupassa": "ennenLahtoa",
+    "Lisäät ne kauppalistalle etkä järjestele listaa uudelleen, koska ruokakauppa on sen verran pieni, ettei se ole tarpeen": "ennenLahtoa",
+    "Et tee lainkaan kauppalistaa": "toinenLahto",
+    "Lisäät ne kauppalistalle ja järjestät listan siten, että ostokset ovat suurin piirtein siinä järjestyksessä, missä kuljet kaupassaColor": "green",
+    "Lisäät ne kauppalistalle etkä järjestele listaa uudelleen, koska ruokakauppa on sen verran pieni, ettei se ole tarpeenColor": "green",
+    "Et tee lainkaan kauppalistaaColor": "red"
   },
   "ennenLahtoa": {
-    "question": "Omistatko ruokakassia tai -pussia, mihin olet yleensä pakannut ostoksesi kaupassa?",
+    "question": "Omistatko ostoskassia tai -pussia, johon voit pakata ostoksesi kaupassa?",
     "background": "background_15",
     "person": "character_6",
     "face": "face_happy",
@@ -159,7 +162,7 @@
     "EiColor": "green"
   },
   "kyllaPussi": {
-    "question": "Otatko ruokakassia tai -pussia mukaan kauppaan?",
+    "question": "Otatko ostoskassin tai -pussin mukaan kauppaan?",
     "background": "background_15",
     "person": "character_6",
     "face": "face_happy",
@@ -181,12 +184,12 @@
     "fore": "null",
     "answers": [
       "Päätätkin perua kauppareissusi viime hetkellä",
-      "Otat lompakon, avaimet ja kauppalistan ja poistut asunnostasi"
+      "Otat lompakon, avaimet ja kauppalistan mukaasi ja poistut asunnostasi"
     ],
     "Päätätkin perua kauppareissusi viime hetkellä": "varma",
-    "Otat lompakon, avaimet ja kauppalistan ja poistut asunnostasi": "ulkona",
+    "Otat lompakon, avaimet ja kauppalistan mukaasi ja poistut asunnostasi": "ulkona",
     "Päätätkin perua kauppareissusi viime hetkelläColor": "red",
-    "Otat lompakon, avaimet ja kauppalistan ja poistut asunnostasiColor": "green"
+    "Otat lompakon, avaimet ja kauppalistan mukaasi ja poistut asunnostasiColor": "green"
   },
   "toinenLahto": {
     "question": "Olet valmiina lähtemään kauppaan.",
@@ -219,7 +222,7 @@
     "EiColor": "green"
   },
   "ulkona": {
-    "question": "Ruokakauppa on noin 200 metrin päässä vasemmalla asunnostasi, mihin suuntaan menet?",
+    "question": "Ruokakauppa sijaitsee vasemmalla noin 200 metrin päässä asunnostasi. Mihin suuntaan lähdet?",
     "background": "background_15",
     "person": "character_6",
     "face": "face_happy",

@@ -1,10 +1,10 @@
 {
   "first": {
-    "question": "Sinun olisi tarkoitus hankkia vuokra-asunto, johon pääsisit muuttamaan parin kuukauden sisällä.",
+    "question": "Sinun on tarkoitus hankkia vuokra-asunto, johon pääsisit muuttamaan parin kuukauden sisällä.",
     "background": "background_10",
     "person": "character_8",
-    "fore": "null",
     "face": "face_happy",
+    "fore": "null",
     "answers": [
       "Aloitat saman tien uuden vuokra-asunnon etsinnän netistä",
       "Mahdolliseen muuttoon on vielä aikaa, joten hoidat vuokra-asunnon etsinnän myöhemmin"
@@ -18,8 +18,8 @@
     "question": "Sinun pitäisi päästä muuttamaan mahdollisimman pian, etkä ole vielä edes aloittanut vuokra-asunnon etsintää.",
     "background": "background_10",
     "person": "character_8",
-    "fore": "null",
     "face": "face_confused",
+    "fore": "null",
     "answers": [
       "Aloitat saman tien uuden vuokra-asunnon etsinnän netistä",
       "Et aio sittenkään muuttaa"
@@ -30,134 +30,134 @@
     "Et aio sittenkään muuttaaColor": "red"
   },
   "etsinta": {
-    "question": "Olet löytänyt netistä verkkosivuja, joissa on mahdollisuus selata vapaana olevia vuokra-asuntoja.",
+    "question": "Olet löytänyt netistä verkkosivuja, joilla voit selata vapaana olevia vuokra-asuntoja.",
     "background": "background_10",
     "person": "character_8",
-    "fore": "fore_7",
     "face": "face_happy",
+    "fore": "fore_7",
     "answers": [
       "Asunnon etsintä vaikuttaa liian työläältä, joten hoidat sen myöhemmin",
       "Etsit asuntoja, jotka näyttävät hyväkuntoisilta ja joihin sinulla on varaa",
-      "Etsit asuntoja, jotka näyttävät hyväkuntoisilta, mutta niiden vuokra on paljon suurempi, mihin sinulla on varaa"
+      "Etsit asuntoja, jotka näyttävät hyväkuntoisilta, mutta niiden vuokra on paljon suurempi, kuin mihin sinulla on varaa"
     ],
     "Asunnon etsintä vaikuttaa liian työläältä, joten hoidat sen myöhemmin": "uusiEtsinta",
     "Etsit asuntoja, jotka näyttävät hyväkuntoisilta ja joihin sinulla on varaa": "selaus",
-    "Etsit asuntoja, jotka näyttävät hyväkuntoisilta, mutta niiden vuokra on paljon suurempi, mihin sinulla on varaa": "selaus",
+    "Etsit asuntoja, jotka näyttävät hyväkuntoisilta, mutta niiden vuokra on paljon suurempi, kuin mihin sinulla on varaa": "selaus",
     "Asunnon etsintä vaikuttaa liian työläältä, joten hoidat sen myöhemminColor": "red",
     "Etsit asuntoja, jotka näyttävät hyväkuntoisilta ja joihin sinulla on varaaColor": "green",
-    "Etsit asuntoja, jotka näyttävät hyväkuntoisilta, mutta niiden vuokra on paljon suurempi, mihin sinulla on varaaColor": "red"
+    "Etsit asuntoja, jotka näyttävät hyväkuntoisilta, mutta niiden vuokra on paljon suurempi, kuin mihin sinulla on varaaColor": "red"
   },
   "uusiEtsinta": {
     "question": "Aikaa on kulunut, etkä ole vieläkään aloittanut vuokra-asunnon etsintää.",
     "background": "background_10",
     "person": "character_8",
+    "face": "face_confused",
     "fore": "null",
-    "face": "face_happy",
     "answers": [
       "Et aio sittenkään muuttaa, joten et etsi uutta asuntoa",
       "Etsit asuntoja, jotka näyttävät hyväkuntoisilta ja joihin sinulla on varaa",
-      "Etsit asuntoja, jotka näyttävät hyväkuntoisilta, mutta niiden vuokra on paljon suurempi, mihin sinulla on varaa"
+      "Etsit asuntoja, jotka näyttävät hyväkuntoisilta, mutta niiden vuokra on paljon suurempi, kuin mihin sinulla on varaa"
     ],
     "Et aio sittenkään muuttaa, joten et etsi uutta asuntoa": "null",
     "Etsit asuntoja, jotka näyttävät hyväkuntoisilta ja joihin sinulla on varaa": "selaus",
-    "Etsit asuntoja, jotka näyttävät hyväkuntoisilta, mutta niiden vuokra on paljon suurempi, mihin sinulla on varaa": "selaus",
+    "Etsit asuntoja, jotka näyttävät hyväkuntoisilta, mutta niiden vuokra on paljon suurempi, kuin mihin sinulla on varaa": "selaus",
     "Et aio sittenkään muuttaa, joten et etsi uutta asuntoaColor": "red",
     "Etsit asuntoja, jotka näyttävät hyväkuntoisilta ja joihin sinulla on varaaColor": "green",
-    "Etsit asuntoja, jotka näyttävät hyväkuntoisilta, mutta niiden vuokra on paljon suurempi, mihin sinulla on varaaColor": "red"
+    "Etsit asuntoja, jotka näyttävät hyväkuntoisilta, mutta niiden vuokra on paljon suurempi, kuin mihin sinulla on varaaColor": "red"
   },
   "selaus": {
     "question": "Olet mielestäsi löytänyt useamman sopivan asunnon.",
     "background": "background_10",
     "person": "character_8",
-    "fore": "fore_7",
     "face": "face_happy",
+    "fore": "fore_7",
     "answers": [
-      "Otat yhteyttä vain yhden asunnon vuokraajaan",
-      "Otat yhteyttä useampaan asunnon vuokraajaan, jotta mahdollisuutesi saada asunto on isompi"
+      "Otat yhteyttä vain yhden asunnon vuokranantajaan",
+      "Otat yhteyttä useampaan vuokranantajaan, jotta mahdollisuutesi saada asunto olisi isompi"
     ],
-    "Otat yhteyttä vain yhden asunnon vuokraajaan": "valmistautuminen",
-    "Otat yhteyttä useampaan asunnon vuokraajaan, jotta mahdollisuutesi saada asunto on isompi": "valmistautuminen",
-    "Otat yhteyttä vain yhden asunnon vuokraajaanColor": "yellow",
-    "Otat yhteyttä useampaan asunnon vuokraajaan, jotta mahdollisuutesi saada asunto on isompiColor": "green"
+    "Otat yhteyttä vain yhden asunnon vuokranantajaan": "valmistautuminen",
+    "Otat yhteyttä useampaan vuokranantajaan, jotta mahdollisuutesi saada asunto olisi isompi": "valmistautuminen",
+    "Otat yhteyttä vain yhden asunnon vuokranantajaanColor": "yellow",
+    "Otat yhteyttä useampaan vuokranantajaan, jotta mahdollisuutesi saada asunto olisi isompiColor": "green"
   },
   "valmistautuminen": {
-    "question": "Sait sovittua asuntonäytön yhden asunnon vuokraajan kanssa.",
+    "question": "Saat sovittua asuntonäytön yhden asunnon vuokranantajan kanssa.",
     "background": "background_10",
     "person": "character_8",
-    "fore": "null",
     "face": "face_happy",
+    "fore": "null",
     "answers": [
-      "Mietit etukäteen jo valmiiksi kysymyksiä asunnosta ja menet ajoissa paikalle asuntonäyttöön",
+      "Mietit jo etukäteen valmiiksi kysymyksiä asunnosta ja menet ajoissa paikalle asuntonäyttöön",
       "Menet ajoissa paikalle asuntonäyttöön",
       "Menet tyylikkäästi myöhässä asuntonäyttöön"
     ],
-    "Mietit etukäteen jo valmiiksi kysymyksiä asunnosta ja menet ajoissa paikalle asuntonäyttöön": "naytto",
+    "Mietit jo etukäteen valmiiksi kysymyksiä asunnosta ja menet ajoissa paikalle asuntonäyttöön": "naytto",
     "Menet ajoissa paikalle asuntonäyttöön": "naytto",
     "Menet tyylikkäästi myöhässä asuntonäyttöön": "naytto",
-    "Mietit etukäteen jo valmiiksi kysymyksiä asunnosta ja menet ajoissa paikalle asuntonäyttöönColor": "green",
+    "Mietit jo etukäteen valmiiksi kysymyksiä asunnosta ja menet ajoissa paikalle asuntonäyttöönColor": "green",
     "Menet ajoissa paikalle asuntonäyttöönColor": "yellow",
     "Menet tyylikkäästi myöhässä asuntonäyttöönColor": "red"
   },
   "naytto": {
-    "question": "Saavuit asuntonäyttöön.",
+    "question": "Saavut asuntonäyttöön.",
     "background": "background_10",
     "person": "character_8",
-    "fore": "null",
     "face": "face_happy",
+    "fore": "null",
     "answers": [
-      "Asunto ei mielestäsi olekaan niin hyvässä kunnossa kuin luulit, joten et aiokaan pyrkiä saamaan sitä asuntoa",
-      "Tarkastat asunnon kunnon ja kerrot asuntonäytön pitäjälle itsestäsi ja miksi olisit hyvä vuokralainen",
-      "Et tarkasta asunnon kuntoa ollenkaan, mutta kerrot kuitenkin asuntonäytön pitäjälle itsestäsi"
+      "Asunto ei mielestäsi olekaan niin hyvässä kunnossa kuin luulit, joten et aiokaan pyrkiä saamaan tätä asuntoa",
+      "Tarkistat asunnon kunnon ja kerrot vuokranantajalle itsestäsi ja siitä, miksi olisit hyvä vuokralainen",
+      "Et tarkasta asunnon kuntoa ollenkaan, mutta kerrot kuitenkin vuokranantajalle itsestäsi"
     ],
-    "Asunto ei mielestäsi olekaan niin hyvässä kunnossa kuin luulit, joten et aiokaan pyrkiä saamaan sitä asuntoa": "uusiYritys",
-    "Tarkastat asunnon kunnon ja kerrot asuntonäytön pitäjälle itsestäsi ja miksi olisit hyvä vuokralainen": "asunnonSaanti",
-    "Et tarkasta asunnon kuntoa ollenkaan, mutta kerrot kuitenkin asuntonäytön pitäjälle itsestäsi": "asunnonSaanti",
-    "Asunto ei mielestäsi olekaan niin hyvässä kunnossa kuin luulit, joten et aiokaan pyrkiä saamaan sitä asuntoaColor": "green",
-    "Tarkastat asunnon kunnon ja kerrot asuntonäytön pitäjälle itsestäsi ja miksi olisit hyvä vuokralainenColor": "green",
-    "Et tarkasta asunnon kuntoa ollenkaan, mutta kerrot kuitenkin asuntonäytön pitäjälle itsestäsiColor": "red"
+    "Asunto ei mielestäsi olekaan niin hyvässä kunnossa kuin luulit, joten et aiokaan pyrkiä saamaan tätä asuntoa": "uusiYritys",
+    "Tarkistat asunnon kunnon ja kerrot vuokranantajalle itsestäsi ja siitä, miksi olisit hyvä vuokralainen": "asunnonSaanti",
+    "Et tarkasta asunnon kuntoa ollenkaan, mutta kerrot kuitenkin vuokranantajalle itsestäsi": "asunnonSaanti",
+    "Asunto ei mielestäsi olekaan niin hyvässä kunnossa kuin luulit, joten et aiokaan pyrkiä saamaan tätä asuntoaColor": "green",
+    "Tarkistat asunnon kunnon ja kerrot vuokranantajalle itsestäsi ja siitä, miksi olisit hyvä vuokralainenColor": "green",
+    "Et tarkasta asunnon kuntoa ollenkaan, mutta kerrot kuitenkin vuokranantajalle itsestäsiColor": "red"
   },
   "uusiYritys": {
-    "question": "Asunto ei ollut hyväkuntoinen, joten etsit toisen asunnon, jonka asuntonäyttöön menet.",
+    "question": "Asunto ei ollut mielestäsi riittävän hyväkuntoinen, joten etsit toisen asunnon, jonka asuntonäyttöön menet.",
     "background": "background_10",
     "person": "character_8",
-    "fore": "null",
     "face": "face_happy",
+    "fore": "null",
     "answers": [
-      "Tarkastat asunnon kunnon ja kerrot asuntonäytön pitäjälle itsestäsi ja miksi olisit hyvä vuokralainen",
-      "Et tarkasta asunnon kuntoa ollenkaan, mutta kerrot kuitenkin asuntonäytön pitäjälle itsestäsi"
+      "Tarkastat asunnon kunnon ja kerrot vuokranantajalle itsestäsi ja siitä, miksi olisit hyvä vuokralainen",
+      "Et tarkasta asunnon kuntoa ollenkaan, mutta kerrot kuitenkin vuokranantajalle itsestäsi"
     ],
-    "Tarkastat asunnon kunnon ja kerrot asuntonäytön pitäjälle itsestäsi ja miksi olisit hyvä vuokralainen": "asunnonSaanti",
-    "Et tarkasta asunnon kuntoa ollenkaan, mutta kerrot kuitenkin asuntonäytön pitäjälle itsestäsi": "asunnonSaanti",
-    "Tarkastat asunnon kunnon ja kerrot asuntonäytön pitäjälle itsestäsi ja miksi olisit hyvä vuokralainenColor": "green",
-    "Et tarkasta asunnon kuntoa ollenkaan, mutta kerrot kuitenkin asuntonäytön pitäjälle itsestäsiColor": "red"
+    "Tarkastat asunnon kunnon ja kerrot vuokranantajalle itsestäsi ja siitä, miksi olisit hyvä vuokralainen": "asunnonSaanti",
+    "Et tarkasta asunnon kuntoa ollenkaan, mutta kerrot kuitenkin vuokranantajalle itsestäsi": "asunnonSaanti",
+    "Tarkastat asunnon kunnon ja kerrot vuokranantajalle itsestäsi ja siitä, miksi olisit hyvä vuokralainenColor": "green",
+    "Et tarkasta asunnon kuntoa ollenkaan, mutta kerrot kuitenkin vuokranantajalle itsestäsiColor": "red"
   },
   "asunnonSaanti": {
-    "question": "Vuokranantaja on vakuuttunut, että olisit hyvä vuokralainen ja tarjoaa vuokrasopimusta allekirjoitettavaksi.",
+    "question": "Vuokranantaja on vakuuttunut siitä, että olisit hyvä vuokralainen, ja tarjoaa vuokrasopimusta allekirjoitettavaksi.",
     "background": "background_10",
     "person": "null",
-    "fore": "fore_13",
     "face": "null",
+    "fore": "fore_13",
     "answers": [
-      "Tarkastat vuokrasopimuksen tarkkaan ennen allekirjoittamista",
+      "Tarkistat vuokrasopimuksen huolellisesti ennen allekirjoittamista",
       "Vuokranantaja vaikuttaa luotettavalta, joten allekirjoitat sopimuksen lukematta sitä"
     ],
-    "Tarkastat vuokrasopimuksen tarkkaan ennen allekirjoittamista": "sopimusLoppu",
+    "Tarkistat vuokrasopimuksen huolellisesti ennen allekirjoittamista": "sopimusLoppu",
     "Vuokranantaja vaikuttaa luotettavalta, joten allekirjoitat sopimuksen lukematta sitä": "sopimusLoppu",
-    "Tarkastat vuokrasopimuksen tarkkaan ennen allekirjoittamistaColor": "green",
+    "Tarkistat vuokrasopimuksen huolellisesti ennen allekirjoittamistaColor": "green",
     "Vuokranantaja vaikuttaa luotettavalta, joten allekirjoitat sopimuksen lukematta sitäColor": "red"
   },
   "sopimusLoppu": {
     "question": "Olet löytänyt itsellesi uuden asunnon ja kirjoittanut asunnosta vuokrasopimuksen. Mitä teet seuraavaksi?",
     "background": "background_10",
     "person": "character_8",
-    "fore": "null",
     "face": "face_happy",
+    "fore": "null",
     "answers": [
       "Teet ilmoituksen osoitteenmuutoksesta",
       "Et tee mitään"
     ],
     "Teet ilmoituksen osoitteenmuutoksesta": "ilmoitus",
-    "Et tee mitään": "first",
+    "Et tee mitään": "null",
     "Teet ilmoituksen osoitteenmuutoksestaColor": "green",
     "Et tee mitäänColor": "red"
   },
@@ -165,8 +165,8 @@
     "question": "Minne teet osoitteen muutosilmoituksen?",
     "background": "background_10",
     "person": "character_8",
-    "fore": "null",
     "face": "face_happy",
+    "fore": "null",
     "answers": [
       "Postiin",
       "Kelaan",
@@ -183,8 +183,8 @@
     "question": "Millä tavalla ilmoitat postille osoitteenmuutoksesta?",
     "background": "background_10",
     "person": "character_8",
-    "fore": "null",
     "face": "face_happy",
+    "fore": "null",
     "answers": [
       "Postin nettisivujen kautta",
       "Menet postiin käymään"
@@ -198,29 +198,29 @@
     "question": "Olet täyttänyt ja lähettänyt osoitteenmuutoksen postin verkkosivujen kautta. Mitä teet seuraavaksi?",
     "background": "background_10",
     "person": "character_8",
-    "fore": "null",
     "face": "face_happy",
+    "fore": "null",
     "answers": [
-      "Siirrän kotivakuutuksen uuteen asuntoon",
-      "Teen sähkönsiirron uuteen asuntoon",
-      "Ilmoitan uuden osoitteeni palveluihin, joita käytän",
-      "En siirrä kotivakuutusta, tee sähkönsiirtoa tai ilmoita uutta osoitetta mihinkään"
+      "Siirrät kotivakuutuksen uuteen asuntoon",
+      "Teet sähkönsiirron uuteen asuntoon",
+      "Ilmoitat uuden osoitteen palveluihin, joita käytät",
+      "Ilmoitat presidentille uuden osoitteesi"
     ],
-    "Siirrän kotivakuutuksen uuteen asuntoon": "vakuutus",
-    "Teen sähkönsiirron uuteen asuntoon": "sahko",
-    "Ilmoitan uuden osoitteeni palveluihin, joita käytän": "palvelut",
-    "En siirrä kotivakuutusta, tee sähkönsiirtoa tai ilmoita uutta osoitetta mihinkään": "sivusto",
-    "Siirrän kotivakuutuksen uuteen asuntoonColor": "green",
-    "Teen sähkönsiirron uuteen asuntoonColor": "green",
-    "Ilmoitan uuden osoitteeni palveluihin, joita käytänColor": "green",
-    "En siirrä kotivakuutusta, tee sähkönsiirtoa tai ilmoita uutta osoitetta mihinkäänColor": "red"
+    "Siirrät kotivakuutuksen uuteen asuntoon": "vakuutus",
+    "Teet sähkönsiirron uuteen asuntoon": "sahko",
+    "Ilmoitat uuden osoitteen palveluihin, joita käytät": "palvelut",
+    "Ilmoitat presidentille uuden osoitteesi": "sivusto",
+    "Siirrät kotivakuutuksen uuteen asuntoonColor": "green",
+    "Teet sähkönsiirron uuteen asuntoonColor": "green",
+    "Ilmoitat uuden osoitteen palveluihin, joita käytätColor": "green",
+    "Ilmoitat presidentille uuden osoitteesiColor": "red"
   },
   "postikonttori": {
     "question": "Menet postikonttoriin. Mitä teet?",
     "background": "background_10",
     "person": "character_8",
-    "fore": "null",
     "face": "face_happy",
+    "fore": "null",
     "answers": [
       "Kysyt henkilökunnalta, miten toimia",
       "Ilmoitat, että haluat täyttää osoitteenmuutoslomakkeen",
@@ -237,47 +237,47 @@
     "question": "Olet nyt ilmoittanut osoitteenmuutoksen. Mitä teet seuraavaksi?",
     "background": "background_10",
     "person": "character_8",
-    "fore": "null",
     "face": "face_happy",
+    "fore": "null",
     "answers": [
       "Siirrät kotivakuutuksen uuteen asuntoon",
       "Teet sähkösopimuksen uuteen asuntoon",
       "Ilmoitat uuden osoitteen palveluihin, joita käytät",
-      "Et siirrä kotivakuutusta, tee sähkönsiirtoa tai ilmoita uutta osoitetta mihinkään"
+      "Ilmoitat presidentille uuden osoitteesi"
     ],
     "Siirrät kotivakuutuksen uuteen asuntoon": "vakuutus",
     "Teet sähkösopimuksen uuteen asuntoon": "sahko",
     "Ilmoitat uuden osoitteen palveluihin, joita käytät": "palvelut",
-    "Et siirrä kotivakuutusta, tee sähkönsiirtoa tai ilmoita uutta osoitetta mihinkään": "tehty",
+    "Ilmoitat presidentille uuden osoitteesi": "tehty",
     "Siirrät kotivakuutuksen uuteen asuntoonColor": "green",
     "Teet sähkösopimuksen uuteen asuntoonColor": "green",
     "Ilmoitat uuden osoitteen palveluihin, joita käytätColor": "green",
-    "Et siirrä kotivakuutusta, tee sähkönsiirtoa tai ilmoita uutta osoitetta mihinkäänColor": "red"
+    "Ilmoitat presidentille uuden osoitteesiColor": "red"
   },
   "vakuutus": {
     "question": "Sinun täytyy hankkia kotivakuutus uuteen asuntoosi. Miten hoidat asian?",
     "background": "background_10",
     "person": "character_8",
-    "fore": "null",
     "face": "face_happy",
+    "fore": "null",
     "answers": [
-      "Varaat tarvittavat paperit asunnosta valmiiksi ja menet fyysisesti käymään vakuutusyhtiön konttorilla",
-      "Varaat tarvittavat paperit asunnosta valmiiksi ja soitat vakuutusyhtiöön",
+      "Menet fyysisesti käymään vakuutusyhtiön konttorilla",
+      "Soitat vakuutusyhtiöön",
       "Valitat internetissä, kuinka kaikki on niin vaikeaa hoitaa"
     ],
-    "Varaat tarvittavat paperit asunnosta valmiiksi ja menet fyysisesti käymään vakuutusyhtiön konttorilla": "kaynti",
-    "Varaat tarvittavat paperit asunnosta valmiiksi ja soitat vakuutusyhtiöön": "soitto",
+    "Menet fyysisesti käymään vakuutusyhtiön konttorilla": "kaynti",
+    "Soitat vakuutusyhtiöön": "soitto",
     "Valitat internetissä, kuinka kaikki on niin vaikeaa hoitaa": "vakuutus",
-    "Varaat tarvittavat paperit asunnosta valmiiksi ja menet fyysisesti käymään vakuutusyhtiön konttorillaColor": "yellow",
-    "Varaat tarvittavat paperit asunnosta valmiiksi ja soitat vakuutusyhtiöönColor": "green",
+    "Menet fyysisesti käymään vakuutusyhtiön konttorillaColor": "yellow",
+    "Soitat vakuutusyhtiöönColor": "green",
     "Valitat internetissä, kuinka kaikki on niin vaikeaa hoitaaColor": "red"
   },
   "kaynti": {
     "question": "Saavut konttorille. Mitä teet?",
     "background": "background_10",
     "person": "character_8",
-    "fore": "null",
     "face": "face_happy",
+    "fore": "null",
     "answers": [
       "Kiilaat itsesi jonon ensimmäiseksi",
       "Odotat omaa vuoroasi ja kerrot asiasi virkailijalle"
@@ -291,68 +291,68 @@
     "question": "Sinua pyydetään rauhoittumaan ja odottamaan kaikessa rauhassa omaa vuoroasi.",
     "background": "background_10",
     "person": "character_8",
-    "fore": "null",
     "face": "face_happy",
+    "fore": "null",
     "answers": [
       "Tottelet, odotat omaa vuoroasi ja kerrot asiasi virkailijalle",
-      "Et tottele, vaan lähdet pois haukkuen henkilökunnan"
+      "Et tottele, vaan lähdet pois henkilökuntaa haukkuen"
     ],
     "Tottelet, odotat omaa vuoroasi ja kerrot asiasi virkailijalle": "ohi",
-    "Et tottele, vaan lähdet pois haukkuen henkilökunnan": "poissa",
+    "Et tottele, vaan lähdet pois henkilökuntaa haukkuen": "poissa",
     "Tottelet, odotat omaa vuoroasi ja kerrot asiasi virkailijalleColor": "green",
-    "Et tottele, vaan lähdet pois haukkuen henkilökunnanColor": "red"
+    "Et tottele, vaan lähdet pois henkilökuntaa haukkuenColor": "red"
   },
   "ohi": {
     "question": "Olet saanut hoidettua asiasi. Mitä teet seuraavaksi?",
     "background": "background_10",
     "person": "character_8",
-    "fore": "null",
     "face": "face_happy",
+    "fore": "null",
     "answers": [
       "Teet sähkösopimuksen uuteen asuntoon",
       "Ilmoitat uuden osoitteen palveluihin, joita käytät",
-      "Et tee sähkösopimusta tai ilmoita uutta osoitetta mihinkään",
+      "Ilmoitat presidentille uuden osoitteesi",
       "Muutat"
     ],
     "Teet sähkösopimuksen uuteen asuntoon": "sahko",
     "Ilmoitat uuden osoitteen palveluihin, joita käytät": "palvelut",
-    "Et tee sähkösopimusta tai ilmoita uutta osoitetta mihinkään": "ohi",
+    "Ilmoitat presidentille uuden osoitteesi": "ohi",
     "Muutat": "muutto",
     "Teet sähkösopimuksen uuteen asuntoonColor": "green",
     "Ilmoitat uuden osoitteen palveluihin, joita käytätColor": "green",
-    "Et tee sähkösopimusta tai ilmoita uutta osoitetta mihinkäänColor": "red",
+    "Ilmoitat presidentille uuden osoitteesiColor": "red",
     "MuutatColor": "green"
   },
   "poissa": {
     "question": "Et saanut hoidettua asiaa. Mitä teet seuraavaksi?",
     "background": "background_10",
     "person": "character_8",
-    "fore": "null",
     "face": "face_happy",
+    "fore": "null",
     "answers": [
       "Yrität siirtää vakuutusta",
       "Teet sähkösopimuksen uuteen asuntoon",
       "Ilmoitat uuden osoitteen palveluihin, joita käytät",
-      "Et siirrä kotivakuutusta, tee sähkönsiirtoa tai ilmoita uutta osoitetta mihinkään",
+      "Ilmoitat presidentille uuden osoitteesi",
       "Muutat"
     ],
     "Yrität siirtää vakuutusta": "vakuutus",
     "Teet sähkösopimuksen uuteen asuntoon": "sahko",
     "Ilmoitat uuden osoitteen palveluihin, joita käytät": "palvelut",
-    "Et siirrä kotivakuutusta, tee sähkönsiirtoa tai ilmoita uutta osoitetta mihinkään": "poissa",
+    "Ilmoitat presidentille uuden osoitteesi": "poissa",
     "Muutat": "muutto",
     "Yrität siirtää vakuutustaColor": "green",
     "Teet sähkösopimuksen uuteen asuntoonColor": "green",
     "Ilmoitat uuden osoitteen palveluihin, joita käytätColor": "green",
-    "Et siirrä kotivakuutusta, tee sähkönsiirtoa tai ilmoita uutta osoitetta mihinkäänColor": "red",
+    "Ilmoitat presidentille uuden osoitteesiColor": "red",
     "MuutatColor": "red"
   },
   "soitto": {
     "question": "Soitat vakuutusyhtiöösi ja selität asiasi. Virkailija esittää turvakysymyksen. Mitä teet?",
     "background": "background_10",
     "person": "character_8",
-    "fore": "null",
     "face": "face_happy",
+    "fore": "null",
     "answers": [
       "Vastaat kysymykseen, jotta voit hoitaa asiasi",
       "Et vastaa kysymykseen, vaan suljet puhelun",
@@ -369,8 +369,8 @@
     "question": "Virkailija tiedustelee uuden asuntosi tietoja.",
     "background": "background_10",
     "person": "character_8",
-    "fore": "null",
     "face": "face_happy",
+    "fore": "null",
     "answers": [
       "Vastaat kysymyksiin kohteliaasti",
       "Valitat virkailijalle, että hän kyselee liikoja",
@@ -387,8 +387,8 @@
     "question": "Haluat sähköt toimintaan uuteen asuntoosi. Mitä teet?",
     "background": "background_10",
     "person": "character_8",
-    "fore": "null",
     "face": "face_happy",
+    "fore": "null",
     "answers": [
       "Käytät naapurin sähköä",
       "Soitat sähköyhtiöön",
@@ -405,8 +405,8 @@
     "question": "Soitat sähköyhtiöön ja selität asiasi. Virkailija kyselee sinulta tietoja uudesta asunnostasi.",
     "background": "background_10",
     "person": "character_8",
-    "fore": "null",
     "face": "face_happy",
+    "fore": "null",
     "answers": [
       "Et vastaa, vaan suljet puhelimen",
       "Vastaat kysymyksiin kohteliaasti",
@@ -423,8 +423,8 @@
     "question": "Menet sähköyhtiön nettisivuille. Siellä kysellään tietoja uudesta asunnosta.",
     "background": "background_10",
     "person": "character_8",
-    "fore": "null",
     "face": "face_happy",
+    "fore": "null",
     "answers": [
       "Annat kaikki kysytyt tiedot",
       "Et anna tietojasi",
@@ -441,8 +441,8 @@
     "question": "Haluat ilmoittaa uuden osoitteesi käyttämiisi palveluihin. Miten toimit?",
     "background": "background_10",
     "person": "character_8",
-    "fore": "null",
     "face": "face_happy",
+    "fore": "null",
     "answers": [
       "Käyt läpi kaikki palvelusi ja soitat niihin kertoaksesi uuden osoitteesi",
       "Päivität tiedot kaikkien palveluiden nettisivuilla",
@@ -459,8 +459,8 @@
     "question": "Tarvitsetko uuteen asuntoosi laajakaistaliittymän?",
     "background": "background_10",
     "person": "character_8",
-    "fore": "null",
     "face": "face_happy",
+    "fore": "null",
     "answers": [
       "Kyllä",
       "Et"
@@ -474,8 +474,8 @@
     "question": "Miten hankit laajakaistaliittymän kotiisi?",
     "background": "background_10",
     "person": "character_8",
-    "fore": "null",
     "face": "face_happy",
+    "fore": "null",
     "answers": [
       "Soitat operaattorille ja selität tilanteen",
       "Hoidat asian netissä, sillä tiedät miten se tehdään",
@@ -483,7 +483,7 @@
     ],
     "Soitat operaattorille ja selität tilanteen": "selitykset",
     "Hoidat asian netissä, sillä tiedät miten se tehdään": "ohi",
-    "Hoidat asian netissä, vaikka et yhtään tiedä miten se pitäisi tehdä": "liittyma",
+    "Hoidat asian netissä, vaikka et yhtään tiedä miten se pitäisi tehdä": "poissa",
     "Soitat operaattorille ja selität tilanteenColor": "green",
     "Hoidat asian netissä, sillä tiedät miten se tehdäänColor": "green",
     "Hoidat asian netissä, vaikka et yhtään tiedä miten se pitäisi tehdäColor": "red"
@@ -492,19 +492,19 @@
     "question": "Virkailija kyselee sinulta tietoja uudesta asunnostasi ja tarpeistasi liittymää koskien.",
     "background": "background_10",
     "person": "character_8",
-    "fore": "null",
     "face": "face_happy",
+    "fore": "null",
     "answers": [
       "Vastaat kaikkiin kysymyksiin parhaasi mukaan",
       "Et vastaa kysymyksiin, vaan valitset itse summamutikassa jonkun liittymän",
-      "Soitat vielä ennen päätöstä toiselle operaattorille"
+      "Otat vielä ennen päätöstä yhteyttä toiseen operaattoriin"
     ],
     "Vastaat kaikkiin kysymyksiin parhaasi mukaan": "ohi",
     "Et vastaa kysymyksiin, vaan valitset itse summamutikassa jonkun liittymän": "poissa",
-    "Soitat vielä ennen päätöstä toiselle operaattorille": "valinta",
+    "Otat vielä ennen päätöstä yhteyttä toiseen operaattoriin": "valinta",
     "Vastaat kaikkiin kysymyksiin parhaasi mukaanColor": "green",
     "Et vastaa kysymyksiin, vaan valitset itse summamutikassa jonkun liittymänColor": "red",
-    "Soitat vielä ennen päätöstä toiselle operaattorilleColor": "green"
+    "Otat vielä ennen päätöstä yhteyttä toiseen operaattoriinColor": "green"
   },
   "muutto": {
     "question": "Kun kaikki järjestelyt on tehty, on jäljellä enää itse muutto. Miten hoidat sen?",
@@ -555,7 +555,7 @@
     "Änget itsesi väliin ja sekoitat muuttomiesten työskentelyäColor": "red"
   },
   "tuttuauttaa": {
-    "question": "Soitat tutuillesi ja sovit heidän kanssaan, kuinka muuttoon liittyen toimitaan. Mitä teet?",
+    "question": "Soitat tutuillesi ja sovit heidän kanssaan, miten muuttoon liittyen toimitaan. Mitä teet?",
     "background": "background_10",
     "person": "null",
     "face": "null",
@@ -609,14 +609,14 @@
     "face": "null",
     "fore": "fore_9",
     "answers": [
-      "Purat tavarat ja toimitat muuttolaatikot sinne, minne ne kuuluvat",
+      "Purat tavarat paikoilleen ja toimitat muuttolaatikot sinne, minne ne kuuluvat",
       "Jätät tavarat laatikoihin",
       "Puritte jo tavarat paikoilleen tuttusi kanssa"
     ],
-    "Purat tavarat ja toimitat muuttolaatikot sinne, minne ne kuuluvat": "null",
+    "Purat tavarat paikoilleen ja toimitat muuttolaatikot sinne, minne ne kuuluvat": "null",
     "Jätät tavarat laatikoihin": "null",
     "Puritte jo tavarat paikoilleen tuttusi kanssa": "null",
-    "Purat tavarat ja toimitat muuttolaatikot sinne, minne ne kuuluvatColor": "green",
+    "Purat tavarat paikoilleen ja toimitat muuttolaatikot sinne, minne ne kuuluvatColor": "green",
     "Jätät tavarat laatikoihinColor": "yellow",
     "Puritte jo tavarat paikoilleen tuttusi kanssaColor": "green"
   }

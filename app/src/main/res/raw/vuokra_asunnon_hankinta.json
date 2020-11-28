@@ -52,7 +52,7 @@
     "background": "background_10",
     "person": "character_8",
     "fore": "null",
-    "face": "face_happy",
+    "face": "face_confused",
     "answers": [
       "You are not going to search for a rental apartment",
       "You are looking for apartments that are in good condition and that you can afford",
@@ -157,7 +157,7 @@
       "Nothing"
     ],
     "You make a notification of an address change": "ilmoitus",
-    "Nothing": "first",
+    "Nothing": "null",
     "You make a notification of an address changeColor": "green",
     "NothingColor": "red"
   },
@@ -483,7 +483,7 @@
     ],
     "You call the operator and explain the situation": "selitykset",
     "You handle it online because you know how to do it": "ohi",
-    "You try to handle it online even though you have no idea how to do it": "liittyma",
+    "You try to handle it online even though you have no idea how to do it": "poissa",
     "You call the operator and explain the situationColor": "green",
     "You handle it online because you know how to do itColor": "green",
     "You try to handle it online even though you have no idea how to do itColor": "red"

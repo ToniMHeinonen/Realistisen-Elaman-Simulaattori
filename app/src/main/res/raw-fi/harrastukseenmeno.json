@@ -6,34 +6,34 @@
     "face": "null",
     "fore": "null",
     "answers": [
-      "Pakkaat tarvittavat vaatteet ja varusteet, jonka jälkeen tiedustelet tuttavilta, voisiko joku viedä sinut harjoituksiin",
+      "Pakkaat tarvittavat vaatteet ja varusteet, minkä jälkeen tiedustelet tuttaviltasi, voisiko joku viedä sinut harjoituksiin",
       "Et mieti ollenkaan tulevia harjoituksia",
-      "Pakkaat tarvittavat vaatteet ja varusteet, jonka jälkeen suunnittelet harjoituksiin lähtöä"
+      "Pakkaat tarvittavat vaatteet ja varusteet, minkä jälkeen suunnittelet harjoituksiin lähtöä"
     ],
-    "Pakkaat tarvittavat vaatteet ja varusteet, jonka jälkeen tiedustelet tuttavilta, voisiko joku viedä sinut harjoituksiin": "tiedustelu",
+    "Pakkaat tarvittavat vaatteet ja varusteet, minkä jälkeen tiedustelet tuttaviltasi, voisiko joku viedä sinut harjoituksiin": "tiedustelu",
     "Et mieti ollenkaan tulevia harjoituksia": "paniikki",
-    "Pakkaat tarvittavat vaatteet ja varusteet, jonka jälkeen suunnittelet harjoituksiin lähtöä": "yksin",
-    "Pakkaat tarvittavat vaatteet ja varusteet, jonka jälkeen tiedustelet tuttavilta, voisiko joku viedä sinut harjoituksiinColor": "green",
+    "Pakkaat tarvittavat vaatteet ja varusteet, minkä jälkeen suunnittelet harjoituksiin lähtöä": "yksin",
+    "Pakkaat tarvittavat vaatteet ja varusteet, minkä jälkeen tiedustelet tuttaviltasi, voisiko joku viedä sinut harjoituksiinColor": "green",
     "Et mieti ollenkaan tulevia harjoituksiaColor": "red",
-    "Pakkaat tarvittavat vaatteet ja varusteet, jonka jälkeen suunnittelet harjoituksiin lähtöäColor": "green"
+    "Pakkaat tarvittavat vaatteet ja varusteet, minkä jälkeen suunnittelet harjoituksiin lähtöäColor": "green"
   },
   "tiedustelu": {
-    "question": "Saat tuttavasi kiinni ja hän ehdottaa aikataulua, jolla olisit etuajassa paikalla. Mitä teet?",
+    "question": "Saat tuttavasi kiinni ja hän ehdottaa aikataulua, jolla olisit etuajassa harrastuspaikalla. Mitä teet?",
     "background": "background_6",
     "person": "null",
     "face": "null",
     "fore": "fore_7",
     "answers": [
-      "Sanot, että se ei käy",
+      "Sanot, että se ei käy, ja päätät mennä harrastukseen muulla keinolla",
       "Sanot, että se sopii",
       "Jätät harjoitukset väliin"
     ],
-    "Sanot, että se ei käy": "first",
+    "Sanot, että se ei käy, ja päätät mennä harrastukseen muulla keinolla": "yksin",
     "Sanot, että se sopii": "yhdessa",
     "Jätät harjoitukset väliin": "null",
-    "Sanot, että se ei käyColor": "red",
+    "Sanot, että se ei käy, ja päätät mennä harrastukseen muulla keinollaColor": "green",
     "Sanot, että se sopiiColor": "green",
-    "Jätät harjoitukset väliinColor": "yellow"
+    "Jätät harjoitukset väliinColor": "red"
   },
   "paniikki": {
     "question": "Sinun pitäisi lähteä harjoituksiin, eikä sinulla ole vielä mitään valmiina.",
@@ -72,21 +72,21 @@
     "LapiollaColor": "red"
   },
   "yhdessa": {
-    "question": "Menet harjoituspäivänä odottamaan kyytiäsi ja tuttavasi ilmoittaa, että on hieman myöhässä. Miten toimit?",
+    "question": "Menet harjoituspäivänä odottamaan kyytiäsi ja tuttavasi ilmoittaa, että hän on hieman myöhässä. Miten toimit?",
     "background": "background_5",
     "person": "character_6",
     "face": "face_confused",
     "fore": "null",
     "answers": [
-      "Murehdit, kuinka koko suunnitelma menee pilalle",
-      "Lasket uuden aikataulun päässäsi",
+      "Murehdit, että koko suunnitelma menee pilalle",
+      "Lasket mielessäsi uuden aikataulun",
       "Odottelet rauhassa"
     ],
-    "Murehdit, kuinka koko suunnitelma menee pilalle": "kaveri",
-    "Lasket uuden aikataulun päässäsi": "kaveri",
+    "Murehdit, että koko suunnitelma menee pilalle": "kaveri",
+    "Lasket mielessäsi uuden aikataulun": "kaveri",
     "Odottelet rauhassa": "kaveri",
-    "Murehdit, kuinka koko suunnitelma menee pilalleColor": "red",
-    "Lasket uuden aikataulun päässäsiColor": "yellow",
+    "Murehdit, että koko suunnitelma menee pilalleColor": "red",
+    "Lasket mielessäsi uuden aikataulunColor": "green",
     "Odottelet rauhassaColor": "green"
   },
   "auto": {
@@ -97,17 +97,17 @@
     "fore": "null",
     "answers": [
       "Valitset nopeimman reitin, jotta ehdit valmistautua rauhassa",
-      "Valitset rauhallisimman reitin, sillä sinulla ei ole kiire",
+      "Valitset rauhallisimman reitin, koska sinulla ei ole kiire",
       "Et lähde ollenkaan, sillä unohdit harrastusvälineesi",
       "Ajat ylinopeutta mahdollisimman nopeasti"
     ],
     "Valitset nopeimman reitin, jotta ehdit valmistautua rauhassa": "paikalla",
-    "Valitset rauhallisimman reitin, sillä sinulla ei ole kiire": "paikalla",
-    "Et lähde ollenkaan, sillä unohdit harrastusvälineesi": "auto",
+    "Valitset rauhallisimman reitin, koska sinulla ei ole kiire": "paikalla",
+    "Et lähde ollenkaan, sillä unohdit harrastusvälineesi": "null",
     "Ajat ylinopeutta mahdollisimman nopeasti": "paikalla",
     "Valitset nopeimman reitin, jotta ehdit valmistautua rauhassaColor": "green",
-    "Valitset rauhallisimman reitin, sillä sinulla ei ole kiireColor": "green",
-    "Et lähde ollenkaan, sillä unohdit harrastusvälineesiColor": "yellow",
+    "Valitset rauhallisimman reitin, koska sinulla ei ole kiireColor": "green",
+    "Et lähde ollenkaan, sillä unohdit harrastusvälineesiColor": "red",
     "Ajat ylinopeutta mahdollisimman nopeastiColor": "red"
   },
   "bussi": {
@@ -117,14 +117,14 @@
     "face": "face_uncomfortable",
     "fore": "null",
     "answers": [
-      "Lähdet heti takaisin",
+      "Lähdet heti takaisin kotiin",
       "Menet harjoittelupaikalle",
       "Menet harjoittelupaikalle niin hitaasti kuin vain voit"
     ],
-    "Lähdet heti takaisin": "null",
+    "Lähdet heti takaisin kotiin": "null",
     "Menet harjoittelupaikalle": "paikalla",
     "Menet harjoittelupaikalle niin hitaasti kuin vain voit": "paikalla",
-    "Lähdet heti takaisinColor": "red",
+    "Lähdet heti takaisin kotiinColor": "red",
     "Menet harjoittelupaikalleColor": "green",
     "Menet harjoittelupaikalle niin hitaasti kuin vain voitColor": "yellow"
   },
@@ -145,7 +145,7 @@
     "Vaadit tuttuasi ajamaan ylinopeutta": "paikalla",
     "Keskustelet tuttusi kanssa normaalisti": "paikalla",
     "Valitat koko matkan, että myöhästytColor": "red",
-    "Olet hiljaa koko matkanColor": "green",
+    "Olet hiljaa koko matkanColor": "yellow",
     "Vaadit tuttuasi ajamaan ylinopeuttaColor": "red",
     "Keskustelet tuttusi kanssa normaalistiColor": "green"
   },
@@ -228,14 +228,14 @@
     "face": "face_sad",
     "fore": "null",
     "answers": [
-      "Ilmoitat valmentajalle\/ohjaajalle olevasi kipeä",
+      "Ilmoitat valmentajalle tai ohjaajalle olevasi kipeä",
       "Et ilmoita kenellekään mitään",
       "Soitat tutullesi ja selität tilanteen"
     ],
-    "Ilmoitat valmentajalle\/ohjaajalle olevasi kipeä": "harjoitusloppu",
-    "Et ilmoita kenellekään mitään": "harjoitusloppu",
-    "Soitat tutullesi ja selität tilanteen": "harjoitusloppu",
-    "Ilmoitat valmentajalle\/ohjaajalle olevasi kipeäColor": "green",
+    "Ilmoitat valmentajalle tai ohjaajalle olevasi kipeä": "null",
+    "Et ilmoita kenellekään mitään": "null",
+    "Soitat tutullesi ja selität tilanteen": "null",
+    "Ilmoitat valmentajalle tai ohjaajalle olevasi kipeäColor": "green",
     "Et ilmoita kenellekään mitäänColor": "yellow",
     "Soitat tutullesi ja selität tilanteenColor": "green"
   },

@@ -136,12 +136,15 @@
     "fore": "fore_13",
     "answers": [
       "You sort the shopping list so that they are roughly in the order in which you go in the store",
-      "The grocery store is so small that there is no need to rearrange the list"
+      "The grocery store is so small that there is no need to rearrange the list",
+      "You don't do the shopping list at all"
     ],
     "You sort the shopping list so that they are roughly in the order in which you go in the store": "ennenLahtoa",
     "The grocery store is so small that there is no need to rearrange the list": "ennenLahtoa",
+    "You don't do the shopping list at all": "toinenLahto",
     "You sort the shopping list so that they are roughly in the order in which you go in the storeColor": "green",
-    "The grocery store is so small that there is no need to rearrange the listColor": "green"
+    "The grocery store is so small that there is no need to rearrange the listColor": "green",
+    "You don't do the shopping list at allColor": "red"
   },
   "ennenLahtoa": {
     "question": "Do you own a grocery bag that you usually pack your purchases in at the store?",
