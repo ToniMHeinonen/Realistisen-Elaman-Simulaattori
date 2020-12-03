@@ -204,16 +204,16 @@
       "Siirrät kotivakuutuksen uuteen asuntoon",
       "Teet sähkönsiirron uuteen asuntoon",
       "Ilmoitat uuden osoitteen palveluihin, joita käytät",
-      "Ilmoitat presidentille uuden osoitteesi"
+      "Et siirrä kotivakuutusta, tee sähkönsiirtoa tai ilmoita uutta osoitetta mihinkään"
     ],
     "Siirrät kotivakuutuksen uuteen asuntoon": "vakuutus",
     "Teet sähkönsiirron uuteen asuntoon": "sahko",
     "Ilmoitat uuden osoitteen palveluihin, joita käytät": "palvelut",
-    "Ilmoitat presidentille uuden osoitteesi": "sivusto",
+    "Et siirrä kotivakuutusta, tee sähkönsiirtoa tai ilmoita uutta osoitetta mihinkään": "sivusto",
     "Siirrät kotivakuutuksen uuteen asuntoonColor": "green",
     "Teet sähkönsiirron uuteen asuntoonColor": "green",
     "Ilmoitat uuden osoitteen palveluihin, joita käytätColor": "green",
-    "Ilmoitat presidentille uuden osoitteesiColor": "red"
+    "Et siirrä kotivakuutusta, tee sähkönsiirtoa tai ilmoita uutta osoitetta mihinkäänColor": "red"
   },
   "postikonttori": {
     "question": "Menet postikonttoriin. Mitä teet?",
@@ -243,16 +243,16 @@
       "Siirrät kotivakuutuksen uuteen asuntoon",
       "Teet sähkösopimuksen uuteen asuntoon",
       "Ilmoitat uuden osoitteen palveluihin, joita käytät",
-      "Ilmoitat presidentille uuden osoitteesi"
+      "Et siirrä kotivakuutusta, tee sähkönsiirtoa tai ilmoita uutta osoitetta mihinkään"
     ],
     "Siirrät kotivakuutuksen uuteen asuntoon": "vakuutus",
     "Teet sähkösopimuksen uuteen asuntoon": "sahko",
     "Ilmoitat uuden osoitteen palveluihin, joita käytät": "palvelut",
-    "Ilmoitat presidentille uuden osoitteesi": "tehty",
+    "Et siirrä kotivakuutusta, tee sähkönsiirtoa tai ilmoita uutta osoitetta mihinkään": "tehty",
     "Siirrät kotivakuutuksen uuteen asuntoonColor": "green",
     "Teet sähkösopimuksen uuteen asuntoonColor": "green",
     "Ilmoitat uuden osoitteen palveluihin, joita käytätColor": "green",
-    "Ilmoitat presidentille uuden osoitteesiColor": "red"
+    "Et siirrä kotivakuutusta, tee sähkönsiirtoa tai ilmoita uutta osoitetta mihinkäänColor": "red"
   },
   "vakuutus": {
     "question": "Sinun täytyy hankkia kotivakuutus uuteen asuntoosi. Miten hoidat asian?",
@@ -261,15 +261,15 @@
     "face": "face_happy",
     "fore": "null",
     "answers": [
-      "Menet fyysisesti käymään vakuutusyhtiön konttorilla",
-      "Soitat vakuutusyhtiöön",
+      "Varaat tarvittavat asuntoa koskevat paperit valmiiksi ja menet fyysisesti käymään vakuutusyhtiön konttorilla",
+      "Varaat tarvittavat asuntoa koskevat paperit valmiiksi ja soitat vakuutusyhtiöön",
       "Valitat internetissä, kuinka kaikki on niin vaikeaa hoitaa"
     ],
-    "Menet fyysisesti käymään vakuutusyhtiön konttorilla": "kaynti",
-    "Soitat vakuutusyhtiöön": "soitto",
+    "Varaat tarvittavat asuntoa koskevat paperit valmiiksi ja menet fyysisesti käymään vakuutusyhtiön konttorilla": "kaynti",
+    "Varaat tarvittavat asuntoa koskevat paperit valmiiksi ja soitat vakuutusyhtiöön": "soitto",
     "Valitat internetissä, kuinka kaikki on niin vaikeaa hoitaa": "vakuutus",
-    "Menet fyysisesti käymään vakuutusyhtiön konttorillaColor": "yellow",
-    "Soitat vakuutusyhtiöönColor": "green",
+    "Varaat tarvittavat asuntoa koskevat paperit valmiiksi ja menet fyysisesti käymään vakuutusyhtiön konttorillaColor": "yellow",
+    "Varaat tarvittavat asuntoa koskevat paperit valmiiksi ja soitat vakuutusyhtiöönColor": "green",
     "Valitat internetissä, kuinka kaikki on niin vaikeaa hoitaaColor": "red"
   },
   "kaynti": {
@@ -311,16 +311,16 @@
     "answers": [
       "Teet sähkösopimuksen uuteen asuntoon",
       "Ilmoitat uuden osoitteen palveluihin, joita käytät",
-      "Ilmoitat presidentille uuden osoitteesi",
+      "Et tee sähkösopimusta tai ilmoita uutta osoitetta mihinkään",
       "Muutat"
     ],
     "Teet sähkösopimuksen uuteen asuntoon": "sahko",
     "Ilmoitat uuden osoitteen palveluihin, joita käytät": "palvelut",
-    "Ilmoitat presidentille uuden osoitteesi": "ohi",
+    "Et tee sähkösopimusta tai ilmoita uutta osoitetta mihinkään": "ohi",
     "Muutat": "muutto",
     "Teet sähkösopimuksen uuteen asuntoonColor": "green",
     "Ilmoitat uuden osoitteen palveluihin, joita käytätColor": "green",
-    "Ilmoitat presidentille uuden osoitteesiColor": "red",
+    "Et tee sähkösopimusta tai ilmoita uutta osoitetta mihinkäänColor": "red",
     "MuutatColor": "green"
   },
   "poissa": {
@@ -333,18 +333,18 @@
       "Yrität siirtää vakuutusta",
       "Teet sähkösopimuksen uuteen asuntoon",
       "Ilmoitat uuden osoitteen palveluihin, joita käytät",
-      "Ilmoitat presidentille uuden osoitteesi",
+      "Et siirrä kotivakuutusta, tee sähkönsiirtoa tai ilmoita uutta osoitetta mihinkään",
       "Muutat"
     ],
     "Yrität siirtää vakuutusta": "vakuutus",
     "Teet sähkösopimuksen uuteen asuntoon": "sahko",
     "Ilmoitat uuden osoitteen palveluihin, joita käytät": "palvelut",
-    "Ilmoitat presidentille uuden osoitteesi": "poissa",
+    "Et siirrä kotivakuutusta, tee sähkönsiirtoa tai ilmoita uutta osoitetta mihinkään": "poissa",
     "Muutat": "muutto",
     "Yrität siirtää vakuutustaColor": "green",
     "Teet sähkösopimuksen uuteen asuntoonColor": "green",
     "Ilmoitat uuden osoitteen palveluihin, joita käytätColor": "green",
-    "Ilmoitat presidentille uuden osoitteesiColor": "red",
+    "Et siirrä kotivakuutusta, tee sähkönsiirtoa tai ilmoita uutta osoitetta mihinkäänColor": "red",
     "MuutatColor": "red"
   },
   "soitto": {
