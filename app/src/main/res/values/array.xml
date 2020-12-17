@@ -50,7 +50,7 @@
         <item>character_8</item> <!-- Poika -->
         <item>character_9</item> <!-- Mies -->
         <item>character_10</item> <!-- Vaari -->
-        <item>empty</item>
+        <item>@string/empty_image</item>
     </string-array>
     <string-array name="henkilotName">
         <item>Guard</item>
@@ -64,7 +64,7 @@
         <item>Boy</item>
         <item>Man</item>
         <item>Grandpa</item>
-        <item>empty</item>
+        <item>@string/empty_image</item>
     </string-array>
     <string-array name="kasvot">
         <item>face_happy</item>
@@ -74,7 +74,7 @@
         <item>face_uncomfortable</item>
         <item>face_angry</item>
         <item>face_smirk</item>
-        <item>empty</item>
+        <item>@string/empty_image</item>
     </string-array>
     <string-array name="kasvotName">
         <item>Happy</item>
@@ -84,7 +84,7 @@
         <item>Uncomfortable</item>
         <item>Angry</item>
         <item>Smirk</item>
-        <item>empty</item>
+        <item>@string/empty_image</item>
     </string-array>
     <string-array name="kolmasKuva">
         <item>fore_1</item>
@@ -107,7 +107,7 @@
         <item>fore_18</item>
         <item>fore_19</item>
         <item>fore_20</item>
-        <item>empty</item>
+        <item>@string/empty_image</item>
     </string-array>
     <string-array name="kolmasKuvaName">
         <item>Bus Stop</item>
@@ -130,7 +130,7 @@
         <item>Cat</item>
         <item>Friend</item>
         <item>Computer</item>
-        <item>empty</item>
+        <item>@string/empty_image</item>
     </string-array>
     <string-array name="varit">
         <item>green</item>

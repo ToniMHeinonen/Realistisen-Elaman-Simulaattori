@@ -50,7 +50,7 @@
         <item>character_8</item> <!-- Poika -->
         <item>character_9</item> <!-- Mies -->
         <item>character_10</item> <!-- Vaari -->
-        <item>tyhjä</item>
+        <item>@string/empty_image</item>
     </string-array>
     <string-array name="henkilotName">
         <item>Vartija</item>
@@ -64,7 +64,7 @@
         <item>Poika</item>
         <item>Mies</item>
         <item>Vaari</item>
-        <item>tyhjä</item>
+        <item>@string/empty_image</item>
     </string-array>
     <string-array name="kasvot">
         <item>face_happy</item>
@@ -74,7 +74,7 @@
         <item>face_uncomfortable</item>
         <item>face_angry</item>
         <item>face_smirk</item>
-        <item>tyhjä</item>
+        <item>@string/empty_image</item>
     </string-array>
     <string-array name="kasvotName">
         <item>Iloinen</item>
@@ -84,7 +84,7 @@
         <item>Vaivautunut</item>
         <item>Vihainen</item>
         <item>Virnistys</item>
-        <item>tyhjä</item>
+        <item>@string/empty_image</item>
     </string-array>
     <string-array name="varit">
         <item>green</item>
@@ -112,7 +112,7 @@
         <item>fore_18</item>
         <item>fore_19</item>
         <item>fore_20</item>
-        <item>tyhjä</item>
+        <item>@string/empty_image</item>
     </string-array>
     <string-array name="kolmasKuvaName">
         <item>Bussipysäkki</item>
@@ -135,6 +135,6 @@
         <item>Kissa</item>
         <item>Tuttava</item>
         <item>Tietokone</item>
-        <item>tyhjä</item>
+        <item>@string/empty_image</item>
     </string-array>
 </resources>

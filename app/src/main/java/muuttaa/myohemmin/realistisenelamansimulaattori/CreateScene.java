@@ -249,7 +249,7 @@ View.OnClickListener, View.OnLongClickListener, ModifiableInterface {
                 if(this.foregroundFiles[lap].equals(foreKuva)){
                     paikka = lap;
                     break;
-                } else if(this.foregroundFiles[lap].equals("empty") || this.foregroundFiles[lap].equals("tyhjä")){
+                } else if(this.foregroundFiles[lap].equals(getString(R.string.empty_image))){
                     paikka = lap;
                     break;
                 }
@@ -262,7 +262,7 @@ View.OnClickListener, View.OnLongClickListener, ModifiableInterface {
                 if(this.personFiles[lap].equals(hahmoKuva)){
                     paikka = lap;
                     break;
-                } else if(this.personFiles[lap].equals("empty") || this.personFiles[lap].equals("tyhjä")){
+                } else if(this.personFiles[lap].equals(getString(R.string.empty_image))){
                     paikka = lap;
                     break;
                 }
@@ -275,7 +275,7 @@ View.OnClickListener, View.OnLongClickListener, ModifiableInterface {
                 if(this.faceFiles[lap].equals(faceKuva)){
                     paikka = lap;
                     break;
-                } else if(this.faceFiles[lap].equals("empty") || this.faceFiles[lap].equals("tyhjä")){
+                } else if(this.faceFiles[lap].equals(getString(R.string.empty_image))){
                     paikka = lap;
                     break;
                 }
@@ -302,8 +302,7 @@ View.OnClickListener, View.OnLongClickListener, ModifiableInterface {
                 // Get correct file from the spinner position
                 selectedForeground = foregroundFiles[this.foreground.getSelectedItemPosition()];
                 // Set image as the file (hide if value is null)
-                if(!selectedForeground.equals("null") && !selectedForeground.equals("tyhjä") &&
-                        !selectedForeground.equals("empty")) {
+                if(!selectedForeground.equals("null") && !selectedForeground.equals(getString(R.string.empty_image))) {
                     this.foreGroundView.setImageResource(getResources().getIdentifier(
                             selectedForeground, "drawable", getPackageName()));
                 } else {
@@ -316,8 +315,7 @@ View.OnClickListener, View.OnLongClickListener, ModifiableInterface {
                 // Get correct file from the spinner position
                 selectedPerson = personFiles[this.person.getSelectedItemPosition()];
                 // Set image as the file (hide if value is null)
-                if(!selectedPerson.equals("null") && !selectedPerson.equals("tyhjä") &&
-                        !selectedPerson.equals("empty")) {
+                if(!selectedPerson.equals("null") && !selectedPerson.equals(getString(R.string.empty_image))) {
                     this.henkilo.setImageResource(getResources().getIdentifier(selectedPerson,
                             "drawable", getPackageName()));
                 } else{
@@ -333,8 +331,7 @@ View.OnClickListener, View.OnLongClickListener, ModifiableInterface {
                 // Get correct file from the spinner position
                 selectedFace = faceFiles[this.face.getSelectedItemPosition()];
                 // Set image as the file (hide if value is null)
-                if(!selectedFace.equals("null") && !selectedFace.equals("tyhjä") &&
-                        !selectedFace.equals("empty")) {
+                if(!selectedFace.equals("null") && !selectedFace.equals(getString(R.string.empty_image))) {
                     this.kasvot.setImageResource(getResources().getIdentifier(selectedFace,
                             "drawable", getPackageName()));
                 } else {
@@ -388,13 +385,13 @@ View.OnClickListener, View.OnLongClickListener, ModifiableInterface {
                 String henkilo = selectedPerson;
                 String kasvo = selectedFace;
                 String foree = selectedForeground;
-                if(henkilo.equals("tyhjä") || henkilo.equals("empty")){
+                if(henkilo.equals(getString(R.string.empty_image))){
                     henkilo = "null";
                 }
-                if(kasvo.equals("tyhjä") || kasvo.equals("empty")){
+                if(kasvo.equals(getString(R.string.empty_image))){
                     kasvo = "null";
                 }
-                if(foree.equals("tyhjä") || foree.equals("empty")){
+                if(foree.equals(getString(R.string.empty_image))){
                     foree = "null";
                 }
                 if(nimi.trim().isEmpty()){
