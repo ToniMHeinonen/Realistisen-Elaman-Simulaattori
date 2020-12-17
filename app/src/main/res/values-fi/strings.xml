@@ -193,7 +193,9 @@
     &lt;p&gt;&lt;b&gt;Huom:&lt;/b&gt; Sinun kannattaa aina tallentaa luomasi skenaariot johonkin ulkoiseen paikkaan.
     Jos poistat ja uudelleenasennat tämän sovelluksen, kaikki sinun luomasi skenaariot katoavat muuten.
     On erittäin suositeltavaa pitää varmuuskopiota luomistasi skenaarioista puhelimesi muistissa tai jossain
-    pilvipalvelussa.&lt;/p&gt;</string>
+    pilvipalvelussa.&lt;/p&gt;
+    &lt;p&gt;Voit myös luoda ja muokata skenaarioita tietokoneella verkkoselaimen avulla:
+        &lt;a href="https://resluontityokalu.web.app"&gt;https://resluontityokalu.web.app&lt;/a&gt; &lt;/p&gt;</string>
     <string name="tutorial_scene">
     &lt;h1&gt;Kohtauksen luominen&lt;/h1&gt;
     &lt;p&gt;1. Valitse haluamasi kuva kohtaukselle&lt;/p&gt;

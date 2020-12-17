@@ -5,6 +5,7 @@ import android.app.Dialog;
 import android.os.Build;
 import android.os.Bundle;
 import android.text.Html;
+import android.text.method.LinkMovementMethod;
 import android.view.View;
 import android.view.Window;
 import android.widget.TextView;
@@ -95,6 +96,9 @@ public class HTMLDialog extends Dialog implements
         } else {
             textView.setText(Html.fromHtml(text));
         }
+
+        // If the textView has links, make them clickable
+        textView.setMovementMethod(LinkMovementMethod.getInstance());
     }
 
     /**

@@ -195,7 +195,9 @@
     &lt;p&gt;&lt;b&gt;Note:&lt;/b&gt; You should always export your created scenarios to some external place.
     If you delete and reinstall this app, all of your created scenarios will otherwise be lost.
     It\'s very advisable to keep a backup of your scenarios in your phone\'s memory or in some cloud
-    service.&lt;/p&gt;</string>
+    service.&lt;/p&gt;
+    &lt;p&gt;You can also create and modify scenarios with your computer in web browser:
+        &lt;a href="https://resluontityokalu.web.app"&gt;https://resluontityokalu.web.app&lt;/a&gt; &lt;/p&gt;</string>
     <string name="tutorial_scene">
     &lt;h1&gt;Creating a scene&lt;/h1&gt;
     &lt;p&gt;1. Select your desired image for the scene&lt;/p&gt;
