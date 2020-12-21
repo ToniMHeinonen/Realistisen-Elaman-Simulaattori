@@ -180,44 +180,46 @@
     <!-- HTML TEXT -->
     <string name="tutorial_scenario">
     &lt;h1&gt;Creating a scenario&lt;/h1&gt;
-    &lt;p&gt;1. Give name to your scenario (name must be unique)&lt;/p&gt;
-    &lt;p&gt;2. Press the \"&create_scene;\" button to add scenes to your scenario&lt;/p&gt;
-    &lt;p&gt;3. When scenario is ready press the \"&add;\" button&lt;/p&gt;
+    &lt;p&gt;1. Give a name to your scenario (name must be unique)&lt;/p&gt;
+    &lt;p&gt;2. Press the \"&create_scene;\"-button to add scenes to your scenario&lt;/p&gt;
+    &lt;p&gt;3. When the scenario is ready, press the \"&add;\"-button&lt;/p&gt;
     &lt;h2&gt;&export_file;&lt;/h2&gt;
-    &lt;p&gt;You can export your created scenario as a json file by pressing the \"&export_file;\" button and by selecting
-        where to export your scenario. This way you can easily save your scenarios to wherever you want
-        and share them with for example your friends.&lt;/p&gt;
+    &lt;p&gt;You can export the scenario you have created as a json-file by pressing the \"&export_file;\"-button
+        and by selecting where to export the scenario. This way, you can easily save your scenarios
+        to wherever you want and share them with, for example, your friends.&lt;/p&gt;
     &lt;h2&gt;&import_file;&lt;/h2&gt;
-    &lt;p&gt;It is also possible to import json scenario files in to your
-        app, just press the \"&import_file;\" button and select the file to import.&lt;/p&gt;
+    &lt;p&gt;It is also possible to import json-scenario files into your
+        app. Just press the \"&import_file;\"-button and select the file to import.&lt;/p&gt;
     &lt;h2&gt;Deleting, moving and duplicating scenes&lt;/h2&gt;
     &lt;p&gt;If you want to delete, move or duplicate created scenes, just hold the created scene button.&lt;/p&gt;
-    &lt;p&gt;&lt;b&gt;Note:&lt;/b&gt; You should always export your created scenarios to some external place.
-    If you delete and reinstall this app, all of your created scenarios will otherwise be lost.
+    &lt;p&gt;&lt;b&gt;Note:&lt;/b&gt; You should always export the scenarios you have created to some external place.
+    If you delete and reinstall this app, all of the scenarios you have created will otherwise be lost.
     It\'s very advisable to keep a backup of your scenarios in your phone\'s memory or in some cloud
     service.&lt;/p&gt;
-    &lt;p&gt;You can also create and modify scenarios with your computer in web browser:
+    &lt;p&gt;You can also create and modify scenarios with your computer in a web browser:
         &lt;a href="https://resluontityokalu.web.app"&gt;https://resluontityokalu.web.app&lt;/a&gt; &lt;/p&gt;</string>
     <string name="tutorial_scene">
     &lt;h1&gt;Creating a scene&lt;/h1&gt;
-    &lt;p&gt;1. Select your desired image for the scene&lt;/p&gt;
-    &lt;p&gt;2. Give name to your scene (the name must be unique and first scene must be named "first")&lt;/p&gt;
+    &lt;p&gt;1. Select a desired image for the scene&lt;/p&gt;
+    &lt;p&gt;2. Give a name to your scene (the name must be unique and first scene must be named "first")&lt;/p&gt;
     &lt;p&gt;3. Write a question to your scene&lt;/p&gt;
-    &lt;p&gt;4. Create at least one answer to your scene by clicking the \"&create_answer;\" button&lt;/p&gt;
-    &lt;p&gt;5. When the scene is ready press the \"&done;\" button&lt;/p&gt;
-    &lt;h2&gt;Deleting, moving and duplicating answer&lt;/h2&gt;
-    &lt;p&gt;If you want to delete, move or duplicate created answers, just hold the created answer button.&lt;/p&gt;</string>
+    &lt;p&gt;4. Create at least one answer to your scene by clicking the \"&create_answer;\"-button&lt;/p&gt;
+    &lt;p&gt;5. When the scene is ready, press the \"&done;\"-button&lt;/p&gt;
+    &lt;h2&gt;Deleting, moving and duplicating an answer&lt;/h2&gt;
+    &lt;p&gt;If you want to delete, move or duplicate the answers you have created, just hold the created
+        answer button.&lt;/p&gt;</string>
     <string name="tutorial_answer">
     &lt;h1&gt;Creating an answer&lt;/h1&gt;
     &lt;p&gt;1. Select a color to your answer&lt;/p&gt;
     &lt;p&gt;2. Write an answer&lt;/p&gt;
-    &lt;p&gt;3. Select to what scene does this answer lead to&lt;/p&gt;
-    &lt;p&gt;4. When the answer is ready press the \"&done;\" button&lt;/p&gt;
+    &lt;p&gt;3. Select which scene does this answer lead to&lt;/p&gt;
+    &lt;p&gt;4. When the answer is ready, press the \"&done;\"-button&lt;/p&gt;
     &lt;p&gt;Meaning of colors: Green is the desired answer, yellow is almost right and red is not so good
         answer.&lt;/p&gt;
     &lt;h2&gt;Note:&lt;/h2&gt;
-    &lt;p&gt;If you delete or rename scenes and some of the answers led to that scene, remember to
-        go and change where those answers lead to.&lt;/p&gt;</string>
+    &lt;p&gt;If you delete or rename scenes where answers of some other scenes lead, those answers do not
+        work correctly anymore. Remember to change those answers so that they lead either to a new
+        scene or to the renamed scene.&lt;/p&gt;</string>
     <string name="credits_html">
     &lt;h1&gt;Credits&lt;/h1&gt;
     &lt;p&gt;Realistic Life Simulator is produced by software engineering students of Tampere

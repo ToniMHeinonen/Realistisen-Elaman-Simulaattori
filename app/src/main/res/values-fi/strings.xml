@@ -179,19 +179,19 @@
     <string name="tutorial_scenario">
     &lt;h1&gt;Skenaarion luominen&lt;/h1&gt;
     &lt;p&gt;1. Anna skenaariollesi nimi (nimen on oltava uniikki)&lt;/p&gt;
-    &lt;p&gt;2. Paina \"&create_scene;\" nappia lisätäksesi kohtauksia skenaariollesi&lt;/p&gt;
-    &lt;p&gt;3. Kun skenaario on valmis paina \"&add;\" nappia&lt;/p&gt;
+    &lt;p&gt;2. Paina \"&create_scene;\"-nappia lisätäksesi kohtauksia skenaarioosi&lt;/p&gt;
+    &lt;p&gt;3. Kun skenaario on valmis, paina \"&add;\"-nappia&lt;/p&gt;
     &lt;h2&gt;&export_file;&lt;/h2&gt;
-    &lt;p&gt;Pystyt viemään luodut skenaariosi json tiedostona painamalla \"&export_file;\" nappia ja valitsemalla
-    mihin haluat skenaariosi viedä talteen. Tämän avulla pystyt helposti tallentamaan skenaariosi mihin haluat
+    &lt;p&gt;Pystyt viemään luomasi skenaariot json-tiedostona painamalla \"&export_file;\"-nappia ja valitsemalla,
+    mihin haluat viedä skenaariosi talteen. Tämän avulla pystyt helposti tallentamaan skenaariosi mihin haluat
         ja jakamaan niitä vaikka ystävillesi.&lt;/p&gt;
     &lt;h2&gt;&import_file;&lt;/h2&gt;
-    &lt;p&gt;On myös mahdollista tuoda json skenaario tiedostoja sovellukseesi,
-    paina vain \"&import_file;\" nappia ja valitse tiedosto minkä haluat tuoda.&lt;/p&gt;
+    &lt;p&gt;On myös mahdollista tuoda json-skenaariotiedostoja sovellukseesi.
+    Paina vain \"&import_file;\"-nappia ja valitse tiedosto, jonka haluat tuoda.&lt;/p&gt;
     &lt;h2&gt;Kohtauksien poistaminen, liikuttaminen ja kopioiminen&lt;/h2&gt;
-    &lt;p&gt;Voit myös poistaa, liikuttaa ja kopioida luotuja kohtauksia pitämällä luodun kohtauksen nappia pohjassa.&lt;/p&gt;
+    &lt;p&gt;Voit myös poistaa, liikuttaa ja kopioida luotuja kohtauksia painamalla pitkään kohtauksen nimen kohdalta.&lt;/p&gt;
     &lt;p&gt;&lt;b&gt;Huom:&lt;/b&gt; Sinun kannattaa aina tallentaa luomasi skenaariot johonkin ulkoiseen paikkaan.
-    Jos poistat ja uudelleenasennat tämän sovelluksen, kaikki sinun luomasi skenaariot katoavat muuten.
+    Muutoin poistaessasi ja uudelleenasentaessasi tämän sovelluksen kaikki luomasi skenaariot katoavat.
     On erittäin suositeltavaa pitää varmuuskopiota luomistasi skenaarioista puhelimesi muistissa tai jossain
     pilvipalvelussa.&lt;/p&gt;
     &lt;p&gt;Voit myös luoda ja muokata skenaarioita tietokoneella verkkoselaimen avulla:
@@ -201,21 +201,22 @@
     &lt;p&gt;1. Valitse haluamasi kuva kohtaukselle&lt;/p&gt;
     &lt;p&gt;2. Anna kohtauksellesi nimi (nimen on oltava uniikki ja ensimmäisen kohtauksen nimen täytyy olla "first")&lt;/p&gt;
     &lt;p&gt;3. Kirjoita kysymys kohtaukselle&lt;/p&gt;
-    &lt;p&gt;4. Luo ainakin yksi vastaus kohtaukselle painamalla \"&create_answer;\" nappia&lt;/p&gt;
-    &lt;p&gt;5. Kun kohtaus on valmis paina \"&done;\" nappia&lt;/p&gt;
-    &lt;h2&gt;Vastauksien poistaminen, liikuttaminen ja kopioiminen&lt;/h2&gt;
-    &lt;p&gt;Voit myös poistaa, liikuttaa ja kopioida luotuja vastauksia pitämällä luodun vastauksen nappia pohjassa.&lt;/p&gt;</string>
+    &lt;p&gt;4. Luo ainakin yksi vastaus kohtaukselle painamalla \"&create_answer;\"-nappia&lt;/p&gt;
+    &lt;p&gt;5. Kun kohtaus on valmis paina \"&done;\"-nappia&lt;/p&gt;
+    &lt;h2&gt;Vastausten poistaminen, liikuttaminen ja kopioiminen&lt;/h2&gt;
+    &lt;p&gt;Voit myös poistaa, liikuttaa ja kopioida luotuja vastauksia painamalla pitkään luodun vastauksen kohdalta.&lt;/p&gt;</string>
     <string name="tutorial_answer">
     &lt;h1&gt;Vastauksen luominen&lt;/h1&gt;
     &lt;p&gt;1. Valitse väri vastaukselle&lt;/p&gt;
     &lt;p&gt;2. Kirjoita vastaus&lt;/p&gt;
-    &lt;p&gt;3. Valitse mihin kohtaukseen tämä vastaus johtaa&lt;/p&gt;
-    &lt;p&gt;4. Kun vastaus on valmis paina \"&done;\" nappia&lt;/p&gt;
+    &lt;p&gt;3. Valitse, mihin kohtaukseen tämä vastaus johtaa&lt;/p&gt;
+    &lt;p&gt;4. Kun vastaus on valmis, paina \"&done;\"-nappia&lt;/p&gt;
     &lt;p&gt;Värien merkitykset: Vihreä on haluttu vastaus, keltainen on melkein oikein ja punainen ei ole
         niin hyvä vastaus.&lt;/p&gt;
     &lt;h2&gt;Huom:&lt;/h2&gt;
-    &lt;p&gt;Jos poistat tai uudelleennimeät kohtauksia ja jotkut vastaukset johtavat siihen kohtaukseen,
-        muista käydä muuttamassa mihin ne vastaukset johtavat.&lt;/p&gt;</string>
+    &lt;p&gt;Jos poistat tai uudelleennimeät kohtauksia, joihin joidenkin muiden kohtausten vastaukset
+        johtavat, ne vastaukset eivät enää toimi oikein. Muista käydä muuttamassa kyseiset vastaukset
+        johtamaan joko uuteen tai uudelleennimeämääsi kohtaukseen.&lt;/p&gt;</string>
     <string name="credits_html">
     &lt;h1&gt;Tekijät&lt;/h1&gt;
     &lt;p&gt;Realistisen Elämän Simulaattori on toteutettu Tampereen ammattikorkeakoulun
