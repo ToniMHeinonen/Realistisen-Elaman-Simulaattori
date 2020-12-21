@@ -1,0 +1,89 @@
+{
+  "first": {
+    "question": "Mitä tukea haet Kelasta?",
+    "background": "background_10",
+    "person": "null",
+    "fore": "fore_20",
+    "face": "null",
+    "answers": [
+      "Opintotukea",
+      "Asumistukea",
+      "Jotain muuta tukea"
+    ],
+    "Opintotukea": "alku",
+    "Asumistukea": "alku",
+    "Jotain muuta tukea": "alku",
+    "OpintotukeaColor": "green",
+    "AsumistukeaColor": "green",
+    "Jotain muuta tukeaColor": "green"
+  },
+  "alku": {
+    "question": "Menet Kelan verkkosivuille. Mitä teet ensimmäisenä?",
+    "background": "background_10",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_20",
+    "answers": [
+      "Kirjaudut sisään asiointipalveluun",
+      "Selailet Kelan verkkosivuja, ennen kuin kirjaudut sisään asiointipalveluun",
+      "Päätät olla hakematta tukea"
+    ],
+    "Kirjaudut sisään asiointipalveluun": "kirjauduttu",
+    "Selailet Kelan verkkosivuja, ennen kuin kirjaudut sisään asiointipalveluun": "kirjauduttu",
+    "Päätät olla hakematta tukea": "null",
+    "Kirjaudut sisään asiointipalveluunColor": "green",
+    "Selailet Kelan verkkosivuja, ennen kuin kirjaudut sisään asiointipalveluunColor": "green",
+    "Päätät olla hakematta tukeaColor": "red"
+  },
+  "kirjauduttu": {
+    "question": "Kirjauduit sisään Kelan asiointipalveluun. Mitä teet seuraavaksi?",
+    "background": "background_10",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_20",
+    "answers": [
+      "Valitset valikosta Hakemukset ja ilmoitukset -kohdan",
+      "Kirjaudut ulos, etkä aiokaan hakea tukea"
+    ],
+    "Valitset valikosta Hakemukset ja ilmoitukset -kohdan": "valinta",
+    "Kirjaudut ulos, etkä aiokaan hakea tukea": "null",
+    "Valitset valikosta Hakemukset ja ilmoitukset -kohdanColor": "green",
+    "Kirjaudut ulos, etkä aiokaan hakea tukeaColor": "red"
+  },
+  "valinta": {
+    "question": "Seuraavaksi valitset valikosta tuen, jota olet hakemassa.",
+    "background": "background_10",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_20",
+    "answers": [
+      "Seuraat ohjeita ja täytät tiedot ohjeitten mukaan",
+      "Sinulla tulee ongelmia tietojen täyttämisen kanssa, joten pyydät tuttavalta apua",
+      "Tuen hakeminen vaikuttaa liian vaikealta, joten et aiokaan hakea tukea"
+    ],
+    "Seuraat ohjeita ja täytät tiedot ohjeitten mukaan": "loppu",
+    "Sinulla tulee ongelmia tietojen täyttämisen kanssa, joten pyydät tuttavalta apua": "loppu",
+    "Tuen hakeminen vaikuttaa liian vaikealta, joten et aiokaan hakea tukea": "null",
+    "Seuraat ohjeita ja täytät tiedot ohjeitten mukaanColor": "green",
+    "Sinulla tulee ongelmia tietojen täyttämisen kanssa, joten pyydät tuttavalta apuaColor": "green",
+    "Tuen hakeminen vaikuttaa liian vaikealta, joten et aiokaan hakea tukeaColor": "red"
+  },
+  "loppu": {
+    "question": "Sait täytettyä hakemuksen.",
+    "background": "background_10",
+    "person": "null",
+    "face": "null",
+    "fore": "fore_20",
+    "answers": [
+      "Tarkastat säännöllisesti sähköpostiasi ja Kelan sivuja, jotta saat tietää hyväksyttiinkö hakemuksesi",
+      "Tarkastat sähköpostiasi ja Kelan sivuja silloin kuin muistat, jotta saat tietää hyväksyttiinkö hakemuksesi",
+      "Et aio tarkastaa sähköpostiasi tai Kelan sivuja ollenkaan"
+    ],
+    "Tarkastat säännöllisesti sähköpostiasi ja Kelan sivuja, jotta saat tietää hyväksyttiinkö hakemuksesi": "null",
+    "Tarkastat sähköpostiasi ja Kelan sivuja silloin kuin muistat, jotta saat tietää hyväksyttiinkö hakemuksesi": "null",
+    "Et aio tarkastaa sähköpostiasi tai Kelan sivuja ollenkaan": "null",
+    "Tarkastat säännöllisesti sähköpostiasi ja Kelan sivuja, jotta saat tietää hyväksyttiinkö hakemuksesiColor": "green",
+    "Tarkastat sähköpostiasi ja Kelan sivuja silloin kuin muistat, jotta saat tietää hyväksyttiinkö hakemuksesiColor": "yellow",
+    "Et aio tarkastaa sähköpostiasi tai Kelan sivuja ollenkaanColor": "red"
+  }
+}

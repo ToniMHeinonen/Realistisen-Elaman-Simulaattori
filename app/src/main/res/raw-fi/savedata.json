@@ -10,6 +10,7 @@
     "Koirasta huolehtiminen",
     "Vuokra-asunnon hankinta",
     "Astioiden pesu",
+    "Tuen hakeminen Kelasta",
     "Kissasta huolehtiminen",
     "Kukkien kastelu ja hoito",
     "Lääkärissä käynti",
@@ -48,6 +49,7 @@
     {"name": "Ravintolassa käyminen", "file": "ravintola.json", "category": "Vapaa-ajan toiminta"},
     {"name": "Tuttavan tapaaminen", "file": "tuttavan_tapaaminen.json", "category": "Vapaa-ajan toiminta"},
     {"name": "Vuokra-asunnon hankinta", "file": "vuokra_asunnon_hankinta.json", "category": "Vuokra-asunto"},
-    {"name": "Postin avaaminen ja lukeminen", "file": "posti.json", "category": "Posti"}
+    {"name": "Postin avaaminen ja lukeminen", "file": "posti.json", "category": "Posti"},
+    {"name": "Tuen hakeminen Kelasta", "file": "kela.json", "category": "Kela"}
   ]
 }
