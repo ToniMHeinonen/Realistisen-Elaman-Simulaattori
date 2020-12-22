@@ -3,8 +3,8 @@
     "question": "Mitä tukea haet Kelasta?",
     "background": "background_10",
     "person": "null",
-    "fore": "fore_20",
     "face": "null",
+    "fore": "fore_20",
     "answers": [
       "Opintotukea",
       "Asumistukea",
@@ -57,14 +57,14 @@
     "face": "null",
     "fore": "fore_20",
     "answers": [
-      "Seuraat ohjeita ja täytät tiedot ohjeitten mukaan",
+      "Seuraat ohjeita ja täytät tiedot ohjeiden mukaan",
       "Sinulla tulee ongelmia tietojen täyttämisen kanssa, joten pyydät tuttavalta apua",
       "Tuen hakeminen vaikuttaa liian vaikealta, joten et aiokaan hakea tukea"
     ],
-    "Seuraat ohjeita ja täytät tiedot ohjeitten mukaan": "loppu",
+    "Seuraat ohjeita ja täytät tiedot ohjeiden mukaan": "loppu",
     "Sinulla tulee ongelmia tietojen täyttämisen kanssa, joten pyydät tuttavalta apua": "loppu",
     "Tuen hakeminen vaikuttaa liian vaikealta, joten et aiokaan hakea tukea": "null",
-    "Seuraat ohjeita ja täytät tiedot ohjeitten mukaanColor": "green",
+    "Seuraat ohjeita ja täytät tiedot ohjeiden mukaanColor": "green",
     "Sinulla tulee ongelmia tietojen täyttämisen kanssa, joten pyydät tuttavalta apuaColor": "green",
     "Tuen hakeminen vaikuttaa liian vaikealta, joten et aiokaan hakea tukeaColor": "red"
   },
@@ -75,15 +75,15 @@
     "face": "null",
     "fore": "fore_20",
     "answers": [
-      "Tarkastat säännöllisesti sähköpostiasi ja Kelan sivuja, jotta saat tietää hyväksyttiinkö hakemuksesi",
-      "Tarkastat sähköpostiasi ja Kelan sivuja silloin kuin muistat, jotta saat tietää hyväksyttiinkö hakemuksesi",
-      "Et aio tarkastaa sähköpostiasi tai Kelan sivuja ollenkaan"
+      "Tarkistat säännöllisesti sähköpostisi ja Kelan sivut, jotta saat tietää hyväksyttiinkö hakemuksesi",
+      "Tarkistat sähköpostisi ja Kelan sivut silloin, kun muistat, jotta saat tietää hyväksyttiinkö hakemuksesi",
+      "Et aio tarkistaa sähköpostiasi tai Kelan sivuja ollenkaan"
     ],
-    "Tarkastat säännöllisesti sähköpostiasi ja Kelan sivuja, jotta saat tietää hyväksyttiinkö hakemuksesi": "null",
-    "Tarkastat sähköpostiasi ja Kelan sivuja silloin kuin muistat, jotta saat tietää hyväksyttiinkö hakemuksesi": "null",
-    "Et aio tarkastaa sähköpostiasi tai Kelan sivuja ollenkaan": "null",
-    "Tarkastat säännöllisesti sähköpostiasi ja Kelan sivuja, jotta saat tietää hyväksyttiinkö hakemuksesiColor": "green",
-    "Tarkastat sähköpostiasi ja Kelan sivuja silloin kuin muistat, jotta saat tietää hyväksyttiinkö hakemuksesiColor": "yellow",
-    "Et aio tarkastaa sähköpostiasi tai Kelan sivuja ollenkaanColor": "red"
+    "Tarkistat säännöllisesti sähköpostisi ja Kelan sivut, jotta saat tietää hyväksyttiinkö hakemuksesi": "null",
+    "Tarkistat sähköpostisi ja Kelan sivut silloin, kun muistat, jotta saat tietää hyväksyttiinkö hakemuksesi": "null",
+    "Et aio tarkistaa sähköpostiasi tai Kelan sivuja ollenkaan": "null",
+    "Tarkistat säännöllisesti sähköpostisi ja Kelan sivut, jotta saat tietää hyväksyttiinkö hakemuksesiColor": "green",
+    "Tarkistat sähköpostisi ja Kelan sivut silloin, kun muistat, jotta saat tietää hyväksyttiinkö hakemuksesiColor": "yellow",
+    "Et aio tarkistaa sähköpostiasi tai Kelan sivuja ollenkaanColor": "red"
   }
 }
